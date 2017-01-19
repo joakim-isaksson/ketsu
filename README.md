@@ -2,4 +2,4 @@
 3D Action puzzle game with two main characters.
 Exploring different mirroring and symmetry puzzles.
 
-![ketsu](ketsu.png =512x)
+<img src="ketsu.png" alt="ketsu" style="width: 254px;"/>
