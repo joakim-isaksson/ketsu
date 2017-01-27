@@ -5,6 +5,16 @@ using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
 
+/* Map parser executes once when you open the scene,
+ * if the scene is new, i.e. has not been initialized before.
+ * 
+ * If the scene has been initialized before, the easiest way to run 
+ * Map parser again is to duplicate the GameObject holding it.
+ *
+ * The Map file used must be in .json format,
+ * and for now is only specified in code, will be changed later.
+ */
+
 [ExecuteInEditMode]
 public class ParseMap : MonoBehaviour {
 	//map structure to hold information
@@ -89,13 +99,13 @@ public class ParseMap : MonoBehaviour {
 		for(int i=0; i<y; i++){
 			for(int j=0; j<x; j++){
 				if(tiles[i,j]==2)
-					Instantiate(GroundTest, new Vector3(-j+x, 0, -i+y), Quaternion.identity);
+					Instantiate(GroundTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 				if(tiles[i,j]==1)
-					Instantiate(RockTest, new Vector3(-j+x, 0, -i+y), Quaternion.identity);
+					Instantiate(RockTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 				if(tiles[i,j]==3)
-					Instantiate(SandTest, new Vector3(-j+x, 0, -i+y), Quaternion.identity);
+					Instantiate(SandTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 				if(tiles[i,j]==4)
-					Instantiate(WaterTest, new Vector3(-j+x, 0, -i+y), Quaternion.identity);
+					Instantiate(WaterTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 			}
 		}
 	}
