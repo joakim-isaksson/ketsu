@@ -8,21 +8,24 @@ namespace Ketsu.Utils.ScreenFaider
     public class ScreenFaider : MonoBehaviour
     {
         [HideInInspector]
-        public static ScreenFaider instance = null;
+        public static ScreenFaider Instance = null;
 
         public Image Foreground;
 
+        /// <summary>
+        /// Destroy this singleton instance
+        /// </summary>
         public static void DestroySingleton()
         {
-            Destroy(instance.gameObject);
-            instance = null;
+            Destroy(Instance.gameObject);
+            Instance = null;
         }
 
         void Awake()
         {
             // Make this an indestructible singleton
-            if (instance == null) instance = this;
-            else if (!instance.Equals(this)) Destroy(gameObject);
+            if (Instance == null) Instance = this;
+            else if (!Instance.Equals(this)) Destroy(gameObject);
             DontDestroyOnLoad(gameObject);
         }
 

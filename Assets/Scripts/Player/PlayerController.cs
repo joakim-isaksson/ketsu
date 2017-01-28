@@ -7,6 +7,9 @@ namespace Ketsu.Player.PlayerController
     public class PlayerController : MonoBehaviour
     {
         public bool MirrorMovement;
+        public float MoveCooldown;
+
+        bool moveOnCooldown;
 
         void Awake()
         {
@@ -20,30 +23,43 @@ namespace Ketsu.Player.PlayerController
 
         void Update()
         {
+            if (moveOnCooldown) return;
+
             if (Input.GetAxis("Left") > 0)
             {
-                Debug.Log("Left");
-                transform.Translate(Vector3.left * (MirrorMovement ? -1 : 1));
+                int direction = (MirrorMovement ? -1 : 1);
+                transform.Translate(Vector3.left * direction);
+                StartCoroutine(SetMovementOnCooldown());
             }
             else if (Input.GetAxis("Right") > 0)
             {
-                Debug.Log("Right");
-                transform.Translate(Vector3.right * (MirrorMovement ? -1 : 1));
+                int direction = (MirrorMovement ? -1 : 1);
+                transform.Translate(Vector3.right * direction);
+                StartCoroutine(SetMovementOnCooldown());
             }
             else if (Input.GetAxis("Up") > 0)
             {
-                Debug.Log("Up");
-                transform.Translate(Vector3.up * (MirrorMovement ? -1 : 1));
+                int direction = (MirrorMovement ? -1 : 1);
+                transform.Translate(Vector3.forward * direction);
+                StartCoroutine(SetMovementOnCooldown());
             }
             else if (Input.GetAxis("Down") > 0)
             {
-                Debug.Log("Down");
-                transform.Translate(Vector3.down * (MirrorMovement ? -1 : 1));
+                int direction = (MirrorMovement ? -1 : 1);
+                transform.Translate(-Vector3.forward * direction);
+                StartCoroutine(SetMovementOnCooldown());
             }
             else if (Input.GetAxis("Click") > 0)
             {
                 Debug.Log("Click");
             }
+        }
+
+        IEnumerator SetMovementOnCooldown()
+        {
+            moveOnCooldown = true;
+            yield return new WaitForSeconds(MoveCooldown);
+            moveOnCooldown = false;
         }
     }
 }

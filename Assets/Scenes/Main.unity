@@ -130,6 +130,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114628204398254340, guid: a6b930dd3cd539b42856d69a9ea99d89,
+        type: 2}
+      propertyPath: MoveCooldown
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b930dd3cd539b42856d69a9ea99d89, type: 2}
   m_IsPrefabParent: 0
@@ -141,6 +146,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 481121602}
+  - component: {fileID: 481121603}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -167,6 +173,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481121603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481121601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f8c2a7a4631abd42bdd7dffc2f06797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &665980132
 Prefab:
   m_ObjectHideFlags: 0
@@ -525,6 +542,16 @@ Prefab:
     - target: {fileID: 4454948807234768, guid: 7768bed380956c645a2a35ca8f803494, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931344088350292, guid: 7768bed380956c645a2a35ca8f803494,
+        type: 2}
+      propertyPath: MoveCooldown
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931344088350292, guid: 7768bed380956c645a2a35ca8f803494,
+        type: 2}
+      propertyPath: MirrorMovement
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7768bed380956c645a2a35ca8f803494, type: 2}
