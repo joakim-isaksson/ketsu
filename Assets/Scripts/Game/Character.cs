@@ -24,28 +24,9 @@ namespace Ketsu.Game
 
         }
 
-        public void MoveTo(Direction direction, Action callback)
+        public void MoveTo(Vector3 direction, Action callback)
         {
-            Vector3 target;
-            switch (direction)
-            {
-                case Direction.Left:
-                    target = transform.position + Vector3.left;
-                    break;
-                case Direction.Right:
-                    target = transform.position + Vector3.right;
-                    break;
-                case Direction.Up:
-                    target = transform.position + Vector3.forward;
-                    break;
-                case Direction.Down:
-                    target = transform.position + Vector3.back;
-                    break;
-                default:
-                    target = transform.position;
-                    break;
-            }
-
+            Vector3 target = transform.position + direction;
             StartCoroutine(AnimateTo(target, callback));
         }
 

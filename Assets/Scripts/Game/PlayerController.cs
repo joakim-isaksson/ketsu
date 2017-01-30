@@ -7,15 +7,20 @@ namespace Ketsu.Game
 {
     public class PlayerController : MonoBehaviour
     {
-        Character Fox;
-        Character Wolf;
+        [Tooltip("Percentage of the screens height")]
+        public float DragDistance;
+
+        Character fox;
+        Character wolf;
+
+        Vector3 touchStartPos;
 
         int waitingForActions;
 
         void Awake()
         {
-            Fox = GameObject.FindGameObjectWithTag("Fox").GetComponent<Character>();
-            Wolf = GameObject.FindGameObjectWithTag("Wolf").GetComponent<Character>();
+            fox = GameObject.FindGameObjectWithTag("Fox").GetComponent<Character>();
+            wolf = GameObject.FindGameObjectWithTag("Wolf").GetComponent<Character>();
         }
 
         void Start()
@@ -36,37 +41,81 @@ namespace Ketsu.Game
 
         void HandleKeyInputs()
         {
-            if (Input.GetAxis("Left") > 0) MoveAction(Direction.Left);
-            else if (Input.GetAxis("Right") > 0) MoveAction(Direction.Right);
-            else if (Input.GetAxis("Up") > 0) MoveAction(Direction.Up);
-            else if (Input.GetAxis("Down") > 0) MoveAction(Direction.Down);
+            if (Input.GetAxis("Left") > 0) MoveAction(Vector3.left);
+            else if (Input.GetAxis("Right") > 0) MoveAction(Vector3.right);
+            else if (Input.GetAxis("Forward") > 0) MoveAction(Vector3.forward);
+            else if (Input.GetAxis("Back") > 0) MoveAction(Vector3.back);
         }
 
         void HandleTouchInputs()
         {
-            // TODO
+            if (Input.touchCount == 1)
+            {
+                Touch touch = Input.GetTouch(0);
+
+                // Touch started
+                if (touch.phase == TouchPhase.Began)
+                {
+                    Debug.Log("Touch Started");
+                    touchStartPos = touch.position;
+                }
+
+                // Touch ended
+                else if (touch.phase == TouchPhase.Ended)
+                {
+                    Debug.Log("Touch Ended");
+
+                    // Check if it was a swipe
+                    if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
+                    {
+                        // Horiontal swipe
+                        if (Mathf.Abs(touch.position.x - touchStartPos.x) > Mathf.Abs(touch.position.y - touchStartPos.y))
+                        { 
+                            if ((touch.position.x > touchStartPos.x))
+                            {
+                                Debug.Log("Right Swipe");
+                                MoveAction(Vector3.right);
+                            }
+                            else
+                            {
+                                Debug.Log("Left Swipe");
+                                MoveAction(Vector3.left);
+                            }
+                        }
+
+                        // Vertical swipe
+                        else
+                        { 
+                            if (touch.position.y > touchStartPos.y)
+                            {
+                                Debug.Log("Forward Swipe");
+                                MoveAction(Vector3.forward);
+                            }
+                            else
+                            {
+                                Debug.Log("Backward Swipe");
+                                MoveAction(Vector3.back);
+                            }
+                        }
+                    }
+
+                    // It is a tap
+                    else
+                    {
+                        Debug.Log("Tap");
+                    }
+                }
+            }
         }
 
-        void MoveAction(Direction direction)
+        void MoveAction(Vector3 direction)
         {
             if (waitingForActions > 0) return;
 
-            waitingForActions = 2;
-            Fox.MoveTo(direction, delegate { waitingForActions--; });
-            Wolf.MoveTo(Opposite(direction), delegate { waitingForActions--; });
-        }
+            waitingForActions += 2;
 
-        Direction Opposite(Direction direction)
-        {
-            switch (direction)
-            {
-                case Direction.Left: return Direction.Right;
-                case Direction.Right: return Direction.Left;
-                case Direction.Up: return Direction.Down;
-                case Direction.Down: return Direction.Up;
-            }
-
-            return direction;
+            fox.MoveTo(direction, delegate { waitingForActions--; });
+            wolf.MoveTo(-direction, delegate { waitingForActions--; });
         }
     }
 }

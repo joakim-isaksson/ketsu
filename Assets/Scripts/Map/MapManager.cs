@@ -9,7 +9,12 @@ namespace Ketsu.Map
         [HideInInspector]
         public static MapManager Instance = null;
 
-        Tile[][] Tiles;
+        [HideInInspector]
+        public int Width;
+        [HideInInspector]
+        public int Height;
+        [HideInInspector]
+        public List<List<Tile>> Tiles;
 
         /// <summary>
         /// Destroy this singleton instance
@@ -30,7 +35,7 @@ namespace Ketsu.Map
 
         void Start()
         {
-
+            
         }
 
         void Update()
@@ -38,9 +43,26 @@ namespace Ketsu.Map
 
         }
 
-        public Tile GetTile(int x, int y)
+        // TODO:
+        // load data from json file
+        // Instantiate object to scene from prefabs
+        public void LoadMap(string name)
         {
-            return Tiles[x][y];
+            Width = 16;
+            Height = 12;
+
+            Tiles = new List<List<Tile>>();
+            for (int y = 0; y < Height; ++y)
+            {
+                List<Tile> row = new List<Tile>();
+                for (int x = 0; x < Width; ++x)
+                {
+                    row.Add(new Tile());
+                }
+                Tiles.Add(row);
+            }
+
+            Tiles[8][6].Blocked = true;
         }
     }
 }
