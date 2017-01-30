@@ -1,0 +1,16 @@
+//Actual useful excell file with what each tile is actually assgined to will be uploaded in the near future.//
+
+Current Tiles
+
+1-30 -> Ground Tiles
+31 - 80 -> Obstacles
+8 -> Fox Spawner
+9 -> Wolf Spawner
+18 -> Wolf Cave
+19 -> Fox Cave 
+
+Current Layers:
+
+Ground -> Anything above the player
+Obstacles -> Static Items the player collides with
+Objects -> All items, Spawn points, Goal points etc
