@@ -30,13 +30,8 @@ namespace Ketsu.Game
 
         void Update()
         {
-            #if UNITY_STANDALONE
-                HandleKeyInputs();
-            #endif
-
-            #if UNITY_ANDROID || UNITY_IOS
-                HandleTouchInputs();
-            #endif
+            HandleKeyInputs();
+            HandleTouchInputs();
         }
 
         void HandleKeyInputs()
