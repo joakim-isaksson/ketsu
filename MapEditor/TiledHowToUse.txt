@@ -1,13 +1,13 @@
 //Actual useful excell file with what each tile is actually assgined to will be uploaded in the near future.//
 
-Current Tiles
+Current Tiles:
 
 1-30 -> Ground Tiles
 31 - 80 -> Obstacles
-8 -> Fox Spawner
-9 -> Wolf Spawner
-18 -> Wolf Cave
-19 -> Fox Cave 
+80 -> Fox Spawner
+90 -> Wolf Spawner
+181 -> Wolf Cave
+191 -> Fox Cave 
 
 Current Layers:
 
