@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ketsu.Utils.WeightedList
+namespace Ketsu.Utils
 {
     public class WeightedList<T>
     {

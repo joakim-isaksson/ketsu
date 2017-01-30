@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ketsu
+namespace Ketsu.Map
 {
     public class Tile : MonoBehaviour
     {

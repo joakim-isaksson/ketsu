@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Ketsu.Utils.ScreenFaider
+namespace Ketsu.Utils
 {
     public class ScreenFaider : MonoBehaviour
     {
