@@ -51,13 +51,9 @@ public class ParseMap : MonoBehaviour {
 		//read json file
 		string line = null;
 
-		//want to save height, width
-		List<string> save = new List<string> {"\"height", "\"width"};
-
 		//which map to read, make this smarter later
 		StreamReader reader = new StreamReader("./Assets/Maps/ExampleMap.json");
 		while ((line = reader.ReadLine()) != null) {	        	
-	        //parse the variables
 			int start = line.IndexOf(":", 0)+1;
         	int end = line.IndexOf(",", start);
 
@@ -65,15 +61,14 @@ public class ParseMap : MonoBehaviour {
 	        	tileString = line.Substring(start+1, line.LastIndexOf(',')-2-start);
 
 				while ((line = reader.ReadLine()) != null) {
-			        //if we want to check the line or not
-			       	for(int i=0; i<save.Count; i++)
-			       		if(!line.Contains(save[i]))
-			            	continue;
-
 			        //parse the variables
 					start = line.IndexOf(":", 0)+1;
 		        	end = line.IndexOf(",", start);
 
+		        	//layer name
+					if(line.Contains("name"))
+			        	map.layers.Add(line.Substring(start+1, line.LastIndexOf(',')-2-start));
+			   		//height & width for the map
 			        if(line.Contains("\"height") && map.height == 0)
 			        	int.TryParse(line.Substring(start, end - start), out map.height);
 			        if(line.Contains("\"width")){
@@ -84,9 +79,7 @@ public class ParseMap : MonoBehaviour {
 			        	else
 			        		break;
 			        }
-			        if(line.Contains("name"))
-			        	map.layers.Add(line.Substring(start+1, line.LastIndexOf(',')-2-start));
-
+			        
 				}
 
 				//parse the string of tiles to an actual array
@@ -96,8 +89,6 @@ public class ParseMap : MonoBehaviour {
 	        	int.TryParse(line.Substring(start, end - start), out map.amountOfTiles);
 	        
 	    }
-	    Debug.Log(map.amountOfTiles);
-
 	    //instantiate GameObjects via prefabs
 	    for(int i=0; i<map.tiles.Count; i++)
 	    	createObjects(map.layers, map.tiles[i], map.width, map.height);
@@ -118,17 +109,23 @@ public class ParseMap : MonoBehaviour {
 	}
 
 	void createObjects(List<string> layers, int[,] tiles, int x, int y){
-		for(int i=0; i<y; i++){
-			for(int j=0; j<x; j++){
-				if(tiles[i,j]==191)
-					Instantiate(GroundTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==91)
-					Instantiate(RockTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==181)
-					Instantiate(SandTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==81)
-					Instantiate(WaterTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-			}
+		for(int n=0; n<layers.Count; n++){
+			if(layers[n]=="Ground"); //Instantiate ground things
+			if(layers[n]=="Obstacles"); //Instantiate obstacles
+			//Instantiate objects = spawn points etc.
+			if(layers[n]=="Objects")
+				for(int i=0; i<y; i++){
+					for(int j=0; j<x; j++){
+						if(tiles[i,j]==191)
+							Instantiate(GroundTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==91)
+							Instantiate(RockTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==181)
+							Instantiate(SandTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==81)
+							Instantiate(WaterTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+					}
+				}
 		}
 	}
 	#endif
