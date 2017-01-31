@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
+using UnityEditor;
+
 
 /* Map parser executes once when you open the scene,
  * if the scene is new, i.e. has not been initialized before.
@@ -109,6 +111,8 @@ public class ParseMap : MonoBehaviour {
 	}
 
 	void createObjects(List<string> layers, int[,] tiles, int x, int y){
+		GameObject[] prefabs = AssetDatabase.LoadAllAssetsAtPath(Assets/Maps/ParserTestMap/Prefabs);
+
 		for(int n=0; n<layers.Count; n++){
 			if(layers[n]=="Ground"); //Instantiate ground things
 			if(layers[n]=="Obstacles"); //Instantiate obstacles
@@ -117,13 +121,13 @@ public class ParseMap : MonoBehaviour {
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
 						if(tiles[i,j]==191)
-							Instantiate(GroundTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(prefabs[0], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 						if(tiles[i,j]==91)
-							Instantiate(RockTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(prefabs[1], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 						if(tiles[i,j]==181)
-							Instantiate(SandTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(prefabs[2], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 						if(tiles[i,j]==81)
-							Instantiate(WaterTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(prefabs[3], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 					}
 				}
 		}
