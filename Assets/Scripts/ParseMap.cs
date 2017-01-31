@@ -22,7 +22,7 @@ public class ParseMap : MonoBehaviour {
 		public int height;
     	public int width;
     	public int amountOfTiles;
-    	public int[,] tiles;
+    	public List<int[,]> tiles;
     	public List<string> layers;
 	}
 
@@ -45,44 +45,62 @@ public class ParseMap : MonoBehaviour {
 		//init new map
 		Map map = new Map();
 		map.layers = new List<string>();
+		map.tiles = new List<int[,]>();
 		string tileString = "";
 
 		//read json file
 		string line = null;
-		int n = 0;
-		//want to save height, width and the tile numbers
-		List<string> save = new List<string> {"\"height", "\"width", "data"};
+
+		//want to save height, width
+		List<string> save = new List<string> {"\"height", "\"width"};
 
 		//which map to read, make this smarter later
-		StreamReader reader = new StreamReader("./Assets/Maps/ParserTestMap/TestMap.json");
-		while ((line = reader.ReadLine()) != null) {
-	        //if we want to check the line or not
-	       	for(int i=0; i<save.Count; i++)
-	       		if(!line.Contains(save[i]))
-	            	continue;
-	        	
+		StreamReader reader = new StreamReader("./Assets/Maps/ExampleMap.json");
+		while ((line = reader.ReadLine()) != null) {	        	
 	        //parse the variables
 			int start = line.IndexOf(":", 0)+1;
         	int end = line.IndexOf(",", start);
 
-	        if(line.Contains("\"height") && map.height == 0)
-	        	int.TryParse(line.Substring(start, end - start), out map.height);
-	        if(line.Contains("\"width") && map.width == 0)
-	        	int.TryParse(line.Substring(start, end - start), out map.width);
 	        if(line.Contains("data")){
 	        	tileString = line.Substring(start+1, line.LastIndexOf(',')-2-start);
-	        	n++;
+
+				while ((line = reader.ReadLine()) != null) {
+			        //if we want to check the line or not
+			       	for(int i=0; i<save.Count; i++)
+			       		if(!line.Contains(save[i]))
+			            	continue;
+
+			        //parse the variables
+					start = line.IndexOf(":", 0)+1;
+		        	end = line.IndexOf(",", start);
+
+			        if(line.Contains("\"height") && map.height == 0)
+			        	int.TryParse(line.Substring(start, end - start), out map.height);
+			        if(line.Contains("\"width")){
+			        	if(map.width == 0){
+			        		int.TryParse(line.Substring(start, end - start), out map.width);
+			        		break;
+			        	}
+			        	else
+			        		break;
+			        }
+			        if(line.Contains("name"))
+			        	map.layers.Add(line.Substring(start+1, line.LastIndexOf(',')-2-start));
+
+				}
+
+				//parse the string of tiles to an actual array
+			    map.tiles.Add(parseTiles(tileString, map.width, map.height));
 	        }
+	        if(line.Contains("tilecount"))
+	        	int.TryParse(line.Substring(start, end - start), out map.amountOfTiles);
 	        
 	    }
-	    Debug.Log(map.width + " "+ map.height + " " + tileString);
-	    map.amountOfTiles = map.width * map.height;
-
-		//parse the string of tiles to an actual array
-	    map.tiles = parseTiles(tileString, map.width, map.height);
+	    Debug.Log(map.amountOfTiles);
 
 	    //instantiate GameObjects via prefabs
-	    createObjects(map.tiles, map.width, map.height);
+	    for(int i=0; i<map.tiles.Count; i++)
+	    	createObjects(map.layers, map.tiles[i], map.width, map.height);
 
         initialized = true;
 	}
@@ -92,24 +110,23 @@ public class ParseMap : MonoBehaviour {
 		string[] substrings = tileString.Split(',');
 
 		int[,] tiles = new int[y, x];
-		for(int i=0; i<y; i++) {
-			for(int j=0; j<x; j++){
-				int.TryParse(substrings[i*y+j], out tiles[i,j]);
-			}
-		}
+		for(int i=0; i<y; i++)
+			for(int j=0; j<x; j++)
+				int.TryParse(substrings[i*x+j], out tiles[i,j]);
+		
 		return tiles;
 	}
 
-	void createObjects(int[,] tiles, int x, int y){
+	void createObjects(List<string> layers, int[,] tiles, int x, int y){
 		for(int i=0; i<y; i++){
 			for(int j=0; j<x; j++){
-				if(tiles[i,j]==2)
+				if(tiles[i,j]==191)
 					Instantiate(GroundTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==1)
+				if(tiles[i,j]==91)
 					Instantiate(RockTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==3)
+				if(tiles[i,j]==181)
 					Instantiate(SandTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-				if(tiles[i,j]==4)
+				if(tiles[i,j]==81)
 					Instantiate(WaterTest, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 			}
 		}
