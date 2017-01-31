@@ -111,9 +111,11 @@ public class ParseMap : MonoBehaviour {
 	}
 
 	void createObjects(List<string> layers, int[,] tiles, int x, int y){
-		GameObject[] prefabs = AssetDatabase.LoadAllAssetsAtPath(Assets/Maps/ParserTestMap/Prefabs);
+        // FIXME: Got compile error on the line bellow -> edited -> not sure if working anymore as intended (but no compile errors)
+		//GameObject[] prefabs = AssetDatabase.LoadAllAssetsAtPath(Assets/Maps/ParserTestMap/Prefabs);
+        Object[] prefabs = AssetDatabase.LoadAllAssetsAtPath("Assets/Maps/ParserTestMap/Prefabs");
 
-		for(int n=0; n<layers.Count; n++){
+        for (int n=0; n<layers.Count; n++){
 			if(layers[n]=="Ground"); //Instantiate ground things
 			if(layers[n]=="Obstacles"); //Instantiate obstacles
 			//Instantiate objects = spawn points etc.
