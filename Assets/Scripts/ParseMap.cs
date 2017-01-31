@@ -23,6 +23,7 @@ public class ParseMap : MonoBehaviour {
     	public int width;
     	public int amountOfTiles;
     	public int[,] tiles;
+    	public List<string> layers;
 	}
 
 	public Transform GroundTest;
@@ -43,42 +44,46 @@ public class ParseMap : MonoBehaviour {
  
 		//init new map
 		Map map = new Map();
+		map.layers = new List<string>();
 		string tileString = "";
 
 		//read json file
 		string line = null;
 		int n = 0;
 		//want to save height, width and the tile numbers
-		List<int> save = new List<int> {4,5,10};
+		List<string> save = new List<string> {"\"height", "\"width", "data"};
 
 		//which map to read, make this smarter later
 		StreamReader reader = new StreamReader("./Assets/Maps/ParserTestMap/TestMap.json");
 		while ((line = reader.ReadLine()) != null) {
-	        n++;
-
 	        //if we want to check the line or not
-	        if (!save.Contains(n))
-	            continue;
-
+	       	for(int i=0; i<save.Count; i++)
+	       		if(!line.Contains(save[i]))
+	            	continue;
+	        	
 	        //parse the variables
 			int start = line.IndexOf(":", 0)+1;
         	int end = line.IndexOf(",", start);
 
-	        if(line.Contains("height"))
+	        if(line.Contains("\"height") && map.height == 0)
 	        	int.TryParse(line.Substring(start, end - start), out map.height);
-	        if(line.Contains("width"))
+	        if(line.Contains("\"width") && map.width == 0)
 	        	int.TryParse(line.Substring(start, end - start), out map.width);
-	        if(line.Contains("data"))
+	        if(line.Contains("data")){
 	        	tileString = line.Substring(start+1, line.LastIndexOf(',')-2-start);
-
-	        map.amountOfTiles = map.width * map.height;
+	        	n++;
+	        }
+	        
 	    }
+	    Debug.Log(map.width + " "+ map.height + " " + tileString);
+	    map.amountOfTiles = map.width * map.height;
+
 		//parse the string of tiles to an actual array
 	    map.tiles = parseTiles(tileString, map.width, map.height);
 
 	    //instantiate GameObjects via prefabs
 	    createObjects(map.tiles, map.width, map.height);
- 
+
         initialized = true;
 	}
 
