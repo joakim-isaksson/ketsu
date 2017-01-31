@@ -54,7 +54,8 @@ public class ParseMap : MonoBehaviour {
 		string line = null;
 
 		//which map to read, make this smarter later
-		StreamReader reader = new StreamReader("./Assets/Maps/ExampleMap.json");
+		string path = EditorUtility.OpenFilePanel("Map file to load", "Assets/Maps/", "json");
+		StreamReader reader = new StreamReader(path);
 		while ((line = reader.ReadLine()) != null) {	        	
 			int start = line.IndexOf(":", 0)+1;
         	int end = line.IndexOf(",", start);
