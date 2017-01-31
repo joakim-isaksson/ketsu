@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
 using UnityEditor;
-
+using System.Linq;
 
 /* Map parser executes once when you open the scene,
  * if the scene is new, i.e. has not been initialized before.
@@ -111,13 +111,24 @@ public class ParseMap : MonoBehaviour {
 	}
 
 	void createObjects(List<string> layers, int[,] tiles, int x, int y){
-        // FIXME: Got compile error on the line bellow -> edited -> not sure if working anymore as intended (but no compile errors)
-		//GameObject[] prefabs = AssetDatabase.LoadAllAssetsAtPath(Assets/Maps/ParserTestMap/Prefabs);
-        Object[] prefabs = AssetDatabase.LoadAllAssetsAtPath("Assets/Maps/ParserTestMap/Prefabs");
+		//Have to load all prefabs from folder by hand here
+		string[] filenames = Directory.GetFiles("Assets/Maps/ParserTestMap/Prefabs");
+		List<string> files = new List<string>();
 
+		for(int i=0; i<filenames.Length; i++)
+			if(!filenames[i].Contains(".meta"))
+				files.Add(filenames[i]);
+
+		GameObject[] prefabs = new GameObject[files.Count];
+
+		for(int i=0; i<files.Count; i++){
+			prefabs[i] = (GameObject)AssetDatabase.LoadAssetAtPath(files[i],typeof(Object));
+		}
+
+		//Create correct objects
         for (int n=0; n<layers.Count; n++){
-			if(layers[n]=="Ground"); //Instantiate ground things
-			if(layers[n]=="Obstacles"); //Instantiate obstacles
+			//if(layers[n]=="Ground"); //Instantiate ground things
+			//if(layers[n]=="Obstacles"); //Instantiate obstacles
 			//Instantiate objects = spawn points etc.
 			if(layers[n]=="Objects")
 				for(int i=0; i<y; i++){
