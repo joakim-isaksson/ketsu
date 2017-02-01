@@ -6,7 +6,7 @@ namespace Ketsu.Map
 {
     public class Tile : MonoBehaviour
     {
-        public bool Blocked;
+        public TileLayer Layer;
 
         void Awake()
         {

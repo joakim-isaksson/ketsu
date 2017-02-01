@@ -1,4 +1,4 @@
-﻿namespace Ketsu
+﻿namespace Ketsu.Map
 {
     [System.Serializable]
     public struct IntVector2

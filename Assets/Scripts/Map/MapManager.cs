@@ -42,27 +42,14 @@ namespace Ketsu.Map
         {
 
         }
-
-        // TODO:
-        // load data from json file
-        // Instantiate object to scene from prefabs
+        
         public void LoadMap(string name)
         {
-            Width = 16;
-            Height = 12;
+            // TODO:
+            // load data from json file instead of fetching from the scene
+            // Instantiate object to scene from prefabs
 
-            Tiles = new List<List<Tile>>();
-            for (int y = 0; y < Height; ++y)
-            {
-                List<Tile> row = new List<Tile>();
-                for (int x = 0; x < Width; ++x)
-                {
-                    row.Add(new Tile());
-                }
-                Tiles.Add(row);
-            }
 
-            Tiles[8][6].Blocked = true;
         }
     }
 }

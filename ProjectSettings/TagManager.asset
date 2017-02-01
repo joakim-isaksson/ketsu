@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Fox
   - Wolf
+  - Tile
+  - Obstacle
   layers:
   - Default
   - TransparentFX
