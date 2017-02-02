@@ -11,21 +11,17 @@ namespace Ketsu.Game
         public float MovementTime;
 
 		public CharacterType Type;
-
-        [HideInInspector]
-        public IntVector2 Position;
+        
+        MapObject mapObject;
 
         void Awake()
         {
-
+            mapObject = GetComponent<MapObject>();
         }
 
         void Start()
         {
-            Position = new IntVector2(
-                (int)Mathf.Round(transform.position.x),
-                (int)Mathf.Round(transform.position.z)
-            );
+
         }
 
         void Update()
@@ -35,7 +31,7 @@ namespace Ketsu.Game
 
         public void MoveTo(Direction direction, Action callback)
         {
-            IntVector2 newPos = Position.Add(direction.ToIntVector2());
+            IntVector2 newPos = mapObject.Position.Add(direction.ToIntVector2());
 
             if (!CanMoveTo(newPos))
             {
@@ -43,7 +39,7 @@ namespace Ketsu.Game
                 return;
             }
 
-            Position = newPos;
+            mapObject.Position = newPos;
 
             StartCoroutine(AnimateTo(newPos, callback));
         }
@@ -52,11 +48,20 @@ namespace Ketsu.Game
 		{
             Map map = MapManager.Instance.CurrentMap;
 
+            // Boarders
             if (target.X < 0 || target.X >= map.Width || target.Y < 0 || target.Y >= map.Height) return false;
 
+            // Other objects
+            foreach (MapObject obj in map.Objects)
+            {
+                if (target.Equals(obj.Position)) return false;
+            }
+
+            // Obstacles
             MapObject obstacle = map.Obstacles[target.Y][target.X];
-            if (obstacle == null || !obstacle.Blocking) return true;
-            else return false;
+            if (obstacle != null && obstacle.Blocking) return false;
+
+            return true;
 		}
 
         IEnumerator AnimateTo(IntVector2 target, Action callback)

@@ -34,6 +34,8 @@ namespace Ketsu.Game
             }
 
             Objects = new List<MapObject>();
+            Objects.Add(GameObject.FindGameObjectWithTag("Fox").GetComponent<MapObject>());
+            Objects.Add(GameObject.FindGameObjectWithTag("Wolf").GetComponent<MapObject>());
         }
     }
 }
