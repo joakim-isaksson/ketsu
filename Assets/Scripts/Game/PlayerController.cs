@@ -36,10 +36,10 @@ namespace Ketsu.Game
 
         void HandleKeyInputs()
         {
-            if (Input.GetAxis("Left") > 0) MoveAction(Vector3.left);
-            else if (Input.GetAxis("Right") > 0) MoveAction(Vector3.right);
-            else if (Input.GetAxis("Forward") > 0) MoveAction(Vector3.forward);
-            else if (Input.GetAxis("Back") > 0) MoveAction(Vector3.back);
+            if (Input.GetAxis("Left") > 0) MoveAction(Direction.Left);
+            else if (Input.GetAxis("Right") > 0) MoveAction(Direction.Right);
+            else if (Input.GetAxis("Forward") > 0) MoveAction(Direction.Forward);
+            else if (Input.GetAxis("Back") > 0) MoveAction(Direction.Back);
         }
 
         void HandleTouchInputs()
@@ -69,12 +69,12 @@ namespace Ketsu.Game
                             if ((touch.position.x > touchStartPos.x))
                             {
                                 Debug.Log("Right Swipe");
-                                MoveAction(Vector3.right);
+                                MoveAction(Direction.Right);
                             }
                             else
                             {
                                 Debug.Log("Left Swipe");
-                                MoveAction(Vector3.left);
+                                MoveAction(Direction.Left);
                             }
                         }
 
@@ -84,12 +84,12 @@ namespace Ketsu.Game
                             if (touch.position.y > touchStartPos.y)
                             {
                                 Debug.Log("Forward Swipe");
-                                MoveAction(Vector3.forward);
+                                MoveAction(Direction.Forward);
                             }
                             else
                             {
                                 Debug.Log("Backward Swipe");
-                                MoveAction(Vector3.back);
+                                MoveAction(Direction.Back);
                             }
                         }
                     }
@@ -103,14 +103,14 @@ namespace Ketsu.Game
             }
         }
 
-        void MoveAction(Vector3 direction)
+        void MoveAction(Direction direction)
         {
             if (waitingForActions > 0) return;
 
             waitingForActions += 2;
 
             fox.MoveTo(direction, delegate { waitingForActions--; });
-            wolf.MoveTo(-direction, delegate { waitingForActions--; });
+            wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
         }
     }
 }

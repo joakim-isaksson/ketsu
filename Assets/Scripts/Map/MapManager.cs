@@ -9,12 +9,7 @@ namespace Ketsu.Map
         [HideInInspector]
         public static MapManager Instance = null;
 
-        [HideInInspector]
-        public int Width;
-        [HideInInspector]
-        public int Height;
-        [HideInInspector]
-        public List<List<Tile>> Tiles;
+		public Map CurrentMap;
 
         /// <summary>
         /// Destroy this singleton instance

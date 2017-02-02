@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ketsu.Map;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,13 @@ namespace Ketsu.Game
     {
         public float MovementTime;
 
+		public CharacterType Type;
+
+		[HideInInspector]
+		public IntVector2 Position;
+
+		MapManager map;
+
         void Awake()
         {
 
@@ -16,7 +24,7 @@ namespace Ketsu.Game
 
         void Start()
         {
-
+			map = MapManager.Instance;
         }
 
         void Update()
@@ -24,15 +32,24 @@ namespace Ketsu.Game
 
         }
 
-        public void MoveTo(Vector3 direction, Action callback)
+        public void MoveTo(Direction direction, Action callback)
         {
-            Vector3 target = transform.position + direction;
-            StartCoroutine(AnimateTo(target, callback));
+			if (!CanMoveTo(direction)) return;
+            StartCoroutine(AnimateTo(direction, callback));
         }
 
-        IEnumerator AnimateTo(Vector3 target, Action callback)
+		bool CanMoveTo(Direction direction)
+		{
+
+			map.CurrentMap.Obstacles.
+            return false;
+		}
+
+        IEnumerator AnimateTo(Direction direction, Action callback)
         {
-            Vector3 start = transform.position;
+			Vector3 start = transform.position;
+			Vector3 target = start + direction.ToVector3();
+            
             float timePassed = 0.0f;
             do
             {
