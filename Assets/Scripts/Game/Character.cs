@@ -49,7 +49,7 @@ namespace Ketsu.Game
 
             if (target.X < 0 || target.X >= map.Width || target.Y < 0 || target.Y >= map.Height) return false;
 
-            MapObject obstacle = map.Obstacles[Position.Y][Position.X];
+            MapObject obstacle = map.Obstacles[target.Y][target.X];
             if (obstacle == null || !obstacle.Blocking) return true;
             else return false;
 		}
