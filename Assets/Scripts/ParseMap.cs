@@ -28,11 +28,6 @@ public class ParseMap : MonoBehaviour {
     	public List<string> layers;
 	}
 
-	public Transform GroundTest;
-	public Transform WaterTest;
-	public Transform SandTest;
-	public Transform RockTest;
-
 	#if UNITY_EDITOR
     [SerializeField]
     private bool initialized = false;
@@ -53,7 +48,7 @@ public class ParseMap : MonoBehaviour {
 		//read json file
 		string line = null;
 
-		//which map to read, make this smarter later
+		//which map to read, ask user
 		string path = EditorUtility.OpenFilePanel("Map file to load", "Assets/Maps/", "json");
 		StreamReader reader = new StreamReader(path);
 		while ((line = reader.ReadLine()) != null) {	        	
@@ -111,9 +106,8 @@ public class ParseMap : MonoBehaviour {
 		return tiles;
 	}
 
-	void createObjects(List<string> layers, int[,] tiles, int x, int y){
-		//Have to load all prefabs from folder by hand here
-		string[] filenames = Directory.GetFiles("Assets/Maps/ParserTestMap/Prefabs");
+	GameObject[] loadPrefabsFromFolder(string directory){
+		string[] filenames = Directory.GetFiles(directory);
 		List<string> files = new List<string>();
 
 		for(int i=0; i<filenames.Length; i++)
@@ -126,12 +120,22 @@ public class ParseMap : MonoBehaviour {
 			prefabs[i] = (GameObject)AssetDatabase.LoadAssetAtPath(files[i],typeof(Object));
 		}
 
+		return prefabs;
+	}
+
+	void createObjects(List<string> layers, int[,] tiles, int x, int y){
 		//Create correct objects
         for (int n=0; n<layers.Count; n++){
 			//if(layers[n]=="Ground"); //Instantiate ground things
 			//if(layers[n]=="Obstacles"); //Instantiate obstacles
 			//Instantiate objects = spawn points etc.
-			if(layers[n]=="Objects")
+			if(layers[n]=="Objects"){
+				string path = EditorUtility.OpenFolderPanel("Prefabs for Objects", "Assets/Maps", "");
+				path = path.Substring(path.IndexOf("Assets"));
+				//NOTE TO SELF: you cannot choose prefab folder by asking the user
+				//must use relative paths! Just have to add the correct folders here.
+				GameObject[] prefabs = loadPrefabsFromFolder(path);
+
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
 						if(tiles[i,j]==191)
@@ -144,6 +148,7 @@ public class ParseMap : MonoBehaviour {
 							Instantiate(prefabs[3], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 					}
 				}
+			}
 		}
 	}
 	#endif
