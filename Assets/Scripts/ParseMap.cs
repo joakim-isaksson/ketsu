@@ -130,7 +130,8 @@ public class ParseMap : MonoBehaviour {
 			//if(layers[n]=="Obstacles"); //Instantiate obstacles
 			//Instantiate objects = spawn points etc.
 			if(layers[n]=="Objects"){
-				//todo: load from correct folders
+				//NOTE TO SELF: you cannot choose prefab folder by asking the user
+				//must use relative paths! Just have to add the correct folders here.
 				GameObject[] prefabs = loadPrefabsFromFolder("Assets/Maps/ParserTestMap/Prefabs");
 
 				for(int i=0; i<y; i++){
