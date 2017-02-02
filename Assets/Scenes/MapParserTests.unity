@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -181,10 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc2ad39f2e8a4f24b10dae5a81b839c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GroundTest: {fileID: 4117230440218932, guid: 1ca8c85ab59ac4d0a98d002b36cca777, type: 2}
-  WaterTest: {fileID: 4117230440218932, guid: af41ab10df86c43bfad3675104625d9e, type: 2}
-  SandTest: {fileID: 4117230440218932, guid: 40369ee6c2a064933889248ab2f437ad, type: 2}
-  RockTest: {fileID: 4117230440218932, guid: 70044790582fe4407a50f14bc3815970, type: 2}
   initialized: 1
 --- !u!4 &734462106
 Transform:

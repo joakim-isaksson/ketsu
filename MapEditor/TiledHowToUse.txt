@@ -1,5 +1,7 @@
 //Actual useful excell file with what each tile is actually assgined to will be uploaded in the near future.//
 
+Assets Document with Tiles: https://docs.google.com/spreadsheets/d/1HL_wA7xRrjY0HtpZuoeXX--2DQj_rN1shxvJbb92X4k/edit?usp=sharing  
+
 Current Tiles:
 
 1-30 -> Ground Tiles
@@ -8,9 +10,11 @@ Current Tiles:
 90 -> Wolf Spawner
 181 -> Wolf Cave
 191 -> Fox Cave 
+221 - 240 -> Used to mark solution routes and other design infowe might need (for now at least)
 
 Current Layers:
 
 Ground -> Anything above the player
 Obstacles -> Static Items the player collides with
 Objects -> All items, Spawn points, Goal points etc
+Solution -> Solution path (optimal?) for both characters. Should not affect the way the map is made in Unity (for now at least)
