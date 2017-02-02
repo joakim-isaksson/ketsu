@@ -48,7 +48,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1868651075800536}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58678592f6da72a4490d567f3f31fa3a, type: 3}
+  m_Script: {fileID: 11500000, guid: c4a1070df44ccbd4fb85889b0e10b112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   StartingMap: TestMap01

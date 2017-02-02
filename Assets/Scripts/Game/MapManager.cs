@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Ketsu.Map
+namespace Ketsu.Game
 {
     public class MapManager : MonoBehaviour
     {
@@ -44,7 +44,12 @@ namespace Ketsu.Map
             // load data from json file instead of fetching from the scene
             // Instantiate object to scene from prefabs
 
-
+            CurrentMap = new Map(16, 12);
+            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Obstacle"))
+            {
+                MapObject obstacle = obj.GetComponent<MapObject>();
+                CurrentMap.Obstacles[obstacle.Position.Y][obstacle.Position.X] = obstacle;
+            }
         }
     }
 }

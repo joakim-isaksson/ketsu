@@ -1,8 +1,14 @@
-﻿namespace Ketsu.Map
+﻿namespace Ketsu.Utils
 {
     [System.Serializable]
-    public struct IntVector2
+    public class IntVector2
     {
+        public static readonly IntVector2 Zero = new IntVector2(0, 0);
+        public static readonly IntVector2 Left = new IntVector2(-1, 0);
+        public static readonly IntVector2 Right = new IntVector2(1, 0);
+        public static readonly IntVector2 Forward = new IntVector2(0, 1);
+        public static readonly IntVector2 Back = new IntVector2(0, -1);
+
         public readonly int X;
         public readonly int Y;
 
@@ -10,6 +16,11 @@
         {
             X = x;
             Y = y;
+        }
+
+        public IntVector2 Add(IntVector2 vector)
+        {
+            return new IntVector2(X + vector.X, Y + vector.Y);
         }
 
         public override bool Equals(object obj)

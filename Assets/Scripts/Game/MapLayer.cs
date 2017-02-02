@@ -1,4 +1,4 @@
-﻿namespace Ketsu.Map
+﻿namespace Ketsu.Game
 {
     public enum MapLayer
     {
