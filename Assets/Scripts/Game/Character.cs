@@ -37,7 +37,12 @@ namespace Ketsu.Game
         {
             IntVector2 newPos = Position.Add(direction.ToIntVector2());
 
-            if (!CanMoveTo(newPos)) return;
+            if (!CanMoveTo(newPos))
+            {
+                callback();
+                return;
+            }
+
             Position = newPos;
 
             StartCoroutine(AnimateTo(newPos, callback));
