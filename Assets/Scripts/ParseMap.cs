@@ -21,6 +21,16 @@ using System.Linq;
 
 [ExecuteInEditMode]
 public class ParseMap : MonoBehaviour {
+	public Transform Grass;
+	public Transform Water;
+	public Transform Fence;
+	public Transform Tree;
+	public Transform FoxSpawn;
+	public Transform WolfSpawn;
+	public Transform FoxCave;
+	public Transform WolfCave;
+	public Transform Flower;
+
 	//map structure to hold information
 	public class Map {
 		public int height;
@@ -126,28 +136,64 @@ public class ParseMap : MonoBehaviour {
 	}
 
 	void createObjects(List<string> layers, int[,] tiles, int x, int y){
+		//string pathGround = EditorUtility.OpenFolderPanel("Prefabs for Ground Tiles", "Assets/Maps", "");
+		//string pathObstacles = EditorUtility.OpenFolderPanel("Prefabs for Obstacle Tiles", "Assets/Maps", "");
+		//string pathObjects = EditorUtility.OpenFolderPanel("Prefabs for Object Tiles", "Assets/Maps", "");
+		//pathGround = pathGround.Substring(pathGround.IndexOf("Assets"));
+		//pathObstacles = pathObstacles.Substring(pathObstacles.IndexOf("Assets"));
+		//pathObjects = pathObjects.Substring(pathObjects.IndexOf("Assets"));
+
 		//Create correct objects
         for (int n=0; n<layers.Count; n++){
-			//if(layers[n]=="Ground"); //Instantiate ground things
-			//if(layers[n]=="Obstacles"); //Instantiate obstacles
-			//Instantiate objects = spawn points etc.
-			if(layers[n]=="Objects"){
-				string path = EditorUtility.OpenFolderPanel("Prefabs for Objects", "Assets/Maps", "");
-				path = path.Substring(path.IndexOf("Assets"));
-				//NOTE TO SELF: you cannot choose prefab folder by asking the user
-				//must use relative paths! Just have to add the correct folders here.
-				GameObject[] prefabs = loadPrefabsFromFolder(path);
+        	//todo:
+        	//-prefabit nollaan, tarvittaessa muutetaan parenttia
+        	//-tyhjät gameobjectit parenteiksi
+        	//-muuta dictionaryksi
+
+        	//Instantiate ground things
+			if(layers[n]=="Ground"){
+				//GameObject[] prefabs = loadPrefabsFromFolder(pathGround);
+				for(int i=0; i<y; i++){
+					for(int j=0; j<x; j++){
+						if(tiles[i,j]==1)
+							Instantiate(Grass, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==3)
+							Instantiate(Flower, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==5)
+							Instantiate(Water, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+					}
+				}
+			} 
+			//Instantiate obstacles
+			if(layers[n]=="Obstacles"){
+				//GameObject[] prefabs = loadPrefabsFromFolder(pathObstacles);
 
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(tiles[i,j]==191)
-							Instantiate(prefabs[0], new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==91)
-							Instantiate(prefabs[1], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==41)
+							Instantiate(Fence, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==42)
+							Instantiate(Tree, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+					}
+				}
+
+			}
+			//Instantiate objects = spawn points etc.
+			if(layers[n]=="Objects"){
+				//NOTE TO SELF: you cannot choose prefab folder by asking the user
+				//must use relative paths! Just have to add the correct folders here.
+				//GameObject[] prefabs = loadPrefabsFromFolder(pathObjects);
+
+				for(int i=0; i<y; i++){
+					for(int j=0; j<x; j++){
+						if(tiles[i,j]==182)
+							Instantiate(WolfCave, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(tiles[i,j]==82)
+							Instantiate(WolfSpawn, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 						if(tiles[i,j]==181)
-							Instantiate(prefabs[2], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(FoxCave, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 						if(tiles[i,j]==81)
-							Instantiate(prefabs[3], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							Instantiate(FoxSpawn, new Vector3(-j+x-1, 0, i), Quaternion.identity);
 					}
 				}
 			}
