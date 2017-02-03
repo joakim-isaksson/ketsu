@@ -11,17 +11,22 @@ namespace Ketsu.Game
         [Tooltip("Percentage of the screens height")]
         public float DragDistance;
 
-        Character fox;
-        Character wolf;
+        [HideInInspector]
+        public Character Fox;
+        [HideInInspector]
+        public Character Wolf;
+        [HideInInspector]
+        public Character Ketsu;
 
+        Character targetCharacter;
         Vector3 touchStartPos;
-
-        int waitingForActions;
+        int waitingForCallbacks;
 
         void Awake()
         {
-            fox = GameObject.FindGameObjectWithTag("Fox").GetComponent<Character>();
-            wolf = GameObject.FindGameObjectWithTag("Wolf").GetComponent<Character>();
+            Fox = GameObject.FindGameObjectWithTag("Fox").GetComponent<Character>();
+            Wolf = GameObject.FindGameObjectWithTag("Wolf").GetComponent<Character>();
+            targetCharacter = Fox;
         }
 
         void Start()
@@ -37,10 +42,15 @@ namespace Ketsu.Game
 
         void HandleKeyInputs()
         {
-            if (Input.GetAxis("Left") > 0) MoveAction(Direction.Left);
-            else if (Input.GetAxis("Right") > 0) MoveAction(Direction.Right);
-            else if (Input.GetAxis("Forward") > 0) MoveAction(Direction.Forward);
-            else if (Input.GetAxis("Back") > 0) MoveAction(Direction.Back);
+            if (Input.GetButtonDown("Left")) MoveAction(Direction.Left);
+            else if (Input.GetButtonDown("Right")) MoveAction(Direction.Right);
+            else if (Input.GetButtonDown("Forward")) MoveAction(Direction.Forward);
+            else if (Input.GetButtonDown("Back")) MoveAction(Direction.Back);
+            else if (Input.GetMouseButtonDown(0))
+            {
+                // TODO: not working
+                CharacterSelectionAction(Camera.main.ScreenPointToRay(Input.mousePosition).origin);
+            }
         }
 
         void HandleTouchInputs()
@@ -61,44 +71,72 @@ namespace Ketsu.Game
                 {
                     Debug.Log("Touch Ended");
 
-                    // Check if it was a swipe
+                    // SWIPE
                     if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
                     {
-                        // Horiontal swipe
                         if (Mathf.Abs(touch.position.x - touchStartPos.x) > Mathf.Abs(touch.position.y - touchStartPos.y))
                         { 
                             if ((touch.position.x > touchStartPos.x))
                             {
-                                Debug.Log("Right Swipe");
+                                Debug.Log("Swipe Right");
                                 MoveAction(Direction.Right);
                             }
                             else
                             {
-                                Debug.Log("Left Swipe");
+                                Debug.Log("Swipe Left");
                                 MoveAction(Direction.Left);
                             }
                         }
-
-                        // Vertical swipe
                         else
                         { 
                             if (touch.position.y > touchStartPos.y)
                             {
-                                Debug.Log("Forward Swipe");
+                                Debug.Log("Swipe Forward");
                                 MoveAction(Direction.Forward);
                             }
                             else
                             {
-                                Debug.Log("Backward Swipe");
+                                Debug.Log("Swipe Back");
                                 MoveAction(Direction.Back);
                             }
                         }
                     }
 
-                    // It is a tap
+                    // TAP
                     else
                     {
-                        Debug.Log("Tap");
+                        // Character selection
+                        if (!CharacterSelectionAction(touchStartPos))
+                        {
+                            // Move action
+                            if (Mathf.Abs(targetCharacter.transform.position.x - touchStartPos.x) <
+                                Mathf.Abs(targetCharacter.transform.position.y - touchStartPos.y))
+                            {
+                                if (touchStartPos.x > targetCharacter.transform.position.x)
+                                {
+                                    Debug.Log("Tap Right");
+                                    MoveAction(Direction.Right);
+                                }
+                                else
+                                {
+                                    Debug.Log("Tap Left");
+                                    MoveAction(Direction.Left);
+                                }
+                            }
+                            else
+                            {
+                                if (touchStartPos.y > targetCharacter.transform.position.y)
+                                {
+                                    Debug.Log("Tap Forward");
+                                    MoveAction(Direction.Forward);
+                                }
+                                else
+                                {
+                                    Debug.Log("Tap Back");
+                                    MoveAction(Direction.Back);
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -106,12 +144,54 @@ namespace Ketsu.Game
 
         void MoveAction(Direction direction)
         {
-            if (waitingForActions > 0) return;
+            if (waitingForCallbacks > 0) return;
 
-            waitingForActions += 2;
+            switch(targetCharacter.Type)
+            {
+                case CharacterType.Fox:
+                    waitingForCallbacks += 2;
+                    Fox.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    Wolf.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
+                    break;
+                case CharacterType.Wolf:
+                    waitingForCallbacks += 2;
+                    Fox.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
+                    Wolf.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    break;
+                case CharacterType.Ketsu:
+                    waitingForCallbacks += 1;
+                    Ketsu.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    break;
+                default:
+                    break;
+            }
+        }
 
-            fox.MoveTo(direction, delegate { waitingForActions--; });
-            wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+        // Return true if character selected
+        bool CharacterSelectionAction(Vector3 targetPos)
+        {
+            IntVector2 selectedTilePos = new IntVector2(
+                (int)Mathf.Round(targetPos.x),
+                (int)Mathf.Round(targetPos.z)
+            );
+
+            Debug.Log(selectedTilePos);
+
+            // Character selection
+            if (Fox.Position.Equals(selectedTilePos))
+            {
+                Debug.Log("Fox Selected");
+                targetCharacter = Fox;
+                return true;
+            }
+            else if (Wolf.Position.Equals(selectedTilePos))
+            {
+                Debug.Log("Wolf Selected");
+                targetCharacter = Wolf;
+                return true;
+            }
+
+            return false;
         }
     }
 }

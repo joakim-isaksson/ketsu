@@ -6,32 +6,15 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-    public class Character : MonoBehaviour
+    public class Character : MapObject
     {
         public float MovementTime;
 
 		public CharacterType Type;
-        
-        MapObject mapObject;
-
-        void Awake()
-        {
-            mapObject = GetComponent<MapObject>();
-        }
-
-        void Start()
-        {
-
-        }
-
-        void Update()
-        {
-
-        }
 
         public void MoveTo(Direction direction, Action callback)
         {
-            IntVector2 newPos = mapObject.Position.Add(direction.ToIntVector2());
+            IntVector2 newPos = Position.Add(direction.ToIntVector2());
 
             if (!CanMoveTo(newPos))
             {
@@ -39,7 +22,7 @@ namespace Ketsu.Game
                 return;
             }
 
-            mapObject.Position = newPos;
+            Position = newPos;
 
             StartCoroutine(AnimateTo(newPos, callback));
         }

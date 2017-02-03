@@ -4,7 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
 using System.Text.RegularExpressions;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System.Linq;
 
 /* Map parser executes once when you open the scene,
