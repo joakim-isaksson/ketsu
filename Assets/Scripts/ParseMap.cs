@@ -30,8 +30,6 @@ public class ParseMap : MonoBehaviour {
     	public int amountOfTiles;
     	//dictionary of <layer name, layer data>
     	public Dictionary<string, int[,]> tiles;
-    	//public List<int[,]> tiles;
-    	//public List<string> layers;
 	}
 
 	#if UNITY_EDITOR
@@ -47,8 +45,6 @@ public class ParseMap : MonoBehaviour {
  
 		//init new map
 		Map map = new Map();
-		//map.layers = new List<string>();
-		//map.tiles = new List<int[,]>();
 		map.tiles = new Dictionary<string, int[,]>();
 		string tileString = "";
 		string layername = "";
@@ -138,10 +134,6 @@ public class ParseMap : MonoBehaviour {
 		Dictionary<int, GameObject> prefabs = loadPrefabsFromFile();
 		//Create correct objects
         foreach(KeyValuePair<string, int[,]> entry in tiles){
-        	//todo:
-        	//-prefabit nollaan, tarvittaessa muutetaan parenttia
-        	//-tyhjät gameobjectit parenteiksi
-        	//-muuta dictionaryksi
 
         	//Instantiate ground things
 			if(entry.Key=="Ground"){
