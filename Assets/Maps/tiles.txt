@@ -1,0 +1,13 @@
+1 GreenGrass
+2 YellowGrass
+3 FlowerGrass
+4 PathGrass
+5 Water
+41 Fence
+42 Tree
+43 Rock
+44 Bush
+81 Fox
+82 Wolf
+181 FoxCave
+182 WolfCave

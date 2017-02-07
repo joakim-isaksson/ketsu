@@ -11,31 +11,25 @@ using System.Linq;
  * if the scene is new, i.e. has not been initialized before.
  * 
  * If the scene has been initialized before, the easiest way to run 
- * Map parser again is to duplicate the GameObject holding it.
+ * Map parser again is to uncheck Initialized and duplicate the 
+ * GameObject holding the Map parser.
  *
  * The Map file used must be in .json format,
- * and for now is only specified in code, will be changed later.
+ * and is loaded based on user's selection.
  */
 
 [ExecuteInEditMode]
 public class ParseMap : MonoBehaviour {
-	public Transform Grass;
-	public Transform Water;
-	public Transform Fence;
-	public Transform Tree;
-	public Transform FoxSpawn;
-	public Transform WolfSpawn;
-	public Transform FoxCave;
-	public Transform WolfCave;
-	public Transform Flower;
 
 	//map structure to hold information
 	public class Map {
 		public int height;
     	public int width;
     	public int amountOfTiles;
-    	public List<int[,]> tiles;
-    	public List<string> layers;
+    	//dictionary of <layer name, layer data>
+    	public Dictionary<string, int[,]> tiles;
+    	//public List<int[,]> tiles;
+    	//public List<string> layers;
 	}
 
 	#if UNITY_EDITOR
@@ -51,9 +45,12 @@ public class ParseMap : MonoBehaviour {
  
 		//init new map
 		Map map = new Map();
-		map.layers = new List<string>();
-		map.tiles = new List<int[,]>();
+		//map.layers = new List<string>();
+		//map.tiles = new List<int[,]>();
+		map.tiles = new Dictionary<string, int[,]>();
 		string tileString = "";
+		string layername = "";
+		
 
 		//read json file
 		string line = null;
@@ -75,7 +72,7 @@ public class ParseMap : MonoBehaviour {
 
 		        	//layer name
 					if(line.Contains("name"))
-			        	map.layers.Add(line.Substring(start+1, line.LastIndexOf(',')-2-start));
+			        	layername = line.Substring(start+1, line.LastIndexOf(',')-2-start);
 			   		//height & width for the map
 			        if(line.Contains("\"height") && map.height == 0)
 			        	int.TryParse(line.Substring(start, end - start), out map.height);
@@ -91,15 +88,15 @@ public class ParseMap : MonoBehaviour {
 				}
 
 				//parse the string of tiles to an actual array
-			    map.tiles.Add(parseTiles(tileString, map.width, map.height));
+			    int[,] layerdata = parseTiles(tileString, map.width, map.height);
+				map.tiles.Add(layername, layerdata);
 	        }
 	        if(line.Contains("tilecount"))
 	        	int.TryParse(line.Substring(start, end - start), out map.amountOfTiles);
 	        
 	    }
 	    //instantiate GameObjects via prefabs
-	    for(int i=0; i<map.tiles.Count; i++)
-	    	createObjects(map.layers, map.tiles[i], map.width, map.height);
+	    createObjects(map.tiles, map.width, map.height);
 
         initialized = true;
 	}
@@ -116,82 +113,86 @@ public class ParseMap : MonoBehaviour {
 		return tiles;
 	}
 
-	GameObject[] loadPrefabsFromFolder(string directory){
-		string[] filenames = Directory.GetFiles(directory);
-		List<string> files = new List<string>();
+	Dictionary<int, GameObject> loadPrefabsFromFile(){
+		Dictionary<int, GameObject> prefabs = new Dictionary<int, GameObject>();
 
-		for(int i=0; i<filenames.Length; i++)
-			if(!filenames[i].Contains(".meta"))
-				files.Add(filenames[i]);
+		StreamReader reader = new StreamReader("Assets/Maps/tiles.txt");
+		string line = null;
 
-		GameObject[] prefabs = new GameObject[files.Count];
+		while ((line = reader.ReadLine()) != null) {
+			int n = 0;
+			int.TryParse(line.Substring(0, line.IndexOf(' ')), out n);
+			string name = line.Substring(line.LastIndexOf(' ')+1);
 
-		for(int i=0; i<files.Count; i++){
-			prefabs[i] = (GameObject)AssetDatabase.LoadAssetAtPath(files[i],typeof(Object));
-		}
+			GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath("Assets/Maps/Prefabs/"+name+".prefab", typeof(Object));
+			prefabs.Add(n, prefab);
+		}	
 
 		return prefabs;
 	}
 
-	void createObjects(List<string> layers, int[,] tiles, int x, int y){
-		//string pathGround = EditorUtility.OpenFolderPanel("Prefabs for Ground Tiles", "Assets/Maps", "");
-		//string pathObstacles = EditorUtility.OpenFolderPanel("Prefabs for Obstacle Tiles", "Assets/Maps", "");
-		//string pathObjects = EditorUtility.OpenFolderPanel("Prefabs for Object Tiles", "Assets/Maps", "");
-		//pathGround = pathGround.Substring(pathGround.IndexOf("Assets"));
-		//pathObstacles = pathObstacles.Substring(pathObstacles.IndexOf("Assets"));
-		//pathObjects = pathObjects.Substring(pathObjects.IndexOf("Assets"));
+	void createObjects(Dictionary<string, int[,]> tiles, int x, int y){
 
+		Dictionary<int, GameObject> prefabs = loadPrefabsFromFile();
 		//Create correct objects
-        for (int n=0; n<layers.Count; n++){
+        foreach(KeyValuePair<string, int[,]> entry in tiles){
         	//todo:
         	//-prefabit nollaan, tarvittaessa muutetaan parenttia
         	//-tyhjät gameobjectit parenteiksi
         	//-muuta dictionaryksi
 
         	//Instantiate ground things
-			if(layers[n]=="Ground"){
-				//GameObject[] prefabs = loadPrefabsFromFolder(pathGround);
+			if(entry.Key=="Ground"){
+				GameObject GroundParent = new GameObject();
+				GroundParent.name = "Ground";
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(tiles[i,j]==1)
-							Instantiate(Grass, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==3)
-							Instantiate(Flower, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==5)
-							Instantiate(Water, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						for(int k=1; k<=30; k++)
+							if(prefabs.ContainsKey(k) && entry.Value[i,j]==k){
+								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								item.transform.parent = GroundParent.transform;
+							}	
 					}
 				}
-			} 
+			}
+			 
 			//Instantiate obstacles
-			if(layers[n]=="Obstacles"){
-				//GameObject[] prefabs = loadPrefabsFromFolder(pathObstacles);
-
+			if(entry.Key=="Obstacles"){
+				GameObject ObstacleParent = new GameObject();
+				ObstacleParent.name = "Obstacles";
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(tiles[i,j]==41)
-							Instantiate(Fence, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==42)
-							Instantiate(Tree, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						for(int k=31; k<=80; k++)
+							if(prefabs.ContainsKey(k) && entry.Value[i,j]==k){
+								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								item.transform.parent = ObstacleParent.transform;
+							}
 					}
 				}
 
 			}
 			//Instantiate objects = spawn points etc.
-			if(layers[n]=="Objects"){
-				//NOTE TO SELF: you cannot choose prefab folder by asking the user
-				//must use relative paths! Just have to add the correct folders here.
-				//GameObject[] prefabs = loadPrefabsFromFolder(pathObjects);
-
+			if(entry.Key=="Objects"){
+				GameObject ObjectParent = new GameObject();
+				ObjectParent.name = "Objects";
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(tiles[i,j]==182)
-							Instantiate(WolfCave, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==82)
-							Instantiate(WolfSpawn, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==181)
-							Instantiate(FoxCave, new Vector3(-j+x-1, 0, i), Quaternion.identity);
-						if(tiles[i,j]==81)
-							Instantiate(FoxSpawn, new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(prefabs.ContainsKey(81) && entry.Value[i,j] == 81){
+							GameObject item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item.transform.parent = ObjectParent.transform;
+						}
+						if(prefabs.ContainsKey(82) && entry.Value[i,j] == 82){
+							GameObject item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item.transform.parent = ObjectParent.transform;
+						}
+						if(prefabs.ContainsKey(181) && entry.Value[i,j] == 181){
+							GameObject item = Instantiate(prefabs[181], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item.transform.parent = ObjectParent.transform;
+						}
+						if(prefabs.ContainsKey(182) && entry.Value[i,j] == 182){
+							GameObject item = Instantiate(prefabs[182], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item.transform.parent = ObjectParent.transform;
+						}
 					}
 				}
 			}
