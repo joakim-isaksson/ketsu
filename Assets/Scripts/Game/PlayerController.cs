@@ -48,8 +48,12 @@ namespace Ketsu.Game
             else if (Input.GetButtonDown("Back")) MoveAction(Direction.Back);
             else if (Input.GetMouseButtonDown(0))
             {
-                // TODO: not working
-                CharacterSelectionAction(Camera.main.ScreenPointToRay(Input.mousePosition).origin);
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, Camera.main.farClipPlane))
+                {
+                    TapAction(hit.point);
+                }
             }
         }
 
@@ -105,38 +109,43 @@ namespace Ketsu.Game
                     // TAP
                     else
                     {
-                        // Character selection
-                        if (!CharacterSelectionAction(touchStartPos))
-                        {
-                            // Move action
-                            if (Mathf.Abs(targetCharacter.transform.position.x - touchStartPos.x) <
-                                Mathf.Abs(targetCharacter.transform.position.y - touchStartPos.y))
-                            {
-                                if (touchStartPos.x > targetCharacter.transform.position.x)
-                                {
-                                    Debug.Log("Tap Right");
-                                    MoveAction(Direction.Right);
-                                }
-                                else
-                                {
-                                    Debug.Log("Tap Left");
-                                    MoveAction(Direction.Left);
-                                }
-                            }
-                            else
-                            {
-                                if (touchStartPos.y > targetCharacter.transform.position.y)
-                                {
-                                    Debug.Log("Tap Forward");
-                                    MoveAction(Direction.Forward);
-                                }
-                                else
-                                {
-                                    Debug.Log("Tap Back");
-                                    MoveAction(Direction.Back);
-                                }
-                            }
-                        }
+                        TapAction(Camera.main.ScreenToWorldPoint(touchStartPos));
+                    }
+                }
+            }
+        }
+
+        void TapAction(Vector3 tapPoint)
+        {
+            // Character selection
+            if (!CharacterSelectionAction(tapPoint))
+            {
+                // Move action
+                if (Mathf.Abs(targetCharacter.transform.position.x - tapPoint.x) <
+                    Mathf.Abs(targetCharacter.transform.position.y - tapPoint.y))
+                {
+                    if (tapPoint.x > targetCharacter.transform.position.x)
+                    {
+                        Debug.Log("Tap Right");
+                        MoveAction(Direction.Right);
+                    }
+                    else
+                    {
+                        Debug.Log("Tap Left");
+                        MoveAction(Direction.Left);
+                    }
+                }
+                else
+                {
+                    if (tapPoint.y > targetCharacter.transform.position.y)
+                    {
+                        Debug.Log("Tap Forward");
+                        MoveAction(Direction.Forward);
+                    }
+                    else
+                    {
+                        Debug.Log("Tap Back");
+                        MoveAction(Direction.Back);
                     }
                 }
             }
@@ -175,7 +184,7 @@ namespace Ketsu.Game
                 (int)Mathf.Round(targetPos.z)
             );
 
-            Debug.Log(selectedTilePos);
+            Debug.Log("Selected Tile Pos: " + selectedTilePos);
 
             // Character selection
             if (Fox.Position.Equals(selectedTilePos))
