@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -6928,7 +6928,7 @@ Transform:
   - {fileID: 574820189}
   - {fileID: 1715626625}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &308961914
 GameObject:
@@ -9588,7 +9588,7 @@ Transform:
   - {fileID: 687277189}
   - {fileID: 1610376889}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &442570303
 GameObject:
@@ -34676,7 +34676,7 @@ Transform:
   - {fileID: 1902083400}
   - {fileID: 1869355435}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690387144
 GameObject:
@@ -38769,116 +38769,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846603494}
   m_Mesh: {fileID: 4300000, guid: f8741670c0fc30346a46c8d2ff884a4c, type: 3}
---- !u!1001 &1849137896
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.8327475
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 4.4448147
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.7336054
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: initialized
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Grass
-      value: 
-      objectReference: {fileID: 4073447698859138, guid: dede9224e5b4fc046ad8d38664776e52,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Water
-      value: 
-      objectReference: {fileID: 4650962766533534, guid: 885159d3b2d50ea48bb581b18ddf357a,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Fence
-      value: 
-      objectReference: {fileID: 4095507760839568, guid: d70a7281d6c253e408a2815324e86c5f,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Tree
-      value: 
-      objectReference: {fileID: 4263549348517762, guid: 13ee59dd9a3fa7a42b3055f9d663568b,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: FoxSpawn
-      value: 
-      objectReference: {fileID: 4934633432812128, guid: a6b930dd3cd539b42856d69a9ea99d89,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: WolfSpawn
-      value: 
-      objectReference: {fileID: 4454948807234768, guid: 7768bed380956c645a2a35ca8f803494,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: FoxCave
-      value: 
-      objectReference: {fileID: 4644878245267464, guid: 36a56513cf2a91b41b87ffc95c59d055,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: WolfCave
-      value: 
-      objectReference: {fileID: 4085779067661764, guid: 8de33334ab58fbe42b57f16744232777,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Flower
-      value: 
-      objectReference: {fileID: 4061339107619356, guid: a287183357b93084a86fd34331d3ff02,
-        type: 2}
-    - target: {fileID: 1799193799802834, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_Name
-      value: MapParser (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1851510193
 GameObject:
   m_ObjectHideFlags: 0
@@ -44707,7 +44597,7 @@ Prefab:
     - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
         type: 2}
       propertyPath: initialized
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
         type: 2}
