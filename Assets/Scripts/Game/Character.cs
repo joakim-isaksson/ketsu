@@ -68,8 +68,11 @@ namespace Ketsu.Game
             do
             {
                 yield return null;
+
                 timePassed += Time.deltaTime;
-                transform.position = Vector3.Lerp(start, end, Mathf.Min(timePassed / MovementTime, 1.0f));
+                float progress = Mathf.Min(timePassed / MovementTime, 1.0f);
+                transform.position = Vector3.Lerp(start, end, progress);
+
             } while (timePassed < MovementTime);
 
             callback();

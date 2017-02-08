@@ -15,20 +15,20 @@ namespace Ketsu.Game
 
         void Awake()
         {
-
-        }
-
-        void Start()
-        {
             Position = new IntVector2(
                 (int)Mathf.Round(transform.position.x),
                 (int)Mathf.Round(transform.position.z)
             );
         }
 
+        void Start()
+        {
+            
+        }
+
 		void Update()
 		{
 
-		}
+        }
 	}
 }
