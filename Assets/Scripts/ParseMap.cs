@@ -29,7 +29,7 @@ public class ParseMap : MonoBehaviour {
     	public int width;
     	public int amountOfTiles;
     	//dictionary of <layer name, layer data>
-    	public Dictionary<string, int[,]> tiles;
+    	public Dictionary<string, long[,]> tiles;
 	}
 
 	#if UNITY_EDITOR
@@ -45,7 +45,7 @@ public class ParseMap : MonoBehaviour {
  
 		//init new map
 		Map map = new Map();
-		map.tiles = new Dictionary<string, int[,]>();
+		map.tiles = new Dictionary<string, long[,]>();
 		string tileString = "";
 		string layername = "";
 		
@@ -86,7 +86,7 @@ public class ParseMap : MonoBehaviour {
 				}
 
 				//parse the string of tiles to an actual array
-			    int[,] layerdata = parseTiles(tileString, map.width, map.height);
+			    long[,] layerdata = parseTiles(tileString, map.width, map.height);
 				map.tiles.Add(layername, layerdata);
 	        }
 	        if(line.Contains("tilecount"))
@@ -99,14 +99,14 @@ public class ParseMap : MonoBehaviour {
         initialized = true;
 	}
 
-	int[,] parseTiles(string tileString, int x, int y){
+	long[,] parseTiles(string tileString, int x, int y){
 		tileString = Regex.Replace(tileString, @"\s+", "");
 		string[] substrings = tileString.Split(',');
 
-		int[,] tiles = new int[y, x];
+		long[,] tiles = new long[y, x];
 		for(int i=0; i<y; i++)
 			for(int j=0; j<x; j++)
-				int.TryParse(substrings[i*x+j], out tiles[i,j]);
+				long.TryParse(substrings[i*x+j], out tiles[i,j]);
 		
 		return tiles;
 	}
@@ -129,11 +129,15 @@ public class ParseMap : MonoBehaviour {
 		return prefabs;
 	}
 
-	void createObjects(Dictionary<string, int[,]> tiles, int x, int y){
+	void createObjects(Dictionary<string, long[,]> tiles, int x, int y){
 
 		Dictionary<int, GameObject> prefabs = loadPrefabsFromFile();
+		//Rotations 2684354560 == 90deg (0xA), 3221225472 == 180 deg (0xC), 1610612736 == 270 (0x6)
+		long deg90 = 2684354560;
+		long deg180 = 3221225472;
+		long deg270 = 1610612736;
 		//Create correct objects
-        foreach(KeyValuePair<string, int[,]> entry in tiles){
+        foreach(KeyValuePair<string, long[,]> entry in tiles){
 
         	//Instantiate ground things
 			if(entry.Key=="Ground"){
@@ -169,22 +173,51 @@ public class ParseMap : MonoBehaviour {
 			if(entry.Key=="Objects"){
 				GameObject ObjectParent = new GameObject();
 				ObjectParent.name = "Objects";
+				GameObject item;
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(prefabs.ContainsKey(81) && entry.Value[i,j] == 81){
-							GameObject item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
-							item.transform.parent = ObjectParent.transform;
+						if(prefabs.ContainsKey(81)){
+							if(entry.Value[i,j] == 81){
+								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 81+deg90){
+								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -90, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 81+deg180){
+								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -180, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 81+deg270){
+								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -270, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
 						}
-						if(prefabs.ContainsKey(82) && entry.Value[i,j] == 82){
-							GameObject item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.identity);
-							item.transform.parent = ObjectParent.transform;
+						if(prefabs.ContainsKey(82)){
+							if(entry.Value[i,j] == 82){
+								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 82+deg90){
+								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -90, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 82+deg180){
+								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -180, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[i,j] == 82+deg270){
+								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -270, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
 						}
 						if(prefabs.ContainsKey(181) && entry.Value[i,j] == 181){
-							GameObject item = Instantiate(prefabs[181], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item = Instantiate(prefabs[181], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 							item.transform.parent = ObjectParent.transform;
 						}
 						if(prefabs.ContainsKey(182) && entry.Value[i,j] == 182){
-							GameObject item = Instantiate(prefabs[182], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+							item = Instantiate(prefabs[182], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 							item.transform.parent = ObjectParent.transform;
 						}
 					}
