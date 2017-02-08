@@ -26,6 +26,8 @@ namespace Ketsu.Game
             if (Instance == null) Instance = this;
             else if (!Instance.Equals(this)) Destroy(gameObject);
             DontDestroyOnLoad(gameObject);
+
+            LoadMap("TestMap");
         }
 
         void Start()
@@ -46,21 +48,23 @@ namespace Ketsu.Game
             // TODO: Use size data from the json file
             CurrentMap = new Map(16, 12);
 
-            // Initialize the map object data structure
-            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Ground"))
+            // Find map objects and add them to the data structure
+            foreach (MapObject obj in FindObjectsOfType<MapObject>())
             {
-                MapObject ground = obj.GetComponent<MapObject>();
-                CurrentMap.Obstacles[ground.Position.X][ground.Position.Y] = ground;
-            }
-            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Obstacle"))
-            {
-                MapObject obstacle = obj.GetComponent<MapObject>();
-                CurrentMap.Obstacles[obstacle.Position.X][obstacle.Position.Y] = obstacle;
-            }
-            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Object"))
-            {
-                MapObject mapObject = obj.GetComponent<MapObject>();
-                CurrentMap.Objects.Add(mapObject);
+
+                switch (obj.GetComponent<MapObject>().Layer)
+                {
+                    case MapLayer.Ground:
+                        CurrentMap.GroundLayer[obj.Position.X][obj.Position.Y] = obj;
+                        break;
+                    case MapLayer.Object:
+                        CurrentMap.ObjectLayer[obj.Position.X][obj.Position.Y] = obj;
+                        break;
+                    case MapLayer.Dynamic:
+                        CurrentMap.DynamicLayer.Add(obj);
+                        break;
+
+                }
             }
         }
     }

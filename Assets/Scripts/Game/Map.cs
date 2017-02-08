@@ -10,9 +10,9 @@ namespace Ketsu.Game
 		public int Width;
 
         // MapObject[width][height]
-		public MapObject[][] Ground;
-		public MapObject[][] Obstacles;
-		public List<MapObject> Objects;
+		public MapObject[][] GroundLayer;
+		public MapObject[][] ObjectLayer;
+		public List<MapObject> DynamicLayer;
 
         /// <summary>
         /// Initialize and empty map with specific width and height
@@ -24,15 +24,15 @@ namespace Ketsu.Game
             Width = width;
             Height = height;
 
-            Ground = new MapObject[Width][];
-            Obstacles = new MapObject[Width][];
+            GroundLayer = new MapObject[Width][];
+            ObjectLayer = new MapObject[Width][];
             for (int x = 0; x < Width; ++x)
             {
-                Ground[x] = new MapObject[Height];
-                Obstacles[x] = new MapObject[Height];
+                GroundLayer[x] = new MapObject[Height];
+                ObjectLayer[x] = new MapObject[Height];
             }
 
-            Objects = new List<MapObject>();
+            DynamicLayer = new List<MapObject>();
         }
     }
 }

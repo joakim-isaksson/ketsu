@@ -8,6 +8,7 @@ namespace Ketsu.Game
 	public class MapObject : MonoBehaviour
 	{
         public MapObjectType Type = MapObjectType.Undefined;
+        public MapLayer Layer = MapLayer.Dynamic;
 
         [HideInInspector]
         public IntVector2 Position;

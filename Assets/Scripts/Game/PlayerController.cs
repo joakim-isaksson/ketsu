@@ -24,10 +24,16 @@ namespace Ketsu.Game
 
         void Awake()
         {
+            
+        }
+
+        void Start()
+        {
             // Find characters to control
-            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("MapObject"))
+            foreach (MapObject obj in MapManager.Instance.CurrentMap.DynamicLayer)
             {
-                switch(obj.GetComponent<MapObject>().Type)
+
+                switch (obj.GetComponent<MapObject>().Type)
                 {
                     case MapObjectType.Fox:
                         Fox = obj.GetComponent<Character>();
@@ -43,11 +49,6 @@ namespace Ketsu.Game
 
             // Set starting character
             targetCharacter = Fox;
-        }
-
-        void Start()
-        {
-
         }
 
         void Update()

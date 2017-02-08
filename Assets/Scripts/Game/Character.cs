@@ -32,33 +32,22 @@ namespace Ketsu.Game
             // Restricted by Boarders
             if (target.X < 0 || target.X >= map.Width || target.Y < 0 || target.Y >= map.Height) return false;
 
-            // Blocked by Objects
-            foreach (MapObject obj in map.Objects)
+            // Blocked by Static Objects
+            MapObject sObj = map.ObjectLayer[target.X][target.Y];
+            if (sObj != null) return false;
+
+            // Blocked by Dynamic Objects
+            foreach (MapObject dObj in map.DynamicLayer)
             {
-                if (target.Equals(obj.Position))
+                if (target.Equals(dObj.Position))
                 {
-                    switch (obj.Type)
+                    switch (dObj.Type)
                     {
                         case MapObjectType.Wolf:
                         case MapObjectType.Fox:
-                        case MapObjectType.FoxEnd:
-                        case MapObjectType.WolfEnd:
                             return false;
                     }
                 }
-            }
-
-            // Blocked by Obstacles
-            MapObject obstacle = map.Obstacles[target.Y][target.X];
-            if (obstacle == null) return false;
-            switch(obstacle.Type)
-            {
-                case MapObjectType.Bush:
-                case MapObjectType.Fence:
-                case MapObjectType.Rock:
-                case MapObjectType.Tree:
-                case MapObjectType.Water:
-                    return false;
             }
 
             // Nothing stops the moving

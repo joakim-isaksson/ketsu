@@ -2,6 +2,6 @@
 {
     public enum MapLayer
     {
-        Ground, Obstacle, Object
+        Dynamic, Ground, Object
     }
 }
