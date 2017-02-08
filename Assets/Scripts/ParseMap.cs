@@ -162,7 +162,7 @@ public class ParseMap : MonoBehaviour {
 					for(int j=0; j<x; j++){
 						for(int k=31; k<=80; k++)
 							if(prefabs.ContainsKey(k) && entry.Value[i,j]==k){
-								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, Random.Range(-360.0f, 0.0f), 0));
 								item.transform.parent = ObstacleParent.transform;
 							}
 					}
