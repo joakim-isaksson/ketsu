@@ -51,7 +51,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,82
 </data>
  </layer>
- <layer name="Solution" width="16" height="12">
+ <layer name="Solution" width="16" height="12" visible="0">
   <data encoding="csv">
 222,222,222,0,0,0,0,0,0,0,0,0,0,0,0,0,
 222,0,0,0,0,232,232,232,232,232,232,232,232,232,232,232,
