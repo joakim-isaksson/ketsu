@@ -13,16 +13,19 @@ namespace Ketsu.Game
         public void MoveTo(Direction direction, Action callback)
         {
             IntVector2 newPos = Position.Add(direction.ToIntVector2());
+            
+            if (CanMoveTo(newPos))
+            {
+                AkSoundEngine.PostEvent("Move_" + Type.ToString(), gameObject);
 
-            if (!CanMoveTo(newPos))
+                Position = newPos;
+                StartCoroutine(AnimateTo(newPos, callback));
+            }
+            else
             {
                 callback();
                 return;
             }
-
-            Position = newPos;
-
-            StartCoroutine(AnimateTo(newPos, callback));
         }
 
 		bool CanMoveTo(IntVector2 target)
@@ -58,7 +61,9 @@ namespace Ketsu.Game
         {
 			Vector3 start = transform.position;
             Vector3 end = new Vector3(target.X, 0, target.Y);
-            
+
+            transform.LookAt(end);
+
             float timePassed = 0.0f;
             do
             {
