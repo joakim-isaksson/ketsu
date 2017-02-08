@@ -10,8 +10,6 @@ namespace Ketsu.Game
     {
         public float MovementTime;
 
-		public CharacterType Type;
-
         public void MoveTo(Direction direction, Action callback)
         {
             IntVector2 newPos = Position.Add(direction.ToIntVector2());
