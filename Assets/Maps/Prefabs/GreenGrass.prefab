@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4073447698859138}
   - component: {fileID: 114612353263687054}
-  - component: {fileID: 65350712053658786}
   m_Layer: 0
   m_Name: GreenGrass
   m_TagString: Tile
@@ -38,6 +37,7 @@ GameObject:
   - component: {fileID: 4411626165607420}
   - component: {fileID: 33043226655428426}
   - component: {fileID: 23200005765869574}
+  - component: {fileID: 65261414801833786}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -139,12 +139,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1389902880936044}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65350712053658786
+--- !u!65 &65261414801833786
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1302641364760866}
+  m_GameObject: {fileID: 1389902880936044}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
