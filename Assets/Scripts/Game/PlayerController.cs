@@ -25,7 +25,7 @@ namespace Ketsu.Game
         void Awake()
         {
             // Find characters to control
-            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Object"))
+            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("MapObject"))
             {
                 switch(obj.GetComponent<MapObject>().Type)
                 {

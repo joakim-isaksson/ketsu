@@ -9,8 +9,6 @@ namespace Ketsu.Game
 	{
         public MapObjectType Type = MapObjectType.Undefined;
 
-        public bool Blocking;
-
         [HideInInspector]
         public IntVector2 Position;
 

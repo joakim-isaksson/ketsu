@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4499541827503902}
   - component: {fileID: 114467616133965978}
-  - component: {fileID: 114742655722272740}
   m_Layer: 0
   m_Name: Fox
-  m_TagString: Fox
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,18 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8912a29189d441e458bbf47f6913c12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Blocking: 0
+  Type: 1
   MovementTime: 0.1
-  Type: 0
---- !u!114 &114742655722272740
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1132147270716104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Blocking: 1

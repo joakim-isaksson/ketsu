@@ -21,8 +21,8 @@ namespace Ketsu.Game
         /// <param name="height"></param>
         public Map(int width, int height)
         {
-            Height = height;
             Width = width;
+            Height = height;
 
             Ground = new MapObject[Width][];
             Obstacles = new MapObject[Width][];

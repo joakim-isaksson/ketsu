@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 64410795982066446}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Obstacle
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
