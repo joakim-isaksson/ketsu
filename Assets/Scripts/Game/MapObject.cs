@@ -7,7 +7,9 @@ namespace Ketsu.Game
 {
 	public class MapObject : MonoBehaviour
 	{
-		public bool Blocking;
+        public MapObjectType Type = MapObjectType.Undefined;
+
+        public bool Blocking;
 
         [HideInInspector]
         public IntVector2 Position;

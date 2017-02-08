@@ -24,8 +24,24 @@ namespace Ketsu.Game
 
         void Awake()
         {
-            Fox = GameObject.FindGameObjectWithTag("Fox").GetComponent<Character>();
-            Wolf = GameObject.FindGameObjectWithTag("Wolf").GetComponent<Character>();
+            // Find characters to control
+            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Object"))
+            {
+                switch(obj.GetComponent<MapObject>().Type)
+                {
+                    case MapObjectType.Fox:
+                        Fox = obj.GetComponent<Character>();
+                        break;
+                    case MapObjectType.Wolf:
+                        Wolf = obj.GetComponent<Character>();
+                        break;
+                    case MapObjectType.Ketsu:
+                        Ketsu = obj.GetComponent<Character>();
+                        break;
+                }
+            }
+
+            // Set starting character
             targetCharacter = Fox;
         }
 
@@ -157,17 +173,17 @@ namespace Ketsu.Game
 
             switch(targetCharacter.Type)
             {
-                case CharacterType.Fox:
+                case MapObjectType.Fox:
                     waitingForCallbacks += 2;
                     Fox.MoveTo(direction, delegate { waitingForCallbacks--; });
                     Wolf.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
                     break;
-                case CharacterType.Wolf:
+                case MapObjectType.Wolf:
                     waitingForCallbacks += 2;
                     Fox.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
                     Wolf.MoveTo(direction, delegate { waitingForCallbacks--; });
                     break;
-                case CharacterType.Ketsu:
+                case MapObjectType.Ketsu:
                     waitingForCallbacks += 1;
                     Ketsu.MoveTo(direction, delegate { waitingForCallbacks--; });
                     break;
@@ -184,7 +200,7 @@ namespace Ketsu.Game
                 (int)Mathf.Round(targetPos.z)
             );
 
-            Debug.Log("Selected Tile Pos: " + selectedTilePos);
+            Debug.Log("Selected Tile: " + selectedTilePos);
 
             // Character selection
             if (Fox.Position.Equals(selectedTilePos))

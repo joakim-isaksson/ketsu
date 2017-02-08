@@ -9,33 +9,30 @@ namespace Ketsu.Game
 		public int Height;
 		public int Width;
 
-		public List<List<MapObject>> Ground;
-		public List<List<MapObject>> Obstacles;
+        // MapObject[width][height]
+		public MapObject[][] Ground;
+		public MapObject[][] Obstacles;
 		public List<MapObject> Objects;
 
+        /// <summary>
+        /// Initialize and empty map with specific width and height
+        /// </summary>
+        /// <param name="width"></param>
+        /// <param name="height"></param>
         public Map(int width, int height)
         {
             Height = height;
             Width = width;
 
-            Ground = new List<List<MapObject>>();
-            Obstacles = new List<List<MapObject>>();
-            for (int y = 0; y < Height; ++y)
+            Ground = new MapObject[Width][];
+            Obstacles = new MapObject[Width][];
+            for (int x = 0; x < Width; ++x)
             {
-                List<MapObject> groundRow = new List<MapObject>();
-                List<MapObject> obstaclesRow = new List<MapObject>();
-                for (int x = 0; x < Width; ++x)
-                {
-                    groundRow.Add(null);
-                    obstaclesRow.Add(null);
-                }
-                Ground.Add(groundRow);
-                Obstacles.Add(obstaclesRow);
+                Ground[x] = new MapObject[Height];
+                Obstacles[x] = new MapObject[Height];
             }
 
             Objects = new List<MapObject>();
-            Objects.Add(GameObject.FindGameObjectWithTag("Fox").GetComponent<MapObject>());
-            Objects.Add(GameObject.FindGameObjectWithTag("Wolf").GetComponent<MapObject>());
         }
     }
 }

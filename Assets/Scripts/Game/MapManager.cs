@@ -41,14 +41,26 @@ namespace Ketsu.Game
         public void LoadMap(string name)
         {
             // TODO:
-            // load data from json file instead of fetching from the scene
-            // Instantiate object to scene from prefabs
+            // Load map from <name>.json file from hardcoded resource path
 
+            // TODO: Use size data from the json file
             CurrentMap = new Map(16, 12);
-            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Obstacle"))
+
+            // Initialize the map object data structure
+            foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Ground"))
+            {
+                MapObject ground = obj.GetComponent<MapObject>();
+                CurrentMap.Obstacles[ground.Position.X][ground.Position.Y] = ground;
+            }
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Obstacle"))
             {
                 MapObject obstacle = obj.GetComponent<MapObject>();
-                CurrentMap.Obstacles[obstacle.Position.Y][obstacle.Position.X] = obstacle;
+                CurrentMap.Obstacles[obstacle.Position.X][obstacle.Position.Y] = obstacle;
+            }
+            foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Object"))
+            {
+                MapObject mapObject = obj.GetComponent<MapObject>();
+                CurrentMap.Objects.Add(mapObject);
             }
         }
     }
