@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 121370152}
   - component: {fileID: 121370151}
   - component: {fileID: 121370150}
+  - component: {fileID: 121370153}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -595,6 +596,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &121370153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 121370149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b07f30161ae6a4ea80c2c5723935a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 8f634bc0a4e4d3488c01af61bbe67e11
+  bankName: Main_SoundBank
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!1001 &122795345
 Prefab:
   m_ObjectHideFlags: 0

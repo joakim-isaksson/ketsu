@@ -12,29 +12,48 @@ namespace Ketsu.Game
 
         public void MoveTo(Direction direction, Action callback)
         {
-            IntVector2 newPos = Position.Add(direction.ToIntVector2());
+            IntVector2 targetPos = Position.Add(direction.ToIntVector2());
 
-            if (!CanMoveTo(newPos))
+            // Check boarder restrictions
+            Map map = MapManager.Instance.CurrentMap;
+            if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height) return;
+
+            // Check blocking and move if nothing is blocking
+            MapObject blocking = BlockingObject(targetPos);
+            if (blocking == null)
             {
+                AkSoundEngine.PostEvent("Move_" + Type.ToString(), gameObject);
+
+                Position = targetPos;
+                StartCoroutine(AnimateTo(targetPos, callback));
+            }
+
+            // Turn to Ketsu
+            else if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
+            {
+                // TODO
+                AkSoundEngine.PostEvent("Transform_ToKetsu", gameObject);
+
                 callback();
                 return;
             }
 
-            Position = newPos;
-
-            StartCoroutine(AnimateTo(newPos, callback));
+            // Do not move (something is blocking the way)
+            else
+            {
+                callback();
+                return;
+            }
         }
 
-		bool CanMoveTo(IntVector2 target)
+        // Returns blocking object or null if nothing is blocking in the target area
+		MapObject BlockingObject(IntVector2 target)
 		{
             Map map = MapManager.Instance.CurrentMap;
 
-            // Restricted by Boarders
-            if (target.X < 0 || target.X >= map.Width || target.Y < 0 || target.Y >= map.Height) return false;
-
             // Blocked by Static Objects
             MapObject sObj = map.ObjectLayer[target.X][target.Y];
-            if (sObj != null) return false;
+            if (sObj != null) return sObj;
 
             // Blocked by Dynamic Objects
             foreach (MapObject dObj in map.DynamicLayer)
@@ -45,26 +64,31 @@ namespace Ketsu.Game
                     {
                         case MapObjectType.Wolf:
                         case MapObjectType.Fox:
-                            return false;
+                            return dObj;
                     }
                 }
             }
 
             // Nothing stops the moving
-            return true;
+            return null;
 		}
 
         IEnumerator AnimateTo(IntVector2 target, Action callback)
         {
 			Vector3 start = transform.position;
             Vector3 end = new Vector3(target.X, 0, target.Y);
-            
+
+            transform.LookAt(end);
+
             float timePassed = 0.0f;
             do
             {
                 yield return null;
+
                 timePassed += Time.deltaTime;
-                transform.position = Vector3.Lerp(start, end, Mathf.Min(timePassed / MovementTime, 1.0f));
+                float progress = Mathf.Min(timePassed / MovementTime, 1.0f);
+                transform.position = Vector3.Lerp(start, end, progress);
+
             } while (timePassed < MovementTime);
 
             callback();
