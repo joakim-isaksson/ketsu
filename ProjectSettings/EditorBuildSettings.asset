@@ -4,4 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/LevelSelection.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstProto.unity
+  - enabled: 1
+    path: Assets/Scenes/SecondMap.unity
+  - enabled: 1
+    path: Assets/Scenes/ThirdMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FourthMap.unity
