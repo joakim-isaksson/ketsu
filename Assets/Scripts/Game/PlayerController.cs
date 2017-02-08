@@ -19,7 +19,7 @@ namespace Ketsu.Game
         public Character Ketsu;
 
         Character targetCharacter;
-        Vector3 touchStartPos;
+        Vector2 touchStartPos;
         int waitingForCallbacks;
 
         void Awake()
@@ -139,7 +139,7 @@ namespace Ketsu.Game
             {
                 // Move action
                 if (Mathf.Abs(targetCharacter.transform.position.x - tapPoint.x) <
-                    Mathf.Abs(targetCharacter.transform.position.y - tapPoint.y))
+                    Mathf.Abs(targetCharacter.transform.position.z - tapPoint.z))
                 {
                     if (tapPoint.x > targetCharacter.transform.position.x)
                     {
@@ -154,7 +154,7 @@ namespace Ketsu.Game
                 }
                 else
                 {
-                    if (tapPoint.y > targetCharacter.transform.position.y)
+                    if (tapPoint.z > targetCharacter.transform.position.z)
                     {
                         Debug.Log("Tap Forward");
                         MoveAction(Direction.Forward);
