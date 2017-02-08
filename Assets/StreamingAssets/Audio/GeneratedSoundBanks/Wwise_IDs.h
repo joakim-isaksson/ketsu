@@ -11,6 +11,18 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
+        static const AkUniqueID COLLECT_HAM = 1005641002U;
+        static const AkUniqueID COLLECT_SHEEP = 30088657U;
+        static const AkUniqueID MOVE_FOX = 2492116432U;
+        static const AkUniqueID MOVE_KETSU = 3609283987U;
+        static const AkUniqueID MOVE_WOLF = 4249145201U;
+        static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
+        static const AkUniqueID TRANSFORM_TOKETSU = 1052828255U;
+    } // namespace EVENTS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
