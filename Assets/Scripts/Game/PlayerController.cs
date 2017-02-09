@@ -80,50 +80,31 @@ namespace Ketsu.Game
             {
                 Touch touch = Input.GetTouch(0);
 
-                // Touch started
+                // Touch Started
                 if (touch.phase == TouchPhase.Began)
                 {
-                    Debug.Log("Touch Started");
                     touchStartPos = touch.position;
                 }
 
-                // Touch ended
+                // Touch Ended
                 else if (touch.phase == TouchPhase.Ended)
                 {
-                    Debug.Log("Touch Ended");
-
-                    // SWIPE
+                    // It's a SWIPE
                     if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
                     {
                         if (Mathf.Abs(touch.position.x - touchStartPos.x) > Mathf.Abs(touch.position.y - touchStartPos.y))
                         { 
-                            if ((touch.position.x > touchStartPos.x))
-                            {
-                                Debug.Log("Swipe Right");
-                                MoveAction(Direction.Right);
-                            }
-                            else
-                            {
-                                Debug.Log("Swipe Left");
-                                MoveAction(Direction.Left);
-                            }
+                            if ((touch.position.x > touchStartPos.x)) MoveAction(Direction.Right);
+                            else MoveAction(Direction.Left);
                         }
                         else
                         { 
-                            if (touch.position.y > touchStartPos.y)
-                            {
-                                Debug.Log("Swipe Forward");
-                                MoveAction(Direction.Forward);
-                            }
-                            else
-                            {
-                                Debug.Log("Swipe Back");
-                                MoveAction(Direction.Back);
-                            }
+                            if (touch.position.y < touchStartPos.y) MoveAction(Direction.Forward);
+                            else MoveAction(Direction.Back);
                         }
                     }
 
-                    // TAP
+                    // It's a TAP
                     else
                     {
                         TapAction(Camera.main.ScreenToWorldPoint(touchStartPos));
@@ -134,36 +115,27 @@ namespace Ketsu.Game
 
         void TapAction(Vector3 tapPoint)
         {
+            IntVector2 selectedTilePos = new IntVector2(
+                (int)Mathf.Round(tapPoint.x),
+                (int)Mathf.Round(tapPoint.z)
+            );
+
+            Debug.Log("Tap Point: " + tapPoint + ", Selected Tile: " + selectedTilePos + ", Target Char Point: " + targetCharacter.transform.position);
+
             // Character selection
-            if (!CharacterSelectionAction(tapPoint))
+            if (!CharacterSelectionAction(selectedTilePos))
             {
                 // Move action
-                if (Mathf.Abs(targetCharacter.transform.position.x - tapPoint.x) <
-                    Mathf.Abs(targetCharacter.transform.position.z - tapPoint.z))
+                if (Mathf.Abs(targetCharacter.Position.X - selectedTilePos.X) >
+                    Mathf.Abs(targetCharacter.Position.Y - selectedTilePos.Y))
                 {
-                    if (tapPoint.x > targetCharacter.transform.position.x)
-                    {
-                        Debug.Log("Tap Right");
-                        MoveAction(Direction.Right);
-                    }
-                    else
-                    {
-                        Debug.Log("Tap Left");
-                        MoveAction(Direction.Left);
-                    }
+                    if (targetCharacter.Position.X < selectedTilePos.X) MoveAction(Direction.Right);
+                    else MoveAction(Direction.Left);
                 }
                 else
                 {
-                    if (tapPoint.z > targetCharacter.transform.position.z)
-                    {
-                        Debug.Log("Tap Forward");
-                        MoveAction(Direction.Forward);
-                    }
-                    else
-                    {
-                        Debug.Log("Tap Back");
-                        MoveAction(Direction.Back);
-                    }
+                    if (targetCharacter.Position.Y < selectedTilePos.Y) MoveAction(Direction.Forward);
+                    else MoveAction(Direction.Back);
                 }
             }
         }
@@ -171,6 +143,8 @@ namespace Ketsu.Game
         void MoveAction(Direction direction)
         {
             if (waitingForCallbacks > 0) return;
+
+            Debug.Log("Move Action: " + direction.ToString());
 
             switch(targetCharacter.Type)
             {
@@ -194,15 +168,8 @@ namespace Ketsu.Game
         }
 
         // Return true if character selected
-        bool CharacterSelectionAction(Vector3 targetPos)
+        bool CharacterSelectionAction(IntVector2 selectedTilePos)
         {
-            IntVector2 selectedTilePos = new IntVector2(
-                (int)Mathf.Round(targetPos.x),
-                (int)Mathf.Round(targetPos.z)
-            );
-
-            Debug.Log("Selected Tile: " + selectedTilePos);
-
             // Character selection
             if (Fox.Position.Equals(selectedTilePos))
             {

@@ -51,4 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16c2f32e8b62d944ab849e4215e39cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragDistance: 0.15
+  DragDistance: 0.1
+  Fox: {fileID: 0}
+  Wolf: {fileID: 0}
+  Ketsu: {fileID: 0}
