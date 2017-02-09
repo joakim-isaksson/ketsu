@@ -37,7 +37,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4117673036346218}
   - component: {fileID: 114768627253800552}
-  - component: {fileID: 114179735218193700}
   m_Layer: 0
   m_Name: Ketsu
   m_TagString: Untagged
@@ -111,19 +110,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1078779833004588}
   m_Mesh: {fileID: 4300000, guid: 5e011545dd47e3242ad2c78ae5ca642a, type: 3}
---- !u!114 &114179735218193700
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1194870832127600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 0
-  Blocking: 1
 --- !u!114 &114768627253800552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,5 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 3
-  Blocking: 0
-  MovementTime: 0.1
+  Layer: 0
+  MoveAnimTime: 0.1
+  MoveAnimDelay: 0
+  SfxMove: Move_Ketsu
+  SfxMerge: Transform_ToKetsu
+  SfxSplit: Transform_FromKetsu

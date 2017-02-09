@@ -17,8 +17,9 @@ namespace Ketsu.Game
         public Character Wolf;
         [HideInInspector]
         public Character Ketsu;
+        [HideInInspector]
+        public Character SelectedCharacter;
 
-        Character targetCharacter;
         Vector2 touchStartPos;
         int waitingForCallbacks;
 
@@ -48,7 +49,8 @@ namespace Ketsu.Game
             }
 
             // Set starting character
-            targetCharacter = Fox;
+            Ketsu.gameObject.SetActive(false);
+            SelectedCharacter = Fox;
         }
 
         void Update()
@@ -58,6 +60,20 @@ namespace Ketsu.Game
 #else
             HandleTouchInputs();
 #endif
+        }
+
+        public void TurnToKetsu(Character character)
+        {
+            Ketsu.gameObject.SetActive(true);
+
+            Ketsu.transform.position = character.transform.position;
+            Ketsu.transform.rotation = character.transform.rotation;
+            character.UpdatePosition();
+
+            Fox.gameObject.SetActive(false);
+            Wolf.gameObject.SetActive(false);
+
+            SelectedCharacter = Ketsu;
         }
 
         void HandleKeyInputs()
@@ -97,7 +113,7 @@ namespace Ketsu.Game
                     {
                         if (Mathf.Abs(touch.position.x - touchStartPos.x) > Mathf.Abs(touch.position.y - touchStartPos.y))
                         { 
-                            if ((touch.position.x > touchStartPos.x)) MoveAction(Direction.Right);
+                            if ((touch.position.x < touchStartPos.x)) MoveAction(Direction.Right);
                             else MoveAction(Direction.Left);
                         }
                         else
@@ -123,21 +139,21 @@ namespace Ketsu.Game
                 (int)Mathf.Round(tapPoint.z)
             );
 
-            Debug.Log("Tap Point: " + tapPoint + ", Selected Tile: " + selectedTilePos + ", Target Char Point: " + targetCharacter.transform.position);
+            Debug.Log("Tap Point: " + tapPoint + ", Selected Tile: " + selectedTilePos + ", Target Char Point: " + SelectedCharacter.transform.position);
 
             // Character selection
             if (!CharacterSelectionAction(selectedTilePos))
             {
                 // Move action
-                if (Mathf.Abs(targetCharacter.Position.X - selectedTilePos.X) >
-                    Mathf.Abs(targetCharacter.Position.Y - selectedTilePos.Y))
+                if (Mathf.Abs(SelectedCharacter.Position.X - selectedTilePos.X) >
+                    Mathf.Abs(SelectedCharacter.Position.Y - selectedTilePos.Y))
                 {
-                    if (targetCharacter.Position.X < selectedTilePos.X) MoveAction(Direction.Right);
+                    if (SelectedCharacter.Position.X < selectedTilePos.X) MoveAction(Direction.Right);
                     else MoveAction(Direction.Left);
                 }
                 else
                 {
-                    if (targetCharacter.Position.Y < selectedTilePos.Y) MoveAction(Direction.Forward);
+                    if (SelectedCharacter.Position.Y < selectedTilePos.Y) MoveAction(Direction.Forward);
                     else MoveAction(Direction.Back);
                 }
             }
@@ -149,7 +165,7 @@ namespace Ketsu.Game
 
             Debug.Log("Move Action: " + direction.ToString());
 
-            switch(targetCharacter.Type)
+            switch(SelectedCharacter.Type)
             {
                 case MapObjectType.Fox:
                     waitingForCallbacks += 2;
@@ -177,13 +193,13 @@ namespace Ketsu.Game
             if (Fox.Position.Equals(selectedTilePos))
             {
                 Debug.Log("Fox Selected");
-                targetCharacter = Fox;
+                SelectedCharacter = Fox;
                 return true;
             }
             else if (Wolf.Position.Equals(selectedTilePos))
             {
                 Debug.Log("Wolf Selected");
-                targetCharacter = Wolf;
+                SelectedCharacter = Wolf;
                 return true;
             }
 

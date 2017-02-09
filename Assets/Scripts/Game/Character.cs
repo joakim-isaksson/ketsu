@@ -42,7 +42,8 @@ namespace Ketsu.Game
             // Turn to Ketsu
             else if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
             {
-                // TODO merge to ketsu
+                // TODO: Use other method to find the player controller
+                FindObjectOfType<PlayerController>().TurnToKetsu(blocking.GetComponent<Character>());
 
                 AkSoundEngine.PostEvent(SfxMerge, gameObject);
 
