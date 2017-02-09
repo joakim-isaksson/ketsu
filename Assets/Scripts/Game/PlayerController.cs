@@ -53,8 +53,11 @@ namespace Ketsu.Game
 
         void Update()
         {
+#if UNITY_EDITOR
             HandleKeyInputs();
+#else
             HandleTouchInputs();
+#endif
         }
 
         void HandleKeyInputs()

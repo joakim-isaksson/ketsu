@@ -23,7 +23,11 @@ namespace Ketsu.Game
 
             // Check boarder restrictions
             Map map = MapManager.Instance.CurrentMap;
-            if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height) return;
+            if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height)
+            {
+                callback();
+                return;
+            }
 
             // Check blocking and move if nothing is blocking
             MapObject blocking = BlockingObject(targetPos);
