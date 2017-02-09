@@ -55,6 +55,11 @@ namespace Ketsu.Game
 
         void Update()
         {
+            // Reset move flahgs
+            Fox.HasMoved = false;
+            Wolf.HasMoved = false;
+            Ketsu.HasMoved = false;
+
 #if UNITY_EDITOR
             HandleKeyInputs();
 #else
@@ -170,16 +175,21 @@ namespace Ketsu.Game
                 case MapObjectType.Fox:
                     waitingForCallbacks += 2;
                     Fox.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    Fox.HasMoved = true;
                     Wolf.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
+                    Wolf.HasMoved = true;
                     break;
                 case MapObjectType.Wolf:
                     waitingForCallbacks += 2;
                     Fox.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
+                    Fox.HasMoved = true;
                     Wolf.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    Wolf.HasMoved = true;
                     break;
                 case MapObjectType.Ketsu:
                     waitingForCallbacks += 1;
                     Ketsu.MoveTo(direction, delegate { waitingForCallbacks--; });
+                    Ketsu.HasMoved = true;
                     break;
                 default:
                     break;

@@ -17,6 +17,9 @@ namespace Ketsu.Game
         public string SfxMerge;
         public string SfxSplit;
 
+        [HideInInspector]
+        public bool HasMoved;
+
         public void MoveTo(Direction direction, Action callback)
         {
             IntVector2 targetPos = Position.Add(direction.ToIntVector2());
@@ -42,10 +45,14 @@ namespace Ketsu.Game
             // Turn to Ketsu
             else if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
             {
-                // TODO: Use other method to find the player controller
-                FindObjectOfType<PlayerController>().TurnToKetsu(blocking.GetComponent<Character>());
-
-                AkSoundEngine.PostEvent(SfxMerge, gameObject);
+                Character character = blocking.GetComponent<Character>();
+                if (character.HasMoved)
+                {
+                    // TODO: Use other method to find the player controller
+                    FindObjectOfType<PlayerController>().TurnToKetsu(character);
+                    AkSoundEngine.PostEvent(SfxMerge, gameObject);
+                }
+                else Debug.Log("Can not ketsu!");
 
                 callback();
                 return;
@@ -54,6 +61,7 @@ namespace Ketsu.Game
             // Do not move (something is blocking the way)
             else
             {
+                Debug.Log("Blocked by: " + blocking.Type.ToString());
                 callback();
                 return;
             }
@@ -64,11 +72,22 @@ namespace Ketsu.Game
 		{
             Map map = MapManager.Instance.CurrentMap;
 
-            // Blocked by Static Objects
-            MapObject sObj = map.ObjectLayer[target.X][target.Y];
-            if (sObj != null) return sObj;
+            // Blocked by Object Level
+            MapObject oObj = map.ObjectLayer[target.X][target.Y];
+            if (oObj != null) return oObj;
 
-            // Blocked by Dynamic Objects
+            // Blocked by Ground Level
+            MapObject gObj = map.GroundLayer[target.X][target.Y];
+            if (gObj != null)
+            {
+                switch (gObj.Type)
+                {
+                    case MapObjectType.Water:
+                        return gObj;
+                }
+            }
+
+            // Blocked by Dynamic Level
             foreach (MapObject dObj in map.DynamicLayer)
             {
                 if (target.Equals(dObj.Position))
