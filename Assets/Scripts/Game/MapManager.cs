@@ -14,18 +14,18 @@ namespace Ketsu.Game
         /// <summary>
         /// Destroy this singleton instance
         /// </summary>
-        public static void DestroySingleton()
+        /*public static void DestroySingleton()
         {
             Destroy(Instance.gameObject);
             Instance = null;
-        }
+        }*/
 
         void Awake()
         {
             // Make this an indestructible singleton
             if (Instance == null) Instance = this;
             else if (!Instance.Equals(this)) Destroy(gameObject);
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
 
             LoadMap("TestMap");
         }
