@@ -180,22 +180,18 @@ public class ParseMap : MonoBehaviour {
 							if(entry.Value[y-i-1,x-j-1] == 81){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = ObjectParent.transform;
-								Debug.Log("got 0");
 							}
 							else if(entry.Value[y-i-1,x-j-1] == 81+deg90){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
 								item.transform.parent = ObjectParent.transform;
-								Debug.Log("got 90");
 							}
 							else if(entry.Value[y-i-1,x-j-1] == 81+deg180){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
 								item.transform.parent = ObjectParent.transform;
-								Debug.Log("got 180");
 							}
 							else if(entry.Value[y-i-1,x-j-1] == 81+deg270){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
 								item.transform.parent = ObjectParent.transform;
-								Debug.Log("got 270");
 							}
 						}
 						if(prefabs.ContainsKey(82)){
@@ -225,6 +221,10 @@ public class ParseMap : MonoBehaviour {
 							item.transform.parent = ObjectParent.transform;
 						}
 					}
+				}
+				if(prefabs.ContainsKey(83)){
+					item = Instantiate(prefabs[83], new Vector3(0,0,0), Quaternion.identity);
+					item.transform.parent = ObjectParent.transform;
 				}
 			}
 		}

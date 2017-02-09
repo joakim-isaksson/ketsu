@@ -9,5 +9,6 @@
 44 Bush
 81 Fox
 82 Wolf
+83 Ketsu
 181 FoxCave
 182 WolfCave
