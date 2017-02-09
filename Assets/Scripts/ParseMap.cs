@@ -146,7 +146,7 @@ public class ParseMap : MonoBehaviour {
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
 						for(int k=1; k<=30; k++)
-							if(prefabs.ContainsKey(k) && entry.Value[i,j]==k){
+							if(prefabs.ContainsKey(k) && entry.Value[y-i-1,x-j-1]==k){
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = GroundParent.transform;
 							}	
@@ -161,7 +161,7 @@ public class ParseMap : MonoBehaviour {
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
 						for(int k=31; k<=80; k++)
-							if(prefabs.ContainsKey(k) && entry.Value[i,j]==k){
+							if(prefabs.ContainsKey(k) && entry.Value[y-i-1,x-j-1]==k){
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, Random.Range(-360.0f, 0.0f), 0));
 								item.transform.parent = ObstacleParent.transform;
 							}
@@ -177,46 +177,46 @@ public class ParseMap : MonoBehaviour {
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
 						if(prefabs.ContainsKey(81)){
-							if(entry.Value[i,j] == 81){
+							if(entry.Value[y-i-1,x-j-1] == 81){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 81+deg90){
+							else if(entry.Value[y-i-1,x-j-1] == 81+deg90){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -90, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 81+deg180){
+							else if(entry.Value[y-i-1,x-j-1] == 81+deg180){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -180, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 81+deg270){
+							else if(entry.Value[y-i-1,x-j-1] == 81+deg270){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -270, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
 						}
 						if(prefabs.ContainsKey(82)){
-							if(entry.Value[i,j] == 82){
+							if(entry.Value[y-i-1,x-j-1] == 82){
 								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 82+deg90){
+							else if(entry.Value[y-i-1,x-j-1] == 82+deg90){
 								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -90, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 82+deg180){
+							else if(entry.Value[y-i-1,x-j-1] == 82+deg180){
 								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -180, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[i,j] == 82+deg270){
+							else if(entry.Value[y-i-1,x-j-1] == 82+deg270){
 								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, -270, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
 						}
-						if(prefabs.ContainsKey(181) && entry.Value[i,j] == 181){
+						if(prefabs.ContainsKey(181) && entry.Value[y-i-1,x-j-1] == 181){
 							item = Instantiate(prefabs[181], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 							item.transform.parent = ObjectParent.transform;
 						}
-						if(prefabs.ContainsKey(182) && entry.Value[i,j] == 182){
+						if(prefabs.ContainsKey(182) && entry.Value[y-i-1,x-j-1] == 182){
 							item = Instantiate(prefabs[182], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 							item.transform.parent = ObjectParent.transform;
 						}
