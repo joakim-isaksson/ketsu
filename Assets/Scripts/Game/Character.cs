@@ -8,7 +8,14 @@ namespace Ketsu.Game
 {
     public class Character : MapObject
     {
-        public float MovementTime;
+        [Header("Animations")]
+        public float MoveAnimTime;
+        public float MoveAnimDelay;
+
+        [Header("Sounds")]
+        public string SfxMove;
+        public string SfxMerge;
+        public string SfxSplit;
 
         public void MoveTo(Direction direction, Action callback)
         {
@@ -22,7 +29,7 @@ namespace Ketsu.Game
             MapObject blocking = BlockingObject(targetPos);
             if (blocking == null)
             {
-                AkSoundEngine.PostEvent("Move_" + Type.ToString(), gameObject);
+                AkSoundEngine.PostEvent(SfxMove, gameObject);
 
                 Position = targetPos;
                 StartCoroutine(AnimateTo(targetPos, callback));
@@ -31,8 +38,9 @@ namespace Ketsu.Game
             // Turn to Ketsu
             else if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
             {
-                // TODO
-                AkSoundEngine.PostEvent("Transform_ToKetsu", gameObject);
+                // TODO merge to ketsu
+
+                AkSoundEngine.PostEvent(SfxMerge, gameObject);
 
                 callback();
                 return;
@@ -78,18 +86,20 @@ namespace Ketsu.Game
 			Vector3 start = transform.position;
             Vector3 end = new Vector3(target.X, 0, target.Y);
 
+            yield return new WaitForSeconds(MoveAnimDelay);
+
             transform.LookAt(end);
 
             float timePassed = 0.0f;
             do
             {
-                yield return null;
-
                 timePassed += Time.deltaTime;
-                float progress = Mathf.Min(timePassed / MovementTime, 1.0f);
+                float progress = Mathf.Min(timePassed / MoveAnimTime, 1.0f);
                 transform.position = Vector3.Lerp(start, end, progress);
 
-            } while (timePassed < MovementTime);
+                yield return null;
+
+            } while (timePassed < MoveAnimTime);
 
             callback();
         }
