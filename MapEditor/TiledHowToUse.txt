@@ -6,10 +6,13 @@ Current Tiles:
 
 1-30 -> Ground Tiles
 31 - 80 -> Obstacles
-80 -> Fox Spawner
-90 -> Wolf Spawner
+141 -> Hedgehog Spawner
 181 -> Wolf Cave
-191 -> Fox Cave 
+182 -> Fox Cave 
+183 -> Ketsu Power Collectible
+191 -> Fox Spawner
+192 -> Wolf Spawner
+193 -> Ketsu Spawner
 221 - 240 -> Used to mark solution routes and other design infowe might need (for now at least)
 
 Current Layers:

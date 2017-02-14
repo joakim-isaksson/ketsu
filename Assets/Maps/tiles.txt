@@ -7,8 +7,10 @@
 42 Tree
 43 Rock
 44 Bush
-81 Fox
-82 Wolf
-83 Ketsu
+141 Hedgehog
 181 FoxCave
 182 WolfCave
+183 KetsuPowerCollectible
+191 Fox
+192 Wolf
+193 Ketsu
