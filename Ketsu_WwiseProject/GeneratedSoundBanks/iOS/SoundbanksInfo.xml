@@ -24,9 +24,15 @@
 				<Event Id="1004812793" Name="Collect_Chicken" ObjectPath="\Events\SFX\Collect_Chicken"/>
 				<Event Id="1005641002" Name="Collect_Ham" ObjectPath="\Events\SFX\Collect_Ham"/>
 				<Event Id="30088657" Name="Collect_Sheep" ObjectPath="\Events\SFX\Collect_Sheep"/>
-				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Foley\Move_Fox"/>
-				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Foley\Move_Ketsu"/>
-				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Foley\Move_Wolf"/>
+				<Event Id="4193159569" Name="Death_Fox_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Fox_Hedgehog"/>
+				<Event Id="269859599" Name="Death_Fox_Water" ObjectPath="\Events\Characters\Death\Death_Fox_Water"/>
+				<Event Id="3738416424" Name="Death_Wolf_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Wolf_Hedgehog"/>
+				<Event Id="1446448900" Name="Death_Wolf_Water" ObjectPath="\Events\Characters\Death\Death_Wolf_Water"/>
+				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\UI\Level_Win"/>
+				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
+				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Move\Move_Hedgehog"/>
+				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
+				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform_FromKetsu"/>
 				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform_ToKetsu"/>
 			</IncludedEvents>
@@ -34,6 +40,26 @@
 				<File Id="20985966" Language="SFX">
 					<ShortName>Transform_ToKetsu-001.wav</ShortName>
 					<Path>SFX\Transform_ToKetsu-001_D124CA2C.wem</Path>
+				</File>
+				<File Id="139884733" Language="SFX">
+					<ShortName>Fox_Death_Water_02.wav</ShortName>
+					<Path>SFX\Fox_Death_Water_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="461580426" Language="SFX">
+					<ShortName>Fox_Death_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Fox_Death_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="501425487" Language="SFX">
+					<ShortName>Level_Win.wav</ShortName>
+					<Path>SFX\Level_Win_D124CA2C.wem</Path>
+				</File>
+				<File Id="503244186" Language="SFX">
+					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
+					<Path>SFX\Fox_Death_Hedgehog_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="511370657" Language="SFX">
+					<ShortName>Fox_Death_Water_01.wav</ShortName>
+					<Path>SFX\Fox_Death_Water_01_D124CA2C.wem</Path>
 				</File>
 				<File Id="588042227" Language="SFX">
 					<ShortName>Move_Wolf.wav</ShortName>
@@ -51,6 +77,10 @@
 					<ShortName>Collect_Ham.wav</ShortName>
 					<Path>SFX\Collect_Ham_D124CA2C.wem</Path>
 				</File>
+				<File Id="704131998" Language="SFX">
+					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
 				<File Id="735302778" Language="SFX">
 					<ShortName>Transform_ToKetsu-002.wav</ShortName>
 					<Path>SFX\Transform_ToKetsu-002_D124CA2C.wem</Path>
@@ -66,6 +96,14 @@
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_D124CA2C.wem</Path>
+				</File>
+				<File Id="1041428942" Language="SFX">
+					<ShortName>Move_Hedgehog.wav</ShortName>
+					<Path>SFX\Move_Hedgehog_388A97B6.wem</Path>
+				</File>
+				<File Id="1069057915" Language="SFX">
+					<ShortName>Wolf_Death_Water_01.wav</ShortName>
+					<Path>SFX\Wolf_Death_Water_01_D124CA2C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

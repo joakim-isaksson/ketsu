@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{69F4D179-6462-4F45-A223-C9819486DF6A}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Enemy" ID="{69F4D179-6462-4F45-A223-C9819486DF6A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Move" ID="{0CF1D1C6-0A12-4F87-B97E-9F286068E2CD}" ShortID="654715952">
+					<ChildrenList>
+						<Event Name="Move_Hedgehog" ID="{4DF98277-ED92-490C-AE4C-1121982A07D3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{6CC3BADF-8CB5-431F-AD4F-F6305BC3E602}" ShortID="562772680" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0A2DC5C7-8DFC-442E-BB59-964B7461AD69}" Global="false">
+											<ObjectRef Name="Move_Hedgehog" ID="{0A3B553D-C9D1-4050-BB23-230A574FE078}" WorkUnitID="{140CA662-18C2-4251-B8F2-5CAA62F179A5}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

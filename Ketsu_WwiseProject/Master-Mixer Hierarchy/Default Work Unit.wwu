@@ -6,7 +6,6 @@
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
 						<Bus Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}"/>
-						<Bus Name="UI" ID="{10676203-3E9E-43FB-AD5E-3496644140E7}"/>
 						<Bus Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}"/>
 					</ChildrenList>
 				</Bus>

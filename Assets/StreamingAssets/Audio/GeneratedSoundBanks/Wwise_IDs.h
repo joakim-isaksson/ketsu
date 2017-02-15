@@ -16,7 +16,13 @@ namespace AK
         static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
         static const AkUniqueID COLLECT_HAM = 1005641002U;
         static const AkUniqueID COLLECT_SHEEP = 30088657U;
+        static const AkUniqueID DEATH_FOX_HEDGEHOG = 4193159569U;
+        static const AkUniqueID DEATH_FOX_WATER = 269859599U;
+        static const AkUniqueID DEATH_WOLF_HEDGEHOG = 3738416424U;
+        static const AkUniqueID DEATH_WOLF_WATER = 1446448900U;
+        static const AkUniqueID LEVEL_WIN = 2908556826U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
+        static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
         static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
@@ -35,7 +41,6 @@ namespace AK
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
-        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
 }// namespace AK
