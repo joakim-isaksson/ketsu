@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{99B0E326-F5DC-48BE-87CF-DE7129F146E5}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Characters" ID="{99B0E326-F5DC-48BE-87CF-DE7129F146E5}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Move" ID="{AD251CE8-5767-4BBC-9E7B-5B847F69616D}" ShortID="951787055">
+					<ChildrenList>
+						<Event Name="Move_Fox" ID="{BC40411F-76E7-46D5-A6EA-200D48FA4EBD}">
+							<ChildrenList>
+								<Action Name="Play" ID="{258214CF-D251-43F3-A499-D92FA5591625}" ShortID="68998198" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8068104B-60D3-4103-8CBD-D570AD737FB1}" Global="false">
+											<ObjectRef Name="Move_Fox" ID="{E8138EB9-0EFC-477B-82DB-F1A8DA70F0C3}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Hedgehog" ID="{A18901D4-DEF7-40F6-A10F-E1E9B59E5FC5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{DF2A1620-831E-4200-A594-ED1687A96275}" ShortID="247754913" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D4785C16-D642-4A30-9208-6B3B31AFF9C2}" Global="false">
+											<ObjectRef Name="Move_Hedgehog" ID="{33792BC5-81AD-460D-ABCF-17619C4C0A0D}" WorkUnitID="{A99C385F-04B3-451F-AD0E-6D267F27A6A2}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Ketsu" ID="{9E93573B-3EC7-416E-8066-005541AE716B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E7ED00EE-2322-4330-BCD4-42AA0EC57F00}" ShortID="634332081" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{72691142-7458-444C-8350-E149108CF055}" Global="false">
+											<ObjectRef Name="Move_Ketsu" ID="{B51D678C-E173-42E4-8E00-34339F3E875A}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Wolf" ID="{1BD85E17-D5EE-4F0C-BE8D-E0B41BC0A299}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D9AC9081-DB1E-4ED5-824B-D97958D6691B}" ShortID="1057980899" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6B485E02-87F0-4A8B-AA5E-4AB7F3DEFA0E}" Global="false">
+											<ObjectRef Name="Move_Wolf" ID="{BC50F405-43F9-4E6A-84D7-F73135424685}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Death" ID="{6C77E4E9-DE8C-41B9-9131-9089AA000E27}" ShortID="911267262">
+					<ChildrenList>
+						<Event Name="Death_Fox_Water" ID="{97ED1EDD-73B5-43A4-9054-D979EB43F6E7}">
+							<ChildrenList>
+								<Action Name="Play" ID="{17D84780-B55E-48FB-91AD-9F826769E376}" ShortID="332512883" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{357A4F04-8DD9-4274-B25E-29B43ABE737D}" Global="false">
+											<ObjectRef Name="Death_Water" ID="{568B7978-3C3A-4402-B15F-3477D87A4F67}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Death_Fox_Hedgehog" ID="{654CC618-D008-4460-8913-CED6FD749471}">
+							<ChildrenList>
+								<Action Name="Play" ID="{2001F4A0-F1C7-4EAE-A153-829905444F10}" ShortID="788636788" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{DAD64719-C4DC-4352-BB77-A53F6BCE3DAF}" Global="false">
+											<ObjectRef Name="Death_Hedgehog" ID="{6291BBA1-3BF2-4978-AFE1-8D2616316CA3}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Death_Wolf_Hedgehog" ID="{54E6E150-FF6E-4CDE-BD2D-3373BD8A4D15}">
+							<ChildrenList>
+								<Action Name="Play" ID="{67A6AC80-2666-4DE9-8465-4B2EB030CA14}" ShortID="82590313" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6A5F05BE-6D03-4709-A6CB-DB4CD49BE196}" Global="false">
+											<ObjectRef Name="Death_Hedgehog" ID="{FB67E4F7-08F0-42D6-9E03-B6EE4BDED442}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Death_Wolf_Water" ID="{91071F1C-B1BE-45EF-B361-7AA878175277}">
+							<ChildrenList>
+								<Action Name="Play" ID="{FB616761-9614-4982-AA96-39A4A3034D5D}" ShortID="338350933" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{52E97C79-2719-4920-84D2-1080FB27EC7D}" Global="false">
+											<ObjectRef Name="Death_Water" ID="{151767CB-C46D-4CEE-B474-23E055A271FD}" WorkUnitID="{A7548BEE-84A0-4636-B431-ABD712E12071}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
