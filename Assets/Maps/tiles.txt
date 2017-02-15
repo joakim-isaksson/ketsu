@@ -21,6 +21,7 @@
 181 FoxCave
 182 WolfCave
 183 KetsuPowerCollectible
+184 Chicken
 191 Fox
 192 Wolf
 193 Ketsu
