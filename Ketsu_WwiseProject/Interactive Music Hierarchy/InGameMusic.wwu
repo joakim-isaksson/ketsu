@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{9F67005D-EA86-4471-868B-B90E862F1875}" SchemaVersion="75">
-	<InteractiveMusic>
-		<WorkUnit Name="InGameMusic" ID="{9F67005D-EA86-4471-868B-B90E862F1875}" PersistMode="Standalone"/>
-	</InteractiveMusic>
-</WwiseDocument>

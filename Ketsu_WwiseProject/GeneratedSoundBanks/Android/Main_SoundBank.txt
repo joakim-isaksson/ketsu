@@ -1,35 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	30088657	Collect_Sheep			\SFX\Collect_Sheep	
-	269859599	Death_Fox_Water			\Characters\Death\Death_Fox_Water	
-	941274754	Move_Hedgehog			\Characters\Move\Move_Hedgehog	
 	1004812793	Collect_Chicken			\SFX\Collect_Chicken	
 	1005641002	Collect_Ham			\SFX\Collect_Ham	
 	1052828255	Transform_ToKetsu			\SFX\Transform_ToKetsu	
 	1374719650	Transform_FromKetsu			\SFX\Transform_FromKetsu	
-	1446448900	Death_Wolf_Water			\Characters\Death\Death_Wolf_Water	
-	2492116432	Move_Fox			\Characters\Move\Move_Fox	
-	2908556826	Level_Win			\UI\Level_Win	
-	3609283987	Move_Ketsu			\Characters\Move\Move_Ketsu	
-	3738416424	Death_Wolf_Hedgehog			\Characters\Death\Death_Wolf_Hedgehog	
-	4193159569	Death_Fox_Hedgehog			\Characters\Death\Death_Fox_Hedgehog	
-	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
+	2492116432	Move_Fox			\Foley\Move_Fox	
+	3609283987	Move_Ketsu			\Foley\Move_Ketsu	
+	4249145201	Move_Wolf			\Foley\Move_Wolf	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	20985966	Transform_ToKetsu-001	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-001_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-001		110872
-	30285273	Wolf_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Hedgehog\Wolf_Death_Hedgehog_01		147448
-	186745400	Level_Win	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Level_Win_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Level\Level_Win		117928
-	264639009	Fox_Death_Water_02	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Fox_Death_Water_02_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_02		175600
-	588042227	Move_Wolf	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Move_Wolf		35488
-	612027486	Collect_Sheep	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Sheep_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Sheep		53776
-	625669509	Move_Hedgehog	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Hedgehog_388A97B6.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Move_Hedgehog\Move_Hedgehog		61408
-	676468509	Move_Fox	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Move_Fox		35488
-	700240671	Collect_Ham	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Ham_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Ham		42832
-	735302778	Transform_ToKetsu-002	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-002_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-002		205912
-	738653313	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Wolf_Death_Water_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		175600
-	837474851	Fox_Death_Hedgehog_02	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Fox_Death_Hedgehog_02_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_02		147448
-	885601983	Fox_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Fox_Death_Water_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_01		175600
-	893164066	Collect_Chicken	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Chicken_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Chicken		37864
-	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Ketsu_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		17488
-	914315769	Fox_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Fox_Death_Hedgehog_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_01		147448
-	935737943	Transform_FromKetsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_FromKetsu_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu		103168
+	20985966	Transform_ToKetsu-001	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-001_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-001		110872
+	588042227	Move_Wolf	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Wolf\Move_Wolf\Move_Wolf		35488
+	612027486	Collect_Sheep	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Sheep_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Collect\Collect_Sheep		53776
+	676468509	Move_Fox	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Fox\Move_Fox\Move_Fox		35488
+	700240671	Collect_Ham	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Ham_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Collect\Collect_Ham		42832
+	735302778	Transform_ToKetsu-002	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-002_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-002		205912
+	893164066	Collect_Chicken	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Collect_Chicken_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Collect\Collect_Chicken		37864
+	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Ketsu_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Foley\Ketsu\Move_Ketsu\Move_Ketsu		17488
+	935737943	Transform_FromKetsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_FromKetsu_D124CA2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Transform\Transform_FromKetsu		103168
 
