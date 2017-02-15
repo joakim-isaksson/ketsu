@@ -7,6 +7,16 @@
 42 Tree
 43 Rock
 44 Bush
+64 BigTree
+65 BigTree
+74 BigTree
+75 BigTree
+81 Mountain
+82 Mountain
+83 Mountain
+91 Mountain
+92 Mountain
+93 Mountain
 141 Hedgehog
 181 FoxCave
 182 WolfCave
