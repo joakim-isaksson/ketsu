@@ -123,8 +123,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Layer: 0
-  MoveAnimTime: 0.1
+  MoveAnimTime: 0.05
   MoveAnimDelay: 0
   SfxMove: Move_Ketsu
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
+  HasMoved: 0
