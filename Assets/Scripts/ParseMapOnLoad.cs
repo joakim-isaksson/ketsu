@@ -20,7 +20,7 @@ using System.Linq;
  * and is loaded based on user's selection.
  */
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class ParseMapOnLoad : MonoBehaviour {
 
 	//map structure to hold information
@@ -39,8 +39,12 @@ public class ParseMapOnLoad : MonoBehaviour {
  
     void Initialize()
     {
-        if (initialized)
-        	return;
+    	//load again
+        if (initialized){
+        	Destroy(GameObject.Find("Ground"));
+        	Destroy(GameObject.Find("Obstacles"));
+        	Destroy(GameObject.Find("Objects"));
+        }
  
 		//init new map
 		Map map = new Map();
@@ -53,8 +57,12 @@ public class ParseMapOnLoad : MonoBehaviour {
 		string line = null;
 
 		//which map to read, ask user
-		string path = "Assets/Maps/01Tutorial01LearnToMoveUpwards.json";
-		StreamReader reader = new StreamReader(path);
+		//string path = "Assets/Maps/01Tutorial01LearnToMoveUpwards.json";
+		TextAsset file = Resources.Load("01Tutorial01LearnToMoveUpwards") as TextAsset;
+		string path = file.text;
+
+		//StreamReader reader = new StreamReader(path);
+		StringReader reader = new StringReader(path);
 		while ((line = reader.ReadLine()) != null) {	        	
 			int start = line.IndexOf(":", 0)+1;
         	int end = line.IndexOf(",", start);
@@ -113,7 +121,11 @@ public class ParseMapOnLoad : MonoBehaviour {
 	Dictionary<int, GameObject> loadPrefabsFromFile(){
 		Dictionary<int, GameObject> prefabs = new Dictionary<int, GameObject>();
 
-		StreamReader reader = new StreamReader("Assets/Maps/tiles.txt");
+		TextAsset file = Resources.Load("tiles") as TextAsset;
+		string path = file.text;
+
+		//StreamReader reader = new StreamReader("Assets/Maps/tiles.txt");
+		StringReader reader = new StringReader(path);
 		string line = null;
 
 		while ((line = reader.ReadLine()) != null) {
@@ -121,7 +133,7 @@ public class ParseMapOnLoad : MonoBehaviour {
 			int.TryParse(line.Substring(0, line.IndexOf(' ')), out n);
 			string name = line.Substring(line.LastIndexOf(' ')+1);
 
-			GameObject prefab = (GameObject)AssetDatabase.LoadAssetAtPath("Assets/Maps/Prefabs/"+name+".prefab", typeof(Object));
+			GameObject prefab = (GameObject)Resources.Load("Prefabs/"+name);
 			prefabs.Add(n, prefab);
 		}	
 
@@ -166,8 +178,8 @@ public class ParseMapOnLoad : MonoBehaviour {
 							}
 					}
 				}
-
 			}
+
 			//Instantiate objects = spawn points etc.
 			if(entry.Key=="Objects"){
 				GameObject ObjectParent = new GameObject();
@@ -239,8 +251,8 @@ public class ParseMapOnLoad : MonoBehaviour {
 						}
 					}
 				}
-				if(prefabs.ContainsKey(83)){
-					item = Instantiate(prefabs[83], new Vector3(0,0,0), Quaternion.identity);
+				if(prefabs.ContainsKey(193)){
+					item = Instantiate(prefabs[193], new Vector3(0,0,0), Quaternion.identity);
 					item.transform.parent = ObjectParent.transform;
 				}
 			}
