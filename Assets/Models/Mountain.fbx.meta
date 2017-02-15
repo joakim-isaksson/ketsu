@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 3e7981718643a184e8b9e718d9afb6de
-timeCreated: 1487157088
+guid: 3bcb8afcb9ac9bc489798818d2776ce6
+timeCreated: 1487181044
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -10,7 +10,6 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane.003
-    6400000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -37,7 +36,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
