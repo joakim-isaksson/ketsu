@@ -176,39 +176,57 @@ public class ParseMap : MonoBehaviour {
 				GameObject item;
 				for(int i=0; i<y; i++){
 					for(int j=0; j<x; j++){
-						if(prefabs.ContainsKey(81)){
-							if(entry.Value[y-i-1,x-j-1] == 81){
-								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(prefabs.ContainsKey(141)){
+							if(entry.Value[y-i-1,x-j-1] == 141){
+								item = Instantiate(prefabs[141], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 81+deg90){
-								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 141+deg90){
+								item = Instantiate(prefabs[141], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 81+deg180){
-								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 141+deg180){
+								item = Instantiate(prefabs[141], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 81+deg270){
-								item = Instantiate(prefabs[81], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 141+deg270){
+								item = Instantiate(prefabs[141], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
 						}
-						if(prefabs.ContainsKey(82)){
-							if(entry.Value[y-i-1,x-j-1] == 82){
-								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+						if(prefabs.ContainsKey(191)){
+							if(entry.Value[y-i-1,x-j-1] == 191){
+								item = Instantiate(prefabs[191], new Vector3(-j+x-1, 0, i), Quaternion.identity);
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 82+deg90){
-								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 191+deg90){
+								item = Instantiate(prefabs[191], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 82+deg180){
-								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 191+deg180){
+								item = Instantiate(prefabs[191], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
-							else if(entry.Value[y-i-1,x-j-1] == 82+deg270){
-								item = Instantiate(prefabs[82], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
+							else if(entry.Value[y-i-1,x-j-1] == 191+deg270){
+								item = Instantiate(prefabs[191], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+						}
+						if(prefabs.ContainsKey(192)){
+							if(entry.Value[y-i-1,x-j-1] == 192){
+								item = Instantiate(prefabs[192], new Vector3(-j+x-1, 0, i), Quaternion.identity);
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[y-i-1,x-j-1] == 192+deg90){
+								item = Instantiate(prefabs[192], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 90, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[y-i-1,x-j-1] == 192+deg180){
+								item = Instantiate(prefabs[192], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 180, 0));
+								item.transform.parent = ObjectParent.transform;
+							}
+							else if(entry.Value[y-i-1,x-j-1] == 192+deg270){
+								item = Instantiate(prefabs[192], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, 270, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
 						}
