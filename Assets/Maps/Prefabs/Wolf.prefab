@@ -128,3 +128,4 @@ MonoBehaviour:
   SfxMove: Move_Wolf
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
+  HasMoved: 0

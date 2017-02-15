@@ -18,8 +18,24 @@ namespace Ketsu.Game
         public string SfxSplit;
 
         [HideInInspector]
-        public bool HasMoved;
+        public bool HasMoved { get; private set; }
 
+        [HideInInspector]
+        public static int KetsuPower;
+
+        PlayerController pc;
+
+        private void Start()
+        {
+            pc = FindObjectOfType<PlayerController>();
+        }
+
+        void LateUpdate()
+        {
+            HasMoved = false;
+        }
+
+        // TODO: Beatufy / Refactor - starting to look like a mess
         public void MoveTo(Direction direction, Action callback)
         {
             IntVector2 targetPos = Position.Add(direction.ToIntVector2());
@@ -28,41 +44,72 @@ namespace Ketsu.Game
             Map map = MapManager.Instance.CurrentMap;
             if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height)
             {
-                callback();
+                if (callback != null) callback();
                 return;
             }
 
-            // Check blocking and move if nothing is blocking
+            // Check blocking and try to move if nothing is blocking
             MapObject blocking = BlockingObject(targetPos);
             if (blocking == null)
             {
+                // Moving as Ketsu uses Ketsu Power
+                if (Type == MapObjectType.Ketsu)
+                {
+                    if (KetsuPower > 0)
+                    {
+                        --KetsuPower;
+                        Debug.Log("Ketsu Power Left: " + KetsuPower);
+                    }
+                    else
+                    {
+                        Debug.Log("Not enough Ketsu Power - breaking down!");
+                        HasMoved = true;
+
+                        // TODO Ketsu Breakdown (get directions from there)
+                        IntVector2 foxPos = new IntVector2(Position.X - 1, Position.Y);
+                        IntVector2 wolfPos = new IntVector2(Position.X + 1, Position.Y);
+
+                        TransformFromKetsu(foxPos, wolfPos, callback);
+
+                        return;
+                    }
+                }
+
+                // Update position
+                HasMoved = true;
+                Position = targetPos;
+
                 AkSoundEngine.PostEvent(SfxMove, gameObject);
 
-                Position = targetPos;
-                StartCoroutine(AnimateTo(targetPos, callback));
+                AnimateTo(targetPos, callback);
             }
 
             // Turn to Ketsu
             else if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
             {
-                Character character = blocking.GetComponent<Character>();
-                if (character.HasMoved)
+                Character blockingCharacter = blocking.gameObject.GetComponent<Character>();
+                if (blockingCharacter.HasMoved)
                 {
-                    // TODO: Use other method to find the player controller
-                    FindObjectOfType<PlayerController>().TurnToKetsu(character);
-                    AkSoundEngine.PostEvent(SfxMerge, gameObject);
-                }
-                else Debug.Log("Can not ketsu!");
+                    // Update position
+                    HasMoved = true;
+                    Position = blockingCharacter.Position;
 
-                callback();
-                return;
+                    TransformToKetsu(blockingCharacter, callback);
+                    return;
+                }
+                else
+                {
+                    Debug.Log("Beep Poop - Can not ketsu!");
+                    if (callback != null) callback();
+                    return;
+                }
             }
 
             // Do not move (something is blocking the way)
             else
             {
                 Debug.Log("Blocked by: " + blocking.Type.ToString());
-                callback();
+                if (callback != null) callback();
                 return;
             }
         }
@@ -90,7 +137,7 @@ namespace Ketsu.Game
             // Blocked by Dynamic Level
             foreach (MapObject dObj in map.DynamicLayer)
             {
-                if (target.Equals(dObj.Position))
+                if (dObj.gameObject.activeSelf && target.Equals(dObj.Position))
                 {
                     switch (dObj.Type)
                     {
@@ -105,7 +152,66 @@ namespace Ketsu.Game
             return null;
 		}
 
-        IEnumerator AnimateTo(IntVector2 target, Action callback)
+        void TransformToKetsu(Character other, Action callback)
+        {
+            AkSoundEngine.PostEvent(SfxMerge, gameObject);
+
+            AnimateTo(other.Position, delegate {
+
+                // Update Ketsu position and rotation
+                pc.Ketsu.transform.rotation = transform.rotation;
+                pc.Ketsu.transform.position = new Vector3(
+                    other.Position.X,
+                    other.transform.position.y,
+                    other.Position.Y
+                );
+                pc.Ketsu.UpdatePosition();
+
+                // Deactive and activate characters
+                pc.Ketsu.gameObject.SetActive(true);
+                pc.Fox.gameObject.SetActive(false);
+                pc.Wolf.gameObject.SetActive(false);
+
+                // Set the active character as Ketsu
+                pc.SelectedCharacter = pc.Ketsu;
+
+                if (callback != null) callback();
+            });
+        }
+
+        void TransformFromKetsu(IntVector2 foxPos, IntVector2 wolfPos, Action callback)
+        {
+           AkSoundEngine.PostEvent(SfxSplit, gameObject);
+
+            // Deactive and activate characters
+            pc.Ketsu.gameObject.SetActive(false);
+            pc.Fox.gameObject.SetActive(true);
+            pc.Wolf.gameObject.SetActive(true);
+
+            // Set the active character as Fox
+            pc.SelectedCharacter = pc.Fox;
+
+            // Update fox position
+            pc.Fox.transform.rotation = transform.rotation;
+            pc.Fox.transform.position = new Vector3(Position.X, pc.Fox.transform.position.y, Position.Y);
+            pc.Fox.Position = foxPos;
+            pc.Fox.HasMoved = true;
+            pc.Fox.AnimateTo(foxPos, null);
+
+            // Update wolf position
+            pc.Wolf.transform.rotation = transform.rotation;
+            pc.Wolf.transform.position = new Vector3(Position.X, pc.Wolf.transform.position.y, Position.Y);
+            pc.Wolf.Position = wolfPos;
+            pc.Wolf.HasMoved = true;
+            pc.Wolf.AnimateTo(wolfPos, callback);
+        }
+
+        public void AnimateTo(IntVector2 target, Action callback)
+        {
+            StartCoroutine(RunAnimateTo(target, callback));
+        }
+
+        IEnumerator RunAnimateTo(IntVector2 target, Action callback)
         {
 			Vector3 start = transform.position;
             Vector3 end = new Vector3(target.X, 0, target.Y);
@@ -125,7 +231,7 @@ namespace Ketsu.Game
 
             } while (timePassed < MoveAnimTime);
 
-            callback();
+            if (callback != null) callback();
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Ketsu.Utils;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -35,5 +36,16 @@ namespace Ketsu.Game
                 (int)Mathf.Round(transform.position.z)
             );
         }
-	}
+
+        public void DelayedAction(float time, Action action)
+        {
+            StartCoroutine(RunDelayedAction(time, action));
+        }
+
+        IEnumerator RunDelayedAction(float time, Action action)
+        {
+            yield return new WaitForSeconds(time);
+            if (action != null) action();
+        }
+    }
 }
