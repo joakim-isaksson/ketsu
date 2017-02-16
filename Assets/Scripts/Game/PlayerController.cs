@@ -21,7 +21,7 @@ namespace Ketsu.Game
         public Character SelectedCharacter;
 
         Vector2 touchStartPos;
-        int waitingForCallbacks;
+        int waitingForActions;
 
         void Awake()
         {
@@ -55,30 +55,11 @@ namespace Ketsu.Game
 
         void Update()
         {
-            // Reset move flahgs
-            Fox.HasMoved = false;
-            Wolf.HasMoved = false;
-            Ketsu.HasMoved = false;
-
 #if UNITY_EDITOR
             HandleKeyInputs();
 #else
             HandleTouchInputs();
 #endif
-        }
-
-        public void TurnToKetsu(Character character)
-        {
-            Ketsu.gameObject.SetActive(true);
-
-            Ketsu.transform.position = character.transform.position;
-            Ketsu.transform.rotation = character.transform.rotation;
-            character.UpdatePosition();
-
-            Fox.gameObject.SetActive(false);
-            Wolf.gameObject.SetActive(false);
-
-            SelectedCharacter = Ketsu;
         }
 
         void HandleKeyInputs()
@@ -166,30 +147,25 @@ namespace Ketsu.Game
 
         void MoveAction(Direction direction)
         {
-            if (waitingForCallbacks > 0) return;
+            if (waitingForActions > 0 || SelectedCharacter.HasMoved == true) return;
 
             Debug.Log("Move Action: " + direction.ToString());
 
             switch(SelectedCharacter.Type)
             {
                 case MapObjectType.Fox:
-                    waitingForCallbacks += 2;
-                    Fox.MoveTo(direction, delegate { waitingForCallbacks--; });
-                    Fox.HasMoved = true;
-                    Wolf.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
-                    Wolf.HasMoved = true;
+                    waitingForActions += 2;
+                    Fox.MoveTo(direction, delegate { waitingForActions--; });
+                    Wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
                     break;
                 case MapObjectType.Wolf:
-                    waitingForCallbacks += 2;
-                    Fox.MoveTo(direction.Opposite(), delegate { waitingForCallbacks--; });
-                    Fox.HasMoved = true;
-                    Wolf.MoveTo(direction, delegate { waitingForCallbacks--; });
-                    Wolf.HasMoved = true;
+                    waitingForActions += 2;
+                    Fox.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                    Wolf.MoveTo(direction, delegate { waitingForActions--; });
                     break;
                 case MapObjectType.Ketsu:
-                    waitingForCallbacks += 1;
-                    Ketsu.MoveTo(direction, delegate { waitingForCallbacks--; });
-                    Ketsu.HasMoved = true;
+                    waitingForActions += 1;
+                    Ketsu.MoveTo(direction, delegate { waitingForActions--; });
                     break;
                 default:
                     break;
