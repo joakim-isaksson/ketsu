@@ -9,30 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1166761201492494}
+  m_RootGameObject: {fileID: 1761217697059458}
   m_IsPrefabParent: 1
---- !u!1 &1166761201492494
+--- !u!1 &1761217697059458
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4663837652063146}
-  - component: {fileID: 114452747537701064}
+  - component: {fileID: 4412001448070704}
+  - component: {fileID: 114867928268239102}
   m_Layer: 0
-  m_Name: PlayerController
+  m_Name: CharacterController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4663837652063146
+--- !u!4 &4412001448070704
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1166761201492494}
+  m_GameObject: {fileID: 1761217697059458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -40,18 +40,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114452747537701064
+--- !u!114 &114867928268239102
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1166761201492494}
+  m_GameObject: {fileID: 1761217697059458}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f16c2f32e8b62d944ab849e4215e39cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DragDistance: 0.1
+  FoxPrefab: {fileID: 1132147270716104, guid: a6b930dd3cd539b42856d69a9ea99d89, type: 2}
+  WolfPrefab: {fileID: 1884622331499224, guid: 7768bed380956c645a2a35ca8f803494, type: 2}
+  KetsuPrefab: {fileID: 1194870832127600, guid: ba61095fdc8074722bedf42107a44576,
+    type: 2}
   Fox: {fileID: 0}
   Wolf: {fileID: 0}
   Ketsu: {fileID: 0}
+  SelectedCharacter: {fileID: 0}

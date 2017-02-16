@@ -24,11 +24,11 @@ namespace Ketsu.Game
         public static int KetsuPower;
 
         Map map;
-        PlayerController pc;
+        CharacterController controller;
 
         void Start()
         {
-            pc = FindObjectOfType<PlayerController>();
+            controller = FindObjectOfType<CharacterController>();
             map = MapManager.LoadedMap;
         }
 
@@ -163,21 +163,21 @@ namespace Ketsu.Game
             AnimateTo(other.Position, delegate {
 
                 // Update Ketsu position and rotation
-                pc.Ketsu.transform.rotation = transform.rotation;
-                pc.Ketsu.transform.position = new Vector3(
+                controller.Ketsu.transform.rotation = transform.rotation;
+                controller.Ketsu.transform.position = new Vector3(
                     other.Position.X,
                     other.transform.position.y,
                     other.Position.Y
                 );
-                pc.Ketsu.UpdatePosition();
+                controller.Ketsu.UpdatePosition();
 
                 // Deactive and activate characters
-                pc.Ketsu.gameObject.SetActive(true);
-                pc.Fox.gameObject.SetActive(false);
-                pc.Wolf.gameObject.SetActive(false);
+                controller.Ketsu.gameObject.SetActive(true);
+                controller.Fox.gameObject.SetActive(false);
+                controller.Wolf.gameObject.SetActive(false);
 
                 // Set the active character as Ketsu
-                pc.SelectedCharacter = pc.Ketsu;
+                controller.SelectedCharacter = controller.Ketsu;
 
                 if (callback != null) callback();
             });
@@ -188,26 +188,26 @@ namespace Ketsu.Game
            AkSoundEngine.PostEvent(SfxSplit, gameObject);
 
             // Deactive and activate characters
-            pc.Ketsu.gameObject.SetActive(false);
-            pc.Fox.gameObject.SetActive(true);
-            pc.Wolf.gameObject.SetActive(true);
+            controller.Ketsu.gameObject.SetActive(false);
+            controller.Fox.gameObject.SetActive(true);
+            controller.Wolf.gameObject.SetActive(true);
 
             // Set the active character as Fox
-            pc.SelectedCharacter = pc.Fox;
+            controller.SelectedCharacter = controller.Fox;
 
             // Update fox position
-            pc.Fox.transform.rotation = transform.rotation;
-            pc.Fox.transform.position = new Vector3(Position.X, pc.Fox.transform.position.y, Position.Y);
-            pc.Fox.Position = foxPos;
-            pc.Fox.HasMoved = true;
-            pc.Fox.AnimateTo(foxPos, null);
+            controller.Fox.transform.rotation = transform.rotation;
+            controller.Fox.transform.position = new Vector3(Position.X, controller.Fox.transform.position.y, Position.Y);
+            controller.Fox.Position = foxPos;
+            controller.Fox.HasMoved = true;
+            controller.Fox.AnimateTo(foxPos, null);
 
             // Update wolf position
-            pc.Wolf.transform.rotation = transform.rotation;
-            pc.Wolf.transform.position = new Vector3(Position.X, pc.Wolf.transform.position.y, Position.Y);
-            pc.Wolf.Position = wolfPos;
-            pc.Wolf.HasMoved = true;
-            pc.Wolf.AnimateTo(wolfPos, callback);
+            controller.Wolf.transform.rotation = transform.rotation;
+            controller.Wolf.transform.position = new Vector3(Position.X, controller.Wolf.transform.position.y, Position.Y);
+            controller.Wolf.Position = wolfPos;
+            controller.Wolf.HasMoved = true;
+            controller.Wolf.AnimateTo(wolfPos, callback);
         }
 
         public void AnimateTo(IntVector2 target, Action callback)

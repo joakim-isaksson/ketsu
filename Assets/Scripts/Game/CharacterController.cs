@@ -6,10 +6,14 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-    public class PlayerController : MonoBehaviour
+    public class CharacterController : MonoBehaviour
     {
         [Tooltip("Percentage of the screens height")]
         public float DragDistance;
+
+        public GameObject FoxPrefab;
+        public GameObject WolfPrefab;
+        public GameObject KetsuPrefab;
 
         [HideInInspector]
         public Character Fox;
@@ -48,9 +52,53 @@ namespace Ketsu.Game
                 }
             }
 
-            // Set starting character
-            Ketsu.gameObject.SetActive(false);
-            SelectedCharacter = Fox;
+            // Set starting characters
+            if (Fox == null && Wolf == null && Ketsu == null)
+            {
+                throw new InvalidOperationException("No characters found from scene! Try adding one...");
+            }
+            else if (Fox != null && Wolf != null && Ketsu != null)
+            {
+                throw new InvalidOperationException("Too many characters in the scene! Try removing one...");
+            }
+            else if (Fox != null && Wolf == null && Ketsu != null)
+            {
+                throw new InvalidOperationException("Fox and Ketsu in the same scene! Try removing one...");
+            }
+            else if (Fox == null && Wolf != null && Ketsu != null)
+            {
+                throw new InvalidOperationException("Wolf and Ketsu in the same scene! Try removing one...");
+            }
+            else if (Fox != null && Wolf != null && Ketsu == null)
+            {
+                // Starting with Fox and Wolf
+                SelectedCharacter = Fox;
+                Ketsu = Instantiate(KetsuPrefab).GetComponent<Character>();
+                Ketsu.gameObject.SetActive(false);
+            }
+            else if (Fox != null && Wolf == null && Ketsu == null)
+            {
+                // Starting with Fox
+                SelectedCharacter = Fox;
+            }
+            else if (Fox == null && Wolf != null && Ketsu == null)
+            {
+                // Starting with Wolf
+                SelectedCharacter = Wolf;
+            }
+            else if (Fox == null && Wolf == null && Ketsu != null)
+            {
+                // Starting with Ketsu
+                SelectedCharacter = Ketsu;
+                Fox = Instantiate(FoxPrefab).GetComponent<Character>();
+                Wolf = Instantiate(WolfPrefab).GetComponent<Character>();
+                Fox.gameObject.SetActive(false);
+                Wolf.gameObject.SetActive(false);
+            }
+            else
+            {
+                throw new InvalidOperationException("Unexpected error - Contact the code monkeys!");
+            }
         }
 
         void Update()
@@ -145,23 +193,56 @@ namespace Ketsu.Game
             }
         }
 
+        // Return true if character selected
+        bool CharacterSelectionAction(IntVector2 selectedTilePos)
+        {
+            // Character selection
+            if (Fox != null && Fox.Position.Equals(selectedTilePos))
+            {
+                Debug.Log("Fox Selected");
+                SelectedCharacter = Fox;
+                return true;
+            }
+            else if (Wolf != null && Wolf.Position.Equals(selectedTilePos))
+            {
+                Debug.Log("Wolf Selected");
+                SelectedCharacter = Wolf;
+                return true;
+            }
+            else if (Ketsu != null && Ketsu.Position.Equals(selectedTilePos))
+            {
+                Debug.Log("Ketsu Selected");
+                SelectedCharacter = Ketsu;
+                return true;
+            }
+
+            return false;
+        }
+
         void MoveAction(Direction direction)
         {
             if (waitingForActions > 0 || SelectedCharacter.HasMoved == true) return;
 
             Debug.Log("Move Action: " + direction.ToString());
 
-            switch(SelectedCharacter.Type)
+            switch (SelectedCharacter.Type)
             {
                 case MapObjectType.Fox:
-                    waitingForActions += 2;
+                    waitingForActions++;
                     Fox.MoveTo(direction, delegate { waitingForActions--; });
-                    Wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                    if (Wolf != null)
+                    {
+                        Wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                    }
                     break;
                 case MapObjectType.Wolf:
-                    waitingForActions += 2;
-                    Fox.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                    waitingForActions++;
                     Wolf.MoveTo(direction, delegate { waitingForActions--; });
+                    if (Fox != null)
+                    {
+                        waitingForActions++;
+                        Fox.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                    }
                     break;
                 case MapObjectType.Ketsu:
                     waitingForActions += 1;
@@ -170,26 +251,6 @@ namespace Ketsu.Game
                 default:
                     break;
             }
-        }
-
-        // Return true if character selected
-        bool CharacterSelectionAction(IntVector2 selectedTilePos)
-        {
-            // Character selection
-            if (Fox.Position.Equals(selectedTilePos))
-            {
-                Debug.Log("Fox Selected");
-                SelectedCharacter = Fox;
-                return true;
-            }
-            else if (Wolf.Position.Equals(selectedTilePos))
-            {
-                Debug.Log("Wolf Selected");
-                SelectedCharacter = Wolf;
-                return true;
-            }
-
-            return false;
         }
     }
 }
