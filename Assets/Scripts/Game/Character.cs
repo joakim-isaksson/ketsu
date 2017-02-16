@@ -23,11 +23,18 @@ namespace Ketsu.Game
         [HideInInspector]
         public static int KetsuPower;
 
+        Map map;
         PlayerController pc;
 
-        private void Start()
+        void Start()
         {
             pc = FindObjectOfType<PlayerController>();
+            map = MapManager.LoadedMap;
+        }
+
+        private void Awake()
+        {
+
         }
 
         void LateUpdate()
@@ -41,7 +48,6 @@ namespace Ketsu.Game
             IntVector2 targetPos = Position.Add(direction.ToIntVector2());
 
             // Check boarder restrictions
-            Map map = MapManager.Instance.CurrentMap;
             if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height)
             {
                 if (callback != null) callback();
@@ -117,8 +123,6 @@ namespace Ketsu.Game
         // Returns blocking object or null if nothing is blocking in the target area
 		MapObject BlockingObject(IntVector2 target)
 		{
-            Map map = MapManager.Instance.CurrentMap;
-
             // Blocked by Object Level
             MapObject oObj = map.ObjectLayer[target.X][target.Y];
             if (oObj != null) return oObj;

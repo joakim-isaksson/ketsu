@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.46169513, g: 0.5124164, b: 0.58993304, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -134,6 +134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1290664
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +265,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &7628383
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,6 +396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &20003042
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &20804636
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,6 +488,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &21721604
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +704,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &28879882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,7 +1094,7 @@ Transform:
   - {fileID: 2051542734}
   - {fileID: 1963016944}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &39195296
 GameObject:
@@ -1121,6 +1139,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &41518109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1185,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &49490965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!4 &49567494
 Transform:
   m_ObjectHideFlags: 0
@@ -1296,6 +1323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &64989894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1793,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &79623118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2348,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &107349710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,7 +2549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a219c9151b7d62946ad1b019b6a16c97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  basePath: Audio/GeneratedSoundBanks
+  basePath: Audio\GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
@@ -2543,7 +2579,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &128903637
 GameObject:
@@ -2928,6 +2964,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &137531484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2971,6 +3010,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &137597680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3099,6 +3141,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 5
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &147871021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,6 +3187,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &153214388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3185,6 +3233,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &162164818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3398,6 +3449,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &176950090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,6 +3569,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
 --- !u!114 &184775107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3529,12 +3586,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0
   MoveAnimDelay: 0
   SfxMove: 
   SfxMerge: 
   SfxSplit: 
-  HasMoved: 0
 --- !u!1 &192409147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,6 +3637,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!4 &198346247
 Transform:
   m_ObjectHideFlags: 0
@@ -3805,6 +3867,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &219339823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,6 +4168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &234391408
 GameObject:
   m_ObjectHideFlags: 0
@@ -4146,6 +4214,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &235234792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4189,6 +4260,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &241095891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,6 +4391,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &251998578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4437,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &257246510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,6 +4483,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &261676291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4701,6 +4784,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &267199783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4829,6 +4915,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &277586726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,6 +4961,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &278335558
 GameObject:
   m_ObjectHideFlags: 0
@@ -5000,6 +5092,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &281239654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5381,6 +5476,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &312316365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5424,6 +5522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &316329967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5552,6 +5653,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &324144315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,6 +5699,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &329769607
 GameObject:
   m_ObjectHideFlags: 0
@@ -5723,6 +5830,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &338281148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,6 +5876,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &340002635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5809,6 +5922,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
+--- !u!4 &340867415 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576,
+    type: 2}
+  m_PrefabInternal: {fileID: 1745456816}
 --- !u!1 &345805353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5852,6 +5973,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &353293950
 GameObject:
   m_ObjectHideFlags: 0
@@ -5980,6 +6104,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &361180784
 GameObject:
   m_ObjectHideFlags: 0
@@ -6023,6 +6150,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &363322068
 GameObject:
   m_ObjectHideFlags: 0
@@ -6066,6 +6196,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &368595971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6194,6 +6327,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &377985050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6322,6 +6458,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &396104982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6365,6 +6504,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &400147878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6408,6 +6550,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &400167728
 GameObject:
   m_ObjectHideFlags: 0
@@ -6451,6 +6596,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &404166363
 GameObject:
   m_ObjectHideFlags: 0
@@ -6479,7 +6627,7 @@ Transform:
   m_Children:
   - {fileID: 1355957664}
   m_Father: {fileID: 495196989}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &404166365
 MonoBehaviour:
@@ -6494,12 +6642,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0.1
   MoveAnimDelay: 0
   SfxMove: Move_Fox
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
-  HasMoved: 0
 --- !u!1 &404269628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6883,6 +7033,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &441201804
 GameObject:
   m_ObjectHideFlags: 0
@@ -7133,6 +7286,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &462903810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7176,6 +7332,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &465425567
 GameObject:
   m_ObjectHideFlags: 0
@@ -7474,6 +7633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &481121601
 GameObject:
   m_ObjectHideFlags: 0
@@ -7503,7 +7665,7 @@ Transform:
   - {fileID: 1311737319}
   - {fileID: 1496049602}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486144219
 GameObject:
@@ -7548,6 +7710,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &486186579
 GameObject:
   m_ObjectHideFlags: 0
@@ -7591,6 +7756,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &495196988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7622,9 +7790,10 @@ Transform:
   - {fileID: 814411373}
   - {fileID: 137598797}
   - {fileID: 1779344189}
+  - {fileID: 340867415}
   - {fileID: 404166364}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495758160
 GameObject:
@@ -7839,6 +8008,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &511142849
 GameObject:
   m_ObjectHideFlags: 0
@@ -7882,6 +8054,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &518941937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7925,6 +8100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &523494715
 GameObject:
   m_ObjectHideFlags: 0
@@ -8308,6 +8486,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &537604576
 GameObject:
   m_ObjectHideFlags: 0
@@ -8436,6 +8617,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &539805937
 GameObject:
   m_ObjectHideFlags: 0
@@ -8649,6 +8833,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &565674971
 GameObject:
   m_ObjectHideFlags: 0
@@ -8777,6 +8964,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &597137147
 GameObject:
   m_ObjectHideFlags: 0
@@ -8996,7 +9186,7 @@ Transform:
   - {fileID: 1853582994}
   - {fileID: 1423451159}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607890911
 GameObject:
@@ -9041,6 +9231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &611478995
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,6 +9277,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &619424225
 GameObject:
   m_ObjectHideFlags: 0
@@ -9382,6 +9578,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &637860645
 GameObject:
   m_ObjectHideFlags: 0
@@ -9425,6 +9624,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &642548427
 GameObject:
   m_ObjectHideFlags: 0
@@ -9468,6 +9670,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &644357753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9596,6 +9801,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &650625881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9639,6 +9847,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &654332753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9682,6 +9893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &655403289
 GameObject:
   m_ObjectHideFlags: 0
@@ -9725,6 +9939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &658457319
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,6 +10736,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &696047958
 GameObject:
   m_ObjectHideFlags: 0
@@ -10562,6 +10782,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &698790645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10605,6 +10828,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &701236826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10648,6 +10874,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &712169127
 GameObject:
   m_ObjectHideFlags: 0
@@ -10776,6 +11005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &714636369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10989,6 +11221,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &733554672
 GameObject:
   m_ObjectHideFlags: 0
@@ -11287,6 +11522,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1001 &741036164
 Prefab:
   m_ObjectHideFlags: 0
@@ -11372,6 +11610,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &744574121
 GameObject:
   m_ObjectHideFlags: 0
@@ -11415,6 +11656,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &755803446
 GameObject:
   m_ObjectHideFlags: 0
@@ -11543,6 +11787,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &758454757
 GameObject:
   m_ObjectHideFlags: 0
@@ -11671,6 +11918,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &764751592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11968,6 +12218,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &785996879
 GameObject:
   m_ObjectHideFlags: 0
@@ -12011,6 +12264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &788709363
 GameObject:
   m_ObjectHideFlags: 0
@@ -12222,6 +12478,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &801340484
 GameObject:
   m_ObjectHideFlags: 0
@@ -12579,6 +12838,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &814411372
 GameObject:
   m_ObjectHideFlags: 0
@@ -12622,6 +12884,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 4
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &828012064
 GameObject:
   m_ObjectHideFlags: 0
@@ -12750,6 +13015,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &832267303
 GameObject:
   m_ObjectHideFlags: 0
@@ -12878,6 +13146,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &847881473
 GameObject:
   m_ObjectHideFlags: 0
@@ -13005,6 +13276,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &849322602
 GameObject:
   m_ObjectHideFlags: 0
@@ -13048,6 +13322,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &856038174
 GameObject:
   m_ObjectHideFlags: 0
@@ -13091,6 +13368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &856847199
 GameObject:
   m_ObjectHideFlags: 0
@@ -13134,6 +13414,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &856856908
 GameObject:
   m_ObjectHideFlags: 0
@@ -13347,6 +13630,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &860342362
 GameObject:
   m_ObjectHideFlags: 0
@@ -13390,6 +13676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &864306663
 GameObject:
   m_ObjectHideFlags: 0
@@ -13518,6 +13807,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &878155897
 GameObject:
   m_ObjectHideFlags: 0
@@ -13635,6 +13927,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
 --- !u!114 &882767453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13649,12 +13944,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0
   MoveAnimDelay: 0
   SfxMove: 
   SfxMerge: 
   SfxSplit: 
-  HasMoved: 0
 --- !u!1 &897796468
 GameObject:
   m_ObjectHideFlags: 0
@@ -13698,6 +13995,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &899387049
 GameObject:
   m_ObjectHideFlags: 0
@@ -13741,6 +14041,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &903683254
 GameObject:
   m_ObjectHideFlags: 0
@@ -13784,6 +14087,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &907993931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13827,6 +14133,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &917443219
 GameObject:
   m_ObjectHideFlags: 0
@@ -13870,6 +14179,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &920882521
 GameObject:
   m_ObjectHideFlags: 0
@@ -14114,6 +14426,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &938612250
 GameObject:
   m_ObjectHideFlags: 0
@@ -14412,6 +14727,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &948860184
 GameObject:
   m_ObjectHideFlags: 0
@@ -14540,6 +14858,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &959567058
 GameObject:
   m_ObjectHideFlags: 0
@@ -14583,6 +14904,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &982441626
 GameObject:
   m_ObjectHideFlags: 0
@@ -14626,6 +14950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &990347452
 GameObject:
   m_ObjectHideFlags: 0
@@ -14754,6 +15081,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1000944667
 GameObject:
   m_ObjectHideFlags: 0
@@ -14797,6 +15127,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1002632723
 GameObject:
   m_ObjectHideFlags: 0
@@ -14925,6 +15258,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1005750073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14968,6 +15304,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1015269784
 GameObject:
   m_ObjectHideFlags: 0
@@ -15096,6 +15435,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1016925842
 GameObject:
   m_ObjectHideFlags: 0
@@ -15224,6 +15566,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1021019532
 GameObject:
   m_ObjectHideFlags: 0
@@ -15352,6 +15697,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1026190972
 GameObject:
   m_ObjectHideFlags: 0
@@ -15395,6 +15743,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1034264600
 GameObject:
   m_ObjectHideFlags: 0
@@ -15438,6 +15789,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1035448169
 GameObject:
   m_ObjectHideFlags: 0
@@ -15651,6 +16005,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1056197010
 GameObject:
   m_ObjectHideFlags: 0
@@ -15779,6 +16136,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1065981667
 GameObject:
   m_ObjectHideFlags: 0
@@ -15822,6 +16182,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1071696304
 GameObject:
   m_ObjectHideFlags: 0
@@ -15950,6 +16313,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1085409081
 GameObject:
   m_ObjectHideFlags: 0
@@ -16078,6 +16444,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1091240272
 GameObject:
   m_ObjectHideFlags: 0
@@ -16121,6 +16490,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1094131749
 GameObject:
   m_ObjectHideFlags: 0
@@ -16164,6 +16536,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1094390095
 GameObject:
   m_ObjectHideFlags: 0
@@ -16292,6 +16667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1102739904
 GameObject:
   m_ObjectHideFlags: 0
@@ -16335,6 +16713,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1107548938
 GameObject:
   m_ObjectHideFlags: 0
@@ -16718,6 +17099,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1132584684
 GameObject:
   m_ObjectHideFlags: 0
@@ -17058,48 +17442,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1141827998}
   m_Mesh: {fileID: 4300000, guid: f8741670c0fc30346a46c8d2ff884a4c, type: 3}
---- !u!1001 &1142054020
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4892883857703026, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: da35d7b19afb3f4429cd11adf78d2683, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1151158887
 GameObject:
   m_ObjectHideFlags: 0
@@ -17228,6 +17570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1159006357
 GameObject:
   m_ObjectHideFlags: 0
@@ -17356,6 +17701,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1170428706
 GameObject:
   m_ObjectHideFlags: 0
@@ -17399,6 +17747,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1171756986
 GameObject:
   m_ObjectHideFlags: 0
@@ -17527,6 +17878,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1177749665
 GameObject:
   m_ObjectHideFlags: 0
@@ -17655,6 +18009,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1188257861
 GameObject:
   m_ObjectHideFlags: 0
@@ -17698,6 +18055,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1191221565
 GameObject:
   m_ObjectHideFlags: 0
@@ -17741,6 +18101,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1196310395
 GameObject:
   m_ObjectHideFlags: 0
@@ -17784,6 +18147,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1199536907
 GameObject:
   m_ObjectHideFlags: 0
@@ -17827,6 +18193,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1217032461
 GameObject:
   m_ObjectHideFlags: 0
@@ -17955,6 +18324,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1233460342
 GameObject:
   m_ObjectHideFlags: 0
@@ -17998,6 +18370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1233591847
 GameObject:
   m_ObjectHideFlags: 0
@@ -18126,6 +18501,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1238821676
 GameObject:
   m_ObjectHideFlags: 0
@@ -18285,6 +18663,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1250823925
 GameObject:
   m_ObjectHideFlags: 0
@@ -18328,6 +18709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1254798317
 GameObject:
   m_ObjectHideFlags: 0
@@ -18371,6 +18755,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1266700919
 GameObject:
   m_ObjectHideFlags: 0
@@ -18414,6 +18801,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1270553893
 GameObject:
   m_ObjectHideFlags: 0
@@ -18457,6 +18847,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1281636666
 GameObject:
   m_ObjectHideFlags: 0
@@ -18500,6 +18893,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1291622331
 GameObject:
   m_ObjectHideFlags: 0
@@ -18713,6 +19109,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1309729564
 GameObject:
   m_ObjectHideFlags: 0
@@ -18841,6 +19240,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1311563138
 GameObject:
   m_ObjectHideFlags: 0
@@ -19083,6 +19485,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1322535260
 GameObject:
   m_ObjectHideFlags: 0
@@ -19126,6 +19531,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1335618299
 GameObject:
   m_ObjectHideFlags: 0
@@ -19169,6 +19577,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1355957663
 GameObject:
   m_ObjectHideFlags: 0
@@ -19452,6 +19863,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1361994128
 GameObject:
   m_ObjectHideFlags: 0
@@ -19665,6 +20079,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1373391908
 GameObject:
   m_ObjectHideFlags: 0
@@ -19878,6 +20295,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1396965347
 GameObject:
   m_ObjectHideFlags: 0
@@ -19921,6 +20341,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1399518506
 GameObject:
   m_ObjectHideFlags: 0
@@ -19964,6 +20387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1404112968
 GameObject:
   m_ObjectHideFlags: 0
@@ -20007,6 +20433,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1404286665
 GameObject:
   m_ObjectHideFlags: 0
@@ -20388,6 +20817,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1430618333
 GameObject:
   m_ObjectHideFlags: 0
@@ -20431,6 +20863,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1433018140
 GameObject:
   m_ObjectHideFlags: 0
@@ -20474,6 +20909,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1437927922
 GameObject:
   m_ObjectHideFlags: 0
@@ -20617,6 +21055,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1454012143
 GameObject:
   m_ObjectHideFlags: 0
@@ -20984,6 +21425,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1477086224
 GameObject:
   m_ObjectHideFlags: 0
@@ -21027,6 +21471,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1492679986
 GameObject:
   m_ObjectHideFlags: 0
@@ -21269,6 +21716,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1500361288
 GameObject:
   m_ObjectHideFlags: 0
@@ -21482,6 +21932,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1523863703
 GameObject:
   m_ObjectHideFlags: 0
@@ -21780,6 +22233,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1540038412
 GameObject:
   m_ObjectHideFlags: 0
@@ -21823,6 +22279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1546240830
 GameObject:
   m_ObjectHideFlags: 0
@@ -21951,6 +22410,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1553131032
 GameObject:
   m_ObjectHideFlags: 0
@@ -22079,6 +22541,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1564595909
 GameObject:
   m_ObjectHideFlags: 0
@@ -22122,6 +22587,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1565967759
 GameObject:
   m_ObjectHideFlags: 0
@@ -22165,6 +22633,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1568026330
 GameObject:
   m_ObjectHideFlags: 0
@@ -22293,6 +22764,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1576431335
 GameObject:
   m_ObjectHideFlags: 0
@@ -22421,6 +22895,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1584969920
 GameObject:
   m_ObjectHideFlags: 0
@@ -22566,7 +23043,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1587714902
 GameObject:
@@ -22611,6 +23088,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1587917360
 GameObject:
   m_ObjectHideFlags: 0
@@ -23078,6 +23558,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1623801375
 GameObject:
   m_ObjectHideFlags: 0
@@ -23206,6 +23689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1636509518
 GameObject:
   m_ObjectHideFlags: 0
@@ -23249,6 +23735,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1652690065
 GameObject:
   m_ObjectHideFlags: 0
@@ -23292,6 +23781,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1659968130
 GameObject:
   m_ObjectHideFlags: 0
@@ -23335,6 +23827,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1662650017
 GameObject:
   m_ObjectHideFlags: 0
@@ -23378,6 +23873,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1665178800
 GameObject:
   m_ObjectHideFlags: 0
@@ -23676,6 +24174,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1675785038
 GameObject:
   m_ObjectHideFlags: 0
@@ -23719,6 +24220,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1677258011
 GameObject:
   m_ObjectHideFlags: 0
@@ -23846,6 +24350,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1681976536
 GameObject:
   m_ObjectHideFlags: 0
@@ -24229,6 +24736,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1706801539
 GameObject:
   m_ObjectHideFlags: 0
@@ -24737,6 +25247,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1733997096
 GameObject:
   m_ObjectHideFlags: 0
@@ -24780,6 +25293,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
+--- !u!1001 &1745456816
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 495196989}
+    m_Modifications:
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4117673036346218, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ba61095fdc8074722bedf42107a44576, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1746284745
 GameObject:
   m_ObjectHideFlags: 0
@@ -24936,6 +25494,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1753343332
 GameObject:
   m_ObjectHideFlags: 0
@@ -25149,6 +25710,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1778807856
 GameObject:
   m_ObjectHideFlags: 0
@@ -25277,12 +25841,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0.1
   MoveAnimDelay: 0.1
   SfxMove: Move_Wolf
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
-  HasMoved: 0
 --- !u!1 &1783947279
 GameObject:
   m_ObjectHideFlags: 0
@@ -25326,6 +25892,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1001 &1794784592
 Prefab:
   m_ObjectHideFlags: 0
@@ -25415,6 +25984,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1802319078
 GameObject:
   m_ObjectHideFlags: 0
@@ -25458,6 +26030,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1805602963
 GameObject:
   m_ObjectHideFlags: 0
@@ -25501,6 +26076,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1806803975
 GameObject:
   m_ObjectHideFlags: 0
@@ -25544,6 +26122,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1807149062
 GameObject:
   m_ObjectHideFlags: 0
@@ -25757,6 +26338,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1832821510
 GameObject:
   m_ObjectHideFlags: 0
@@ -25970,6 +26554,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1849436526
 GameObject:
   m_ObjectHideFlags: 0
@@ -26183,6 +26770,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1870428449
 GameObject:
   m_ObjectHideFlags: 0
@@ -26649,6 +27239,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1921133665
 GameObject:
   m_ObjectHideFlags: 0
@@ -26777,6 +27370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1939402755
 GameObject:
   m_ObjectHideFlags: 0
@@ -26820,6 +27416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1939534506
 GameObject:
   m_ObjectHideFlags: 0
@@ -26906,7 +27505,7 @@ RectTransform:
   m_Children:
   - {fileID: 443850304}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26956,6 +27555,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1949853239
 GameObject:
   m_ObjectHideFlags: 0
@@ -26999,6 +27601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1001 &1954624945
 Prefab:
   m_ObjectHideFlags: 0
@@ -27036,7 +27641,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4812334475590134, guid: c043a81906345d149b55bb151f4c57a2, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c043a81906345d149b55bb151f4c57a2, type: 2}
@@ -27084,6 +27689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1956606320
 GameObject:
   m_ObjectHideFlags: 0
@@ -27212,6 +27820,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1963016943
 GameObject:
   m_ObjectHideFlags: 0
@@ -27255,6 +27866,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1968483071
 GameObject:
   m_ObjectHideFlags: 0
@@ -27298,6 +27912,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &1969037381
 GameObject:
   m_ObjectHideFlags: 0
@@ -27681,6 +28298,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2003609458
 GameObject:
   m_ObjectHideFlags: 0
@@ -27724,6 +28344,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2003644449
 GameObject:
   m_ObjectHideFlags: 0
@@ -27767,6 +28390,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2011036933
 GameObject:
   m_ObjectHideFlags: 0
@@ -27810,6 +28436,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2025917874
 GameObject:
   m_ObjectHideFlags: 0
@@ -27938,6 +28567,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2027536949
 GameObject:
   m_ObjectHideFlags: 0
@@ -28066,6 +28698,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2038809560
 GameObject:
   m_ObjectHideFlags: 0
@@ -28109,6 +28744,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1001 &2045754111
 Prefab:
   m_ObjectHideFlags: 0
@@ -28146,7 +28784,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4663837652063146, guid: 3cb34f75d7f862e4d83366416324dccd, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114452747537701064, guid: 3cb34f75d7f862e4d83366416324dccd,
         type: 2}
@@ -28204,6 +28842,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2050144731
 GameObject:
   m_ObjectHideFlags: 0
@@ -28247,6 +28888,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2050278036
 GameObject:
   m_ObjectHideFlags: 0
@@ -28375,6 +29019,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2056325196
 GameObject:
   m_ObjectHideFlags: 0
@@ -28418,6 +29065,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2058644470
 GameObject:
   m_ObjectHideFlags: 0
@@ -28461,6 +29111,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2068691233
 GameObject:
   m_ObjectHideFlags: 0
@@ -29002,6 +29655,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2083855216
 GameObject:
   m_ObjectHideFlags: 0
@@ -29130,6 +29786,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2094044573
 GameObject:
   m_ObjectHideFlags: 0
@@ -29173,6 +29832,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2097125665
 GameObject:
   m_ObjectHideFlags: 0
@@ -29464,7 +30126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
         type: 2}
@@ -29745,6 +30407,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2117185201
 GameObject:
   m_ObjectHideFlags: 0
@@ -29788,6 +30453,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2117547222
 GameObject:
   m_ObjectHideFlags: 0
@@ -29915,6 +30583,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2119191038
 GameObject:
   m_ObjectHideFlags: 0
@@ -29958,6 +30629,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2122366516
 GameObject:
   m_ObjectHideFlags: 0
@@ -30086,6 +30760,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2136202030
 GameObject:
   m_ObjectHideFlags: 0
@@ -30214,6 +30891,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0
 --- !u!1 &2141517990
 GameObject:
   m_ObjectHideFlags: 0
@@ -30257,3 +30937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
+  Position:
+    X: 0
+    Y: 0

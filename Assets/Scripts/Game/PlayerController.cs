@@ -31,7 +31,7 @@ namespace Ketsu.Game
         void Start()
         {
             // Find characters to control
-            foreach (MapObject obj in MapManager.Instance.CurrentMap.DynamicLayer)
+            foreach (MapObject obj in MapManager.LoadedMap.DynamicLayer)
             {
 
                 switch (obj.GetComponent<MapObject>().Type)

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Ketsu.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,33 +7,21 @@ namespace Ketsu.Game
 {
     public class MapManager : MonoBehaviour
     {
+        public string MapName;
+        public int StartingKetsuPower;
+        public IntVector2 MapSize;
+
         [HideInInspector]
-        public static MapManager Instance = null;
-
-		public Map CurrentMap;
-
-        /// <summary>
-        /// Destroy this singleton instance
-        /// </summary>
-        /*public static void DestroySingleton()
-        {
-            Destroy(Instance.gameObject);
-            Instance = null;
-        }*/
+		public static Map LoadedMap;
 
         void Awake()
         {
-            // Make this an indestructible singleton
-            if (Instance == null) Instance = this;
-            else if (!Instance.Equals(this)) Destroy(gameObject);
-            //DontDestroyOnLoad(gameObject);
-
-            LoadMap("TestMap");
+            LoadedMap = LoadMap(MapName, MapSize.X, MapSize.Y);
         }
 
         void Start()
         {
-            
+            Character.KetsuPower += StartingKetsuPower;
         }
 
         void Update()
@@ -40,32 +29,34 @@ namespace Ketsu.Game
 
         }
         
-        public void LoadMap(string name)
+        public static Map LoadMap(string name, int width, int height)
         {
             // TODO:
             // Load map from <name>.json file from hardcoded resource path
+            // Use size data from the json file
 
-            // TODO: Use size data from the json file
-            CurrentMap = new Map(16, 12);
+            Map map = new Map(width, height);
 
             // Find map objects and add them to the data structure
             foreach (MapObject obj in FindObjectsOfType<MapObject>())
             {
-
+                obj.UpdatePosition();
                 switch (obj.GetComponent<MapObject>().Layer)
                 {
                     case MapLayer.Ground:
-                        CurrentMap.GroundLayer[obj.Position.X][obj.Position.Y] = obj;
+                        map.GroundLayer[obj.Position.X][obj.Position.Y] = obj;
                         break;
                     case MapLayer.Object:
-                        CurrentMap.ObjectLayer[obj.Position.X][obj.Position.Y] = obj;
+                        map.ObjectLayer[obj.Position.X][obj.Position.Y] = obj;
                         break;
                     case MapLayer.Dynamic:
-                        CurrentMap.DynamicLayer.Add(obj);
+                        map.DynamicLayer.Add(obj);
                         break;
 
                 }
             }
+
+            return map;
         }
     }
 }

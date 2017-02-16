@@ -16,12 +16,12 @@ namespace Ketsu.Game
 
         void Awake()
         {
-            UpdatePosition();
+
         }
 
         void Start()
         {
-            UpdatePosition();
+
         }
 
 		void Update()

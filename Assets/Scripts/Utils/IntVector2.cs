@@ -9,8 +9,8 @@
         public static readonly IntVector2 Forward = new IntVector2(0, 1);
         public static readonly IntVector2 Back = new IntVector2(0, -1);
 
-        public readonly int X;
-        public readonly int Y;
+        public int X;
+        public int Y;
 
         public IntVector2(int x, int y)
         {
