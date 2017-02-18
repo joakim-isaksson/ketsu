@@ -127,14 +127,9 @@ namespace Ketsu.Game
 
         void UpdateKetsuPower()
         {
-            if (SelectedCharacter.Type == MapObjectType.Ketsu)
-            {
-                KetsuPower = Mathf.Max(0.0f, KetsuPower + BurnRate * Time.deltaTime);
-            }
-            else
-            {
-                KetsuPower = Mathf.Min(MaxKetsuPower, KetsuPower + RegenerationRate * Time.deltaTime);
-            }
+            if (SelectedCharacter.Type == MapObjectType.Ketsu) KetsuPower -= BurnRate * Time.deltaTime;
+            else KetsuPower += RegenerationRate * Time.deltaTime;
+            KetsuPower = Mathf.Clamp(KetsuPower, 0.0f, MaxKetsuPower);
 
             KetsuPowerText.text = KetsuPower.ToString("0.00");
         }

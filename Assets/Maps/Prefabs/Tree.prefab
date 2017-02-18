@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4441038207843480}
   - component: {fileID: 114020481888363078}
-  m_Layer: 0
+  - component: {fileID: 65578533002366648}
+  m_Layer: 9
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +38,6 @@ GameObject:
   - component: {fileID: 4338904441819154}
   - component: {fileID: 33642355334156170}
   - component: {fileID: 23444888469058486}
-  - component: {fileID: 64665289294785718}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -111,20 +111,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1668824338642994}
   m_Mesh: {fileID: 4300000, guid: 4bcc2c587769474459be98cfa3c61392, type: 3}
---- !u!64 &64665289294785718
-MeshCollider:
+--- !u!65 &65578533002366648
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1668824338642994}
+  m_GameObject: {fileID: 1661712900779168}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 4bcc2c587769474459be98cfa3c61392, type: 3}
+  m_Size: {x: 0.81892866, y: 1.3290207, z: 0.82364595}
+  m_Center: {x: -0.0036990345, y: 0.6604843, z: 0.017635405}
 --- !u!114 &114020481888363078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,3 +136,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
+  Position:
+    X: 0
+    Y: 0

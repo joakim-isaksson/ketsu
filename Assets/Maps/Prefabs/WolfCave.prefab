@@ -20,7 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4114419908597234}
   - component: {fileID: 114085747873418668}
-  m_Layer: 0
+  - component: {fileID: 65114440768340792}
+  m_Layer: 9
   m_Name: WolfCave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +38,6 @@ GameObject:
   - component: {fileID: 4175027200316650}
   - component: {fileID: 33143010853823726}
   - component: {fileID: 23789121190278844}
-  - component: {fileID: 64128146544690242}
   m_Layer: 0
   m_Name: Ending point for wolf
   m_TagString: Untagged
@@ -51,8 +51,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388981535970808}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4175027200316650}
@@ -110,20 +110,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1921764934590830}
   m_Mesh: {fileID: 4300000, guid: 71f4e46f32488e84187ca1430140c456, type: 3}
---- !u!64 &64128146544690242
-MeshCollider:
+--- !u!65 &65114440768340792
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921764934590830}
+  m_GameObject: {fileID: 1388981535970808}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 71f4e46f32488e84187ca1430140c456, type: 3}
+  m_Size: {x: 0.9467627, y: 0.8084321, z: 0.91198254}
+  m_Center: {x: -0.005323723, y: 0.3960793, z: -0.007766247}
 --- !u!114 &114085747873418668
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,3 +135,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 5
   Layer: 2
+  Position:
+    X: 0
+    Y: 0

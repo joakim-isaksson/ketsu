@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4725272112682280}
   - component: {fileID: 33123683757034766}
   - component: {fileID: 23236755226889388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wolf
-  m_TagString: Object
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +37,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4706868187304872}
   - component: {fileID: 114768617247718788}
-  m_Layer: 0
+  - component: {fileID: 65514729403166848}
+  - component: {fileID: 54733859070099650}
+  m_Layer: 9
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,8 +52,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884622331499224}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15, y: 0, z: 11}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: -0.00000004371139}
+  m_LocalPosition: {x: 11, y: 0, z: 11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4725272112682280}
@@ -110,6 +112,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1261876964404888}
   m_Mesh: {fileID: 4300000, guid: 0ecd9724b4ae51547a7152fc156ed84c, type: 3}
+--- !u!54 &54733859070099650
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884622331499224}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &65514729403166848
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884622331499224}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4507245, y: 0.8364754, z: 0.90083164}
+  m_Center: {x: -0.002096175, y: 0.41300476, z: -0.014575005}
 --- !u!114 &114768617247718788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,9 +152,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 2
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0.1
-  MoveAnimDelay: 0.1
   SfxMove: Move_Wolf
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
-  HasMoved: 0

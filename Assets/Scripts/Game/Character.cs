@@ -213,7 +213,13 @@ namespace Ketsu.Game
             controller.Wolf.AnimateTo(wolfPos, callback);
         }
 
-        public void AnimateTo(IntVector2 target, Action callback)
+        public void TakeDamage(float amount)
+        {
+            CharacterController.KetsuPower -= amount;
+            StartCoroutine(FlashColor(Color.white, 0.05f, 3));
+        }
+
+        void AnimateTo(IntVector2 target, Action callback)
         {
             StartCoroutine(RunAnimateTo(target, callback));
         }
@@ -238,5 +244,45 @@ namespace Ketsu.Game
 
             if (callback != null) callback();
         }
+
+        IEnumerator FlashColor(Color flashColor, float time, int repeat)
+        {
+            MeshRenderer meshRenderer = GetComponentInChildren<MeshRenderer>();
+            Material[] materials = meshRenderer.materials;
+            Color[] startingColors = new Color[materials.Length];
+            for (int i = 0; i < materials.Length; i++)
+            {
+                startingColors[i] = materials[i].color;
+            }
+
+            for (int i = 0; i < repeat; i++)
+            {
+                float timePassed = 0.0f;
+                while (timePassed < time)
+                {
+                    timePassed += Time.deltaTime;
+                    float progress = Mathf.Min(timePassed / time, 1.0f);
+                    for (int ii = 0; ii < materials.Length; ii++)
+                    {
+                        materials[ii].color = Color.Lerp(startingColors[ii], flashColor, progress);
+                    }
+                    yield return null;
+                }
+
+                timePassed = 0.0f;
+                while (timePassed < time)
+                {
+                    timePassed += Time.deltaTime;
+                    float progress = Mathf.Min(timePassed / time, 1.0f);
+                    for (int ii = 0; ii < materials.Length; ii++)
+                    {
+                        materials[ii].color = Color.Lerp(flashColor, startingColors[ii], progress);
+                    }
+                    yield return null;
+                }
+            }
+        }
+
+
     }
 }
