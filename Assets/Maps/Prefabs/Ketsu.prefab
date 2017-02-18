@@ -64,13 +64,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1078779833004588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -0.06776383, y: -0.17190552, z: -0.067763835}
   m_Children: []
   m_Father: {fileID: 4117673036346218}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!23 &23193030946187440
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -123,9 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Layer: 0
+  Position:
+    X: 0
+    Y: 0
   MoveAnimTime: 0.05
-  MoveAnimDelay: 0
   SfxMove: Move_Ketsu
   SfxMerge: Transform_ToKetsu
   SfxSplit: Transform_FromKetsu
-  HasMoved: 0

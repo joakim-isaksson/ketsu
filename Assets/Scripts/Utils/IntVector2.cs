@@ -23,6 +23,14 @@
             return new IntVector2(X + vector.X, Y + vector.Y);
         }
 
+        public IntVector2 Mirror(IntVector2 point)
+        {
+            return new IntVector2(
+                point.X - (X - point.X),
+                point.Y - (Y - point.Y)
+            );
+        }
+
         public override bool Equals(object obj)
         {
             if (obj == null) return false;

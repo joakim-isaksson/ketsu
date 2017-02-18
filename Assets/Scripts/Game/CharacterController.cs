@@ -11,6 +11,7 @@ namespace Ketsu.Game
         [Tooltip("Percentage of the screens height")]
         public float DragDistance;
 
+        [Header("Character Prefabs")]
         public GameObject FoxPrefab;
         public GameObject WolfPrefab;
         public GameObject KetsuPrefab;
@@ -21,8 +22,11 @@ namespace Ketsu.Game
         public Character Wolf;
         [HideInInspector]
         public Character Ketsu;
+
         [HideInInspector]
         public Character SelectedCharacter;
+        [HideInInspector]
+        public Character CharBeforeKetsu;
 
         Vector2 touchStartPos;
         int waitingForActions;
@@ -221,6 +225,7 @@ namespace Ketsu.Game
 
         void MoveAction(Direction direction)
         {
+            // Wait that previous actions have finished
             if (waitingForActions > 0 || SelectedCharacter.HasMoved == true) return;
 
             Debug.Log("Move Action: " + direction.ToString());
@@ -232,6 +237,7 @@ namespace Ketsu.Game
                     Fox.MoveTo(direction, delegate { waitingForActions--; });
                     if (Wolf != null)
                     {
+                        waitingForActions++;
                         Wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
                     }
                     break;
@@ -245,7 +251,7 @@ namespace Ketsu.Game
                     }
                     break;
                 case MapObjectType.Ketsu:
-                    waitingForActions += 1;
+                    waitingForActions++;
                     Ketsu.MoveTo(direction, delegate { waitingForActions--; });
                     break;
                 default:
