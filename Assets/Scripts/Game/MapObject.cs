@@ -14,27 +14,12 @@ namespace Ketsu.Game
         [HideInInspector]
         public IntVector2 Position;
 
-        void Awake()
-        {
-
-        }
-
-        void Start()
-        {
-
-        }
-
-		void Update()
-		{
-
-        }
-
+        /// <summary>
+        /// Update position from the objects world position
+        /// </summary>
         public void UpdatePosition()
         {
-            Position = new IntVector2(
-                (int)Mathf.Round(transform.position.x),
-                (int)Mathf.Round(transform.position.z)
-            );
+            Position = IntVector2.FromXZ(transform.position);
         }
 
         public void DelayedAction(float time, Action action)

@@ -21,7 +21,7 @@ namespace Ketsu.Game
 
         void Start()
         {
-            Character.KetsuPower += StartingKetsuPower;
+            CharacterController.KetsuPower += StartingKetsuPower;
         }
 
         void Update()

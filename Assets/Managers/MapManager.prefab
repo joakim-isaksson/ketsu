@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MapName: TestName
-  StartingKetsuPower: 4
+  StartingKetsuPower: 5
   MapSize:
     X: 16
     Y: 12

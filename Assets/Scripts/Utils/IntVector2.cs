@@ -1,4 +1,6 @@
-﻿namespace Ketsu.Utils
+﻿using UnityEngine;
+
+namespace Ketsu.Utils
 {
     [System.Serializable]
     public class IntVector2
@@ -28,6 +30,14 @@
             return new IntVector2(
                 point.X - (X - point.X),
                 point.Y - (Y - point.Y)
+            );
+        }
+
+        public static IntVector2 FromXZ(Vector3 vector3)
+        {
+            return new IntVector2(
+                (int)Mathf.Round(vector3.x),
+                (int)Mathf.Round(vector3.z)
             );
         }
 

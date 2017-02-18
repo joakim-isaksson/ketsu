@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Ketsu.Utils;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,6 +34,30 @@ namespace Ketsu.Game
             }
 
             DynamicLayer = new List<MapObject>();
+        }
+
+        public List<MapObject> GetObjects(IntVector2 point)
+        {
+            List<MapObject> list = new List<MapObject>();
+
+            MapObject obj = GroundLayer[point.X][point.Y];
+            if (obj != null) list.Add(obj);
+
+            obj = ObjectLayer[point.X][point.Y];
+            if (obj != null) list.Add(obj);
+
+            foreach (MapObject o in DynamicLayer)
+            {
+                if (o.Position.Equals(point)) list.Add(o);
+            }
+
+            return list;
+        }
+
+        public bool Contains(IntVector2 point)
+        {
+            if (point.X < 0 || point.X >= Width || point.Y < 0 || point.Y >= Height) return false;
+            else return true;
         }
     }
 }

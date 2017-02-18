@@ -3,6 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
@@ -16,6 +17,12 @@ namespace Ketsu.Game
         public GameObject WolfPrefab;
         public GameObject KetsuPrefab;
 
+        [Header("Ketsu Power")]
+        public float BurnRate;
+        public float RegenerationRate;
+        public float MaxKetsuPower;
+        public Text KetsuPowerText;
+
         [HideInInspector]
         public Character Fox;
         [HideInInspector]
@@ -27,6 +34,9 @@ namespace Ketsu.Game
         public Character SelectedCharacter;
         [HideInInspector]
         public Character CharBeforeKetsu;
+
+        [HideInInspector]
+        public static float KetsuPower;
 
         Vector2 touchStartPos;
         int waitingForActions;
@@ -112,6 +122,21 @@ namespace Ketsu.Game
 #else
             HandleTouchInputs();
 #endif
+            UpdateKetsuPower();
+        }
+
+        void UpdateKetsuPower()
+        {
+            if (SelectedCharacter.Type == MapObjectType.Ketsu)
+            {
+                KetsuPower = Mathf.Max(0.0f, KetsuPower + BurnRate * Time.deltaTime);
+            }
+            else
+            {
+                KetsuPower = Mathf.Min(MaxKetsuPower, KetsuPower + RegenerationRate * Time.deltaTime);
+            }
+
+            KetsuPowerText.text = KetsuPower.ToString("0.00");
         }
 
         void HandleKeyInputs()

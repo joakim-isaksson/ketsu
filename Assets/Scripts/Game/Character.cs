@@ -19,9 +19,6 @@ namespace Ketsu.Game
         [HideInInspector]
         public bool HasMoved { get; private set; }
 
-        [HideInInspector]
-        public static int KetsuPower;
-
         Map map;
         CharacterController controller;
 
@@ -46,14 +43,14 @@ namespace Ketsu.Game
             IntVector2 targetPos = Position.Add(direction.ToIntVector2());
 
             // Check boarder restrictions
-            if (targetPos.X < 0 || targetPos.X >= map.Width || targetPos.Y < 0 || targetPos.Y >= map.Height)
+            if (!map.Contains(targetPos))
             {
                 if (callback != null) callback();
                 return;
             }
 
             // Check if something is blocking the way
-            MapObject blocking = BlockingObject(targetPos);
+            MapObject blocking = Blocking(targetPos);
 
             // Nothing is blocking -> try to move there
             if (blocking == null)
@@ -61,10 +58,10 @@ namespace Ketsu.Game
                 // Moving as Ketsu uses Ketsu Power
                 if (Type == MapObjectType.Ketsu)
                 {
-                    if (KetsuPower > 0)
+                    if (CharacterController.KetsuPower >= 1.0f)
                     {
-                        --KetsuPower;
-                        Debug.Log("Ketsu Power Left: " + KetsuPower);
+                        CharacterController.KetsuPower -= 1.0f;
+                        Debug.Log("Ketsu Power Left: " + CharacterController.KetsuPower);
                     }
                     else
                     {
@@ -116,39 +113,17 @@ namespace Ketsu.Game
             return;
         }
 
-        // Returns blocking object or null if nothing is blocking in the target area
-		MapObject BlockingObject(IntVector2 target)
+        // Returns blocking object or null if nothing is blocking the point
+		MapObject Blocking(IntVector2 point)
 		{
-            // Blocked by Object Level
-            MapObject oObj = map.ObjectLayer[target.X][target.Y];
-            if (oObj != null) return oObj;
-
-            // Blocked by Ground Level
-            MapObject gObj = map.GroundLayer[target.X][target.Y];
-            if (gObj != null)
+            foreach (MapObject obj in map.GetObjects(point))
             {
-                switch (gObj.Type)
-                {
-                    case MapObjectType.Water:
-                        return gObj;
-                }
+                if (obj.Layer == MapLayer.Ground) continue;
+                if (obj.Layer == MapLayer.Object) return obj;
+                if (obj.Type == MapObjectType.Fox || obj.Type == MapObjectType.Wolf) return obj;
             }
 
-            // Blocked by Dynamic Level
-            foreach (MapObject dObj in map.DynamicLayer)
-            {
-                if (dObj.gameObject.activeSelf && target.Equals(dObj.Position))
-                {
-                    switch (dObj.Type)
-                    {
-                        case MapObjectType.Wolf:
-                        case MapObjectType.Fox:
-                            return dObj;
-                    }
-                }
-            }
-
-            // Nothing stops the moving
+            // Nothing is blocking
             return null;
 		}
 
@@ -180,6 +155,7 @@ namespace Ketsu.Game
             });
         }
 
+        // targetPos is the position where the previously controlled character is moving in the split
         void SplitKetsu(IntVector2 targetPos, Action callback)
         {
             // Where to split
@@ -197,14 +173,14 @@ namespace Ketsu.Game
             }
 
             // Check if splitting is blocked
-            MapObject block = BlockingObject(foxPos);
+            MapObject block = Blocking(foxPos);
             if (block != null)
             {
                 Debug.Log("Can not split - Fox is blocked by: " + block.Type);
                 if (callback != null) callback();
                 return;
             }
-            block = BlockingObject(wolfPos);
+            block = Blocking(wolfPos);
             if (block != null)
             {
                 Debug.Log("Can not split - Wolf is blocked by: " + block.Type);

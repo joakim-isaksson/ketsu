@@ -56,7 +56,12 @@ MonoBehaviour:
   WolfPrefab: {fileID: 1884622331499224, guid: 7768bed380956c645a2a35ca8f803494, type: 2}
   KetsuPrefab: {fileID: 1194870832127600, guid: ba61095fdc8074722bedf42107a44576,
     type: 2}
+  BurnRate: 0.2
+  RegenerationRate: 0.01
+  MaxKetsuPower: 5
+  KetsuPowerText: {fileID: 0}
   Fox: {fileID: 0}
   Wolf: {fileID: 0}
   Ketsu: {fileID: 0}
   SelectedCharacter: {fileID: 0}
+  CharBeforeKetsu: {fileID: 0}
