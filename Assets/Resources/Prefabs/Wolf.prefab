@@ -134,7 +134,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884622331499224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.4507245, y: 0.8364754, z: 0.90083164}
@@ -155,6 +155,7 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
+  CharType: 1
   MoveAnimTime: 0.1
   SfxMove: Move_Wolf
   SfxMerge: Transform_ToKetsu

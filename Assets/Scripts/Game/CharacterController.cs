@@ -38,12 +38,13 @@ namespace Ketsu.Game
         [HideInInspector]
         public static float KetsuPower;
 
+        MapManager mapManager;
         Vector2 touchStartPos;
         int waitingForActions;
 
         void Awake()
         {
-            
+            mapManager = FindObjectOfType<MapManager>();
         }
 
         void Start()
@@ -117,6 +118,8 @@ namespace Ketsu.Game
 
         void Update()
         {
+            if (mapManager.Solved) return;
+
 #if UNITY_EDITOR
             HandleKeyInputs();
 #else

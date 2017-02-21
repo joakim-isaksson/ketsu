@@ -8,6 +8,8 @@ namespace Ketsu.Game
 {
     public class Character : MapObject
     {
+        public CharacterType CharType;
+
         [Header("Animations")]
         public float MoveAnimTime;
 
@@ -18,6 +20,9 @@ namespace Ketsu.Game
 
         [HideInInspector]
         public bool HasMoved { get; private set; }
+
+        [HideInInspector]
+        public bool AtHome { get; private set; }
 
         Map map;
         CharacterController controller;
@@ -119,8 +124,12 @@ namespace Ketsu.Game
             foreach (MapObject obj in map.GetObjects(point))
             {
                 if (obj.Layer == MapLayer.Ground) continue;
-                if (obj.Layer == MapLayer.Object) return obj;
-                if (obj.Type == MapObjectType.Fox || obj.Type == MapObjectType.Wolf) return obj;
+                else if (obj.Layer == MapLayer.Object) {
+                    if (Type == MapObjectType.Fox && obj.Type == MapObjectType.FoxHome) continue;
+                    else if (Type == MapObjectType.Wolf && obj.Type == MapObjectType.WolfHome) continue;
+                    else return obj;
+                }
+                else if (obj.Type == MapObjectType.Fox || obj.Type == MapObjectType.Wolf) return obj;
             }
 
             // Nothing is blocking
@@ -217,6 +226,11 @@ namespace Ketsu.Game
         {
             CharacterController.KetsuPower -= amount;
             StartCoroutine(FlashColor(Color.white, 0.05f, 3));
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+
         }
 
         void AnimateTo(IntVector2 target, Action callback)

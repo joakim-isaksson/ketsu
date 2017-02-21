@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
@@ -11,12 +12,18 @@ namespace Ketsu.Game
         public int StartingKetsuPower;
         public IntVector2 MapSize;
 
+        public Text WinText;
+
+        [HideInInspector]
+        public bool Solved { get; private set; }
+
         [HideInInspector]
 		public static Map LoadedMap;
 
         void Awake()
         {
             LoadedMap = LoadMap(MapName, MapSize.X, MapSize.Y);
+            WinText.gameObject.SetActive(false);
         }
 
         void Start()
@@ -57,6 +64,12 @@ namespace Ketsu.Game
             }
 
             return map;
+        }
+
+        public void OnMapSolved()
+        {
+            Solved = true;
+            WinText.gameObject.SetActive(true);
         }
     }
 }

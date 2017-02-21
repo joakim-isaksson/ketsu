@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4114419908597234}
-  - component: {fileID: 114085747873418668}
   - component: {fileID: 65989678343904392}
+  - component: {fileID: 114983334246727512}
   m_Layer: 9
   m_Name: WolfCave
   m_TagString: Untagged
@@ -117,12 +117,12 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1388981535970808}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.9467627, y: 0.8084321, z: 0.91198254}
   m_Center: {x: -0.005323723, y: 0.3960793, z: -0.007766247}
---- !u!114 &114085747873418668
+--- !u!114 &114983334246727512
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1388981535970808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Script: {fileID: 11500000, guid: e0bcf72c158122f44af153b2d4a29990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 5
@@ -138,3 +138,5 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
+  For: 1
+  Inside: {fileID: 0}
