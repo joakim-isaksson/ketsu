@@ -25,6 +25,9 @@ namespace Ketsu.Game
         public Text KetsuPowerText;
 
         [HideInInspector]
+        public float KetsuPower;
+
+        [HideInInspector]
         public Character Fox;
         [HideInInspector]
         public Character Wolf;
@@ -35,9 +38,6 @@ namespace Ketsu.Game
         public Character SelectedCharacter;
         [HideInInspector]
         public Character CharBeforeKetsu;
-
-        [HideInInspector]
-        public static float KetsuPower;
 
         MapManager mapManager;
         Vector2 touchStartPos;
@@ -135,7 +135,7 @@ namespace Ketsu.Game
             else KetsuPower += RegenerationRate * Time.deltaTime;
             KetsuPower = Mathf.Clamp(KetsuPower, 0.0f, MaxKetsuPower);
 
-            KetsuPowerText.text = KetsuPower.ToString("0.00");
+            KetsuPowerText.text = KetsuPower.ToString("0.00") + " / " + MaxKetsuPower.ToString("0.00");
         }
 
         void HandleKeyInputs()

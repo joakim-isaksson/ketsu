@@ -63,10 +63,10 @@ namespace Ketsu.Game
                 // Moving as Ketsu uses Ketsu Power
                 if (Type == MapObjectType.Ketsu)
                 {
-                    if (CharController.KetsuPower >= controller.KetsuStepCost)
+                    if (controller.KetsuPower >= controller.KetsuStepCost)
                     {
-                        CharController.KetsuPower -= controller.KetsuStepCost;
-                        Debug.Log("Ketsu Power Left: " + CharController.KetsuPower);
+                        controller.KetsuPower -= controller.KetsuStepCost;
+                        Debug.Log("Ketsu Power Left: " + controller.KetsuPower);
                     }
                     else
                     {
@@ -125,7 +125,8 @@ namespace Ketsu.Game
             {
                 if (obj.Layer == MapLayer.Ground) continue;
                 else if (obj.Layer == MapLayer.Object) {
-                    if (Type == MapObjectType.Fox && obj.Type == MapObjectType.FoxHome) continue;
+                    if (obj.Type == MapObjectType.PowerCrystal || obj.Type == MapObjectType.MaxPowerCrystal) continue;
+                    else if (Type == MapObjectType.Fox && obj.Type == MapObjectType.FoxHome) continue;
                     else if (Type == MapObjectType.Wolf && obj.Type == MapObjectType.WolfHome) continue;
                     else return obj;
                 }
@@ -224,7 +225,7 @@ namespace Ketsu.Game
 
         public void TakeDamage(float amount)
         {
-            CharController.KetsuPower -= amount;
+            controller.KetsuPower -= amount;
             StartCoroutine(FlashColor(Color.white, 0.05f, 3));
         }
 

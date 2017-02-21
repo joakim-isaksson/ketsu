@@ -28,7 +28,8 @@ namespace Ketsu.Game
 
         void Start()
         {
-            CharController.KetsuPower += StartingKetsuPower;
+            CharController controller = FindObjectOfType<CharController>();
+            controller.KetsuPower += StartingKetsuPower;
         }
 
         void Update()
