@@ -20,8 +20,10 @@
 141 Hedgehog
 181 FoxCave
 182 WolfCave
-183 KetsuPowerCollectible
-184 Chicken
+183 KetsuMaxPowerCollectible
+184 KetsuPowerCollectible
+185 Chicken
+186 Sheep
 191 Fox
 192 Wolf
 193 Ketsu
