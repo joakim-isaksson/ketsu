@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4499541827503902}
-  - component: {fileID: 114467616133965978}
   - component: {fileID: 65552380918305154}
   - component: {fileID: 54742872313285282}
+  - component: {fileID: 114467616133965978}
   m_Layer: 9
   m_Name: Fox
   m_TagString: Untagged
@@ -156,6 +156,7 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
+  CharType: 0
   MoveAnimTime: 0.1
   SfxMove: Move_Fox
   SfxMerge: Transform_ToKetsu

@@ -138,5 +138,5 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
-  For: 1
+  ForType: 1
   Inside: {fileID: 0}

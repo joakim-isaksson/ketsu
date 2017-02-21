@@ -4,16 +4,16 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-    public class CharacterHome : MapObject
+    public class CharHome : MapObject
     {
-        public CharacterType For;
+        public CharType ForType;
 
         [HideInInspector]
         public Character Inside;
 
         MapManager manager;
 
-        CharacterHome[] homes;
+        CharHome[] homes;
 
         void Awake()
         {
@@ -22,16 +22,16 @@ namespace Ketsu.Game
 
         void Start()
         {
-            homes = FindObjectsOfType<CharacterHome>();
+            homes = FindObjectsOfType<CharHome>();
         }
 
         void OnTriggerEnter(Collider other)
         {
             Character character = other.GetComponent<Character>(); 
-            if (character != null && character.CharType == For)
+            if (character != null && character.CharType == ForType)
             {
                 Inside = character;
-                foreach (CharacterHome home in homes)
+                foreach (CharHome home in homes)
                 {
                     if (home.Inside == null) return;
                 }
@@ -42,7 +42,7 @@ namespace Ketsu.Game
         private void OnTriggerExit(Collider other)
         {
             Character character = other.GetComponent<Character>();
-            if (character != null && character.CharType == For)
+            if (character != null && character.CharType == ForType)
             {
                 Inside = null;
             }

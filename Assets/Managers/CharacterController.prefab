@@ -58,6 +58,7 @@ MonoBehaviour:
     type: 2}
   BurnRate: 0.2
   RegenerationRate: 0.01
+  KetsuStepCost: 0.1
   MaxKetsuPower: 5
   KetsuPowerText: {fileID: 0}
   Fox: {fileID: 0}

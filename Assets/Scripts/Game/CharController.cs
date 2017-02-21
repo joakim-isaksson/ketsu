@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
-    public class CharacterController : MonoBehaviour
+    public class CharController : MonoBehaviour
     {
         [Tooltip("Percentage of the screens height")]
         public float DragDistance;
@@ -20,6 +20,7 @@ namespace Ketsu.Game
         [Header("Ketsu Power")]
         public float BurnRate;
         public float RegenerationRate;
+        public float KetsuStepCost;
         public float MaxKetsuPower;
         public Text KetsuPowerText;
 

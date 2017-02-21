@@ -1,6 +1,6 @@
 ﻿namespace Ketsu.Game
 {
-    public enum CharacterType
+    public enum CharType
     {
         Fox, Wolf, Ketsu
     }

@@ -8,7 +8,7 @@ namespace Ketsu.Game
 {
     public class Character : MapObject
     {
-        public CharacterType CharType;
+        public CharType CharType;
 
         [Header("Animations")]
         public float MoveAnimTime;
@@ -25,11 +25,11 @@ namespace Ketsu.Game
         public bool AtHome { get; private set; }
 
         Map map;
-        CharacterController controller;
+        CharController controller;
 
         void Start()
         {
-            controller = FindObjectOfType<CharacterController>();
+            controller = FindObjectOfType<CharController>();
             map = MapManager.LoadedMap;
         }
 
@@ -63,10 +63,10 @@ namespace Ketsu.Game
                 // Moving as Ketsu uses Ketsu Power
                 if (Type == MapObjectType.Ketsu)
                 {
-                    if (CharacterController.KetsuPower >= 1.0f)
+                    if (CharController.KetsuPower >= controller.KetsuStepCost)
                     {
-                        CharacterController.KetsuPower -= 1.0f;
-                        Debug.Log("Ketsu Power Left: " + CharacterController.KetsuPower);
+                        CharController.KetsuPower -= controller.KetsuStepCost;
+                        Debug.Log("Ketsu Power Left: " + CharController.KetsuPower);
                     }
                     else
                     {
@@ -224,7 +224,7 @@ namespace Ketsu.Game
 
         public void TakeDamage(float amount)
         {
-            CharacterController.KetsuPower -= amount;
+            CharController.KetsuPower -= amount;
             StartCoroutine(FlashColor(Color.white, 0.05f, 3));
         }
 
