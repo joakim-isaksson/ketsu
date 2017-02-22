@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-	public class PingPongEnemy : MapObject
+	public class Hedgehog : MapObject
 	{
         public float MoveSpeed;
         public float Damage;
