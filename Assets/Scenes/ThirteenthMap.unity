@@ -38725,6 +38725,11 @@ Prefab:
       propertyPath: m_Radius
       value: 0.47830367
       objectReference: {fileID: 0}
+    - target: {fileID: 23076885799731810, guid: 6142e8df3ba3c416f9998b659e5974d1,
+        type: 2}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6142e8df3ba3c416f9998b659e5974d1, type: 2}
   m_IsPrefabParent: 0

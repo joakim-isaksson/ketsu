@@ -39,8 +39,20 @@ function Update () {
 			}else{
 				
 				// If is is no longer the initial mouse press (we must be dragging)
-				// Therefore, now we can set the rotation of the Disc, based upon the dummyPointer, Less the other offsets:
 				disc.eulerAngles.y = discOffset + (dummyPointer.eulerAngles.y - dummyOffset); 
+
+				if((disc.eulerAngles.y<90 && disc.eulerAngles.y>0))
+					disc.eulerAngles.y = 90;
+				else if(disc.eulerAngles.y<180 && disc.eulerAngles.y>=90)
+					disc.eulerAngles.y = 180;
+				else if(disc.eulerAngles.y<270 && disc.eulerAngles.y>=180)
+					disc.eulerAngles.y = 270;
+				else if(disc.eulerAngles.y<360 && disc.eulerAngles.y>=270)
+					disc.eulerAngles.y = 0;
+				else if(disc.eulerAngles.y<0 && disc.eulerAngles.y>=-90)
+					disc.eulerAngles.y = -90;
+				else
+					disc.eulerAngles.y = 0;
 			}
             
       	} 
