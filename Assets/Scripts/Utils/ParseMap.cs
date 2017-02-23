@@ -148,9 +148,8 @@ public class ParseMap : MonoBehaviour {
 							getRotation(entry.Value[y-i-1,x-j-1], out rotation, out val);
 
 							if(prefabs.ContainsKey(k) && k==val){
-								Debug.Log(rotation + " " + k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, rotation, 0));
-								item.transform.parent = ObjectParent.transform;
+								item.transform.parent = GroundParent.transform;
 							}
 						}
 					}
@@ -168,15 +167,14 @@ public class ParseMap : MonoBehaviour {
 							getRotation(entry.Value[y-i-1,x-j-1], out rotation, out val);
 
 							if(prefabs.ContainsKey(k) && k==val){
-								Debug.Log(rotation + " " + k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, rotation, 0));
-								item.transform.parent = ObjectParent.transform;
+								item.transform.parent = ObstacleParent.transform;
 							}
 						}
 					}
 				}
-
 			}
+			
 			//Instantiate objects = spawn points etc.
 			if(entry.Key=="Objects"){
 				GameObject ObjectParent = new GameObject();
@@ -189,7 +187,6 @@ public class ParseMap : MonoBehaviour {
 							getRotation(entry.Value[y-i-1,x-j-1], out rotation, out val);
 
 							if(prefabs.ContainsKey(k) && k==val){
-								Debug.Log(rotation + " " + k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j+x-1, 0, i), Quaternion.Euler(0, rotation, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
