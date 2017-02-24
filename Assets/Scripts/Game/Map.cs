@@ -40,6 +40,8 @@ namespace Ketsu.Game
         {
             List<MapObject> list = new List<MapObject>();
 
+            if (!Contains(point)) return list;
+
             MapObject obj = GroundLayer[point.X][point.Y];
             if (obj != null) list.Add(obj);
 
