@@ -184,5 +184,5 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
-  MoveSpeed: 1
+  MoveSpeed: 3
   Pumber: {fileID: 4671632909500142}
