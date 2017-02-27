@@ -1,5 +1,4 @@
 ﻿using Ketsu.Utils;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +10,6 @@ namespace Ketsu.Game
         public float MoveSpeed;
         public Transform Pumber;
 
-        CharController controller;
         Map map;
         Vector3 target;
 
@@ -22,18 +20,15 @@ namespace Ketsu.Game
 
         void Start()
         {
-            controller = FindObjectOfType<CharController>();
-
-            UpdatePosition();
+            UpdatePositionFromWorld();
 
             map = MapManager.LoadedMap;
+
+            SetNewRandomTarget();
         }
 
         void Update()
         {
-            // Check if we need a new target
-            if (target == null) SetNewRandomTarget();
-
             // Move towards target
             transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * MoveSpeed);
             if (Vector3.Distance(transform.position, target) < 0.001f)
@@ -42,7 +37,7 @@ namespace Ketsu.Game
                 SetNewRandomTarget();
             }
 
-            // If pumber is hitting something -> rotate to a random direction
+            // If pumber is hitting something -> get new target
             IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);
             if (!map.Contains(pumberPos) || Blocking(pumberPos))
             {
@@ -52,41 +47,38 @@ namespace Ketsu.Game
 
         void SetNewRandomTarget()
         {
-            int attempt = 0;
-            Vector3 newTarget;
-            do
+            List<Vector3> directions = new List<Vector3>();
+            directions.Add(Vector3.forward);
+            directions.Add(Vector3.back);
+            directions.Add(Vector3.left);
+            directions.Add(Vector3.right);
+            directions.Add(Vector3.zero);
+
+            while (directions.Count > 0)
             {
-                attempt++;
-                switch ((int)(UnityEngine.Random.value * 4))
+                Vector3 direction = directions[Random.Range(0, directions.Count)];
+                directions.Remove(direction);
+
+                IntVector2 targetPos = IntVector2.FromXZ(transform.position + direction);
+                if (map.Contains(targetPos) && Blocking(targetPos) == null)
                 {
-                    case 0:
-                        newTarget = transform.position + Vector3.forward;
-                        break;
-                    case 1:
-                        newTarget = transform.position + Vector3.back;
-                        break;
-                    case 2:
-                        newTarget = transform.position + Vector3.left;
-                        break;
-                    case 3:
-                        newTarget = transform.position + Vector3.right;
-                        break;
-                    default:
-                        newTarget = transform.position + Vector3.zero;
-                        break;
+                    target = new Vector3(
+                        targetPos.X,
+                        transform.position.y,
+                        targetPos.Y
+                    );
+                    transform.LookAt(target);
+                    break;
                 }
             }
-            while (Blocking(IntVector2.FromXZ(newTarget)) != null && attempt < 10);
-
-            target = newTarget;
-            transform.LookAt(target);
         }
 
         MapObject Blocking(IntVector2 point)
         {
             foreach (MapObject obj in map.GetObjects(point))
             {
-                if (obj.Layer != MapLayer.Ground && obj.Type != MapObjectType.Tree) return obj;
+                if (obj == this || obj.Layer == MapLayer.Ground) continue;
+                if (obj.Type != MapObjectType.Tree) return obj;
             }
 
             // Nothing is blocking

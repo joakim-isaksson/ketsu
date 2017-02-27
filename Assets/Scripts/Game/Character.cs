@@ -150,7 +150,7 @@ namespace Ketsu.Game
                     other.transform.position.y,
                     other.Position.Y
                 );
-                controller.Ketsu.UpdatePosition();
+                controller.Ketsu.UpdatePositionFromWorld();
 
                 // Deactive and activate characters
                 controller.Ketsu.gameObject.SetActive(true);

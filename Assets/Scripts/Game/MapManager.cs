@@ -48,7 +48,7 @@ namespace Ketsu.Game
             // Find map objects and add them to the data structure
             foreach (MapObject obj in FindObjectsOfType<MapObject>())
             {
-                obj.UpdatePosition();
+                obj.UpdatePositionFromWorld();
                 switch (obj.GetComponent<MapObject>().Layer)
                 {
                     case MapLayer.Ground:

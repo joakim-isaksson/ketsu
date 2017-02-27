@@ -22,7 +22,7 @@ namespace Ketsu.Game
 
         void Start()
         {
-            UpdatePosition();
+            UpdatePositionFromWorld();
             map = MapManager.LoadedMap;
         }
 
@@ -31,7 +31,7 @@ namespace Ketsu.Game
             if (dased) return;
 
             transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
-            UpdatePosition();
+            UpdatePositionFromWorld();
 
             // If pumber is hitting something -> rotate 180 degrees
             IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);

@@ -15,9 +15,9 @@ namespace Ketsu.Game
         public IntVector2 Position;
 
         /// <summary>
-        /// Update position from the objects world position
+        /// Update object's position from the object's world position
         /// </summary>
-        public void UpdatePosition()
+        public void UpdatePositionFromWorld()
         {
             Position = IntVector2.FromXZ(transform.position);
         }
