@@ -24,7 +24,7 @@ namespace Ketsu.Game
 
             map = MapManager.LoadedMap;
 
-            SetNewRandomTarget();
+            SetNewTarget();
         }
 
         void Update()
@@ -34,18 +34,18 @@ namespace Ketsu.Game
             if (Vector3.Distance(transform.position, target) < 0.001f)
             {
                 transform.position = target;
-                SetNewRandomTarget();
+                SetNewTarget();
             }
 
             // If pumber is hitting something -> get new target
             IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);
             if (!map.Contains(pumberPos) || Blocking(pumberPos))
             {
-                SetNewRandomTarget();
+                SetNewTarget();
             }
         }
 
-        void SetNewRandomTarget()
+        void SetNewTarget()
         {
             List<Vector3> directions = new List<Vector3>();
             directions.Add(Vector3.forward);
