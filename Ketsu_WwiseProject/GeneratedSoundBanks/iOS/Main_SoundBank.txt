@@ -27,9 +27,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	700240671	Collect_Ham	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Ham_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Ham		42832
 	704131998	Wolf_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Hedgehog\Wolf_Death_Hedgehog_01		147448
 	735302778	Transform_ToKetsu-002	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Transform_ToKetsu-002_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-002		205912
+	793490377	Move_Hedgehog	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Hedgehog_D124CA2C.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Move_Hedgehog\Move_Hedgehog		61408
 	893164066	Collect_Chicken	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Chicken_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Chicken		37864
 	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Ketsu_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		17488
 	935737943	Transform_FromKetsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Transform_FromKetsu_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu		103168
-	1041428942	Move_Hedgehog	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Hedgehog_388A97B6.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Move_Hedgehog\Move_Hedgehog		61408
 	1069057915	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Water_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		175600
 

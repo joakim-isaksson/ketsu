@@ -85,6 +85,10 @@
 					<ShortName>Transform_ToKetsu-002.wav</ShortName>
 					<Path>SFX\Transform_ToKetsu-002_A939E04F.wem</Path>
 				</File>
+				<File Id="793490377" Language="SFX">
+					<ShortName>Move_Hedgehog.wav</ShortName>
+					<Path>SFX\Move_Hedgehog_A939E04F.wem</Path>
+				</File>
 				<File Id="893164066" Language="SFX">
 					<ShortName>Collect_Chicken.wav</ShortName>
 					<Path>SFX\Collect_Chicken_A939E04F.wem</Path>
@@ -96,10 +100,6 @@
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_A939E04F.wem</Path>
-				</File>
-				<File Id="1041428942" Language="SFX">
-					<ShortName>Move_Hedgehog.wav</ShortName>
-					<Path>SFX\Move_Hedgehog_2CC9493D.wem</Path>
 				</File>
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>
