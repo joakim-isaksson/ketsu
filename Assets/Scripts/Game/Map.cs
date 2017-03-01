@@ -43,14 +43,14 @@ namespace Ketsu.Game
             if (!Contains(point)) return list;
 
             MapObject obj = GroundLayer[point.X][point.Y];
-            if (obj != null) list.Add(obj);
+            if (obj != null && obj.gameObject.activeSelf) list.Add(obj);
 
             obj = ObjectLayer[point.X][point.Y];
-            if (obj != null) list.Add(obj);
+            if (obj != null && obj.gameObject.activeSelf) list.Add(obj);
 
             foreach (MapObject o in DynamicLayer)
             {
-                if (o.Position.Equals(point)) list.Add(o);
+                if (o.Position.Equals(point) && o.gameObject.activeSelf) list.Add(o);
             }
 
             return list;

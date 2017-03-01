@@ -35,6 +35,9 @@ namespace Ketsu.Game
                 controller.KetsuPower += KetsuPower;
                 controller.MaxKetsuPower += MaxKetsuPower;
                 AkSoundEngine.PostEvent(CollectSfx, gameObject);
+
+                // FIXME: this is the thing from my nightmare
+                MapManager.LoadedMap.DynamicLayer.Remove(GetComponent<MapObject>());
                 Destroy(gameObject);
             }
         }
