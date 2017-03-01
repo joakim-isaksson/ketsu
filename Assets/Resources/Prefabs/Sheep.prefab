@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4676535814263862}
   - component: {fileID: 65036697532304278}
   - component: {fileID: 114439544613529500}
+  - component: {fileID: 114773663277943858}
   m_Layer: 9
   m_Name: Sheep
   m_TagString: Untagged
@@ -79,9 +80,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1076932095870326}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 13, y: 0, z: 6}
-  m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4185796677627476}
   - {fileID: 4848492756414140}
@@ -164,3 +165,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fcf7cb94b7e4440b1af5bd6343a59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Type: 18
+  Layer: 0
+  Position:
+    X: 0
+    Y: 0
+  MoveSpeed: 0.5
+  Pumber: {fileID: 4848492756414140}
+--- !u!114 &114773663277943858
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1076932095870326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405c63f11b1c0244cbf87f8f3642091d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KetsuPower: 1
+  MaxKetsuPower: 0
+  CollectSfx: Collect_Sheep

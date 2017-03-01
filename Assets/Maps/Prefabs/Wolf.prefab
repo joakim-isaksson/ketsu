@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4725272112682280}
   - component: {fileID: 33123683757034766}
   - component: {fileID: 23236755226889388}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,9 +36,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4706868187304872}
-  - component: {fileID: 114768617247718788}
   - component: {fileID: 65654433301668888}
-  m_Layer: 0
+  - component: {fileID: 54204747432168960}
+  - component: {fileID: 114768617247718788}
+  m_Layer: 9
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,6 +112,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1261876964404888}
   m_Mesh: {fileID: 4300000, guid: 0ecd9724b4ae51547a7152fc156ed84c, type: 3}
+--- !u!54 &54204747432168960
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884622331499224}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65654433301668888
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -118,11 +134,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884622331499224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4507245, y: 0.8364754, z: 1.3186619}
-  m_Center: {x: -0.0020961761, y: 0.41300476, z: 0.00000095349105}
+  m_Size: {x: 0.4507245, y: 0.8364754, z: 0.90083164}
+  m_Center: {x: -0.002096175, y: 0.41300476, z: -0.014575005}
 --- !u!114 &114768617247718788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -139,6 +155,7 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
+  CharType: 1
   MoveAnimTime: 0.1
   SfxMove: Move_Wolf
   SfxMerge: Transform_ToKetsu

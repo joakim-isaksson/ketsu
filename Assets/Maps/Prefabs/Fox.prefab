@@ -19,9 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4499541827503902}
-  - component: {fileID: 114467616133965978}
   - component: {fileID: 65133032863096360}
-  m_Layer: 0
+  - component: {fileID: 54089969009226582}
+  - component: {fileID: 114467616133965978}
+  m_Layer: 9
   m_Name: Fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,6 +113,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1353905780068268}
   m_Mesh: {fileID: 4300000, guid: bb4f2c0710894a049b2ad72524740ce1, type: 3}
+--- !u!54 &54089969009226582
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132147270716104}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65133032863096360
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -119,11 +135,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1132147270716104}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.3921165, y: 0.83345866, z: 1.3372458}
-  m_Center: {x: -0.004148484, y: 0.39553547, z: 0.00208211}
+  m_Size: {x: 0.3921165, y: 0.83345866, z: 0.9101085}
+  m_Center: {x: -0.0041484847, y: 0.39553547, z: 0.0069362237}
 --- !u!114 &114467616133965978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -140,6 +156,7 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
+  CharType: 0
   MoveAnimTime: 0.1
   SfxMove: Move_Fox
   SfxMerge: Transform_ToKetsu
