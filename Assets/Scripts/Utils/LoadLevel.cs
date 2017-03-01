@@ -13,4 +13,9 @@ public class LoadLevel : MonoBehaviour {
 		 int level = SceneManager.GetActiveScene().buildIndex;
 		 SceneManager.LoadScene(level+1);
 	}
+
+	public void ReloadLevel(){
+		 int level = SceneManager.GetActiveScene().buildIndex;
+		 SceneManager.LoadScene(level);
+	}
 }
