@@ -41,7 +41,9 @@ namespace Ketsu.Game
         {
             foreach (MapObject obj in map.GetObjects(point))
             {
-                if (obj != this && obj.Layer != MapLayer.Ground) return obj;
+                if (obj != this) continue;
+                if (obj.Type == MapObjectType.Water) return obj;
+                if (obj.Layer != MapLayer.Ground) return obj;
             }
 
             // Nothing is blocking

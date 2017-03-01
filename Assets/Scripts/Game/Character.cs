@@ -123,7 +123,8 @@ namespace Ketsu.Game
 		{
             foreach (MapObject obj in map.GetObjects(point))
             {
-                if (obj.Layer == MapLayer.Ground) continue;
+                if (obj.Type == MapObjectType.Water) return obj;
+                else if (obj.Layer == MapLayer.Ground) continue;
                 else if (obj.Layer == MapLayer.Object) {
                     if (obj.Type == MapObjectType.PowerCrystal || obj.Type == MapObjectType.MaxPowerCrystal) continue;
                     else if (Type == MapObjectType.Fox && obj.Type == MapObjectType.FoxHome) continue;
