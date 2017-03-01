@@ -22,10 +22,11 @@ namespace Ketsu.Game
 
         CharHome[] charHomes;
 
-        void Awake()
+        public void Awake()
         {
             LoadedMap = LoadMap(MapName, MapSize.X, MapSize.Y);
             WinText.gameObject.SetActive(false);
+            Solved = false;
         }
 
         void Start()

@@ -23,7 +23,12 @@ public class ParseMapOnLoad : MonoBehaviour {
 
     [SerializeField]
     private bool initialized = false;
- 
+    public TextAsset MapFile;
+
+    public void Reload(){
+    	Initialize();
+    }
+
     void Awake() { Initialize(); }
  
     void Initialize()
@@ -46,7 +51,7 @@ public class ParseMapOnLoad : MonoBehaviour {
 		string line = null;
 
 		//which map to read, ask user
-		TextAsset file = Resources.Load("01Tutorial01LearnToMoveUpwards") as TextAsset;
+		TextAsset file = MapFile;
 		string path = file.text;
 
 		StringReader reader = new StringReader(path);

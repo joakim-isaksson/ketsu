@@ -52,7 +52,7 @@
         {
          "columns":10,
          "firstgid":1,
-         "image":"..\/..\/MapEditor\/Tileset.png",
+         "image":"..\/..\/..\/MapEditor\/Tileset.png",
          "imageheight":768,
          "imagewidth":320,
          "margin":0,
