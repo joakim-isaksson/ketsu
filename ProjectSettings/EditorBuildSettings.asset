@@ -8,24 +8,46 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelSelection.unity
   - enabled: 1
-    path: Assets/Scenes/FirstProto.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/01FirstMap.unity
   - enabled: 1
-    path: Assets/Scenes/SecondMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/02SecondMap.unity
   - enabled: 1
-    path: Assets/Scenes/ThirdMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/03ThirdMap.unity
   - enabled: 1
-    path: Assets/Scenes/FourthMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/04FourthMap.unity
   - enabled: 1
-    path: Assets/Scenes/FifthMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/05FifthMap.unity
   - enabled: 1
-    path: Assets/Scenes/SixthMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/06SixthMap.unity
   - enabled: 1
-    path: Assets/Scenes/SeventhMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/07SeventhMap.unity
   - enabled: 1
-    path: Assets/Scenes/EighthMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/08EighthMap.unity
   - enabled: 1
-    path: Assets/Scenes/ThirteenthMap.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/09NinthMap.unity
   - enabled: 1
-    path: Assets/Scenes/MapLoadOnSceneLoad.unity
-  - enabled: 0
-    path: Assets/Scenes/InputTest.unity
+    path: Assets/Scenes/FirstPlayableDemoScenes/10TenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/11EleventhMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/12TwelvthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/13ThirteenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/14FourteenthMap 1.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/15FifteenthMap 2.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/16SixteenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/17SeventeenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/18EighteenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/19NineteenthMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/20TwenteethMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/21TwentyFirstMap.unity
+  - enabled: 1
+    path: Assets/Scenes/FirstPlayableDemoScenes/Base.unity
