@@ -79,6 +79,11 @@ namespace Ketsu.Game
             {
                 if (obj == this || obj.Layer == MapLayer.Ground) continue;
                 if (obj.Type != MapObjectType.Tree) return obj;
+
+                if (obj != this) continue;
+                if (obj.Type == MapObjectType.Water) return obj;
+                if (obj.Type == MapObjectType.Tree) continue;
+                if (obj.Layer != MapLayer.Ground) return obj;
             }
 
             // Nothing is blocking
