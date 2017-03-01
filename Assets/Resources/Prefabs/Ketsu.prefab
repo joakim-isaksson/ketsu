@@ -36,8 +36,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4117673036346218}
-  - component: {fileID: 114768627253800552}
   - component: {fileID: 65320538876839030}
+  - component: {fileID: 54344172362542390}
+  - component: {fileID: 114768627253800552}
   m_Layer: 9
   m_Name: Ketsu
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1194870832127600}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0785427, y: 0.007115021, z: 4.999059}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4631584068343426}
@@ -111,6 +112,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1078779833004588}
   m_Mesh: {fileID: 4300000, guid: 5e011545dd47e3242ad2c78ae5ca642a, type: 3}
+--- !u!54 &54344172362542390
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194870832127600}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65320538876839030
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -139,7 +155,7 @@ MonoBehaviour:
   Position:
     X: 0
     Y: 0
-  CharType: 0
+  CharType: 2
   MoveAnimTime: 0.05
   SfxMove: Move_Ketsu
   SfxMerge: Transform_ToKetsu
