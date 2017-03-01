@@ -20,6 +20,8 @@ namespace Ketsu.Game
         [HideInInspector]
 		public static Map LoadedMap;
 
+        CharHome[] charHomes;
+
         void Awake()
         {
             LoadedMap = LoadMap(MapName, MapSize.X, MapSize.Y);
@@ -30,6 +32,8 @@ namespace Ketsu.Game
         {
             CharController controller = FindObjectOfType<CharController>();
             controller.KetsuPower += StartingKetsuPower;
+
+            charHomes = FindObjectsOfType<CharHome>();
         }
 
         void Update()
@@ -37,7 +41,7 @@ namespace Ketsu.Game
 
         }
         
-        public static Map LoadMap(string name, int width, int height)
+        public Map LoadMap(string name, int width, int height)
         {
             // TODO:
             // Load map from <name>.json file from hardcoded resource path
@@ -67,9 +71,21 @@ namespace Ketsu.Game
             return map;
         }
 
-        public void OnMapSolved()
+        public void CheckSolved()
         {
+            foreach (CharHome home in charHomes)
+            {
+                if (home.Inside == null) return;
+            }
+
+            OnMapSolved();
+        }
+
+        void OnMapSolved()
+        {
+            if (Solved) return;
             Solved = true;
+
             WinText.gameObject.SetActive(true);
         }
     }

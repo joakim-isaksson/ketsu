@@ -11,13 +11,11 @@ namespace Ketsu.Game
         [HideInInspector]
         public Character Inside;
 
-        MapManager manager;
-
         CharHome[] homes;
 
         void Awake()
         {
-            manager = FindObjectOfType<MapManager>();
+
         }
 
         void Start()
@@ -31,11 +29,6 @@ namespace Ketsu.Game
             if (character != null && character.CharType == ForType)
             {
                 Inside = character;
-                foreach (CharHome home in homes)
-                {
-                    if (home.Inside == null) return;
-                }
-                manager.OnMapSolved();
             }
         }
 

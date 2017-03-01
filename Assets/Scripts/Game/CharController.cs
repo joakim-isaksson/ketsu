@@ -41,7 +41,10 @@ namespace Ketsu.Game
 
         MapManager mapManager;
         Vector2 touchStartPos;
-        int waitingForActions;
+
+        bool waitingForFox;
+        bool waitingForWolf;
+        bool waitingForKetsu;
 
         void Awake()
         {
@@ -121,7 +124,7 @@ namespace Ketsu.Game
         {
             if (mapManager.Solved) return;
 
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
             HandleKeyInputs();
 #else
             HandleTouchInputs();
@@ -249,34 +252,49 @@ namespace Ketsu.Game
 
         void MoveAction(Direction direction)
         {
-            // Wait that previous actions have finished
-            if (waitingForActions > 0 || SelectedCharacter.HasMoved == true) return;
+            // Waiting
+            if (SelectedCharacter.HasMoved == true || waitingForFox || waitingForWolf || waitingForKetsu) return;
 
             Debug.Log("Move Action: " + direction.ToString());
 
             switch (SelectedCharacter.Type)
             {
                 case MapObjectType.Fox:
-                    waitingForActions++;
-                    Fox.MoveTo(direction, delegate { waitingForActions--; });
+                    waitingForFox = true;
+                    Fox.MoveTo(direction, delegate {
+                        waitingForFox = false;
+                        if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
+                    });
                     if (Wolf != null)
                     {
-                        waitingForActions++;
-                        Wolf.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                        waitingForWolf = true;
+                        Wolf.MoveTo(direction.Opposite(), delegate {
+                            waitingForWolf = false;
+                            if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
+                        });
                     }
                     break;
                 case MapObjectType.Wolf:
-                    waitingForActions++;
-                    Wolf.MoveTo(direction, delegate { waitingForActions--; });
+                    waitingForWolf = true;
+                    Wolf.MoveTo(direction, delegate {
+                        waitingForWolf = false;
+                        if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
+                    });
                     if (Fox != null)
                     {
-                        waitingForActions++;
-                        Fox.MoveTo(direction.Opposite(), delegate { waitingForActions--; });
+                        waitingForFox = true;
+                        Fox.MoveTo(direction.Opposite(), delegate {
+                            waitingForFox = false;
+                            if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
+                        });
                     }
                     break;
                 case MapObjectType.Ketsu:
-                    waitingForActions++;
-                    Ketsu.MoveTo(direction, delegate { waitingForActions--; });
+                    waitingForKetsu = true;
+                    Ketsu.MoveTo(direction, delegate {
+                        waitingForKetsu = false;
+                        if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
+                    });
                     break;
                 default:
                     break;
