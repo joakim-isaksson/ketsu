@@ -11,8 +11,6 @@ namespace Ketsu.Game
         [HideInInspector]
         public Character Inside;
 
-        CharHome[] homes;
-
         void Awake()
         {
 
@@ -20,7 +18,7 @@ namespace Ketsu.Game
 
         void Start()
         {
-            homes = FindObjectsOfType<CharHome>();
+
         }
 
         void OnTriggerEnter(Collider other)
