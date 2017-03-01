@@ -167,7 +167,7 @@ namespace Ketsu.Game
         }
 
         // targetPos is the position where the previously controlled character is moving in the split
-        void SplitKetsu(IntVector2 targetPos, Action callback)
+        public void SplitKetsu(IntVector2 targetPos, Action callback)
         {
             // Where to split
             IntVector2 foxPos;
@@ -183,7 +183,21 @@ namespace Ketsu.Game
                 wolfPos = targetPos;
             }
 
-            // Check if splitting is blocked
+            // Check if characters will stay inside the map
+            if (!map.Contains(foxPos))
+            {
+                Debug.Log("Can not split - Fox would end up outside of boarders");
+                if (callback != null) callback();
+                return;
+            }
+            if (!map.Contains(wolfPos))
+            {
+                Debug.Log("Can not split - Wolf would end up outside of boarders");
+                if (callback != null) callback();
+                return;
+            }
+
+            // Check if splitting is blocked by something
             MapObject block = Blocking(foxPos);
             if (block != null)
             {
