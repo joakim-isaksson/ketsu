@@ -77,9 +77,6 @@ namespace Ketsu.Game
         {
             foreach (MapObject obj in map.GetObjects(point))
             {
-                if (obj == this || obj.Layer == MapLayer.Ground) continue;
-                if (obj.Type != MapObjectType.Tree) return obj;
-
                 if (obj != this) continue;
                 if (obj.Type == MapObjectType.Water) return obj;
                 if (obj.Type == MapObjectType.Tree) continue;
