@@ -176,14 +176,14 @@ namespace Ketsu.Game
                     // It's a SWIPE
                     if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
                     {
-                        if (Mathf.Abs(touch.position.x - touchStartPos.x) > Mathf.Abs(touch.position.y - touchStartPos.y))
+                        if (Mathf.Abs(touchStartPos.x - touch.position.x) > Mathf.Abs(touchStartPos.y - touch.position.y))
                         { 
-                            if ((touch.position.x < touchStartPos.x)) MoveAction(Direction.Right);
+                            if ((touchStartPos.x < touch.position.x)) MoveAction(Direction.Right);
                             else MoveAction(Direction.Left);
                         }
                         else
                         { 
-                            if (touch.position.y < touchStartPos.y) MoveAction(Direction.Forward);
+                            if (touchStartPos.y < touch.position.y) MoveAction(Direction.Forward);
                             else MoveAction(Direction.Back);
                         }
                     }
@@ -191,7 +191,7 @@ namespace Ketsu.Game
                     // It's a TAP
                     else
                     {
-                        TapAction(Camera.main.ScreenToWorldPoint(touchStartPos));
+                        TapAction(Camera.main.ScreenToWorldPoint(touch.position));
                     }
                 }
             }
