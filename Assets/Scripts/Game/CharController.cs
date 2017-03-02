@@ -27,14 +27,14 @@ namespace Ketsu.Game
         [HideInInspector]
         public float KetsuPower;
 
-        [HideInInspector]
+        //[HideInInspector]
         public Character Fox;
-        [HideInInspector]
+        //[HideInInspector]
         public Character Wolf;
-        [HideInInspector]
+        //[HideInInspector]
         public Character Ketsu;
 
-        [HideInInspector]
+        //[HideInInspector]
         public Character SelectedCharacter;
         [HideInInspector]
         public Character CharBeforeKetsu;
@@ -53,10 +53,10 @@ namespace Ketsu.Game
 
         void Start()
         {
+            mapManager.Awake();
             // Find characters to control
             foreach (MapObject obj in MapManager.LoadedMap.DynamicLayer)
             {
-
                 switch (obj.GetComponent<MapObject>().Type)
                 {
                     case MapObjectType.Fox:
