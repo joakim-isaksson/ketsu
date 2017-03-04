@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" SchemaVersion="75" RootDocumentID="{858FF141-AF43-46C3-90C4-9FC3A90FEFF3}">
+	<Events>
+		<WorkUnit Name="GUI" ID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" OwnerID="{858FF141-AF43-46C3-90C4-9FC3A90FEFF3}" PersistMode="Nested">
+			<ChildrenList>
+				<Folder Name="Button" ID="{4B4A0BE4-6717-4B93-82AA-118241A56DA3}" ShortID="698507837">
+					<ChildrenList>
+						<Event Name="GUI_Settings_Button" ID="{65E6882C-DC2A-4499-88E5-7BC86F36C60E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{0A0598AA-7204-4FF8-808A-078ECA5F65D8}" ShortID="452241182" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F220DFEB-36A9-4895-BB28-19D4FA086A23}" Global="false">
+											<ObjectRef Name="GUI_Settings_Button" ID="{EDADEE30-647C-4F08-98B4-4B5108F296A5}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GUI_Chicken_Button" ID="{8AD51EE0-7AF3-4990-A41A-096B86806626}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A64DD215-0802-45A9-8FC3-F83301F8A346}" ShortID="736138237" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{0AFA72BD-4049-419E-8D59-300BDB685884}" Global="false">
+											<ObjectRef Name="GUI_Chicken_Button" ID="{A094E994-E075-461F-8BF8-868CF29A4E09}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GUI_Sheep_Button" ID="{123E6AFB-1C18-412E-8440-18E0DF5C4375}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F4154A26-C21A-40DB-AB62-FAC16F670566}" ShortID="389618118" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{507E59D9-8EE2-4FE0-9DAA-CBA8652424BB}" Global="false">
+											<ObjectRef Name="GUI_Sheep_Button" ID="{6876D7D0-1A97-4AB3-BB5E-3C222DA15259}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GUI_PowerUp_Crystal_Button" ID="{7E78A096-80AB-4031-BCEA-C27A48428577}">
+							<ChildrenList>
+								<Action Name="Play" ID="{28DB20D0-14C7-4610-9054-9D7A21EE558C}" ShortID="503305435" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{A873AB05-9A93-4C5F-867F-4B8CB40A0465}" Global="false">
+											<ObjectRef Name="GUI_PowerUp_Crystal_Button" ID="{F8D77FB7-5771-4AFD-9ABF-D6B89279F850}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GUI_MaxPowerUp_Crystal_Button" ID="{C79D5FC5-F9DC-48ED-B04E-228EB0E237F9}">
+							<ChildrenList>
+								<Action Name="Play" ID="{611638AA-34C0-41AB-8886-1DD2B4AF8DF5}" ShortID="50580585" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D21228D9-5A20-448E-BD56-A97FB10FD91C}" Global="false">
+											<ObjectRef Name="GUI_MaxPowerUp_Crystal_Button" ID="{AAE4C06D-D551-46BC-BAC1-CE4B24866973}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

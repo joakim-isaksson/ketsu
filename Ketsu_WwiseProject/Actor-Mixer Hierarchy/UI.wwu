@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+							<ObjectRef Name="UI" ID="{52C4E2D9-4E8B-4D75-B919-F4ED9CCB1CC2}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -377,15 +377,123 @@
 						</Folder>
 					</ChildrenList>
 				</ActorMixer>
-				<ActorMixer Name="Game UI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
+				<ActorMixer Name="GUI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+							<ObjectRef Name="UI" ID="{52C4E2D9-4E8B-4D75-B919-F4ED9CCB1CC2}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Button" ID="{DE7B1418-E708-47C8-A200-FF9881CF430F}" ShortID="810269073">
+							<ChildrenList>
+								<Sound Name="GUI_Chicken_Button" ID="{A094E994-E075-461F-8BF8-868CF29A4E09}" ShortID="463097521" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Chicken_Button" ID="{90F42ADC-E459-4C0A-A779-5381EE1003A3}" ShortID="143512029">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Chicken_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Chicken_Button" ID="{90F42ADC-E459-4C0A-A779-5381EE1003A3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_MaxPowerUp_Crystal_Button" ID="{AAE4C06D-D551-46BC-BAC1-CE4B24866973}" ShortID="408222068" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_MaxPowerUp_Crystal_Button" ID="{AC87BE21-ECAE-47F3-9DDD-9D7834678F6A}" ShortID="310533540">
+											<Language>SFX</Language>
+											<AudioFile>GUI_MaxPowerUp_Crystal_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_MaxPowerUp_Crystal_Button" ID="{AC87BE21-ECAE-47F3-9DDD-9D7834678F6A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_PowerUp_Crystal_Button" ID="{F8D77FB7-5771-4AFD-9ABF-D6B89279F850}" ShortID="450208935" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_PowerUp_Crystal_Button" ID="{DE71951F-9BAF-490D-8508-1C257DD556AD}" ShortID="117800326">
+											<Language>SFX</Language>
+											<AudioFile>GUI_PowerUp_Crystal_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_PowerUp_Crystal_Button" ID="{DE71951F-9BAF-490D-8508-1C257DD556AD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_Settings_Button" ID="{EDADEE30-647C-4F08-98B4-4B5108F296A5}" ShortID="694916104" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Settings_Button" ID="{B4548C11-49F4-4110-BB99-DB6F68E262B5}" ShortID="54523543">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Settings_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Settings_Button" ID="{B4548C11-49F4-4110-BB99-DB6F68E262B5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_Sheep_Button" ID="{6876D7D0-1A97-4AB3-BB5E-3C222DA15259}" ShortID="959182114" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Sheep_Button" ID="{878B44CA-EEA7-47B4-92A7-7A89D86F0D42}" ShortID="635168810">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Sheep_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Sheep_Button" ID="{878B44CA-EEA7-47B4-92A7-7A89D86F0D42}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

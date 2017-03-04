@@ -7,12 +7,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	482381986	WinScreen_Store_Button			\UI\Menu\WinScreen\WinScreen_Store_Button	
 	574974477	WorldMenu_UnlockedWorld_Button			\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button	
 	941274754	Move_Hedgehog			\Enemy\Move\Move_Hedgehog	
+	989405037	GUI_Settings_Button			\UI\GUI\Button\GUI_Settings_Button	
 	1004812793	Collect_Chicken			\SFX\Collect_Chicken	
 	1005641002	Collect_Ham			\SFX\Collect_Ham	
 	1052828255	Transform_ToKetsu			\SFX\Transform_ToKetsu	
+	1203244949	GUI_Chicken_Button			\UI\GUI\Button\GUI_Chicken_Button	
 	1374719650	Transform_FromKetsu			\SFX\Transform_FromKetsu	
 	1415003611	StartMenu_Store_Button			\UI\Menu\StartMenu\StartMenu_Store_Button	
 	1446448900	Death_Wolf_Water			\Characters\Death\Death_Wolf_Water	
+	1464712323	GUI_MaxPowerUp_Crystal_Button			\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button	
 	1513439813	LevelMenu_UnlockedLevel_Button			\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button	
 	1575699130	StartMenu_Start_Button			\UI\Menu\StartMenu\StartMenu_Start_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\Menu\WinScreen\WinScreen_MainMenu_Button	
@@ -24,20 +27,26 @@ Event	ID	Name			Wwise Object Path	Notes
 	2908556826	Level_Win			\SFX\Level_Win	
 	3094295669	PopupMenu_Back_Button			\UI\Menu\PopupMenu\PopupMenu_Back_Button	
 	3215618068	PopupMenu_MainMenu_Button			\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button	
+	3275066385	GUI_Sheep_Button			\UI\GUI\Button\GUI_Sheep_Button	
 	3455221783	PopupMenu_Restart_Button			\UI\Menu\PopupMenu\PopupMenu_Restart_Button	
 	3609283987	Move_Ketsu			\Characters\Move\Move_Ketsu	
 	3738416424	Death_Wolf_Hedgehog			\Characters\Death\Death_Wolf_Hedgehog	
 	3773943064	LevelMenu_LockedLevel_Button			\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button	
 	3791509005	StartMenu_Settings_Button			\UI\Menu\StartMenu\StartMenu_Settings_Button	
+	4091529515	GUI_PowerUp_Crystal_Button			\UI\GUI\Button\GUI_PowerUp_Crystal_Button	
 	4193159569	Death_Fox_Hedgehog			\Characters\Death\Death_Fox_Hedgehog	
 	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20985966	Transform_ToKetsu-001	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_ToKetsu-001_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-001		393888
+	54523543	GUI_Settings_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Settings_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Settings_Button		65352
+	117800326	GUI_PowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_PowerUp_Crystal_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_PowerUp_Crystal_Button		340456
 	139884733	Fox_Death_Water_02	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Fox_Death_Water_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_02		624160
 	140128883	UI_StartMenu_Settings_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_StartMenu_Settings_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Settings_Button		46008
+	143512029	GUI_Chicken_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Chicken_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Chicken_Button		41000
 	192007627	UI_PopupMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_PopupMenu_Store_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\PopupMenu\UI_PopupMenu_Store_Button		275860
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_MainMenu_Button		107888
+	310533540	GUI_MaxPowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_MaxPowerUp_Crystal_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button		385764
 	327717301	UI_LevelMenu_LockedLevel_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_LevelMenu_LockedLevel_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Button		34928
 	449358139	UI_StartMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_StartMenu_Store_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Store_Button		198964
 	461352254	UI_StartMenu_Credits_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_StartMenu_Credits_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Credits_Button		138120
@@ -53,6 +62,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	599628335	UI_LevelMenu_UnlockedLevel_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_LevelMenu_UnlockedLevel_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_UnlockedLevel_Button		281544
 	603409939	UI_WinScreen_Restart_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_Restart_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_Restart_Button		44700
 	612027486	Collect_Sheep	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Collect_Sheep_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Sheep		191024
+	635168810	GUI_Sheep_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Sheep_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Sheep_Button		41000
 	676468509	Move_Fox	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Move_Fox		125940
 	700240671	Collect_Ham	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Collect_Ham_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Ham		152040
 	704131998	Wolf_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Wolf_Death_Hedgehog_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Hedgehog\Wolf_Death_Hedgehog_01		523896

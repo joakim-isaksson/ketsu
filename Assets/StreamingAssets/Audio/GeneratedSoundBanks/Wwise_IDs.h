@@ -20,6 +20,11 @@ namespace AK
         static const AkUniqueID DEATH_FOX_WATER = 269859599U;
         static const AkUniqueID DEATH_WOLF_HEDGEHOG = 3738416424U;
         static const AkUniqueID DEATH_WOLF_WATER = 1446448900U;
+        static const AkUniqueID GUI_CHICKEN_BUTTON = 1203244949U;
+        static const AkUniqueID GUI_MAXPOWERUP_CRYSTAL_BUTTON = 1464712323U;
+        static const AkUniqueID GUI_POWERUP_CRYSTAL_BUTTON = 4091529515U;
+        static const AkUniqueID GUI_SETTINGS_BUTTON = 989405037U;
+        static const AkUniqueID GUI_SHEEP_BUTTON = 3275066385U;
         static const AkUniqueID LEVEL_WIN = 2908556826U;
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_BUTTON = 3773943064U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_BUTTON = 1513439813U;
@@ -59,6 +64,7 @@ namespace AK
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
 }// namespace AK

@@ -13,6 +13,7 @@
 						<ObjectRef Name="Transform_ToKetsu" ID="{817FCAD0-0B99-490F-BB41-A93A56B87BD6}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{F0264B40-44AA-4AA2-8CE3-1DFEDD90CAFF}" WorkUnitID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Collect_Sheep" ID="{C755B38C-AACB-4B3B-A0A8-E1F4FA5082A2}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Button" ID="{4B4A0BE4-6717-4B93-82AA-118241A56DA3}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WorldMenu" ID="{B7F856EB-466B-4C0F-AB58-5EE74B308E52}" WorkUnitID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Move" ID="{8FDD28FB-8EE8-4E0C-9D6B-5BCC8268392B}" WorkUnitID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
