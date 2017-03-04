@@ -3,7 +3,7 @@
 	<AudioObjects>
 		<WorkUnit Name="UI" ID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}" PersistMode="Standalone">
 			<ChildrenList>
-				<ActorMixer Name="Level" ID="{77E7440D-2A39-4FFC-BB3E-880640A3F6E6}" ShortID="981915164">
+				<ActorMixer Name="Menu" ID="{09345EE3-3B8C-4FA2-87CA-5EF73678AB10}" ShortID="516073462">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -13,26 +13,379 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" ShortID="397143290" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
+						<Folder Name="LevelMenu" ID="{DAEC08AE-3C94-43F8-B643-7F7AAE409FB3}" ShortID="362474383">
 							<ChildrenList>
-								<AudioFileSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" ShortID="501425487">
-									<Language>SFX</Language>
-									<AudioFile>Level_Win.wav</AudioFile>
-								</AudioFileSource>
+								<Sound Name="UI_LevelMenu_LockedLevel_Button" ID="{60BE9991-E46C-471D-9F63-0737068AA51A}" ShortID="1062298175" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LevelMenu_LockedLevel_Button" ID="{60FB468E-AAAD-4E76-B82A-7316025B5A21}" ShortID="327717301">
+											<Language>SFX</Language>
+											<AudioFile>UI_LevelMenu_LockedLevel_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LevelMenu_LockedLevel_Button" ID="{60FB468E-AAAD-4E76-B82A-7316025B5A21}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_LevelMenu_UnlockedLevel_Button" ID="{DCB69956-85A8-47DE-A5D9-B0C33B7113C4}" ShortID="879109146" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_LevelMenu_UnlockedLevel_Button" ID="{BFADBFB7-E4F8-4338-8F59-4A75319A0154}" ShortID="599628335">
+											<Language>SFX</Language>
+											<AudioFile>UI_LevelMenu_UnlockedLevel_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_LevelMenu_UnlockedLevel_Button" ID="{BFADBFB7-E4F8-4338-8F59-4A75319A0154}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</Folder>
+						<Folder Name="PopupMenu" ID="{B4031DEA-930D-4EE8-BE47-2E269592A50A}" ShortID="281926304">
+							<ChildrenList>
+								<Sound Name="UI_PopupMenu_Back_Button" ID="{F55B806F-11C7-4890-AE66-0F354305726D}" ShortID="1018007753" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" ShortID="801802120">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Back_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_MainMenu_Button" ID="{526F0B4A-A242-41A0-9757-3BF729A2BC40}" ShortID="725509904" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" ShortID="789555871">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_MainMenu_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Restart_Button" ID="{1AB91B0D-8DB6-48B4-BF0D-86DC3397ED77}" ShortID="68704257" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" ShortID="846411751">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Restart_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Settings_Button" ID="{BA077BD5-4B70-4D60-BFCA-BD9686B407A4}" ShortID="51830709" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" ShortID="462718627">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Settings_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Store_Button" ID="{94CE0F1B-649E-46C0-A38C-77085DC9543D}" ShortID="507290861" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" ShortID="192007627">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Store_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="StartMenu" ID="{4770722C-622F-47AA-8E38-61DD8CA8FEBB}" ShortID="1014191006">
+							<ChildrenList>
+								<Sound Name="UI_StartMenu_Credits_Button" ID="{78AECBC5-CAD8-46A5-9C4D-645B09F2206C}" ShortID="373114171" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_StartMenu_Credits_Button" ID="{0C2EADBA-D41A-4D92-87CD-50ACCDB3632F}" ShortID="461352254">
+											<Language>SFX</Language>
+											<AudioFile>UI_StartMenu_Credits_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_StartMenu_Credits_Button" ID="{0C2EADBA-D41A-4D92-87CD-50ACCDB3632F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_StartMenu_Logo_Button" ID="{7B69AF3E-6856-4AA4-BBEB-1ED69D0CAD15}" ShortID="833628364" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_StartMenu_Logo_Button" ID="{52141B7D-124C-4815-94B7-0E6CB55BFD23}" ShortID="1018322493">
+											<Language>SFX</Language>
+											<AudioFile>UI_StartMenu_Logo_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_StartMenu_Logo_Button" ID="{52141B7D-124C-4815-94B7-0E6CB55BFD23}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_StartMenu_Settings_Button" ID="{2558E40F-F399-4170-AC30-F411D02032CF}" ShortID="234783330" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_StartMenu_Settings_Button" ID="{F8232294-1741-4E61-911B-46243BEE60B2}" ShortID="140128883">
+											<Language>SFX</Language>
+											<AudioFile>UI_StartMenu_Settings_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_StartMenu_Settings_Button" ID="{F8232294-1741-4E61-911B-46243BEE60B2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_StartMenu_Start_Button" ID="{CA99497B-2912-43A8-8203-AECE7C709444}" ShortID="252616957" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_StartMenu_Start_Button" ID="{241C0098-35F8-42F2-A6BE-3871EDDCD8EF}" ShortID="762418288">
+											<Language>SFX</Language>
+											<AudioFile>UI_StartMenu_Start_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_StartMenu_Start_Button" ID="{241C0098-35F8-42F2-A6BE-3871EDDCD8EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_StartMenu_Store_Button" ID="{46353F23-9172-4A4B-A443-5F07BB1ABE71}" ShortID="798831695" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_StartMenu_Store_Button" ID="{BC16B89E-C568-4623-9405-EEB7A55CD864}" ShortID="449358139">
+											<Language>SFX</Language>
+											<AudioFile>UI_StartMenu_Store_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_StartMenu_Store_Button" ID="{BC16B89E-C568-4623-9405-EEB7A55CD864}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WinScreen" ID="{F52A7E50-673A-4048-BA36-C16061250557}" ShortID="173806004">
+							<ChildrenList>
+								<Sound Name="UI_WinScreen_MainMenu_Button" ID="{B4E9A3C2-5B9D-4615-A111-2A6830F770CD}" ShortID="970898646" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" ShortID="231051959">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_MainMenu_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Next_Button" ID="{A0538153-6B26-48AF-9E0A-EEA0F20E3C98}" ShortID="1066006647" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" ShortID="1040587393">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Next_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Restart_Button" ID="{3FCB3807-FE82-4113-8B78-C87F5F125207}" ShortID="941179385" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" ShortID="603409939">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Restart_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Store_Button" ID="{15072664-5B30-4582-B993-5665491242F4}" ShortID="784107430" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" ShortID="489506376">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Store_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WorldMenu" ID="{87A3C078-6803-435E-BBB8-A40B1CBE75F1}" ShortID="683030043">
+							<ChildrenList>
+								<Sound Name="UI_WorldMenu_LockedWorld_Button" ID="{DFB99B27-1677-465C-9A13-BC43B2D6F1AC}" ShortID="882137390" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WorldMenu_LockedWorld_Button" ID="{46F041BD-4393-4852-A5BE-6B5B936694C5}" ShortID="574571335">
+											<Language>SFX</Language>
+											<AudioFile>UI_WorldMenu_LockedWorld_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WorldMenu_LockedWorld_Button" ID="{46F041BD-4393-4852-A5BE-6B5B936694C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WorldMenu_UnlockedWorld_Button" ID="{D2BCD267-659D-47BC-8A11-384E4064B8F2}" ShortID="216172269" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WorldMenu_UnlockedWorld_Button" ID="{DE9D23FE-1220-4B1E-9F15-1DE9F712EF65}" ShortID="510863609">
+											<Language>SFX</Language>
+											<AudioFile>UI_WorldMenu_UnlockedWorld_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WorldMenu_UnlockedWorld_Button" ID="{DE9D23FE-1220-4B1E-9F15-1DE9F712EF65}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Game UI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

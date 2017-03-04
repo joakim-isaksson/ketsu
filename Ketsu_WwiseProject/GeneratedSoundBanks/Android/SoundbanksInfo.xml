@@ -28,13 +28,31 @@
 				<Event Id="269859599" Name="Death_Fox_Water" ObjectPath="\Events\Characters\Death\Death_Fox_Water"/>
 				<Event Id="3738416424" Name="Death_Wolf_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Wolf_Hedgehog"/>
 				<Event Id="1446448900" Name="Death_Wolf_Water" ObjectPath="\Events\Characters\Death\Death_Wolf_Water"/>
-				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\UI\Level_Win"/>
+				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\SFX\Level_Win"/>
+				<Event Id="3773943064" Name="LevelMenu_LockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button"/>
+				<Event Id="1513439813" Name="LevelMenu_UnlockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Move\Move_Hedgehog"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
+				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
+				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
+				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
+				<Event Id="3455221783" Name="PopupMenu_Restart_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Restart_Button"/>
+				<Event Id="2656457985" Name="PopupMenu_Store_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Store_Button"/>
+				<Event Id="1952017332" Name="StartMenu_Credits_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Credits_Button"/>
+				<Event Id="2533867219" Name="StartMenu_Logo_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Logo_Button"/>
+				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>
+				<Event Id="1575699130" Name="StartMenu_Start_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Start_Button"/>
+				<Event Id="1415003611" Name="StartMenu_Store_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Store_Button"/>
 				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform_FromKetsu"/>
 				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform_ToKetsu"/>
+				<Event Id="1670207177" Name="WinScreen_MainMenu_Button" ObjectPath="\Events\UI\Menu\WinScreen\WinScreen_MainMenu_Button"/>
+				<Event Id="2660933722" Name="WinScreen_Next_Button" ObjectPath="\Events\UI\Menu\WinScreen\WinScreen_Next_Button"/>
+				<Event Id="171788004" Name="WinScreen_Restart_Button" ObjectPath="\Events\UI\Menu\WinScreen\WinScreen_Restart_Button"/>
+				<Event Id="482381986" Name="WinScreen_Store_Button" ObjectPath="\Events\UI\Menu\WinScreen\WinScreen_Store_Button"/>
+				<Event Id="376222116" Name="WorldMenu_LockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_LockedWorld_Button"/>
+				<Event Id="574974477" Name="WorldMenu_UnlockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="20985966" Language="SFX">
@@ -45,9 +63,41 @@
 					<ShortName>Fox_Death_Water_02.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_02_D124CA2C.wem</Path>
 				</File>
+				<File Id="140128883" Language="SFX">
+					<ShortName>UI_StartMenu_Settings_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="192007627" Language="SFX">
+					<ShortName>UI_PopupMenu_Store_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Store_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="231051959" Language="SFX">
+					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="327717301" Language="SFX">
+					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="449358139" Language="SFX">
+					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Store_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="461352254" Language="SFX">
+					<ShortName>UI_StartMenu_Credits_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Credits_Button_D124CA2C.wem</Path>
+				</File>
 				<File Id="461580426" Language="SFX">
 					<ShortName>Fox_Death_Hedgehog_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="462718627" Language="SFX">
+					<ShortName>UI_PopupMenu_Settings_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="489506376" Language="SFX">
+					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Store_Button_D124CA2C.wem</Path>
 				</File>
 				<File Id="501425487" Language="SFX">
 					<ShortName>Level_Win.wav</ShortName>
@@ -57,13 +107,29 @@
 					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
 					<Path>SFX\Fox_Death_Hedgehog_02_D124CA2C.wem</Path>
 				</File>
+				<File Id="510863609" Language="SFX">
+					<ShortName>UI_WorldMenu_UnlockedWorld_Button.wav</ShortName>
+					<Path>SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem</Path>
+				</File>
 				<File Id="511370657" Language="SFX">
 					<ShortName>Fox_Death_Water_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_01_D124CA2C.wem</Path>
 				</File>
+				<File Id="574571335" Language="SFX">
+					<ShortName>UI_WorldMenu_LockedWorld_Button.wav</ShortName>
+					<Path>SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem</Path>
+				</File>
 				<File Id="588042227" Language="SFX">
 					<ShortName>Move_Wolf.wav</ShortName>
 					<Path>SFX\Move_Wolf_D124CA2C.wem</Path>
+				</File>
+				<File Id="599628335" Language="SFX">
+					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="603409939" Language="SFX">
+					<ShortName>UI_WinScreen_Restart_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Restart_Button_D124CA2C.wem</Path>
 				</File>
 				<File Id="612027486" Language="SFX">
 					<ShortName>Collect_Sheep.wav</ShortName>
@@ -85,9 +151,25 @@
 					<ShortName>Transform_ToKetsu-002.wav</ShortName>
 					<Path>SFX\Transform_ToKetsu-002_D124CA2C.wem</Path>
 				</File>
+				<File Id="762418288" Language="SFX">
+					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Start_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="789555871" Language="SFX">
+					<ShortName>UI_PopupMenu_MainMenu_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_MainMenu_Button_D124CA2C.wem</Path>
+				</File>
 				<File Id="793490377" Language="SFX">
 					<ShortName>Move_Hedgehog.wav</ShortName>
 					<Path>SFX\Move_Hedgehog_D124CA2C.wem</Path>
+				</File>
+				<File Id="801802120" Language="SFX">
+					<ShortName>UI_PopupMenu_Back_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Back_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="846411751" Language="SFX">
+					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Restart_Button_D124CA2C.wem</Path>
 				</File>
 				<File Id="893164066" Language="SFX">
 					<ShortName>Collect_Chicken.wav</ShortName>
@@ -100,6 +182,14 @@
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_D124CA2C.wem</Path>
+				</File>
+				<File Id="1018322493" Language="SFX">
+					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Logo_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="1040587393" Language="SFX">
+					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Next_Button_D124CA2C.wem</Path>
 				</File>
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>

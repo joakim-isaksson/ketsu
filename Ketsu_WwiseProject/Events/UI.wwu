@@ -3,17 +3,8 @@
 	<Events>
 		<WorkUnit Name="UI" ID="{858FF141-AF43-46C3-90C4-9FC3A90FEFF3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}">
-					<ChildrenList>
-						<Action Name="Play" ID="{93975E0C-F2E5-41E8-A042-FBBB5708B347}" ShortID="260633763" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D0B77C6E-C6D3-4726-9152-8276B4D78E2F}" Global="false">
-									<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				<WorkUnit Name="Game" ID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" PersistMode="Reference"/>
+				<WorkUnit Name="Menu" ID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
