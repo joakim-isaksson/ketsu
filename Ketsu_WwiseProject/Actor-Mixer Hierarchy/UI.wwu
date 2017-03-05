@@ -584,6 +584,105 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Toolbox" ID="{CE769959-6B32-4599-81EC-8CA276268EE8}" ShortID="896386542">
+							<ChildrenList>
+								<Sound Name="Toolbox_Collect_Coins" ID="{5390D59A-E6A1-4ABC-9322-1B7A7FADE0FC}" ShortID="1046140553" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toolbox_Collect_Coins" ID="{DED1AF6B-BFA8-4E14-A0B0-D29A86CBC145}" ShortID="544687860">
+											<Language>SFX</Language>
+											<AudioFile>Toolbox_Collect_Coins.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Toolbox_Collect_Coins" ID="{DED1AF6B-BFA8-4E14-A0B0-D29A86CBC145}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{39E78319-6DDB-48FB-9F44-6C82558FB820}" ShortID="88321711" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{39902C80-85E4-4965-A722-489B844C3FB5}" ShortID="962930836">
+											<Language>SFX</Language>
+											<AudioFile>Toolbox_Collect_KetsuMaxPowerUp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{39902C80-85E4-4965-A722-489B844C3FB5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toolbox_Collect_KetsuPowerUp" ID="{7B26382D-BE1D-44CC-A708-02DDB383752A}" ShortID="186465232" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toolbox_Collect_KetsuPowerUp" ID="{03CB8B35-AAB0-4FD7-B213-C69B184C1492}" ShortID="420154487">
+											<Language>SFX</Language>
+											<AudioFile>Toolbox_Collect_KetsuPowerUp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Toolbox_Collect_KetsuPowerUp" ID="{03CB8B35-AAB0-4FD7-B213-C69B184C1492}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toolbox_Collect_SpaceshipPart" ID="{9B1AC3DF-FC6D-40E7-8DCE-AA696C441D16}" ShortID="805864629" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toolbox_Collect_SpaceshipPart" ID="{F3A6825E-FCF0-45DC-9235-D85B86A930B2}" ShortID="245242611">
+											<Language>SFX</Language>
+											<AudioFile>Toolbox_Collect_SpaceshipPart.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Toolbox_Collect_SpaceshipPart" ID="{F3A6825E-FCF0-45DC-9235-D85B86A930B2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Toolbox_Open" ID="{EFC9F593-8F43-433A-BFC7-0AA3B0E50437}" ShortID="617802873" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Toolbox_Open" ID="{4A1D8558-3471-4BFC-ADB2-0AAB82887DA3}" ShortID="265982203">
+											<Language>SFX</Language>
+											<AudioFile>Toolbox_Open.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Toolbox_Open" ID="{4A1D8558-3471-4BFC-ADB2-0AAB82887DA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

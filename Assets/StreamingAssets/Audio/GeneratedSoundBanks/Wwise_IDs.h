@@ -14,7 +14,6 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
-        static const AkUniqueID COLLECT_HAM = 1005641002U;
         static const AkUniqueID COLLECT_SHEEP = 30088657U;
         static const AkUniqueID DEATH_FOX_HEDGEHOG = 4193159569U;
         static const AkUniqueID DEATH_FOX_WATER = 269859599U;
@@ -26,6 +25,8 @@ namespace AK
         static const AkUniqueID GUI_POWERUP_CRYSTAL_BUTTON = 4091529515U;
         static const AkUniqueID GUI_SETTINGS_BUTTON = 989405037U;
         static const AkUniqueID GUI_SHEEP_BUTTON = 3275066385U;
+        static const AkUniqueID GUI_SPLIT_ACTIVE = 841337824U;
+        static const AkUniqueID GUI_SPLIT_RELEASE = 1748211077U;
         static const AkUniqueID LEVEL_WIN = 2908556826U;
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_BUTTON = 3773943064U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_BUTTON = 1513439813U;
@@ -43,6 +44,11 @@ namespace AK
         static const AkUniqueID STARTMENU_SETTINGS_BUTTON = 3791509005U;
         static const AkUniqueID STARTMENU_START_BUTTON = 1575699130U;
         static const AkUniqueID STARTMENU_STORE_BUTTON = 1415003611U;
+        static const AkUniqueID TOOLBOX_COLLECT_COINS = 4162518518U;
+        static const AkUniqueID TOOLBOX_COLLECT_KETSUMAXPOWERUP = 1024872546U;
+        static const AkUniqueID TOOLBOX_COLLECT_KETSUPOWERUP = 2696066024U;
+        static const AkUniqueID TOOLBOX_COLLECT_SPACESHIPPART = 3565206619U;
+        static const AkUniqueID TOOLBOX_OPEN = 1173277773U;
         static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
         static const AkUniqueID TRANSFORM_TOKETSU = 1052828255U;
         static const AkUniqueID WINSCREEN_MAINMENU_BUTTON = 1670207177U;

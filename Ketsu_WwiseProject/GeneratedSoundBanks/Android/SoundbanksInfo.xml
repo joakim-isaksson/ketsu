@@ -22,7 +22,6 @@
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1004812793" Name="Collect_Chicken" ObjectPath="\Events\SFX\Collect_Chicken"/>
-				<Event Id="1005641002" Name="Collect_Ham" ObjectPath="\Events\SFX\Collect_Ham"/>
 				<Event Id="30088657" Name="Collect_Sheep" ObjectPath="\Events\SFX\Collect_Sheep"/>
 				<Event Id="4193159569" Name="Death_Fox_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Fox_Hedgehog"/>
 				<Event Id="269859599" Name="Death_Fox_Water" ObjectPath="\Events\Characters\Death\Death_Fox_Water"/>
@@ -34,6 +33,8 @@
 				<Event Id="4091529515" Name="GUI_PowerUp_Crystal_Button" ObjectPath="\Events\UI\GUI\Button\GUI_PowerUp_Crystal_Button"/>
 				<Event Id="989405037" Name="GUI_Settings_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Settings_Button"/>
 				<Event Id="3275066385" Name="GUI_Sheep_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Sheep_Button"/>
+				<Event Id="841337824" Name="GUI_Split_Active" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Active"/>
+				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
 				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\SFX\Level_Win"/>
 				<Event Id="3773943064" Name="LevelMenu_LockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button"/>
 				<Event Id="1513439813" Name="LevelMenu_UnlockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button"/>
@@ -51,6 +52,11 @@
 				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>
 				<Event Id="1575699130" Name="StartMenu_Start_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Start_Button"/>
 				<Event Id="1415003611" Name="StartMenu_Store_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Store_Button"/>
+				<Event Id="4162518518" Name="Toolbox_Collect_Coins" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_Coins"/>
+				<Event Id="1024872546" Name="Toolbox_Collect_KetsuMaxPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp"/>
+				<Event Id="2696066024" Name="Toolbox_Collect_KetsuPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp"/>
+				<Event Id="3565206619" Name="Toolbox_Collect_SpaceshipPart" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart"/>
+				<Event Id="1173277773" Name="Toolbox_Open" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Open"/>
 				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform_FromKetsu"/>
 				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform_ToKetsu"/>
 				<Event Id="1670207177" Name="WinScreen_MainMenu_Button" ObjectPath="\Events\UI\Menu\WinScreen\WinScreen_MainMenu_Button"/>
@@ -93,6 +99,14 @@
 					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem</Path>
 				</File>
+				<File Id="245242611" Language="SFX">
+					<ShortName>Toolbox_Collect_SpaceshipPart.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_SpaceshipPart_D124CA2C.wem</Path>
+				</File>
+				<File Id="265982203" Language="SFX">
+					<ShortName>Toolbox_Open.wav</ShortName>
+					<Path>SFX\Toolbox_Open_D124CA2C.wem</Path>
+				</File>
 				<File Id="276388275" Language="SFX">
 					<ShortName>GUI_KetsuPower_Increase.wav</ShortName>
 					<Path>SFX\GUI_KetsuPower_Increase_D124CA2C.wem</Path>
@@ -104,6 +118,10 @@
 				<File Id="327717301" Language="SFX">
 					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
 					<Path>SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="420154487" Language="SFX">
+					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_KetsuPowerUp_D124CA2C.wem</Path>
 				</File>
 				<File Id="449358139" Language="SFX">
 					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
@@ -121,6 +139,10 @@
 					<ShortName>UI_PopupMenu_Settings_Button.wav</ShortName>
 					<Path>SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem</Path>
 				</File>
+				<File Id="463531170" Language="SFX">
+					<ShortName>GUI_Split_Release.wav</ShortName>
+					<Path>SFX\GUI_Split_Release_D124CA2C.wem</Path>
+				</File>
 				<File Id="489506376" Language="SFX">
 					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Store_Button_D124CA2C.wem</Path>
@@ -133,6 +155,10 @@
 					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
 					<Path>SFX\Fox_Death_Hedgehog_02_D124CA2C.wem</Path>
 				</File>
+				<File Id="507783315" Language="SFX">
+					<ShortName>GUI_Split_BuildUp.wav</ShortName>
+					<Path>SFX\GUI_Split_BuildUp_D124CA2C.wem</Path>
+				</File>
 				<File Id="510863609" Language="SFX">
 					<ShortName>UI_WorldMenu_UnlockedWorld_Button.wav</ShortName>
 					<Path>SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem</Path>
@@ -140,6 +166,10 @@
 				<File Id="511370657" Language="SFX">
 					<ShortName>Fox_Death_Water_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="544687860" Language="SFX">
+					<ShortName>Toolbox_Collect_Coins.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_Coins_D124CA2C.wem</Path>
 				</File>
 				<File Id="574571335" Language="SFX">
 					<ShortName>UI_WorldMenu_LockedWorld_Button.wav</ShortName>
@@ -169,10 +199,6 @@
 					<ShortName>Move_Fox.wav</ShortName>
 					<Path>SFX\Move_Fox_D124CA2C.wem</Path>
 				</File>
-				<File Id="700240671" Language="SFX">
-					<ShortName>Collect_Ham.wav</ShortName>
-					<Path>SFX\Collect_Ham_D124CA2C.wem</Path>
-				</File>
 				<File Id="704131998" Language="SFX">
 					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem</Path>
@@ -180,6 +206,10 @@
 				<File Id="735302778" Language="SFX">
 					<ShortName>Transform_ToKetsu-002.wav</ShortName>
 					<Path>SFX\Transform_ToKetsu-002_D124CA2C.wem</Path>
+				</File>
+				<File Id="754253463" Language="SFX">
+					<ShortName>GUI_Split_Active.wav</ShortName>
+					<Path>SFX\GUI_Split_Active_D124CA2C.wem</Path>
 				</File>
 				<File Id="762418288" Language="SFX">
 					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
@@ -212,6 +242,10 @@
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_D124CA2C.wem</Path>
+				</File>
+				<File Id="962930836" Language="SFX">
+					<ShortName>Toolbox_Collect_KetsuMaxPowerUp.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_KetsuMaxPowerUp_D124CA2C.wem</Path>
 				</File>
 				<File Id="1018322493" Language="SFX">
 					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>

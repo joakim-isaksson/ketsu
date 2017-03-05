@@ -6,11 +6,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	376222116	WorldMenu_LockedWorld_Button			\UI\Menu\WorldMenu\WorldMenu_LockedWorld_Button	
 	482381986	WinScreen_Store_Button			\UI\Menu\WinScreen\WinScreen_Store_Button	
 	574974477	WorldMenu_UnlockedWorld_Button			\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button	
+	841337824	GUI_Split_Active			\UI\GUI\Split\GUI_Split_Active	
 	941274754	Move_Hedgehog			\Enemy\Move\Move_Hedgehog	
 	989405037	GUI_Settings_Button			\UI\GUI\Button\GUI_Settings_Button	
 	1004812793	Collect_Chicken			\SFX\Collect_Chicken	
-	1005641002	Collect_Ham			\SFX\Collect_Ham	
+	1024872546	Toolbox_Collect_KetsuMaxPowerUp			\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp	
 	1052828255	Transform_ToKetsu			\SFX\Transform_ToKetsu	
+	1173277773	Toolbox_Open			\UI\GUI\Toolbox\Toolbox_Open	
 	1203244949	GUI_Chicken_Button			\UI\GUI\Button\GUI_Chicken_Button	
 	1374719650	Transform_FromKetsu			\SFX\Transform_FromKetsu	
 	1415003611	StartMenu_Store_Button			\UI\Menu\StartMenu\StartMenu_Store_Button	
@@ -19,22 +21,26 @@ Event	ID	Name			Wwise Object Path	Notes
 	1513439813	LevelMenu_UnlockedLevel_Button			\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button	
 	1575699130	StartMenu_Start_Button			\UI\Menu\StartMenu\StartMenu_Start_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\Menu\WinScreen\WinScreen_MainMenu_Button	
+	1748211077	GUI_Split_Release			\UI\GUI\Split\GUI_Split_Release	
 	1952017332	StartMenu_Credits_Button			\UI\Menu\StartMenu\StartMenu_Credits_Button	
 	2492116432	Move_Fox			\Characters\Move\Move_Fox	
 	2533867219	StartMenu_Logo_Button			\UI\Menu\StartMenu\StartMenu_Logo_Button	
 	2656457985	PopupMenu_Store_Button			\UI\Menu\PopupMenu\PopupMenu_Store_Button	
 	2660933722	WinScreen_Next_Button			\UI\Menu\WinScreen\WinScreen_Next_Button	
+	2696066024	Toolbox_Collect_KetsuPowerUp			\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp	
 	2908556826	Level_Win			\SFX\Level_Win	
 	3094295669	PopupMenu_Back_Button			\UI\Menu\PopupMenu\PopupMenu_Back_Button	
 	3215618068	PopupMenu_MainMenu_Button			\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button	
 	3275066385	GUI_Sheep_Button			\UI\GUI\Button\GUI_Sheep_Button	
 	3455221783	PopupMenu_Restart_Button			\UI\Menu\PopupMenu\PopupMenu_Restart_Button	
+	3565206619	Toolbox_Collect_SpaceshipPart			\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart	
 	3609283987	Move_Ketsu			\Characters\Move\Move_Ketsu	
 	3738416424	Death_Wolf_Hedgehog			\Characters\Death\Death_Wolf_Hedgehog	
 	3773943064	LevelMenu_LockedLevel_Button			\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button	
 	3791509005	StartMenu_Settings_Button			\UI\Menu\StartMenu\StartMenu_Settings_Button	
 	4091529515	GUI_PowerUp_Crystal_Button			\UI\GUI\Button\GUI_PowerUp_Crystal_Button	
 	4100043833	GUI_KetsuPower_Increase			\UI\GUI\Function\GUI_KetsuPower_Increase	
+	4162518518	Toolbox_Collect_Coins			\UI\GUI\Toolbox\Toolbox_Collect_Coins	
 	4193159569	Death_Fox_Hedgehog			\Characters\Death\Death_Fox_Hedgehog	
 	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
 
@@ -47,18 +53,24 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	143512029	GUI_Chicken_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Chicken_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Chicken_Button		11584
 	192007627	UI_PopupMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\PopupMenu\UI_PopupMenu_Store_Button		77680
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_MainMenu_Button		30448
+	245242611	Toolbox_Collect_SpaceshipPart	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_SpaceshipPart_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart		60976
+	265982203	Toolbox_Open	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Open_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Open		91144
 	276388275	GUI_KetsuPower_Increase	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_KetsuPower_Increase_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Function\GUI_KetsuPower_Increase		60760
 	310533540	GUI_MaxPowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_MaxPowerUp_Crystal_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button		108568
 	327717301	UI_LevelMenu_LockedLevel_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Button		9928
+	420154487	Toolbox_Collect_KetsuPowerUp	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_KetsuPowerUp_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp		207424
 	449358139	UI_StartMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Store_Button		56008
 	461352254	UI_StartMenu_Credits_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Credits_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Credits_Button		38944
 	461580426	Fox_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Hedgehog_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_01		147448
 	462718627	UI_PopupMenu_Settings_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\PopupMenu\UI_PopupMenu_Settings_Button		18064
+	463531170	GUI_Split_Release	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Split_Release_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_Release		179704
 	489506376	UI_WinScreen_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_Store_Button		77680
 	501425487	Level_Win	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Level_Win_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Level\Level_Win		117928
 	503244186	Fox_Death_Hedgehog_02	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Hedgehog_02_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_02		147448
+	507783315	GUI_Split_BuildUp	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Split_BuildUp_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_BuildUp		1456120
 	510863609	UI_WorldMenu_UnlockedWorld_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_UnlockedWorld_Button		60688
 	511370657	Fox_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Water_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_01		175600
+	544687860	Toolbox_Collect_Coins	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_Coins_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_Coins		154360
 	574571335	UI_WorldMenu_LockedWorld_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_LockedWorld_Button		24040
 	588042227	Move_Wolf	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Move_Wolf		35488
 	599628335	UI_LevelMenu_UnlockedLevel_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_UnlockedLevel_Button		79264
@@ -66,9 +78,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	612027486	Collect_Sheep	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Sheep_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Sheep		53776
 	635168810	GUI_Sheep_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Sheep_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Sheep_Button		11584
 	676468509	Move_Fox	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Move_Fox		35488
-	700240671	Collect_Ham	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Ham_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Ham		42832
 	704131998	Wolf_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Hedgehog\Wolf_Death_Hedgehog_01		147448
 	735302778	Transform_ToKetsu-002	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Transform_ToKetsu-002_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-002		205912
+	754253463	GUI_Split_Active	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Split_Active_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_Active		133552
 	762418288	UI_StartMenu_Start_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Start_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Start_Button		12664
 	789555871	UI_PopupMenu_MainMenu_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_MainMenu_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\PopupMenu\UI_PopupMenu_MainMenu_Button		30448
 	793490377	Move_Hedgehog	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Hedgehog_D124CA2C.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Move_Hedgehog\Move_Hedgehog		61408
@@ -77,6 +89,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	893164066	Collect_Chicken	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Chicken_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Chicken		37864
 	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Ketsu_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		17488
 	935737943	Transform_FromKetsu	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Transform_FromKetsu_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu		103168
+	962930836	Toolbox_Collect_KetsuMaxPowerUp	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_KetsuMaxPowerUp_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp		212032
 	1018322493	UI_StartMenu_Logo_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Logo_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Logo_Button		28576
 	1040587393	UI_WinScreen_Next_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_Next_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_Next_Button		33328
 	1069057915	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Water_01_D124CA2C.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		175600

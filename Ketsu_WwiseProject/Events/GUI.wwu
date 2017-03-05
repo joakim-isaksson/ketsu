@@ -120,6 +120,65 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Toolbox" ID="{FA29E835-453E-49F5-A77F-75A0B1C6CC6C}" ShortID="531505082">
+					<ChildrenList>
+						<Event Name="Toolbox_Collect_Coins" ID="{26FA2599-C036-4EBC-B627-6968EE22E62C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F268C4AC-D7A8-4A90-BA01-A3BF2FABAABA}" ShortID="507861264" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{55664AAD-AF4A-402D-B429-482DF8E5AFEA}" Global="false">
+											<ObjectRef Name="Toolbox_Collect_Coins" ID="{5390D59A-E6A1-4ABC-9322-1B7A7FADE0FC}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Toolbox_Collect_KetsuPowerUp" ID="{F6FB641E-F9CA-474B-B84E-CAAC1D19835B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A00BB88B-338E-48D0-A8AF-5BB52EBA0CBD}" ShortID="992522539" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{49F87A9F-CEC3-4DFA-98D2-9D49590D7EC4}" Global="false">
+											<ObjectRef Name="Toolbox_Collect_KetsuPowerUp" ID="{7B26382D-BE1D-44CC-A708-02DDB383752A}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{20B63C05-4ED6-4DD0-A8B7-45650156C1EC}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A3718EF7-787F-440D-85FE-4551620DD61B}" ShortID="815928079" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D0D79CDA-8BA9-4E52-AFA1-99F68EB8EA72}" Global="false">
+											<ObjectRef Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{39E78319-6DDB-48FB-9F44-6C82558FB820}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Toolbox_Open" ID="{7E454212-0C34-4264-95E2-5DE06682C1B8}">
+							<ChildrenList>
+								<Action Name="Play" ID="{E1851078-FA58-469B-AA3F-1C10069188C3}" ShortID="723071355" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{68826BDC-ACD0-414B-94DC-43F120DF4305}" Global="false">
+											<ObjectRef Name="Toolbox_Open" ID="{EFC9F593-8F43-433A-BFC7-0AA3B0E50437}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Toolbox_Collect_SpaceshipPart" ID="{DE90AA62-761D-4032-844C-8632436A97B2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{73AD9605-4114-40AF-B87D-79C971E50F0C}" ShortID="823912131" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E6085CFC-161C-4E67-8C7B-2504C2C64224}" Global="false">
+											<ObjectRef Name="Toolbox_Collect_SpaceshipPart" ID="{9B1AC3DF-FC6D-40E7-8DCE-AA696C441D16}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
