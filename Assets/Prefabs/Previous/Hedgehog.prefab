@@ -172,4 +172,5 @@ MonoBehaviour:
     X: 0
     Y: 0
   MoveSpeed: 1
+  Damage: 0
   Pumber: {fileID: 4846287066609720}
