@@ -29,6 +29,7 @@
 				<Event Id="3738416424" Name="Death_Wolf_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Wolf_Hedgehog"/>
 				<Event Id="1446448900" Name="Death_Wolf_Water" ObjectPath="\Events\Characters\Death\Death_Wolf_Water"/>
 				<Event Id="1203244949" Name="GUI_Chicken_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Chicken_Button"/>
+				<Event Id="4100043833" Name="GUI_KetsuPower_Increase" ObjectPath="\Events\UI\GUI\Function\GUI_KetsuPower_Increase"/>
 				<Event Id="1464712323" Name="GUI_MaxPowerUp_Crystal_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button"/>
 				<Event Id="4091529515" Name="GUI_PowerUp_Crystal_Button" ObjectPath="\Events\UI\GUI\Button\GUI_PowerUp_Crystal_Button"/>
 				<Event Id="989405037" Name="GUI_Settings_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Settings_Button"/>
@@ -91,6 +92,10 @@
 				<File Id="231051959" Language="SFX">
 					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="276388275" Language="SFX">
+					<ShortName>GUI_KetsuPower_Increase.wav</ShortName>
+					<Path>SFX\GUI_KetsuPower_Increase_A939E04F.wem</Path>
 				</File>
 				<File Id="310533540" Language="SFX">
 					<ShortName>GUI_MaxPowerUp_Crystal_Button.wav</ShortName>

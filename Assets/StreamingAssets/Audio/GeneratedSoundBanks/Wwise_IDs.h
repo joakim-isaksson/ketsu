@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID DEATH_WOLF_HEDGEHOG = 3738416424U;
         static const AkUniqueID DEATH_WOLF_WATER = 1446448900U;
         static const AkUniqueID GUI_CHICKEN_BUTTON = 1203244949U;
+        static const AkUniqueID GUI_KETSUPOWER_INCREASE = 4100043833U;
         static const AkUniqueID GUI_MAXPOWERUP_CRYSTAL_BUTTON = 1464712323U;
         static const AkUniqueID GUI_POWERUP_CRYSTAL_BUTTON = 4091529515U;
         static const AkUniqueID GUI_SETTINGS_BUTTON = 989405037U;

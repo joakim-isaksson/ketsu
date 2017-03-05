@@ -9,6 +9,7 @@
 						<ObjectRef Name="Transform_FromKetsu" ID="{EFBE8801-F644-41D8-AC83-8FFBAE216F44}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Collect_Ham" ID="{A102F3F5-0961-4472-9585-0676C4175357}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartMenu" ID="{70D2711F-2AB1-4523-85E2-D0BE18B6C405}" WorkUnitID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Function" ID="{F1B1DDD5-8C6C-4862-B015-A3281FF08E27}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Collect_Chicken" ID="{83785E9D-4CB4-48B9-9663-E15F95424103}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform_ToKetsu" ID="{817FCAD0-0B99-490F-BB41-A93A56B87BD6}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{F0264B40-44AA-4AA2-8CE3-1DFEDD90CAFF}" WorkUnitID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" Filter="7" Origin="Manual"/>

@@ -34,6 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3773943064	LevelMenu_LockedLevel_Button			\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button	
 	3791509005	StartMenu_Settings_Button			\UI\Menu\StartMenu\StartMenu_Settings_Button	
 	4091529515	GUI_PowerUp_Crystal_Button			\UI\GUI\Button\GUI_PowerUp_Crystal_Button	
+	4100043833	GUI_KetsuPower_Increase			\UI\GUI\Function\GUI_KetsuPower_Increase	
 	4193159569	Death_Fox_Hedgehog			\Characters\Death\Death_Fox_Hedgehog	
 	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
 
@@ -46,6 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	143512029	GUI_Chicken_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_Chicken_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Chicken_Button		11584
 	192007627	UI_PopupMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_PopupMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\PopupMenu\UI_PopupMenu_Store_Button		77680
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WinScreen\UI_WinScreen_MainMenu_Button		30448
+	276388275	GUI_KetsuPower_Increase	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_KetsuPower_Increase_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Function\GUI_KetsuPower_Increase		60760
 	310533540	GUI_MaxPowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_MaxPowerUp_Crystal_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button		108568
 	327717301	UI_LevelMenu_LockedLevel_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Button		9928
 	449358139	UI_StartMenu_Store_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_StartMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Store_Button		56008

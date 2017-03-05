@@ -36,17 +36,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Collect_Ham" ID="{A102F3F5-0961-4472-9585-0676C4175357}">
-					<ChildrenList>
-						<Action Name="Play" ID="{08DC642B-05BA-49DB-95CF-05074B28A41A}" ShortID="1004060362" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{CC5851B6-F837-4C62-8AC5-3FD2C9E6C16A}" Global="false">
-									<ObjectRef Name="Collect_Ham" ID="{39ECA212-A282-4B2D-A8A4-B59CFAEE53DF}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Collect_Sheep" ID="{C755B38C-AACB-4B3B-A0A8-E1F4FA5082A2}">
 					<ChildrenList>
 						<Action Name="Play" ID="{02807FCB-0113-4211-AFB7-F5839E783391}" ShortID="113856580" Type="Play" Scope="One" Global="false">

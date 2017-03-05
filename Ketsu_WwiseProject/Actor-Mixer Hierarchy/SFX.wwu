@@ -32,25 +32,6 @@
 								<ActiveSource Name="Collect_Chicken" ID="{68EB5516-ED9F-4D58-95BD-61883C957F1E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Collect_Ham" ID="{39ECA212-A282-4B2D-A8A4-B59CFAEE53DF}" ShortID="47086947" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Collect_Ham" ID="{CE23ACA5-F48B-4127-9377-8F20AEE96469}" ShortID="700240671">
-									<Language>SFX</Language>
-									<AudioFile>Collect_Ham.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Collect_Ham" ID="{CE23ACA5-F48B-4127-9377-8F20AEE96469}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="Collect_Sheep" ID="{1ABCE30F-8858-462B-98B4-3500324261C1}" ShortID="264451824" Type="SoundFX">
 							<ReferenceList>
 								<Reference Name="Conversion">

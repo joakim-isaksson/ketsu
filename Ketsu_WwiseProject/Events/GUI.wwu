@@ -62,6 +62,64 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Function" ID="{F1B1DDD5-8C6C-4862-B015-A3281FF08E27}" ShortID="964134061">
+					<ChildrenList>
+						<Event Name="GUI_KetsuPower_Increase" ID="{58F858B5-3551-45E5-A2D3-11C58279CE30}">
+							<ChildrenList>
+								<Action Name="Play" ID="{CC099572-1E52-4699-ABFC-838ACA5E48DB}" ShortID="98850898" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{EFB8F560-5C78-4C13-B1DF-3942178A864D}" Global="false">
+											<ObjectRef Name="GUI_KetsuPower_Increase" ID="{163B7996-80B0-4F97-80BA-4827C8BFE2EF}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Split" ID="{8F8E4E4D-343A-4966-88B0-C14B62DA2EA4}" ShortID="436963471">
+					<ChildrenList>
+						<Event Name="GUI_Split_Active" ID="{B4101010-D7BC-4B17-A8B3-9D7C0A3B981F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{EA5B5563-D1D6-4D17-A00C-31541367BC70}" ShortID="229147336" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{249B9A92-2E8D-4F51-91A2-E729B6BC2B38}" Global="false">
+											<ObjectRef Name="GUI_Split_Active" ID="{972E1CFB-49D7-4265-8FC0-DBF09AA05DBD}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{9FC33C21-9A0D-4C11-83F2-41FC966BA644}" ShortID="781620012" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{C6BD411C-3C25-48D8-98F5-9B4925F6FB23}" Global="false">
+											<ObjectRef Name="GUI_Split_BuildUp" ID="{9F6C28F0-CFF0-43EC-BE8F-A9DDC7817FF6}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="GUI_Split_Release" ID="{2F3A630F-8B1A-4238-A03F-BF1AD39F0CF3}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{0E99072E-62B2-4D95-BD2E-C21F4E8D7EAF}" ShortID="173775474" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1FC5F629-F4D4-473D-9EBF-4CA5DC9DBAD3}" Global="false">
+											<ObjectRef Name="GUI_Split_BuildUp" ID="{9F6C28F0-CFF0-43EC-BE8F-A9DDC7817FF6}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{D9C7CCA4-6D35-4C73-B2CF-BA41549C5C8C}" ShortID="11800406" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{8E62DD51-7CBE-4C28-A62C-C97C2D8908EE}" Global="false">
+											<ObjectRef Name="GUI_Split_Release" ID="{85D1810A-45A5-4BFE-9FBE-CD5A7BD93960}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

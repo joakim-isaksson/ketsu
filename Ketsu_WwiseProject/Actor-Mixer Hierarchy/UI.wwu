@@ -493,6 +493,97 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Function" ID="{CF8524DF-E19F-4BFA-B655-497CD1198C28}" ShortID="288587740">
+							<ChildrenList>
+								<Sound Name="GUI_KetsuPower_Increase" ID="{163B7996-80B0-4F97-80BA-4827C8BFE2EF}" ShortID="732189654" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_KetsuPower_Increase" ID="{083DCEA1-C08A-4AEE-BEBB-311F649A069A}" ShortID="276388275">
+											<Language>SFX</Language>
+											<AudioFile>GUI_KetsuPower_Increase.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_KetsuPower_Increase" ID="{083DCEA1-C08A-4AEE-BEBB-311F649A069A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Split" ID="{CBB437C3-FCF8-4C2D-AD5D-A50D5CFB0EF4}" ShortID="7576293">
+							<ChildrenList>
+								<Sound Name="GUI_Split_Active" ID="{972E1CFB-49D7-4265-8FC0-DBF09AA05DBD}" ShortID="973880661" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Split_Active" ID="{B8FF4C96-81A7-46F3-8F7E-7F654CAEDCD1}" ShortID="754253463">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Split_Active.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Split_Active" ID="{B8FF4C96-81A7-46F3-8F7E-7F654CAEDCD1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_Split_Release" ID="{85D1810A-45A5-4BFE-9FBE-CD5A7BD93960}" ShortID="197135354" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Split_Release" ID="{2768081E-4105-42CE-B8A3-11EA7B212836}" ShortID="463531170">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Split_Release.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Split_Release" ID="{2768081E-4105-42CE-B8A3-11EA7B212836}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="GUI_Split_BuildUp" ID="{9F6C28F0-CFF0-43EC-BE8F-A9DDC7817FF6}" ShortID="158904825" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="GUI_Split_BuildUp" ID="{803AFF44-158D-49B6-A1BE-84CBB427E37F}" ShortID="507783315">
+											<Language>SFX</Language>
+											<AudioFile>GUI_Split_BuildUp.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="GUI_Split_BuildUp" ID="{803AFF44-158D-49B6-A1BE-84CBB427E37F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
