@@ -2,9 +2,9 @@
 
 namespace Ketsu.Game
 {
-	public class CharHome : MapObject
+	public class Home : MapObject
 	{
-		public CharType ForType;
+		public MapObjectType ForType;
 
 		[HideInInspector]
 		public Character Inside;

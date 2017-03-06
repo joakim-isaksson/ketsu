@@ -1,6 +1,4 @@
 ﻿using Ketsu.Utils;
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,18 +6,44 @@ namespace Ketsu.Game
 {
 	public class MapObject : ExtendedMonoBehaviour
 	{
-		public MapObjectType Type = MapObjectType.Undefined;
-		public MapLayer Layer = MapLayer.Dynamic;
+		[Header("Map Object")]
+		public MapObjectType Type;
+		public MapObjectLayer Layer;
 
-		[HideInInspector]
-		public IntVector2 Position;
+		public List<MapObjectType> BlockedByTypes;
 
 		/// <summary>
-		/// Update object's position from the object's world position
+		/// Check if this object is blocked by the given objects
 		/// </summary>
-		public void UpdatePositionFromWorld()
+		/// <param name="point">Point to check for blocking objects</param>
+		/// <returns>True if something is blocking, false otherwise</returns>
+		public bool IsBlocked(Vector3 point)
 		{
-			Position = IntVector2.FromXZ(transform.position);
+			if (!MapManager.Contains(point)) return true;
+
+			List<MapObject> objects = MapManager.GetObjects(point);
+			foreach (MapObject obj in objects)
+			{
+				if (obj != this && BlockedByTypes.Contains(obj.Type)) return true;
+			}
+
+			return false;
+		}
+
+		/// <summary>
+		/// Return blocking object from given list or null if nothing is blocking
+		/// </summary>
+		/// <param name="point">Point to check for blocking objects</param>
+		/// <returns>Blocking object or null if nothing is blocking</returns>
+		public MapObject GetBlocking(Vector3 point)
+		{
+			List<MapObject> objects = MapManager.GetObjects(point);
+			foreach (MapObject obj in objects)
+			{
+				if (obj != this && BlockedByTypes.Contains(obj.Type)) return obj;
+			}
+
+            return null;
 		}
 	}
 }

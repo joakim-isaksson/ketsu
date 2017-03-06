@@ -8,73 +8,56 @@ namespace Ketsu.Game
 {
 	public class MapManager : MonoBehaviour
 	{
-		public string MapName;
-		public int StartingKetsuPower;
-		public IntVector2 MapSize;
+		public static Vector3 Boarders;
 
 		public Text WinText;
 
 		[HideInInspector]
-		public bool Solved { get; private set; }
+		public static bool Solved { get; private set; }
 
-		[HideInInspector]
-		public static Map LoadedMap;
-
-		CharHome[] charHomes;
+		Home[] homes;
 
 		public void Awake()
 		{
-			LoadedMap = LoadMap(MapName, MapSize.X, MapSize.Y);
-			WinText.gameObject.SetActive(false);
+			homes = FindObjectsOfType<Home>();
+
 			Solved = false;
+			WinText.gameObject.SetActive(false);
 		}
 
-		void Start()
+		public static bool Contains(Vector3 point)
 		{
-			CharController controller = FindObjectOfType<CharController>();
-			controller.KetsuPower += StartingKetsuPower;
-
-			charHomes = FindObjectsOfType<CharHome>();
+			if (point.x < 0 || point.x >= Boarders.x || point.z < 0 || point.z >= Boarders.z) return false;
+			else return true;
 		}
 
-		void Update()
+		/// <summary>
+		/// Get all MapObjects from given point
+		/// </summary>
+		/// <param name="point">Point to get the MapObjects from</param>
+		/// <returns>List of MapObjects from given point</returns>
+		public static List<MapObject> GetObjects(Vector3 point)
 		{
+			List<MapObject> list = new List<MapObject>();
 
-		}
+			RaycastHit[] hits = Physics.RaycastAll(
+				new Vector3(point.x, Camera.main.transform.position.y, point.z),
+				Vector3.down,
+				Camera.main.farClipPlane
+			);
 
-		public Map LoadMap(string name, int width, int height)
-		{
-			// TODO:
-			// Load map from <name>.json file from hardcoded resource path
-			// Use size data from the json file
-
-			Map map = new Map(width, height);
-
-			// Find map objects and add them to the data structure
-			foreach (MapObject obj in FindObjectsOfType<MapObject>())
+			foreach(RaycastHit hit in hits)
 			{
-				obj.UpdatePositionFromWorld();
-				switch (obj.GetComponent<MapObject>().Layer)
-				{
-					case MapLayer.Ground:
-						map.GroundLayer[obj.Position.X][obj.Position.Y] = obj;
-						break;
-					case MapLayer.Object:
-						map.ObjectLayer[obj.Position.X][obj.Position.Y] = obj;
-						break;
-					case MapLayer.Dynamic:
-						map.DynamicLayer.Add(obj);
-						break;
-
-				}
+				MapObject obj = hit.collider.GetComponent<MapObject>();
+				if (obj != null) list.Add(obj);
 			}
 
-			return map;
+			return list;
 		}
 
 		public void CheckSolved()
 		{
-			foreach (CharHome home in charHomes)
+			foreach (Home home in homes)
 			{
 				if (home.Inside == null) return;
 			}
@@ -89,5 +72,6 @@ namespace Ketsu.Game
 
 			WinText.gameObject.SetActive(true);
 		}
+		
 	}
 }

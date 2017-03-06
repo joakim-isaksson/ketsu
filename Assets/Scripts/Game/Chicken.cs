@@ -4,13 +4,19 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-	public class Chicken : MapObject
+	public class Chicken : MapObject, Consumable
 	{
 		public float MoveSpeed;
 		public Transform Pumber;
+		public int KetsuPowerGain;
 
-		Map map;
+		public string DieSfx;
+
+		CharController controller;
+
 		Vector3 target;
+
+		MapManager map;
 
 		void Awake()
 		{
@@ -19,10 +25,8 @@ namespace Ketsu.Game
 
 		void Start()
 		{
-			UpdatePositionFromWorld();
-
-			map = MapManager.LoadedMap;
-
+			controller = FindObjectOfType<CharController>();
+			map = FindObjectOfType<MapManager>();
 			SetNewTarget();
 		}
 
@@ -37,8 +41,7 @@ namespace Ketsu.Game
 			}
 
 			// If pumber is hitting something -> get new target
-			IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);
-			if (!map.Contains(pumberPos) || Blocking(pumberPos))
+			if (IsBlocked(Pumber.position))
 			{
 				SetNewTarget();
 			}
@@ -58,32 +61,21 @@ namespace Ketsu.Game
 				Vector3 direction = directions[Random.Range(0, directions.Count)];
 				directions.Remove(direction);
 
-				IntVector2 targetPos = IntVector2.FromXZ(transform.position + direction);
-				if (map.Contains(targetPos) && Blocking(targetPos) == null)
+				Vector3 newTarget = transform.position + direction;
+                if (!IsBlocked(newTarget))
 				{
-					target = new Vector3(
-						targetPos.X,
-						transform.position.y,
-						targetPos.Y
-					);
-					transform.LookAt(target);
+					target = newTarget;
+                    transform.LookAt(target);
 					break;
 				}
 			}
 		}
 
-		MapObject Blocking(IntVector2 point)
+		public void Consume()
 		{
-			foreach (MapObject obj in map.GetObjects(point))
-			{
-				if (obj == this) continue;
-				if (obj.Type == MapObjectType.Water) return obj;
-				if (obj.Type == MapObjectType.Tree) continue;
-				if (obj.Layer != MapLayer.Ground) return obj;
-			}
-
-			// Nothing is blocking
-			return null;
+			controller.KetsuPower += KetsuPowerGain;
+			AkSoundEngine.PostEvent(DieSfx, gameObject);
+			Destroy(gameObject);
 		}
 	}
 }

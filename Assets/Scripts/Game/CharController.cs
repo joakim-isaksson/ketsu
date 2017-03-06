@@ -52,7 +52,6 @@ namespace Ketsu.Game
 
 		void Start()
 		{
-			mapManager.Awake();
 			// Find characters to control
 			foreach (MapObject obj in MapManager.LoadedMap.DynamicLayer)
 			{
