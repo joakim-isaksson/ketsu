@@ -10,7 +10,8 @@ namespace Ketsu.Utils
 		[HideInInspector]
 		public static ScreenFaider Instance = null;
 
-		public Image Foreground;
+		public RawImage Foreground;
+		public Color DefaultColor;
 
 		/// <summary>
 		/// Destroy this singleton instance
@@ -29,10 +30,14 @@ namespace Ketsu.Utils
 			DontDestroyOnLoad(gameObject);
 		}
 
-		public void SetTo(Color color)
+		public void FadeIn(float seconds, Action callback)
 		{
-			Foreground.gameObject.SetActive(true);
-			Foreground.color = color;
+			StartCoroutine(StartFadeIn(DefaultColor, seconds, callback));
+		}
+
+		public void FadeOut(float seconds, Action callback)
+		{
+			StartCoroutine(StartFadeOut(DefaultColor, seconds, callback));
 		}
 
 		public void FadeIn(Color color, float seconds, Action callback)
@@ -59,11 +64,12 @@ namespace Ketsu.Utils
 			}
 			Foreground.color = new Color(color.r, color.g, color.b, 1.0f);
 
-			callback();
+			if (callback != null) callback();
 		}
 
 		IEnumerator StartFadeOut(Color color, float seconds, Action callback)
 		{
+			Foreground.gameObject.SetActive(true);
 			Foreground.color = new Color(color.r, color.g, color.b, 1);
 
 			float progress = 0;
@@ -76,7 +82,7 @@ namespace Ketsu.Utils
 			Foreground.color = new Color(color.r, color.g, color.b, 0.0f);
 			Foreground.gameObject.SetActive(false);
 
-			callback();
+			if (callback != null) callback();
 		}
 	}
 }
