@@ -8,59 +8,59 @@ namespace Ketsu.Game
 {
 	public class Hedgehog : MapObject
 	{
-        public float MoveSpeed;
-        public float Damage;
-        public Transform Pumber;
+		public float MoveSpeed;
+		public float Damage;
+		public Transform Pumber;
 
-        Map map;
-        bool dased;
+		Map map;
+		bool dased;
 
-        void Awake()
-        {
+		void Awake()
+		{
 
-        }
+		}
 
-        void Start()
-        {
-            UpdatePositionFromWorld();
-            map = MapManager.LoadedMap;
-        }
+		void Start()
+		{
+			UpdatePositionFromWorld();
+			map = MapManager.LoadedMap;
+		}
 
 		void Update()
 		{
-            if (dased) return;
+			if (dased) return;
 
-            transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
-            UpdatePositionFromWorld();
+			transform.Translate(Vector3.forward * Time.deltaTime * MoveSpeed);
+			UpdatePositionFromWorld();
 
-            // If pumber is hitting something -> rotate 180 degrees
-            IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);
-            if (!map.Contains(pumberPos) || Blocking(pumberPos)) transform.Rotate(Vector3.up, 180.0f);
-        }
+			// If pumber is hitting something -> rotate 180 degrees
+			IntVector2 pumberPos = IntVector2.FromXZ(Pumber.position);
+			if (!map.Contains(pumberPos) || Blocking(pumberPos)) transform.Rotate(Vector3.up, 180.0f);
+		}
 
-        void OnTriggerEnter(Collider other)
-        {
-            Character character = other.GetComponent<Character>();
-            if (character != null)
-            {
-                character.TakeDamage(Damage);
-                dased = true;
-                DelayedAction(1.0f, delegate { dased = false; });
-            }
-            
-        }
+		void OnTriggerEnter(Collider other)
+		{
+			Character character = other.GetComponent<Character>();
+			if (character != null)
+			{
+				character.TakeDamage(Damage);
+				dased = true;
+				DelayedAction(1.0f, delegate { dased = false; });
+			}
 
-        MapObject Blocking(IntVector2 point)
-        {
-            foreach (MapObject obj in map.GetObjects(point))
-            {
-                if (obj == this) continue;
-                if (obj.Type == MapObjectType.Water) return obj;
-                if (obj.Layer != MapLayer.Ground) return obj;
-            }
+		}
 
-            // Nothing is blocking
-            return null;
-        }
-    }
+		MapObject Blocking(IntVector2 point)
+		{
+			foreach (MapObject obj in map.GetObjects(point))
+			{
+				if (obj == this) continue;
+				if (obj.Type == MapObjectType.Water) return obj;
+				if (obj.Layer != MapLayer.Ground) return obj;
+			}
+
+			// Nothing is blocking
+			return null;
+		}
+	}
 }

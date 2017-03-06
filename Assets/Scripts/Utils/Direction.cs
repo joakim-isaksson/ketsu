@@ -2,10 +2,10 @@
 
 namespace Ketsu.Utils
 {
-    public enum Direction
-    {
-        Left, Right, Forward, Back
-    }
+	public enum Direction
+	{
+		Left, Right, Forward, Back
+	}
 
 	public static class Extensions
 	{
@@ -33,16 +33,16 @@ namespace Ketsu.Utils
 			}
 		}
 
-        public static IntVector2 ToIntVector2(this Direction direction)
-        {
-            switch (direction)
-            {
-                case Direction.Left: return IntVector2.Left;
-                case Direction.Right: return IntVector2.Right;
-                case Direction.Forward: return IntVector2.Forward;
-                case Direction.Back: return IntVector2.Back;
-                default: return IntVector2.Zero;
-            }
-        }
-    }
+		public static IntVector2 ToIntVector2(this Direction direction)
+		{
+			switch (direction)
+			{
+				case Direction.Left: return IntVector2.Left;
+				case Direction.Right: return IntVector2.Right;
+				case Direction.Forward: return IntVector2.Forward;
+				case Direction.Back: return IntVector2.Back;
+				default: return IntVector2.Zero;
+			}
+		}
+	}
 }

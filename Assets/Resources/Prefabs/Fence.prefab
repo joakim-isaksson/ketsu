@@ -138,3 +138,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 8
   Layer: 2
+  Position:
+    X: 0
+    Y: 0

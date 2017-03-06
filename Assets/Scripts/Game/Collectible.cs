@@ -4,42 +4,42 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-    public class Collectible : MonoBehaviour
-    {
-        public float KetsuPower;
-        public float MaxKetsuPower;
-        public string CollectSfx;
+	public class Collectible : MonoBehaviour
+	{
+		public float KetsuPower;
+		public float MaxKetsuPower;
+		public string CollectSfx;
 
-        CharController controller;
+		CharController controller;
 
-        void Awake()
-        {
+		void Awake()
+		{
 
-        }
+		}
 
-        void Start()
-        {
-            controller = FindObjectOfType<CharController>();
-        }
+		void Start()
+		{
+			controller = FindObjectOfType<CharController>();
+		}
 
-        void Update()
-        {
+		void Update()
+		{
 
-        }
+		}
 
-        private void OnTriggerEnter(Collider other)
-        {
-            Character character = other.GetComponent<Character>();
-            if (character != null)
-            {
-                controller.KetsuPower += KetsuPower;
-                controller.MaxKetsuPower += MaxKetsuPower;
-                AkSoundEngine.PostEvent(CollectSfx, gameObject);
+		private void OnTriggerEnter(Collider other)
+		{
+			Character character = other.GetComponent<Character>();
+			if (character != null)
+			{
+				controller.KetsuPower += KetsuPower;
+				controller.MaxKetsuPower += MaxKetsuPower;
+				AkSoundEngine.PostEvent(CollectSfx, gameObject);
 
-                // FIXME: this is the thing from my nightmare
-                MapManager.LoadedMap.DynamicLayer.Remove(GetComponent<MapObject>());
-                Destroy(gameObject);
-            }
-        }
-    }
+				// FIXME: this is the thing from my nightmare
+				MapManager.LoadedMap.DynamicLayer.Remove(GetComponent<MapObject>());
+				Destroy(gameObject);
+			}
+		}
+	}
 }

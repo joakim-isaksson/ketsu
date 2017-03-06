@@ -1,37 +1,42 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class KetsuSplitUI : MonoBehaviour {
+namespace Ketsu.UI
+{
+	public class KetsuSplitUI : MonoBehaviour
+	{
+		public GameObject Leader;
+		public Renderer LeadVisible;
 
-	public GameObject leader;
-	public Renderer leadvisible;
+		void Start()
+		{
+			LeadVisible = GetComponentsInChildren<Renderer>()[0];
+			LeadVisible.enabled = false;
+		}
 
-    void Start()
-    {
-    	leadvisible = GetComponentsInChildren<Renderer>()[0];
-    	leadvisible.enabled = false;
-    }
-
-    void LateUpdate () 
-    {
-    	if(leader == null){
-    	    leader = GameObject.Find("Ketsu(Clone)");
-    	  	if(leader != null){
-    	  		leadvisible.enabled = true;
-		        Vector3 targetPosition = leader.transform.position;
-		        targetPosition.y = transform.position.y; 
-		        transform.position = targetPosition;
-    	  	}
-    	  	else
-    			leadvisible.enabled = false;
-    	}
-    	else if(leader.activeSelf == false)
-    	   	leadvisible.enabled = false;
-    	else {
-    		Vector3 targetPosition = leader.transform.position;
-		    targetPosition.y = transform.position.y;
-		    transform.position = targetPosition;
-    	}
-    }
+		void LateUpdate()
+		{
+			if (Leader == null)
+			{
+				Leader = GameObject.Find("Ketsu(Clone)");
+				if (Leader != null)
+				{
+					LeadVisible.enabled = true;
+					Vector3 targetPosition = Leader.transform.position;
+					targetPosition.y = transform.position.y;
+					transform.position = targetPosition;
+				}
+				else
+					LeadVisible.enabled = false;
+			}
+			else if (Leader.activeSelf == false)
+				LeadVisible.enabled = false;
+			else
+			{
+				Vector3 targetPosition = Leader.transform.position;
+				targetPosition.y = transform.position.y;
+				transform.position = targetPosition;
+			}
+		}
+	}
 }
+

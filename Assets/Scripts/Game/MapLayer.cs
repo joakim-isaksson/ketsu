@@ -1,7 +1,7 @@
 ﻿namespace Ketsu.Game
 {
-    public enum MapLayer
-    {
-        Dynamic, Ground, Object
-    }
+	public enum MapLayer
+	{
+		Dynamic, Ground, Object
+	}
 }

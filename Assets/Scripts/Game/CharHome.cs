@@ -1,42 +1,40 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ketsu.Game
 {
-    public class CharHome : MapObject
-    {
-        public CharType ForType;
+	public class CharHome : MapObject
+	{
+		public CharType ForType;
 
-        [HideInInspector]
-        public Character Inside;
+		[HideInInspector]
+		public Character Inside;
 
-        void Awake()
-        {
+		void Awake()
+		{
 
-        }
+		}
 
-        void Start()
-        {
+		void Start()
+		{
 
-        }
+		}
 
-        void OnTriggerEnter(Collider other)
-        {
-            Character character = other.GetComponent<Character>(); 
-            if (character != null && character.CharType == ForType)
-            {
-                Inside = character;
-            }
-        }
+		void OnTriggerEnter(Collider other)
+		{
+			Character character = other.GetComponent<Character>();
+			if (character != null && character.CharType == ForType)
+			{
+				Inside = character;
+			}
+		}
 
-        private void OnTriggerExit(Collider other)
-        {
-            Character character = other.GetComponent<Character>();
-            if (character != null && character.CharType == ForType)
-            {
-                Inside = null;
-            }
-        }
-    }
+		private void OnTriggerExit(Collider other)
+		{
+			Character character = other.GetComponent<Character>();
+			if (character != null && character.CharType == ForType)
+			{
+				Inside = null;
+			}
+		}
+	}
 }

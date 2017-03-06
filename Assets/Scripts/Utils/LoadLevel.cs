@@ -3,19 +3,23 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
 
-public class LoadLevel : MonoBehaviour {
+public class LoadLevel : MonoBehaviour
+{
 
-	public void LoadOn(int level){
+	public void LoadOn(int level)
+	{
 		SceneManager.LoadScene(level);
 	}
 
-	public void NextLevel(){
-		 int level = SceneManager.GetActiveScene().buildIndex;
-		 SceneManager.LoadScene(level+1);
+	public void NextLevel()
+	{
+		int level = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(level + 1);
 	}
 
-	public void ReloadLevel(){
-		 int level = SceneManager.GetActiveScene().buildIndex;
-		 SceneManager.LoadScene(level);
+	public void ReloadLevel()
+	{
+		int level = SceneManager.GetActiveScene().buildIndex;
+		SceneManager.LoadScene(level);
 	}
 }
