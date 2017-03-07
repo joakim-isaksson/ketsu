@@ -1,6 +1,4 @@
-﻿using Ketsu.Utils;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -31,12 +29,13 @@ namespace Ketsu.Game
 			else return true;
 		}
 
-		/// <summary>
-		/// Get all MapObjects from given point
-		/// </summary>
-		/// <param name="point">Point to get the MapObjects from</param>
-		/// <returns>List of MapObjects from given point</returns>
-		public static List<MapObject> GetObjects(Vector3 point)
+        /// <summary>
+        /// Get all MapObjects from given point and layer
+        /// </summary>
+        /// <param name="point">Point to get the MapObjects from</param>
+        /// <param name="layer">Get objects from given layer</param>
+        /// <returns>List of MapObjects from given point</returns>
+        public static List<MapObject> GetObjects(Vector3 point, int layer)
 		{
 			List<MapObject> list = new List<MapObject>();
 
@@ -49,7 +48,7 @@ namespace Ketsu.Game
 			foreach(RaycastHit hit in hits)
 			{
 				MapObject obj = hit.collider.GetComponent<MapObject>();
-				if (obj != null) list.Add(obj);
+				if (obj != null && obj.Layer == layer) list.Add(obj);
 			}
 
 			return list;

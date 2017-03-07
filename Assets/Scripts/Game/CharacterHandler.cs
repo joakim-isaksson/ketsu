@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
-	public class CharController : MonoBehaviour
+	public class CharacterHandler : MonoBehaviour
 	{
 		[Header("Controls")]
 		[Tooltip("Percentage of the screens height")]

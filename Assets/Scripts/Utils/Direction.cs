@@ -7,7 +7,7 @@ namespace Ketsu.Utils
 		Left, Right, Forward, Back
 	}
 
-	public static class Extensions
+	public static class DirectionExtensions
 	{
 		public static Direction Opposite(this Direction direction)
 		{

@@ -4,17 +4,35 @@ using UnityEngine;
 
 namespace Ketsu.Game
 {
-	public class EnemyController : MapObject, BumberListener
+    public enum EnemyMovementType
     {
-		public float MoveSpeed;
+        Random, PriorityList, PingPong
+    }
 
-        public bool Consumable;
-        public int Damage;
-        public int KetsuPowerGain;
+    public class EnemyController : MapObject, BumberListener
+    {
+        [Header("Movement")]
+        public bool CanMove;
+        public float MovementSpeed;
+        public EnemyMovementType MovementType;
 
-		public string DieSfx;
+        [Header("Consuming")]
+        public bool CanBeConsumed;
+        public int GivesKetsuPower;
+
+        [Header("Dazing")]
+        public bool CanBeDazed;
+        public float DazeTime;
+
+        [Header("Damage")]
+        public bool DealsDamage;
+        public int DamageAmount;
+
+        [Header("Sounds")]
+        public string DieSfx;
 
 		Vector3 target;
+        bool dazed;
 
 		void Awake()
 		{
@@ -28,56 +46,21 @@ namespace Ketsu.Game
 
 		void Update()
 		{
-			transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * MoveSpeed);
-			if (Vector3.Distance(transform.position, target) < 0.001f)
-			{
-				transform.position = target;
-				SetNewTarget();
-			}
-		}
-
-        void SetNewTarget()
-        {
-            switch(Type)
+            if (CanMove && !dazed)
             {
-                case MapObjectType.Chiken:
-                    SetRandomTarget();
-                    break;
-                case MapObjectType.Sheep:
-                    SetTurn();
-                    break;
-                case MapObjectType.Hedgehog:
-                    break;
+                transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * MovementSpeed);
+                if (Vector3.Distance(transform.position, target) < 0.001f)
+                {
+                    transform.position = target;
+                    SetNewTarget();
+                }
             }
-        }
-
-		Vector3 GetRandomTarget()
-		{
-			List<Vector3> directions = new List<Vector3>();
-			directions.Add(Vector3.forward);
-			directions.Add(Vector3.back);
-			directions.Add(Vector3.left);
-			directions.Add(Vector3.right);
-
-			while (directions.Count > 0)
-			{
-				Vector3 direction = directions[Random.Range(0, directions.Count)];
-				directions.Remove(direction);
-
-				Vector3 newTarget = transform.position + direction;
-                if (!IsBlocked(newTarget))
-				{
-                    return newTarget;
-				}
-			}
-
-            return Vector3.zero;
 		}
 
         public void OnBumb(Collider other)
         {
             MapObject obj = other.GetComponent<MapObject>();
-            if (IsBlockedByType(obj))
+            if (IsBlockedBy(obj))
             {
                 SetNewTarget();
             }
@@ -88,17 +71,63 @@ namespace Ketsu.Game
             Character character = other.GetComponent<Character>();
             if (character != null)
             {
-                if (Consumable)
+                if (DealsDamage) character.TakeDamage(DamageAmount);
+
+                if (CanBeDazed)
                 {
+                    dazed = true;
+                    DelayedAction(DazeTime, delegate { dazed = false; });
+                }
+                else if (CanBeConsumed)
+                {
+                    character.AddKetsuPower(GivesKetsuPower);
                     AkSoundEngine.PostEvent(DieSfx, gameObject);
                     Destroy(gameObject);
                 }
+            }
+        }
 
-                if (DealDamage)
+        void SetNewTarget()
+        {
+            List<Vector3> directions = new List<Vector3>();
+
+            switch (MovementType)
+            {
+                case EnemyMovementType.Random:
+                    directions.Add(Vector3.forward);
+                    directions.Add(Vector3.back);
+                    directions.Add(Vector3.left);
+                    directions.Add(Vector3.right);
+                    ListUtils.Shuffle(directions);
+                    break;
+                case EnemyMovementType.PriorityList:
+                    directions.Add(transform.forward);
+                    directions.Add(-transform.right);
+                    directions.Add(transform.right);
+                    directions.Add(-transform.forward);
+                    break;
+                case EnemyMovementType.PingPong:
+                    directions.Add(transform.forward);
+                    directions.Add(-transform.forward);
+                    break;
+            }
+
+            target = FirstNotBlockedDirection(directions);
+            transform.LookAt(target);
+        }
+
+        Vector3 FirstNotBlockedDirection(List<Vector3> directions)
+        {
+            foreach (Vector3 direction in directions)
+            {
+                Vector3 newTarget = transform.position + direction;
+                if (!IsBlocked(newTarget))
                 {
-                    character.TakeDamage(DealDamage);
+                    return newTarget;
                 }
             }
+
+            return transform.position;
         }
     }
 }
