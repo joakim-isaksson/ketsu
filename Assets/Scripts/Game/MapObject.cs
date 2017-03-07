@@ -12,12 +12,23 @@ namespace Ketsu.Game
 
 		public List<MapObjectType> BlockedByTypes;
 
-		/// <summary>
-		/// Check if this object is blocked by the given objects
+        /// <summary>
+		/// Check if this object is blocked by the type of given object
 		/// </summary>
-		/// <param name="point">Point to check for blocking objects</param>
-		/// <returns>True if something is blocking, false otherwise</returns>
-		public bool IsBlocked(Vector3 point)
+		/// <param name="obj">Object to check</param>
+		/// <returns>True if blocking, false otherwise</returns>
+		public bool IsBlockedByType(MapObject obj)
+        {
+            if (obj != null && BlockedByTypes.Contains(obj.Type)) return true;
+            else return false;
+        }
+
+        /// <summary>
+        /// Check if this object is blocked in the given point
+        /// </summary>
+        /// <param name="point">Point to check for blocking objects</param>
+        /// <returns>True if something is blocking, false otherwise</returns>
+        public bool IsBlocked(Vector3 point)
 		{
 			if (!MapManager.Contains(point)) return true;
 

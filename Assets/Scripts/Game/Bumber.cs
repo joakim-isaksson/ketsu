@@ -1,26 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ketsu.Game
 {
-	public class Bumber : MonoBehaviour
-	{
-		void Start()
-		{
+    public interface BumberListener
+    {
+        void OnBumb(Collider other);
+    }
 
-		}
+    public class Bumber : MonoBehaviour
+    {
+        public BumberListener Listener;
 
-		void Update()
-		{
-
-		}
-
-		void OnTriggerEnter(Collider other)
-		{
-			MapObject obj = other.GetComponent<MapObject>();
-
-		}
-	}
+        void OnTriggerEnter(Collider other)
+        {
+            if (Listener != null) Listener.OnBumb(other);
+        }
+    }
 }
 
