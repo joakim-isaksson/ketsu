@@ -1,5 +1,4 @@
-﻿using Ketsu.Utils;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Ketsu.Game
 {
@@ -46,7 +45,7 @@ namespace Ketsu.Game
 			else if (Input.GetButtonDown("Back")) charHandler.MoveAction(Vector3.back);
 			else if (Input.GetMouseButtonDown(0))
 			{
-                ClickOrTap(Input.mousePosition);
+                ClickOrTap(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             }
 		}
 
@@ -89,7 +88,6 @@ namespace Ketsu.Game
 			}
 		}
 
-        // Is this 2d or 3d tap TODO
 		void ClickOrTap(Vector3 point)
 		{
             // Character selection
@@ -112,8 +110,17 @@ namespace Ketsu.Game
             }
             else
             {
-                // TODO
-                Vector2 centerPoint = new Vector3(Screen.width / 2f, Screen.height / 2f);
+                if (Mathf.Abs(Camera.main.transform.position.x - point.x) >
+                        Mathf.Abs(Camera.main.transform.position.y - point.y))
+                {
+                    if (Camera.main.transform.position.x < point.x) charHandler.MoveAction(Vector3.right);
+                    else charHandler.MoveAction(Vector3.left);
+                }
+                else
+                {
+                    if (Camera.main.transform.position.y < point.y) charHandler.MoveAction(Vector3.forward);
+                    else charHandler.MoveAction(Vector3.back);
+                }
             }
             
         }

@@ -1,7 +1,7 @@
 ﻿using Ketsu.Utils;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
@@ -14,94 +14,94 @@ namespace Ketsu.Game
 
 		[Header("Ketsu Power")]
 		public float KetsuMoveCost;
-		public float MaxKetsuPower;
-		public float KetsuPower;
+        public float KetsuPower;
+        public float MaxKetsuPower;
 
-		[HideInInspector]
-		public Character Fox;
-		[HideInInspector]
-		public Character Wolf;
-		[HideInInspector]
-		public Character Ketsu;
+        [Header("Action Queue")]
+        public int MoveQueueSize;
 
-		[HideInInspector]
+        [HideInInspector]
 		public Character ActiveCharacter;
-		[HideInInspector]
-		public Character CharBeforeKetsu;
 
-		MapManager mapManager;
+        Queue<Vector3> moveQueue;
 		Vector2 touchStartPos;
 
-		bool waitingForFox;
-		bool waitingForWolf;
-		bool waitingForKetsu;
+        int waitingForMoveActions;
 
-		void Awake()
+        MapManager mapManager;
+
+        Character fox;
+        Character wolf;
+        Character ketsu;
+        Character beforeKetsu;
+
+        void Awake()
 		{
-			mapManager = FindObjectOfType<MapManager>();
-		}
+            moveQueue = new Queue<Vector3>();
+            mapManager = FindObjectOfType<MapManager>();
+        }
 
 		void Start()
 		{
-			// Find characters to control
+			// Find characters
 			foreach (Character character in FindObjectsOfType<Character>())
 			{
 				switch (character.Type)
 				{
 					case MapObjectType.Fox:
-						Fox = character;
+						fox = character;
 						break;
 					case MapObjectType.Wolf:
-						Wolf = character;
+						wolf = character;
 						break;
 					case MapObjectType.Ketsu:
-						Ketsu = character;
+						ketsu = character;
 						break;
 				}
 			}
 
-			// Set starting characters
-			if (Fox == null && Wolf == null && Ketsu == null)
+			// Instantiate starting characters
+			if (fox == null && wolf == null && ketsu == null)
 			{
 				throw new InvalidOperationException("No characters found from scene! Try adding one...");
 			}
-			else if (Fox != null && Wolf != null && Ketsu != null)
+			else if (fox != null && wolf != null && ketsu != null)
 			{
 				throw new InvalidOperationException("Too many characters in the scene! Try removing one...");
 			}
-			else if (Fox != null && Wolf == null && Ketsu != null)
+			else if (fox != null && wolf == null && ketsu != null)
 			{
 				throw new InvalidOperationException("Fox and Ketsu in the same scene! Try removing one...");
 			}
-			else if (Fox == null && Wolf != null && Ketsu != null)
+			else if (fox == null && wolf != null && ketsu != null)
 			{
 				throw new InvalidOperationException("Wolf and Ketsu in the same scene! Try removing one...");
 			}
-			else if (Fox != null && Wolf != null && Ketsu == null)
+			else if (fox != null && wolf != null && ketsu == null)
 			{
 				// Starting with Fox and Wolf
-				ActiveCharacter = Fox;
-				Ketsu = Instantiate(KetsuPrefab).GetComponent<Character>();
-				Ketsu.gameObject.SetActive(false);
+				ActiveCharacter = fox;
+				ketsu = Instantiate(KetsuPrefab).GetComponent<Character>();
+				ketsu.gameObject.SetActive(false);
 			}
-			else if (Fox != null && Wolf == null && Ketsu == null)
+			else if (fox != null && wolf == null && ketsu == null)
 			{
 				// Starting with Fox
-				ActiveCharacter = Fox;
+				ActiveCharacter = fox;
 			}
-			else if (Fox == null && Wolf != null && Ketsu == null)
+			else if (fox == null && wolf != null && ketsu == null)
 			{
 				// Starting with Wolf
-				ActiveCharacter = Wolf;
+				ActiveCharacter = wolf;
 			}
-			else if (Fox == null && Wolf == null && Ketsu != null)
+			else if (fox == null && wolf == null && ketsu != null)
 			{
 				// Starting with Ketsu
-				ActiveCharacter = Ketsu;
-				Fox = Instantiate(FoxPrefab).GetComponent<Character>();
-				Wolf = Instantiate(WolfPrefab).GetComponent<Character>();
-				Fox.gameObject.SetActive(false);
-				Wolf.gameObject.SetActive(false);
+				ActiveCharacter = ketsu;
+				fox = Instantiate(FoxPrefab).GetComponent<Character>();
+				wolf = Instantiate(WolfPrefab).GetComponent<Character>();
+				fox.gameObject.SetActive(false);
+				wolf.gameObject.SetActive(false);
 			}
 			else
 			{
@@ -111,24 +111,26 @@ namespace Ketsu.Game
 
 		void Update()
 		{
-			if (mapManager.Solved) return;
 
-#if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
-			HandleKeyInputs();
-#else
-            HandleTouchInputs();
-#endif
-			UpdateKetsuPower();
 		}
 
-		void UpdateKetsuPower()
-		{
-			if (ActiveCharacter.Type == MapObjectType.Ketsu) KetsuPower -= BurnRate * Time.deltaTime;
-			else KetsuPower += RegenerationRate * Time.deltaTime;
-			KetsuPower = Mathf.Clamp(KetsuPower, 0.0f, MaxKetsuPower);
+        public void AddKetsuPower(float amount)
+        {
+            KetsuPower = Mathf.Min(KetsuPower + amount, MaxKetsuPower);
+        }
 
-			KetsuPowerText.text = KetsuPower.ToString("0.00") + " / " + MaxKetsuPower.ToString("0.00");
-		}
+        public bool ConsumeKetsuPower(float amount)
+        {
+            if (amount <= KetsuPower)
+            {
+                KetsuPower -= amount;
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
 
 		/// <summary>
         /// Try to select character from given point
@@ -137,93 +139,212 @@ namespace Ketsu.Game
         /// <returns>true if character selected and changed, false otherwise</returns>
 		public bool SelectCharacter(Vector3 point)
 		{
-            // asd asdas d asd asd asd as ds
             foreach (MapObject obj in MapManager.GetObjects(point))
             {
-                if (obj.Type == MapObjectType.Fox || obj.Type == MapObjectType.Wolf || obj.Type == MapObjectType.Ketsu)
+                if (obj.Type != ActiveCharacter.Type &&
+                    (obj.Type == MapObjectType.Fox ||
+                    obj.Type == MapObjectType.Wolf ||
+                    obj.Type == MapObjectType.Ketsu))
                 {
-                    charHandler.
+                    Debug.Log("Activated: " + obj.Type);
+                    ActiveCharacter = obj.GetComponent<Character>();
+                    return true;
                 }
             }
-            // asd asd asd as d
-
-            // Character selection
-            if (Fox != null && Fox.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Fox Selected");
-				ActiveCharacter = Fox;
-				return true;
-			}
-			else if (Wolf != null && Wolf.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Wolf Selected");
-				ActiveCharacter = Wolf;
-				return true;
-			}
-			else if (Ketsu != null && Ketsu.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Ketsu Selected");
-				ActiveCharacter = Ketsu;
-				return true;
-			}
 
 			return false;
 		}
 
-		public void MoveAction(Vector3 direction)
+        /// <summary>
+        /// Try to move active character to given direction
+        /// </summary>
+        /// <param name="direction">Direction to move</param>
+        public void MoveAction(Vector3 direction)
+        {
+            // If queue is not full -> add to queue and call to execute the next move action
+            if (moveQueue.Count < MoveQueueSize)
+            {
+                moveQueue.Enqueue(direction);
+                NextMoveAction();
+            }
+        }
+
+        void NextMoveAction()
 		{
-			// Waiting
-			if (ActiveCharacter.HasMoved == true || waitingForFox || waitingForWolf || waitingForKetsu) return;
+            // Check if waiting for other actions to complete
+            if (waitingForMoveActions > 0) return;
 
-			Debug.Log("Move Action: " + direction.ToString());
+            // Check if queue is empty
+            if (moveQueue.Count == 0) return;
 
-			switch (ActiveCharacter.Type)
+            // Get direction for next move action
+            Vector3 direction = moveQueue.Dequeue();
+
+            switch (ActiveCharacter.Type)
 			{
 				case MapObjectType.Fox:
-					waitingForFox = true;
-					Fox.MoveTo(direction, delegate
-					{
-						waitingForFox = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					if (Wolf != null)
-					{
-						waitingForWolf = true;
-						Wolf.MoveTo(direction.Opposite(), delegate
-						{
-							waitingForWolf = false;
-							if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-						});
-					}
-					break;
-				case MapObjectType.Wolf:
-					waitingForWolf = true;
-					Wolf.MoveTo(direction, delegate
-					{
-						waitingForWolf = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					if (Fox != null)
-					{
-						waitingForFox = true;
-						Fox.MoveTo(direction.Opposite(), delegate
-						{
-							waitingForFox = false;
-							if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-						});
-					}
-					break;
-				case MapObjectType.Ketsu:
-					waitingForKetsu = true;
-					Ketsu.MoveTo(direction, delegate
-					{
-						waitingForKetsu = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					break;
-				default:
+                case MapObjectType.Wolf:
+                    Vector3 foxPos = fox.transform.position + direction;
+                    Vector3 wolfPos = wolf.transform.position + VectorUtils.Mirror(direction, Vector3.zero);
+                    if (fox.IsBlocked(foxPos) && wolf.IsBlocked(wolfPos))
+                    {
+                        waitingForMoveActions += 2;
+                        fox.MoveTo(direction, OnMoveActionCompleted);
+                        wolf.MoveTo(wolfPos, OnMoveActionCompleted);
+                    }
+
+                    // ---------------------------
+                    // Try to turn into Ketsu
+                    if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
+                    {
+                        Character blockingCharacter = blocking.gameObject.GetComponent<Character>();
+                        if (blockingCharacter.HasMoved)
+                        {
+                            // Update position
+                            HasMoved = true;
+                            Position = blockingCharacter.Position;
+
+                            TransformToKetsu(blockingCharacter, callback);
+                        }
+                        else
+                        {
+                            Debug.Log("Beep Poop - Can not ketsu!");
+                            if (callback != null) callback();
+                        }
+
+                        return;
+                    }
+                    // ---------------------------
+
+                    break;
+                case MapObjectType.Ketsu:
+                    Vector3 ketsuPos = ketsu.transform.position + direction;
+                    if (ketsu.IsBlocked(ketsuPos))
+                    {
+                        if (ConsumeKetsuPower(KetsuMoveCost))
+                        {
+                            waitingForMoveActions++;
+                            ketsu.MoveTo(direction, OnMoveActionCompleted);
+                        }
+                        else
+                        {
+                            // Explode
+                            ketsu.SplitKetsu();
+                        }
+                    }
+                    break;
+                default:
+                    Debug.Log("Unkown character type: " + ActiveCharacter.Type);
 					break;
 			}
 		}
-	}
+
+        void OnMoveActionCompleted()
+        {
+            waitingForMoveActions--;
+            if (waitingForMoveActions == 0) mapManager.CheckSolved();
+            NextMoveAction();
+        }
+
+        void TransformToKetsu(Character other, Action callback)
+        {
+            AkSoundEngine.PostEvent(SfxMerge, gameObject);
+
+            AnimateTo(other.Position, delegate
+            {
+
+                // Update Ketsu position and rotation
+                controller.Ketsu.transform.rotation = transform.rotation;
+                controller.Ketsu.transform.position = new Vector3(
+                    other.Position.X,
+                    other.transform.position.y,
+                    other.Position.Y
+                );
+                controller.Ketsu.UpdatePositionFromWorld();
+
+                // Deactive and activate characters
+                controller.Ketsu.gameObject.SetActive(true);
+                controller.Fox.gameObject.SetActive(false);
+                controller.Wolf.gameObject.SetActive(false);
+
+                // Set the active character as Ketsu
+                controller.CharBeforeKetsu = controller.ActiveCharacter;
+                controller.ActiveCharacter = controller.Ketsu;
+
+                if (callback != null) callback();
+            });
+        }
+
+        // targetPos is the position where the previously controlled character is moving in the split
+        public void SplitKetsu(IntVector2 targetPos, Action callback)
+        {
+            // Where to split
+            IntVector2 foxPos;
+            IntVector2 wolfPos;
+            if (controller.CharBeforeKetsu.Type == MapObjectType.Fox)
+            {
+                foxPos = targetPos;
+                wolfPos = targetPos.Mirror(Position);
+            }
+            else
+            {
+                foxPos = targetPos.Mirror(Position);
+                wolfPos = targetPos;
+            }
+
+            // Check if characters will stay inside the map
+            if (!map.Contains(foxPos))
+            {
+                Debug.Log("Can not split - Fox outside of boarders");
+                if (callback != null) callback();
+                return;
+            }
+            if (!map.Contains(wolfPos))
+            {
+                Debug.Log("Can not split - Wolf outside of boarders");
+                if (callback != null) callback();
+                return;
+            }
+
+            // Check if splitting is blocked by something
+            MapObject block = Blocking(foxPos);
+            if (block != null)
+            {
+                Debug.Log("Can not split - Fox is blocked by: " + block.Type);
+                if (callback != null) callback();
+                return;
+            }
+            block = Blocking(wolfPos);
+            if (block != null)
+            {
+                Debug.Log("Can not split - Wolf is blocked by: " + block.Type);
+                if (callback != null) callback();
+                return;
+            }
+
+            // Splitting can happen - set control character
+            controller.ActiveCharacter = controller.CharBeforeKetsu;
+
+            AkSoundEngine.PostEvent(SfxSplit, gameObject);
+
+            // Deactive and activate characters
+            controller.Ketsu.gameObject.SetActive(false);
+            controller.Fox.gameObject.SetActive(true);
+            controller.Wolf.gameObject.SetActive(true);
+
+            // Update fox position and animate
+            controller.Fox.transform.rotation = transform.rotation;
+            controller.Fox.transform.position = new Vector3(Position.X, controller.Fox.transform.position.y, Position.Y);
+            controller.Fox.Position = foxPos;
+            controller.Fox.HasMoved = true;
+            controller.Fox.AnimateTo(foxPos, null);
+
+            // Update wolf position and animate
+            controller.Wolf.transform.rotation = transform.rotation;
+            controller.Wolf.transform.position = new Vector3(Position.X, controller.Wolf.transform.position.y, Position.Y);
+            controller.Wolf.Position = wolfPos;
+            controller.Wolf.HasMoved = true;
+            controller.Wolf.AnimateTo(wolfPos, callback);
+        }
+    }
 }

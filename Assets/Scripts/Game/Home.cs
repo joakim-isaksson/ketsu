@@ -6,8 +6,8 @@ namespace Ketsu.Game
 	{
 		public MapObjectType ForType;
 
-		[HideInInspector]
-		public Character Inside;
+        [HideInInspector]
+		public int Occupants;
 
 		void Awake()
 		{
@@ -21,20 +21,14 @@ namespace Ketsu.Game
 
 		void OnTriggerEnter(Collider other)
 		{
-			Character character = other.GetComponent<Character>();
-			if (character != null && character.CharType == ForType)
-			{
-				Inside = character;
-			}
-		}
+            MapObject obj = other.GetComponent<MapObject>();
+            if (obj != null && obj.Type == ForType) Occupants++;
+        }
 
 		private void OnTriggerExit(Collider other)
 		{
-			Character character = other.GetComponent<Character>();
-			if (character != null && character.CharType == ForType)
-			{
-				Inside = null;
-			}
+            MapObject obj = other.GetComponent<MapObject>();
+            if (obj != null && obj.Type == ForType) Occupants--;
 		}
 	}
 }

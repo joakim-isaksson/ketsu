@@ -30,7 +30,7 @@ namespace Ketsu.Game
 		}
 
         /// <summary>
-        /// Get all MapObjects from given point
+        /// Get all active MapObjects from given point
         /// </summary>
         /// <param name="point">Point to get the MapObjects from</param>
         /// <returns>List of MapObjects from given point</returns>
@@ -40,7 +40,7 @@ namespace Ketsu.Game
         }
 
         /// <summary>
-        /// Get all MapObjects from given point and layer
+        /// Get all active MapObjects from given point and layer
         /// </summary>
         /// <param name="point">Point to get the MapObjects from</param>
         /// <param name="layer">Get objects from given layer</param>
@@ -63,7 +63,7 @@ namespace Ketsu.Game
 			foreach(RaycastHit hit in hits)
 			{
 				MapObject obj = hit.collider.GetComponent<MapObject>();
-				if (obj != null && (!filter || obj.Layer == layer)) list.Add(obj);
+				if (obj != null && obj.gameObject.activeSelf && (!filter || obj.Layer == layer)) list.Add(obj);
 			}
 
 			return list;
@@ -73,7 +73,7 @@ namespace Ketsu.Game
 		{
 			foreach (Home home in homes)
 			{
-				if (home.Inside == null) return;
+				if (home.Occupants == 0) return;
 			}
 
 			OnMapSolved();
