@@ -1,7 +1,5 @@
 ﻿using Ketsu.Utils;
-using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Ketsu.Game
 {
@@ -10,150 +8,46 @@ namespace Ketsu.Game
 		[Header("Controls")]
 		[Tooltip("Percentage of the screens height")]
 		public float DragDistance;
+        public bool UseRelativeTap;
+        public bool AllowCharacterSelection;
 
-		[Header("Character Prefabs")]
-		public GameObject FoxPrefab;
-		public GameObject WolfPrefab;
-		public GameObject KetsuPrefab;
+        MapManager mapManager;
+        CharacterHandler charHandler;
 
-		[Header("Ketsu Power")]
-		public float BurnRate;
-		public float RegenerationRate;
-		public float KetsuStepCost;
-		public float MaxKetsuPower;
-		public Text KetsuPowerText;
-
-		[HideInInspector]
-		public float KetsuPower;
-
-		[HideInInspector]
-		public Character Fox;
-		[HideInInspector]
-		public Character Wolf;
-		[HideInInspector]
-		public Character Ketsu;
-
-		[HideInInspector]
-		public Character ActiveCharacter;
-		[HideInInspector]
-		public Character CharBeforeKetsu;
-
-		MapManager mapManager;
 		Vector2 touchStartPos;
-
-		bool waitingForFox;
-		bool waitingForWolf;
-		bool waitingForKetsu;
 
 		void Awake()
 		{
 			mapManager = FindObjectOfType<MapManager>();
-		}
+            charHandler = FindObjectOfType<CharacterHandler>();
+        }
 
 		void Start()
 		{
-			// Find characters to control
-			foreach (Character character in FindObjectsOfType<Character>())
-			{
-				switch (character.Type)
-				{
-					case MapObjectType.Fox:
-						Fox = character;
-						break;
-					case MapObjectType.Wolf:
-						Wolf = character;
-						break;
-					case MapObjectType.Ketsu:
-						Ketsu = character;
-						break;
-				}
-			}
-
-			// Set starting characters
-			if (Fox == null && Wolf == null && Ketsu == null)
-			{
-				throw new InvalidOperationException("No characters found from scene! Try adding one...");
-			}
-			else if (Fox != null && Wolf != null && Ketsu != null)
-			{
-				throw new InvalidOperationException("Too many characters in the scene! Try removing one...");
-			}
-			else if (Fox != null && Wolf == null && Ketsu != null)
-			{
-				throw new InvalidOperationException("Fox and Ketsu in the same scene! Try removing one...");
-			}
-			else if (Fox == null && Wolf != null && Ketsu != null)
-			{
-				throw new InvalidOperationException("Wolf and Ketsu in the same scene! Try removing one...");
-			}
-			else if (Fox != null && Wolf != null && Ketsu == null)
-			{
-				// Starting with Fox and Wolf
-				ActiveCharacter = Fox;
-				Ketsu = Instantiate(KetsuPrefab).GetComponent<Character>();
-				Ketsu.gameObject.SetActive(false);
-			}
-			else if (Fox != null && Wolf == null && Ketsu == null)
-			{
-				// Starting with Fox
-				ActiveCharacter = Fox;
-			}
-			else if (Fox == null && Wolf != null && Ketsu == null)
-			{
-				// Starting with Wolf
-				ActiveCharacter = Wolf;
-			}
-			else if (Fox == null && Wolf == null && Ketsu != null)
-			{
-				// Starting with Ketsu
-				ActiveCharacter = Ketsu;
-				Fox = Instantiate(FoxPrefab).GetComponent<Character>();
-				Wolf = Instantiate(WolfPrefab).GetComponent<Character>();
-				Fox.gameObject.SetActive(false);
-				Wolf.gameObject.SetActive(false);
-			}
-			else
-			{
-				throw new InvalidOperationException("Unexpected error - Contact the code monkeys!");
-			}
+			
 		}
 
 		void Update()
 		{
-			if (mapManager.Solved) return;
+            if (MapManager.Solved) return;
 
 #if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
 			HandleKeyInputs();
 #else
             HandleTouchInputs();
 #endif
-			UpdateKetsuPower();
-		}
-
-		void UpdateKetsuPower()
-		{
-			if (ActiveCharacter.Type == MapObjectType.Ketsu) KetsuPower -= BurnRate * Time.deltaTime;
-			else KetsuPower += RegenerationRate * Time.deltaTime;
-			KetsuPower = Mathf.Clamp(KetsuPower, 0.0f, MaxKetsuPower);
-
-			KetsuPowerText.text = KetsuPower.ToString("0.00") + " / " + MaxKetsuPower.ToString("0.00");
 		}
 
 		void HandleKeyInputs()
 		{
-			if (Input.GetButtonDown("Left")) MoveAction(Direction.Left);
-			else if (Input.GetButtonDown("Right")) MoveAction(Direction.Right);
-			else if (Input.GetButtonDown("Forward")) MoveAction(Direction.Forward);
-			else if (Input.GetButtonDown("Back")) MoveAction(Direction.Back);
+			if (Input.GetButtonDown("Left")) charHandler.MoveAction(Vector3.left);
+			else if (Input.GetButtonDown("Right")) charHandler.MoveAction(Vector3.right);
+			else if (Input.GetButtonDown("Forward")) charHandler.MoveAction(Vector3.forward);
+			else if (Input.GetButtonDown("Back")) charHandler.MoveAction(Vector3.back);
 			else if (Input.GetMouseButtonDown(0))
 			{
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
-				if (Physics.Raycast(ray, out hit, Camera.main.farClipPlane))
-				{
-					TapAction(hit.point);
-				}
-			}
+                ClickOrTap(Input.mousePosition);
+            }
 		}
 
 		void HandleTouchInputs()
@@ -176,132 +70,52 @@ namespace Ketsu.Game
 					{
 						if (Mathf.Abs(touchStartPos.x - touch.position.x) > Mathf.Abs(touchStartPos.y - touch.position.y))
 						{
-							if ((touchStartPos.x < touch.position.x)) MoveAction(Direction.Right);
-							else MoveAction(Direction.Left);
+							if ((touchStartPos.x < touch.position.x)) charHandler.MoveAction(Vector3.right);
+							else charHandler.MoveAction(Vector3.left);
 						}
 						else
 						{
-							if (touchStartPos.y < touch.position.y) MoveAction(Direction.Forward);
-							else MoveAction(Direction.Back);
+							if (touchStartPos.y < touch.position.y) charHandler.MoveAction(Vector3.forward);
+							else charHandler.MoveAction(Vector3.back);
 						}
 					}
 
 					// It's a TAP
 					else
 					{
-						TapAction(Camera.main.ScreenToWorldPoint(touch.position));
+                        ClickOrTap(Camera.main.ScreenToWorldPoint(touch.position));
 					}
 				}
 			}
 		}
 
-		void TapAction(Vector3 tapPoint)
+        // Is this 2d or 3d tap TODO
+		void ClickOrTap(Vector3 point)
 		{
-			IntVector2 selectedTilePos = new IntVector2(
-				(int)Mathf.Round(tapPoint.x),
-				(int)Mathf.Round(tapPoint.z)
-			);
+            // Character selection
+            if (AllowCharacterSelection && charHandler.SelectCharacter(point)) return;
 
-			Debug.Log("Tap Point: " + tapPoint + ", Selected Tile: " + selectedTilePos + ", Target Char Point: " + ActiveCharacter.transform.position);
-
-			// Character selection
-			if (!CharacterSelectionAction(selectedTilePos))
-			{
-				// Move action
-				if (Mathf.Abs(ActiveCharacter.Position.X - selectedTilePos.X) >
-					Mathf.Abs(ActiveCharacter.Position.Y - selectedTilePos.Y))
-				{
-					if (ActiveCharacter.Position.X < selectedTilePos.X) MoveAction(Direction.Right);
-					else MoveAction(Direction.Left);
-				}
-				else
-				{
-					if (ActiveCharacter.Position.Y < selectedTilePos.Y) MoveAction(Direction.Forward);
-					else MoveAction(Direction.Back);
-				}
-			}
-		}
-
-		// Return true if character selected
-		bool CharacterSelectionAction(IntVector2 selectedTilePos)
-		{
-			// Character selection
-			if (Fox != null && Fox.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Fox Selected");
-				ActiveCharacter = Fox;
-				return true;
-			}
-			else if (Wolf != null && Wolf.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Wolf Selected");
-				ActiveCharacter = Wolf;
-				return true;
-			}
-			else if (Ketsu != null && Ketsu.Position.Equals(selectedTilePos))
-			{
-				Debug.Log("Ketsu Selected");
-				ActiveCharacter = Ketsu;
-				return true;
-			}
-
-			return false;
-		}
-
-		void MoveAction(Direction direction)
-		{
-			// Waiting
-			if (ActiveCharacter.HasMoved == true || waitingForFox || waitingForWolf || waitingForKetsu) return;
-
-			Debug.Log("Move Action: " + direction.ToString());
-
-			switch (ActiveCharacter.Type)
-			{
-				case MapObjectType.Fox:
-					waitingForFox = true;
-					Fox.MoveTo(direction, delegate
-					{
-						waitingForFox = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					if (Wolf != null)
-					{
-						waitingForWolf = true;
-						Wolf.MoveTo(direction.Opposite(), delegate
-						{
-							waitingForWolf = false;
-							if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-						});
-					}
-					break;
-				case MapObjectType.Wolf:
-					waitingForWolf = true;
-					Wolf.MoveTo(direction, delegate
-					{
-						waitingForWolf = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					if (Fox != null)
-					{
-						waitingForFox = true;
-						Fox.MoveTo(direction.Opposite(), delegate
-						{
-							waitingForFox = false;
-							if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-						});
-					}
-					break;
-				case MapObjectType.Ketsu:
-					waitingForKetsu = true;
-					Ketsu.MoveTo(direction, delegate
-					{
-						waitingForKetsu = false;
-						if (!waitingForFox && !waitingForWolf && !waitingForKetsu) mapManager.CheckSolved();
-					});
-					break;
-				default:
-					break;
-			}
-		}
+            // Move action
+            if (UseRelativeTap)
+            {
+                if (Mathf.Abs(charHandler.ActiveCharacter.transform.position.x - point.x) >
+                        Mathf.Abs(charHandler.ActiveCharacter.transform.position.y - point.y))
+                {
+                    if (charHandler.ActiveCharacter.transform.position.x < point.x) charHandler.MoveAction(Vector3.right);
+                    else charHandler.MoveAction(Vector3.left);
+                }
+                else
+                {
+                    if (charHandler.ActiveCharacter.transform.position.y < point.y) charHandler.MoveAction(Vector3.forward);
+                    else charHandler.MoveAction(Vector3.back);
+                }
+            }
+            else
+            {
+                // TODO
+                Vector2 centerPoint = new Vector3(Screen.width / 2f, Screen.height / 2f);
+            }
+            
+        }
 	}
 }

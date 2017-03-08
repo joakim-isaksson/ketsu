@@ -7,23 +7,14 @@ namespace Ketsu.Game
 {
 	public class CharacterHandler : MonoBehaviour
 	{
-		[Header("Controls")]
-		[Tooltip("Percentage of the screens height")]
-		public float DragDistance;
-
 		[Header("Character Prefabs")]
 		public GameObject FoxPrefab;
 		public GameObject WolfPrefab;
 		public GameObject KetsuPrefab;
 
 		[Header("Ketsu Power")]
-		public float BurnRate;
-		public float RegenerationRate;
-		public float KetsuStepCost;
+		public float KetsuMoveCost;
 		public float MaxKetsuPower;
-		public Text KetsuPowerText;
-
-		[HideInInspector]
 		public float KetsuPower;
 
 		[HideInInspector]
@@ -139,94 +130,25 @@ namespace Ketsu.Game
 			KetsuPowerText.text = KetsuPower.ToString("0.00") + " / " + MaxKetsuPower.ToString("0.00");
 		}
 
-		void HandleKeyInputs()
+		/// <summary>
+        /// Try to select character from given point
+        /// </summary>
+        /// <param name="point">Point to try to select the character from</param>
+        /// <returns>true if character selected and changed, false otherwise</returns>
+		public bool SelectCharacter(Vector3 point)
 		{
-			if (Input.GetButtonDown("Left")) MoveAction(Direction.Left);
-			else if (Input.GetButtonDown("Right")) MoveAction(Direction.Right);
-			else if (Input.GetButtonDown("Forward")) MoveAction(Direction.Forward);
-			else if (Input.GetButtonDown("Back")) MoveAction(Direction.Back);
-			else if (Input.GetMouseButtonDown(0))
-			{
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
-				if (Physics.Raycast(ray, out hit, Camera.main.farClipPlane))
-				{
-					TapAction(hit.point);
-				}
-			}
-		}
+            // asd asdas d asd asd asd as ds
+            foreach (MapObject obj in MapManager.GetObjects(point))
+            {
+                if (obj.Type == MapObjectType.Fox || obj.Type == MapObjectType.Wolf || obj.Type == MapObjectType.Ketsu)
+                {
+                    charHandler.
+                }
+            }
+            // asd asd asd as d
 
-		void HandleTouchInputs()
-		{
-			if (Input.touchCount == 1)
-			{
-				Touch touch = Input.GetTouch(0);
-
-				// Touch Started
-				if (touch.phase == TouchPhase.Began)
-				{
-					touchStartPos = touch.position;
-				}
-
-				// Touch Ended
-				else if (touch.phase == TouchPhase.Ended)
-				{
-					// It's a SWIPE
-					if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
-					{
-						if (Mathf.Abs(touchStartPos.x - touch.position.x) > Mathf.Abs(touchStartPos.y - touch.position.y))
-						{
-							if ((touchStartPos.x < touch.position.x)) MoveAction(Direction.Right);
-							else MoveAction(Direction.Left);
-						}
-						else
-						{
-							if (touchStartPos.y < touch.position.y) MoveAction(Direction.Forward);
-							else MoveAction(Direction.Back);
-						}
-					}
-
-					// It's a TAP
-					else
-					{
-						TapAction(Camera.main.ScreenToWorldPoint(touch.position));
-					}
-				}
-			}
-		}
-
-		void TapAction(Vector3 tapPoint)
-		{
-			IntVector2 selectedTilePos = new IntVector2(
-				(int)Mathf.Round(tapPoint.x),
-				(int)Mathf.Round(tapPoint.z)
-			);
-
-			Debug.Log("Tap Point: " + tapPoint + ", Selected Tile: " + selectedTilePos + ", Target Char Point: " + ActiveCharacter.transform.position);
-
-			// Character selection
-			if (!CharacterSelectionAction(selectedTilePos))
-			{
-				// Move action
-				if (Mathf.Abs(ActiveCharacter.Position.X - selectedTilePos.X) >
-					Mathf.Abs(ActiveCharacter.Position.Y - selectedTilePos.Y))
-				{
-					if (ActiveCharacter.Position.X < selectedTilePos.X) MoveAction(Direction.Right);
-					else MoveAction(Direction.Left);
-				}
-				else
-				{
-					if (ActiveCharacter.Position.Y < selectedTilePos.Y) MoveAction(Direction.Forward);
-					else MoveAction(Direction.Back);
-				}
-			}
-		}
-
-		// Return true if character selected
-		bool CharacterSelectionAction(IntVector2 selectedTilePos)
-		{
-			// Character selection
-			if (Fox != null && Fox.Position.Equals(selectedTilePos))
+            // Character selection
+            if (Fox != null && Fox.Position.Equals(selectedTilePos))
 			{
 				Debug.Log("Fox Selected");
 				ActiveCharacter = Fox;
@@ -248,7 +170,7 @@ namespace Ketsu.Game
 			return false;
 		}
 
-		void MoveAction(Direction direction)
+		public void MoveAction(Vector3 direction)
 		{
 			// Waiting
 			if (ActiveCharacter.HasMoved == true || waitingForFox || waitingForWolf || waitingForKetsu) return;

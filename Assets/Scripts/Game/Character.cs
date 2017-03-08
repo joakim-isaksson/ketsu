@@ -7,8 +7,6 @@ namespace Ketsu.Game
 {
 	public class Character : MapObject
 	{
-		public CharType CharType;
-
 		[Header("Animations")]
 		public float MoveAnimTime;
 
@@ -23,13 +21,11 @@ namespace Ketsu.Game
 		[HideInInspector]
 		public bool AtHome { get; private set; }
 
-		Map map;
-		CharController controller;
+		CharacterHandler handler;
 
 		void Start()
 		{
 			controller = FindObjectOfType<CharController>();
-			map = MapManager.LoadedMap;
 		}
 
 		private void Awake()
