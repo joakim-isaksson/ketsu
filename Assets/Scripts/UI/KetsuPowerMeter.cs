@@ -14,6 +14,7 @@ namespace Ketsu
         void Awake()
         {
             ketsuPowerText = GetComponent<Text>();
+            charHandler = FindObjectOfType<CharacterHandler>();
         }
 
         void Start()

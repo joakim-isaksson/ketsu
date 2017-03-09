@@ -31,13 +31,15 @@ namespace Ketsu.Game
         [Header("Sounds")]
         public string DieSfx;
 
+        CharacterHandler charHandler;
+
 		Vector3 target;
         bool dazed;
 
 		void Awake()
 		{
-
-		}
+            charHandler = FindObjectOfType<CharacterHandler>();
+        }
 
 		void Start()
 		{
@@ -80,7 +82,7 @@ namespace Ketsu.Game
                 }
                 else if (CanBeConsumed)
                 {
-                    character.AddKetsuPower(GivesKetsuPower);
+                    charHandler.AddKetsuPower(GivesKetsuPower);
                     AkSoundEngine.PostEvent(DieSfx, gameObject);
                     Destroy(gameObject);
                 }

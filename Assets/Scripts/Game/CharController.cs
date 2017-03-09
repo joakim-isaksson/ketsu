@@ -9,15 +9,13 @@ namespace Ketsu.Game
 		public float DragDistance;
         public bool UseRelativeTap;
         public bool AllowCharacterSelection;
-
-        MapManager mapManager;
+        
         CharacterHandler charHandler;
 
 		Vector2 touchStartPos;
 
 		void Awake()
 		{
-			mapManager = FindObjectOfType<MapManager>();
             charHandler = FindObjectOfType<CharacterHandler>();
         }
 

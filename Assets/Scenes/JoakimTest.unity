@@ -134,9 +134,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1290664
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,9 +263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &7628383
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,9 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &20003042
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,9 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &20804636
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,9 +480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &21721604
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,9 +694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &28879882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1082,7 @@ Transform:
   - {fileID: 2051542734}
   - {fileID: 1963016944}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &39195296
 GameObject:
@@ -1139,9 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &41518109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1185,9 +1171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &49490965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,9 +1215,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &61729747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1277,9 +1259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &64989894
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,9 +1727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &79623118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2302,9 +2280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &107349710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2858,9 +2834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &137531484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2904,9 +2878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &137597680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3040,9 +3012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &153214388
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,9 +3056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &162164818
 GameObject:
   m_ObjectHideFlags: 0
@@ -3302,9 +3270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &176950090
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,9 +3399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &201563309
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,9 +3612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &219339823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3949,9 +3911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &234391408
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,9 +3955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &235234792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4041,9 +3999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &241095891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4214,9 +4170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &251998578
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,9 +4214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &257246510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4306,9 +4258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &261676291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,9 +4557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &267442228
 GameObject:
   m_ObjectHideFlags: 0
@@ -4653,9 +4601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &277586726
 GameObject:
   m_ObjectHideFlags: 0
@@ -4699,9 +4645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &278335558
 GameObject:
   m_ObjectHideFlags: 0
@@ -4830,9 +4774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &281239654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5214,9 +5156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &312316365
 GameObject:
   m_ObjectHideFlags: 0
@@ -5260,9 +5200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &316329967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,9 +5329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &324144315
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,9 +5373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &329769607
 GameObject:
   m_ObjectHideFlags: 0
@@ -5568,9 +5502,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &338281148
 GameObject:
   m_ObjectHideFlags: 0
@@ -5614,9 +5546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &340002635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5660,9 +5590,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &345805353
 GameObject:
   m_ObjectHideFlags: 0
@@ -5706,9 +5634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &352684327
 Prefab:
   m_ObjectHideFlags: 0
@@ -5879,9 +5805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &361180784
 GameObject:
   m_ObjectHideFlags: 0
@@ -5925,9 +5849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!114 &361483980 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114909798385322208, guid: e75d5beef8691b246ba9d3b49a652062,
@@ -5977,9 +5899,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &368595971
 GameObject:
   m_ObjectHideFlags: 0
@@ -6108,9 +6028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &377985050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6239,9 +6157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &396104982
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,9 +6201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &400147878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,9 +6245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &400167728
 GameObject:
   m_ObjectHideFlags: 0
@@ -6377,9 +6289,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &404269628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,9 +6673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &441201804
 GameObject:
   m_ObjectHideFlags: 0
@@ -6894,9 +6802,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &465425567
 GameObject:
   m_ObjectHideFlags: 0
@@ -7195,9 +7101,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &486144219
 GameObject:
   m_ObjectHideFlags: 0
@@ -7241,9 +7145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &486186579
 GameObject:
   m_ObjectHideFlags: 0
@@ -7287,9 +7189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &495196988
 GameObject:
   m_ObjectHideFlags: 0
@@ -7326,7 +7226,7 @@ Transform:
   - {fileID: 2032620353}
   - {fileID: 1677931160}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495758160
 GameObject:
@@ -7541,9 +7441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &510749970
 Prefab:
   m_ObjectHideFlags: 0
@@ -7634,9 +7532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &518941937
 GameObject:
   m_ObjectHideFlags: 0
@@ -7680,9 +7576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &523494715
 GameObject:
   m_ObjectHideFlags: 0
@@ -8066,9 +7960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &539507504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8112,9 +8004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &539805937
 GameObject:
   m_ObjectHideFlags: 0
@@ -8328,9 +8218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &568264820
 GameObject:
   m_ObjectHideFlags: 0
@@ -8374,9 +8262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!224 &576095919 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224161625963273182, guid: e75d5beef8691b246ba9d3b49a652062,
@@ -8601,7 +8487,7 @@ Transform:
   - {fileID: 1853582994}
   - {fileID: 1423451159}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &607890911
 GameObject:
@@ -8646,9 +8532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &611478995
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,9 +8576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &619845889
 GameObject:
   m_ObjectHideFlags: 0
@@ -8907,9 +8789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &637860645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8953,9 +8833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &642548427
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,9 +8877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &644357753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9130,9 +9006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &650625881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9176,9 +9050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &654332753
 GameObject:
   m_ObjectHideFlags: 0
@@ -9222,9 +9094,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &655403289
 GameObject:
   m_ObjectHideFlags: 0
@@ -9268,9 +9138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &658457319
 GameObject:
   m_ObjectHideFlags: 0
@@ -9994,9 +9862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &698790645
 GameObject:
   m_ObjectHideFlags: 0
@@ -10040,9 +9906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &701236826
 GameObject:
   m_ObjectHideFlags: 0
@@ -10086,9 +9950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &712169127
 GameObject:
   m_ObjectHideFlags: 0
@@ -10217,9 +10079,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &714636369
 GameObject:
   m_ObjectHideFlags: 0
@@ -10433,9 +10293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &733554672
 GameObject:
   m_ObjectHideFlags: 0
@@ -10734,9 +10592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &741226700
 GameObject:
   m_ObjectHideFlags: 0
@@ -10780,9 +10636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &744574121
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,9 +10680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &755803446
 GameObject:
   m_ObjectHideFlags: 0
@@ -10957,9 +10809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &758454757
 GameObject:
   m_ObjectHideFlags: 0
@@ -11088,9 +10938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &764751592
 GameObject:
   m_ObjectHideFlags: 0
@@ -11462,9 +11310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &785996879
 GameObject:
   m_ObjectHideFlags: 0
@@ -11508,9 +11354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &794846308
 GameObject:
   m_ObjectHideFlags: 0
@@ -11639,9 +11483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &801340484
 GameObject:
   m_ObjectHideFlags: 0
@@ -11913,9 +11755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!4 &814411373 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4887756226373060, guid: 4d51281115133428abaed65ebf45e7dc,
@@ -11966,7 +11806,7 @@ Prefab:
     - target: {fileID: 224161625963273182, guid: e75d5beef8691b246ba9d3b49a652062,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224161625963273182, guid: e75d5beef8691b246ba9d3b49a652062,
         type: 2}
@@ -12169,9 +12009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &832267303
 GameObject:
   m_ObjectHideFlags: 0
@@ -12300,9 +12138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &847881473
 GameObject:
   m_ObjectHideFlags: 0
@@ -12430,9 +12266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &849322602
 GameObject:
   m_ObjectHideFlags: 0
@@ -12476,9 +12310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &856038174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12522,9 +12354,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &856847199
 GameObject:
   m_ObjectHideFlags: 0
@@ -12568,9 +12398,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &856856908
 GameObject:
   m_ObjectHideFlags: 0
@@ -12784,9 +12612,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &860342362
 GameObject:
   m_ObjectHideFlags: 0
@@ -12830,9 +12656,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &864306663
 GameObject:
   m_ObjectHideFlags: 0
@@ -12961,9 +12785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &878155897
 GameObject:
   m_ObjectHideFlags: 0
@@ -13092,9 +12914,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &899387049
 GameObject:
   m_ObjectHideFlags: 0
@@ -13138,9 +12958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &903683254
 GameObject:
   m_ObjectHideFlags: 0
@@ -13184,9 +13002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &907993931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13230,9 +13046,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &917443219
 GameObject:
   m_ObjectHideFlags: 0
@@ -13276,9 +13090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &923358568
 GameObject:
   m_ObjectHideFlags: 0
@@ -13492,9 +13304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &938612250
 GameObject:
   m_ObjectHideFlags: 0
@@ -13793,9 +13603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &948860184
 GameObject:
   m_ObjectHideFlags: 0
@@ -13924,9 +13732,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &982441626
 GameObject:
   m_ObjectHideFlags: 0
@@ -13970,9 +13776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &990347452
 GameObject:
   m_ObjectHideFlags: 0
@@ -14101,9 +13905,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1000944667
 GameObject:
   m_ObjectHideFlags: 0
@@ -14147,9 +13949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1002632723
 GameObject:
   m_ObjectHideFlags: 0
@@ -14278,9 +14078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1005750073
 GameObject:
   m_ObjectHideFlags: 0
@@ -14324,9 +14122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1015269784
 GameObject:
   m_ObjectHideFlags: 0
@@ -14455,9 +14251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1016925842
 GameObject:
   m_ObjectHideFlags: 0
@@ -14586,9 +14380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1021019532
 GameObject:
   m_ObjectHideFlags: 0
@@ -14717,9 +14509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1026190972
 GameObject:
   m_ObjectHideFlags: 0
@@ -14763,9 +14553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1034264600
 GameObject:
   m_ObjectHideFlags: 0
@@ -14809,9 +14597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1035448169
 GameObject:
   m_ObjectHideFlags: 0
@@ -15025,9 +14811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1056197010
 GameObject:
   m_ObjectHideFlags: 0
@@ -15156,9 +14940,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1065981667
 GameObject:
   m_ObjectHideFlags: 0
@@ -15202,9 +14984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1071696304
 GameObject:
   m_ObjectHideFlags: 0
@@ -15333,9 +15113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1085409081
 GameObject:
   m_ObjectHideFlags: 0
@@ -15464,9 +15242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1091240272
 GameObject:
   m_ObjectHideFlags: 0
@@ -15510,9 +15286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1094131749
 GameObject:
   m_ObjectHideFlags: 0
@@ -15556,9 +15330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1094390095
 GameObject:
   m_ObjectHideFlags: 0
@@ -15687,9 +15459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1102739904
 GameObject:
   m_ObjectHideFlags: 0
@@ -15733,9 +15503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1107548938
 GameObject:
   m_ObjectHideFlags: 0
@@ -16119,9 +15887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1132584684
 GameObject:
   m_ObjectHideFlags: 0
@@ -16504,9 +16270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!4 &1156869707 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4798447193812938, guid: dff5783656c2e459d846d3737518480d,
@@ -16642,7 +16406,7 @@ Prefab:
     - target: {fileID: 224222124490642186, guid: fda331b180ccec3449386238b71557fb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224222124490642186, guid: fda331b180ccec3449386238b71557fb,
         type: 2}
@@ -16740,9 +16504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1170428706
 GameObject:
   m_ObjectHideFlags: 0
@@ -16786,9 +16548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1171756986
 GameObject:
   m_ObjectHideFlags: 0
@@ -16917,9 +16677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1177749665
 GameObject:
   m_ObjectHideFlags: 0
@@ -17048,9 +16806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1191221565
 GameObject:
   m_ObjectHideFlags: 0
@@ -17094,9 +16850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1196310395
 GameObject:
   m_ObjectHideFlags: 0
@@ -17140,9 +16894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1199536907
 GameObject:
   m_ObjectHideFlags: 0
@@ -17186,9 +16938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1217032461
 GameObject:
   m_ObjectHideFlags: 0
@@ -17364,9 +17114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1233460342
 GameObject:
   m_ObjectHideFlags: 0
@@ -17410,9 +17158,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1233591847
 GameObject:
   m_ObjectHideFlags: 0
@@ -17541,9 +17287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1244602691
 GameObject:
   m_ObjectHideFlags: 0
@@ -17672,9 +17416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1250823925
 GameObject:
   m_ObjectHideFlags: 0
@@ -17718,9 +17460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1254798317
 GameObject:
   m_ObjectHideFlags: 0
@@ -17764,9 +17504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1266700919
 GameObject:
   m_ObjectHideFlags: 0
@@ -17810,9 +17548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1270553893
 GameObject:
   m_ObjectHideFlags: 0
@@ -17856,9 +17592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1281636666
 GameObject:
   m_ObjectHideFlags: 0
@@ -17902,9 +17636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1291622331
 GameObject:
   m_ObjectHideFlags: 0
@@ -18118,9 +17850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1309729564
 GameObject:
   m_ObjectHideFlags: 0
@@ -18249,9 +17979,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1311563138
 GameObject:
   m_ObjectHideFlags: 0
@@ -18465,9 +18193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1322535260
 GameObject:
   m_ObjectHideFlags: 0
@@ -18511,9 +18237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1335618299
 GameObject:
   m_ObjectHideFlags: 0
@@ -18557,9 +18281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1357635944
 GameObject:
   m_ObjectHideFlags: 0
@@ -18773,9 +18495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1361994128
 GameObject:
   m_ObjectHideFlags: 0
@@ -18989,9 +18709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1373391908
 GameObject:
   m_ObjectHideFlags: 0
@@ -19205,9 +18923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1384956361
 Prefab:
   m_ObjectHideFlags: 0
@@ -19303,9 +19019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1399518506
 GameObject:
   m_ObjectHideFlags: 0
@@ -19349,9 +19063,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1404112968
 GameObject:
   m_ObjectHideFlags: 0
@@ -19395,9 +19107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1404286665
 GameObject:
   m_ObjectHideFlags: 0
@@ -19779,9 +19489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1429337812
 Prefab:
   m_ObjectHideFlags: 0
@@ -19867,9 +19575,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1433018140
 GameObject:
   m_ObjectHideFlags: 0
@@ -19913,9 +19619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1437927922
 GameObject:
   m_ObjectHideFlags: 0
@@ -20095,9 +19799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1454012143
 GameObject:
   m_ObjectHideFlags: 0
@@ -20396,9 +20098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1477086224
 GameObject:
   m_ObjectHideFlags: 0
@@ -20442,9 +20142,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1481435433
 Prefab:
   m_ObjectHideFlags: 0
@@ -20482,7 +20180,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4927921956666610, guid: e5b55614010da7b4abfbdc9285a6c675, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5b55614010da7b4abfbdc9285a6c675, type: 2}
@@ -20699,9 +20397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1500361288
 GameObject:
   m_ObjectHideFlags: 0
@@ -20915,9 +20611,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1523863703
 GameObject:
   m_ObjectHideFlags: 0
@@ -21216,9 +20910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1540038412
 GameObject:
   m_ObjectHideFlags: 0
@@ -21262,9 +20954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1541758753
 Prefab:
   m_ObjectHideFlags: 0
@@ -21439,9 +21129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1553131032
 GameObject:
   m_ObjectHideFlags: 0
@@ -21570,9 +21258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1564595909
 GameObject:
   m_ObjectHideFlags: 0
@@ -21616,9 +21302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1565967759
 GameObject:
   m_ObjectHideFlags: 0
@@ -21662,9 +21346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1568026330
 GameObject:
   m_ObjectHideFlags: 0
@@ -21793,9 +21475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1576431335
 GameObject:
   m_ObjectHideFlags: 0
@@ -21924,9 +21604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1584969920
 GameObject:
   m_ObjectHideFlags: 0
@@ -22055,9 +21733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1587917360
 GameObject:
   m_ObjectHideFlags: 0
@@ -22525,9 +22201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1623801375
 GameObject:
   m_ObjectHideFlags: 0
@@ -22656,9 +22330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1636509518
 GameObject:
   m_ObjectHideFlags: 0
@@ -22702,9 +22374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1652690065
 GameObject:
   m_ObjectHideFlags: 0
@@ -22748,9 +22418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1659968130
 GameObject:
   m_ObjectHideFlags: 0
@@ -22794,9 +22462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1662650017
 GameObject:
   m_ObjectHideFlags: 0
@@ -22840,9 +22506,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1665178800
 GameObject:
   m_ObjectHideFlags: 0
@@ -23141,9 +22805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1675785038
 GameObject:
   m_ObjectHideFlags: 0
@@ -23187,9 +22849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1677258011
 GameObject:
   m_ObjectHideFlags: 0
@@ -23364,9 +23024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1681976536
 GameObject:
   m_ObjectHideFlags: 0
@@ -23750,9 +23408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1706801539
 GameObject:
   m_ObjectHideFlags: 0
@@ -24219,9 +23875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1733997096
 GameObject:
   m_ObjectHideFlags: 0
@@ -24265,9 +23919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1749855497
 GameObject:
   m_ObjectHideFlags: 0
@@ -24396,9 +24048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1753343332
 GameObject:
   m_ObjectHideFlags: 0
@@ -24612,9 +24262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1778807856
 GameObject:
   m_ObjectHideFlags: 0
@@ -24748,9 +24396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1797936853
 GameObject:
   m_ObjectHideFlags: 0
@@ -24794,9 +24440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1802319078
 GameObject:
   m_ObjectHideFlags: 0
@@ -24840,9 +24484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1805602963
 GameObject:
   m_ObjectHideFlags: 0
@@ -24886,9 +24528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1806803975
 GameObject:
   m_ObjectHideFlags: 0
@@ -24932,9 +24572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1807149062
 GameObject:
   m_ObjectHideFlags: 0
@@ -25190,9 +24828,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1832821510
 GameObject:
   m_ObjectHideFlags: 0
@@ -25406,9 +25042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1846273635
 Prefab:
   m_ObjectHideFlags: 0
@@ -25664,9 +25298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1870428449
 GameObject:
   m_ObjectHideFlags: 0
@@ -26133,9 +25765,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1921133665
 GameObject:
   m_ObjectHideFlags: 0
@@ -26264,9 +25894,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1939402755
 GameObject:
   m_ObjectHideFlags: 0
@@ -26310,9 +25938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1944032057
 GameObject:
   m_ObjectHideFlags: 0
@@ -26356,9 +25982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1949853239
 GameObject:
   m_ObjectHideFlags: 0
@@ -26402,9 +26026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &1954624945
 Prefab:
   m_ObjectHideFlags: 0
@@ -26500,9 +26122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1956606320
 GameObject:
   m_ObjectHideFlags: 0
@@ -26631,9 +26251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1963016943
 GameObject:
   m_ObjectHideFlags: 0
@@ -26677,9 +26295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1968483071
 GameObject:
   m_ObjectHideFlags: 0
@@ -26723,9 +26339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &1969037381
 GameObject:
   m_ObjectHideFlags: 0
@@ -27109,9 +26723,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2003609458
 GameObject:
   m_ObjectHideFlags: 0
@@ -27155,9 +26767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2003644449
 GameObject:
   m_ObjectHideFlags: 0
@@ -27201,9 +26811,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2011036933
 GameObject:
   m_ObjectHideFlags: 0
@@ -27247,9 +26855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2025917874
 GameObject:
   m_ObjectHideFlags: 0
@@ -27378,9 +26984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2027536949
 GameObject:
   m_ObjectHideFlags: 0
@@ -27509,9 +27113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!4 &2032620353 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4499541827503902, guid: bbedb09b8414f438e809b01c9ceab1a8,
@@ -27560,9 +27162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1001 &2045754111
 Prefab:
   m_ObjectHideFlags: 0
@@ -27671,9 +27271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2050144731
 GameObject:
   m_ObjectHideFlags: 0
@@ -27717,9 +27315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2050278036
 GameObject:
   m_ObjectHideFlags: 0
@@ -27848,9 +27444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2056325196
 GameObject:
   m_ObjectHideFlags: 0
@@ -27894,9 +27488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2058644470
 GameObject:
   m_ObjectHideFlags: 0
@@ -27940,9 +27532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2068691233
 GameObject:
   m_ObjectHideFlags: 0
@@ -28410,9 +28000,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2083855216
 GameObject:
   m_ObjectHideFlags: 0
@@ -28541,9 +28129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2094044573
 GameObject:
   m_ObjectHideFlags: 0
@@ -28587,9 +28173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2097125665
 GameObject:
   m_ObjectHideFlags: 0
@@ -28844,112 +28428,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2102911985}
   m_Mesh: {fileID: 4300000, guid: f8741670c0fc30346a46c8d2ff884a4c, type: 3}
---- !u!1001 &2108751641
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.8327475
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 4.4448147
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 4.7336054
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4559404391030936, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: initialized
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Grass
-      value: 
-      objectReference: {fileID: 4073447698859138, guid: dede9224e5b4fc046ad8d38664776e52,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Water
-      value: 
-      objectReference: {fileID: 4650962766533534, guid: 885159d3b2d50ea48bb581b18ddf357a,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Fence
-      value: 
-      objectReference: {fileID: 4095507760839568, guid: d70a7281d6c253e408a2815324e86c5f,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Tree
-      value: 
-      objectReference: {fileID: 4263549348517762, guid: 13ee59dd9a3fa7a42b3055f9d663568b,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: FoxSpawn
-      value: 
-      objectReference: {fileID: 4934633432812128, guid: a6b930dd3cd539b42856d69a9ea99d89,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: WolfSpawn
-      value: 
-      objectReference: {fileID: 4454948807234768, guid: 7768bed380956c645a2a35ca8f803494,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: FoxCave
-      value: 
-      objectReference: {fileID: 4644878245267464, guid: 36a56513cf2a91b41b87ffc95c59d055,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: WolfCave
-      value: 
-      objectReference: {fileID: 4085779067661764, guid: 8de33334ab58fbe42b57f16744232777,
-        type: 2}
-    - target: {fileID: 114526576537051618, guid: 09150eb906dba48c695a1e000e6944c5,
-        type: 2}
-      propertyPath: Flower
-      value: 
-      objectReference: {fileID: 4061339107619356, guid: a287183357b93084a86fd34331d3ff02,
-        type: 2}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 09150eb906dba48c695a1e000e6944c5, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &2109939868
 GameObject:
   m_ObjectHideFlags: 0
@@ -29162,9 +28640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2117185201
 GameObject:
   m_ObjectHideFlags: 0
@@ -29208,9 +28684,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2117547222
 GameObject:
   m_ObjectHideFlags: 0
@@ -29338,9 +28812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2119191038
 GameObject:
   m_ObjectHideFlags: 0
@@ -29384,9 +28856,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 7
   Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2122366516
 GameObject:
   m_ObjectHideFlags: 0
@@ -29515,9 +28985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2136202030
 GameObject:
   m_ObjectHideFlags: 0
@@ -29646,9 +29114,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
 --- !u!1 &2141517990
 GameObject:
   m_ObjectHideFlags: 0
@@ -29692,6 +29158,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 1
-  Position:
-    X: 0
-    Y: 0
+  BlockedByTypes: 
