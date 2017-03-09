@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4412001448070704}
   - component: {fileID: 114867928268239102}
+  - component: {fileID: 114726043710525284}
   m_Layer: 0
   m_Name: CharacterController
   m_TagString: Untagged
@@ -40,6 +41,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114726043710525284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761217697059458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0553abe2432290046ada6ec73c18a77f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoxPrefab: {fileID: 1132147270716104, guid: bbedb09b8414f438e809b01c9ceab1a8, type: 2}
+  WolfPrefab: {fileID: 1884622331499224, guid: 9ec5d2553fbf043c6adde926f86f0074, type: 2}
+  KetsuPrefab: {fileID: 1194870832127600, guid: b85bd12c057d94b16a5e2339eb59c583,
+    type: 2}
+  KetsuMoveCost: 1
+  KetsuPower: 5
+  MaxKetsuPower: 5
+  MoveQueueSize: 2
+  TrainsformToKetsuSfx: Transform_ToKetsu
+  SplitKetsuSfx: Transform_FromKetsu
+  ActiveCharacter: {fileID: 0}
 --- !u!114 &114867928268239102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -51,19 +74,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16c2f32e8b62d944ab849e4215e39cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragDistance: 0.1
-  FoxPrefab: {fileID: 1132147270716104, guid: bbedb09b8414f438e809b01c9ceab1a8, type: 2}
-  WolfPrefab: {fileID: 1884622331499224, guid: 9ec5d2553fbf043c6adde926f86f0074, type: 2}
-  KetsuPrefab: {fileID: 1194870832127600, guid: b85bd12c057d94b16a5e2339eb59c583,
-    type: 2}
-  BurnRate: 0.2
-  RegenerationRate: 0.01
-  KetsuStepCost: 0.1
-  MaxKetsuPower: 1
-  KetsuPowerText: {fileID: 0}
-  KetsuPower: 0
-  Fox: {fileID: 0}
-  Wolf: {fileID: 0}
-  Ketsu: {fileID: 0}
-  SelectedCharacter: {fileID: 0}
-  CharBeforeKetsu: {fileID: 0}
+  DragDistance: 0.15
+  UseRelativeTap: 0
+  AllowCharacterSelection: 0

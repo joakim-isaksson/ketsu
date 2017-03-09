@@ -3,7 +3,7 @@
 	public enum MapObjectType
 	{
 		Bush,
-		Chiken,
+		Chicken,
 		Dirt,
 		Fence,
 		Flowers,

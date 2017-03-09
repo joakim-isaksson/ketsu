@@ -9,7 +9,7 @@ namespace Ketsu.Game
         Random, PriorityList, PingPong
     }
 
-    public class EnemyController : MapObject, BumberListener
+    public class EnemyController : MapObject
     {
         [Header("Movement")]
         public bool CanMove;
@@ -18,7 +18,7 @@ namespace Ketsu.Game
 
         [Header("Consuming")]
         public bool CanBeConsumed;
-        public int GivesKetsuPower;
+        public float GivesKetsuPower;
 
         [Header("Dazing")]
         public bool CanBeDazed;

@@ -2,18 +2,18 @@
 
 namespace Ketsu.Game
 {
-    public interface BumberListener
-    {
-        void OnBumb(Collider other);
-    }
-
     public class Bumber : MonoBehaviour
     {
-        public BumberListener Listener;
+        EnemyController controller;
+
+        public void Awake()
+        {
+            controller = GetComponentInParent<EnemyController>();
+        }
 
         void OnTriggerEnter(Collider other)
         {
-            if (Listener != null) Listener.OnBumb(other);
+            controller.OnBumb(other);
         }
     }
 }

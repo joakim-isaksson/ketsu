@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Foreground: {fileID: 114805467661989932}
-  Color: {r: 0, g: 0, b: 0, a: 0}
+  DefaultColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &114805467661989932
 MonoBehaviour:
   m_ObjectHideFlags: 1
