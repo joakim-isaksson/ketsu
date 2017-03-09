@@ -52,9 +52,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DragDistance: 0.1
-  FoxPrefab: {fileID: 1132147270716104, guid: a6b930dd3cd539b42856d69a9ea99d89, type: 2}
-  WolfPrefab: {fileID: 1884622331499224, guid: 7768bed380956c645a2a35ca8f803494, type: 2}
-  KetsuPrefab: {fileID: 1194870832127600, guid: ba61095fdc8074722bedf42107a44576,
+  FoxPrefab: {fileID: 1132147270716104, guid: bbedb09b8414f438e809b01c9ceab1a8, type: 2}
+  WolfPrefab: {fileID: 1884622331499224, guid: 9ec5d2553fbf043c6adde926f86f0074, type: 2}
+  KetsuPrefab: {fileID: 1194870832127600, guid: b85bd12c057d94b16a5e2339eb59c583,
     type: 2}
   BurnRate: 0.2
   RegenerationRate: 0.01
