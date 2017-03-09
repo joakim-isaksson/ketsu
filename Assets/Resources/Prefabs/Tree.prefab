@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4441038207843480}
-  - component: {fileID: 114020481888363078}
   - component: {fileID: 65159693525032518}
+  - component: {fileID: 114020481888363078}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Untagged
@@ -121,8 +121,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.94977474, y: 1.3290207, z: 1}
-  m_Center: {x: 0, y: 0.6604843, z: 0}
+  m_Size: {x: 0.8793938, y: 1.2482129, z: 0.9139789}
+  m_Center: {x: 0.0013033152, y: 0.6565743, z: -0.003910035}
 --- !u!114 &114020481888363078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,8 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 7
-  Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  Type: 14
+  Layer: 1
+  NotBlockedBy: 

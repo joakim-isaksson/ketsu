@@ -19,8 +19,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4855700677401518}
-  - component: {fileID: 114772928527878858}
   - component: {fileID: 65836328474868304}
+  - component: {fileID: 114772928527878858}
   m_Layer: 0
   m_Name: Fence
   m_TagString: Untagged
@@ -121,8 +121,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 0.8177129, y: 0.7857325, z: 0.91045547}
+  m_Center: {x: -0.0047970414, y: 0.42484653, z: -0.01279211}
 --- !u!114 &114772928527878858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,4 +136,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 3
   Layer: 1
-  BlockedByTypes: 
+  NotBlockedBy: 

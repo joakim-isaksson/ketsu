@@ -39,7 +39,7 @@ namespace Ketsu.Game
 		void Awake()
 		{
             charHandler = FindObjectOfType<CharacterHandler>();
-        }
+		}
 
 		void Start()
 		{
@@ -123,10 +123,7 @@ namespace Ketsu.Game
             foreach (Vector3 direction in directions)
             {
                 Vector3 newTarget = transform.position + direction;
-                if (!IsBlocked(newTarget))
-                {
-                    return newTarget;
-                }
+                if (!IsBlocked(newTarget)) return newTarget;
             }
 
             return transform.position;

@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4617613044585036}
+  - component: {fileID: 65549863801522864}
   - component: {fileID: 114049988343724222}
   m_Layer: 0
   m_Name: Rock
@@ -37,9 +38,8 @@ GameObject:
   - component: {fileID: 4638643060316808}
   - component: {fileID: 33816822401168638}
   - component: {fileID: 23200750475134292}
-  - component: {fileID: 64840504596872688}
   m_Layer: 0
-  m_Name: Stone wall
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,20 +111,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1572760294180228}
   m_Mesh: {fileID: 4300000, guid: 3b0af1eadbe5f0149b88d7401b303670, type: 3}
---- !u!64 &64840504596872688
-MeshCollider:
+--- !u!65 &65549863801522864
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572760294180228}
+  m_GameObject: {fileID: 1345320084545468}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 3b0af1eadbe5f0149b88d7401b303670, type: 3}
+  m_Size: {x: 0.94004583, y: 0.9400457, z: 0.9139789}
+  m_Center: {x: 0.0039100647, y: 0.49348325, z: -0.001303345}
 --- !u!114 &114049988343724222
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,8 +134,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 9
-  Layer: 2
-  Position:
-    X: 0
-    Y: 0
+  Type: 12
+  Layer: 1
+  NotBlockedBy: 

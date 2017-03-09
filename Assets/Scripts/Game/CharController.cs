@@ -11,12 +11,14 @@ namespace Ketsu.Game
         public bool AllowCharacterSelection;
         
         CharacterHandler charHandler;
+		MapManager mapManager;
 
 		Vector2 touchStartPos;
 
 		void Awake()
 		{
             charHandler = FindObjectOfType<CharacterHandler>();
+			mapManager = FindObjectOfType<MapManager>();
         }
 
 		void Start()
@@ -26,7 +28,7 @@ namespace Ketsu.Game
 
 		void Update()
 		{
-            if (MapManager.Solved) return;
+            if (mapManager.Solved) return;
 
 #if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
 			HandleKeyInputs();

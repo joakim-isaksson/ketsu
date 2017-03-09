@@ -12,8 +12,6 @@ namespace Ketsu.Game
 
 		[Header("Sounds")]
 		public string SfxMove;
-		public string SfxMerge;
-		public string SfxSplit;
 
 		void Start()
 		{

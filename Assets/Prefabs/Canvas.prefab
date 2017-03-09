@@ -39,8 +39,9 @@ GameObject:
   - component: {fileID: 224464426029037228}
   - component: {fileID: 222839050079980960}
   - component: {fileID: 114059720680374260}
+  - component: {fileID: 114910969043750810}
   m_Layer: 5
-  m_Name: WinText
+  m_Name: WinPopup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -314,6 +315,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 0.00
+--- !u!114 &114910969043750810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1432026483895082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd0cbc12c36c6248b65a7e567147c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114929121587594860
 MonoBehaviour:
   m_ObjectHideFlags: 1

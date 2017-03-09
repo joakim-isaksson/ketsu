@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Ketsu.Utils;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,27 +7,21 @@ namespace Ketsu.Game
 {
 	public class MapManager : MonoBehaviour
 	{
-		public static Vector3 Boarders;
-
-		public Text WinText;
-
 		[HideInInspector]
-		public static bool Solved { get; private set; }
+		public bool Solved;
 
 		Home[] homes;
 
-		public void Awake()
+		void Awake()
 		{
 			homes = FindObjectsOfType<Home>();
 
 			Solved = false;
-			WinText.gameObject.SetActive(false);
 		}
 
-		public static bool Contains(Vector3 point)
+		void Start()
 		{
-			if (point.x < 0 || point.x >= Boarders.x || point.z < 0 || point.z >= Boarders.z) return false;
-			else return true;
+			ScreenFaider.Instance.FadeOut(1.0f, null);
 		}
 
         /// <summary>
@@ -83,8 +78,6 @@ namespace Ketsu.Game
 		{
 			if (Solved) return;
 			Solved = true;
-
-			WinText.gameObject.SetActive(true);
 		}
 		
 	}

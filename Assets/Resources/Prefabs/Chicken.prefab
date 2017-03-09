@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4671632909500142}
-  - component: {fileID: 135482576749102834}
+  - component: {fileID: 65187363168316274}
   - component: {fileID: 114522813400002430}
   m_Layer: 0
   m_Name: Bumber
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4817082699160292}
   - component: {fileID: 65046673139578174}
   - component: {fileID: 114405067979765040}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,8 +153,20 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4053629, y: 0.41051137, z: 0.48258865}
-  m_Center: {x: 0.0012870729, y: 0.20495182, z: 0.009009659}
+  m_Size: {x: 0.4053629, y: 0.381729, z: 0.48258865}
+  m_Center: {x: 0.0012870729, y: 0.219343, z: 0.009009659}
+--- !u!65 &65187363168316274
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1294287600117408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.48511887, z: 0.9}
+  m_Center: {x: 0, y: 0.25744057, z: 0}
 --- !u!114 &114405067979765040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,15 +202,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3be478292f04fac409c1402047b6a39c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!135 &135482576749102834
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1294287600117408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.4
-  m_Center: {x: 0, y: 0, z: 0}

@@ -28,7 +28,6 @@ namespace Ketsu.Game
 		public Character ActiveCharacter;
 
         Queue<Vector3> moveQueue;
-		Vector2 touchStartPos;
 
         int waitingForMoveActions;
 
@@ -193,25 +192,11 @@ namespace Ketsu.Game
                 Vector3 activePos = active.transform.position + direction;
                 Vector3 otherPos = other != null ? other.transform.position + VectorUtils.Mirror(direction, Vector3.zero) : Vector3.zero;
 
-                // Check boarder constraits
-                if (!MapManager.Contains(activePos))
-                {
-                    Debug.Log("Invalid Move: " + active.Type + " wound end outside of boarders");
-                    NextMoveAction();
-                    return;
-                }
-                if (other != null && !MapManager.Contains(otherPos))
-                {
-                    Debug.Log("Invalid Move: " + other.Type + " wound end outside of boarders");
-                    NextMoveAction();
-                    return;
-                }
-
                 // Blockers
                 MapObject activeBlocker = active.GetBlocking(activePos);
                 MapObject otherBlocker = other != null ? other.GetBlocking(otherPos) : null;
 
-                if ((activeBlocker != null && activeBlocker.Type == other.Type) ||
+                if ((activeBlocker != null && activeBlocker.Type == active.Type) ||
                     (other != null && Vector3.Distance(activePos, otherPos) < 0.001f))
                 {
                     // Turn to ketsu
@@ -245,23 +230,15 @@ namespace Ketsu.Game
                 }
                 else
                 {
-                    // Move only one character
+                    // Move only the active character
                     waitingForMoveActions++;
-                    other.MoveTo(otherPos, OnMoveActionCompleted);
+                    active.MoveTo(activePos, OnMoveActionCompleted);
                     return;
                 }
             }
             else // Moving KETSU
             {
                 Vector3 ketsuPos = ketsu.transform.position + direction;
-
-                // Check boarder constraits
-                if (!MapManager.Contains(ketsuPos))
-                {
-                    Debug.Log("Invalid Move: " + ketsu.Type + " wound end outside of boarders");
-                    NextMoveAction();
-                    return;
-                }
 
                 // Blockers
                 MapObject ketsuBlocker = ketsu.GetBlocking(ketsuPos);
@@ -320,20 +297,6 @@ namespace Ketsu.Game
 
             Vector3 activePos = targetPos;
             Vector3 otherPos = VectorUtils.Mirror(targetPos, ketsu.transform.position);
-
-            // Check boarder constraits
-            if (!MapManager.Contains(activePos))
-            {
-                Debug.Log("Can Not Split: " + active.Type + " wound end outside of boarders");
-                NextMoveAction();
-                return;
-            }
-            else if (!MapManager.Contains(otherPos))
-            {
-                Debug.Log("Can Not Split: " + other.Type + " wound end outside of boarders");
-                NextMoveAction();
-                return;
-            }
 
             // Check blockers
             MapObject activeBlocker = active.GetBlocking(activePos);

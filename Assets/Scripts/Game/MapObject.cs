@@ -30,8 +30,6 @@ namespace Ketsu.Game
         /// <returns>True if something is blocking, false otherwise</returns>
         public bool IsBlocked(Vector3 point)
 		{
-			if (!MapManager.Contains(point)) return true;
-
 			List<MapObject> objects = MapManager.GetObjects(point, Layer);
 			foreach (MapObject obj in objects)
 			{

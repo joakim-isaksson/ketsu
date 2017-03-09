@@ -1,10 +1,8 @@
 ﻿using Ketsu.Game;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Ketsu
+namespace Ketsu.UI
 {
     public class KetsuPowerMeter : MonoBehaviour
     {

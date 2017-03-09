@@ -19,8 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4848492756414140}
+  - component: {fileID: 65689466433966288}
+  - component: {fileID: 114069237785161012}
   m_Layer: 0
-  m_Name: Pumber
+  m_Name: Bumber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,9 +37,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4676535814263862}
   - component: {fileID: 65036697532304278}
-  - component: {fileID: 114439544613529500}
-  - component: {fileID: 114773663277943858}
-  m_Layer: 9
+  - component: {fileID: 114813165739956720}
+  m_Layer: 0
   m_Name: Sheep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +97,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1074548452543466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.273, z: 0.455}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4676535814263862}
@@ -152,9 +153,32 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.44430125, y: 0.36962593, z: 0.58382946}
-  m_Center: {x: 0.009309768, y: 0.16983539, z: 0.018459313}
---- !u!114 &114439544613529500
+  m_Size: {x: 0.63719726, y: 0.5990156, z: 0.6854908}
+  m_Center: {x: -0.003723681, y: 0.32363075, z: 0.035402864}
+--- !u!65 &65689466433966288
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074548452543466}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.95, y: 0.5980953, z: 0.95}
+  m_Center: {x: 0, y: 0.32404763, z: -0.01042676}
+--- !u!114 &114069237785161012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1074548452543466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be478292f04fac409c1402047b6a39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114813165739956720
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -162,27 +186,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 1076932095870326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38fcf7cb94b7e4440b1af5bd6343a59d, type: 3}
+  m_Script: {fileID: 11500000, guid: 578f8e8243b32414f8682d7bfa419d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 18
-  Layer: 0
-  Position:
-    X: 0
-    Y: 0
-  MoveSpeed: 0.5
-  Pumber: {fileID: 4848492756414140}
---- !u!114 &114773663277943858
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1076932095870326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405c63f11b1c0244cbf87f8f3642091d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  KetsuPower: 1
-  MaxKetsuPower: 0
-  CollectSfx: Collect_Sheep
+  Type: 13
+  Layer: 1
+  NotBlockedBy: 
+  CanMove: 1
+  MovementSpeed: 1
+  MovementType: 1
+  CanBeConsumed: 1
+  GivesKetsuPower: 3
+  CanBeDazed: 0
+  DazeTime: 0
+  DealsDamage: 0
+  DamageAmount: 0
+  DieSfx: Collect_Sheep

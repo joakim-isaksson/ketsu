@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4725272112682280}
   - component: {fileID: 33123683757034766}
   - component: {fileID: 23236755226889388}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 65514729403166848}
   - component: {fileID: 54733859070099650}
   - component: {fileID: 114768617247718788}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,11 +134,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1884622331499224}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.4507245, y: 0.8364754, z: 0.90083164}
-  m_Center: {x: -0.002096175, y: 0.41300476, z: -0.014575005}
+  m_Size: {x: 0.40306556, y: 0.7289034, z: 0.7862506}
+  m_Center: {x: -0.0013033748, y: 0.409252, z: 0.078200996}
 --- !u!114 &114768617247718788
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,13 +150,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8912a29189d441e458bbf47f6913c12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 2
-  Layer: 0
-  Position:
-    X: 0
-    Y: 0
-  CharType: 1
+  Type: 16
+  Layer: 1
+  NotBlockedBy: 01000000080000000a0000000d00000011000000
   MoveAnimTime: 0.1
   SfxMove: Move_Wolf
-  SfxMerge: Transform_ToKetsu
-  SfxSplit: Transform_FromKetsu

@@ -36,8 +36,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4715263154416446}
-  - component: {fileID: 114229293311751706}
   - component: {fileID: 65120647273646510}
+  - component: {fileID: 114229293311751706}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -120,8 +120,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 0.9648218, y: 0.7249701, z: 0.9392376}
+  m_Center: {x: -0.0015990138, y: 0.38806927, z: -0.023985162}
 --- !u!114 &114229293311751706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -135,4 +135,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 0
   Layer: 1
-  BlockedByTypes: 
+  NotBlockedBy: 

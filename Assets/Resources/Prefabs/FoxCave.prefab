@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4887756226373060}
   - component: {fileID: 65702703333990836}
   - component: {fileID: 114549499266401910}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: FoxCave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,10 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0bcf72c158122f44af153b2d4a29990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 4
-  Layer: 2
-  Position:
-    X: 0
-    Y: 0
-  ForType: 0
-  Inside: {fileID: 0}
+  Type: 6
+  Layer: 1
+  NotBlockedBy: 
+  ForType: 5
+  Occupants: 0

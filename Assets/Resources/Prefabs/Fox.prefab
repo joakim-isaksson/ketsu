@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 65552380918305154}
   - component: {fileID: 54742872313285282}
   - component: {fileID: 114467616133965978}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Fox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1132147270716104}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.3921165, y: 0.83345866, z: 0.9101085}
@@ -151,13 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8912a29189d441e458bbf47f6913c12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 1
-  Layer: 0
-  Position:
-    X: 0
-    Y: 0
-  CharType: 0
+  Type: 5
+  Layer: 1
+  NotBlockedBy: 0100000006000000080000000a0000000d000000
   MoveAnimTime: 0.1
   SfxMove: Move_Fox
-  SfxMerge: Transform_ToKetsu
-  SfxSplit: Transform_FromKetsu
