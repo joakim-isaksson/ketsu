@@ -20,6 +20,10 @@ namespace Ketsu.Game
         [Header("Action Queue")]
         public int MoveQueueSize;
 
+        [Header("Sounds")]
+        public string TrainsformToKetsuSfx;
+        public string SplitKetsuSfx;
+
         [HideInInspector]
 		public Character ActiveCharacter;
 
@@ -180,171 +184,197 @@ namespace Ketsu.Game
             // Get direction for next move action
             Vector3 direction = moveQueue.Dequeue();
 
-            switch (ActiveCharacter.Type)
-			{
-				case MapObjectType.Fox:
-                case MapObjectType.Wolf:
-                    Vector3 foxPos = fox.transform.position + direction;
-                    Vector3 wolfPos = wolf.transform.position + VectorUtils.Mirror(direction, Vector3.zero);
-                    if (fox.IsBlocked(foxPos) && wolf.IsBlocked(wolfPos))
+            // Moving FOX and/or WOLF
+            if (ActiveCharacter.Type == MapObjectType.Fox || ActiveCharacter.Type == MapObjectType.Wolf)
+            {
+                Character active = ActiveCharacter;
+                Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
+
+                Vector3 activePos = active.transform.position + direction;
+                Vector3 otherPos = other != null ? other.transform.position + VectorUtils.Mirror(direction, Vector3.zero) : Vector3.zero;
+
+                // Check boarder constraits
+                if (!MapManager.Contains(activePos))
+                {
+                    Debug.Log("Invalid Move: " + active.Type + " wound end outside of boarders");
+                    NextMoveAction();
+                    return;
+                }
+                if (other != null && !MapManager.Contains(otherPos))
+                {
+                    Debug.Log("Invalid Move: " + other.Type + " wound end outside of boarders");
+                    NextMoveAction();
+                    return;
+                }
+
+                // Blockers
+                MapObject activeBlocker = active.GetBlocking(activePos);
+                MapObject otherBlocker = other != null ? other.GetBlocking(otherPos) : null;
+
+                if ((activeBlocker != null && activeBlocker.Type == other.Type) ||
+                    (other != null && Vector3.Distance(activePos, otherPos) < 0.001f))
+                {
+                    // Turn to ketsu
+                    TransformToKetsu(activePos, active, other);
+                    return;
+                }
+                else if (activeBlocker != null)
+                {
+                    // Active character is blocked
+                    Debug.Log("Invalid Move: " + active.Type + " blocked by " + activeBlocker.Type);
+                    NextMoveAction();
+                    return;
+                }
+                else if (other != null)
+                {
+                    if (otherBlocker != null)
                     {
-                        waitingForMoveActions += 2;
-                        fox.MoveTo(direction, OnMoveActionCompleted);
-                        wolf.MoveTo(wolfPos, OnMoveActionCompleted);
-                    }
-
-                    // ---------------------------
-                    // Try to turn into Ketsu
-                    if (blocking.Type == MapObjectType.Fox || blocking.Type == MapObjectType.Wolf)
-                    {
-                        Character blockingCharacter = blocking.gameObject.GetComponent<Character>();
-                        if (blockingCharacter.HasMoved)
-                        {
-                            // Update position
-                            HasMoved = true;
-                            Position = blockingCharacter.Position;
-
-                            TransformToKetsu(blockingCharacter, callback);
-                        }
-                        else
-                        {
-                            Debug.Log("Beep Poop - Can not ketsu!");
-                            if (callback != null) callback();
-                        }
-
+                        // Other character is blocked
+                        Debug.Log("Invalid Move: " + other.Type + " blocked by " + otherBlocker.Type);
+                        NextMoveAction();
                         return;
                     }
-                    // ---------------------------
-
-                    break;
-                case MapObjectType.Ketsu:
-                    Vector3 ketsuPos = ketsu.transform.position + direction;
-                    if (ketsu.IsBlocked(ketsuPos))
+                    else
                     {
-                        if (ConsumeKetsuPower(KetsuMoveCost))
-                        {
-                            waitingForMoveActions++;
-                            ketsu.MoveTo(direction, OnMoveActionCompleted);
-                        }
-                        else
-                        {
-                            // Explode
-                            ketsu.SplitKetsu();
-                        }
+                        // Move both haracters
+                        waitingForMoveActions += 2;
+                        active.MoveTo(activePos, OnMoveActionCompleted);
+                        other.MoveTo(otherPos, OnMoveActionCompleted);
+                        return;
                     }
-                    break;
-                default:
-                    Debug.Log("Unkown character type: " + ActiveCharacter.Type);
-					break;
-			}
+                }
+                else
+                {
+                    // Move only one character
+                    waitingForMoveActions++;
+                    other.MoveTo(otherPos, OnMoveActionCompleted);
+                    return;
+                }
+            }
+            else // Moving KETSU
+            {
+                Vector3 ketsuPos = ketsu.transform.position + direction;
+
+                // Check boarder constraits
+                if (!MapManager.Contains(ketsuPos))
+                {
+                    Debug.Log("Invalid Move: " + ketsu.Type + " wound end outside of boarders");
+                    NextMoveAction();
+                    return;
+                }
+
+                // Blockers
+                MapObject ketsuBlocker = ketsu.GetBlocking(ketsuPos);
+                if (ketsuBlocker != null)
+                {
+                    // Ketsu is blocked
+                    Debug.Log("Invalid Move: " + ketsu.Type + " blocked by " + ketsuBlocker.Type);
+                    NextMoveAction();
+                    return;
+                }
+                else if (ConsumeKetsuPower(KetsuMoveCost))
+                {
+                    // Move ketsu
+                    waitingForMoveActions++;
+                    ketsu.MoveTo(ketsuPos, OnMoveActionCompleted);
+                    return;
+                }
+                else
+                {
+                    // Split ketsu
+                    SplitKetsu(ketsuPos);
+                    return;
+                }
+            }
 		}
+
+        void TransformToKetsu(Vector3 mergePos, Character active, Character other)
+        {
+            waitingForMoveActions += 2;
+            other.MoveTo(mergePos, OnMoveActionCompleted);
+            active.MoveTo(mergePos, delegate {
+
+                AkSoundEngine.PostEvent(TrainsformToKetsuSfx, gameObject);
+
+                // Update Ketsu position and rotation
+                ketsu.transform.rotation = active.transform.rotation;
+                ketsu.transform.position = active.transform.position;
+
+                // Deactive and activate characters
+                ketsu.gameObject.SetActive(true);
+                fox.gameObject.SetActive(false);
+                wolf.gameObject.SetActive(false);
+
+                // Set ketsu as the active character
+                beforeKetsu = ActiveCharacter;
+                ActiveCharacter = ketsu;
+
+                OnMoveActionCompleted();
+            });
+        }
+
+        public void SplitKetsu(Vector3 targetPos)
+        {
+            Character active = beforeKetsu;
+            Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
+
+            Vector3 activePos = targetPos;
+            Vector3 otherPos = VectorUtils.Mirror(targetPos, ketsu.transform.position);
+
+            // Check boarder constraits
+            if (!MapManager.Contains(activePos))
+            {
+                Debug.Log("Can Not Split: " + active.Type + " wound end outside of boarders");
+                NextMoveAction();
+                return;
+            }
+            else if (!MapManager.Contains(otherPos))
+            {
+                Debug.Log("Can Not Split: " + other.Type + " wound end outside of boarders");
+                NextMoveAction();
+                return;
+            }
+
+            // Check blockers
+            MapObject activeBlocker = active.GetBlocking(activePos);
+            if (activeBlocker != null)
+            {
+                // Active is blocked
+                Debug.Log("Can Not Split: " + active.Type + " blocked by " + activeBlocker.Type);
+                NextMoveAction();
+                return;
+            }
+            MapObject otherBlocker = active.GetBlocking(otherPos);
+            if (otherBlocker != null)
+            {
+                // Other is blocked
+                Debug.Log("Can Not Split: " + other.Type + " blocked by " + otherBlocker.Type);
+                NextMoveAction();
+                return;
+            }
+
+            // No blockers - Split Ketsu!
+            AkSoundEngine.PostEvent(SplitKetsuSfx, gameObject);
+
+            // Deactive and activate characters
+            ketsu.gameObject.SetActive(false);
+            active.gameObject.SetActive(true);
+            other.gameObject.SetActive(true);
+            ActiveCharacter = active;
+
+            // Animate
+            waitingForMoveActions += 2;
+            active.transform.position = ketsu.transform.position;
+            other.transform.position = ketsu.transform.position;
+            active.MoveTo(activePos, OnMoveActionCompleted);
+            other.MoveTo(otherPos, OnMoveActionCompleted);
+        }
 
         void OnMoveActionCompleted()
         {
             waitingForMoveActions--;
             if (waitingForMoveActions == 0) mapManager.CheckSolved();
             NextMoveAction();
-        }
-
-        void TransformToKetsu(Character other, Action callback)
-        {
-            AkSoundEngine.PostEvent(SfxMerge, gameObject);
-
-            AnimateTo(other.Position, delegate
-            {
-
-                // Update Ketsu position and rotation
-                controller.Ketsu.transform.rotation = transform.rotation;
-                controller.Ketsu.transform.position = new Vector3(
-                    other.Position.X,
-                    other.transform.position.y,
-                    other.Position.Y
-                );
-                controller.Ketsu.UpdatePositionFromWorld();
-
-                // Deactive and activate characters
-                controller.Ketsu.gameObject.SetActive(true);
-                controller.Fox.gameObject.SetActive(false);
-                controller.Wolf.gameObject.SetActive(false);
-
-                // Set the active character as Ketsu
-                controller.CharBeforeKetsu = controller.ActiveCharacter;
-                controller.ActiveCharacter = controller.Ketsu;
-
-                if (callback != null) callback();
-            });
-        }
-
-        // targetPos is the position where the previously controlled character is moving in the split
-        public void SplitKetsu(IntVector2 targetPos, Action callback)
-        {
-            // Where to split
-            IntVector2 foxPos;
-            IntVector2 wolfPos;
-            if (controller.CharBeforeKetsu.Type == MapObjectType.Fox)
-            {
-                foxPos = targetPos;
-                wolfPos = targetPos.Mirror(Position);
-            }
-            else
-            {
-                foxPos = targetPos.Mirror(Position);
-                wolfPos = targetPos;
-            }
-
-            // Check if characters will stay inside the map
-            if (!map.Contains(foxPos))
-            {
-                Debug.Log("Can not split - Fox outside of boarders");
-                if (callback != null) callback();
-                return;
-            }
-            if (!map.Contains(wolfPos))
-            {
-                Debug.Log("Can not split - Wolf outside of boarders");
-                if (callback != null) callback();
-                return;
-            }
-
-            // Check if splitting is blocked by something
-            MapObject block = Blocking(foxPos);
-            if (block != null)
-            {
-                Debug.Log("Can not split - Fox is blocked by: " + block.Type);
-                if (callback != null) callback();
-                return;
-            }
-            block = Blocking(wolfPos);
-            if (block != null)
-            {
-                Debug.Log("Can not split - Wolf is blocked by: " + block.Type);
-                if (callback != null) callback();
-                return;
-            }
-
-            // Splitting can happen - set control character
-            controller.ActiveCharacter = controller.CharBeforeKetsu;
-
-            AkSoundEngine.PostEvent(SfxSplit, gameObject);
-
-            // Deactive and activate characters
-            controller.Ketsu.gameObject.SetActive(false);
-            controller.Fox.gameObject.SetActive(true);
-            controller.Wolf.gameObject.SetActive(true);
-
-            // Update fox position and animate
-            controller.Fox.transform.rotation = transform.rotation;
-            controller.Fox.transform.position = new Vector3(Position.X, controller.Fox.transform.position.y, Position.Y);
-            controller.Fox.Position = foxPos;
-            controller.Fox.HasMoved = true;
-            controller.Fox.AnimateTo(foxPos, null);
-
-            // Update wolf position and animate
-            controller.Wolf.transform.rotation = transform.rotation;
-            controller.Wolf.transform.position = new Vector3(Position.X, controller.Wolf.transform.position.y, Position.Y);
-            controller.Wolf.Position = wolfPos;
-            controller.Wolf.HasMoved = true;
-            controller.Wolf.AnimateTo(wolfPos, callback);
         }
     }
 }
