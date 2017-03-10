@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65309483708787534}
   - component: {fileID: 114641460082552858}
   m_Layer: 0
-  m_Name: Grass
+  m_Name: GreenGrass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
