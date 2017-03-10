@@ -38,12 +38,13 @@ namespace Ketsu.Game
 
 		void Awake()
 		{
-            charHandler = FindObjectOfType<CharacterHandler>();
+            
 		}
 
 		void Start()
 		{
-			SetNewTarget();
+            charHandler = FindObjectOfType<CharacterHandler>();
+            SetNewTarget();
 		}
 
 		void Update()

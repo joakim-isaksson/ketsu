@@ -14,14 +14,14 @@ namespace Ketsu.Game
 
 		void Awake()
 		{
-			homes = FindObjectsOfType<Home>();
-
 			Solved = false;
 		}
 
 		void Start()
 		{
-			ScreenFaider.Instance.FadeOut(1.0f, null);
+            homes = FindObjectsOfType<Home>();
+
+            ScreenFaider.Instance.FadeOut(1.0f, null);
 		}
 
         /// <summary>

@@ -14,12 +14,11 @@ namespace Ketsu.UI
         void Awake()
         {
 			winText = GetComponent<Text>();
-			mapManger = FindObjectOfType<MapManager>();
         }
 
         void Start()
         {
-
+            mapManger = FindObjectOfType<MapManager>();
         }
 
         void Update()

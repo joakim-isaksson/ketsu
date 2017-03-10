@@ -12,12 +12,11 @@ namespace Ketsu.UI
         void Awake()
         {
             ketsuPowerText = GetComponent<Text>();
-            charHandler = FindObjectOfType<CharacterHandler>();
         }
 
         void Start()
         {
-
+            charHandler = FindObjectOfType<CharacterHandler>();
         }
 
         void Update()

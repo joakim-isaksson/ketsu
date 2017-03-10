@@ -24,14 +24,14 @@ namespace Ketsu.Game
 
 		void Awake()
 		{
-            charHandler = FindObjectOfType<CharacterHandler>();
-			mapManager = FindObjectOfType<MapManager>();
+            
         }
 
 		void Start()
 		{
-			
-		}
+            charHandler = FindObjectOfType<CharacterHandler>();
+            mapManager = FindObjectOfType<MapManager>();
+        }
 
 		void Update()
 		{

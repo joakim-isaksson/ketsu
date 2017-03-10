@@ -41,13 +41,14 @@ namespace Ketsu.Game
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
-            mapManager = FindObjectOfType<MapManager>();
         }
 
 		void Start()
 		{
-			// Find characters
-			foreach (Character character in FindObjectsOfType<Character>())
+            mapManager = FindObjectOfType<MapManager>();
+
+            // Find characters
+            foreach (Character character in FindObjectsOfType<Character>())
 			{
 				switch (character.Type)
 				{
