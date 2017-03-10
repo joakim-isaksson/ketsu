@@ -9,31 +9,31 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1761217697059458}
+  m_RootGameObject: {fileID: 1726661463585862}
   m_IsPrefabParent: 1
---- !u!1 &1761217697059458
+--- !u!1 &1726661463585862
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4412001448070704}
-  - component: {fileID: 114867928268239102}
-  - component: {fileID: 114726043710525284}
+  - component: {fileID: 4163703725206078}
+  - component: {fileID: 114259403769193206}
+  - component: {fileID: 114931653363788014}
   m_Layer: 0
-  m_Name: CharacterController
+  m_Name: CharacterManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4412001448070704
+--- !u!4 &4163703725206078
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1761217697059458}
+  m_GameObject: {fileID: 1726661463585862}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,12 +41,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114726043710525284
+--- !u!114 &114259403769193206
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1761217697059458}
+  m_GameObject: {fileID: 1726661463585862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16c2f32e8b62d944ab849e4215e39cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UseSwiping: 0
+  DragDistance: 0.15
+  UseTapping: 1
+  UseRelativeTap: 0
+  TapLayer:
+    serializedVersion: 2
+    m_Bits: 16
+  AllowCharacterSelection: 0
+--- !u!114 &114931653363788014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1726661463585862}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0553abe2432290046ada6ec73c18a77f, type: 3}
@@ -63,17 +82,3 @@ MonoBehaviour:
   TrainsformToKetsuSfx: Transform_ToKetsu
   SplitKetsuSfx: Transform_FromKetsu
   ActiveCharacter: {fileID: 0}
---- !u!114 &114867928268239102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1761217697059458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f16c2f32e8b62d944ab849e4215e39cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DragDistance: 0.15
-  UseRelativeTap: 0
-  AllowCharacterSelection: 0

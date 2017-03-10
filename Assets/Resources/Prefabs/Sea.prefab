@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4607804979664640}
   - component: {fileID: 33018730498696778}
   - component: {fileID: 23307598641660684}
-  m_Layer: 0
+  - component: {fileID: 65083963897570604}
+  m_Layer: 4
   m_Name: Sea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222896966679206}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 8, y: 0, z: 6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -80,3 +81,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222896966679206}
   m_Mesh: {fileID: 4300000, guid: 4652ff9111fe85b4c801f45d27da3800, type: 3}
+--- !u!65 &65083963897570604
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222896966679206}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40, y: 2.8198528, z: 40}
+  m_Center: {x: 0, y: -2.1449804, z: 0}
