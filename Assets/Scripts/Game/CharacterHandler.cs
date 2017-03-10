@@ -196,8 +196,9 @@ namespace Ketsu.Game
                 MapObject activeBlocker = active.GetBlocking(activePos);
                 MapObject otherBlocker = other != null ? other.GetBlocking(otherPos) : null;
 
-                if ((activeBlocker != null && activeBlocker.Type == active.Type) ||
-                    (other != null && Vector3.Distance(activePos, otherPos) < 0.001f))
+                if (other != null &&
+                    ((activeBlocker != null && activeBlocker.Type == other.Type) ||
+                    (activeBlocker == null && activePos.Equals(otherPos))))
                 {
                     // Turn to ketsu
                     TransformToKetsu(activePos, active, other);
@@ -293,10 +294,10 @@ namespace Ketsu.Game
         public void SplitKetsu(Vector3 targetPos)
         {
             Character active = beforeKetsu;
-            Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
+            Character other = active.Type == MapObjectType.Fox ? wolf : fox;
 
             Vector3 activePos = targetPos;
-            Vector3 otherPos = VectorUtils.Mirror(targetPos, ketsu.transform.position);
+            Vector3 otherPos = VectorUtils.Mirror(activePos, ketsu.transform.position);
 
             // Check blockers
             MapObject activeBlocker = active.GetBlocking(activePos);

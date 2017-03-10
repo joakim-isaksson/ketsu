@@ -193,7 +193,7 @@ MonoBehaviour:
   Layer: 1
   NotBlockedBy: 
   CanMove: 1
-  MovementSpeed: 1
+  MovementSpeed: 0.8
   MovementType: 1
   CanBeConsumed: 1
   GivesKetsuPower: 3
