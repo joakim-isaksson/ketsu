@@ -34,6 +34,8 @@ namespace AK
         static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
+        static const AkUniqueID PLAY_MENUMUSIC = 2570041344U;
+        static const AkUniqueID PLAY_W1_INGAMEMUSIC = 358982595U;
         static const AkUniqueID POPOPMENU_SETTINGS_BUTTON = 323011021U;
         static const AkUniqueID POPUPMENU_BACK_BUTTON = 3094295669U;
         static const AkUniqueID POPUPMENU_MAINMENU_BUTTON = 3215618068U;

@@ -42,6 +42,8 @@
 				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Move\Move_Hedgehog"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
+				<Event Id="358982595" Name="Play_W1_InGameMusic" ObjectPath="\Events\Music\InGameMusic\World1\Play_W1_InGameMusic"/>
 				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
 				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
 				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
@@ -75,9 +77,17 @@
 					<ShortName>GUI_Settings_Button.wav</ShortName>
 					<Path>SFX\GUI_Settings_Button_D124CA2C.wem</Path>
 				</File>
+				<File Id="105616402" Language="SFX">
+					<ShortName>MenuMusic_Draft_01.wav</ShortName>
+					<Path>SFX\MenuMusic_Draft_01_388A97B6.wem</Path>
+				</File>
 				<File Id="117800326" Language="SFX">
 					<ShortName>GUI_PowerUp_Crystal_Button.wav</ShortName>
 					<Path>SFX\GUI_PowerUp_Crystal_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="136273710" Language="SFX">
+					<ShortName>LevelMusic_W1_Loop1.wav</ShortName>
+					<Path>SFX\LevelMusic_W1_Loop1_D124CA2C.wem</Path>
 				</File>
 				<File Id="139884733" Language="SFX">
 					<ShortName>Fox_Death_Water_02.wav</ShortName>
@@ -202,10 +212,6 @@
 				<File Id="704131998" Language="SFX">
 					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem</Path>
-				</File>
-				<File Id="735302778" Language="SFX">
-					<ShortName>Transform_ToKetsu-002.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu-002_D124CA2C.wem</Path>
 				</File>
 				<File Id="754253463" Language="SFX">
 					<ShortName>GUI_Split_Active.wav</ShortName>

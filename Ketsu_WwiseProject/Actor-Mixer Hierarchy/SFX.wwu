@@ -92,25 +92,6 @@
 										<ActiveSource Name="Transform_ToKetsu-001" ID="{66EB2921-2B57-4298-AFAF-BCDB37568CA8}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Transform_ToKetsu-002" ID="{B6020A22-D09A-4BEB-83FA-C3FFF01C8321}" ShortID="50654713" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Transform_ToKetsu-002" ID="{2078E789-E6A3-490D-8A7F-C8A9A2B176D2}" ShortID="735302778">
-											<Language>SFX</Language>
-											<AudioFile>Transform_ToKetsu-002.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Transform_ToKetsu-002" ID="{2078E789-E6A3-490D-8A7F-C8A9A2B176D2}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<Sound Name="Transform_FromKetsu" ID="{F157BB9E-668F-4993-9677-3E07AD454259}" ShortID="368762413" Type="SoundFX">

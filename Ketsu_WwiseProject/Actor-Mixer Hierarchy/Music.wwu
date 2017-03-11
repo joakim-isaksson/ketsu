@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}" SchemaVersion="75">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="MenuMusic" ID="{F54B5F74-A35B-4403-958B-03E616F42556}" ShortID="188209533">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="MenuMusic_Draft_01" ID="{3807E32A-D52C-4170-AF0B-807346FE383A}" ShortID="58827147" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="MenuMusic_Draft_01" ID="{6FD03763-BE7E-42AB-88F8-EE9BA3C3B698}" ShortID="105616402">
+									<Language>SFX</Language>
+									<AudioFile>MenuMusic_Draft_01.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="MenuMusic_Draft_01" ID="{6FD03763-BE7E-42AB-88F8-EE9BA3C3B698}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="InGameMusic" ID="{BEFF9FB4-6A42-4A2A-95EC-6D4DB24DAAD2}" ShortID="760846993">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="World1" ID="{802A86A0-59E9-41CB-BAED-2FE9F8C473A7}" ShortID="1840600">
+							<ChildrenList>
+								<Sound Name="LevelMusic_W1_Loop1" ID="{D905D3FF-BD11-457A-8BA9-C3EFEA2B2DB7}" ShortID="259061283" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="LevelMusic_W1_Loop1" ID="{A80ECC53-F1FA-4619-B738-38FE1B5202CA}" ShortID="136273710">
+											<Language>SFX</Language>
+											<AudioFile>LevelMusic_W1_Loop1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="LevelMusic_W1_Loop1" ID="{A80ECC53-F1FA-4619-B738-38FE1B5202CA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Stingers" ID="{2EEB409D-CC84-4278-A089-289580CFAB65}" ShortID="76939329">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

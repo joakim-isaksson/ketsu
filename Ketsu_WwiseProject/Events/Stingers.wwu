@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EE289F33-0501-43C4-A56C-585ADB71ED7C}" SchemaVersion="75" RootDocumentID="{C489545F-5A31-4916-ADCB-890D56845F59}">
+	<Events>
+		<WorkUnit Name="Stingers" ID="{EE289F33-0501-43C4-A56C-585ADB71ED7C}" OwnerID="{C489545F-5A31-4916-ADCB-890D56845F59}" PersistMode="Nested"/>
+	</Events>
+</WwiseDocument>

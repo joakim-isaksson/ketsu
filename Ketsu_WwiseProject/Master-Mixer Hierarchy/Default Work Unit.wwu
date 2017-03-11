@@ -5,7 +5,15 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<ChildrenList>
-						<Bus Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}"/>
+						<Bus Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+						</Bus>
 						<Bus Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}">
 							<ChildrenList>
 								<Bus Name="UI" ID="{52C4E2D9-4E8B-4D75-B919-F4ED9CCB1CC2}"/>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C489545F-5A31-4916-ADCB-890D56845F59}" SchemaVersion="75">
+	<Events>
+		<WorkUnit Name="Music" ID="{C489545F-5A31-4916-ADCB-890D56845F59}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="MenuMusic" ID="{5AA9036D-DAD7-4795-8938-05503628B349}" PersistMode="Reference"/>
+				<WorkUnit Name="InGameMusic" ID="{D2E890A7-A6FF-4BD7-B95C-2444C9CF9AB4}" PersistMode="Reference"/>
+				<WorkUnit Name="Stingers" ID="{EE289F33-0501-43C4-A56C-585ADB71ED7C}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
