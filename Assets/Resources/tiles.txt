@@ -2,6 +2,7 @@
 2 YellowGrass
 3 FlowerGrass
 4 PathGrass
+5 Water
 41 Fence
 42 Tree
 43 Rock
