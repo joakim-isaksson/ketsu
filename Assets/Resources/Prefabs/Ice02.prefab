@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4484716369265672}
   - component: {fileID: 33658415725179790}
   - component: {fileID: 23988163533983640}
+  - component: {fileID: 65069635821804902}
+  - component: {fileID: 114541989039575830}
   m_Layer: 0
   m_Name: Ice02
   m_TagString: Untagged
@@ -79,3 +81,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1860910142974214}
   m_Mesh: {fileID: 4300000, guid: 0a558968b7c346f46985d53d4d4608b0, type: 3}
+--- !u!65 &65069635821804902
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860910142974214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.10000001, z: 0.9}
+  m_Center: {x: 0.014045626, y: 0.08, z: 0.011334032}
+--- !u!114 &114541989039575830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860910142974214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 9
+  Layer: 1
+  NotBlockedBy: 

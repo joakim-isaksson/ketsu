@@ -13,12 +13,14 @@ namespace Ketsu.Game
 		[Header("Sounds")]
 		public string SfxMove;
 
-		void Start()
-		{
+        Flasher flasher;
 
-		}
+        void Awake()
+        {
+            flasher = GetComponent<Flasher>();
+        }
 
-		void Awake()
+        void Start()
 		{
 
 		}
@@ -31,7 +33,7 @@ namespace Ketsu.Game
 
         public void TakeDamage(float amount)
 		{
-            Flash(Color.white, 0.05f, 0.05f, 3, null);
+            flasher.Flash(Color.white, 0.05f, 0.05f, 3, null);
         }
 
 		void MoveAnimation(Vector3 target, Action callback)
