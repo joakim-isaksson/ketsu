@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 578f8e8243b32414f8682d7bfa419d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 13
+  Type: 14
   Layer: 1
   NotBlockedBy: 
   CanMove: 1

@@ -9,31 +9,30 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1009225126323564}
+  m_RootGameObject: {fileID: 1001369754078566}
   m_IsPrefabParent: 1
---- !u!1 &1009225126323564
+--- !u!1 &1001369754078566
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4605880954805068}
-  - component: {fileID: 65465561564432598}
-  - component: {fileID: 114715813915292380}
+  - component: {fileID: 4764643396405648}
+  - component: {fileID: 114522281851334256}
   m_Layer: 0
-  m_Name: Water
+  m_Name: Ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4605880954805068
+--- !u!4 &4764643396405648
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009225126323564}
+  m_GameObject: {fileID: 1001369754078566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -41,29 +40,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &65465561564432598
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009225126323564}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 1.4, z: 0.9}
-  m_Center: {x: 0, y: -0.75, z: 0}
---- !u!114 &114715813915292380
+--- !u!114 &114522281851334256
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009225126323564}
+  m_GameObject: {fileID: 1001369754078566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Script: {fileID: 11500000, guid: b2a0d9ce0ce80c34facf87f353fb339f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 16
-  Layer: 1
-  NotBlockedBy: 
+  Replacements:
+  - Object: {fileID: 1493750848770268, guid: 5e6f87393513918488f6f6874b7ac751, type: 2}
+    Weight: 1
+  - Object: {fileID: 1860910142974214, guid: 51d934c86e9053a4a80fa7b9e52dc0a8, type: 2}
+    Weight: 1
+  - Object: {fileID: 1003177710069766, guid: 41117cec0c60b0f48a112905174d14e0, type: 2}
+    Weight: 1

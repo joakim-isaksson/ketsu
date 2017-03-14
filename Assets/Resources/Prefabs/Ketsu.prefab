@@ -151,9 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8912a29189d441e458bbf47f6913c12c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 10
+  Type: 11
   Layer: 1
-  NotBlockedBy: 01000000080000000d00000011000000
+  NotBlockedBy: 01000000080000000e00000012000000
   MoveAnimTime: 0.05
   SfxMove: Move_Ketsu
 --- !u!114 &114867246324037630

@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0bcf72c158122f44af153b2d4a29990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 17
+  Type: 18
   Layer: 1
   NotBlockedBy: 
-  ForType: 16
+  ForType: 17
   Occupants: 0
