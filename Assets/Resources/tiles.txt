@@ -14,10 +14,13 @@
 43 Rock
 44 Bush
 61 FenceCorner
-64 BigTree
-65 BigTree
-74 BigTree
-75 BigTree
+62 Tree01-01
+63 Tree01-02
+64 Tree01-03
+65 Tree01-04
+66 Tree02
+67 Tree03
+68 Tree04
 81 Mountain
 82 Mountain
 83 Mountain
