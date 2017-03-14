@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4605880954805068}
-  - component: {fileID: 33084195595340222}
   - component: {fileID: 23695199226915858}
   - component: {fileID: 65465561564432598}
   - component: {fileID: 114715813915292380}
@@ -75,13 +74,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33084195595340222
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1009225126323564}
-  m_Mesh: {fileID: 4300000, guid: 744bd792e54842b419019bd971f70e99, type: 3}
 --- !u!65 &65465561564432598
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -105,6 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Type: 15
+  Type: 16
   Layer: 1
   NotBlockedBy: 
