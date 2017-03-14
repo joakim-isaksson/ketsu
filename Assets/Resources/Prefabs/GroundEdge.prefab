@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65377272494630306}
   - component: {fileID: 114299286412708898}
   m_Layer: 0
-  m_Name: GroundEdge01
+  m_Name: GroundEdge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
