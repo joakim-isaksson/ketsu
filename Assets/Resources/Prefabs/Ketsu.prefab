@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4117673036346218}
   - component: {fileID: 65320538876839030}
   - component: {fileID: 54344172362542390}
+  - component: {fileID: 114867246324037630}
   - component: {fileID: 114768627253800552}
   m_Layer: 0
   m_Name: Ketsu
@@ -155,3 +156,14 @@ MonoBehaviour:
   NotBlockedBy: 01000000080000000d00000011000000
   MoveAnimTime: 0.05
   SfxMove: Move_Ketsu
+--- !u!114 &114867246324037630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194870832127600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7771076b9a546a4db4163cc9d7bdedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

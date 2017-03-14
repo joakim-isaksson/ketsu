@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65465561564432598}
   - component: {fileID: 114715813915292380}
   m_Layer: 0
-  m_Name: GroundCorner
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

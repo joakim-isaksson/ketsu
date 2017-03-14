@@ -1,5 +1,6 @@
 ﻿namespace Ketsu.Game
 {
+    // ADD NEW THINGS ONLY TO THE END OF THIS LIST
 	public enum MapObjectType
 	{
 		Bush,
@@ -12,6 +13,7 @@
 		Grass,
 		Hedgehog,
 		Ice,
+        Island,
 		Ketsu,
 		Mud,
 		Rock,

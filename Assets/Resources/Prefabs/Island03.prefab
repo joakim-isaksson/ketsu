@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4672304564869336}
   - component: {fileID: 33948786570149068}
   - component: {fileID: 23786489845846660}
+  - component: {fileID: 65257153701333192}
+  - component: {fileID: 114935554686423632}
   m_Layer: 0
   m_Name: Island03
   m_TagString: Untagged
@@ -80,3 +82,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1716405700002060}
   m_Mesh: {fileID: 4300000, guid: 06f80cd50ff0187478b743c1a2be5230, type: 3}
+--- !u!65 &65257153701333192
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716405700002060}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 1.4, z: 0.9}
+  m_Center: {x: 0, y: -0.75000006, z: 0}
+--- !u!114 &114935554686423632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1716405700002060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 10
+  Layer: 0
+  NotBlockedBy: 

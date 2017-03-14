@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4499541827503902}
   - component: {fileID: 65552380918305154}
   - component: {fileID: 54742872313285282}
+  - component: {fileID: 114885060924354578}
   - component: {fileID: 114467616133965978}
   m_Layer: 0
   m_Name: Fox
@@ -156,3 +157,14 @@ MonoBehaviour:
   NotBlockedBy: 0100000006000000080000000a0000000d000000
   MoveAnimTime: 0.1
   SfxMove: Move_Fox
+--- !u!114 &114885060924354578
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132147270716104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7771076b9a546a4db4163cc9d7bdedf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
