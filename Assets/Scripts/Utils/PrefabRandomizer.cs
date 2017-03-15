@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Ketsu.Game;
+using System.Linq;
 
 public class PrefabRandomizer : MonoBehaviour {
-
-	// Use this for initialization
 	void Start () {
 		if(gameObject.GetComponent<MapObject>().Type == MapObjectType.Tree ||
 			gameObject.GetComponent<MapObject>().Type == MapObjectType.Bush){
@@ -14,10 +13,22 @@ public class PrefabRandomizer : MonoBehaviour {
 			Vector3 pos = gameObject.transform.position;
 			gameObject.transform.position = new Vector3(pos.x+Random.Range(0.0f, 0.2f), pos.y, pos.z+Random.Range(0.0f, 0.2f));
 		}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+		if(gameObject.transform.name.Substring(0,10) == "GroundEdge"){
+			GameObject[] prefabs = Resources.LoadAll("Prefabs", typeof(GameObject)).Cast<GameObject>().ToArray();
+			List<GameObject> edges = new List<GameObject>();
+			foreach (GameObject p in prefabs){
+				if(p.transform.name.StartsWith("GroundEdge")){
+					Debug.Log(p.transform.name);
+					edges.Add(p);
+				}
+			} 
+			Vector3 pos = gameObject.transform.position;
+			Quaternion rot = gameObject.transform.rotation;
+			Transform parent = gameObject.transform.parent;
+			Destroy(gameObject);
+			GameObject item = Instantiate(edges[Random.Range(0, edges.Count)], pos, rot);
+			item.transform.parent = parent;
+
+		}
 	}
 }
