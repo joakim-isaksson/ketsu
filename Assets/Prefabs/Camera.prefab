@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 92481393940438192}
   - component: {fileID: 124027053681842028}
   - component: {fileID: 114803714227317712}
+  - component: {fileID: 114587505095214284}
   m_Layer: 0
   m_Name: MainCamera
   m_TagString: MainCamera
@@ -177,6 +178,17 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114587505095214284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348973998000544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde98d17fc2d94088a9e7c831a5d6616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114803714227317712
 MonoBehaviour:
   m_ObjectHideFlags: 1

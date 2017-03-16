@@ -8,7 +8,7 @@ public class PrefabRandomizer : MonoBehaviour {
 	void Randomize(GameObject item, Vector3 pos, Quaternion rot){
 		float rnd = Random.Range(0.8f, 1.2f);
 		item.transform.localScale = new Vector3(rnd, rnd, rnd);
-		item.transform.position = new Vector3(pos.x+Random.Range(0.0f, 0.2f), pos.y, pos.z+Random.Range(0.0f, 0.2f));
+		item.transform.position = new Vector3(pos.x+Random.Range(0.0f, 0.1f), pos.y, pos.z+Random.Range(0.0f, 0.1f));
 		item.transform.rotation = Quaternion.Euler(rot.x, rot.y+Random.Range(0,90), rot.z);
 	}
 
