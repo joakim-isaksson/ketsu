@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33903622349895320}
   - component: {fileID: 23342127558879278}
   - component: {fileID: 114584166899598942}
-  - component: {fileID: 114470504309767428}
+  - component: {fileID: 114214413798678710}
   m_Layer: 0
   m_Name: Bush
   m_TagString: Untagged
@@ -82,7 +82,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1472761192554092}
   m_Mesh: {fileID: 4300000, guid: 510065c714c7e2046a99a51694fe837d, type: 3}
---- !u!114 &114470504309767428
+--- !u!114 &114214413798678710
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

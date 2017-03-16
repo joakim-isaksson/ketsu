@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23989132584840458}
   - component: {fileID: 65073800818818606}
   - component: {fileID: 114295625717873492}
+  - component: {fileID: 114466421558138452}
   m_Layer: 0
   m_Name: GroundEdge
   m_TagString: Untagged
@@ -108,3 +109,14 @@ MonoBehaviour:
   Type: 16
   Layer: 1
   NotBlockedBy: 
+--- !u!114 &114466421558138452
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1953462857058150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9eeac84c3cc64c5bbfc309009ce74e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
