@@ -11,7 +11,7 @@
 31 GroundInnerCorner
 41 Fence
 42 Tree
-43 Stone01
+43 Stone
 44 Bush
 61 FenceCorner
 62 Tree01-01

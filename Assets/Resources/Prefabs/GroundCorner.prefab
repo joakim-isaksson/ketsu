@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4103922260795182}
   - component: {fileID: 33700498026341034}
   - component: {fileID: 23374138477757322}
+  - component: {fileID: 65889422991929028}
+  - component: {fileID: 114143701953842102}
   m_Layer: 0
   m_Name: GroundCorner
   m_TagString: Untagged
@@ -80,3 +82,29 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1215109331776782}
   m_Mesh: {fileID: 4300000, guid: fa00dcabaa509834ab3ff94708d2ff64, type: 3}
+--- !u!65 &65889422991929028
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215109331776782}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 1.4, z: 0.9}
+  m_Center: {x: 0, y: -0.75, z: 0.000000029802322}
+--- !u!114 &114143701953842102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215109331776782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 16
+  Layer: 1
+  NotBlockedBy: 
