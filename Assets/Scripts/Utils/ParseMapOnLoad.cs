@@ -161,7 +161,7 @@ public class ParseMapOnLoad : MonoBehaviour
 				{
 					for (int j = 0; j < x; j++)
 					{
-						for (int k = 1; k <= 30; k++)
+						for (int k = 1; k <= 31; k++)
 						{
 							int rotation, val;
 							getRotation(entry.Value[y - i - 1, x - j - 1], out rotation, out val);
@@ -186,7 +186,7 @@ public class ParseMapOnLoad : MonoBehaviour
 				{
 					for (int j = 0; j < x; j++)
 					{
-						for (int k = 31; k <= 80; k++)
+						for (int k = 32; k <= 80; k++)
 						{
 							int rotation, val;
 							getRotation(entry.Value[y - i - 1, x - j - 1], out rotation, out val);
