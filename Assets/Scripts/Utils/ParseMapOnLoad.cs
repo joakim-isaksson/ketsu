@@ -186,7 +186,7 @@ public class ParseMapOnLoad : MonoBehaviour
 				{
 					for (int j = 0; j < x; j++)
 					{
-						for (int k = 40; k <= 80; k++)
+						for (int k = 40; k <= 90; k++)
 						{
 							int rotation, val;
 							getRotation(entry.Value[y - i - 1, x - j - 1], out rotation, out val);
