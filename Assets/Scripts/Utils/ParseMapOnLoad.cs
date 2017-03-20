@@ -168,6 +168,7 @@ public class ParseMapOnLoad : MonoBehaviour
 
 							if (prefabs.ContainsKey(k) && k == val)
 							{
+								Debug.Log("Ground stuff: "+k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j + x - 1, 0, i), Quaternion.Euler(0, rotation, 0));
 								item.transform.parent = GroundParent.transform;
 							}
@@ -192,6 +193,7 @@ public class ParseMapOnLoad : MonoBehaviour
 
 							if (prefabs.ContainsKey(k) && k == val)
 							{
+								Debug.Log("Obstacles stuff: "+k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j + x - 1, 0, i), Quaternion.Euler(0, rotation, 0));
 								item.transform.parent = ObstacleParent.transform;
 							}
@@ -217,6 +219,7 @@ public class ParseMapOnLoad : MonoBehaviour
 
 							if (prefabs.ContainsKey(k) && k == val)
 							{
+								Debug.Log("Objects stuff: "+k);
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j + x - 1, 0, i), Quaternion.Euler(0, rotation, 0));
 								item.transform.parent = ObjectParent.transform;
 							}

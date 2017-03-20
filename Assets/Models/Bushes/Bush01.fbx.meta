@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f2944097dccd2a644b84afa4047c6099
-timeCreated: 1488715554
+guid: 510065c714c7e2046a99a51694fe837d
+timeCreated: 1489520265
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.005
+    4300000: Icosphere
   materials:
     importMaterials: 1
     materialName: 0
@@ -38,7 +38,7 @@ ModelImporter:
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
-    swapUVChannels: 0
+    swapUVChannels: 1
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
