@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	358982595	Play_W1_InGameMusic			\Music\InGameMusic\Play_W1_InGameMusic	
+	2570041344	Play_MenuMusic			\Music\MenuMusic\Play_MenuMusic	
+	2908556826	Level_Win			\Music\Stingers\Level_Win	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	105616402	MenuMusic_Draft_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\MenuMusic_Draft_01_388A97B6.wem		\Actor-Mixer Hierarchy\Music\MenuMusic\MenuMusic_Draft_01		6888304
+	136273710	LevelMusic_W1_Loop1	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\LevelMusic_W1_Loop1_D124CA2C.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\World1\LevelMusic_W1_Loop1		7541128
+	501425487	Level_Win	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Level_Win_D124CA2C.wem		\Actor-Mixer Hierarchy\SFX\Level\Level_Win		117928
+

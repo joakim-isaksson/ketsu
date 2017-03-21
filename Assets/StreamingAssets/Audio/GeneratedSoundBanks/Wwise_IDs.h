@@ -30,6 +30,10 @@ namespace AK
         static const AkUniqueID LEVEL_WIN = 2908556826U;
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_BUTTON = 3773943064U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_BUTTON = 1513439813U;
+        static const AkUniqueID MAP_ENV_BEES = 240649815U;
+        static const AkUniqueID MAP_ENV_TREES = 2765779595U;
+        static const AkUniqueID MAP_ENV_WATER = 1268163525U;
+        static const AkUniqueID MAP_ENV_WIND = 1481187546U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
         static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
@@ -65,6 +69,7 @@ namespace AK
     {
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID MAIN_SOUNDBANK = 2228651116U;
+        static const AkUniqueID MUSIC_SOUNDBANK = 3589812408U;
     } // namespace BANKS
 
     namespace BUSSES

@@ -35,15 +35,16 @@
 				<Event Id="3275066385" Name="GUI_Sheep_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Sheep_Button"/>
 				<Event Id="841337824" Name="GUI_Split_Active" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Active"/>
 				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
-				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\SFX\Level_Win"/>
 				<Event Id="3773943064" Name="LevelMenu_LockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button"/>
 				<Event Id="1513439813" Name="LevelMenu_UnlockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button"/>
+				<Event Id="240649815" Name="Map_Env_Bees" ObjectPath="\Events\World\Map_Env\Map_Env_Bees"/>
+				<Event Id="2765779595" Name="Map_Env_Trees" ObjectPath="\Events\World\Map_Env\Map_Env_Trees"/>
+				<Event Id="1268163525" Name="Map_Env_Water" ObjectPath="\Events\World\Map_Env\Map_Env_Water"/>
+				<Event Id="1481187546" Name="Map_Env_Wind" ObjectPath="\Events\World\Map_Env\Map_Env_Wind"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Move\Move_Hedgehog"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
-				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
-				<Event Id="358982595" Name="Play_W1_InGameMusic" ObjectPath="\Events\Music\InGameMusic\World1\Play_W1_InGameMusic"/>
 				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
 				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
 				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
@@ -77,17 +78,9 @@
 					<ShortName>GUI_Settings_Button.wav</ShortName>
 					<Path>SFX\GUI_Settings_Button_D124CA2C.wem</Path>
 				</File>
-				<File Id="105616402" Language="SFX">
-					<ShortName>MenuMusic_Draft_01.wav</ShortName>
-					<Path>SFX\MenuMusic_Draft_01_388A97B6.wem</Path>
-				</File>
 				<File Id="117800326" Language="SFX">
 					<ShortName>GUI_PowerUp_Crystal_Button.wav</ShortName>
 					<Path>SFX\GUI_PowerUp_Crystal_Button_D124CA2C.wem</Path>
-				</File>
-				<File Id="136273710" Language="SFX">
-					<ShortName>LevelMusic_W1_Loop1.wav</ShortName>
-					<Path>SFX\LevelMusic_W1_Loop1_D124CA2C.wem</Path>
 				</File>
 				<File Id="139884733" Language="SFX">
 					<ShortName>Fox_Death_Water_02.wav</ShortName>
@@ -108,6 +101,14 @@
 				<File Id="231051959" Language="SFX">
 					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="233025598" Language="SFX">
+					<ShortName>Map_Env_TreeCrackling.wav</ShortName>
+					<Path>SFX\Map_Env_TreeCrackling_388A97B6.wem</Path>
+				</File>
+				<File Id="240153091" Language="SFX">
+					<ShortName>Map_Env_WaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_WaterStream_388A97B6.wem</Path>
 				</File>
 				<File Id="245242611" Language="SFX">
 					<ShortName>Toolbox_Collect_SpaceshipPart.wav</ShortName>
@@ -153,13 +154,13 @@
 					<ShortName>GUI_Split_Release.wav</ShortName>
 					<Path>SFX\GUI_Split_Release_D124CA2C.wem</Path>
 				</File>
+				<File Id="468403475" Language="SFX">
+					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
+					<Path>SFX\Map_Env_BeesOnFlowers_388A97B6.wem</Path>
+				</File>
 				<File Id="489506376" Language="SFX">
 					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Store_Button_D124CA2C.wem</Path>
-				</File>
-				<File Id="501425487" Language="SFX">
-					<ShortName>Level_Win.wav</ShortName>
-					<Path>SFX\Level_Win_D124CA2C.wem</Path>
 				</File>
 				<File Id="503244186" Language="SFX">
 					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
@@ -257,6 +258,10 @@
 					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Logo_Button_D124CA2C.wem</Path>
 				</File>
+				<File Id="1024009096" Language="SFX">
+					<ShortName>Map_Env_MediumWind.wav</ShortName>
+					<Path>SFX\Map_Env_MediumWind_388A97B6.wem</Path>
+				</File>
 				<File Id="1040587393" Language="SFX">
 					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Next_Button_D124CA2C.wem</Path>
@@ -264,6 +269,30 @@
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Water_01_D124CA2C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="3589812408" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_Soundbank</ObjectPath>
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\Music\Stingers\Level_Win"/>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
+				<Event Id="358982595" Name="Play_W1_InGameMusic" ObjectPath="\Events\Music\InGameMusic\Play_W1_InGameMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="105616402" Language="SFX">
+					<ShortName>MenuMusic_Draft_01.wav</ShortName>
+					<Path>SFX\MenuMusic_Draft_01_388A97B6.wem</Path>
+				</File>
+				<File Id="136273710" Language="SFX">
+					<ShortName>LevelMusic_W1_Loop1.wav</ShortName>
+					<Path>SFX\LevelMusic_W1_Loop1_D124CA2C.wem</Path>
+				</File>
+				<File Id="501425487" Language="SFX">
+					<ShortName>Level_Win.wav</ShortName>
+					<Path>SFX\Level_Win_D124CA2C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

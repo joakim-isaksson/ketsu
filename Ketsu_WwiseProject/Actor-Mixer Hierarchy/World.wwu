@@ -1,6 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}" SchemaVersion="75">
 	<AudioObjects>
-		<WorkUnit Name="World" ID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}" PersistMode="Standalone"/>
+		<WorkUnit Name="World" ID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Map_Env" ID="{44183AC8-58E3-42DA-ADC8-F4AE5BC902E2}" ShortID="217740478">
+					<ChildrenList>
+						<Sound Name="Map_Env_BeesOnFlowers" ID="{CCCFA249-867B-4138-B70D-B8543B5BC326}" ShortID="625500878" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_BeesOnFlowers" ID="{0E5D92F5-8EF2-42B8-8769-9AC9FE8D3046}" ShortID="468403475">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_BeesOnFlowers.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{0E5D92F5-8EF2-42B8-8769-9AC9FE8D3046}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Map_Env_MediumWind" ID="{FAE0506D-C95D-4F7E-9D2D-A078AF83E8A5}" ShortID="650095156" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_MediumWind" ID="{E65BCA9D-DE48-4DFF-BAA3-ABD718C3A62F}" ShortID="1024009096">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_MediumWind.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_MediumWind" ID="{E65BCA9D-DE48-4DFF-BAA3-ABD718C3A62F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Map_Env_TreeCrackling" ID="{162D2FE9-7EAB-41C4-85E5-683E0EAC242D}" ShortID="588492748" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_TreeCrackling" ID="{B4881AEA-A0EA-4828-81D1-F8688165A057}" ShortID="233025598">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_TreeCrackling.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_TreeCrackling" ID="{B4881AEA-A0EA-4828-81D1-F8688165A057}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Map_Env_WaterStream" ID="{4DE7EBCA-505B-4BE1-BA1E-CAFA4691243F}" ShortID="316084777" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_WaterStream" ID="{C4122D64-571C-4F8D-8037-9AABC5E21CA2}" ShortID="240153091">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_WaterStream.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_WaterStream" ID="{C4122D64-571C-4F8D-8037-9AABC5E21CA2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

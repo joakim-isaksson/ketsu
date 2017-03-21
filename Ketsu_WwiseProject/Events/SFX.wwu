@@ -47,17 +47,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}">
-					<ChildrenList>
-						<Action Name="Play" ID="{93975E0C-F2E5-41E8-A042-FBBB5708B347}" ShortID="260633763" Type="Play" Scope="One" Global="false">
-							<ElementList>
-								<Element ID="{D0B77C6E-C6D3-4726-9152-8276B4D78E2F}" Global="false">
-									<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
-								</Element>
-							</ElementList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
