@@ -5,6 +5,7 @@ using Ketsu.Game;
 using System.Linq;
 
 public class PrefabRandomizer : MonoBehaviour {
+
 	void Randomize(GameObject item, Vector3 pos, Quaternion rot){
 		float rnd = Random.Range(0.8f, 1.2f);
 		item.transform.localScale = new Vector3(rnd, rnd, rnd);
@@ -12,41 +13,35 @@ public class PrefabRandomizer : MonoBehaviour {
 		item.transform.rotation = Quaternion.Euler(rot.x, rot.y+Random.Range(0,90), rot.z);
 	}
 
+	void RandomPrefab(GameObject orig, Vector3 pos, Quaternion rot, Transform parent, string name){
+			GameObject[] list = Resources.LoadAll("Prefabs", typeof(GameObject)).Cast<GameObject>().ToArray();
+			List<GameObject> prefabs = new List<GameObject>();
+			foreach (GameObject p in list){
+				if(p.transform.name.StartsWith(name)){
+					prefabs.Add(p);
+				}
+			} 
+			Destroy(orig);
+			GameObject item = Instantiate(prefabs[Random.Range(0, prefabs.Count)], pos, rot);
+			item.transform.parent = parent;
+	}
+
 	void Start () {
+		string name = gameObject.transform.name;
+
 		if(gameObject.GetComponent<MapObject>().Type == MapObjectType.Tree ||
 			gameObject.GetComponent<MapObject>().Type == MapObjectType.Bush){
 			Vector3 pos = gameObject.transform.position;
 			Quaternion rot = gameObject.transform.rotation;
 			Randomize(gameObject, pos, rot);
 		}
-		if(gameObject.transform.name.Substring(0,10) == "GroundEdge"){
-			GameObject[] prefabs = Resources.LoadAll("Prefabs", typeof(GameObject)).Cast<GameObject>().ToArray();
-			List<GameObject> edges = new List<GameObject>();
-			foreach (GameObject p in prefabs){
-				if(p.transform.name.StartsWith("GroundEdge"))
-					edges.Add(p);
-			} 
+
+		if(name.StartsWith("GroundEdge") || name.StartsWith("Bush") || name.StartsWith("TreeGroup") || name.StartsWith("Ice") || name.StartsWith("Island") || name.StartsWith("Mud") || name.StartsWith("Path")){
+			name = name.Remove(name.IndexOf('('));
 			Vector3 pos = gameObject.transform.position;
 			Quaternion rot = gameObject.transform.rotation;
 			Transform parent = gameObject.transform.parent;
-			Destroy(gameObject);
-			GameObject item = Instantiate(edges[Random.Range(0, edges.Count)], pos, rot);
-			item.transform.parent = parent;
-		}
-		if(gameObject.transform.name.Substring(0,4) == "Bush"){
-			GameObject[] prefabs = Resources.LoadAll("Prefabs", typeof(GameObject)).Cast<GameObject>().ToArray();
-			List<GameObject> edges = new List<GameObject>();
-			foreach (GameObject p in prefabs){
-				if(p.transform.name.StartsWith("Bush"))
-					edges.Add(p);
-			} 
-			Vector3 pos = gameObject.transform.position;
-			Quaternion rot = gameObject.transform.rotation;
-			Transform parent = gameObject.transform.parent;
-			Destroy(gameObject);
-			GameObject item = Instantiate(edges[Random.Range(0, edges.Count)], pos, rot);
-			item.transform.parent = parent;
-			Randomize(item, pos, rot);
+			RandomPrefab(gameObject, pos, rot, parent, name);
 		}
 	}
 }
