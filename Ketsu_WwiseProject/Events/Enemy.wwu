@@ -18,6 +18,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Hit" ID="{3B62C43B-0D21-4498-AFD8-A0370119CA6F}" ShortID="720940460">
+					<ChildrenList>
+						<Event Name="Character_Hit_Hedgehog" ID="{AAC52D94-121D-420D-9C78-74A1CD84D43E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{26BB2601-485C-4C0B-B0ED-56A2E2D7BCE9}" ShortID="897812175" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{F8982696-AEDC-422F-9E5F-4A4C4C4085F3}" Global="false">
+											<ObjectRef Name="Hit_Hedgehog" ID="{56E9DB9B-37CD-42F4-A75F-F9211F677F70}" WorkUnitID="{140CA662-18C2-4251-B8F2-5CAA62F179A5}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

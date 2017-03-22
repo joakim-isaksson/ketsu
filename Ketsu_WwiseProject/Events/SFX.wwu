@@ -47,6 +47,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Level" ID="{4A74E382-EDFC-4024-A900-8E9D4CFAE44E}" ShortID="322833797">
+					<ChildrenList>
+						<Event Name="Character_Hit_Water" ID="{6F0B49E5-A126-41F8-B4E5-0BB936D05F5B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{0499FBC6-EF08-4DCC-B236-B464CF1DD0D1}" ShortID="347149309" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9A27AA02-7A2D-4077-9484-FB2DA6C97988}" Global="false">
+											<ObjectRef Name="Character_Hit_Water" ID="{41353411-FBDB-4162-9D7D-76B7BC12AF70}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

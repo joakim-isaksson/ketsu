@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CHARACTER_HIT_HEDGEHOG = 4257406112U;
+        static const AkUniqueID CHARACTER_HIT_WATER = 287526684U;
         static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
         static const AkUniqueID COLLECT_SHEEP = 30088657U;
         static const AkUniqueID DEATH_FOX_HEDGEHOG = 4193159569U;

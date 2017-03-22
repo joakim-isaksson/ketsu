@@ -21,6 +21,8 @@
 			<ShortName>Main_SoundBank</ShortName>
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4257406112" Name="Character_Hit_Hedgehog" ObjectPath="\Events\Enemy\Hit\Character_Hit_Hedgehog"/>
+				<Event Id="287526684" Name="Character_Hit_Water" ObjectPath="\Events\SFX\Level\Character_Hit_Water"/>
 				<Event Id="1004812793" Name="Collect_Chicken" ObjectPath="\Events\SFX\Collect_Chicken"/>
 				<Event Id="30088657" Name="Collect_Sheep" ObjectPath="\Events\SFX\Collect_Sheep"/>
 				<Event Id="4193159569" Name="Death_Fox_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Fox_Hedgehog"/>
@@ -134,6 +136,10 @@
 					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuPowerUp_D124CA2C.wem</Path>
 				</File>
+				<File Id="440588258" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_03.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_03_D124CA2C.wem</Path>
+				</File>
 				<File Id="449358139" Language="SFX">
 					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Store_Button_D124CA2C.wem</Path>
@@ -178,6 +184,10 @@
 					<ShortName>Fox_Death_Water_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_01_D124CA2C.wem</Path>
 				</File>
+				<File Id="514221431" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_02.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_02_D124CA2C.wem</Path>
+				</File>
 				<File Id="544687860" Language="SFX">
 					<ShortName>Toolbox_Collect_Coins.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_Coins_D124CA2C.wem</Path>
@@ -214,9 +224,17 @@
 					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem</Path>
 				</File>
+				<File Id="746631363" Language="SFX">
+					<ShortName>Character_Hit_Water_02.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_02_D124CA2C.wem</Path>
+				</File>
 				<File Id="754253463" Language="SFX">
 					<ShortName>GUI_Split_Active.wav</ShortName>
 					<Path>SFX\GUI_Split_Active_D124CA2C.wem</Path>
+				</File>
+				<File Id="761651896" Language="SFX">
+					<ShortName>Character_Hit_Water_01.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_01_D124CA2C.wem</Path>
 				</File>
 				<File Id="762418288" Language="SFX">
 					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
@@ -250,6 +268,10 @@
 					<ShortName>Transform_FromKetsu.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_D124CA2C.wem</Path>
 				</File>
+				<File Id="945667667" Language="SFX">
+					<ShortName>Character_Hit_Water_03.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_03_D124CA2C.wem</Path>
+				</File>
 				<File Id="962930836" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuMaxPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuMaxPowerUp_D124CA2C.wem</Path>
@@ -261,6 +283,10 @@
 				<File Id="1024009096" Language="SFX">
 					<ShortName>Map_Env_MediumWind.wav</ShortName>
 					<Path>SFX\Map_Env_MediumWind_388A97B6.wem</Path>
+				</File>
+				<File Id="1038935475" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_01_D124CA2C.wem</Path>
 				</File>
 				<File Id="1040587393" Language="SFX">
 					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
