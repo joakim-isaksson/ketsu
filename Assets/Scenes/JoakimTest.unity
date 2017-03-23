@@ -135,6 +135,11 @@ Prefab:
       propertyPath: basePath
       value: Audio\GeneratedSoundBanks
       objectReference: {fileID: 0}
+    - target: {fileID: 114710773606457824, guid: 6392668a503009d40ad2b387fd3ffe47,
+        type: 2}
+      propertyPath: bankName
+      value: InGame_SoundBank
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
   m_IsPrefabParent: 0
