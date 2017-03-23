@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4563776289213192}
   - component: {fileID: 33920905088619840}
   - component: {fileID: 23107487123258950}
+  - component: {fileID: 114100212819549410}
   m_Layer: 0
-  m_Name: TreeTrunkFloating
+  m_Name: TreeTrunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -80,3 +81,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1531086976904170}
   m_Mesh: {fileID: 4300000, guid: 9011f49ae0b1d984fa00871a3b82378a, type: 3}
+--- !u!114 &114100212819549410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1531086976904170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  Layer: 0
+  NotBlockedBy: 
