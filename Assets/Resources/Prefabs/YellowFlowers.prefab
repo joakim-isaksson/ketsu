@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4658876442886064}
   - component: {fileID: 65905824350448968}
   - component: {fileID: 114316404816262386}
+  - component: {fileID: 114741113079954642}
   m_Layer: 0
   m_Name: YellowFlowers
   m_TagString: Untagged
@@ -207,3 +208,14 @@ MonoBehaviour:
   Type: 4
   Layer: 0
   NotBlockedBy: 
+--- !u!114 &114741113079954642
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787174405307388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9eeac84c3cc64c5bbfc309009ce74e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 65054543501597342}
   - component: {fileID: 114847358831523692}
   m_Layer: 0
-  m_Name: FlowerGrass03
+  m_Name: PinkFlowers03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
