@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4561891343839998}
   - component: {fileID: 33025932743190330}
   - component: {fileID: 23198356044618338}
+  - component: {fileID: 65982819310275532}
   - component: {fileID: 114102662527818236}
   m_Layer: 0
   m_Name: Bush02
@@ -82,6 +83,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1287606947917588}
   m_Mesh: {fileID: 4300000, guid: dbceac5bc46e0ca4990b04020186009f, type: 3}
+--- !u!65 &65982819310275532
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287606947917588}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.42760766, z: 0.9}
+  m_Center: {x: 0, y: 0.23619616, z: 0}
 --- !u!114 &114102662527818236
 MonoBehaviour:
   m_ObjectHideFlags: 1
