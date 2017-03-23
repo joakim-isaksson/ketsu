@@ -1,6 +1,6 @@
 1 Ground
-2 YellowGrass
-3 FlowerGrass
+2 YellowFlowers
+3 PinkFlowers
 4 BridgeMiddle
 5 Water
 6 Island
