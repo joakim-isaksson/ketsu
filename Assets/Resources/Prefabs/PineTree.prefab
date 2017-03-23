@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114206526146961690}
   - component: {fileID: 114801411667251502}
   m_Layer: 0
-  m_Name: Tree
+  m_Name: PineTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,8 +122,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: -98303.09, y: 1.4562143, z: 0.9}
-  m_Center: {x: -49152, y: 0.77, z: 0}
+  m_Size: {x: 0.9, y: 1.893605, z: 0.9}
+  m_Center: {x: 0, y: 0.98596597, z: 0}
 --- !u!114 &114206526146961690
 MonoBehaviour:
   m_ObjectHideFlags: 1

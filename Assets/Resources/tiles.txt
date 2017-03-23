@@ -18,11 +18,10 @@
 44 Bush
 45 TreeTrunkFloating
 51 FenceCorner
-52 Tree
-53 Tree01
-54 Tree02
-55 Tree03
-56 Tree04
+53 PineTree
+54 LeafTree
+55 OldTree
+56 AutumnTree
 81 Mountain
 82 Mountain
 83 Mountain
