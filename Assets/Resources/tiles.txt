@@ -4,7 +4,7 @@
 4 BridgeMiddle
 5 Water
 6 Island
-7 GreenGrass
+7 Grass
 8 Path
 9 Mud
 10 Ice
