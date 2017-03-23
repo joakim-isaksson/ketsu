@@ -180,7 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 1
   Layer: 1
-  NotBlockedBy: 000000000e000000
+  NotBlockedBy: 000000000f000000
   CanMove: 1
   MovementSpeed: 2
   MovementType: 0
