@@ -8,12 +8,11 @@ namespace Ketsu.UI
 {
     public class WinPopup : MonoBehaviour
     {
-        Text winText;
+        public GameObject WinPanel;
         MapManager mapManger;
 
         void Awake()
         {
-			winText = GetComponent<Text>();
         }
 
         void Start()
@@ -23,8 +22,8 @@ namespace Ketsu.UI
 
         void Update()
         {
-			if (mapManger.Solved) winText.enabled = true;
-			else winText.enabled = false;
+			if (mapManger.Solved) WinPanel.SetActive(true);
+			else WinPanel.SetActive(false);
         }
     }
 }
