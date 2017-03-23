@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5e07cd7b61c17c14d9a1008acaf69ea8
-timeCreated: 1490271919
+guid: be1d28c6b8efa3a499b6a0f894976ccb
+timeCreated: 1490195646
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube.006
+    4300000: Icosphere.011
   materials:
     importMaterials: 1
     materialName: 0
@@ -50,8 +50,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 0
-    normalImportMode: 1
+    normalSmoothAngle: 60
+    normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
