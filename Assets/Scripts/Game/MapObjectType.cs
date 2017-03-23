@@ -21,6 +21,7 @@
 		Tree,
 		Water,
 		Wolf,
-		WolfHome
+		WolfHome,
+        Bridge
 	}
 }
