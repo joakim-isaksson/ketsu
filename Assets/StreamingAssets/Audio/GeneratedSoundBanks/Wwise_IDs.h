@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID CHARACTER_HIT_HEDGEHOG = 4257406112U;
         static const AkUniqueID CHARACTER_HIT_WATER = 287526684U;
+        static const AkUniqueID CHICKEN_HIT_BUSH = 1746299433U;
         static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
         static const AkUniqueID COLLECT_SHEEP = 30088657U;
         static const AkUniqueID DEATH_FOX_HEDGEHOG = 4193159569U;
@@ -33,9 +34,10 @@ namespace AK
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_BUTTON = 3773943064U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_BUTTON = 1513439813U;
         static const AkUniqueID MAP_ENV_BEES = 240649815U;
-        static const AkUniqueID MAP_ENV_TREES = 2765779595U;
-        static const AkUniqueID MAP_ENV_WATER = 1268163525U;
-        static const AkUniqueID MAP_ENV_WIND = 1481187546U;
+        static const AkUniqueID MAP_ENV_BIGWATER = 611079635U;
+        static const AkUniqueID MAP_ENV_MEDIUMWIND = 4112863043U;
+        static const AkUniqueID MAP_ENV_SMALLWATER = 782833506U;
+        static const AkUniqueID MAP_ENV_STRONGWIND = 1833815307U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
         static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
@@ -70,7 +72,8 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID MAIN_SOUNDBANK = 2228651116U;
+        static const AkUniqueID INGAME_SOUNDBANK = 4063213932U;
+        static const AkUniqueID MENU_SOUNDBANK = 1146882678U;
         static const AkUniqueID MUSIC_SOUNDBANK = 3589812408U;
     } // namespace BANKS
 

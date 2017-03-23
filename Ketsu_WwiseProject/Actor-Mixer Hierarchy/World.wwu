@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Map_Env" ID="{44183AC8-58E3-42DA-ADC8-F4AE5BC902E2}" ShortID="217740478">
 					<ChildrenList>
-						<Sound Name="Map_Env_BeesOnFlowers" ID="{CCCFA249-867B-4138-B70D-B8543B5BC326}" ShortID="625500878" Type="SoundFX">
+						<Sound Name="Map_Env_BeesOnFlowers" ID="{9D2D2E4F-37EB-4304-9793-69D0A1EB425C}" ShortID="192833468" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -23,21 +23,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Map_Env_BeesOnFlowers" ID="{0E5D92F5-8EF2-42B8-8769-9AC9FE8D3046}" ShortID="468403475">
+								<AudioFileSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" ShortID="787118364">
 									<Language>SFX</Language>
 									<AudioFile>Map_Env_BeesOnFlowers.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{0E5D92F5-8EF2-42B8-8769-9AC9FE8D3046}" Platform="Linked"/>
+								<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Map_Env_MediumWind" ID="{FAE0506D-C95D-4F7E-9D2D-A078AF83E8A5}" ShortID="650095156" Type="SoundFX">
+						<Sound Name="Map_Env_BigWaterStream" ID="{99B5304A-EA6F-4F30-A23B-D9A5D2B8894D}" ShortID="597243356" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -50,21 +50,48 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Map_Env_MediumWind" ID="{E65BCA9D-DE48-4DFF-BAA3-ABD718C3A62F}" ShortID="1024009096">
+								<AudioFileSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" ShortID="737519746">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_BigWaterStream.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Map_Env_MediumWind" ID="{477A19D9-B739-473B-A733-F08BB4643689}" ShortID="65618534" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" ShortID="307788843">
 									<Language>SFX</Language>
 									<AudioFile>Map_Env_MediumWind.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_MediumWind" ID="{E65BCA9D-DE48-4DFF-BAA3-ABD718C3A62F}" Platform="Linked"/>
+								<ActiveSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Map_Env_TreeCrackling" ID="{162D2FE9-7EAB-41C4-85E5-683E0EAC242D}" ShortID="588492748" Type="SoundFX">
+						<Sound Name="Map_Env_SmallWaterStream" ID="{F3CEFD6D-C2C4-4E39-A3BB-A8F3E6C4D649}" ShortID="273080962" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -77,21 +104,21 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Map_Env_TreeCrackling" ID="{B4881AEA-A0EA-4828-81D1-F8688165A057}" ShortID="233025598">
+								<AudioFileSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" ShortID="947826981">
 									<Language>SFX</Language>
-									<AudioFile>Map_Env_TreeCrackling.wav</AudioFile>
+									<AudioFile>Map_Env_SmallWaterStream.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_TreeCrackling" ID="{B4881AEA-A0EA-4828-81D1-F8688165A057}" Platform="Linked"/>
+								<ActiveSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="Map_Env_WaterStream" ID="{4DE7EBCA-505B-4BE1-BA1E-CAFA4691243F}" ShortID="316084777" Type="SoundFX">
+						<Sound Name="Map_Env_StrongWind" ID="{AD3C5A77-115F-4F3C-8715-B3C8F6D99628}" ShortID="87473990" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-30</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -104,13 +131,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Map_Env_WaterStream" ID="{C4122D64-571C-4F8D-8037-9AABC5E21CA2}" ShortID="240153091">
+								<AudioFileSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" ShortID="211612609">
 									<Language>SFX</Language>
-									<AudioFile>Map_Env_WaterStream.wav</AudioFile>
+									<AudioFile>Map_Env_StrongWind.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_WaterStream" ID="{C4122D64-571C-4F8D-8037-9AABC5E21CA2}" Platform="Linked"/>
+								<ActiveSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

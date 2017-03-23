@@ -5,8 +5,8 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Enemy.wwu" DateLow="2016507922" DateHigh="30581488"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="2697864935" DateHigh="30579321"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="2438459614" DateHigh="30581361"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="639499979" DateHigh="30578115"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\World.wwu" DateLow="1189110667" DateHigh="30581295"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="1050529382" DateHigh="30581711"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\World.wwu" DateLow="1463765188" DateHigh="30581717"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1815982974" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1816732184" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1816354387" DateHigh="30573084"/>
@@ -21,18 +21,18 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\Foley.wwu" DateLow="628079231" DateHigh="30574544"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\GUI.wwu" DateLow="2774134292" DateHigh="30578115"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\InGameMusic.wwu" DateLow="2622247169" DateHigh="30581301"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\Menu.wwu" DateLow="3781680507" DateHigh="30577884"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\Menu.wwu" DateLow="1050928872" DateHigh="30581711"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\MenuMusic.wwu" DateLow="2620230752" DateHigh="30579314"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\Music.wwu" DateLow="833869358" DateHigh="30579307"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\SFX.wwu" DateLow="2297523692" DateHigh="30581361"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\Stingers.wwu" DateLow="3470210342" DateHigh="30581292"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\UI.wwu" DateLow="3869624683" DateHigh="30577889"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\World.wwu" DateLow="1365263642" DateHigh="30581295"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Events\World.wwu" DateLow="1464030851" DateHigh="30581717"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1815337393" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1921774885" DateHigh="30574492"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\InGameMusic.wwu" DateLow="4121735701" DateHigh="30579313"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\MenuMusic.wwu" DateLow="4121866040" DateHigh="30579313"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.mikko.wsettings" DateLow="3587360060" DateHigh="30581488"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.mikko.wsettings" DateLow="1527267633" DateHigh="30581717"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.wproj" DateLow="2394051697" DateHigh="30577157"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2770217844" DateHigh="30579321"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1816596812" DateHigh="30573084"/>
@@ -40,7 +40,7 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1816441442" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1816917685" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Queries\Factory Queries.wwu" DateLow="1816812385" DateHigh="30573084"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="2347934824" DateHigh="30581488"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="215696948" DateHigh="30581712"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1816521632" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\States\Default Work Unit.wwu" DateLow="1815139100" DateHigh="30573084"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1814973376" DateHigh="30573084"/>

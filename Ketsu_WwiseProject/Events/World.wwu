@@ -5,12 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Map_Env" ID="{226E6183-C5CF-4D2F-92DB-E0823C1C53C7}" ShortID="722598537">
 					<ChildrenList>
-						<Event Name="Map_Env_Wind" ID="{19ABE46A-A031-4269-8170-CCC1B8029B5F}">
+						<Event Name="Map_Env_MediumWind" ID="{19ABE46A-A031-4269-8170-CCC1B8029B5F}">
 							<ChildrenList>
 								<Action Name="Play" ID="{BAA3CBED-5005-43FB-8888-E032C052817C}" ShortID="1001305664" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{D98E6EDF-1DAE-4863-A658-0596026D35F2}" Global="false">
-											<ObjectRef Name="Map_Env_MediumWind" ID="{FAE0506D-C95D-4F7E-9D2D-A078AF83E8A5}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+											<ObjectRef Name="Map_Env_MediumWind" ID="{477A19D9-B739-473B-A733-F08BB4643689}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -21,29 +21,40 @@
 								<Action Name="Play" ID="{3BD8C174-CA41-43A9-8487-D46C1B6AFD99}" ShortID="212528580" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{8F59EC1E-CC76-45C6-867F-81F4D9E65022}" Global="false">
-											<ObjectRef Name="Map_Env_BeesOnFlowers" ID="{CCCFA249-867B-4138-B70D-B8543B5BC326}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+											<ObjectRef Name="Map_Env_BeesOnFlowers" ID="{9D2D2E4F-37EB-4304-9793-69D0A1EB425C}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Map_Env_Water" ID="{C85EF046-7A29-4CEA-8B49-D8E9BF5B3E5E}">
+						<Event Name="Map_Env_SmallWater" ID="{C85EF046-7A29-4CEA-8B49-D8E9BF5B3E5E}">
 							<ChildrenList>
 								<Action Name="Play" ID="{9BEEF247-7A94-4754-B31A-3B4DE6B8F6AE}" ShortID="503180298" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{44D79681-F84B-45BE-8256-EB46C0CD9F69}" Global="false">
-											<ObjectRef Name="Map_Env_WaterStream" ID="{4DE7EBCA-505B-4BE1-BA1E-CAFA4691243F}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+											<ObjectRef Name="Map_Env_SmallWaterStream" ID="{F3CEFD6D-C2C4-4E39-A3BB-A8F3E6C4D649}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Map_Env_Trees" ID="{3B48BE2B-BF2E-4605-9465-EADC104A376B}">
+						<Event Name="Map_Env_StrongWind" ID="{7A43EAF9-7677-4D29-A4E7-5E20F3A26DBC}">
 							<ChildrenList>
-								<Action Name="Play" ID="{5086F96E-E135-414B-9125-0F8EBDA35742}" ShortID="886333046" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{05FC302C-9253-4D4C-9261-BB6CEDA5B6D7}" ShortID="375172678" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{E109D8FD-8985-41D8-94E1-2C617D0DF2D6}" Global="false">
-											<ObjectRef Name="Map_Env_TreeCrackling" ID="{162D2FE9-7EAB-41C4-85E5-683E0EAC242D}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										<Element ID="{0EAA2721-D02C-47F7-B7D3-E1DEA308C7B4}" Global="false">
+											<ObjectRef Name="Map_Env_StrongWind" ID="{AD3C5A77-115F-4F3C-8715-B3C8F6D99628}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Map_Env_BigWater" ID="{C7F3087A-B7F2-4352-B406-73E0C5DDF14A}">
+							<ChildrenList>
+								<Action Name="Play" ID="{4C5859B6-094B-4AEF-9E82-961218810CF2}" ShortID="903826588" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B40A1560-39AF-4946-BC33-32E4A82642A4}" Global="false">
+											<ObjectRef Name="Map_Env_BigWaterStream" ID="{99B5304A-EA6F-4F30-A23B-D9A5D2B8894D}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>

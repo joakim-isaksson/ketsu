@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{D6A77B06-CF59-4C1C-8A77-5D40D07F0915}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\Enemies"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\SFX"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Android"></Value>
@@ -23,7 +23,7 @@
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="j2NLwKTk00iMAa9hu+Z+EbCpN6rPD0xJjzz3JFYolMCkvuOOa0PdQIuLon+T+N91"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="ZhQrccHUw0ORPSsXDnbmuAEcnwr/////S/D1tJcvnkKwDlObqwesDgEcnwr/////"/>
 				<Property Name="Interactive Music\x64_{595986A2-0856-4361-BF0B-E7219AFB724E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4X0G4KkamxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>

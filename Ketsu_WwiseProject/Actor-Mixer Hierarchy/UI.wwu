@@ -253,86 +253,6 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="WinScreen" ID="{F52A7E50-673A-4048-BA36-C16061250557}" ShortID="173806004">
-							<ChildrenList>
-								<Sound Name="UI_WinScreen_MainMenu_Button" ID="{B4E9A3C2-5B9D-4615-A111-2A6830F770CD}" ShortID="970898646" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" ShortID="231051959">
-											<Language>SFX</Language>
-											<AudioFile>UI_WinScreen_MainMenu_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_WinScreen_Next_Button" ID="{A0538153-6B26-48AF-9E0A-EEA0F20E3C98}" ShortID="1066006647" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" ShortID="1040587393">
-											<Language>SFX</Language>
-											<AudioFile>UI_WinScreen_Next_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_WinScreen_Restart_Button" ID="{3FCB3807-FE82-4113-8B78-C87F5F125207}" ShortID="941179385" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" ShortID="603409939">
-											<Language>SFX</Language>
-											<AudioFile>UI_WinScreen_Restart_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_WinScreen_Store_Button" ID="{15072664-5B30-4582-B993-5665491242F4}" ShortID="784107430" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" ShortID="489506376">
-											<Language>SFX</Language>
-											<AudioFile>UI_WinScreen_Store_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</Folder>
 						<Folder Name="WorldMenu" ID="{87A3C078-6803-435E-BBB8-A40B1CBE75F1}" ShortID="683030043">
 							<ChildrenList>
 								<Sound Name="UI_WorldMenu_LockedWorld_Button" ID="{DFB99B27-1677-465C-9A13-BC43B2D6F1AC}" ShortID="882137390" Type="SoundFX">
@@ -679,6 +599,86 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Toolbox_Open" ID="{4A1D8558-3471-4BFC-ADB2-0AAB82887DA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="WinScreen" ID="{F52A7E50-673A-4048-BA36-C16061250557}" ShortID="173806004">
+							<ChildrenList>
+								<Sound Name="UI_WinScreen_MainMenu_Button" ID="{B4E9A3C2-5B9D-4615-A111-2A6830F770CD}" ShortID="970898646" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" ShortID="231051959">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_MainMenu_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_MainMenu_Button" ID="{3BE76FDC-AA0D-48C0-9079-826F4A789B82}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Next_Button" ID="{A0538153-6B26-48AF-9E0A-EEA0F20E3C98}" ShortID="1066006647" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" ShortID="1040587393">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Next_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Next_Button" ID="{CC7613F7-655A-40D5-B469-3609F9A3910A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Restart_Button" ID="{3FCB3807-FE82-4113-8B78-C87F5F125207}" ShortID="941179385" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" ShortID="603409939">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Restart_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Restart_Button" ID="{74BB7A0E-6F44-42B7-84D6-07DA745669BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_WinScreen_Store_Button" ID="{15072664-5B30-4582-B993-5665491242F4}" ShortID="784107430" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" ShortID="489506376">
+											<Language>SFX</Language>
+											<AudioFile>UI_WinScreen_Store_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_WinScreen_Store_Button" ID="{FB6B504F-A5AE-4650-A31A-6D795D342D9E}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

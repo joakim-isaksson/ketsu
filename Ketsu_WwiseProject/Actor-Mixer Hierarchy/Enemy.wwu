@@ -151,6 +151,137 @@
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="Chicken" ID="{DF4E1E74-19F3-44FD-8C52-EDB49AAE72F8}" ShortID="1000366391">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Hit_Bush" ID="{70C3E4CD-13AE-44EF-BFFA-77DBDC949886}" ShortID="41194735">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>17</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Chicken_Hit_Bush_01" ID="{DD0A6481-2A40-426A-893E-21919AABF5A9}" ShortID="815458443" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chicken_Hit_Bush_01" ID="{4317E7AC-78CB-4065-819B-DFEDCE4AC318}" ShortID="446540801">
+											<Language>SFX</Language>
+											<AudioFile>Chicken_Hit_Bush_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chicken_Hit_Bush_01" ID="{4317E7AC-78CB-4065-819B-DFEDCE4AC318}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Chicken_Hit_Bush_02" ID="{EBF3B57D-2CFA-479B-9ECA-32E0F713C3CE}" ShortID="161315936" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chicken_Hit_Bush_02" ID="{181B342B-122D-4B61-8568-76ADDBFD0599}" ShortID="370192254">
+											<Language>SFX</Language>
+											<AudioFile>Chicken_Hit_Bush_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chicken_Hit_Bush_02" ID="{181B342B-122D-4B61-8568-76ADDBFD0599}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Chicken_Hit_Bush_03" ID="{03A5E11D-A8E3-43EA-ACBF-BFC30E4112D4}" ShortID="182575010" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chicken_Hit_Bush_03" ID="{AFF846A6-D27B-4E90-87A4-058B52284438}" ShortID="157640653">
+											<Language>SFX</Language>
+											<AudioFile>Chicken_Hit_Bush_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chicken_Hit_Bush_03" ID="{AFF846A6-D27B-4E90-87A4-058B52284438}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Chicken_Hit_Bush_04" ID="{83CA9B1B-CE5D-4312-B882-F0CD7E5F22F2}" ShortID="146268137" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chicken_Hit_Bush_04" ID="{2CB047C5-D596-4690-9505-FF0509DBA6D3}" ShortID="228292697">
+											<Language>SFX</Language>
+											<AudioFile>Chicken_Hit_Bush_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chicken_Hit_Bush_04" ID="{2CB047C5-D596-4690-9505-FF0509DBA6D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Chicken_Hit_Bush_05" ID="{78D58250-A251-41E0-ABAB-3BA0F29F9165}" ShortID="123449834" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Chicken_Hit_Bush_05" ID="{774514D3-F604-46C3-92FC-85D40BA537D3}" ShortID="224424084">
+											<Language>SFX</Language>
+											<AudioFile>Chicken_Hit_Bush_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Chicken_Hit_Bush_05" ID="{774514D3-F604-46C3-92FC-85D40BA537D3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
