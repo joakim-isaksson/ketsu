@@ -45,18 +45,20 @@ namespace Ketsu.Game
 		{
 			Vector3 start = transform.position;
 
-			transform.LookAt(target);
+            float animTime = MoveAnimTime * Vector3.Distance(start, target);
+
+            transform.LookAt(target);
 
 			float timePassed = 0.0f;
 			do
 			{
 				timePassed += Time.deltaTime;
-				float progress = Mathf.Min(timePassed / MoveAnimTime, 1.0f);
+				float progress = Mathf.Min(timePassed / animTime, 1.0f);
 				transform.position = Vector3.Lerp(start, target, progress);
 
 				yield return null;
 
-			} while (timePassed < MoveAnimTime);
+			} while (timePassed < animTime);
 
 			if (callback != null) callback();
 		}
