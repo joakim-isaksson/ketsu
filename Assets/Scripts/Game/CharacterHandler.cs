@@ -38,6 +38,12 @@ namespace Ketsu.Game
         Character ketsu;
         Character beforeKetsu;
 
+        class TargetInfo
+        {
+            public MapObject Ground;
+            public MapObject Blocker;
+        }
+
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
@@ -184,88 +190,88 @@ namespace Ketsu.Game
             // Get direction for next move action
             Vector3 direction = moveQueue.Dequeue();
 
-            // Moving FOX and/or WOLF
+            // Moving FOX / WOLF
             if (ActiveCharacter.Type == MapObjectType.Fox || ActiveCharacter.Type == MapObjectType.Wolf)
             {
                 Character active = ActiveCharacter;
                 Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
 
-                Vector3 activePos = active.transform.position + direction;
-                Vector3 otherPos = other != null ? other.transform.position + VectorUtils.Mirror(direction, Vector3.zero) : Vector3.zero;
-
-                // Blockers
-                MapObject activeBlocker = active.GetBlocking(activePos);
-                MapObject otherBlocker = other != null ? other.GetBlocking(otherPos) : null;
-
-                if (other != null &&
-                    ((activeBlocker != null && activeBlocker.Type == other.Type) ||
-                    (activeBlocker == null && activePos.Equals(otherPos))))
-                {
-                    // Turn to ketsu
-                    TransformToKetsu(activePos, active, other);
-                    return;
-                }
-                else if (activeBlocker != null)
-                {
-                    // Active character is blocked
-                    Debug.Log("Invalid Move: " + active.Type + " blocked by " + activeBlocker.Type);
-                    NextMoveAction();
-                    return;
-                }
-                else if (other != null)
-                {
-                    if (otherBlocker != null)
-                    {
-                        // Other character is blocked
-                        Debug.Log("Invalid Move: " + other.Type + " blocked by " + otherBlocker.Type);
-                        NextMoveAction();
-                        return;
-                    }
-                    else
-                    {
-                        // Move both haracters
-                        waitingForMoveActions += 2;
-                        active.MoveTo(activePos, OnMoveActionCompleted);
-                        other.MoveTo(otherPos, OnMoveActionCompleted);
-                        return;
-                    }
-                }
-                else
-                {
-                    // Move only the active character
-                    waitingForMoveActions++;
-                    active.MoveTo(activePos, OnMoveActionCompleted);
-                    return;
-                }
+                HandleMoveAction(direction, active, other, false);
             }
-            else // Moving KETSU
+
+            // Moving KETSU
+            else
             {
-                Vector3 ketsuPos = ketsu.transform.position + direction;
-
-                // Blockers
-                MapObject ketsuBlocker = ketsu.GetBlocking(ketsuPos);
-                if (ketsuBlocker != null)
-                {
-                    // Ketsu is blocked
-                    Debug.Log("Invalid Move: " + ketsu.Type + " blocked by " + ketsuBlocker.Type);
-                    NextMoveAction();
-                    return;
-                }
-                else if (ConsumeKetsuPower(KetsuMoveCost))
-                {
-                    // Move ketsu
-                    waitingForMoveActions++;
-                    ketsu.MoveTo(ketsuPos, OnMoveActionCompleted);
-                    return;
-                }
-                else
-                {
-                    // Split ketsu
-                    SplitKetsu(ketsuPos);
-                    return;
-                }
+                HandleMoveAction(direction, ketsu, null, true);
             }
-		}
+        }
+
+        void OnMoveActionCompleted()
+        {
+            waitingForMoveActions--;
+
+            // When movement actions are done -> check if map has been solved
+            if (waitingForMoveActions == 0 && mapManager.CheckSolved()) return;
+
+            // If the map is not solved yet -> move to the next action
+            NextMoveAction();
+        }
+
+        void HandleMoveAction(Vector3 direction, Character active, Character other, bool isKetsu)
+        {
+            Vector3 activePos = active.transform.position + direction;
+            Vector3 otherPos = other != null ? other.transform.position + VectorUtils.Mirror(direction, Vector3.zero) : Vector3.zero;
+
+            // Get blockers and ground from the target position
+            TargetInfo activeTarget = GetTargetInfo(active, activePos);
+            TargetInfo otherTarget = other == null ? null : GetTargetInfo(other, otherPos);
+
+            // Check turning to Ketsu
+            if (other != null &&
+                ((activeTarget.Blocker != null && activeTarget.Blocker.Type == other.Type) ||
+                (activeTarget.Blocker == null && activePos.Equals(otherPos))))
+            {
+                TransformToKetsu(activePos, active, other);
+                return;
+            }
+
+            // Check active blocker
+            if (activeTarget.Blocker != null)
+            {
+                Debug.Log("Invalid Move: " + active.Type + " blocked by " + activeTarget.Blocker.Type);
+                NextMoveAction();
+                return;
+            }
+
+            // Check if ketsu is going to split
+            if (isKetsu && !ConsumeKetsuPower(KetsuMoveCost))
+            {
+                SplitKetsu(activePos);
+                return;
+            }
+
+            if (other == null)
+            {
+                // Move the active character
+                waitingForMoveActions++;
+                active.MoveTo(activePos, OnMoveActionCompleted);
+                return;
+            }
+
+            // Check other blocker
+            if (otherTarget.Blocker != null)
+            {
+                Debug.Log("Invalid Move: " + other.Type + " blocked by " + otherTarget.Blocker.Type);
+                NextMoveAction();
+                return;
+            }
+
+            // Move both characters
+            waitingForMoveActions += 2;
+            active.MoveTo(activePos, OnMoveActionCompleted);
+            other.MoveTo(otherPos, OnMoveActionCompleted);
+            return;
+        }
 
         void TransformToKetsu(Vector3 mergePos, Character active, Character other)
         {
@@ -299,21 +305,21 @@ namespace Ketsu.Game
 
             Vector3 activePos = targetPos;
             Vector3 otherPos = VectorUtils.Mirror(activePos, ketsu.transform.position);
-
-            // Check blockers
-            MapObject activeBlocker = active.GetBlocking(activePos);
-            if (activeBlocker != null)
+            
+            // Get blockers and ground from the target position
+            TargetInfo activeTarget = GetTargetInfo(active, activePos);
+            if (activeTarget.Blocker != null)
             {
                 // Active is blocked
-                Debug.Log("Can Not Split: " + active.Type + " blocked by " + activeBlocker.Type);
+                Debug.Log("Can Not Split: " + active.Type + " blocked by " + activeTarget.Blocker.Type);
                 NextMoveAction();
                 return;
             }
-            MapObject otherBlocker = active.GetBlocking(otherPos);
-            if (otherBlocker != null)
+            TargetInfo otherTarget = GetTargetInfo(other, otherPos);
+            if (otherTarget.Blocker != null)
             {
                 // Other is blocked
-                Debug.Log("Can Not Split: " + other.Type + " blocked by " + otherBlocker.Type);
+                Debug.Log("Can Not Split: " + other.Type + " blocked by " + otherTarget.Blocker.Type);
                 NextMoveAction();
                 return;
             }
@@ -335,15 +341,18 @@ namespace Ketsu.Game
             other.MoveTo(otherPos, OnMoveActionCompleted);
         }
 
-        void OnMoveActionCompleted()
+        TargetInfo GetTargetInfo(Character character, Vector3 position)
         {
-            waitingForMoveActions--;
+            TargetInfo targetInfo = new TargetInfo();
 
-            // When movement actions are done -> check if map has been solved
-            if (waitingForMoveActions == 0 && mapManager.CheckSolved()) return;
+            foreach (MapObject obj in MapManager.GetObjects(position))
+            {
+                if (targetInfo.Blocker == null && character.IsBlockedBy(obj)) targetInfo.Blocker = obj;
+                if (targetInfo.Ground == null && obj.Layer == MapObjectLayer.Ground) targetInfo.Ground = obj;
+                if (targetInfo.Blocker != null && targetInfo.Ground) break;
+            }
 
-            // If the map is not solved yet -> move to the next action
-            NextMoveAction();
+            return targetInfo;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Ketsu.Game
 	{
 		[Header("Map Object")]
 		public MapObjectType Type;
-		public int Layer;
+		public MapObjectLayer Layer;
 
 		public List<MapObjectType> NotBlockedBy;
 
@@ -20,9 +20,9 @@ namespace Ketsu.Game
 		public bool IsBlockedBy(MapObject obj)
         {
             if (obj == null || Layer != obj.Layer || !obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) return false;
-            return true;
+            else return true;
         }
-
+    
         /// <summary>
         /// Check if this object is blocked in the given point
         /// </summary>
@@ -33,14 +33,15 @@ namespace Ketsu.Game
 			List<MapObject> objects = MapManager.GetObjects(point, Layer);
 			foreach (MapObject obj in objects)
 			{
-                if (obj == null || Layer != obj.Layer || !obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) return false;
-                return true;
+                if (!obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) continue;
+                else return true;
             }
 
 			return false;
 		}
 
-		/// <summary>
+        /*
+        /// <summary>
 		/// Return blocking object from given list or null if nothing is blocking
 		/// </summary>
 		/// <param name="point">Point to check for blocking objects</param>
@@ -50,11 +51,13 @@ namespace Ketsu.Game
 			List<MapObject> objects = MapManager.GetObjects(point, Layer);
 			foreach (MapObject obj in objects)
 			{
-                if (obj == null || Layer != obj.Layer || !obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) return null;
-                return obj;
+                if (!obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) continue;
+                else return obj;
             }
 
             return null;
 		}
-	}
+
+    */
+    }
 }

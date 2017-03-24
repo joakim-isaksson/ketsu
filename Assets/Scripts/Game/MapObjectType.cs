@@ -1,6 +1,6 @@
 ﻿namespace Ketsu.Game
 {
-    // ADD NEW THINGS ONLY TO THE END OF THIS LIST
+    // NOTICE - ADD NEW THINGS ONLY TO THE END OF THIS LIST
 	public enum MapObjectType
 	{
 		Bush,

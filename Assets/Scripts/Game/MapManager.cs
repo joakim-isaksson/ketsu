@@ -40,12 +40,12 @@ namespace Ketsu.Game
         /// <param name="point">Point to get the MapObjects from</param>
         /// <param name="layer">Get objects from given layer</param>
         /// <returns>List of MapObjects from given point</returns>
-        public static List<MapObject> GetObjects(Vector3 point, int layer)
+        public static List<MapObject> GetObjects(Vector3 point, MapObjectLayer layer)
         {
             return GetObjects(point, true, layer);
         }
 
-        static List<MapObject> GetObjects(Vector3 point, bool filter, int layer)
+        static List<MapObject> GetObjects(Vector3 point, bool filter, MapObjectLayer layer)
 		{
 			List<MapObject> list = new List<MapObject>();
 
