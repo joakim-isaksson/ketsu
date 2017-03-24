@@ -38,12 +38,6 @@ namespace Ketsu.Game
         Character ketsu;
         Character beforeKetsu;
 
-        class TargetInfo
-        {
-            public MapObject Ground;
-            public MapObject Blocker;
-        }
-
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
@@ -196,13 +190,27 @@ namespace Ketsu.Game
                 Character active = ActiveCharacter;
                 Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
 
-                HandleMoveAction(direction, active, other, false);
+                HandleMoveAction(
+                    direction,
+                    active,
+                    active.transform.position,
+                    other,
+                    other != null ? other.transform.position : Vector3.zero,
+                    false
+                );
             }
 
             // Moving KETSU
             else
             {
-                HandleMoveAction(direction, ketsu, null, true);
+                HandleMoveAction(
+                    direction,
+                    ketsu,
+                    ketsu.transform.position,
+                    null,
+                    Vector3.zero,
+                    true
+                );
             }
         }
 
@@ -217,28 +225,37 @@ namespace Ketsu.Game
             NextMoveAction();
         }
 
-        void HandleMoveAction(Vector3 direction, Character active, Character other, bool isKetsu)
+        void HandleMoveAction(Vector3 direction, Character active, Vector3 activeOrigin, Character other, Vector3 otherOrigin, bool isKetsu)
         {
-            Vector3 activePos = active.transform.position + direction;
-            Vector3 otherPos = other != null ? other.transform.position + VectorUtils.Mirror(direction, Vector3.zero) : Vector3.zero;
-
-            // Get blockers and ground from the target position
-            TargetInfo activeTarget = GetTargetInfo(active, activePos);
-            TargetInfo otherTarget = other == null ? null : GetTargetInfo(other, otherPos);
+            // Get target information
+            TargetInfo activeTarget = new TargetInfo(active, activeOrigin + direction);
+            TargetInfo otherTarget = null;
+            if (other != null)
+            {
+                otherTarget = new TargetInfo(other, otherOrigin + VectorUtils.Mirror(direction, Vector3.zero));
+            }
 
             // Check turning to Ketsu
             if (other != null &&
                 ((activeTarget.Blocker != null && activeTarget.Blocker.Type == other.Type) ||
-                (activeTarget.Blocker == null && activePos.Equals(otherPos))))
+                (activeTarget.Blocker == null && activeTarget.Position.Equals(otherTarget.Position))))
             {
-                TransformToKetsu(activePos, active, other);
+                TransformToKetsu(activeTarget.Position, active, other);
                 return;
             }
 
             // Check active blocker
             if (activeTarget.Blocker != null)
             {
-                Debug.Log("Invalid Move: " + active.Type + " blocked by " + activeTarget.Blocker.Type);
+                Debug.Log(active.Type + " blocked by " + activeTarget.Blocker.Type);
+
+                if (active.transform.position != activeOrigin)
+                {
+                    waitingForMoveActions++;
+                    active.MoveTo(activeOrigin, OnMoveActionCompleted);
+                    return;
+                }
+
                 NextMoveAction();
                 return;
             }
@@ -246,15 +263,21 @@ namespace Ketsu.Game
             // Check if ketsu is going to split
             if (isKetsu && !ConsumeKetsuPower(KetsuMoveCost))
             {
-                SplitKetsu(activePos);
+                SplitKetsu(activeTarget.Position);
                 return;
             }
 
             if (other == null)
             {
+                if (activeTarget.Ground.Type == MapObjectType.Ice)
+                {
+                    HandleMoveAction(direction, active, activeTarget.Position, null, Vector3.zero, isKetsu);
+                    return;
+                }
+
                 // Move the active character
                 waitingForMoveActions++;
-                active.MoveTo(activePos, OnMoveActionCompleted);
+                active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
                 return;
             }
 
@@ -268,8 +291,8 @@ namespace Ketsu.Game
 
             // Move both characters
             waitingForMoveActions += 2;
-            active.MoveTo(activePos, OnMoveActionCompleted);
-            other.MoveTo(otherPos, OnMoveActionCompleted);
+            active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
+            other.MoveTo(otherTarget.Position, OnMoveActionCompleted);
             return;
         }
 
@@ -302,12 +325,9 @@ namespace Ketsu.Game
         {
             Character active = beforeKetsu;
             Character other = active.Type == MapObjectType.Fox ? wolf : fox;
-
-            Vector3 activePos = targetPos;
-            Vector3 otherPos = VectorUtils.Mirror(activePos, ketsu.transform.position);
             
             // Get blockers and ground from the target position
-            TargetInfo activeTarget = GetTargetInfo(active, activePos);
+            TargetInfo activeTarget = new TargetInfo(active, targetPos);
             if (activeTarget.Blocker != null)
             {
                 // Active is blocked
@@ -315,7 +335,7 @@ namespace Ketsu.Game
                 NextMoveAction();
                 return;
             }
-            TargetInfo otherTarget = GetTargetInfo(other, otherPos);
+            TargetInfo otherTarget = new TargetInfo(other, VectorUtils.Mirror(activeTarget.Position, ketsu.transform.position));
             if (otherTarget.Blocker != null)
             {
                 // Other is blocked
@@ -337,22 +357,29 @@ namespace Ketsu.Game
             waitingForMoveActions += 2;
             active.transform.position = ketsu.transform.position;
             other.transform.position = ketsu.transform.position;
-            active.MoveTo(activePos, OnMoveActionCompleted);
-            other.MoveTo(otherPos, OnMoveActionCompleted);
+            active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
+            other.MoveTo(otherTarget.Position, OnMoveActionCompleted);
         }
 
-        TargetInfo GetTargetInfo(Character character, Vector3 position)
+
+        class TargetInfo
         {
-            TargetInfo targetInfo = new TargetInfo();
+            public Vector3 Position;
+            public MapObject Ground;
+            public MapObject Blocker;
 
-            foreach (MapObject obj in MapManager.GetObjects(position))
+            public TargetInfo(Character character, Vector3 position)
             {
-                if (targetInfo.Blocker == null && character.IsBlockedBy(obj)) targetInfo.Blocker = obj;
-                if (targetInfo.Ground == null && obj.Layer == MapObjectLayer.Ground) targetInfo.Ground = obj;
-                if (targetInfo.Blocker != null && targetInfo.Ground) break;
-            }
+                Position = position;
 
-            return targetInfo;
+                foreach (MapObject obj in MapManager.GetObjects(position))
+                {
+                    if (Blocker == null && character.IsBlockedBy(obj)) Blocker = obj;
+                    if (Ground == null && obj.Layer == MapObjectLayer.Ground) Ground = obj;
+                    if (Blocker != null && Ground) break;
+                }
+            }
         }
+        
     }
 }
