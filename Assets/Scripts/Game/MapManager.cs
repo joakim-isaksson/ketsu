@@ -64,21 +64,19 @@ namespace Ketsu.Game
 			return list;
 		}
 
-        public void CheckSolved()
+        public bool CheckSolved()
 		{
 			foreach (Home home in homes)
 			{
-				if (home.Occupants == 0) return;
+                if (home.Occupants == 0)
+                {
+                    Solved = false;
+                    return false;
+                }
 			}
 
-			OnMapSolved();
+            Solved = true;
+            return true;
 		}
-
-		void OnMapSolved()
-		{
-			if (Solved) return;
-			Solved = true;
-		}
-		
 	}
 }

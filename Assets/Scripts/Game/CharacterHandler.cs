@@ -338,7 +338,11 @@ namespace Ketsu.Game
         void OnMoveActionCompleted()
         {
             waitingForMoveActions--;
-            if (waitingForMoveActions == 0) mapManager.CheckSolved();
+
+            // When movement actions are done -> check if map has been solved
+            if (waitingForMoveActions == 0 && mapManager.CheckSolved()) return;
+
+            // If the map is not solved yet -> move to the next action
             NextMoveAction();
         }
     }
