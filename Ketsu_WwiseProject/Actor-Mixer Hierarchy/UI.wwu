@@ -295,6 +295,7 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Spaceship" ID="{104A4AB9-2FED-4CC7-B457-7F30757E2C32}" ShortID="621480906"/>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="GUI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">

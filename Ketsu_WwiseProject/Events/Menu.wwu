@@ -147,54 +147,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="WinScreen" ID="{C5BD384A-2312-4195-8B60-F8089C53189D}" ShortID="722338214">
-					<ChildrenList>
-						<Event Name="WinScreen_Next_Button" ID="{336B79AB-F429-4846-843B-03130AE3C738}">
-							<ChildrenList>
-								<Action Name="Play" ID="{527BCB37-FFC9-4161-941E-C90EE4BDC953}" ShortID="896710988" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{C31C3833-75CA-402E-8B19-DF78453B8A0A}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Next_Button" ID="{A0538153-6B26-48AF-9E0A-EEA0F20E3C98}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="WinScreen_MainMenu_Button" ID="{1FF2260A-17ED-4DF6-B496-0DBCAE0BC023}">
-							<ChildrenList>
-								<Action Name="Play" ID="{0B878538-3BE5-48CF-A269-1E6F0E592FC0}" ShortID="368032437" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{EF5280A2-C6A9-4CB7-BF35-C3118E14DA53}" Global="false">
-											<ObjectRef Name="UI_WinScreen_MainMenu_Button" ID="{B4E9A3C2-5B9D-4615-A111-2A6830F770CD}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="WinScreen_Restart_Button" ID="{18CA9614-5252-464D-BB06-3EBD080DB998}">
-							<ChildrenList>
-								<Action Name="Play" ID="{5122D213-2503-4CF8-A522-1FA5B1173713}" ShortID="292551299" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{7D263AA3-CB84-4747-AC06-786C8C3C0FAD}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Restart_Button" ID="{3FCB3807-FE82-4113-8B78-C87F5F125207}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="WinScreen_Store_Button" ID="{85D8DEE1-A8B3-4744-AEF3-64DE73A69590}">
-							<ChildrenList>
-								<Action Name="Play" ID="{6D48E43D-2F0B-4DE2-973D-993780A1E652}" ShortID="978894601" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{4D1A2D02-6DAB-4310-999C-FF9EE9B4BB8A}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Store_Button" ID="{15072664-5B30-4582-B993-5665491242F4}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="WorldMenu" ID="{B7F856EB-466B-4C0F-AB58-5EE74B308E52}" ShortID="781329075">
 					<ChildrenList>
 						<Event Name="WorldMenu_UnlockedWorld_Button" ID="{0AB79BB4-9093-4724-BEEF-9B4400A3C986}">
