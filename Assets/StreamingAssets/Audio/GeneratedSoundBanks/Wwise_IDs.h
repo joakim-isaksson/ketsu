@@ -62,6 +62,7 @@ namespace AK
         static const AkUniqueID TOOLBOX_OPEN = 1173277773U;
         static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
         static const AkUniqueID TRANSFORM_TOKETSU = 1052828255U;
+        static const AkUniqueID UI_SPACESHIP_MOVE = 1170576778U;
         static const AkUniqueID WINSCREEN_MAINMENU_BUTTON = 1670207177U;
         static const AkUniqueID WINSCREEN_NEXT_BUTTON = 2660933722U;
         static const AkUniqueID WINSCREEN_RESTART_BUTTON = 171788004U;
@@ -69,6 +70,11 @@ namespace AK
         static const AkUniqueID WORLDMENU_LOCKEDWORLD_BUTTON = 376222116U;
         static const AkUniqueID WORLDMENU_UNLOCKEDWORLD_BUTTON = 574974477U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID SPACESHIP_MOVEMENT = 3577286649U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -28,6 +28,7 @@
 				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>
 				<Event Id="1575699130" Name="StartMenu_Start_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Start_Button"/>
 				<Event Id="1415003611" Name="StartMenu_Store_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Store_Button"/>
+				<Event Id="1170576778" Name="UI_Spaceship_Move" ObjectPath="\Events\UI\Spaceship\UI_Spaceship_Move"/>
 				<Event Id="376222116" Name="WorldMenu_LockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_LockedWorld_Button"/>
 				<Event Id="574974477" Name="WorldMenu_UnlockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button"/>
 			</IncludedEvents>
@@ -35,6 +36,10 @@
 				<File Id="140128883" Language="SFX">
 					<ShortName>UI_StartMenu_Settings_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="146238885" Language="SFX">
+					<ShortName>UI_Spaceship_Move.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_D124CA2C.wem</Path>
 				</File>
 				<File Id="192007627" Language="SFX">
 					<ShortName>UI_PopupMenu_Store_Button.wav</ShortName>
@@ -64,6 +69,10 @@
 					<ShortName>UI_WorldMenu_LockedWorld_Button.wav</ShortName>
 					<Path>SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem</Path>
 				</File>
+				<File Id="588309588" Language="SFX">
+					<ShortName>UI_Spaceship_Landing.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_D124CA2C.wem</Path>
+				</File>
 				<File Id="599628335" Language="SFX">
 					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
 					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem</Path>
@@ -87,6 +96,10 @@
 				<File Id="1018322493" Language="SFX">
 					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Logo_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="1040155609" Language="SFX">
+					<ShortName>UI_Spacehip_Idle.wav</ShortName>
+					<Path>SFX\UI_Spacehip_Idle_388A97B6.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

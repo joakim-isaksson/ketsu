@@ -5,6 +5,21 @@
 			<ChildrenList>
 				<WorkUnit Name="GUI" ID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" PersistMode="Reference"/>
 				<WorkUnit Name="Menu" ID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" PersistMode="Reference"/>
+				<Folder Name="Spaceship" ID="{9061B0F5-8445-43F5-8DE3-6F72EF286DAD}" ShortID="507930040">
+					<ChildrenList>
+						<Event Name="UI_Spaceship_Move" ID="{314C3B83-A6AB-4A6F-B392-41F7AEF88D8F}">
+							<ChildrenList>
+								<Action Name="Play" ID="{BC68F64C-F2FD-4FBD-8B6E-1E3A2DC09760}" ShortID="1032284997" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{977C0EB2-AB1A-4A27-8E33-954A41E297CC}" Global="false">
+											<ObjectRef Name="Spaceship" ID="{2ED0A82B-EB86-4C40-BFD8-5EB2A55996E7}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{D6A77B06-CF59-4C1C-8A77-5D40D07F0915}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\Characters"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\UI_Menus"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Android"></Value>
@@ -25,7 +25,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="j2NLwKTk00iMAa9hu+Z+EbCpN6rPD0xJjzz3JFYolMCkvuOOa0PdQIuLon+T+N91"/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="S/D1tJcvnkKwDlObqwesDgEa2xX/////ZhQrccHUw0ORPSsXDnbmuAEa2xX/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="S/D1tJcvnkKwDlObqwesDgHZGgv/////ZhQrccHUw0ORPSsXDnbmuAHZGgv/////"/>
 				<Property Name="Interactive Music\x64_{595986A2-0856-4361-BF0B-E7219AFB724E} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP4X0G4KkamxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{5A51284A-7BA9-4FD0-8D48-D8824949867F} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAAG9AAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="Interactive Music\x64_{65DBB5E7-A6F0-421D-93C2-7D4B7F7EBA47} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP3z0G4KkamxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
@@ -83,13 +83,14 @@
 				<Property Name="ProjectExplorer\x64_Expanded_19_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_1_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GqLmhbe38EKrJCr09iXfmp6ha+gsA4ZDtR2Io4AJLhsfCLBKzJVjRZ43xbQza1mPtmK+h6SR3UeA7n8uto31bg=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="UWLiUOjgSkO0V0srT3pNrmmYdaRxssZHtH5Q59QA7Ie7uI/Yb9e7TKR2ZXBBcU4X"/>
+				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="GqLmhbe38EKrJCr09iXfmp6ha+gsA4ZDtR2Io4AJLhvjLugx2Eb9RLSEisd+OKFbHwiwSsyVY0WeN8W0M2tZj7Zivoekkd1HgO5/LraN9W4="/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="UWLiUOjgSkO0V0srT3pNrkHxj4VDr8NGkMSfw6kP7/NpmHWkcbLGR7R+UOfUAOyHu7iP2G/Xu0ykdmVwQXFOF/swGI6vBl1PjOytx61vv3c="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="3+2lZnlANEyK4UUZR7NlVg=="/>
-				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
+				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="tSKwx2cyeUuFogWgV3S1Tw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
+				<Property Name="RTPC\GameParameterSimValue\{FCAD7BDA-5DEA-4772-A9F2-33F5B6D07398}" Type="Real64" Value="64.4755244755245"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="3+2lZnlANEyK4UUZR7NlVg=="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
