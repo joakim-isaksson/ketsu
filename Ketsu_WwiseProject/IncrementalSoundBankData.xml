@@ -3,7 +3,7 @@
 	<Platform GUID="{67D37C3E-AE4B-41B9-B64B-EB316D3A78A2}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="1407147306" Timestamp="131349974361320496"/>
+				<File Name="InGame_SoundBank" Hash="1741005411" Timestamp="131351851155779276"/>
 				<File Name="Init" Hash="1201420083" Timestamp="131351744735730177"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498569131971"/>
 				<File Name="Menu_Soundbank" Hash="1478698665" Timestamp="131351744735514603"/>
@@ -12,14 +12,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1268773504" Timestamp="131351744735840490"/>
+				<File Name="" Hash="3447499420" Timestamp="131351851156426079"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{05F8F0C0-9B68-4998-9260-F9E1FC3BB4FA}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="2455201761" Timestamp="131349974389575784"/>
+				<File Name="InGame_SoundBank" Hash="747423728" Timestamp="131351851188452265"/>
 				<File Name="Init" Hash="3575550371" Timestamp="131351744742473384"/>
 				<File Name="Main_SoundBank" Hash="2148753668" Timestamp="131346498572264008"/>
 				<File Name="Menu_Soundbank" Hash="1384877243" Timestamp="131351744742302662"/>
@@ -28,14 +28,14 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1990580361" Timestamp="131351744742563352"/>
+				<File Name="" Hash="3599482185" Timestamp="131351851189204211"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{CAACA1F2-B3F4-4C29-BDE6-B88FF998934C}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="1407147306" Timestamp="131349974374826429"/>
+				<File Name="InGame_SoundBank" Hash="1741005411" Timestamp="131351851171834565"/>
 				<File Name="Init" Hash="336282129" Timestamp="131351744739470146"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498570557565"/>
 				<File Name="Menu_Soundbank" Hash="1478698665" Timestamp="131351744739324736"/>
@@ -44,7 +44,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3014467718" Timestamp="131351744739545327"/>
+				<File Name="" Hash="3291451578" Timestamp="131351851172350979"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

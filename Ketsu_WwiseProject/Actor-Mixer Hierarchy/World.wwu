@@ -140,6 +140,60 @@
 								<ActiveSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="Map_Env_Birds" ID="{CA924CBD-1E7B-457B-8E10-8277DEE583BE}" ShortID="38910992" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" ShortID="225182666">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_Birds.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Map_Env_Sea" ID="{8411F3E2-1D71-4016-8D07-0179494605FD}" ShortID="520174250" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-30</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" ShortID="538173892">
+									<Language>SFX</Language>
+									<AudioFile>Map_Env_Sea.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Map_Bridge" ID="{87BE62B6-91A4-47DD-80EE-7F2EB68DF56E}" ShortID="979914324">

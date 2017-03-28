@@ -156,7 +156,9 @@
 				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
 				<Event Id="240649815" Name="Map_Env_Bees" ObjectPath="\Events\World\Map_Env\Map_Env_Bees"/>
 				<Event Id="611079635" Name="Map_Env_BigWater" ObjectPath="\Events\World\Map_Env\Map_Env_BigWater"/>
+				<Event Id="35994456" Name="Map_Env_Birds" ObjectPath="\Events\World\Map_Env\Map_Env_Birds"/>
 				<Event Id="4112863043" Name="Map_Env_MediumWind" ObjectPath="\Events\World\Map_Env\Map_Env_MediumWind"/>
+				<Event Id="1320716757" Name="Map_Env_Sea" ObjectPath="\Events\World\Map_Env\Map_Env_Sea"/>
 				<Event Id="782833506" Name="Map_Env_SmallWater" ObjectPath="\Events\World\Map_Env\Map_Env_SmallWater"/>
 				<Event Id="1833815307" Name="Map_Env_StrongWind" ObjectPath="\Events\World\Map_Env\Map_Env_StrongWind"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
@@ -212,6 +214,10 @@
 				<File Id="224424084" Language="SFX">
 					<ShortName>Chicken_Hit_Bush_05.wav</ShortName>
 					<Path>SFX\Chicken_Hit_Bush_05_D124CA2C.wem</Path>
+				</File>
+				<File Id="225182666" Language="SFX">
+					<ShortName>Map_Env_Birds.wav</ShortName>
+					<Path>SFX\Map_Env_Birds_388A97B6.wem</Path>
 				</File>
 				<File Id="228292697" Language="SFX">
 					<ShortName>Chicken_Hit_Bush_04.wav</ShortName>
@@ -292,6 +298,10 @@
 				<File Id="514221431" Language="SFX">
 					<ShortName>Character_Hit_Hedgehog_02.wav</ShortName>
 					<Path>SFX\Character_Hit_Hedgehog_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="538173892" Language="SFX">
+					<ShortName>Map_Env_Sea.wav</ShortName>
+					<Path>SFX\Map_Env_Sea_388A97B6.wem</Path>
 				</File>
 				<File Id="544687860" Language="SFX">
 					<ShortName>Toolbox_Collect_Coins.wav</ShortName>

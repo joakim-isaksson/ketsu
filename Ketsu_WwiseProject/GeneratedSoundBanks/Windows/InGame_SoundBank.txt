@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	30088657	Collect_Sheep			\SFX\Collect\Collect_Sheep	
+	35994456	Map_Env_Birds			\World\Map_Env\Map_Env_Birds	
 	171788004	WinScreen_Restart_Button			\UI\GUI\WinScreen\WinScreen_Restart_Button	
 	240649815	Map_Env_Bees			\World\Map_Env\Map_Env_Bees	
 	269859599	Death_Fox_Water			\Characters\Death\Death_Fox_Water	
@@ -15,6 +16,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1052828255	Transform_ToKetsu			\SFX\Transform\Transform_ToKetsu	
 	1173277773	Toolbox_Open			\UI\GUI\Toolbox\Toolbox_Open	
 	1203244949	GUI_Chicken_Button			\UI\GUI\Button\GUI_Chicken_Button	
+	1320716757	Map_Env_Sea			\World\Map_Env\Map_Env_Sea	
 	1374719650	Transform_FromKetsu			\SFX\Transform\Transform_FromKetsu	
 	1446448900	Death_Wolf_Water			\Characters\Death\Death_Wolf_Water	
 	1464712323	GUI_MaxPowerUp_Crystal_Button			\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button	
@@ -48,6 +50,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	157640653	Chicken_Hit_Bush_03	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Chicken_Hit_Bush_03_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_03		352092
 	211612609	Map_Env_StrongWind	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_StrongWind_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Map_Env_StrongWind		14015276
 	224424084	Chicken_Hit_Bush_05	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Chicken_Hit_Bush_05_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_05		404632
+	225182666	Map_Env_Birds	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_Birds_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Map_Env_Birds		9962564
 	228292697	Chicken_Hit_Bush_04	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Chicken_Hit_Bush_04_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_04		404632
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_MainMenu_Button		107888
 	245242611	Toolbox_Collect_SpaceshipPart	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Toolbox_Collect_SpaceshipPart_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart		216552
@@ -68,6 +71,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	507783315	GUI_Split_BuildUp	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Split_BuildUp_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_BuildUp		5177132
 	511370657	Fox_Death_Water_01	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Fox_Death_Water_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_01		624160
 	514221431	Character_Hit_Hedgehog_02	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Character_Hit_Hedgehog_02_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Hit_Hedgehog\Character_Hit_Hedgehog_02		77588
+	538173892	Map_Env_Sea	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_Sea_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Map_Env_Sea		8833760
 	544687860	Toolbox_Collect_Coins	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Toolbox_Collect_Coins_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_Coins		548672
 	588042227	Move_Wolf	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Wolf_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Move_Wolf		125940
 	603409939	UI_WinScreen_Restart_Button	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_Restart_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Restart_Button		44700
