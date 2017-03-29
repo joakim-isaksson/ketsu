@@ -41,10 +41,12 @@ namespace AK
         static const AkUniqueID MAP_ENV_SMALLWATER = 782833506U;
         static const AkUniqueID MAP_ENV_STRONGWIND = 1833815307U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
+        static const AkUniqueID MOVE_FOX_ICE = 4045630760U;
         static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
         static const AkUniqueID MOVE_ONBRIDGE = 3706173237U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
+        static const AkUniqueID MOVE_WOLF_ICE = 1426970985U;
         static const AkUniqueID PLAY_MENUMUSIC = 2570041344U;
         static const AkUniqueID PLAY_W1_INGAMEMUSIC = 358982595U;
         static const AkUniqueID POPOPMENU_SETTINGS_BUTTON = 323011021U;
@@ -57,6 +59,8 @@ namespace AK
         static const AkUniqueID STARTMENU_SETTINGS_BUTTON = 3791509005U;
         static const AkUniqueID STARTMENU_START_BUTTON = 1575699130U;
         static const AkUniqueID STARTMENU_STORE_BUTTON = 1415003611U;
+        static const AkUniqueID STOP_FOX_ICE = 2494762103U;
+        static const AkUniqueID STOP_WOLF_ICE = 3853446416U;
         static const AkUniqueID TOOLBOX_COLLECT_COINS = 4162518518U;
         static const AkUniqueID TOOLBOX_COLLECT_KETSUMAXPOWERUP = 1024872546U;
         static const AkUniqueID TOOLBOX_COLLECT_KETSUPOWERUP = 2696066024U;
@@ -72,6 +76,22 @@ namespace AK
         static const AkUniqueID WORLDMENU_LOCKEDWORLD_BUTTON = 376222116U;
         static const AkUniqueID WORLDMENU_UNLOCKEDWORLD_BUTTON = 574974477U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace TILE_MATERIAL
+        {
+            static const AkUniqueID GROUP = 253806231U;
+
+            namespace STATE
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID GROUND = 2528658256U;
+                static const AkUniqueID MUD = 712897245U;
+            } // namespace STATE
+        } // namespace TILE_MATERIAL
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

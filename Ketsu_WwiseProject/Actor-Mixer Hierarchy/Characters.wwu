@@ -13,73 +13,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Move_Fox" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}" ShortID="340483308">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Move_Fox" ID="{1211F85C-EC2B-4E17-9A2A-C402706DA46B}" ShortID="589332595" Type="SoundFX">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-180</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Move_Fox" ID="{72524534-180C-4768-961D-589300C7AFAE}" ShortID="676468509">
-											<Language>SFX</Language>
-											<AudioFile>Move_Fox.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Move_Fox" ID="{72524534-180C-4768-961D-589300C7AFAE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Move_Fox_01" ID="{3C24DE7B-AB09-43D5-99CD-9C7E647F8551}" ShortID="639775710" Type="SoundFX">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-350</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Move_Fox" ID="{1041F3E9-4119-4249-83C4-6ED275669E96}" ShortID="1008005942">
-											<Language>SFX</Language>
-											<AudioFile>Move_Fox.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="676468509"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Move_Fox" ID="{1041F3E9-4119-4249-83C4-6ED275669E96}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death_Water" ID="{512EF5F7-CB25-4A7E-A13F-B06A9C98EE79}" ShortID="532589341">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
@@ -194,6 +127,336 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<SwitchContainer Name="Move_Fox" ID="{4A780AA1-2C65-42C7-AD82-9C4517FB26E9}" ShortID="338787506">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}" ShortID="340483308">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Fox_Ground_01" ID="{BA2B9234-ABD4-4CBC-BA14-0C0E59F76D95}" ShortID="737034345" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ground_01" ID="{A474FBB5-A4A1-4DB8-ABEA-ED28AB914637}" ShortID="941997029">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ground_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ground_01" ID="{A474FBB5-A4A1-4DB8-ABEA-ED28AB914637}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Ground_02" ID="{B9F19038-DABE-4EBD-9254-182BCC0E5A56}" ShortID="493379313" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ground_02" ID="{ECE9FB41-ECB7-4D68-B9A0-8B234434E21B}" ShortID="780048494">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ground_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ground_02" ID="{ECE9FB41-ECB7-4D68-B9A0-8B234434E21B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Ground_03" ID="{DA2EAFA3-BD79-44A2-AC89-B7CF2259EF80}" ShortID="223709264" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ground_03" ID="{207DB537-0E46-4A6B-B005-A98FBCD3574F}" ShortID="899780812">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ground_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ground_03" ID="{207DB537-0E46-4A6B-B005-A98FBCD3574F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Ground_04" ID="{A6642F84-45CA-4479-9700-12E4686BD525}" ShortID="977731195" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ground_04" ID="{DC427B19-52ED-465A-8034-2C8E5FD0B6D7}" ShortID="633911034">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ground_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ground_04" ID="{DC427B19-52ED-465A-8034-2C8E5FD0B6D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" ShortID="119645967">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Fox_Ice_01" ID="{80ACFE08-2FB4-4DFF-9C52-17F4D89B4010}" ShortID="996146452" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ice_01" ID="{32D15A35-590B-4E0B-9E2D-366AEF63A80A}" ShortID="946403468">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ice_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ice_01" ID="{32D15A35-590B-4E0B-9E2D-366AEF63A80A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Ice_02" ID="{A197C6F6-F22A-44E6-B140-8353C2943234}" ShortID="1046525035" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ice_02" ID="{69039925-EA63-4283-9432-B094F667349F}" ShortID="668879718">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ice_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ice_02" ID="{69039925-EA63-4283-9432-B094F667349F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Ice_03" ID="{5857BB43-6A9E-48A9-B752-7F298CBA75D9}" ShortID="985538422" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Ice_03" ID="{CE6BB390-3EBC-4D74-929D-64589C897924}" ShortID="778693737">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Ice_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Ice_03" ID="{CE6BB390-3EBC-4D74-929D-64589C897924}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}" ShortID="938503331">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Fox_Grass_01" ID="{11DFBCC5-2E80-4D16-8ADD-4468D1C68A36}" ShortID="663168826" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Grass_01" ID="{EA6C015A-A407-40C9-9D16-3CAD4877D302}" ShortID="310840679">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Grass_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Grass_01" ID="{EA6C015A-A407-40C9-9D16-3CAD4877D302}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Grass_02" ID="{0AB5BE77-F2BC-4A89-A12E-28B7AAAFD1A3}" ShortID="281139349" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Grass_02" ID="{01F13CDC-4FCE-4742-8154-0480EA9FD56B}" ShortID="402022915">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Grass_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Grass_02" ID="{01F13CDC-4FCE-4742-8154-0480EA9FD56B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Grass_03" ID="{D002EA49-5232-471C-BA67-DBFF95BA3342}" ShortID="931740478" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Grass_03" ID="{3174B1A5-35A7-49C9-8A8C-340721F425A4}" ShortID="555482349">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Grass_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Grass_03" ID="{3174B1A5-35A7-49C9-8A8C-340721F425A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Grass_04" ID="{92C1595E-C9FB-47E1-A6A0-ED2AF063EC31}" ShortID="156020246" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Grass_04" ID="{EB917396-AF02-433B-B5F1-40DD0420A0EE}" ShortID="40123842">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Grass_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Grass_04" ID="{EB917396-AF02-433B-B5F1-40DD0420A0EE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Fox_Grass_05" ID="{1698AD34-9DCC-4C27-93DF-1873748783CC}" ShortID="36475986" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Fox_Grass_05" ID="{23B6532F-12FD-4C33-9075-20AE3DA5839A}" ShortID="100508892">
+													<Language>SFX</Language>
+													<AudioFile>Move_Fox_Grass_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Fox_Grass_05" ID="{23B6532F-12FD-4C33-9075-20AE3DA5839A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
+								<DefaultSwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+										<ItemList>
+											<ItemRef Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{BF6F0170-BB9B-4AED-93EC-C8A45AF1C9C0}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ketsu" ID="{532F9E88-6951-4E1A-AE8B-FD6399C0616D}" ShortID="999016777">
@@ -278,83 +541,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Move_Wolf" ID="{D581EB81-B551-4582-B0D0-1365F9609566}" ShortID="452715858">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Move_Wolf" ID="{7ED1AB45-F3E4-4BD7-B12B-36ECFB9F1703}" ShortID="843803544" Type="SoundFX">
-									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>22</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-30</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Move_Wolf" ID="{C7F9A202-295F-405A-BE2E-9D785CFF605C}" ShortID="588042227">
-											<Language>SFX</Language>
-											<AudioFile>Move_Wolf.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Move_Wolf" ID="{C7F9A202-295F-405A-BE2E-9D785CFF605C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Move_Wolf_01" ID="{A9B5191C-3430-460E-9D4C-FFDA6E260CB4}" ShortID="350670856" Type="SoundFX">
-									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>22</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-150</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Move_Wolf" ID="{886709B4-88E3-413C-B81E-D46BB134487F}" ShortID="665320337">
-											<Language>SFX</Language>
-											<AudioFile>Move_Wolf.wav</AudioFile>
-											<ConvertedFileIDList>
-												<File ID="588042227"/>
-											</ConvertedFileIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Move_Wolf" ID="{886709B4-88E3-413C-B81E-D46BB134487F}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death_Water" ID="{27E718BC-6A0B-4EED-916A-5A0BFDCD761C}" ShortID="702719650">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
@@ -431,6 +617,336 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<SwitchContainer Name="Move_Wolf" ID="{17E1D0B9-BCB9-4B0B-A83F-0BC66D1E90AF}" ShortID="537608327">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}" ShortID="20620779">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Wolf_Grass_01" ID="{64F98A4A-73E0-4A34-BDAB-EA5904380D20}" ShortID="117506525" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Grass_01" ID="{8D24EB92-25EE-47BB-84B7-835F6F64B444}" ShortID="785333790">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Grass_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Grass_01" ID="{8D24EB92-25EE-47BB-84B7-835F6F64B444}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Grass_02" ID="{797CD7EB-CC8C-48C7-93EA-B9666C27CA4A}" ShortID="349403825" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Grass_02" ID="{C4032811-85A4-4413-A71B-218BDF04710F}" ShortID="717253633">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Grass_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Grass_02" ID="{C4032811-85A4-4413-A71B-218BDF04710F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Grass_03" ID="{C0227164-6EF0-4F81-B2EE-8CBE08177D2E}" ShortID="786842070" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Grass_03" ID="{62B206B9-C825-4375-8200-4327B65F6EFC}" ShortID="891115824">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Grass_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Grass_03" ID="{62B206B9-C825-4375-8200-4327B65F6EFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Grass_04" ID="{5A962083-ADEE-4BF6-AF5D-F63813658A93}" ShortID="547398961" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Grass_04" ID="{0E658A55-18C2-4B6E-8E3E-1876A0ECD9E8}" ShortID="704936838">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Grass_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Grass_04" ID="{0E658A55-18C2-4B6E-8E3E-1876A0ECD9E8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Grass_05" ID="{1737DAEB-EFA6-40FA-9DEC-FC988BFFB558}" ShortID="796070503" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Grass_05" ID="{F5309332-CC1C-45A6-A035-C883FA6CB1F0}" ShortID="99673032">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Grass_05.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Grass_05" ID="{F5309332-CC1C-45A6-A035-C883FA6CB1F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}" ShortID="452715858">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Wolf_Ground_01" ID="{C6AD6735-F62B-4109-9B3B-8237DF84B070}" ShortID="810916345" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ground_01" ID="{0BD7FAC7-47BA-481D-8AD9-5B0C7BA55EC5}" ShortID="943145784">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ground_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ground_01" ID="{0BD7FAC7-47BA-481D-8AD9-5B0C7BA55EC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Ground_02" ID="{E4114B1D-E88F-4608-BED7-1CF5F8A82FC5}" ShortID="956415169" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ground_02" ID="{92314B1C-9BAB-480D-93A5-FA19891388F6}" ShortID="814823044">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ground_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ground_02" ID="{92314B1C-9BAB-480D-93A5-FA19891388F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Ground_03" ID="{2E8AC2D2-ED4D-4817-866A-7A11BA3379C8}" ShortID="281354011" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ground_03" ID="{6E03DC72-344F-406C-B6EC-F71A0784B5C7}" ShortID="868623114">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ground_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ground_03" ID="{6E03DC72-344F-406C-B6EC-F71A0784B5C7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Ground_04" ID="{551BA767-7EA0-4ECA-A65A-6FA943F36863}" ShortID="628435375" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ground_04" ID="{C87E4C4B-3383-4029-97EA-0719B91EC2F5}" ShortID="935211600">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ground_04.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ground_04" ID="{C87E4C4B-3383-4029-97EA-0719B91EC2F5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" ShortID="430129608">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_Wolf_Ice_01" ID="{5C4B4602-3059-4EFB-8CBB-4485A5E640A8}" ShortID="891958316" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ice_01" ID="{E41B64DD-0E3B-422F-A44D-4DEA980A3A99}" ShortID="925777685">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ice_01.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ice_01" ID="{E41B64DD-0E3B-422F-A44D-4DEA980A3A99}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Ice_02" ID="{EDF053F8-946D-41FD-A902-E3D3C69C06E5}" ShortID="125566102" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ice_02" ID="{BCAAA730-8273-46E9-A9E5-AE65A537A6BA}" ShortID="616983996">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ice_02.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ice_02" ID="{BCAAA730-8273-46E9-A9E5-AE65A537A6BA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_Wolf_Ice_03" ID="{1F8B6E23-E1D3-4588-83E1-ACAB115AC907}" ShortID="252163545" Type="SoundFX">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_Wolf_Ice_03" ID="{8FB2C457-FDBF-482E-8981-F39FB66C4B54}" ShortID="1048122472">
+													<Language>SFX</Language>
+													<AudioFile>Move_Wolf_Ice_03.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_Wolf_Ice_03" ID="{8FB2C457-FDBF-482E-8981-F39FB66C4B54}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+							</StateInfo>
+							<GroupingInfo>
+								<GroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
+								<DefaultSwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+										<ItemList>
+											<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{BF6F0170-BB9B-4AED-93EC-C8A45AF1C9C0}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
