@@ -2705,7 +2705,6 @@ Transform:
   - {fileID: 548583159}
   - {fileID: 702741504}
   - {fileID: 1490318490}
-  - {fileID: 505141533}
   - {fileID: 605727664}
   - {fileID: 2132307865}
   - {fileID: 210240387}
@@ -2752,9 +2751,10 @@ Transform:
   - {fileID: 1693459800}
   - {fileID: 429747077}
   - {fileID: 679075472}
+  - {fileID: 505141533}
   - {fileID: 1801952560}
-  - {fileID: 205647399}
   - {fileID: 788758702}
+  - {fileID: 205647399}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

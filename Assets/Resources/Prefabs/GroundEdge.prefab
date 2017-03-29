@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Type: 16
-  Layer: 0
+  Layer: 1
   NotBlockedBy: 
 --- !u!114 &114466421558138452
 MonoBehaviour:
