@@ -2448,6 +2448,34 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1854426957}
+--- !u!1 &1954419734 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1149186290825630, guid: 14a011eee4350e147a8bf2eff76d529f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1104107408}
+--- !u!114 &1954419735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954419734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0576edea75af4374d935ee5bd22f464a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!135 &1954419739
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1954419734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2027903382
 GameObject:
   m_ObjectHideFlags: 0
