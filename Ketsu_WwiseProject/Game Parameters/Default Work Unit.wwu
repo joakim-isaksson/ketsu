@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C7B022B5-3267-4B79-85A2-05A05774B54F}" SchemaVersion="75">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{C7B022B5-3267-4B79-85A2-05A05774B54F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C7B022B5-3267-4B79-85A2-05A05774B54F}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Spaceship_Movement" ID="{FCAD7BDA-5DEA-4772-A9F2-33F5B6D07398}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

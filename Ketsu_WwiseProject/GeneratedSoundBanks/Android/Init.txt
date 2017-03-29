@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	253806231	Tile_Material			\Default Work Unit\Tile_Material	
+
+State	ID	Name	State Group			Notes
+	712897245	Mud	Tile_Material			
+	748895195	None	Tile_Material			
+	2528658256	Ground	Tile_Material			
+	4248645337	Grass	Tile_Material			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	

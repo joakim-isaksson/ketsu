@@ -58,7 +58,7 @@
 								<Action Name="Play" ID="{8701170D-D1BA-4BF8-A7BB-8696A0C602A3}" ShortID="861763371" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{430261DD-FCC4-4BC6-AFF4-517B718AF611}" Global="false">
-											<ObjectRef Name="Move_Fox" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+											<ObjectRef Name="Move_Fox" ID="{4A780AA1-2C65-42C7-AD82-9C4517FB26E9}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -80,7 +80,51 @@
 								<Action Name="Play" ID="{C4793E23-9151-44FD-AE28-4D072A9A4765}" ShortID="418246793" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{450452B9-A585-4167-BD44-D7E2EFB6982F}" Global="false">
-											<ObjectRef Name="Move_Wolf" ID="{D581EB81-B551-4582-B0D0-1365F9609566}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+											<ObjectRef Name="Move_Wolf" ID="{17E1D0B9-BCB9-4B0B-A83F-0BC66D1E90AF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Fox_Ice" ID="{7DA62BF0-165C-41B5-BBFA-9551FF6C68EA}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F01EDC4D-5439-40E8-A266-48F07EB7B836}" ShortID="37426964" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{6A98658A-C5D5-4C35-977B-2EE8FC027C32}" Global="false">
+											<ObjectRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Fox_Ice" ID="{09AC9477-3406-4757-BC7F-432F679CE5FE}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{5124E21A-7E66-4ECB-BD2F-03C0AA42F8CC}" ShortID="161416239" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{765E345B-27E3-4E0B-A7E2-4D6408939219}" Global="false">
+											<ObjectRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Wolf_Ice" ID="{48D08E02-A874-4F26-8256-0A9D62BF1D37}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D1201939-B6E1-4CC7-A261-A4C8239A66B7}" ShortID="145903387" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D8C70354-2462-4D3C-959D-C5C6B70E3272}" Global="false">
+											<ObjectRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Wolf_Ice" ID="{A5570FB3-1699-4FCA-A9A3-C711D2DE61CB}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{C848B910-1606-4A16-B533-8878554DAB0D}" ShortID="575526078" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1D6EF525-9CB8-419B-8990-05DF87DEC286}" Global="false">
+											<ObjectRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>

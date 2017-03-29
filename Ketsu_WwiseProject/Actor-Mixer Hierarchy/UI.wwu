@@ -295,6 +295,7 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Spaceship" ID="{104A4AB9-2FED-4CC7-B457-7F30757E2C32}" ShortID="621480906"/>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="GUI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
@@ -685,6 +686,119 @@
 						</Folder>
 					</ChildrenList>
 				</ActorMixer>
+				<BlendContainer Name="Spaceship" ID="{2ED0A82B-EB86-4C40-BFD8-5EB2A55996E7}" ShortID="1048088672">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="UI_Spacehip_Idle" ID="{85D0CF6A-032E-4821-A078-90F35338B7EB}" ShortID="1029814759" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Spacehip_Idle" ID="{2E3EA7B4-0F54-483B-B6FA-F9B672DAE13A}" ShortID="1040155609">
+									<Language>SFX</Language>
+									<AudioFile>UI_Spacehip_Idle.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Spacehip_Idle" ID="{2E3EA7B4-0F54-483B-B6FA-F9B672DAE13A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Spaceship_Landing" ID="{2959314E-ADC8-4003-92E9-D1C49DA7154F}" ShortID="708534609" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Spaceship_Landing" ID="{726EB1EF-25B3-413B-898C-67C982311091}" ShortID="588309588">
+									<Language>SFX</Language>
+									<AudioFile>UI_Spaceship_Landing.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Spaceship_Landing" ID="{726EB1EF-25B3-413B-898C-67C982311091}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="UI_Spaceship_Move" ID="{6980A4E2-E383-410E-B169-7967FB9251D4}" ShortID="271810318" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_Spaceship_Move" ID="{FAB3B4F5-5F7E-4824-8674-BE4D96C44F05}" ShortID="146238885">
+									<Language>SFX</Language>
+									<AudioFile>UI_Spaceship_Move.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_Spaceship_Move" ID="{FAB3B4F5-5F7E-4824-8674-BE4D96C44F05}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<BlendTrackList>
+						<BlendTrack Name="Spaceship Movement" ID="{8F4E2F77-B0E1-4C6B-86A6-096D4039D83D}" ShortID="638276010">
+							<PropertyList>
+								<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="LayerCrossFadeControlInput">
+									<ObjectRef Name="Spaceship_Movement" ID="{FCAD7BDA-5DEA-4772-A9F2-33F5B6D07398}" WorkUnitID="{C7B022B5-3267-4B79-85A2-05A05774B54F}"/>
+								</Reference>
+							</ReferenceList>
+							<BlendTrackAssocList>
+								<BlendTrackAssoc>
+									<ItemRef Name="UI_Spaceship_Move" ID="{6980A4E2-E383-410E-B169-7967FB9251D4}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>0</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>38.6131161130536</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="UI_Spacehip_Idle" ID="{85D0CF6A-032E-4821-A078-90F35338B7EB}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>23.0364117861305</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>64.539470789627</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+								<BlendTrackAssoc>
+									<ItemRef Name="UI_Spaceship_Landing" ID="{2959314E-ADC8-4003-92E9-D1C49DA7154F}"/>
+									<CrossfadingInfo>
+										<LeftEdgePos>61.969759469697</LeftEdgePos>
+										<LeftFadingMode>Automatic</LeftFadingMode>
+										<RightEdgePos>100</RightEdgePos>
+										<RightFadingMode>Automatic</RightFadingMode>
+									</CrossfadingInfo>
+								</BlendTrackAssoc>
+							</BlendTrackAssocList>
+						</BlendTrack>
+					</BlendTrackList>
+				</BlendContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

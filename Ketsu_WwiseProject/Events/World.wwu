@@ -60,6 +60,43 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Map_Env_Birds" ID="{40FB5517-4F27-40EC-BE3D-89A3E24A185C}">
+							<ChildrenList>
+								<Action Name="Play" ID="{294B7815-2700-4A99-B17D-33B904228A0A}" ShortID="723792066" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{C9F61A6C-2F85-424B-BE96-546527807436}" Global="false">
+											<ObjectRef Name="Map_Env_Birds" ID="{CA924CBD-1E7B-457B-8E10-8277DEE583BE}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Map_Env_Sea" ID="{DB12B2B0-8A04-4116-8101-316D7408BEA3}">
+							<ChildrenList>
+								<Action Name="Play" ID="{D718459D-62C4-49AA-9F68-44E430615389}" ShortID="79634571" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{D635DBFA-AECC-40F9-A68A-1D04AE67825F}" Global="false">
+											<ObjectRef Name="Map_Env_Sea" ID="{8411F3E2-1D71-4016-8D07-0179494605FD}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Map_Bridge" ID="{A4759869-B271-47C6-B47E-50E7D400EC87}" ShortID="1064955399">
+					<ChildrenList>
+						<Event Name="Move_OnBridge" ID="{20779B2E-26CD-4804-8F8E-65EC99358E98}">
+							<ChildrenList>
+								<Action Name="Play" ID="{A3534A56-C330-4E6F-9009-523506102BAE}" ShortID="991888814" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{B5FEA3FB-1B28-4A8A-8BC3-D5641DBFF40B}" Global="false">
+											<ObjectRef Name="Move_OnBridge" ID="{CB46E069-F4DC-42E1-BC9B-7B937ECDE95B}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
