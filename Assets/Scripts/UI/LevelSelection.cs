@@ -24,11 +24,10 @@ public class LevelSelection : MonoBehaviour {
 
   	IEnumerator Load(){
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
-            spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.04f), t);
+            spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
             yield return null;
         }
-        Debug.Log(spaceship.transform.position);
-  		SceneManager.LoadScene(level+1);
-  		yield return null;
+  		  SceneManager.LoadScene(level+1);
+  		  yield return null;
   	}
 }
