@@ -1762,6 +1762,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14a011eee4350e147a8bf2eff76d529f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1226394889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1869994588713396, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1226394890}
+  - component: {fileID: 1226394892}
+  - component: {fileID: 1226394891}
+  m_Layer: 0
+  m_Name: Spaceship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1226394890
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4559979705578884, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226394889}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 11, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1451025915}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &1226394891
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 23960276629000384, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226394889}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f3780c4597e9a124f954d30a73e860df, type: 2}
+  - {fileID: 2100000, guid: 3734924acb9af224eb3e9bea1a8a7ab9, type: 2}
+  - {fileID: 2100000, guid: be1cd99bf236cce4d87a905c1a5d9453, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1226394892
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 33388422535946626, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226394889}
+  m_Mesh: {fileID: 4300000, guid: 1ad908bfbe63c684baad79898215769b, type: 3}
 --- !u!1 &1238435691
 GameObject:
   m_ObjectHideFlags: 0
@@ -2078,6 +2152,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+  spaceship: {fileID: 1451025914}
+--- !u!1 &1451025914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1451025915}
+  m_Layer: 0
+  m_Name: Ship
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451025915
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451025914}
+  m_LocalRotation: {x: -0.63568765, y: 0, z: 0, w: 0.77194643}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children:
+  - {fileID: 1226394890}
+  m_Father: {fileID: 1954419738}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -78.942, y: 0, z: 0}
 --- !u!1001 &1547552608
 Prefab:
   m_ObjectHideFlags: 0
@@ -2134,6 +2238,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1601401214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1139105083306860, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1601401217}
+  - component: {fileID: 1601401216}
+  - component: {fileID: 1601401215}
+  m_Layer: 0
+  m_Name: FoxCave
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1601401215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114549499266401910, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1601401214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0bcf72c158122f44af153b2d4a29990, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 6
+  Layer: 1
+  NotBlockedBy: 
+  ForType: 5
+  Occupants: 0
+--- !u!65 &1601401216
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 65702703333990836, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1601401214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9, y: 0.51922596, z: 0.9}
+  m_Center: {x: -0.001987934, y: 0.30841005, z: -0.0019874573}
+--- !u!4 &1601401217
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4887756226373060, guid: 4d51281115133428abaed65ebf45e7dc,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1601401214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1743318604
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 2
+  spaceship: {fileID: 1451025914}
 --- !u!1001 &1776400565
 Prefab:
   m_ObjectHideFlags: 0
@@ -2382,6 +2549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 3
+  spaceship: {fileID: 1451025914}
 --- !u!1 &1804066557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2838,6 +3006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0576edea75af4374d935ee5bd22f464a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spaceship: {fileID: 1451025914}
 --- !u!4 &1954419738 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4297061279406506, guid: 14a011eee4350e147a8bf2eff76d529f,

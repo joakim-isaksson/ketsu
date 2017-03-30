@@ -6,19 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour {
 	public int level;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public GameObject spaceship;
 
 	void OnMouseDown(){
-        // this object was clicked - do something
-        SceneManager.LoadScene(level+1);
+		if(spaceship.transform.rotation == transform.rotation)
+			StartCoroutine(Load());
+		else
+        	StartCoroutine(Fly());
   	}  
+
+  	IEnumerator Fly(){
+		for(var t = 0f; t < 1; t += Time.deltaTime) {
+            spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, transform.rotation, t);
+            yield return null;
+         }
+  	}
+
+  	IEnumerator Load(){
+		for(var t = 0f; t < 1; t += Time.deltaTime) {
+            spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.04f), t);
+            yield return null;
+        }
+  		SceneManager.LoadScene(level+1);
+  		yield return null;
+  	}
 }

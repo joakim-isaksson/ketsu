@@ -9,9 +9,15 @@ public class PlanetRotate : MonoBehaviour {
  	Vector3 speed = new Vector3();
  	bool dragging = false;
  	static Quaternion rot;
+
+	public GameObject spaceship;
+ 	static Quaternion rotSpaceship;
+ 	static bool rotated = false;
  
  	void Start(){
  		transform.rotation = rot;
+ 		if(rotated)
+ 			spaceship.transform.rotation = rotSpaceship;
  	}
 
 	void OnMouseOver() 
@@ -31,6 +37,8 @@ public class PlanetRotate : MonoBehaviour {
     	}
     	transform.Rotate(speed.y * rotationSpeed, speed.x * rotationSpeed, 0, Space.World);
     	rot = transform.rotation;
+    	rotSpaceship = spaceship.transform.rotation;
+    	rotated = true;
  	}
 }
 
