@@ -624,7 +624,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &963156374
 RectTransform:
   m_ObjectHideFlags: 0
@@ -946,7 +946,7 @@ Prefab:
     - target: {fileID: 114953190474056272, guid: 6392668a503009d40ad2b387fd3ffe47,
         type: 2}
       propertyPath: basePath
-      value: Audio/GeneratedSoundBanks
+      value: Audio\GeneratedSoundBanks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}

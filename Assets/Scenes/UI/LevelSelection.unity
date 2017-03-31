@@ -1993,7 +1993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1830, y: -90}
+  m_AnchoredPosition: {x: 90, y: -90}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334675908
@@ -2228,7 +2228,7 @@ Prefab:
     - target: {fileID: 114953190474056272, guid: 6392668a503009d40ad2b387fd3ffe47,
         type: 2}
       propertyPath: basePath
-      value: Audio/GeneratedSoundBanks
+      value: Audio\GeneratedSoundBanks
       objectReference: {fileID: 0}
     - target: {fileID: 114710773606457824, guid: 6392668a503009d40ad2b387fd3ffe47,
         type: 2}
