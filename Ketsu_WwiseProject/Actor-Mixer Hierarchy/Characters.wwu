@@ -72,6 +72,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Death_Hedgehog" ID="{C220A0EC-2C89-488E-89CC-706608A9CFA3}" ShortID="1060008018">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>22</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>

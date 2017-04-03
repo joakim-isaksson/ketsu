@@ -31,8 +31,9 @@ namespace AK
         static const AkUniqueID GUI_SPLIT_ACTIVE = 841337824U;
         static const AkUniqueID GUI_SPLIT_RELEASE = 1748211077U;
         static const AkUniqueID LEVEL_WIN = 2908556826U;
-        static const AkUniqueID LEVELMENU_LOCKEDLEVEL_BUTTON = 3773943064U;
-        static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_BUTTON = 1513439813U;
+        static const AkUniqueID LEVELMENU_LOCKEDLEVEL_SELECT = 2297784124U;
+        static const AkUniqueID LEVELMENU_STARTLEVEL_SELECT = 2355422256U;
+        static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_SELECT = 2207195397U;
         static const AkUniqueID MAP_ENV_BEES = 240649815U;
         static const AkUniqueID MAP_ENV_BIGWATER = 611079635U;
         static const AkUniqueID MAP_ENV_BIRDS = 35994456U;
@@ -68,7 +69,7 @@ namespace AK
         static const AkUniqueID TOOLBOX_OPEN = 1173277773U;
         static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
         static const AkUniqueID TRANSFORM_TOKETSU = 1052828255U;
-        static const AkUniqueID UI_SPACESHIP_MOVE = 1170576778U;
+        static const AkUniqueID UI_SPACESHIP_IDLE = 4062746263U;
         static const AkUniqueID WINSCREEN_MAINMENU_BUTTON = 1670207177U;
         static const AkUniqueID WINSCREEN_NEXT_BUTTON = 2660933722U;
         static const AkUniqueID WINSCREEN_RESTART_BUTTON = 171788004U;

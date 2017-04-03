@@ -7,8 +7,8 @@
 					<ChildrenList>
 						<Action Name="Play" ID="{93975E0C-F2E5-41E8-A042-FBBB5708B347}" ShortID="260633763" Type="Play" Scope="One" Global="false">
 							<ElementList>
-								<Element ID="{D0B77C6E-C6D3-4726-9152-8276B4D78E2F}" Global="false">
-									<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+								<Element ID="{19A44613-12C9-41F2-8164-7E121D594CFC}" Global="false">
+									<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 								</Element>
 							</ElementList>
 						</Action>

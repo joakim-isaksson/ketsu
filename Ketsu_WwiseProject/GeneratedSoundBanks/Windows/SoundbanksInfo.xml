@@ -16,8 +16,9 @@
 			<ShortName>Menu_Soundbank</ShortName>
 			<Path>Menu_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3773943064" Name="LevelMenu_LockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Button"/>
-				<Event Id="1513439813" Name="LevelMenu_UnlockedLevel_Button" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Button"/>
+				<Event Id="2297784124" Name="LevelMenu_LockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Select"/>
+				<Event Id="2355422256" Name="LevelMenu_StartLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_StartLevel_Select"/>
+				<Event Id="2207195397" Name="LevelMenu_UnlockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Select"/>
 				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
 				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
 				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
@@ -28,7 +29,7 @@
 				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>
 				<Event Id="1575699130" Name="StartMenu_Start_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Start_Button"/>
 				<Event Id="1415003611" Name="StartMenu_Store_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Store_Button"/>
-				<Event Id="1170576778" Name="UI_Spaceship_Move" ObjectPath="\Events\UI\Spaceship\UI_Spaceship_Move"/>
+				<Event Id="4062746263" Name="UI_Spaceship_Idle" ObjectPath="\Events\UI\Spaceship\UI_Spaceship_Idle"/>
 				<Event Id="376222116" Name="WorldMenu_LockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_LockedWorld_Button"/>
 				<Event Id="574974477" Name="WorldMenu_UnlockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button"/>
 			</IncludedEvents>
@@ -36,10 +37,6 @@
 				<File Id="140128883" Language="SFX">
 					<ShortName>UI_StartMenu_Settings_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Settings_Button_A939E04F.wem</Path>
-				</File>
-				<File Id="146238885" Language="SFX">
-					<ShortName>UI_Spaceship_Move.wav</ShortName>
-					<Path>SFX\UI_Spaceship_Move_A939E04F.wem</Path>
 				</File>
 				<File Id="192007627" Language="SFX">
 					<ShortName>UI_PopupMenu_Store_Button.wav</ShortName>
@@ -69,13 +66,13 @@
 					<ShortName>UI_WorldMenu_LockedWorld_Button.wav</ShortName>
 					<Path>SFX\UI_WorldMenu_LockedWorld_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="588309588" Language="SFX">
-					<ShortName>UI_Spaceship_Landing.wav</ShortName>
-					<Path>SFX\UI_Spaceship_Landing_A939E04F.wem</Path>
-				</File>
 				<File Id="599628335" Language="SFX">
 					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
 					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="602051237" Language="SFX">
+					<ShortName>UI_Spaceship_Move.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_D5241674.wem</Path>
 				</File>
 				<File Id="762418288" Language="SFX">
 					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
@@ -93,13 +90,17 @@
 					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
 					<Path>SFX\UI_PopupMenu_Restart_Button_A939E04F.wem</Path>
 				</File>
+				<File Id="937325238" Language="SFX">
+					<ShortName>UI_Spacehip_Idle.wav</ShortName>
+					<Path>SFX\UI_Spacehip_Idle_2CC9493D.wem</Path>
+				</File>
+				<File Id="1001168866" Language="SFX">
+					<ShortName>UI_Spaceship_Landing.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_150EC3F1.wem</Path>
+				</File>
 				<File Id="1018322493" Language="SFX">
 					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Logo_Button_A939E04F.wem</Path>
-				</File>
-				<File Id="1040155609" Language="SFX">
-					<ShortName>UI_Spacehip_Idle.wav</ShortName>
-					<Path>SFX\UI_Spacehip_Idle_2CC9493D.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -118,9 +119,9 @@
 				<Event Id="358982595" Name="Play_W1_InGameMusic" ObjectPath="\Events\Music\InGameMusic\Play_W1_InGameMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="105616402" Language="SFX">
-					<ShortName>MenuMusic_Draft_01.wav</ShortName>
-					<Path>SFX\MenuMusic_Draft_01_2CC9493D.wem</Path>
+				<File Id="132533196" Language="SFX">
+					<ShortName>Ketsu_MenuMusic_Ambient.wav</ShortName>
+					<Path>SFX\Ketsu_MenuMusic_Ambient_421D6CCB.wem</Path>
 				</File>
 				<File Id="136273710" Language="SFX">
 					<ShortName>LevelMusic_W1_Loop1.wav</ShortName>
@@ -185,7 +186,7 @@
 			<IncludedMemoryFiles>
 				<File Id="20985966" Language="SFX">
 					<ShortName>Transform_ToKetsu-001.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu-001_A939E04F.wem</Path>
+					<Path>SFX\Transform_ToKetsu-001_9C2D89E6.wem</Path>
 				</File>
 				<File Id="40123842" Language="SFX">
 					<ShortName>Move_Fox_Grass_04.wav</ShortName>
@@ -449,7 +450,7 @@
 				</File>
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
-					<Path>SFX\Transform_FromKetsu_A939E04F.wem</Path>
+					<Path>SFX\Transform_FromKetsu_21D5E9C1.wem</Path>
 				</File>
 				<File Id="941997029" Language="SFX">
 					<ShortName>Move_Fox_Ground_01.wav</ShortName>

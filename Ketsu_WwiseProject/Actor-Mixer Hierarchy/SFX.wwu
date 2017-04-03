@@ -74,6 +74,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Transform_ToKetsu-001" ID="{DCB47549-4D06-4A97-BB5B-17B24642904B}" ShortID="918832809" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -84,6 +91,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="Transform_ToKetsu-001" ID="{66EB2921-2B57-4298-AFAF-BCDB37568CA8}" ShortID="20985966">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.200380402605092"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.460874925991711"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Transform_ToKetsu-001.wav</AudioFile>
 										</AudioFileSource>
@@ -105,6 +116,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Transform_FromKetsu" ID="{13D58CD5-DC7F-4A30-BBB8-38DAA9C3B3D1}" ShortID="935737943">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.11700049955595"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.447654085257549"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.289957759769094"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.22935307504441"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Transform_FromKetsu.wav</AudioFile>
 								</AudioFileSource>
@@ -125,25 +142,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" ShortID="397143290" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" ShortID="501425487">
-									<Language>SFX</Language>
-									<AudioFile>Level_Win.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="Character_Hit_Water" ID="{41353411-FBDB-4162-9D7D-76B7BC12AF70}" ShortID="174099501">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">

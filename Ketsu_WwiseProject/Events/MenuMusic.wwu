@@ -8,7 +8,7 @@
 						<Action Name="Play" ID="{399900D9-45AD-4D6F-983E-DB1C199CE9A8}" ShortID="615157" Type="Play" Scope="One" Global="false">
 							<ElementList>
 								<Element ID="{8A0620CB-400A-492D-8885-3A49730DA1E0}" Global="false">
-									<ObjectRef Name="MenuMusic_Draft_01" ID="{3807E32A-D52C-4170-AF0B-807346FE383A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+									<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 								</Element>
 							</ElementList>
 						</Action>

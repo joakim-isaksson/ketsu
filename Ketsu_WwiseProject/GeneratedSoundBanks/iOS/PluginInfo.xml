@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PluginInfo Project="Ketsu_WwiseProject" Platform="iOS" BasePlatform="iOS">
-	<Plugins/>
+	<Plugins>
+		<Plugin Name="Wwise Matrix Reverb" ID="7536643" DLL="AkMatrixReverb"/>
+	</Plugins>
 </PluginInfo>
