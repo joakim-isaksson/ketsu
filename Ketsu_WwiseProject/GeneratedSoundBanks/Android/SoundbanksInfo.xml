@@ -19,11 +19,11 @@
 				<Event Id="2297784124" Name="LevelMenu_LockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Select"/>
 				<Event Id="2355422256" Name="LevelMenu_StartLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_StartLevel_Select"/>
 				<Event Id="2207195397" Name="LevelMenu_UnlockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Select"/>
-				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
-				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
-				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
-				<Event Id="3455221783" Name="PopupMenu_Restart_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Restart_Button"/>
-				<Event Id="2656457985" Name="PopupMenu_Store_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Store_Button"/>
+				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\GUI\PopupMenu\PopopMenu_Settings_Button"/>
+				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\GUI\PopupMenu\PopupMenu_Back_Button"/>
+				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\GUI\PopupMenu\PopupMenu_MainMenu_Button"/>
+				<Event Id="3455221783" Name="PopupMenu_Restart_Button" ObjectPath="\Events\UI\GUI\PopupMenu\PopupMenu_Restart_Button"/>
+				<Event Id="2656457985" Name="PopupMenu_Store_Button" ObjectPath="\Events\UI\GUI\PopupMenu\PopupMenu_Store_Button"/>
 				<Event Id="1952017332" Name="StartMenu_Credits_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Credits_Button"/>
 				<Event Id="2533867219" Name="StartMenu_Logo_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Logo_Button"/>
 				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>

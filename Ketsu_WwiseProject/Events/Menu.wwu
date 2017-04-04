@@ -116,65 +116,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="PopupMenu" ID="{7B427E8D-C581-4E87-9397-BE94D742A194}" ShortID="978886400">
-					<ChildrenList>
-						<Event Name="PopupMenu_Store_Button" ID="{46FB623A-755C-4486-A2D3-39CCE6B80EBF}">
-							<ChildrenList>
-								<Action Name="Play" ID="{52647FCE-3A11-44A9-9BD8-EA283D627E1D}" ShortID="787359074" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{020E385F-973F-4DBF-A045-A882F84337D0}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Store_Button" ID="{94CE0F1B-649E-46C0-A38C-77085DC9543D}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_Back_Button" ID="{EDBE9FFF-709D-4E84-8C29-EEFB0685BF53}">
-							<ChildrenList>
-								<Action Name="Play" ID="{348F8B13-CE6B-4DF4-905F-595AE179AB30}" ShortID="807336240" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3CDE4F89-B053-4FB1-A9B4-3BF808CBB815}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Back_Button" ID="{F55B806F-11C7-4890-AE66-0F354305726D}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_MainMenu_Button" ID="{D7CBCBB2-F8B8-43B7-A005-B094B2E56830}">
-							<ChildrenList>
-								<Action Name="Play" ID="{48890E73-8CD1-449C-A573-8B21818F78E4}" ShortID="733028109" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{02EBDE56-B66F-4AB8-B99E-95D44565325F}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_MainMenu_Button" ID="{526F0B4A-A242-41A0-9757-3BF729A2BC40}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_Restart_Button" ID="{FFAD17D3-859B-4E59-A8F0-9FA99ADB78FE}">
-							<ChildrenList>
-								<Action Name="Play" ID="{351BDDF9-BB61-4CBA-AEAB-72A71C9BC9FD}" ShortID="223260947" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{AC919AE6-7685-4B4E-9F9C-7004A93F8321}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Restart_Button" ID="{1AB91B0D-8DB6-48B4-BF0D-86DC3397ED77}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopopMenu_Settings_Button" ID="{E873E013-F1E4-42F3-A601-520C914AE8FF}">
-							<ChildrenList>
-								<Action Name="Play" ID="{F1AAB411-1DB1-4D37-8761-0EDEB1712A8F}" ShortID="699321049" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{53CE7009-0346-4565-909A-1F1B482FEA3F}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Settings_Button" ID="{BA077BD5-4B70-4D60-BFCA-BD9686B407A4}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="StartMenu" ID="{70D2711F-2AB1-4523-85E2-D0BE18B6C405}" ShortID="671163154">
 					<ChildrenList>
 						<Event Name="StartMenu_Start_Button" ID="{3D763FF3-EC29-470F-AB85-CFDE6AC33D8E}">
