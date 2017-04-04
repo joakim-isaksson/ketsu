@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	620526404	Play_InGameMusic_Hedgy			\Music\InGameMusic\Play_InGameMusic_Hedgy	
+	2086825057	Play_TutorialMusic			\Music\InGameMusic\Play_TutorialMusic	
+	2570041344	Play_MenuMusic			\Music\MenuMusic\Play_MenuMusic	
+	2908556826	Level_Win			\Music\Stingers\Level_Win	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	132533196	Ketsu_MenuMusic_Ambient	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Ketsu_MenuMusic_Ambient_60D8BBB9.wem		\Actor-Mixer Hierarchy\Music\MenuMusic\Ketsu_MenuMusic_Ambient		8896384
+	501425487	Level_Win	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Level_Win_D124CA2C.wem		\Actor-Mixer Hierarchy\Music\Stingers\Level_Win		117928
+	602394122	LevelMusic_Peaceful_Short	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\LevelMusic_Peaceful_Short_FE3E5648.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		7528312
+	669844642	LevelMusic_Hedgy_Short	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\LevelMusic_Hedgy_Short_D124CA2C.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		8706376
+

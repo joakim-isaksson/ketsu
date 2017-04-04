@@ -16,6 +16,21 @@
 			</Language>
 		</XMLInfo>
 	</Platform>
+	<Platform GUID="{A5BF2142-7D21-4249-B284-EABB4ECC1DCA}">
+		<Banks>
+			<Language ID="0">
+				<File Name="InGame_SoundBank" Hash="600221041" Timestamp="131357901020160531"/>
+				<File Name="Init" Hash="2542088758" Timestamp="131357901020655113"/>
+				<File Name="Menu_Soundbank" Hash="328947851" Timestamp="131357901019630355"/>
+				<File Name="Music_Soundbank" Hash="1787143819" Timestamp="131357901020487954"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="1580375170" Timestamp="131357901020750662"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
 	<Platform GUID="{05F8F0C0-9B68-4998-9260-F9E1FC3BB4FA}">
 		<Banks>
 			<Language ID="0">

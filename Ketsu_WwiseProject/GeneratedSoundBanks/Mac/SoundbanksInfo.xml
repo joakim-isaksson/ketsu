@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1146882678" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Menu_Soundbank</ObjectPath>
+			<ShortName>Menu_Soundbank</ShortName>
+			<Path>Menu_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2297784124" Name="LevelMenu_LockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Select"/>
+				<Event Id="2355422256" Name="LevelMenu_StartLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_StartLevel_Select"/>
+				<Event Id="2207195397" Name="LevelMenu_UnlockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Select"/>
+				<Event Id="323011021" Name="PopopMenu_Settings_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopopMenu_Settings_Button"/>
+				<Event Id="3094295669" Name="PopupMenu_Back_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Back_Button"/>
+				<Event Id="3215618068" Name="PopupMenu_MainMenu_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_MainMenu_Button"/>
+				<Event Id="3455221783" Name="PopupMenu_Restart_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Restart_Button"/>
+				<Event Id="2656457985" Name="PopupMenu_Store_Button" ObjectPath="\Events\UI\Menu\PopupMenu\PopupMenu_Store_Button"/>
+				<Event Id="1952017332" Name="StartMenu_Credits_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Credits_Button"/>
+				<Event Id="2533867219" Name="StartMenu_Logo_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Logo_Button"/>
+				<Event Id="3791509005" Name="StartMenu_Settings_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Settings_Button"/>
+				<Event Id="1575699130" Name="StartMenu_Start_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Start_Button"/>
+				<Event Id="1415003611" Name="StartMenu_Store_Button" ObjectPath="\Events\UI\Menu\StartMenu\StartMenu_Store_Button"/>
+				<Event Id="4062746263" Name="UI_Spaceship_Idle" ObjectPath="\Events\UI\Spaceship\UI_Spaceship_Idle"/>
+				<Event Id="376222116" Name="WorldMenu_LockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_LockedWorld_Button"/>
+				<Event Id="574974477" Name="WorldMenu_UnlockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="140128883" Language="SFX">
+					<ShortName>UI_StartMenu_Settings_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="192007627" Language="SFX">
+					<ShortName>UI_PopupMenu_Store_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Store_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="327717301" Language="SFX">
+					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="449358139" Language="SFX">
+					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Store_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="461352254" Language="SFX">
+					<ShortName>UI_StartMenu_Credits_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Credits_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="462718627" Language="SFX">
+					<ShortName>UI_PopupMenu_Settings_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="510863609" Language="SFX">
+					<ShortName>UI_WorldMenu_UnlockedWorld_Button.wav</ShortName>
+					<Path>SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="574571335" Language="SFX">
+					<ShortName>UI_WorldMenu_LockedWorld_Button.wav</ShortName>
+					<Path>SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="599628335" Language="SFX">
+					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="602051237" Language="SFX">
+					<ShortName>UI_Spaceship_Move.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_93D9475B.wem</Path>
+				</File>
+				<File Id="762418288" Language="SFX">
+					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Start_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="789555871" Language="SFX">
+					<ShortName>UI_PopupMenu_MainMenu_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_MainMenu_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="801802120" Language="SFX">
+					<ShortName>UI_PopupMenu_Back_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Back_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="846411751" Language="SFX">
+					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Restart_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="937325238" Language="SFX">
+					<ShortName>UI_Spacehip_Idle.wav</ShortName>
+					<Path>SFX\UI_Spacehip_Idle_388A97B6.wem</Path>
+				</File>
+				<File Id="1001168866" Language="SFX">
+					<ShortName>UI_Spaceship_Landing.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_595D291A.wem</Path>
+				</File>
+				<File Id="1018322493" Language="SFX">
+					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>
+					<Path>SFX\UI_StartMenu_Logo_Button_D124CA2C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3589812408" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_Soundbank</ObjectPath>
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\Music\Stingers\Level_Win"/>
+				<Event Id="620526404" Name="Play_InGameMusic_Hedgy" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic_Hedgy"/>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
+				<Event Id="2086825057" Name="Play_TutorialMusic" ObjectPath="\Events\Music\InGameMusic\Play_TutorialMusic"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="132533196" Language="SFX">
+					<ShortName>Ketsu_MenuMusic_Ambient.wav</ShortName>
+					<Path>SFX\Ketsu_MenuMusic_Ambient_60D8BBB9.wem</Path>
+				</File>
+				<File Id="501425487" Language="SFX">
+					<ShortName>Level_Win.wav</ShortName>
+					<Path>SFX\Level_Win_D124CA2C.wem</Path>
+				</File>
+				<File Id="602394122" Language="SFX">
+					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Peaceful_Short_FE3E5648.wem</Path>
+				</File>
+				<File Id="669844642" Language="SFX">
+					<ShortName>LevelMusic_Hedgy_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Hedgy_Short_D124CA2C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="4063213932" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\InGame_SoundBank</ObjectPath>
+			<ShortName>InGame_SoundBank</ShortName>
+			<Path>InGame_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4257406112" Name="Character_Hit_Hedgehog" ObjectPath="\Events\Enemy\Hit\Character_Hit_Hedgehog"/>
+				<Event Id="287526684" Name="Character_Hit_Water" ObjectPath="\Events\SFX\Level\Character_Hit_Water"/>
+				<Event Id="1746299433" Name="Chicken_Hit_Bush" ObjectPath="\Events\Enemy\Chicken\Chicken_Hit_Bush"/>
+				<Event Id="1004812793" Name="Collect_Chicken" ObjectPath="\Events\SFX\Collect\Collect_Chicken"/>
+				<Event Id="30088657" Name="Collect_Sheep" ObjectPath="\Events\SFX\Collect\Collect_Sheep"/>
+				<Event Id="4193159569" Name="Death_Fox_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Fox_Hedgehog"/>
+				<Event Id="269859599" Name="Death_Fox_Water" ObjectPath="\Events\Characters\Death\Death_Fox_Water"/>
+				<Event Id="3738416424" Name="Death_Wolf_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Wolf_Hedgehog"/>
+				<Event Id="1446448900" Name="Death_Wolf_Water" ObjectPath="\Events\Characters\Death\Death_Wolf_Water"/>
+				<Event Id="1203244949" Name="GUI_Chicken_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Chicken_Button"/>
+				<Event Id="4100043833" Name="GUI_KetsuPower_Increase" ObjectPath="\Events\UI\GUI\Function\GUI_KetsuPower_Increase"/>
+				<Event Id="1464712323" Name="GUI_MaxPowerUp_Crystal_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button"/>
+				<Event Id="4091529515" Name="GUI_PowerUp_Crystal_Button" ObjectPath="\Events\UI\GUI\Button\GUI_PowerUp_Crystal_Button"/>
+				<Event Id="989405037" Name="GUI_Settings_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Settings_Button"/>
+				<Event Id="3275066385" Name="GUI_Sheep_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Sheep_Button"/>
+				<Event Id="841337824" Name="GUI_Split_Active" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Active"/>
+				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
+				<Event Id="240649815" Name="Map_Env_Bees" ObjectPath="\Events\World\Map_Env\Map_Env_Bees"/>
+				<Event Id="611079635" Name="Map_Env_BigWater" ObjectPath="\Events\World\Map_Env\Map_Env_BigWater"/>
+				<Event Id="35994456" Name="Map_Env_Birds" ObjectPath="\Events\World\Map_Env\Map_Env_Birds"/>
+				<Event Id="4112863043" Name="Map_Env_MediumWind" ObjectPath="\Events\World\Map_Env\Map_Env_MediumWind"/>
+				<Event Id="1320716757" Name="Map_Env_Sea" ObjectPath="\Events\World\Map_Env\Map_Env_Sea"/>
+				<Event Id="782833506" Name="Map_Env_SmallWater" ObjectPath="\Events\World\Map_Env\Map_Env_SmallWater"/>
+				<Event Id="1833815307" Name="Map_Env_StrongWind" ObjectPath="\Events\World\Map_Env\Map_Env_StrongWind"/>
+				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
+				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
+				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Hedgehog\Move_Hedgehog"/>
+				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
+				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
+				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
+				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="4162518518" Name="Toolbox_Collect_Coins" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_Coins"/>
+				<Event Id="1024872546" Name="Toolbox_Collect_KetsuMaxPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp"/>
+				<Event Id="2696066024" Name="Toolbox_Collect_KetsuPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp"/>
+				<Event Id="3565206619" Name="Toolbox_Collect_SpaceshipPart" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart"/>
+				<Event Id="1173277773" Name="Toolbox_Open" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Open"/>
+				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform\Transform_FromKetsu"/>
+				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform\Transform_ToKetsu"/>
+				<Event Id="1670207177" Name="WinScreen_MainMenu_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_MainMenu_Button"/>
+				<Event Id="2660933722" Name="WinScreen_Next_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Next_Button"/>
+				<Event Id="171788004" Name="WinScreen_Restart_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Restart_Button"/>
+				<Event Id="482381986" Name="WinScreen_Store_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Store_Button"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="20985966" Language="SFX">
+					<ShortName>Transform_ToKetsu-001.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu-001_C9405FA4.wem</Path>
+				</File>
+				<File Id="40123842" Language="SFX">
+					<ShortName>Move_Fox_Grass_04.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_04_D74A2EFE.wem</Path>
+				</File>
+				<File Id="54523543" Language="SFX">
+					<ShortName>GUI_Settings_Button.wav</ShortName>
+					<Path>SFX\GUI_Settings_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="99673032" Language="SFX">
+					<ShortName>Move_Wolf_Grass_05.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_05_259E30AD.wem</Path>
+				</File>
+				<File Id="100508892" Language="SFX">
+					<ShortName>Move_Fox_Grass_05.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_05_A67772CA.wem</Path>
+				</File>
+				<File Id="117800326" Language="SFX">
+					<ShortName>GUI_PowerUp_Crystal_Button.wav</ShortName>
+					<Path>SFX\GUI_PowerUp_Crystal_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="139884733" Language="SFX">
+					<ShortName>Fox_Death_Water_02.wav</ShortName>
+					<Path>SFX\Fox_Death_Water_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="143512029" Language="SFX">
+					<ShortName>GUI_Chicken_Button.wav</ShortName>
+					<Path>SFX\GUI_Chicken_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="157640653" Language="SFX">
+					<ShortName>Chicken_Hit_Bush_03.wav</ShortName>
+					<Path>SFX\Chicken_Hit_Bush_03_D124CA2C.wem</Path>
+				</File>
+				<File Id="171998509" Language="SFX">
+					<ShortName>Move_OnBridge_02.wav</ShortName>
+					<Path>SFX\Move_OnBridge_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="202414446" Language="SFX">
+					<ShortName>Move_OnBridge_05.wav</ShortName>
+					<Path>SFX\Move_OnBridge_05_D124CA2C.wem</Path>
+				</File>
+				<File Id="211612609" Language="SFX">
+					<ShortName>Map_Env_StrongWind.wav</ShortName>
+					<Path>SFX\Map_Env_StrongWind_388A97B6.wem</Path>
+				</File>
+				<File Id="224424084" Language="SFX">
+					<ShortName>Chicken_Hit_Bush_05.wav</ShortName>
+					<Path>SFX\Chicken_Hit_Bush_05_D124CA2C.wem</Path>
+				</File>
+				<File Id="225182666" Language="SFX">
+					<ShortName>Map_Env_Birds.wav</ShortName>
+					<Path>SFX\Map_Env_Birds_388A97B6.wem</Path>
+				</File>
+				<File Id="228292697" Language="SFX">
+					<ShortName>Chicken_Hit_Bush_04.wav</ShortName>
+					<Path>SFX\Chicken_Hit_Bush_04_D124CA2C.wem</Path>
+				</File>
+				<File Id="231051959" Language="SFX">
+					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_MainMenu_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="245242611" Language="SFX">
+					<ShortName>Toolbox_Collect_SpaceshipPart.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_SpaceshipPart_D124CA2C.wem</Path>
+				</File>
+				<File Id="265982203" Language="SFX">
+					<ShortName>Toolbox_Open.wav</ShortName>
+					<Path>SFX\Toolbox_Open_D124CA2C.wem</Path>
+				</File>
+				<File Id="276388275" Language="SFX">
+					<ShortName>GUI_KetsuPower_Increase.wav</ShortName>
+					<Path>SFX\GUI_KetsuPower_Increase_D124CA2C.wem</Path>
+				</File>
+				<File Id="307788843" Language="SFX">
+					<ShortName>Map_Env_MediumWind.wav</ShortName>
+					<Path>SFX\Map_Env_MediumWind_388A97B6.wem</Path>
+				</File>
+				<File Id="310533540" Language="SFX">
+					<ShortName>GUI_MaxPowerUp_Crystal_Button.wav</ShortName>
+					<Path>SFX\GUI_MaxPowerUp_Crystal_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="310840679" Language="SFX">
+					<ShortName>Move_Fox_Grass_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="370192254" Language="SFX">
+					<ShortName>Chicken_Hit_Bush_02.wav</ShortName>
+					<Path>SFX\Chicken_Hit_Bush_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="402022915" Language="SFX">
+					<ShortName>Move_Fox_Grass_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_02_D2AFBBE4.wem</Path>
+				</File>
+				<File Id="420154487" Language="SFX">
+					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_KetsuPowerUp_D124CA2C.wem</Path>
+				</File>
+				<File Id="440588258" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_03.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_03_D124CA2C.wem</Path>
+				</File>
+				<File Id="446540801" Language="SFX">
+					<ShortName>Chicken_Hit_Bush_01.wav</ShortName>
+					<Path>SFX\Chicken_Hit_Bush_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="461580426" Language="SFX">
+					<ShortName>Fox_Death_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Fox_Death_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="463531170" Language="SFX">
+					<ShortName>GUI_Split_Release.wav</ShortName>
+					<Path>SFX\GUI_Split_Release_D124CA2C.wem</Path>
+				</File>
+				<File Id="489506376" Language="SFX">
+					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Store_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="503244186" Language="SFX">
+					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
+					<Path>SFX\Fox_Death_Hedgehog_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="507783315" Language="SFX">
+					<ShortName>GUI_Split_BuildUp.wav</ShortName>
+					<Path>SFX\GUI_Split_BuildUp_D124CA2C.wem</Path>
+				</File>
+				<File Id="511370657" Language="SFX">
+					<ShortName>Fox_Death_Water_01.wav</ShortName>
+					<Path>SFX\Fox_Death_Water_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="514221431" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_02.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="538173892" Language="SFX">
+					<ShortName>Map_Env_Sea.wav</ShortName>
+					<Path>SFX\Map_Env_Sea_388A97B6.wem</Path>
+				</File>
+				<File Id="540887889" Language="SFX">
+					<ShortName>Move_OnBridge_04.wav</ShortName>
+					<Path>SFX\Move_OnBridge_04_D124CA2C.wem</Path>
+				</File>
+				<File Id="544687860" Language="SFX">
+					<ShortName>Toolbox_Collect_Coins.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_Coins_D124CA2C.wem</Path>
+				</File>
+				<File Id="555482349" Language="SFX">
+					<ShortName>Move_Fox_Grass_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_03_018F5C98.wem</Path>
+				</File>
+				<File Id="603409939" Language="SFX">
+					<ShortName>UI_WinScreen_Restart_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Restart_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="612027486" Language="SFX">
+					<ShortName>Collect_Sheep.wav</ShortName>
+					<Path>SFX\Collect_Sheep_D124CA2C.wem</Path>
+				</File>
+				<File Id="616983996" Language="SFX">
+					<ShortName>Move_Wolf_Ice_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_02_388A97B6.wem</Path>
+				</File>
+				<File Id="633911034" Language="SFX">
+					<ShortName>Move_Fox_Ground_04.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_04_1E9F5D37.wem</Path>
+				</File>
+				<File Id="635168810" Language="SFX">
+					<ShortName>GUI_Sheep_Button.wav</ShortName>
+					<Path>SFX\GUI_Sheep_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="642861469" Language="SFX">
+					<ShortName>Move_OnBridge_03.wav</ShortName>
+					<Path>SFX\Move_OnBridge_03_D124CA2C.wem</Path>
+				</File>
+				<File Id="668879718" Language="SFX">
+					<ShortName>Move_Fox_Ice_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_02_388A97B6.wem</Path>
+				</File>
+				<File Id="704131998" Language="SFX">
+					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Wolf_Death_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="704936838" Language="SFX">
+					<ShortName>Move_Wolf_Grass_04.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_04_D124CA2C.wem</Path>
+				</File>
+				<File Id="717253633" Language="SFX">
+					<ShortName>Move_Wolf_Grass_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="737519746" Language="SFX">
+					<ShortName>Map_Env_BigWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_BigWaterStream_388A97B6.wem</Path>
+				</File>
+				<File Id="746631363" Language="SFX">
+					<ShortName>Character_Hit_Water_02.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_02_D124CA2C.wem</Path>
+				</File>
+				<File Id="754253463" Language="SFX">
+					<ShortName>GUI_Split_Active.wav</ShortName>
+					<Path>SFX\GUI_Split_Active_D124CA2C.wem</Path>
+				</File>
+				<File Id="761651896" Language="SFX">
+					<ShortName>Character_Hit_Water_01.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="778693737" Language="SFX">
+					<ShortName>Move_Fox_Ice_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_03_388A97B6.wem</Path>
+				</File>
+				<File Id="780048494" Language="SFX">
+					<ShortName>Move_Fox_Ground_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_02_1B60AD5F.wem</Path>
+				</File>
+				<File Id="785333790" Language="SFX">
+					<ShortName>Move_Wolf_Grass_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="787118364" Language="SFX">
+					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
+					<Path>SFX\Map_Env_BeesOnFlowers_388A97B6.wem</Path>
+				</File>
+				<File Id="793490377" Language="SFX">
+					<ShortName>Move_Hedgehog.wav</ShortName>
+					<Path>SFX\Move_Hedgehog_D124CA2C.wem</Path>
+				</File>
+				<File Id="814823044" Language="SFX">
+					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_02_164CD5C8.wem</Path>
+				</File>
+				<File Id="868623114" Language="SFX">
+					<ShortName>Move_Wolf_Ground_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_03_432D8D8D.wem</Path>
+				</File>
+				<File Id="891115824" Language="SFX">
+					<ShortName>Move_Wolf_Grass_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_03_2639E6C6.wem</Path>
+				</File>
+				<File Id="893164066" Language="SFX">
+					<ShortName>Collect_Chicken.wav</ShortName>
+					<Path>SFX\Collect_Chicken_D124CA2C.wem</Path>
+				</File>
+				<File Id="899780812" Language="SFX">
+					<ShortName>Move_Fox_Ground_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_03_CF10496A.wem</Path>
+				</File>
+				<File Id="903695891" Language="SFX">
+					<ShortName>Move_Ketsu.wav</ShortName>
+					<Path>SFX\Move_Ketsu_D124CA2C.wem</Path>
+				</File>
+				<File Id="925777685" Language="SFX">
+					<ShortName>Move_Wolf_Ice_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_01_388A97B6.wem</Path>
+				</File>
+				<File Id="926815307" Language="SFX">
+					<ShortName>Move_OnBridge_01.wav</ShortName>
+					<Path>SFX\Move_OnBridge_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="935211600" Language="SFX">
+					<ShortName>Move_Wolf_Ground_04.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_04_F6333CC3.wem</Path>
+				</File>
+				<File Id="935737943" Language="SFX">
+					<ShortName>Transform_FromKetsu.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_C970DD94.wem</Path>
+				</File>
+				<File Id="941997029" Language="SFX">
+					<ShortName>Move_Fox_Ground_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="943145784" Language="SFX">
+					<ShortName>Move_Wolf_Ground_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_01_9D2960B2.wem</Path>
+				</File>
+				<File Id="945667667" Language="SFX">
+					<ShortName>Character_Hit_Water_03.wav</ShortName>
+					<Path>SFX\Character_Hit_Water_03_D124CA2C.wem</Path>
+				</File>
+				<File Id="946403468" Language="SFX">
+					<ShortName>Move_Fox_Ice_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_01_388A97B6.wem</Path>
+				</File>
+				<File Id="947826981" Language="SFX">
+					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_SmallWaterStream_388A97B6.wem</Path>
+				</File>
+				<File Id="962930836" Language="SFX">
+					<ShortName>Toolbox_Collect_KetsuMaxPowerUp.wav</ShortName>
+					<Path>SFX\Toolbox_Collect_KetsuMaxPowerUp_D124CA2C.wem</Path>
+				</File>
+				<File Id="1038935475" Language="SFX">
+					<ShortName>Character_Hit_Hedgehog_01.wav</ShortName>
+					<Path>SFX\Character_Hit_Hedgehog_01_D124CA2C.wem</Path>
+				</File>
+				<File Id="1040587393" Language="SFX">
+					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Next_Button_D124CA2C.wem</Path>
+				</File>
+				<File Id="1048122472" Language="SFX">
+					<ShortName>Move_Wolf_Ice_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_03_388A97B6.wem</Path>
+				</File>
+				<File Id="1069057915" Language="SFX">
+					<ShortName>Wolf_Death_Water_01.wav</ShortName>
+					<Path>SFX\Wolf_Death_Water_01_D124CA2C.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

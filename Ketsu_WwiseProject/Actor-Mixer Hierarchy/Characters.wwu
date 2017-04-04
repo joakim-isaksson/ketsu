@@ -537,7 +537,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="690310313"/>
+														<File Platform="Android" ID="690310313"/>
+														<File Platform="iOS" ID="690310313"/>
+														<File Platform="Windows" ID="690310313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -559,7 +561,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_02.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="843588775"/>
+														<File Platform="Android" ID="843588775"/>
+														<File Platform="iOS" ID="843588775"/>
+														<File Platform="Windows" ID="843588775"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -581,7 +585,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_03.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="431942235"/>
+														<File Platform="Android" ID="431942235"/>
+														<File Platform="iOS" ID="431942235"/>
+														<File Platform="Windows" ID="431942235"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -603,7 +609,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_04.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="338727587"/>
+														<File Platform="Android" ID="338727587"/>
+														<File Platform="iOS" ID="338727587"/>
+														<File Platform="Mac" ID="540887889"/>
+														<File Platform="Windows" ID="338727587"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -625,7 +634,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_05.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="71427473"/>
+														<File Platform="Android" ID="71427473"/>
+														<File Platform="iOS" ID="71427473"/>
+														<File Platform="Windows" ID="71427473"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1250,7 +1261,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_01.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="690310313"/>
+														<File Platform="Android" ID="690310313"/>
+														<File Platform="iOS" ID="690310313"/>
+														<File Platform="Mac" ID="926815307"/>
+														<File Platform="Windows" ID="690310313"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1272,7 +1286,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_02.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="843588775"/>
+														<File Platform="Android" ID="843588775"/>
+														<File Platform="iOS" ID="843588775"/>
+														<File Platform="Mac" ID="171998509"/>
+														<File Platform="Windows" ID="843588775"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1294,7 +1311,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_03.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="431942235"/>
+														<File Platform="Android" ID="431942235"/>
+														<File Platform="iOS" ID="431942235"/>
+														<File Platform="Mac" ID="642861469"/>
+														<File Platform="Windows" ID="431942235"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1316,7 +1336,9 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_04.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="338727587"/>
+														<File Platform="Android" ID="338727587"/>
+														<File Platform="iOS" ID="338727587"/>
+														<File Platform="Windows" ID="338727587"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1338,7 +1360,10 @@
 													<Language>SFX</Language>
 													<AudioFile>Move_OnBridge_05.wav</AudioFile>
 													<ConvertedFileIDList>
-														<File ID="71427473"/>
+														<File Platform="Android" ID="71427473"/>
+														<File Platform="iOS" ID="71427473"/>
+														<File Platform="Mac" ID="202414446"/>
+														<File Platform="Windows" ID="71427473"/>
 													</ConvertedFileIDList>
 												</AudioFileSource>
 											</ChildrenList>
