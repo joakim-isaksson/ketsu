@@ -10,7 +10,6 @@
 						<ObjectRef Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Chicken" ID="{09CF79F5-D978-4416-BE81-08E09FCD2CFC}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Hit" ID="{3B62C43B-0D21-4498-AFD8-A0370119CA6F}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Map_Bridge" ID="{A4759869-B271-47C6-B47E-50E7D400EC87}" WorkUnitID="{50E26251-E0E8-434A-B457-4B2B4F7A4DAE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Function" ID="{F1B1DDD5-8C6C-4862-B015-A3281FF08E27}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Split" ID="{8F8E4E4D-343A-4966-88B0-C14B62DA2EA4}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{552283F4-17D6-499D-916B-0D4C116621EE}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
@@ -26,9 +25,7 @@
 				</SoundBank>
 				<SoundBank Name="Music_Soundbank" ID="{8EE3BEA4-436B-40DD-8B8B-A27F93F8DF75}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_MenuMusic" ID="{45E2DF70-060B-4745-996A-3437EAD1AA29}" WorkUnitID="{5AA9036D-DAD7-4795-8938-05503628B349}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}" WorkUnitID="{EE289F33-0501-43C4-A56C-585ADB71ED7C}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Play_W1_InGameMusic" ID="{35E60518-6849-4E77-ABE9-0533248BB64B}" WorkUnitID="{D2E890A7-A6FF-4BD7-B95C-2444C9CF9AB4}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Music" ID="{C489545F-5A31-4916-ADCB-890D56845F59}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

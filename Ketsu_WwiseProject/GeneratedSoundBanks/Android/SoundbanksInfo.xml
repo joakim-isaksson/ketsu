@@ -115,21 +115,26 @@
 			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\Music\Stingers\Level_Win"/>
+				<Event Id="620526404" Name="Play_InGameMusic_Hedgy" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic_Hedgy"/>
 				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
-				<Event Id="358982595" Name="Play_W1_InGameMusic" ObjectPath="\Events\Music\InGameMusic\Play_W1_InGameMusic"/>
+				<Event Id="2086825057" Name="Play_TutorialMusic" ObjectPath="\Events\Music\InGameMusic\Play_TutorialMusic"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="132533196" Language="SFX">
 					<ShortName>Ketsu_MenuMusic_Ambient.wav</ShortName>
-					<Path>SFX\Ketsu_MenuMusic_Ambient_1B431ABC.wem</Path>
-				</File>
-				<File Id="136273710" Language="SFX">
-					<ShortName>LevelMusic_W1_Loop1.wav</ShortName>
-					<Path>SFX\LevelMusic_W1_Loop1_D124CA2C.wem</Path>
+					<Path>SFX\Ketsu_MenuMusic_Ambient_60D8BBB9.wem</Path>
 				</File>
 				<File Id="501425487" Language="SFX">
 					<ShortName>Level_Win.wav</ShortName>
 					<Path>SFX\Level_Win_D124CA2C.wem</Path>
+				</File>
+				<File Id="602394122" Language="SFX">
+					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Peaceful_Short_FE3E5648.wem</Path>
+				</File>
+				<File Id="669844642" Language="SFX">
+					<ShortName>LevelMusic_Hedgy_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Hedgy_Short_D124CA2C.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -166,7 +171,6 @@
 				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
 				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Hedgehog\Move_Hedgehog"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
-				<Event Id="3706173237" Name="Move_OnBridge" ObjectPath="\Events\World\Map_Bridge\Move_OnBridge"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
 				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
@@ -186,11 +190,11 @@
 			<IncludedMemoryFiles>
 				<File Id="20985966" Language="SFX">
 					<ShortName>Transform_ToKetsu-001.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu-001_B824C30D.wem</Path>
+					<Path>SFX\Transform_ToKetsu-001_C9405FA4.wem</Path>
 				</File>
 				<File Id="40123842" Language="SFX">
 					<ShortName>Move_Fox_Grass_04.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_04_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Grass_04_D74A2EFE.wem</Path>
 				</File>
 				<File Id="54523543" Language="SFX">
 					<ShortName>GUI_Settings_Button.wav</ShortName>
@@ -202,11 +206,11 @@
 				</File>
 				<File Id="99673032" Language="SFX">
 					<ShortName>Move_Wolf_Grass_05.wav</ShortName>
-					<Path>SFX\Move_Wolf_Grass_05_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Grass_05_259E30AD.wem</Path>
 				</File>
 				<File Id="100508892" Language="SFX">
 					<ShortName>Move_Fox_Grass_05.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_05_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Grass_05_A67772CA.wem</Path>
 				</File>
 				<File Id="117800326" Language="SFX">
 					<ShortName>GUI_PowerUp_Crystal_Button.wav</ShortName>
@@ -278,7 +282,7 @@
 				</File>
 				<File Id="402022915" Language="SFX">
 					<ShortName>Move_Fox_Grass_02.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_02_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Grass_02_D2AFBBE4.wem</Path>
 				</File>
 				<File Id="420154487" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
@@ -334,7 +338,7 @@
 				</File>
 				<File Id="555482349" Language="SFX">
 					<ShortName>Move_Fox_Grass_03.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_03_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Grass_03_018F5C98.wem</Path>
 				</File>
 				<File Id="603409939" Language="SFX">
 					<ShortName>UI_WinScreen_Restart_Button.wav</ShortName>
@@ -350,7 +354,7 @@
 				</File>
 				<File Id="633911034" Language="SFX">
 					<ShortName>Move_Fox_Ground_04.wav</ShortName>
-					<Path>SFX\Move_Fox_Ground_04_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Ground_04_1E9F5D37.wem</Path>
 				</File>
 				<File Id="635168810" Language="SFX">
 					<ShortName>GUI_Sheep_Button.wav</ShortName>
@@ -398,7 +402,7 @@
 				</File>
 				<File Id="780048494" Language="SFX">
 					<ShortName>Move_Fox_Ground_02.wav</ShortName>
-					<Path>SFX\Move_Fox_Ground_02_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Ground_02_1B60AD5F.wem</Path>
 				</File>
 				<File Id="785333790" Language="SFX">
 					<ShortName>Move_Wolf_Grass_01.wav</ShortName>
@@ -414,7 +418,7 @@
 				</File>
 				<File Id="814823044" Language="SFX">
 					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_02_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_02_164CD5C8.wem</Path>
 				</File>
 				<File Id="843588775" Language="SFX">
 					<ShortName>Move_OnBridge_02.wav</ShortName>
@@ -422,11 +426,11 @@
 				</File>
 				<File Id="868623114" Language="SFX">
 					<ShortName>Move_Wolf_Ground_03.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_03_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_03_432D8D8D.wem</Path>
 				</File>
 				<File Id="891115824" Language="SFX">
 					<ShortName>Move_Wolf_Grass_03.wav</ShortName>
-					<Path>SFX\Move_Wolf_Grass_03_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Grass_03_2639E6C6.wem</Path>
 				</File>
 				<File Id="893164066" Language="SFX">
 					<ShortName>Collect_Chicken.wav</ShortName>
@@ -434,7 +438,7 @@
 				</File>
 				<File Id="899780812" Language="SFX">
 					<ShortName>Move_Fox_Ground_03.wav</ShortName>
-					<Path>SFX\Move_Fox_Ground_03_D124CA2C.wem</Path>
+					<Path>SFX\Move_Fox_Ground_03_CF10496A.wem</Path>
 				</File>
 				<File Id="903695891" Language="SFX">
 					<ShortName>Move_Ketsu.wav</ShortName>
@@ -446,11 +450,11 @@
 				</File>
 				<File Id="935211600" Language="SFX">
 					<ShortName>Move_Wolf_Ground_04.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_04_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_04_F6333CC3.wem</Path>
 				</File>
 				<File Id="935737943" Language="SFX">
 					<ShortName>Transform_FromKetsu.wav</ShortName>
-					<Path>SFX\Transform_FromKetsu_68F808CA.wem</Path>
+					<Path>SFX\Transform_FromKetsu_C970DD94.wem</Path>
 				</File>
 				<File Id="941997029" Language="SFX">
 					<ShortName>Move_Fox_Ground_01.wav</ShortName>
@@ -458,7 +462,7 @@
 				</File>
 				<File Id="943145784" Language="SFX">
 					<ShortName>Move_Wolf_Ground_01.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_01_D124CA2C.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_01_9D2960B2.wem</Path>
 				</File>
 				<File Id="945667667" Language="SFX">
 					<ShortName>Character_Hit_Water_03.wav</ShortName>

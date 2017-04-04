@@ -45,11 +45,11 @@ namespace AK
         static const AkUniqueID MOVE_FOX_ICE = 4045630760U;
         static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
-        static const AkUniqueID MOVE_ONBRIDGE = 3706173237U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
         static const AkUniqueID MOVE_WOLF_ICE = 1426970985U;
+        static const AkUniqueID PLAY_INGAMEMUSIC_HEDGY = 620526404U;
         static const AkUniqueID PLAY_MENUMUSIC = 2570041344U;
-        static const AkUniqueID PLAY_W1_INGAMEMUSIC = 358982595U;
+        static const AkUniqueID PLAY_TUTORIALMUSIC = 2086825057U;
         static const AkUniqueID POPOPMENU_SETTINGS_BUTTON = 323011021U;
         static const AkUniqueID POPUPMENU_BACK_BUTTON = 3094295669U;
         static const AkUniqueID POPUPMENU_MAINMENU_BUTTON = 3215618068U;
@@ -78,26 +78,23 @@ namespace AK
         static const AkUniqueID WORLDMENU_UNLOCKEDWORLD_BUTTON = 574974477U;
     } // namespace EVENTS
 
-    namespace STATES
+    namespace SWITCHES
     {
         namespace TILE_MATERIAL
         {
             static const AkUniqueID GROUP = 253806231U;
 
-            namespace STATE
+            namespace SWITCH
             {
+                static const AkUniqueID BRIDGE = 2068062714U;
                 static const AkUniqueID GRASS = 4248645337U;
                 static const AkUniqueID GROUND = 2528658256U;
+                static const AkUniqueID ICE = 344481046U;
                 static const AkUniqueID MUD = 712897245U;
-            } // namespace STATE
+            } // namespace SWITCH
         } // namespace TILE_MATERIAL
 
-    } // namespace STATES
-
-    namespace GAME_PARAMETERS
-    {
-        static const AkUniqueID SPACESHIP_MOVEMENT = 3577286649U;
-    } // namespace GAME_PARAMETERS
+    } // namespace SWITCHES
 
     namespace BANKS
     {

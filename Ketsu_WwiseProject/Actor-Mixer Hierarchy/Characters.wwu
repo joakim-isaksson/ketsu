@@ -495,9 +495,149 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Bridge" ID="{423E15B6-283E-4310-8BED-E727F6161E85}" ShortID="958133929">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_OnBridge_01" ID="{BB0E162D-3EAB-4945-BBF3-0E2A655D47B6}" ShortID="620067066" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_01" ID="{5279C8B8-7AB9-40DC-A9D1-F456E7E3E08E}" ShortID="926815307">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="690310313"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_01" ID="{5279C8B8-7AB9-40DC-A9D1-F456E7E3E08E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_02" ID="{4A4A0D49-47A3-4880-BA95-3569BCFB99A5}" ShortID="215724730" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_02" ID="{676F05EB-DDE3-43FE-94CD-BCBC57EBFB4A}" ShortID="171998509">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="843588775"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_02" ID="{676F05EB-DDE3-43FE-94CD-BCBC57EBFB4A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_03" ID="{72D75FA3-AF44-42F1-ACA7-FF5A0E951CAA}" ShortID="105824189" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_03" ID="{C0E3BF1B-4289-4563-A0F2-4A41473CE03B}" ShortID="642861469">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="431942235"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_03" ID="{C0E3BF1B-4289-4563-A0F2-4A41473CE03B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_04" ID="{E8AD5EE7-A927-44CA-9C2B-132E9A5CEA63}" ShortID="499356898" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_04" ID="{DFA733FC-FE33-4E4A-91C6-52DBFDCB4305}" ShortID="790777122">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="338727587"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_04" ID="{DFA733FC-FE33-4E4A-91C6-52DBFDCB4305}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_05" ID="{D75F0A2B-E370-4567-BC3F-6EC33CF203EF}" ShortID="445004290" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_05" ID="{C0A936A8-DA3A-406D-8078-E2A056B928F0}" ShortID="202414446">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_05.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="71427473"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_05" ID="{C0A936A8-DA3A-406D-8078-E2A056B928F0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
-								<GroupRef Name="Tile_Material_Fox" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}"/>
+								<GroupRef Name="Tile_Material" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}"/>
 								<DefaultSwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -510,10 +650,19 @@
 										<ItemRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Bridge" ID="{423E15B6-283E-4310-8BED-E727F6161E85}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Bridge" ID="{0FFABD2F-9970-4B0E-B527-FA7739112A6E}"/>
+										<ItemList>
+											<ItemRef Name="Bridge" ID="{423E15B6-283E-4310-8BED-E727F6161E85}"/>
+										</ItemList>
+									</Grouping>
 									<Grouping>
 										<SwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 										<ItemList>
@@ -1054,10 +1203,155 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Bridge" ID="{134406B6-D292-4B38-A9EE-DF1D0AA6180E}" ShortID="661522970">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>12</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Move_OnBridge_01" ID="{E937AB18-AE4C-4DFF-88CA-F68D8C1E205B}" ShortID="90806410" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_01" ID="{D205222D-06A1-4A76-B7C5-C747516156B8}" ShortID="929380230">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_01.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="690310313"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_01" ID="{D205222D-06A1-4A76-B7C5-C747516156B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_02" ID="{E3194E0E-7CDE-41FF-A9F2-6A043E23F6CB}" ShortID="180729084" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_02" ID="{B1C48424-7E74-49AB-B332-D8F90E6D34E5}" ShortID="297350870">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_02.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="843588775"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_02" ID="{B1C48424-7E74-49AB-B332-D8F90E6D34E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_03" ID="{A5E7DCC0-2102-4FE9-B477-8140DA16ACEB}" ShortID="224625491" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_03" ID="{7D21EF9F-5009-4FF6-958D-0E68243010FE}" ShortID="764944503">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_03.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="431942235"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_03" ID="{7D21EF9F-5009-4FF6-958D-0E68243010FE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_04" ID="{AD2C2113-6EDC-4C76-A2E8-6872BF0C08F6}" ShortID="948517768" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_04" ID="{E9AFF918-AE73-4B0D-8B19-6AC83CAEB795}" ShortID="540887889">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_04.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="338727587"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_04" ID="{E9AFF918-AE73-4B0D-8B19-6AC83CAEB795}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Move_OnBridge_05" ID="{9B86338D-1791-4513-860F-0A62D09AD849}" ShortID="605926278" Type="SoundFX">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Move_OnBridge_05" ID="{AB71CE25-F441-498E-ACD2-6F1E07BD82D2}" ShortID="227412169">
+													<Language>SFX</Language>
+													<AudioFile>Move_OnBridge_05.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="71427473"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Move_OnBridge_05" ID="{AB71CE25-F441-498E-ACD2-6F1E07BD82D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
-								<GroupRef Name="Tile_Material_Wolf" ID="{6FC2C496-CF1D-4110-9F89-E72634368711}"/>
-								<DefaultSwitchRef Name="Ground" ID="{3E5FB3B9-857C-477B-8059-7A5C166E2A6A}"/>
+								<GroupRef Name="Tile_Material" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}"/>
+								<DefaultSwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
@@ -1069,32 +1363,41 @@
 										<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
+										<ItemRef Name="Bridge" ID="{134406B6-D292-4B38-A9EE-DF1D0AA6180E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
 										<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
 									</GroupingBehavior>
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Ice" ID="{88E26472-5C16-486F-A9B9-184E02AAA178}"/>
+										<SwitchRef Name="Bridge" ID="{0FFABD2F-9970-4B0E-B527-FA7739112A6E}"/>
 										<ItemList>
-											<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
+											<ItemRef Name="Bridge" ID="{134406B6-D292-4B38-A9EE-DF1D0AA6180E}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Grass" ID="{7A8A0DAF-7296-4750-BF98-6F7C5E136AC7}"/>
-										<ItemList>
-											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Ground" ID="{3E5FB3B9-857C-477B-8059-7A5C166E2A6A}"/>
+										<SwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 										<ItemList>
 											<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Mud" ID="{A36219E2-EE45-4E75-BDD7-818DD18E074E}"/>
+										<SwitchRef Name="Mud" ID="{FFF97B7F-9602-45E0-994C-8F3D75FA047A}"/>
 										<ItemList>
 											<ItemRef Name="Mud" ID="{166D4A60-712B-4D4D-BC57-8DA38CEBF9F1}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Ice" ID="{444CF6B8-6A18-4E35-BB4A-06AFECC67BB7}"/>
+										<ItemList>
+											<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{55CDB8ED-F397-402B-AED0-67DD69AD005C}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

@@ -84,21 +84,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Map_Bridge" ID="{A4759869-B271-47C6-B47E-50E7D400EC87}" ShortID="1064955399">
-					<ChildrenList>
-						<Event Name="Move_OnBridge" ID="{20779B2E-26CD-4804-8F8E-65EC99358E98}">
-							<ChildrenList>
-								<Action Name="Play" ID="{A3534A56-C330-4E6F-9009-523506102BAE}" ShortID="991888814" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{B5FEA3FB-1B28-4A8A-8BC3-D5641DBFF40B}" Global="false">
-											<ObjectRef Name="Move_OnBridge" ID="{CB46E069-F4DC-42E1-BC9B-7B937ECDE95B}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

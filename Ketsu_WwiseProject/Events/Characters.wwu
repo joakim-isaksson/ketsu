@@ -100,6 +100,10 @@
 						<Event Name="Stop_Fox_Ice" ID="{09AC9477-3406-4757-BC7F-432F679CE5FE}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{620AB4D4-A608-4F3C-9D1F-DB1CF48CA9E4}" ShortID="444885173" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{8B87C3BD-CC13-440D-9024-A35077B57EB8}" Global="false">
 											<ObjectRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
@@ -122,6 +126,10 @@
 						<Event Name="Stop_Wolf_Ice" ID="{A5570FB3-1699-4FCA-A9A3-C711D2DE61CB}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{C848B910-1606-4A16-B533-8878554DAB0D}" ShortID="575526078" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{1D6EF525-9CB8-419B-8990-05DF87DEC286}" Global="false">
 											<ObjectRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
