@@ -9,6 +9,7 @@
 							<ChildrenList>
 								<Action Name="Set Voice Volume" ID="{52362C7B-68C0-4E03-951B-3C0950132408}" ShortID="195141849" Type="ChangeVolume" Scope="One" Global="false">
 									<PropertyList>
+										<Property Name="Absolute" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64" Value="-3"/>
 									</PropertyList>
 									<ElementList>
@@ -26,6 +27,7 @@
 								</Action>
 								<Action Name="Set Voice Volume" ID="{EB1FDA72-B88E-463D-B8F5-0D36B06811E6}" ShortID="504630542" Type="ChangeVolume" Scope="One" Global="false">
 									<PropertyList>
+										<Property Name="Absolute" Type="bool" Value="False"/>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
@@ -47,7 +49,7 @@
 								</Action>
 								<Action Name="Set Voice Volume" ID="{2B8BAAD1-5F75-47E3-BA29-51DA2B921BB2}" ShortID="324826367" Type="ChangeVolume" Scope="One" Global="false">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Absolute" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64" Value="-8"/>
 									</PropertyList>
 									<ElementList>
@@ -65,8 +67,8 @@
 								</Action>
 								<Action Name="Set Voice Volume" ID="{2C04E02B-15B1-45F2-AFD6-4EB64882A581}" ShortID="124802539" Type="ChangeVolume" Scope="One" Global="false">
 									<PropertyList>
+										<Property Name="Absolute" Type="bool" Value="False"/>
 										<Property Name="Delay" Type="Real64" Value="3"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{8AC04E76-3315-4B36-89BB-76C5E2894DF1}" Global="false">
@@ -87,7 +89,7 @@
 								</Action>
 								<Action Name="Set Voice Volume" ID="{D729A462-1E40-49E2-9DDA-D40232841F86}" ShortID="1019140726" Type="ChangeVolume" Scope="One" Global="false">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="Absolute" Type="bool" Value="False"/>
 										<Property Name="Volume" Type="Real64" Value="-8"/>
 									</PropertyList>
 									<ElementList>
