@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4B7CFCE5-0C64-40E8-9C5C-814256091DAC}" SchemaVersion="75">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{4B7CFCE5-0C64-40E8-9C5C-814256091DAC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4B7CFCE5-0C64-40E8-9C5C-814256091DAC}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Tile_Material_Fox" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}">
+					<ChildrenList>
+						<Switch Name="Mud" ID="{FFF97B7F-9602-45E0-994C-8F3D75FA047A}"/>
+						<Switch Name="Ice" ID="{444CF6B8-6A18-4E35-BB4A-06AFECC67BB7}"/>
+						<Switch Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
+						<Switch Name="Grass" ID="{55CDB8ED-F397-402B-AED0-67DD69AD005C}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Tile_Material_Wolf" ID="{6FC2C496-CF1D-4110-9F89-E72634368711}">
+					<ChildrenList>
+						<Switch Name="Ground" ID="{3E5FB3B9-857C-477B-8059-7A5C166E2A6A}"/>
+						<Switch Name="Mud" ID="{A36219E2-EE45-4E75-BDD7-818DD18E074E}"/>
+						<Switch Name="Ice" ID="{88E26472-5C16-486F-A9B9-184E02AAA178}"/>
+						<Switch Name="Grass" ID="{7A8A0DAF-7296-4750-BF98-6F7C5E136AC7}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

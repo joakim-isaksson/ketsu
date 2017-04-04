@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" PersistMode="Standalone">
-			<ChildrenList>
-				<StateGroup Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}">
-					<ChildrenList>
-						<State Name="None" ID="{A0184BBF-6021-42FA-A6F2-24705FE00411}"/>
-						<State Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
-						<State Name="Grass" ID="{BF6F0170-BB9B-4AED-93EC-C8A45AF1C9C0}"/>
-						<State Name="Mud" ID="{3FDABE93-E607-4119-9C08-1C11A293EB8A}"/>
-					</ChildrenList>
-				</StateGroup>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" PersistMode="Standalone"/>
 	</States>
 </WwiseDocument>

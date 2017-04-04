@@ -133,6 +133,18 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="Move_Fox" ID="{4A780AA1-2C65-42C7-AD82-9C4517FB26E9}" ShortID="338787506">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>16</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>27</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -144,6 +156,16 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}" ShortID="340483308">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>17</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
@@ -185,6 +207,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_02" ID="{ECE9FB41-ECB7-4D68-B9A0-8B234434E21B}" ShortID="780048494">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.45574606396733E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.33965273498387E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_02.wav</AudioFile>
 												</AudioFileSource>
@@ -204,6 +230,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_03" ID="{207DB537-0E46-4A6B-B005-A98FBCD3574F}" ShortID="899780812">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.74429985137927E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.051166128973792"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_03.wav</AudioFile>
 												</AudioFileSource>
@@ -223,6 +253,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_04" ID="{DC427B19-52ED-465A-8034-2C8E5FD0B6D7}" ShortID="633911034">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.029324440255676"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.12745939109806E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_04.wav</AudioFile>
 												</AudioFileSource>
@@ -235,6 +269,16 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" ShortID="119645967">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>23</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -316,7 +360,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}" ShortID="938503331">
 									<PropertyList>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -357,6 +401,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_02" ID="{01F13CDC-4FCE-4742-8154-0480EA9FD56B}" ShortID="402022915">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.14467563224224E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.017368164554158"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_02.wav</AudioFile>
 												</AudioFileSource>
@@ -376,6 +424,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_03" ID="{3174B1A5-35A7-49C9-8A8C-340721F425A4}" ShortID="555482349">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.07446341473238E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.120553722969353"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_03.wav</AudioFile>
 												</AudioFileSource>
@@ -395,6 +447,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_04" ID="{EB917396-AF02-433B-B5F1-40DD0420A0EE}" ShortID="40123842">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.29383002460901E-03"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.95178485840755E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_04.wav</AudioFile>
 												</AudioFileSource>
@@ -414,6 +470,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_05" ID="{23B6532F-12FD-4C33-9075-20AE3DA5839A}" ShortID="100508892">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.89196199498153E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.133330715353045"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_05.wav</AudioFile>
 												</AudioFileSource>
@@ -424,20 +485,26 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Mud" ID="{CB810B23-3883-46BA-847A-B37DB7393387}" ShortID="869528264">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-							</StateInfo>
 							<GroupingInfo>
-								<GroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
-								<DefaultSwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+								<GroupRef Name="Tile_Material_Fox" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}"/>
+								<DefaultSwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Mud" ID="{CB810B23-3883-46BA-847A-B37DB7393387}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}"/>
@@ -448,13 +515,25 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+										<SwitchRef Name="Ground" ID="{A2C53948-9B2D-45D0-9122-BD18EEF206DB}"/>
 										<ItemList>
 											<ItemRef Name="Ground" ID="{D09C381C-13CE-4248-B20E-D689F1B11C3F}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Grass" ID="{BF6F0170-BB9B-4AED-93EC-C8A45AF1C9C0}"/>
+										<SwitchRef Name="Mud" ID="{FFF97B7F-9602-45E0-994C-8F3D75FA047A}"/>
+										<ItemList>
+											<ItemRef Name="Mud" ID="{CB810B23-3883-46BA-847A-B37DB7393387}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Ice" ID="{444CF6B8-6A18-4E35-BB4A-06AFECC67BB7}"/>
+										<ItemList>
+											<ItemRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{55CDB8ED-F397-402B-AED0-67DD69AD005C}"/>
 										<ItemList>
 											<ItemRef Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}"/>
 										</ItemList>
@@ -623,6 +702,18 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<SwitchContainer Name="Move_Wolf" ID="{17E1D0B9-BCB9-4B0B-A83F-0BC66D1E90AF}" ShortID="537608327">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>15</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>31</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -694,6 +785,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Grass_03" ID="{62B206B9-C825-4375-8200-4327B65F6EFC}" ShortID="891115824">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.53219511605708E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.26912434600838E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Grass_03.wav</AudioFile>
 												</AudioFileSource>
@@ -732,6 +827,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Grass_05" ID="{F5309332-CC1C-45A6-A035-C883FA6CB1F0}" ShortID="99673032">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.99671342782228E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.03336112420101E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Grass_05.wav</AudioFile>
 												</AudioFileSource>
@@ -766,6 +865,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_01" ID="{0BD7FAC7-47BA-481D-8AD9-5B0C7BA55EC5}" ShortID="943145784">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.15400168356271E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.59885694952937E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.00067261955108E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.333009428756701"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_01.wav</AudioFile>
 												</AudioFileSource>
@@ -785,6 +890,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_02" ID="{92314B1C-9BAB-480D-93A5-FA19891388F6}" ShortID="814823044">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.077626096027517"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.254078692459814"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_02.wav</AudioFile>
 												</AudioFileSource>
@@ -804,6 +913,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_03" ID="{6E03DC72-344F-406C-B6EC-F71A0784B5C7}" ShortID="868623114">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.87088121216517E-03"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.311156704244753"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_03.wav</AudioFile>
 												</AudioFileSource>
@@ -823,6 +936,10 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_04" ID="{C87E4C4B-3383-4029-97EA-0719B91EC2F5}" ShortID="935211600">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.039791528215786"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.318332225726288"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_04.wav</AudioFile>
 												</AudioFileSource>
@@ -835,6 +952,16 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" ShortID="430129608">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
@@ -914,20 +1041,29 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Mud" ID="{166D4A60-712B-4D4D-BC57-8DA38CEBF9F1}" ShortID="273375279">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-							</StateInfo>
 							<GroupingInfo>
-								<GroupRef Name="Tile_Material" ID="{41AC0B2D-CFFA-4336-B67A-5F89A655C7C1}"/>
-								<DefaultSwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+								<GroupRef Name="Tile_Material_Wolf" ID="{6FC2C496-CF1D-4110-9F89-E72634368711}"/>
+								<DefaultSwitchRef Name="Ground" ID="{3E5FB3B9-857C-477B-8059-7A5C166E2A6A}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
 										<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Mud" ID="{166D4A60-712B-4D4D-BC57-8DA38CEBF9F1}"/>
 									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
@@ -938,15 +1074,27 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Ground" ID="{1544E86C-492B-4C0F-8563-A2C8DFBA603A}"/>
+										<SwitchRef Name="Ice" ID="{88E26472-5C16-486F-A9B9-184E02AAA178}"/>
+										<ItemList>
+											<ItemRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Grass" ID="{7A8A0DAF-7296-4750-BF98-6F7C5E136AC7}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Ground" ID="{3E5FB3B9-857C-477B-8059-7A5C166E2A6A}"/>
 										<ItemList>
 											<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Grass" ID="{BF6F0170-BB9B-4AED-93EC-C8A45AF1C9C0}"/>
+										<SwitchRef Name="Mud" ID="{A36219E2-EE45-4E75-BDD7-818DD18E074E}"/>
 										<ItemList>
-											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+											<ItemRef Name="Mud" ID="{166D4A60-712B-4D4D-BC57-8DA38CEBF9F1}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>
