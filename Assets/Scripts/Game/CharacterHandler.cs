@@ -184,33 +184,17 @@ namespace Ketsu.Game
             // Get direction for next move action
             Vector3 direction = moveQueue.Dequeue();
 
-            // Moving FOX / WOLF
-            if (ActiveCharacter.Type == MapObjectType.Fox || ActiveCharacter.Type == MapObjectType.Wolf)
+            if (ActiveCharacter.Type == MapObjectType.Ketsu)
+            {
+                HandleMoveAction(direction, ketsu, null);
+            }
+            else
             {
                 Character active = ActiveCharacter;
                 Character other = ActiveCharacter.Type == MapObjectType.Fox ? wolf : fox;
 
-                HandleMoveAction(
-                    direction,
-                    active,
-                    active.transform.position,
-                    other,
-                    other != null ? other.transform.position : Vector3.zero,
-                    false
-                );
-            }
-
-            // Moving KETSU
-            else
-            {
-                HandleMoveAction(
-                    direction,
-                    ketsu,
-                    ketsu.transform.position,
-                    null,
-                    Vector3.zero,
-                    true
-                );
+                if (other != null) HandleMoveAction(direction, active, other);
+                else HandleMoveAction(direction, active, null);
             }
         }
 
@@ -225,75 +209,93 @@ namespace Ketsu.Game
             NextMoveAction();
         }
 
-        void HandleMoveAction(Vector3 direction, Character active, Vector3 activeOrigin, Character other, Vector3 otherOrigin, bool isKetsu)
+        void HandleMoveAction(Vector3 direction, Character active, Character other)
         {
-            // Get target information
-            TargetInfo activeTarget = new TargetInfo(active, activeOrigin + direction);
-            TargetInfo otherTarget = null;
+            TargetInfo activeTarget = new TargetInfo(active, active.transform.position);
+            TargetInfo otherTarget = other == null ? null : new TargetInfo(active, other.transform.position);
+            TargetInfo activePointer = activeTarget;
+            TargetInfo otherPointer = otherTarget;
+
+            bool firstMove = true;
+            bool activeMoving = true;
+            bool otherMoving = other == null ? false : true;
+            while (activeMoving || otherMoving)
+            {
+                // Get target information
+                if (activeMoving) activeTarget = new TargetInfo(active, activePointer.Position + direction);
+                if (otherMoving) otherTarget = new TargetInfo(other, otherPointer.Position + VectorUtils.Mirror(direction, Vector3.zero));
+
+                // Spend Ketsu Power on first move (only when ketsu)
+                if (firstMove && active.Type == MapObjectType.Ketsu && !ConsumeKetsuPower(KetsuMoveCost))
+                {
+                    // No ketsu power to spend -> Split
+                    SplitKetsu(activeTarget.Position);
+                    return;
+                }
+                firstMove = false;
+
+                // Turning to ketsu (active first)
+                if (other != null && (
+                    (activeTarget.Blocker != null && activeTarget.Blocker.Type == other.Type) ||
+                    (activeTarget.Blocker == null && activeTarget.Position == otherPointer.Position) ||
+                    (activeTarget.Blocker == null && activeTarget.Position.Equals(otherTarget.Position))))
+                {
+                    TransformToKetsu(activeTarget.Position, active, other);
+                    return;
+                }
+
+                // Turning to ketsu (other first)
+                else if (other != null && otherTarget.Blocker != null && otherTarget.Blocker.Type == active.Type)
+                {
+                    TransformToKetsu(activePointer.Position, active, other);
+                    return;
+                }
+
+                // No blockers
+                else if (activeTarget.Blocker == null && (other == null || otherTarget.Blocker == null))
+                {
+                    activePointer = activeTarget;
+                    otherPointer = otherTarget;
+                    if (activeTarget.Ground.Type != MapObjectType.Ice) activeMoving = false;
+                    if (other != null && otherTarget.Ground.Type != MapObjectType.Ice) otherMoving = false;
+                }
+
+                // Active is blocked
+                else if (activeTarget.Blocker != null && (other == null || otherTarget.Blocker == null))
+                {
+                    activeMoving = false;
+                    if (otherPointer.Ground.Type == MapObjectType.Ice) otherPointer = otherTarget;
+                    else otherMoving = false;
+                }
+
+                // Other is blocked
+                else if (activeTarget.Blocker == null && (other != null && otherTarget.Blocker != null))
+                {
+                    otherMoving = false;
+                    if (activePointer.Ground.Type == MapObjectType.Ice) activePointer = activeTarget;
+                    else activeMoving = false;
+                }
+
+                // Both are blocked
+                else
+                {
+                    activeMoving = false;
+                    otherMoving = false;
+                }
+            }
+
+            // Move characters to new positions
             if (other != null)
             {
-                otherTarget = new TargetInfo(other, otherOrigin + VectorUtils.Mirror(direction, Vector3.zero));
+                waitingForMoveActions += 2;
+                active.MoveTo(activePointer.Position, OnMoveActionCompleted);
+                other.MoveTo(otherPointer.Position, OnMoveActionCompleted);
             }
-
-            // Check turning to Ketsu
-            if (other != null &&
-                ((activeTarget.Blocker != null && activeTarget.Blocker.Type == other.Type) ||
-                (activeTarget.Blocker == null && activeTarget.Position.Equals(otherTarget.Position))))
+            else
             {
-                TransformToKetsu(activeTarget.Position, active, other);
-                return;
-            }
-
-            // Check active blocker
-            if (activeTarget.Blocker != null)
-            {
-                Debug.Log(active.Type + " blocked by " + activeTarget.Blocker.Type);
-
-                if (active.transform.position != activeOrigin)
-                {
-                    waitingForMoveActions++;
-                    active.MoveTo(activeOrigin, OnMoveActionCompleted);
-                    return;
-                }
-
-                NextMoveAction();
-                return;
-            }
-
-            // Check if ketsu is going to split
-            if (isKetsu && !ConsumeKetsuPower(KetsuMoveCost))
-            {
-                SplitKetsu(activeTarget.Position);
-                return;
-            }
-
-            if (other == null)
-            {
-                if (activeTarget.Ground.Type == MapObjectType.Ice)
-                {
-                    HandleMoveAction(direction, active, activeTarget.Position, null, Vector3.zero, isKetsu);
-                    return;
-                }
-
-                // Move the active character
                 waitingForMoveActions++;
-                active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
-                return;
+                active.MoveTo(activePointer.Position, OnMoveActionCompleted);
             }
-
-            // Check other blocker
-            if (otherTarget.Blocker != null)
-            {
-                Debug.Log("Invalid Move: " + other.Type + " blocked by " + otherTarget.Blocker.Type);
-                NextMoveAction();
-                return;
-            }
-
-            // Move both characters
-            waitingForMoveActions += 2;
-            active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
-            other.MoveTo(otherTarget.Position, OnMoveActionCompleted);
-            return;
         }
 
         void TransformToKetsu(Vector3 mergePos, Character active, Character other)
