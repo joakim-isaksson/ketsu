@@ -16,6 +16,7 @@ public class LevelSelection : MonoBehaviour {
   	}  
 
   	IEnumerator Fly(){
+  		AkSoundEngine.PostEvent("LevelMenu_UnlockedLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, transform.rotation, t);
             yield return null;
@@ -23,6 +24,7 @@ public class LevelSelection : MonoBehaviour {
   	}
 
   	IEnumerator Load(){
+  		AkSoundEngine.PostEvent("LevelMenu_StartLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
             yield return null;
