@@ -107,7 +107,7 @@
 								</Action>
 								<Action Name="Stop" ID="{9DA0AB66-359B-45A7-920B-48EEFE838ED3}" ShortID="3912033" Type="Stop" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{7CAF6DAB-46FE-49C8-B3A7-A7B3F9023E40}" Global="false">
+										<Element ID="{60903511-8701-4E96-B4BB-86CCF06254B8}" Global="false">
 											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
