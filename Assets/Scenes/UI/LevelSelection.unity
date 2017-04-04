@@ -2189,6 +2189,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114710773606457824, guid: 6392668a503009d40ad2b387fd3ffe47,
+        type: 2}
+      propertyPath: unloadTriggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4801849683841176, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2315,6 +2320,11 @@ Prefab:
       propertyPath: valueGuid.Array.data[15]
       value: 192
       objectReference: {fileID: 0}
+    - target: {fileID: 114710773606457824, guid: 6392668a503009d40ad2b387fd3ffe47,
+        type: 2}
+      propertyPath: unloadTriggerList.Array.data[0]
+      value: -358577003
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
   m_IsPrefabParent: 0
@@ -2384,30 +2394,6 @@ MonoBehaviour:
   listenerMask: 1
   isStaticObject: 0
   m_posOffsetData: {fileID: 0}
---- !u!114 &1547552613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1547552609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c80d32f889db04e9c203897c5787ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: e5cf3d0803c0da41b80a3145186802c2
-  eventID: -232221033
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  multiPositionTypeLabel: 0
-  multiPositionArray: []
 --- !u!1 &1601401214
 GameObject:
   m_ObjectHideFlags: 0
