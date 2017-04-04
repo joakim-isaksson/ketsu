@@ -689,8 +689,9 @@
 						<Effect Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
 							<PropertyList>
 								<Property Name="HFRatio" Type="Real32" Value="3"/>
-								<Property Name="NumberOfDelays" Type="int32" Value="12"/>
-								<Property Name="ReverbTime" Type="Real32" Value="2"/>
+								<Property Name="NumberOfDelays" Type="int32" Value="4"/>
+								<Property Name="PreDelay" Type="Real32" Value="0.25"/>
+								<Property Name="ReverbTime" Type="Real32" Value="2.4"/>
 								<Property Name="WetLevel" Type="Real32" Value="-30"/>
 							</PropertyList>
 						</Effect>

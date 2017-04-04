@@ -36,10 +36,10 @@ public class PrefabRandomizer : MonoBehaviour {
 			Randomize(gameObject, pos, rot);
 		}
 
-		if(name.StartsWith("GroundEdge") || name.StartsWith("Bush") || name.StartsWith("TreeGroup") ||
-            name.StartsWith("Ice") || name.StartsWith("Island") || name.StartsWith("Mud") || name.StartsWith("Path") ||
-            name.StartsWith("Stone") || name.StartsWith("PinkFlowers") || name.StartsWith("YellowFlowers")
-             || name.StartsWith("Grass"))
+		if(name.StartsWith("GroundEdge(") || name.StartsWith("Bush(") || name.StartsWith("TreeGroup(") ||
+            name.StartsWith("Ice(") || name.StartsWith("Island(") || name.StartsWith("Mud(") || name.StartsWith("Path(") ||
+            name.StartsWith("Stone(") || name.StartsWith("PinkFlowers(") || name.StartsWith("YellowFlowers(")
+             || name.StartsWith("Grass("))
         {
 			name = name.Remove(name.IndexOf('('));
 			Vector3 pos = gameObject.transform.position;

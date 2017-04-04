@@ -4,22 +4,27 @@
 		<WorkUnit Name="Music" ID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="MenuMusic" ID="{F54B5F74-A35B-4403-958B-03E616F42556}" ShortID="188209533">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="MenuMusic_Draft_01" ID="{3807E32A-D52C-4170-AF0B-807346FE383A}" ShortID="58827147" Type="SoundFX">
+						<Sound Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" ShortID="1063625359" Type="SoundFX">
 							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>15</Value>
-									</ValueList>
-								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -31,13 +36,17 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="MenuMusic_Draft_01" ID="{6FD03763-BE7E-42AB-88F8-EE9BA3C3B698}" ShortID="105616402">
+								<AudioFileSource Name="Ketsu_MenuMusic_Ambient" ID="{81B56405-E017-41F1-9192-87AE112471C5}" ShortID="132533196">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="6.88938684132622"/>
+										<Property Name="TrimBegin" Type="Real64" Value="3.89400125814091"/>
+									</PropertyList>
 									<Language>SFX</Language>
-									<AudioFile>MenuMusic_Draft_01.wav</AudioFile>
+									<AudioFile>Ketsu_MenuMusic_Ambient.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="MenuMusic_Draft_01" ID="{6FD03763-BE7E-42AB-88F8-EE9BA3C3B698}" Platform="Linked"/>
+								<ActiveSource Name="Ketsu_MenuMusic_Ambient" ID="{81B56405-E017-41F1-9192-87AE112471C5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -86,6 +95,27 @@
 							<ObjectRef Name="Music" ID="{4D732450-C3D1-461E-9717-2C97E49E5459}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" ShortID="397143290" Type="SoundFX">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" ShortID="501425487">
+									<Language>SFX</Language>
+									<AudioFile>Level_Win.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

@@ -217,8 +217,6 @@ public class ParseMapOnLoad : MonoBehaviour
 
 							if (prefabs.ContainsKey(k) && k == val)
 							{
-								if(k == 192) 
-							Debug.Log("WOLF");
 								GameObject item = Instantiate(prefabs[k], new Vector3(-j + x - 1, 0, i), Quaternion.Euler(0, rotation, 0));
 								item.transform.parent = ObjectParent.transform;
 							}
