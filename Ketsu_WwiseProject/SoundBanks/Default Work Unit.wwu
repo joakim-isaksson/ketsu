@@ -25,7 +25,9 @@
 				</SoundBank>
 				<SoundBank Name="Music_Soundbank" ID="{8EE3BEA4-436B-40DD-8B8B-A27F93F8DF75}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Music" ID="{C489545F-5A31-4916-ADCB-890D56845F59}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stingers" ID="{6A7DC11C-EC66-40F4-8ED7-95CBEB4B1773}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="InGameMusic" ID="{215A90DB-5486-4107-93AF-752E0ECBD77A}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="MenuMusic" ID="{30842198-080F-4DC4-BFAC-37C033391A11}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -4,6 +4,18 @@
 		<WorkUnit Name="UI" ID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Menu" ID="{09345EE3-3B8C-4FA2-87CA-5EF73678AB10}" ShortID="516073462">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ValueList>
+								<Value>7</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-17</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -73,105 +85,6 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="UI_StartMenu_Start_Button" ID="{E71A2FC9-65E8-4D19-81F1-19E2017B8A4E}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</Folder>
-						<Folder Name="PopupMenu" ID="{B4031DEA-930D-4EE8-BE47-2E269592A50A}" ShortID="281926304">
-							<ChildrenList>
-								<Sound Name="UI_PopupMenu_Back_Button" ID="{F55B806F-11C7-4890-AE66-0F354305726D}" ShortID="1018007753" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" ShortID="801802120">
-											<Language>SFX</Language>
-											<AudioFile>UI_PopupMenu_Back_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_PopupMenu_MainMenu_Button" ID="{526F0B4A-A242-41A0-9757-3BF729A2BC40}" ShortID="725509904" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" ShortID="789555871">
-											<Language>SFX</Language>
-											<AudioFile>UI_PopupMenu_MainMenu_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_PopupMenu_Restart_Button" ID="{1AB91B0D-8DB6-48B4-BF0D-86DC3397ED77}" ShortID="68704257" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" ShortID="846411751">
-											<Language>SFX</Language>
-											<AudioFile>UI_PopupMenu_Restart_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_PopupMenu_Settings_Button" ID="{BA077BD5-4B70-4D60-BFCA-BD9686B407A4}" ShortID="51830709" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" ShortID="462718627">
-											<Language>SFX</Language>
-											<AudioFile>UI_PopupMenu_Settings_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_PopupMenu_Store_Button" ID="{94CE0F1B-649E-46C0-A38C-77085DC9543D}" ShortID="507290861" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" ShortID="192007627">
-											<Language>SFX</Language>
-											<AudioFile>UI_PopupMenu_Store_Button.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -320,6 +233,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="GUI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -705,13 +625,112 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="PopupMenu" ID="{B4031DEA-930D-4EE8-BE47-2E269592A50A}" ShortID="281926304">
+							<ChildrenList>
+								<Sound Name="UI_PopupMenu_Back_Button" ID="{F55B806F-11C7-4890-AE66-0F354305726D}" ShortID="1018007753" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" ShortID="801802120">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Back_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Back_Button" ID="{1E72D78C-9FFD-4E40-860D-BC0089228C71}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_MainMenu_Button" ID="{526F0B4A-A242-41A0-9757-3BF729A2BC40}" ShortID="725509904" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" ShortID="789555871">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_MainMenu_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_MainMenu_Button" ID="{ED30BFB2-13D4-49EE-9E61-ED9A92CFE9B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Restart_Button" ID="{1AB91B0D-8DB6-48B4-BF0D-86DC3397ED77}" ShortID="68704257" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" ShortID="846411751">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Restart_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Restart_Button" ID="{046B29FD-205B-41F6-8058-42D9850805EF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Settings_Button" ID="{BA077BD5-4B70-4D60-BFCA-BD9686B407A4}" ShortID="51830709" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" ShortID="462718627">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Settings_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Settings_Button" ID="{9DD1E3B8-62E2-42E7-83B5-9249F0FBCC11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_PopupMenu_Store_Button" ID="{94CE0F1B-649E-46C0-A38C-77085DC9543D}" ShortID="507290861" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" ShortID="192007627">
+											<Language>SFX</Language>
+											<AudioFile>UI_PopupMenu_Store_Button.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_PopupMenu_Store_Button" ID="{AC67A734-6896-4532-BF60-F0A37D47EF25}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Spaceship" ID="{551D254C-4989-45D7-8184-E5D828B4485E}" ShortID="485518832">
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -729,7 +748,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-43</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -775,6 +794,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="UI_Spaceship_Move" ID="{DD9C4297-E8A8-446D-BADB-27771CE87E35}" ShortID="708323794" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>

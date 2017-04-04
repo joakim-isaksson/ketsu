@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="11" SoundbankVersion="120">
 	<RootPaths>
-		<ProjectRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\iOS\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\iOS\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\iOS\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -173,6 +173,7 @@
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
+				<Event Id="2431936319" Name="Play_Random_Env" ObjectPath="\Events\World\Map_Env\Play_Random_Env"/>
 				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
 				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice" MaxAttenuation="0.000000"/>
 				<Event Id="4162518518" Name="Toolbox_Collect_Coins" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_Coins"/>
