@@ -31,6 +31,7 @@ namespace Ketsu.Game
 		{
             charHandler = FindObjectOfType<CharacterHandler>();
             mapManager = FindObjectOfType<MapManager>();
+            UseSwiping = true;
         }
 
 		void Update()
@@ -80,7 +81,7 @@ namespace Ketsu.Game
                     if (UseSwiping)
                     {
                         // Check for SWIPE
-                        if (Vector3.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
+                        /*if (Vector2.Distance(touchStartPos, touch.position) > Screen.height * DragDistance)
                         {
                             if (Mathf.Abs(touchStartPos.x - touch.position.x) > Mathf.Abs(touchStartPos.y - touch.position.y))
                             {
@@ -92,14 +93,42 @@ namespace Ketsu.Game
                                 if (touchStartPos.y < touch.position.y) charHandler.MoveAction(Vector3.forward);
                                 else charHandler.MoveAction(Vector3.back);
                             }
+                        }*/
+                        if(touch.deltaPosition.y > 0){
+                        	if(touch.deltaPosition.x > 0){
+                        		if(touch.deltaPosition.y > touch.deltaPosition.x)
+                        			charHandler.MoveAction(Vector3.forward);
+                        		else
+                        			charHandler.MoveAction(Vector3.right);
+                        	}else{
+                        		if(touch.deltaPosition.y > Mathf.Abs(touch.deltaPosition.x))
+                        			charHandler.MoveAction(Vector3.forward);
+                        		else
+                        			charHandler.MoveAction(Vector3.left);
+                        	}
                         }
-                        else if (UseTapping)
-                        {
-                            // Late TAP (when using swiping with tapping)
-                            ClickOrTap(touch.position);
+                        else{
+                        	if(touch.deltaPosition.x > 0){
+                        		if(Mathf.Abs(touch.deltaPosition.y) > touch.deltaPosition.x)
+                        			charHandler.MoveAction(Vector3.back);
+                        		else
+                        			charHandler.MoveAction(Vector3.right);
+                        	}else{
+                        		if(Mathf.Abs(touch.deltaPosition.y) > Mathf.Abs(touch.deltaPosition.x))
+                        			charHandler.MoveAction(Vector3.back);
+                        		else
+                        			charHandler.MoveAction(Vector3.left);
+                        	}
                         }
+                       
+					}
+
+                    else if (UseTapping)
+                    {
+                        // Late TAP (when using swiping with tapping)
+                        ClickOrTap(touch.position);
                     }
-				}
+                }
 			}
 		}
 
