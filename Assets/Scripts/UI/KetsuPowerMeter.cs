@@ -21,7 +21,7 @@ namespace Ketsu.UI
 
         void Update()
         {
-            ketsuPowerText.text = charHandler.KetsuPower.ToString("0.00") + " / " + charHandler.MaxKetsuPower.ToString("0.00");
+            ketsuPowerText.text = charHandler.KetsuPower.ToString("0");
         }
     }
 }
