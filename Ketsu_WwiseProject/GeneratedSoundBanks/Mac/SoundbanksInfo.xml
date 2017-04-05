@@ -174,8 +174,8 @@
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
 				<Event Id="2431936319" Name="Play_Random_Env" ObjectPath="\Events\World\Map_Env\Play_Random_Env"/>
-				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
-				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice"/>
+				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice"/>
 				<Event Id="4162518518" Name="Toolbox_Collect_Coins" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_Coins"/>
 				<Event Id="1024872546" Name="Toolbox_Collect_KetsuMaxPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp"/>
 				<Event Id="2696066024" Name="Toolbox_Collect_KetsuPowerUp" ObjectPath="\Events\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp"/>

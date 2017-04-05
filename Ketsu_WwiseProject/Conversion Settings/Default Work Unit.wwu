@@ -57,7 +57,7 @@
 							<ConversionPlugin Name="" ID="{3692A027-0308-4039-986B-7105C1C52BF9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="iOS">
-							<ConversionPlugin Name="" ID="{75A17794-5245-4209-BC09-F50132A0746F}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+							<ConversionPlugin Name="" ID="{ED7A8F2D-A2B6-4B1F-A789-C0CE33890973}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
