@@ -10,6 +10,9 @@
 						<Event Name="UI_Spaceship_Idle" ID="{083DCFE5-C003-41DA-B80A-3145186802C2}">
 							<ChildrenList>
 								<Action Name="Set Voice Volume" ID="{D878C02F-5C54-44FA-BE52-4CA32413E188}" ShortID="443303191" Type="ChangeVolume" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Absolute" Type="bool" Value="False"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{991CEEC7-6F75-475C-B85F-E3EE8EAB6F2B}" Global="false">
 											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>

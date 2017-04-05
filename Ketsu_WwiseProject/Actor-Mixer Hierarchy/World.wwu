@@ -5,14 +5,9 @@
 			<ChildrenList>
 				<Folder Name="Map_Env" ID="{44183AC8-58E3-42DA-ADC8-F4AE5BC902E2}" ShortID="217740478">
 					<ChildrenList>
-						<Sound Name="Map_Env_BeesOnFlowers" ID="{9D2D2E4F-37EB-4304-9793-69D0A1EB425C}" ShortID="192833468" Type="SoundFX">
+						<RandomSequenceContainer Name="Water" ID="{B82461E9-87DD-462F-BA07-496FC4F3048C}" ShortID="304506541">
 							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -23,210 +18,15 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" ShortID="787118364">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_BeesOnFlowers.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_BigWaterStream" ID="{99B5304A-EA6F-4F30-A23B-D9A5D2B8894D}" ShortID="597243356" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" ShortID="737519746">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_BigWaterStream.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_MediumWind" ID="{477A19D9-B739-473B-A733-F08BB4643689}" ShortID="65618534" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" ShortID="307788843">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_MediumWind.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_SmallWaterStream" ID="{F3CEFD6D-C2C4-4E39-A3BB-A8F3E6C4D649}" ShortID="273080962" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" ShortID="947826981">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_SmallWaterStream.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_StrongWind" ID="{AD3C5A77-115F-4F3C-8715-B3C8F6D99628}" ShortID="87473990" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" ShortID="211612609">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_StrongWind.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_Birds" ID="{CA924CBD-1E7B-457B-8E10-8277DEE583BE}" ShortID="38910992" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" ShortID="225182666">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_Birds.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Map_Env_Sea" ID="{8411F3E2-1D71-4016-8D07-0179494605FD}" ShortID="520174250" Type="SoundFX">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-30</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" ShortID="538173892">
-									<Language>SFX</Language>
-									<AudioFile>Map_Env_Sea.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Map_Bridge" ID="{87BE62B6-91A4-47DD-80EE-7F2EB68DF56E}" ShortID="979914324">
-					<ChildrenList>
-						<RandomSequenceContainer Name="Move_OnBridge" ID="{CB46E069-F4DC-42E1-BC9B-7B937ECDE95B}" ShortID="296584492">
-							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>19</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Move_OnBridge_01" ID="{AC6AB84F-E30E-4930-9ADC-A3110B5A7A79}" ShortID="807354520" Type="SoundFX">
+								<Sound Name="Map_Env_BigWaterStream" ID="{99B5304A-EA6F-4F30-A23B-D9A5D2B8894D}" ShortID="597243356" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -236,16 +36,31 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_OnBridge_01" ID="{3C97415F-759E-482C-B133-1AB7E317883E}" ShortID="690310313">
+										<AudioFileSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" ShortID="737519746">
 											<Language>SFX</Language>
-											<AudioFile>Move_OnBridge_01.wav</AudioFile>
+											<AudioFile>Map_Env_BigWaterStream.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_OnBridge_01" ID="{3C97415F-759E-482C-B133-1AB7E317883E}" Platform="Linked"/>
+										<ActiveSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Move_OnBridge_02" ID="{54C848D4-2DCC-49F7-8BEA-172A3EFBAAED}" ShortID="338245325" Type="SoundFX">
+								<Sound Name="Map_Env_SmallWaterStream" ID="{F3CEFD6D-C2C4-4E39-A3BB-A8F3E6C4D649}" ShortID="273080962" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -255,16 +70,31 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_OnBridge_02" ID="{A581A57A-1DB8-4307-8205-1FD0B187B4E8}" ShortID="843588775">
+										<AudioFileSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" ShortID="947826981">
 											<Language>SFX</Language>
-											<AudioFile>Move_OnBridge_02.wav</AudioFile>
+											<AudioFile>Map_Env_SmallWaterStream.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_OnBridge_02" ID="{A581A57A-1DB8-4307-8205-1FD0B187B4E8}" Platform="Linked"/>
+										<ActiveSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Move_OnBridge_03" ID="{EC3A2492-9B7E-4DDA-8952-E43221DEF713}" ShortID="827278716" Type="SoundFX">
+								<Sound Name="Map_Env_Sea" ID="{8411F3E2-1D71-4016-8D07-0179494605FD}" ShortID="520174250" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -274,16 +104,43 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_OnBridge_03" ID="{7C3AF5A0-B0C8-49F5-9B26-D3B002647F7E}" ShortID="431942235">
+										<AudioFileSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" ShortID="538173892">
 											<Language>SFX</Language>
-											<AudioFile>Move_OnBridge_03.wav</AudioFile>
+											<AudioFile>Map_Env_Sea.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_OnBridge_03" ID="{7C3AF5A0-B0C8-49F5-9B26-D3B002647F7E}" Platform="Linked"/>
+										<ActiveSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Move_OnBridge_04" ID="{3303D764-349A-4165-A111-6D053075541F}" ShortID="340383961" Type="SoundFX">
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Wind" ID="{05932C3E-A41E-4BE0-92E1-FE44A3182955}" ShortID="193710492">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Map_Env_MediumWind" ID="{477A19D9-B739-473B-A733-F08BB4643689}" ShortID="65618534" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -293,16 +150,31 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_OnBridge_04" ID="{DA734E59-E5D2-4ADA-BBD7-22B82C780A2C}" ShortID="338727587">
+										<AudioFileSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" ShortID="307788843">
 											<Language>SFX</Language>
-											<AudioFile>Move_OnBridge_04.wav</AudioFile>
+											<AudioFile>Map_Env_MediumWind.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_OnBridge_04" ID="{DA734E59-E5D2-4ADA-BBD7-22B82C780A2C}" Platform="Linked"/>
+										<ActiveSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Move_OnBridge_05" ID="{93D4BB48-6630-4731-A647-8DD84D24751A}" ShortID="469281100" Type="SoundFX">
+								<Sound Name="Map_Env_StrongWind" ID="{AD3C5A77-115F-4F3C-8715-B3C8F6D99628}" ShortID="87473990" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-25</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -312,13 +184,100 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_OnBridge_05" ID="{B979B27A-662E-44D0-B320-E7DECADCA880}" ShortID="71427473">
+										<AudioFileSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" ShortID="211612609">
 											<Language>SFX</Language>
-											<AudioFile>Move_OnBridge_05.wav</AudioFile>
+											<AudioFile>Map_Env_StrongWind.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_OnBridge_05" ID="{B979B27A-662E-44D0-B320-E7DECADCA880}" Platform="Linked"/>
+										<ActiveSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Animals" ID="{D81F0DF1-7C48-4BD3-81E8-395221C46462}" ShortID="44445107">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Map_Env_Birds" ID="{CA924CBD-1E7B-457B-8E10-8277DEE583BE}" ShortID="38910992" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" ShortID="225182666">
+											<Language>SFX</Language>
+											<AudioFile>Map_Env_Birds.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Map_Env_BeesOnFlowers" ID="{9D2D2E4F-37EB-4304-9793-69D0A1EB425C}" ShortID="192833468" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" ShortID="787118364">
+											<Language>SFX</Language>
+											<AudioFile>Map_Env_BeesOnFlowers.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

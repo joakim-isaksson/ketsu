@@ -1,13 +1,37 @@
 Event	ID	Name			Wwise Object Path	Notes
-	358982595	Play_W1_InGameMusic			\Music\InGameMusic\Play_W1_InGameMusic	
+	620526404	Play_InGameMusic_Hedgy			\Music\InGameMusic\Play_InGameMusic_Hedgy	
+	2086825057	Play_TutorialMusic			\Music\InGameMusic\Play_TutorialMusic	
 	2570041344	Play_MenuMusic			\Music\MenuMusic\Play_MenuMusic	
 	2908556826	Level_Win			\Music\Stingers\Level_Win	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2782712965	Level			\Default Work Unit\Level	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Level			
+	2678230376	Level7	Level			
+	2678230377	Level6	Level			
+	2678230378	Level5	Level			
+	2678230379	Level4	Level			
+	2678230380	Level3	Level			
+	2678230381	Level2	Level			
+	2678230382	Level1	Level			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	194524331	Level1	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
+	242825647	Level5	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
+	289193870	Level3	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
+	440603749	Level7	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		
+	739429733	Level2	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
+	747884265	Level4	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
+	917079621	Level6	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		
 
 Effect plug-ins	ID	Name	Type				Notes
 	3546444380	Big_Garage1	Wwise Matrix Reverb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	132533196	Ketsu_MenuMusic_Ambient	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Ketsu_MenuMusic_Ambient_421D6CCB.wem		\Actor-Mixer Hierarchy\Music\MenuMusic\Ketsu_MenuMusic_Ambient		31631336
-	136273710	LevelMusic_W1_Loop1	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_W1_Loop1_A939E04F.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\World1\LevelMusic_W1_Loop1		26812728
-	501425487	Level_Win	C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Level_Win_A939E04F.wem		\Actor-Mixer Hierarchy\Music\Stingers\Level_Win		418976
+	132533196	Ketsu_MenuMusic_Ambient	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Ketsu_MenuMusic_Ambient_A05E8D7A.wem		\Actor-Mixer Hierarchy\Music\MenuMusic\Ketsu_MenuMusic_Ambient		31631336
+	501425487	Level_Win	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Level_Win_A939E04F.wem		\Actor-Mixer Hierarchy\Music\Stingers\Level_Win		418976
+	602394122	LevelMusic_Peaceful_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_Peaceful_Short_58849767.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		26767140
+	669844642	LevelMusic_Hedgy_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_Hedgy_Short_A939E04F.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		30955824
 

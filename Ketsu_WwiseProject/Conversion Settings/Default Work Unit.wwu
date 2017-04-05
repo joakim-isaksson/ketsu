@@ -8,6 +8,7 @@
 						<Property Name="Channels" Type="int32">
 							<ValueList>
 								<Value Platform="Android">4</Value>
+								<Value Platform="Mac">4</Value>
 								<Value Platform="Windows">4</Value>
 								<Value Platform="iOS">4</Value>
 							</ValueList>
@@ -15,6 +16,7 @@
 						<Property Name="LRMix" Type="Real64">
 							<ValueList>
 								<Value Platform="Android">0</Value>
+								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
 								<Value Platform="iOS">0</Value>
 							</ValueList>
@@ -22,6 +24,7 @@
 						<Property Name="MaxSampleRate" Type="int32">
 							<ValueList>
 								<Value Platform="Android">0</Value>
+								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
 								<Value Platform="iOS">0</Value>
 							</ValueList>
@@ -29,6 +32,7 @@
 						<Property Name="MinSampleRate" Type="int32">
 							<ValueList>
 								<Value Platform="Android">44100</Value>
+								<Value Platform="Mac">44100</Value>
 								<Value Platform="Windows">44100</Value>
 								<Value Platform="iOS">44100</Value>
 							</ValueList>
@@ -36,6 +40,7 @@
 						<Property Name="SampleRate" Type="int32">
 							<ValueList>
 								<Value Platform="Android">0</Value>
+								<Value Platform="Mac">0</Value>
 								<Value Platform="Windows">0</Value>
 								<Value Platform="iOS">0</Value>
 							</ValueList>
@@ -45,11 +50,14 @@
 						<ConversionPluginInfo Platform="Android">
 							<ConversionPlugin Name="" ID="{8BB8A31D-F3FA-48DA-95F5-8334EC97D3AA}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
+						<ConversionPluginInfo Platform="Mac">
+							<ConversionPlugin Name="" ID="{D6321E06-17CC-4EB0-9C10-7C688D54222B}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{3692A027-0308-4039-986B-7105C1C52BF9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="iOS">
-							<ConversionPlugin Name="" ID="{75A17794-5245-4209-BC09-F50132A0746F}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+							<ConversionPlugin Name="" ID="{ED7A8F2D-A2B6-4B1F-A789-C0CE33890973}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

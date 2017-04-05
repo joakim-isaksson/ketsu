@@ -3,9 +3,162 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{C489545F-5A31-4916-ADCB-890D56845F59}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="MenuMusic" ID="{5AA9036D-DAD7-4795-8938-05503628B349}" PersistMode="Reference"/>
-				<WorkUnit Name="InGameMusic" ID="{D2E890A7-A6FF-4BD7-B95C-2444C9CF9AB4}" PersistMode="Reference"/>
-				<WorkUnit Name="Stingers" ID="{EE289F33-0501-43C4-A56C-585ADB71ED7C}" PersistMode="Reference"/>
+				<Folder Name="InGameMusic" ID="{215A90DB-5486-4107-93AF-752E0ECBD77A}" ShortID="303318474">
+					<ChildrenList>
+						<Event Name="Play_InGameMusic_Hedgy" ID="{35E60518-6849-4E77-ABE9-0533248BB64B}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{7306AD26-8B21-45F3-87EF-1AD43B8BE83D}" ShortID="218863173" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2342B058-EBD5-4D64-9CA1-876933154D71}" Global="false">
+											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{EAE115DA-118A-4CAC-8311-638727B84407}" ShortID="945443224" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{B9D3579F-FF7C-4E1E-B30B-7DD4A70AE729}" Global="false">
+											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{BACFE66B-AB1D-4CF4-989F-90AA1AF8813C}" ShortID="54913666" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{5B7D729F-F53D-42D6-AE4B-FACED6D71742}" Global="true">
+											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{14A19E8C-663C-4A64-9138-39F404A07AEA}" ShortID="690208057" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{1DDEE35D-63C5-4A60-AC99-5A0D79723527}" Global="true">
+											<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{D2AF3BE0-87CA-4A70-862B-E2E791C92C6D}" ShortID="501798211" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{478668ED-01FD-49FD-A250-9D410CE60816}" Global="true">
+											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_TutorialMusic" ID="{A0AF6BF0-D7C5-478E-8722-7985DB6FB0BD}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{181F0778-3370-4C44-8F46-FE5045D8F95B}" ShortID="642795931" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{DC7B6BDD-5FFC-47B7-9D4C-7444908DF2D0}" Global="true">
+											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{73D8E874-9A05-4C46-9D1C-1A40F1F93EEA}" ShortID="480878298" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{01D30223-321C-4A69-AE63-0F211B3015FF}" Global="false">
+											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{B95D9E9C-87E0-454A-825D-893B67E4BD3C}" ShortID="926154977" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A6190426-4163-461E-AAF4-AC34A350B0D7}" Global="true">
+											<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{209994A8-1B22-4063-AE02-FBBC3C14EB7A}" ShortID="935814416" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{D5F78AAE-AF02-4685-B60F-6D06CC4E3511}" Global="true">
+											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{8CC7C9E0-E87F-4F2E-A39D-F440848F777C}" ShortID="840917667" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{3D010D8D-C4BF-46A0-8026-823C0DC02509}" Global="true">
+											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Stingers" ID="{6A7DC11C-EC66-40F4-8ED7-95CBEB4B1773}" ShortID="859479835">
+					<ChildrenList>
+						<Event Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}">
+							<ChildrenList>
+								<Action Name="Play" ID="{93975E0C-F2E5-41E8-A042-FBBB5708B347}" ShortID="260633763" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{19A44613-12C9-41F2-8164-7E121D594CFC}" Global="false">
+											<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="MenuMusic" ID="{30842198-080F-4DC4-BFAC-37C033391A11}" ShortID="299162486">
+					<ChildrenList>
+						<Event Name="Play_MenuMusic" ID="{45E2DF70-060B-4745-996A-3437EAD1AA29}">
+							<ChildrenList>
+								<Action Name="Play" ID="{399900D9-45AD-4D6F-983E-DB1C199CE9A8}" ShortID="615157" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{36D1CA3B-1BCD-474F-9917-E2ED44875E9C}" Global="false">
+											<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{10A22921-E47A-4974-8DEE-08B2E71E50DE}" ShortID="388713137" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{DCAFD43B-C2DD-4306-B2F6-718D64B0BE91}" Global="true">
+											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{AA981EBB-2352-4E52-A6A0-1D81B0DB0435}" ShortID="4317560" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{C1BF048D-A35F-4630-9F36-3DB512E52EA1}" Global="true">
+											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

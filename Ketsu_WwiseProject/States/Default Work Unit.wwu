@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" SchemaVersion="75">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8C9361A8-2094-465F-A06F-9CD9959FFE4E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}">
+					<ChildrenList>
+						<State Name="None" ID="{E9E84715-242B-45AA-9478-4D68CC2ABBE3}"/>
+						<State Name="Level1" ID="{5F2E494B-CAE5-4B95-9216-F8D69CA2867E}"/>
+						<State Name="Level2" ID="{97E13E7B-F915-46CD-A930-E16B3953B600}"/>
+						<State Name="Level3" ID="{9752A3B0-FDF0-4B1B-AB33-672CBE3BB14C}"/>
+						<State Name="Level4" ID="{8BE6162B-B7E7-4316-8008-7CFD25C150A0}"/>
+						<State Name="Level5" ID="{1A2A31B1-B6F8-44B5-AF41-92435152E96B}"/>
+						<State Name="Level6" ID="{93016D19-3B96-4109-A8C2-26B165EEA7D3}"/>
+						<State Name="Level7" ID="{20D40BFC-CBF4-4D44-B0A8-7DC83340FE6F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
