@@ -9,6 +9,7 @@ namespace Ketsu.UI
     public class WinPopup : MonoBehaviour
     {
         public GameObject WinPanel;
+        public GameObject ControlPanel;
         MapManager mapManger;
 
         void Awake()
@@ -22,8 +23,14 @@ namespace Ketsu.UI
 
         void Update()
         {
-			if (mapManger.Solved) WinPanel.SetActive(true);
-			else WinPanel.SetActive(false);
+			if (mapManger.Solved){
+				WinPanel.SetActive(true);
+				ControlPanel.SetActive(false);
+			} 
+			else {
+				WinPanel.SetActive(false);
+				ControlPanel.SetActive(true);
+			}
         }
     }
 }
