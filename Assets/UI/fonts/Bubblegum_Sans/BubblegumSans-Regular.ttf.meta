@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 127dcdc2e29d07149a6b4dd351f27138
+timeCreated: 1491332399
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bubblegum Sans
+  fontNames:
+  - Bubblegum Sans
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

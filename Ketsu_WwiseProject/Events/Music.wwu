@@ -7,6 +7,13 @@
 					<ChildrenList>
 						<Event Name="Play_InGameMusic_Hedgy" ID="{35E60518-6849-4E77-ABE9-0533248BB64B}">
 							<ChildrenList>
+								<Action Name="Stop" ID="{7306AD26-8B21-45F3-87EF-1AD43B8BE83D}" ShortID="218863173" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{2342B058-EBD5-4D64-9CA1-876933154D71}" Global="false">
+											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
 								<Action Name="Play" ID="{EAE115DA-118A-4CAC-8311-638727B84407}" ShortID="945443224" Type="Play" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
@@ -51,6 +58,13 @@
 						</Event>
 						<Event Name="Play_TutorialMusic" ID="{A0AF6BF0-D7C5-478E-8722-7985DB6FB0BD}">
 							<ChildrenList>
+								<Action Name="Stop" ID="{181F0778-3370-4C44-8F46-FE5045D8F95B}" ShortID="642795931" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{DC7B6BDD-5FFC-47B7-9D4C-7444908DF2D0}" Global="true">
+											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
 								<Action Name="Play" ID="{73D8E874-9A05-4C46-9D1C-1A40F1F93EEA}" ShortID="480878298" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{01D30223-321C-4A69-AE63-0F211B3015FF}" Global="false">
@@ -58,12 +72,12 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{202CE4BE-16FF-4994-B91E-A38454FF14EA}" ShortID="667820000" Type="Stop" Scope="One" Global="true">
+								<Action Name="Stop" ID="{B95D9E9C-87E0-454A-825D-893B67E4BD3C}" ShortID="926154977" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{92FAD00B-EA16-4E6E-B5A2-8676B33B7D0C}" Global="true">
+										<Element ID="{A6190426-4163-461E-AAF4-AC34A350B0D7}" Global="true">
 											<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>

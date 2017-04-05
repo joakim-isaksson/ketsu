@@ -84,32 +84,32 @@
 						</Event>
 						<Event Name="Play_Random_Env" ID="{41982255-43BB-40AC-9445-D94A1C2EACDB}">
 							<ChildrenList>
-								<Action Name="Stop" ID="{3564CB46-8EAB-479B-B9AE-08503F6DD668}" ShortID="18022367" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{3564CB46-8EAB-479B-B9AE-08503F6DD668}" ShortID="18022367" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{7907144C-7104-412A-870E-66B003C47246}" Global="false">
+										<Element ID="{7907144C-7104-412A-870E-66B003C47246}" Global="true">
 											<ObjectRef Name="Animals" ID="{D81F0DF1-7C48-4BD3-81E8-395221C46462}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{E6006EEF-F867-469F-A69E-DB653871602E}" ShortID="609132542" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{E6006EEF-F867-469F-A69E-DB653871602E}" ShortID="609132542" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{2DAB617D-87FE-451E-AA8E-84CD6B110111}" Global="false">
+										<Element ID="{2DAB617D-87FE-451E-AA8E-84CD6B110111}" Global="true">
 											<ObjectRef Name="Water" ID="{B82461E9-87DD-462F-BA07-496FC4F3048C}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{D4E3F475-B2B5-4982-A045-F0E8AC37188B}" ShortID="774688069" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{D4E3F475-B2B5-4982-A045-F0E8AC37188B}" ShortID="774688069" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{A817F80E-3069-4276-96AA-8994E50AAE20}" Global="false">
+										<Element ID="{A817F80E-3069-4276-96AA-8994E50AAE20}" Global="true">
 											<ObjectRef Name="Wind" ID="{05932C3E-A41E-4BE0-92E1-FE44A3182955}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
