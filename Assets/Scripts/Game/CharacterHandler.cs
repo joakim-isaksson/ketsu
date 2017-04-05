@@ -219,6 +219,7 @@ namespace Ketsu.Game
             bool firstMove = true;
             bool activeMoving = true;
             bool otherMoving = other == null ? false : true;
+
             while (activeMoving || otherMoving)
             {
                 // Get target information
@@ -240,14 +241,14 @@ namespace Ketsu.Game
                     (activeTarget.Blocker == null && activeTarget.Position == otherPointer.Position) ||
                     (activeTarget.Blocker == null && activeTarget.Position.Equals(otherTarget.Position))))
                 {
-                    TransformToKetsu(activeTarget.Position, active, other);
+                    TransformToKetsu(activeTarget.Position, activeTarget.Ground.Type, active, other);
                     return;
                 }
 
                 // Turning to ketsu (other first)
                 else if (other != null && otherTarget.Blocker != null && otherTarget.Blocker.Type == active.Type)
                 {
-                    TransformToKetsu(activePointer.Position, active, other);
+                    TransformToKetsu(activePointer.Position, activePointer.Ground.Type, active, other);
                     return;
                 }
 
@@ -285,24 +286,20 @@ namespace Ketsu.Game
             }
 
             // Move characters to new positions
+            waitingForMoveActions++;
+            active.MoveTo(activePointer.Position, activePointer.Ground.Type, OnMoveActionCompleted);
             if (other != null)
             {
-                waitingForMoveActions += 2;
-                active.MoveTo(activePointer.Position, OnMoveActionCompleted);
-                other.MoveTo(otherPointer.Position, OnMoveActionCompleted);
-            }
-            else
-            {
                 waitingForMoveActions++;
-                active.MoveTo(activePointer.Position, OnMoveActionCompleted);
+                other.MoveTo(otherPointer.Position, otherPointer.Ground.Type, OnMoveActionCompleted);
             }
         }
 
-        void TransformToKetsu(Vector3 mergePos, Character active, Character other)
+        void TransformToKetsu(Vector3 mergePos, MapObjectType groundType, Character active, Character other)
         {
             waitingForMoveActions += 2;
-            other.MoveTo(mergePos, OnMoveActionCompleted);
-            active.MoveTo(mergePos, delegate {
+            other.MoveTo(mergePos, groundType, OnMoveActionCompleted);
+            active.MoveTo(mergePos, groundType, delegate {
 
                 AkSoundEngine.PostEvent(TrainsformToKetsuSfx, gameObject);
 
@@ -359,8 +356,8 @@ namespace Ketsu.Game
             waitingForMoveActions += 2;
             active.transform.position = ketsu.transform.position;
             other.transform.position = ketsu.transform.position;
-            active.MoveTo(activeTarget.Position, OnMoveActionCompleted);
-            other.MoveTo(otherTarget.Position, OnMoveActionCompleted);
+            active.MoveTo(activeTarget.Position, activeTarget.Ground.Type, OnMoveActionCompleted);
+            other.MoveTo(otherTarget.Position, otherTarget.Ground.Type, OnMoveActionCompleted);
         }
 
 

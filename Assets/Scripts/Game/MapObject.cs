@@ -39,25 +39,5 @@ namespace Ketsu.Game
 
 			return false;
 		}
-
-        /*
-        /// <summary>
-		/// Return blocking object from given list or null if nothing is blocking
-		/// </summary>
-		/// <param name="point">Point to check for blocking objects</param>
-		/// <returns>Blocking object or null if nothing is blocking</returns>
-		public MapObject GetBlocking(Vector3 point)
-		{
-			List<MapObject> objects = MapManager.GetObjects(point, Layer);
-			foreach (MapObject obj in objects)
-			{
-                if (!obj.gameObject.activeSelf || NotBlockedBy.Contains(obj.Type)) continue;
-                else return obj;
-            }
-
-            return null;
-		}
-
-    */
     }
 }

@@ -12,8 +12,10 @@ namespace Ketsu.Game
 
 		[Header("Sounds")]
 		public string SfxMove;
-
+        
         Flasher flasher;
+
+        bool stuckInMud;
 
         void Awake()
         {
@@ -25,10 +27,20 @@ namespace Ketsu.Game
 
 		}
 
-		public void MoveTo(Vector3 position, Action callback)
+		public void MoveTo(Vector3 newPosition, MapObjectType targetGroundType, Action callback)
 		{
-            AkSoundEngine.PostEvent(SfxMove, gameObject);
-            MoveAnimation(position, callback);
+            if (stuckInMud || transform.position == newPosition)
+            {
+                stuckInMud = false;
+                if (callback != null) callback();
+            }
+            else
+            {
+                if (targetGroundType == MapObjectType.Mud) stuckInMud = true;
+
+                AkSoundEngine.PostEvent(SfxMove, gameObject);
+                MoveAnimation(newPosition, callback);
+            }
 		}
 
         public void TakeDamage(float amount)
