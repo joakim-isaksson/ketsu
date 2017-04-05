@@ -646,7 +646,6 @@ GameObject:
   - component: {fileID: 375135106}
   - component: {fileID: 375135108}
   - component: {fileID: 375135107}
-  - component: {fileID: 375135112}
   - component: {fileID: 375135110}
   - component: {fileID: 375135109}
   - component: {fileID: 375135111}
@@ -845,25 +844,6 @@ MonoBehaviour:
   playingId: 0
   multiPositionTypeLabel: 0
   multiPositionArray: []
---- !u!114 &375135112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 375135100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60b07f30161ae6a4ea80c2c5723935a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: 8f634bc0a4e4d3488c01af61bbe67e11
-  bankName: InGame_SoundBank
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 
 --- !u!1 &511838070
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,6 +2438,30 @@ Prefab:
     - {fileID: 114710773606457824, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1547552609 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1622725313445372, guid: 6392668a503009d40ad2b387fd3ffe47,
+    type: 2}
+  m_PrefabInternal: {fileID: 1547552608}
+--- !u!114 &1547552610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547552609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b07f30161ae6a4ea80c2c5723935a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: 8f634bc0a4e4d3488c01af61bbe67e11
+  bankName: InGame_SoundBank
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!1 &1601401214
 GameObject:
   m_ObjectHideFlags: 0

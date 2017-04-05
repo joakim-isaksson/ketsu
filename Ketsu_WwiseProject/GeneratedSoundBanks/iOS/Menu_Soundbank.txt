@@ -23,21 +23,21 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	140128883	UI_StartMenu_Settings_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Settings_Button		13024
-	192007627	UI_PopupMenu_Store_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Store_Button		77680
-	327717301	UI_LevelMenu_LockedLevel_Select	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Select		9928
-	449358139	UI_StartMenu_Store_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Store_Button		56008
-	461352254	UI_StartMenu_Credits_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Credits_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Credits_Button		38944
-	462718627	UI_PopupMenu_Settings_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Settings_Button		18064
-	510863609	UI_WorldMenu_UnlockedWorld_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_UnlockedWorld_Button		60688
-	574571335	UI_WorldMenu_LockedWorld_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_LockedWorld_Button		24040
-	599628335	UI_LevelMenu_StartLevel_Select	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_StartLevel_Select		79264
-	602051237	UI_Spaceship_Move	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spaceship_Move_93D9475B.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Move		142408
-	762418288	UI_StartMenu_Start_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Start_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Start_Button		12664
-	789555871	UI_PopupMenu_MainMenu_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_MainMenu_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_MainMenu_Button		30448
-	801802120	UI_PopupMenu_Back_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Back_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Back_Button		7552
-	846411751	UI_PopupMenu_Restart_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Restart_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Restart_Button		12664
-	937325238	UI_Spacehip_Idle	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spacehip_Idle_388A97B6.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Idle		1100440
-	1001168866	UI_Spaceship_Landing	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spaceship_Landing_595D291A.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Landing		181576
-	1018322493	UI_StartMenu_Logo_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Logo_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Logo_Button		28576
+	140128883	UI_StartMenu_Settings_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Settings_Button		13024
+	192007627	UI_PopupMenu_Store_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Store_Button		77680
+	327717301	UI_LevelMenu_LockedLevel_Select	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_LockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Select		9928
+	449358139	UI_StartMenu_Store_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Store_Button		56008
+	461352254	UI_StartMenu_Credits_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Credits_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Credits_Button		38944
+	462718627	UI_PopupMenu_Settings_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Settings_Button		18064
+	510863609	UI_WorldMenu_UnlockedWorld_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_UnlockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_UnlockedWorld_Button		60688
+	574571335	UI_WorldMenu_LockedWorld_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WorldMenu_LockedWorld_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\WorldMenu\UI_WorldMenu_LockedWorld_Button		24040
+	599628335	UI_LevelMenu_StartLevel_Select	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_LevelMenu_UnlockedLevel_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_StartLevel_Select		79264
+	602051237	UI_Spaceship_Move	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spaceship_Move_93D9475B.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Move		142408
+	762418288	UI_StartMenu_Start_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Start_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Start_Button		12664
+	789555871	UI_PopupMenu_MainMenu_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_MainMenu_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_MainMenu_Button		30448
+	801802120	UI_PopupMenu_Back_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Back_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Back_Button		7552
+	846411751	UI_PopupMenu_Restart_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_PopupMenu_Restart_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Restart_Button		12664
+	937325238	UI_Spacehip_Idle	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spacehip_Idle_388A97B6.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Idle		1100440
+	1001168866	UI_Spaceship_Landing	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_Spaceship_Landing_595D291A.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Landing		181576
+	1018322493	UI_StartMenu_Logo_Button	Y:\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_StartMenu_Logo_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Logo_Button		28576
 
