@@ -26,6 +26,12 @@ Custom State	ID	Name	State Group	Owner		Notes
 	747884265	Level4	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
 	917079621	Level6	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		
 
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SFX\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
 Effect plug-ins	ID	Name	Type				Notes
 	3546444380	Big_Garage1	Wwise Matrix Reverb			
 

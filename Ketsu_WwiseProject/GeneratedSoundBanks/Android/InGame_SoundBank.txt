@@ -67,6 +67,12 @@ State	ID	Name	State Group			Notes
 	2678230381	Level2	Level			
 	2678230382	Level1	Level			
 
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SFX\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20985966	Transform_ToKetsu-001	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-001_C9405FA4.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-001		85960
 	40123842	Move_Fox_Grass_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Grass_04_D74A2EFE.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_04		17416

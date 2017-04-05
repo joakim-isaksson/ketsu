@@ -16,6 +16,12 @@ Event	ID	Name			Wwise Object Path	Notes
 	3791509005	StartMenu_Settings_Button			\UI\Menu\StartMenu\StartMenu_Settings_Button	
 	4062746263	UI_Spaceship_Idle			\UI\Spaceship\UI_Spaceship_Idle	
 
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SFX\UI	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	140128883	UI_StartMenu_Settings_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_StartMenu_Settings_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\Menu\StartMenu\UI_StartMenu_Settings_Button		13024
 	192007627	UI_PopupMenu_Store_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_PopupMenu_Store_Button_D124CA2C.wem		\Actor-Mixer Hierarchy\UI\GUI\PopupMenu\UI_PopupMenu_Store_Button		77680

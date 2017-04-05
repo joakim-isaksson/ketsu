@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="75">
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Characters.wwu" DateLow="2205980449" DateHigh="30584144"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Characters.wwu" DateLow="1100541041" DateHigh="30584312"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2206947587" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Enemy.wwu" DateLow="2206676278" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\Music.wwu" DateLow="475895985" DateHigh="30584194"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="2206229282" DateHigh="30584144"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="3670895080" DateHigh="30584302"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\UI.wwu" DateLow="4035697000" DateHigh="30584310"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Actor-Mixer Hierarchy\World.wwu" DateLow="3402950534" DateHigh="30584194"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="2209265156" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="2209701008" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="2209335169" DateHigh="30584144"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="2205538205" DateHigh="30584144"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="4241847048" DateHigh="30584309"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="2205672945" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="2208752252" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Effects\Default Work Unit.wwu" DateLow="2208587610" DateHigh="30584144"/>
@@ -32,7 +32,7 @@
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="2208980961" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\InGameMusic.wwu" DateLow="4121735701" DateHigh="30579313"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Interactive Music Hierarchy\MenuMusic.wwu" DateLow="4121866040" DateHigh="30579313"/>
-	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.mikko.wsettings" DateLow="1046244853" DateHigh="30584303"/>
+	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.mikko.wsettings" DateLow="1652350112" DateHigh="30584312"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Ketsu_WwiseProject.wproj" DateLow="2205322782" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="2205813891" DateHigh="30584144"/>
 	<ValidationCacheItem File="C:\Users\mikko\Documents\Git\Ketsu\Ketsu_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="2208906207" DateHigh="30584144"/>
