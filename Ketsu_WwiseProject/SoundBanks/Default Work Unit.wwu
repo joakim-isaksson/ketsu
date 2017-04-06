@@ -6,7 +6,6 @@
 				<SoundBank Name="InGame_SoundBank" ID="{C04B638F-E4A4-48D3-8C01-AF61BBE67E11}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Level" ID="{4A74E382-EDFC-4024-A900-8E9D4CFAE44E}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WinScreen" ID="{C5BD384A-2312-4195-8B60-F8089C53189D}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Chicken" ID="{09CF79F5-D978-4416-BE81-08E09FCD2CFC}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
@@ -28,7 +27,6 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Stingers" ID="{6A7DC11C-EC66-40F4-8ED7-95CBEB4B1773}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="InGameMusic" ID="{215A90DB-5486-4107-93AF-752E0ECBD77A}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="MenuMusic" ID="{30842198-080F-4DC4-BFAC-37C033391A11}" WorkUnitID="{C489545F-5A31-4916-ADCB-890D56845F59}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -36,7 +34,6 @@
 				</SoundBank>
 				<SoundBank Name="Menu_Soundbank" ID="{AA37A9B0-0FCF-494C-8F3C-F724562894C0}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Spaceship" ID="{9061B0F5-8445-43F5-8DE3-6F72EF286DAD}" WorkUnitID="{858FF141-AF43-46C3-90C4-9FC3A90FEFF3}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="StartMenu" ID="{70D2711F-2AB1-4523-85E2-D0BE18B6C405}" WorkUnitID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WorldMenu" ID="{B7F856EB-466B-4C0F-AB58-5EE74B308E52}" WorkUnitID="{8E1830FB-06AF-4F5D-8CEC-ADC7AD6FBF77}" Filter="7" Origin="Manual"/>
