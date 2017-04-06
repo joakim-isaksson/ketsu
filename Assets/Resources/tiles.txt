@@ -34,6 +34,6 @@
 183 KetsuPowerCollectible
 185 Chicken
 186 Sheep
-191 Fox
-192 Wolf
-193 Ketsu
+191 FoxTest
+192 WolfTest
+193 KetsuTest
