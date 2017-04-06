@@ -1,65 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<IncrementalBankBuild Version="6" Flags="878078161">
+<IncrementalBankBuild Version="6" Flags="240381544">
 	<Platform GUID="{67D37C3E-AE4B-41B9-B64B-EB316D3A78A2}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="411512001" Timestamp="131358745945259450"/>
-				<File Name="Init" Hash="1764824527" Timestamp="131358118485599360"/>
+				<File Name="InGame_SoundBank" Hash="4116296896" Timestamp="131359358220000000"/>
+				<File Name="Init" Hash="1764824527" Timestamp="131359358240000000"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498569131971"/>
-				<File Name="Menu_Soundbank" Hash="3888674566" Timestamp="131358745946073617"/>
-				<File Name="Music_Soundbank" Hash="3609328706" Timestamp="131358745946909106"/>
+				<File Name="Menu_Soundbank" Hash="2151650760" Timestamp="131359358230000000"/>
+				<File Name="Music_Soundbank" Hash="1191176804" Timestamp="131359358240000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="676438775" Timestamp="131358745947137807"/>
+				<File Name="" Hash="2811288118" Timestamp="131359358240000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{A5BF2142-7D21-4249-B284-EABB4ECC1DCA}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="1348308655" Timestamp="131358745957914309"/>
-				<File Name="Init" Hash="2768417797" Timestamp="131358118489289495"/>
-				<File Name="Menu_Soundbank" Hash="3888674566" Timestamp="131358745958666329"/>
-				<File Name="Music_Soundbank" Hash="3609328706" Timestamp="131358745959532827"/>
+				<File Name="InGame_SoundBank" Hash="992346064" Timestamp="131359358300000000"/>
+				<File Name="Init" Hash="2768417797" Timestamp="131359358320000000"/>
+				<File Name="Menu_Soundbank" Hash="2151650760" Timestamp="131359358300000000"/>
+				<File Name="Music_Soundbank" Hash="1191176804" Timestamp="131359358320000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="4083602348" Timestamp="131358745959738500"/>
+				<File Name="" Hash="2773538679" Timestamp="131359358320000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{05F8F0C0-9B68-4998-9260-F9E1FC3BB4FA}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="3506809712" Timestamp="131358745965993052"/>
-				<File Name="Init" Hash="1956448607" Timestamp="131358118491194175"/>
+				<File Name="InGame_SoundBank" Hash="4116296896" Timestamp="131359358340000000"/>
+				<File Name="Init" Hash="1956448607" Timestamp="131359358360000000"/>
 				<File Name="Main_SoundBank" Hash="2148753668" Timestamp="131346498572264008"/>
-				<File Name="Menu_Soundbank" Hash="552788019" Timestamp="131358745967125738"/>
-				<File Name="Music_Soundbank" Hash="4179704279" Timestamp="131358745969324969"/>
+				<File Name="Menu_Soundbank" Hash="2151650760" Timestamp="131359358340000000"/>
+				<File Name="Music_Soundbank" Hash="1191176804" Timestamp="131359358360000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="1777610632" Timestamp="131358745969497638"/>
+				<File Name="" Hash="1487679552" Timestamp="131359358360000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{CAACA1F2-B3F4-4C29-BDE6-B88FF998934C}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="2888962927" Timestamp="131358781350000000"/>
-				<File Name="Init" Hash="4180864229" Timestamp="131358781350000000"/>
+				<File Name="InGame_SoundBank" Hash="4116296896" Timestamp="131359358260000000"/>
+				<File Name="Init" Hash="4180864229" Timestamp="131359358280000000"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498570557565"/>
-				<File Name="Menu_Soundbank" Hash="900435039" Timestamp="131358781350000000"/>
-				<File Name="Music_Soundbank" Hash="1268549323" Timestamp="131358781350000000"/>
+				<File Name="Menu_Soundbank" Hash="2151650760" Timestamp="131359358260000000"/>
+				<File Name="Music_Soundbank" Hash="1191176804" Timestamp="131359358280000000"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="962753241" Timestamp="131358781350000000"/>
+				<File Name="" Hash="26614544" Timestamp="131359358280000000"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
