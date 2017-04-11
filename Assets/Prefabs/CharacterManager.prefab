@@ -71,9 +71,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0553abe2432290046ada6ec73c18a77f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FoxPrefab: {fileID: 1132147270716104, guid: bbedb09b8414f438e809b01c9ceab1a8, type: 2}
-  WolfPrefab: {fileID: 1884622331499224, guid: 9ec5d2553fbf043c6adde926f86f0074, type: 2}
-  KetsuPrefab: {fileID: 1194870832127600, guid: b85bd12c057d94b16a5e2339eb59c583,
+  FoxPrefab: {fileID: 1367289068658380, guid: 940b7614f1d6d4d5cbc9e70cc9ae8b76, type: 2}
+  WolfPrefab: {fileID: 1335076529527638, guid: 8e9d9294c91ad4e86aebc92d9ea0c67a, type: 2}
+  KetsuPrefab: {fileID: 1498999488766744, guid: fd318d857319847adabe9a776fbdf5aa,
     type: 2}
   KetsuMoveCost: 1
   KetsuPower: 5
