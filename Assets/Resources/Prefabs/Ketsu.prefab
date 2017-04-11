@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114796153408796744}
   - component: {fileID: 114372361232246612}
   m_Layer: 0
-  m_Name: KetsuTest
+  m_Name: Ketsu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

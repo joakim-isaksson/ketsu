@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 114460541847602870}
   - component: {fileID: 114768617247718788}
   m_Layer: 0
-  m_Name: Wolf
+  m_Name: WolfOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

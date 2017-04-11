@@ -137,7 +137,6 @@ public class ParseMapOnLoad : MonoBehaviour
 			string name = line.Substring(line.LastIndexOf(' ') + 1);
 
 			GameObject prefab = (GameObject)Resources.Load("Prefabs/" + name);
-			Debug.Log(name);
 			prefabs.Add(n, prefab);
 		}
 
