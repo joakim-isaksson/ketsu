@@ -9,12 +9,14 @@ namespace Ketsu.Game
 	{
 		[HideInInspector]
 		public bool Solved;
+		public bool Split;
 
 		Home[] homes;
 
 		void Awake()
 		{
 			Solved = false;
+			Split = false;
 		}
 
 		void Start()
