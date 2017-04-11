@@ -50,19 +50,15 @@ namespace Ketsu.UI
 						disc.eulerAngles = newAngle;
 
 						if((disc.eulerAngles.y<90 && disc.eulerAngles.y>0)){
-							Debug.Log("Left?");
 							tempPos = new Vector3(-1,0,0);
 							disc.eulerAngles = new Vector3(disc.eulerAngles.x, 90, disc.eulerAngles.z);
 						}else if(disc.eulerAngles.y<180 && disc.eulerAngles.y>=90){
-							Debug.Log("Up?");
 							tempPos = new Vector3(0,0,1);
 							disc.eulerAngles = new Vector3(disc.eulerAngles.x, 180, disc.eulerAngles.z);
 						}else if(disc.eulerAngles.y<270 && disc.eulerAngles.y>=180){
-							Debug.Log("Right?");
 							tempPos = new Vector3(1,0,0);
 							disc.eulerAngles = new Vector3(disc.eulerAngles.x, 270, disc.eulerAngles.z);
 						}else if(disc.eulerAngles.y<360 && disc.eulerAngles.y>=270){
-							Debug.Log("Down?");
 							tempPos = new Vector3(0,0,-1);
 							disc.eulerAngles = new Vector3(disc.eulerAngles.x, 0, disc.eulerAngles.z);
 						}
