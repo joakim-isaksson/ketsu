@@ -31,7 +31,6 @@ namespace Ketsu.Game
 		{
             charHandler = FindObjectOfType<CharacterHandler>();
             mapManager = FindObjectOfType<MapManager>();
-            UseSwiping = true;
         }
 
 		void Update()
