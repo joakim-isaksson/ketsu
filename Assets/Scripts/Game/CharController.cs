@@ -35,7 +35,7 @@ namespace Ketsu.Game
 
 		void Update()
 		{
-            if (mapManager.Solved) return;
+            if (mapManager.Solved || mapManager.Split) return;
 
 #if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
 			HandleKeyInputs();

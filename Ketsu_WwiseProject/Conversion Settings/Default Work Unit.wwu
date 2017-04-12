@@ -48,16 +48,16 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{8BB8A31D-F3FA-48DA-95F5-8334EC97D3AA}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+							<ConversionPlugin Name="" ID="{4F31D69F-DA77-4F0C-BDBC-A3D889F73E8C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{D6321E06-17CC-4EB0-9C10-7C688D54222B}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+							<ConversionPlugin Name="" ID="{CB24A618-2573-4371-89BB-646591A2A9B7}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{3692A027-0308-4039-986B-7105C1C52BF9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="iOS">
-							<ConversionPlugin Name="" ID="{ED7A8F2D-A2B6-4B1F-A789-C0CE33890973}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+							<ConversionPlugin Name="" ID="{7161982D-26BB-4021-85C8-B620E7FE64AF}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>

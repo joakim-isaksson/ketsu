@@ -409,8 +409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: f06bafa0c5d78e4787227985db6fb0bd
-  eventID: 2086825057
+  valueGuid: 55229841bb43ac409445d94a1c2eacdb
+  eventID: -1863030977
   soundEmitterObject: {fileID: 0}
   enableActionOnEvent: 0
   actionOnEventType: 0
@@ -428,6 +428,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 809072598}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04c80d32f889db04e9c203897c5787ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: f06bafa0c5d78e4787227985db6fb0bd
+  eventID: 2086825057
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
+--- !u!114 &809072601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809072598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 706faa99185c236498467a4118af2c9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -438,30 +462,6 @@ MonoBehaviour:
   listenerMask: 1
   isStaticObject: 0
   m_posOffsetData: {fileID: 0}
---- !u!114 &809072601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 809072598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04c80d32f889db04e9c203897c5787ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  valueGuid: 55229841bb43ac409445d94a1c2eacdb
-  eventID: -1863030977
-  soundEmitterObject: {fileID: 0}
-  enableActionOnEvent: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  transitionDuration: 0
-  m_callbackData: {fileID: 0}
-  playingId: 0
-  multiPositionTypeLabel: 0
-  multiPositionArray: []
 --- !u!1001 &939460054
 Prefab:
   m_ObjectHideFlags: 0

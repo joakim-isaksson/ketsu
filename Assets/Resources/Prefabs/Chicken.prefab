@@ -184,7 +184,7 @@ MonoBehaviour:
   MovementSpeed: 2
   MovementType: 0
   CanBeConsumed: 1
-  GivesKetsuPower: 0.25
+  GivesKetsuPower: 1
   CanBeDazed: 0
   DazeTime: 0
   DealsDamage: 0

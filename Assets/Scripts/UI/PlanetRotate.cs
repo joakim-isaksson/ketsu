@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Ketsu.UI
 {
 public class PlanetRotate : MonoBehaviour {
-	float rotationSpeed = 1.0f;
+	float rotationSpeed = 0.1f;
  
  	Vector3 speed = new Vector3();
  	bool dragging = false;
@@ -13,11 +13,16 @@ public class PlanetRotate : MonoBehaviour {
 	public GameObject spaceship;
  	static Quaternion rotSpaceship;
  	static bool rotated = false;
+
+ 	float widthRatio = Screen.width / 1920.0f;
+	float heightRatio = Screen.height / 1080.0f;
  
  	void Start(){
  		transform.rotation = rot;
  		if(rotated)
  			spaceship.transform.rotation = rotSpaceship;
+
+ 		Debug.Log(widthRatio+ " " + widthRatio*rotationSpeed+" "+ heightRatio + " "+heightRatio*rotationSpeed);
  	}
 
 	void OnMouseOver() 
@@ -44,7 +49,7 @@ public class PlanetRotate : MonoBehaviour {
              	dragging = false;
          	}
     	}
-    	transform.Rotate(speed.y * rotationSpeed, speed.x * rotationSpeed, 0, Space.World);
+    	transform.Rotate(speed.y * rotationSpeed / widthRatio, speed.x * rotationSpeed / heightRatio, 0, Space.World);
     	rot = transform.rotation;
     	rotSpaceship = spaceship.transform.rotation;
     	rotated = true;

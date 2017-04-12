@@ -230,7 +230,7 @@ namespace Ketsu.Game
                 if (firstMove && active.Type == MapObjectType.Ketsu && !ConsumeKetsuPower(KetsuMoveCost))
                 {
                     // No ketsu power to spend -> Split
-                    SplitKetsu(activeTarget.Position);
+                    //SplitKetsu(activeTarget.Position);
                     return;
                 }
                 firstMove = false;
