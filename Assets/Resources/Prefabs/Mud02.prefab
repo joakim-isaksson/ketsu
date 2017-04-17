@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4161102304941818}
   - component: {fileID: 33967962518809872}
   - component: {fileID: 23587583754085994}
-  - component: {fileID: 65667653321152564}
-  - component: {fileID: 114674442550053508}
   m_Layer: 0
   m_Name: Mud02
   m_TagString: Untagged
@@ -153,18 +151,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1236028080536916}
   m_Mesh: {fileID: 4300000, guid: 1a6aba98633e496488c4eb497d954e0c, type: 3}
---- !u!65 &65667653321152564
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1236028080536916}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.05179645, z: 0.9}
-  m_Center: {x: 0.0068190694, y: 0.050647683, z: 0.00046128035}
 --- !u!65 &65958269123108252
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -190,18 +176,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Type: 12
   Layer: 0
-  NotBlockedBy: 
---- !u!114 &114674442550053508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1236028080536916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a63c82412b00fda4cb9783ab2575d252, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Type: 12
-  Layer: 1
   NotBlockedBy: 
