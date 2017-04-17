@@ -7,6 +7,14 @@ using UnityEngine.SceneManagement;
 public class LevelSelection : MonoBehaviour {
 	public int level;
 	public GameObject spaceship;
+    Renderer rend;
+    public bool important;
+    Color StartColor = new Color(0.898f, 0.729f, 0.000f, 1.000f);
+    Color EndColor = new Color(0.898f, 0.534f, 0.000f, 1.000f);
+
+	void Start(){
+		rend = GetComponent<Renderer>();
+	}
 
 	void OnMouseDown(){
 		if(spaceship.transform.rotation == transform.rotation)
@@ -31,5 +39,10 @@ public class LevelSelection : MonoBehaviour {
         }
   		  SceneManager.LoadScene(level+1);
   		  yield return null;
+  	}
+
+  	void Update(){
+  		if(important)
+        	rend.material.color = Color.Lerp(StartColor, EndColor, Mathf.PingPong(Time.time, 1));
   	}
 }

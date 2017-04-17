@@ -4,7 +4,7 @@ using UnityEngine;
 namespace Ketsu.UI
 {
 public class PlanetRotate : MonoBehaviour {
-	float rotationSpeed = 0.1f;
+	//float rotationSpeed = 1.0f;
  
  	Vector3 speed = new Vector3();
  	bool dragging = false;
@@ -22,7 +22,7 @@ public class PlanetRotate : MonoBehaviour {
  		if(rotated)
  			spaceship.transform.rotation = rotSpaceship;
 
- 		Debug.Log(widthRatio+ " " + widthRatio*rotationSpeed+" "+ heightRatio + " "+heightRatio*rotationSpeed);
+ 		//Debug.Log(widthRatio+ " " + widthRatio*rotationSpeed+" "+ heightRatio + " "+heightRatio*rotationSpeed);
  	}
 
 	void OnMouseOver() 
@@ -36,20 +36,27 @@ public class PlanetRotate : MonoBehaviour {
 		if (Input.GetMouseButton(0) && dragging) {
          	speed = new Vector3(-Input.GetAxis ("Mouse X"), Input.GetAxis("Mouse Y"), 0);
      	}
+     	else {
+         	if (dragging) {
+             	speed = Vector3.zero;
+             	dragging = false;
+         	}
+    	}
+    	transform.Rotate(speed.y, speed.x, 0, Space.World);
 #else
 		if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved) {
             // Get movement of the finger since last frame
             Vector2 touchDeltaPosition = Input.GetTouch(0).deltaPosition;
             speed = new Vector3(-touchDeltaPosition.x, touchDeltaPosition.y, 0);
         }
-#endif
      	 else {
          	if (dragging) {
              	speed = Vector3.zero;
              	dragging = false;
          	}
     	}
-    	transform.Rotate(speed.y * rotationSpeed / widthRatio, speed.x * rotationSpeed / heightRatio, 0, Space.World);
+    	transform.Rotate(speed.y / widthRatio, speed.x / heightRatio, 0, Space.World);
+#endif
     	rot = transform.rotation;
     	rotSpaceship = spaceship.transform.rotation;
     	rotated = true;
