@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Ketsu.Game
+namespace Game
 {
     public class Bumber : MonoBehaviour
     {

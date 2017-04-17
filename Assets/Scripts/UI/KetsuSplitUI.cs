@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using Ketsu.Game;
 using System.Collections;
+using Game;
 
 
 namespace Ketsu.UI

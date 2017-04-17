@@ -1,4 +1,4 @@
-﻿using Ketsu.Game;
+﻿using Game;
 using UnityEngine;
 using UnityEngine.UI;
 

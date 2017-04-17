@@ -1,9 +1,9 @@
-﻿using Ketsu.Utils;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using Ketsu.Utils;
 using UnityEngine;
 
-namespace Ketsu.Game
+namespace Game
 {
 	public class CharacterHandler : MonoBehaviour
 	{
@@ -118,6 +118,11 @@ namespace Ketsu.Game
 
 		}
 
+	    public void FillKetsuPower()
+	    {
+	        KetsuPower = MaxKetsuPower;
+	    }
+
         public void AddKetsuPower(float amount)
         {
             KetsuPower = Mathf.Min(KetsuPower + amount, MaxKetsuPower);
@@ -230,7 +235,7 @@ namespace Ketsu.Game
                 if (firstMove && active.Type == MapObjectType.Ketsu && !ConsumeKetsuPower(KetsuMoveCost))
                 {
                     // No ketsu power to spend -> Split
-                    //SplitKetsu(activeTarget.Position);
+                    SplitKetsu(activeTarget.Position);
                     return;
                 }
                 firstMove = false;

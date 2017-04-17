@@ -1,9 +1,9 @@
-﻿using Ketsu.Utils;
-using System;
+﻿using System;
 using System.Collections;
+using Ketsu.Utils;
 using UnityEngine;
 
-namespace Ketsu.Game
+namespace Game
 {
 	public class Character : MapObject
 	{

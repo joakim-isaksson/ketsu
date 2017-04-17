@@ -1,5 +1,4 @@
 using UnityEngine;
-using Ketsu.Game;
 
 namespace Ketsu.UI
 {

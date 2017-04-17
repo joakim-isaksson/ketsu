@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Ketsu.Game;
 using System.Linq;
+using Game;
 
 public class PrefabRandomizer : MonoBehaviour {
 

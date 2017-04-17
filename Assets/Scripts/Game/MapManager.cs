@@ -1,9 +1,8 @@
-﻿using Ketsu.Utils;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Ketsu.Utils;
 using UnityEngine;
-using UnityEngine.UI;
 
-namespace Ketsu.Game
+namespace Game
 {
 	public class MapManager : MonoBehaviour
 	{
@@ -76,6 +75,8 @@ namespace Ketsu.Game
                     return false;
                 }
 			}
+
+		    if (Gas.GasToCollect > 0) return false;
 
             Solved = true;
             return true;

@@ -1,8 +1,8 @@
-﻿using Ketsu.Utils;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Ketsu.Utils;
 using UnityEngine;
 
-namespace Ketsu.Game
+namespace Game
 {
 	public class MapObject : ExtendedMonoBehaviour
 	{
