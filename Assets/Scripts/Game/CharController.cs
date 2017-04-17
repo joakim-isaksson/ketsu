@@ -69,7 +69,7 @@ namespace Game
                     else if (UseTapping)
                     {
                         // Early TAP (when using tapping and not swiping)
-                        ClickOrTap(Camera.main.ScreenToWorldPoint(touch.position));
+                        ClickOrTap(touch.position);
                     }
 					
 				}
