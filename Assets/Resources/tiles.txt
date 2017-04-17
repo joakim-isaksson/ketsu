@@ -39,7 +39,8 @@
 141 Hedgehog
 181 FoxCave
 182 WolfCave
-183 KetsuPowerCollectible
+183 Gem
+184 Gas
 185 Chicken
 186 Sheep
 191 Fox

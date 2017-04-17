@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="12" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="TilesetPlaceholder" tilewidth="32" tileheight="32" tilecount="240" columns="10">
-  <image source="../../Tileset.png" width="320" height="768"/>
+  <image source="../../../../../ketsu/MapEditor/Tileset.png" width="320" height="768"/>
  </tileset>
  <layer name="Ground" width="16" height="12">
   <data encoding="csv">
@@ -51,7 +51,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,1610612922,0,0,192
 </data>
  </layer>
- <layer name="Solution" width="16" height="12" visible="0">
+ <layer name="Solution" width="16" height="12">
   <data encoding="csv">
 222,222,222,0,0,0,0,0,0,0,0,0,0,0,0,0,
 222,0,0,0,0,232,232,232,232,232,232,232,232,232,232,232,
