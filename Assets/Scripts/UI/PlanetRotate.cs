@@ -18,6 +18,7 @@ public class PlanetRotate : MonoBehaviour {
 	float heightRatio = Screen.height / 1080.0f;
  
  	void Start(){
+        rot = Quaternion.Euler(-16, 25, -4);
  		transform.rotation = rot;
  		if(rotated)
  			spaceship.transform.rotation = rotSpaceship;
