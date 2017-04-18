@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour {
 	public int level;
+	public static int currentLevel = 1;
 	public GameObject spaceship;
+	public GameObject currentBase;
     Renderer rend;
     public bool important;
     Color StartColor = new Color(0.898f, 0.729f, 0.000f, 1.000f);
@@ -14,6 +16,9 @@ public class LevelSelection : MonoBehaviour {
 
 	void Start(){
 		rend = GetComponent<Renderer>();
+		currentBase = GameObject.Find("Level"+currentLevel);
+		if(spaceship.transform.rotation != currentBase.transform.rotation)
+		    StartCoroutine(FlyToBase(currentBase));
 	}
 
 	void OnMouseDown(){
@@ -28,7 +33,15 @@ public class LevelSelection : MonoBehaviour {
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, transform.rotation, t);
             yield return null;
-         }
+        }
+  	}
+
+  	IEnumerator FlyToBase(GameObject Base){
+  		AkSoundEngine.PostEvent("LevelMenu_UnlockedLevel_Select", spaceship);
+		for(float t = 0f; t < 1; t += Time.deltaTime) {
+            spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, Base.transform.rotation, t);
+            yield return null;
+        }
   	}
 
   	IEnumerator Load(){
@@ -37,8 +50,9 @@ public class LevelSelection : MonoBehaviour {
             spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
             yield return null;
         }
-  		  SceneManager.LoadScene(level+1);
-  		  yield return null;
+        currentLevel = level+1;
+  		SceneManager.LoadScene(level+1);
+  		yield return null;
   	}
 
   	void Update(){

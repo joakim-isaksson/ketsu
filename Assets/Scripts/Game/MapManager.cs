@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Ketsu.Utils;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Game
 {
@@ -23,6 +24,10 @@ namespace Game
             homes = FindObjectsOfType<Home>();
 
             ScreenFaider.Instance.FadeOut(1.0f, null);
+
+            //save current level to level selection
+            LevelSelection.currentLevel = SceneManager.GetActiveScene().buildIndex-1;
+
 		}
 
         /// <summary>
