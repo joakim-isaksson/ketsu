@@ -136,7 +136,13 @@ public class ParseMapOnLoad : MonoBehaviour
 			int.TryParse(line.Substring(0, line.IndexOf(' ')), out n);
 			string name = line.Substring(line.LastIndexOf(' ') + 1);
 
-			GameObject prefab = (GameObject)Resources.Load("Prefabs/" + name);
+			GameObject prefab = null;
+			List<string> folders = new List<string>(new string[] {"Bushes", "Characters", "Ground", "Objects", "Trees"});
+			int i=0;
+			while(!prefab && i<5){
+				prefab = (GameObject)Resources.Load("Prefabs/" + folders[i] + "/" + name);
+				i++;
+			}
 			prefabs.Add(n, prefab);
 		}
 
