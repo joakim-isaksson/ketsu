@@ -37,7 +37,6 @@ public class LevelSelection : MonoBehaviour {
   	}
 
   	IEnumerator FlyToBase(GameObject Base){
-  		AkSoundEngine.PostEvent("LevelMenu_UnlockedLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, Base.transform.rotation, t);
             yield return null;
