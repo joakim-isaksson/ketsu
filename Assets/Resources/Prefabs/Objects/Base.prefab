@@ -109,3 +109,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 8
   spaceship: {fileID: 0}
+  currentBase: {fileID: 0}
+  important: 0
