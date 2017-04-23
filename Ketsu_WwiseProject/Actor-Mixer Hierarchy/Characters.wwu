@@ -70,68 +70,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Death_Hedgehog" ID="{C220A0EC-2C89-488E-89CC-706608A9CFA3}" ShortID="1060008018">
-							<PropertyList>
-								<Property Name="Lowpass" Type="int16">
-									<ValueList>
-										<Value>22</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Fox_Death_Hedgehog_01" ID="{35C90033-3934-4E58-963D-60848D7C44F0}" ShortID="637875965" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Fox_Death_Hedgehog_01" ID="{F5B4F698-B2B2-49E1-AF0E-575C34D40F66}" ShortID="461580426">
-											<Language>SFX</Language>
-											<AudioFile>Fox_Death_Hedgehog_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Fox_Death_Hedgehog_01" ID="{F5B4F698-B2B2-49E1-AF0E-575C34D40F66}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Fox_Death_Hedgehog_02" ID="{3B036A20-1C8A-4412-AF6D-890E5838BF42}" ShortID="146712396" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Fox_Death_Hedgehog_02" ID="{B60FDC48-D8AD-4E67-975B-E97E33A5276C}" ShortID="503244186">
-											<Language>SFX</Language>
-											<AudioFile>Fox_Death_Hedgehog_02.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Fox_Death_Hedgehog_02" ID="{B60FDC48-D8AD-4E67-975B-E97E33A5276C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<SwitchContainer Name="Move_Fox" ID="{4A780AA1-2C65-42C7-AD82-9C4517FB26E9}" ShortID="338787506">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
@@ -244,8 +182,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_02" ID="{ECE9FB41-ECB7-4D68-B9A0-8B234434E21B}" ShortID="780048494">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0145574606396733"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0333965273498387"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.45574606396733E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.33965273498387E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_02.wav</AudioFile>
@@ -267,7 +205,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_03" ID="{207DB537-0E46-4A6B-B005-A98FBCD3574F}" ShortID="899780812">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0174429985137927"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.74429985137927E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.051166128973792"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -291,7 +229,7 @@
 												<AudioFileSource Name="Move_Fox_Ground_04" ID="{DC427B19-52ED-465A-8034-2C8E5FD0B6D7}" ShortID="633911034">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="0.029324440255676"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0212745939109806"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.12745939109806E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_04.wav</AudioFile>
@@ -438,7 +376,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_02" ID="{01F13CDC-4FCE-4742-8154-0480EA9FD56B}" ShortID="402022915">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0414467563224224"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.14467563224224E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.017368164554158"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -461,7 +399,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_03" ID="{3174B1A5-35A7-49C9-8A8C-340721F425A4}" ShortID="555482349">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0207446341473238"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.07446341473238E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.120553722969353"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -484,8 +422,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_04" ID="{EB917396-AF02-433B-B5F1-40DD0420A0EE}" ShortID="40123842">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.00929383002460901"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0695178485840755"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="9.29383002460901E-03"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.95178485840755E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_04.wav</AudioFile>
@@ -507,7 +445,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_05" ID="{23B6532F-12FD-4C33-9075-20AE3DA5839A}" ShortID="100508892">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0289196199498153"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.89196199498153E-02"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.133330715353045"/>
 													</PropertyList>
@@ -859,44 +797,6 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Death_Hedgehog" ID="{A05233C7-3DAA-49DF-ABD8-DDCDBE545454}" ShortID="496866">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-4</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="Wolf_Death_Hedgehog_01" ID="{0AA61489-912D-4736-AE65-FCB91BC3CEB5}" ShortID="225742568" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Wolf_Death_Hedgehog_01" ID="{E580B537-BBCE-486D-BD29-2988460CDCEA}" ShortID="704131998">
-											<Language>SFX</Language>
-											<AudioFile>Wolf_Death_Hedgehog_01.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Wolf_Death_Hedgehog_01" ID="{E580B537-BBCE-486D-BD29-2988460CDCEA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<SwitchContainer Name="Move_Wolf" ID="{17E1D0B9-BCB9-4B0B-A83F-0BC66D1E90AF}" ShortID="537608327">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
@@ -1006,8 +906,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Grass_03" ID="{62B206B9-C825-4375-8200-4327B65F6EFC}" ShortID="891115824">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0453219511605708"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0326912434600838"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="4.53219511605708E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.26912434600838E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Grass_03.wav</AudioFile>
@@ -1048,8 +948,8 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Grass_05" ID="{F5309332-CC1C-45A6-A035-C883FA6CB1F0}" ShortID="99673032">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0199671342782228"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0403336112420101"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.99671342782228E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.03336112420101E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Grass_05.wav</AudioFile>
@@ -1086,9 +986,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_01" ID="{0BD7FAC7-47BA-481D-8AD9-5B0C7BA55EC5}" ShortID="943145784">
 													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.00815400168356271"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0459885694952937"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0300067261955108"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.15400168356271E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.59885694952937E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.00067261955108E-02"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.333009428756701"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -1134,7 +1034,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_03" ID="{6E03DC72-344F-406C-B6EC-F71A0784B5C7}" ShortID="868623114">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.00587088121216517"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="5.87088121216517E-03"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.311156704244753"/>
 													</PropertyList>
 													<Language>SFX</Language>

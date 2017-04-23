@@ -1,54 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{69F4D179-6462-4F45-A223-C9819486DF6A}" SchemaVersion="75">
 	<Events>
-		<WorkUnit Name="Enemy" ID="{69F4D179-6462-4F45-A223-C9819486DF6A}" PersistMode="Standalone">
-			<ChildrenList>
-				<Folder Name="Hit" ID="{3B62C43B-0D21-4498-AFD8-A0370119CA6F}" ShortID="720940460">
-					<ChildrenList>
-						<Event Name="Character_Hit_Hedgehog" ID="{AAC52D94-121D-420D-9C78-74A1CD84D43E}">
-							<ChildrenList>
-								<Action Name="Play" ID="{26BB2601-485C-4C0B-B0ED-56A2E2D7BCE9}" ShortID="897812175" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{F8982696-AEDC-422F-9E5F-4A4C4C4085F3}" Global="false">
-											<ObjectRef Name="Hit_Hedgehog" ID="{56E9DB9B-37CD-42F4-A75F-F9211F677F70}" WorkUnitID="{140CA662-18C2-4251-B8F2-5CAA62F179A5}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Chicken" ID="{09CF79F5-D978-4416-BE81-08E09FCD2CFC}" ShortID="534178311">
-					<ChildrenList>
-						<Event Name="Chicken_Hit_Bush" ID="{36A1F1F5-CF8E-4D50-9953-A458ECA707CF}">
-							<ChildrenList>
-								<Action Name="Play" ID="{41B838A0-0157-41F9-BEBB-DA41808BC89D}" ShortID="54630180" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{C2764CA8-7B82-42AB-988E-2D8FE8C609F1}" Global="false">
-											<ObjectRef Name="Hit_Bush" ID="{70C3E4CD-13AE-44EF-BFFA-77DBDC949886}" WorkUnitID="{140CA662-18C2-4251-B8F2-5CAA62F179A5}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Hedgehog" ID="{4FF0E65F-710D-4D1F-8EAF-1C03AC65F530}" ShortID="218537774">
-					<ChildrenList>
-						<Event Name="Move_Hedgehog" ID="{4DF98277-ED92-490C-AE4C-1121982A07D3}">
-							<ChildrenList>
-								<Action Name="Play" ID="{6CC3BADF-8CB5-431F-AD4F-F6305BC3E602}" ShortID="562772680" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{0A2DC5C7-8DFC-442E-BB59-964B7461AD69}" Global="false">
-											<ObjectRef Name="Move_Hedgehog" ID="{0A3B553D-C9D1-4050-BB23-230A574FE078}" WorkUnitID="{140CA662-18C2-4251-B8F2-5CAA62F179A5}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Enemy" ID="{69F4D179-6462-4F45-A223-C9819486DF6A}" PersistMode="Standalone"/>
 	</Events>
 </WwiseDocument>

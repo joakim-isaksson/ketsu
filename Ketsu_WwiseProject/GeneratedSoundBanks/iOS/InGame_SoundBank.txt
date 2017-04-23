@@ -1,5 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	30088657	Collect_Sheep			\SFX\Collect\Collect_Sheep	
 	35994456	Map_Env_Birds			\World\Map_Env\Map_Env_Birds	
 	171788004	WinScreen_Restart_Button			\UI\GUI\WinScreen\WinScreen_Restart_Button	
 	240649815	Map_Env_Bees			\World\Map_Env\Map_Env_Bees	
@@ -9,9 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	611079635	Map_Env_BigWater			\World\Map_Env\Map_Env_BigWater	
 	782833506	Map_Env_SmallWater			\World\Map_Env\Map_Env_SmallWater	
 	841337824	GUI_Split_Active			\UI\GUI\Split\GUI_Split_Active	
-	941274754	Move_Hedgehog			\Enemy\Hedgehog\Move_Hedgehog	
 	989405037	GUI_Settings_Button			\UI\GUI\Button\GUI_Settings_Button	
-	1004812793	Collect_Chicken			\SFX\Collect\Collect_Chicken	
 	1024872546	Toolbox_Collect_KetsuMaxPowerUp			\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp	
 	1052828255	Transform_ToKetsu			\SFX\Transform\Transform_ToKetsu	
 	1173277773	Toolbox_Open			\UI\GUI\Toolbox\Toolbox_Open	
@@ -22,7 +19,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1446448900	Death_Wolf_Water			\Characters\Death\Death_Wolf_Water	
 	1464712323	GUI_MaxPowerUp_Crystal_Button			\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\GUI\WinScreen\WinScreen_MainMenu_Button	
-	1746299433	Chicken_Hit_Bush			\Enemy\Chicken\Chicken_Hit_Bush	
 	1748211077	GUI_Split_Release			\UI\GUI\Split\GUI_Split_Release	
 	1833815307	Map_Env_StrongWind			\World\Map_Env\Map_Env_StrongWind	
 	2431936319	Play_Random_Env			\World\Map_Env\Play_Random_Env	
@@ -33,16 +29,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	3275066385	GUI_Sheep_Button			\UI\GUI\Button\GUI_Sheep_Button	
 	3565206619	Toolbox_Collect_SpaceshipPart			\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart	
 	3609283987	Move_Ketsu			\Characters\Move\Move_Ketsu	
-	3738416424	Death_Wolf_Hedgehog			\Characters\Death\Death_Wolf_Hedgehog	
 	3853446416	Stop_Wolf_Ice			\Characters\Move\Stop_Wolf_Ice	
 	4045630760	Move_Fox_Ice			\Characters\Move\Move_Fox_Ice	
 	4091529515	GUI_PowerUp_Crystal_Button			\UI\GUI\Button\GUI_PowerUp_Crystal_Button	
 	4100043833	GUI_KetsuPower_Increase			\UI\GUI\Function\GUI_KetsuPower_Increase	
 	4112863043	Map_Env_MediumWind			\World\Map_Env\Map_Env_MediumWind	
 	4162518518	Toolbox_Collect_Coins			\UI\GUI\Toolbox\Toolbox_Collect_Coins	
-	4193159569	Death_Fox_Hedgehog			\Characters\Death\Death_Fox_Hedgehog	
 	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
-	4257406112	Character_Hit_Hedgehog			\Enemy\Hit\Character_Hit_Hedgehog	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	253806231	Tile_Material			\Default Work Unit\Tile_Material	
@@ -77,11 +70,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	117800326	GUI_PowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_PowerUp_Crystal_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_PowerUp_Crystal_Button		340456
 	139884733	Fox_Death_Water_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Water_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_02		624160
 	143512029	GUI_Chicken_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Chicken_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Chicken_Button		41000
-	157640653	Chicken_Hit_Bush_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Chicken_Hit_Bush_03_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_03		352092
 	211612609	Map_Env_StrongWind	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_StrongWind_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Map_Env_StrongWind		14015276
-	224424084	Chicken_Hit_Bush_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Chicken_Hit_Bush_05_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_05		404632
 	225182666	Map_Env_Birds	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_Birds_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Map_Env_Birds		9962564
-	228292697	Chicken_Hit_Bush_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Chicken_Hit_Bush_04_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_04		404632
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_MainMenu_Button		107888
 	245242611	Toolbox_Collect_SpaceshipPart	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_SpaceshipPart_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_SpaceshipPart		216552
 	265982203	Toolbox_Open	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Open_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Open		323888
@@ -90,30 +80,22 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	310533540	GUI_MaxPowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_MaxPowerUp_Crystal_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_MaxPowerUp_Crystal_Button		385764
 	310840679	Move_Fox_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Grass_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_01		81452
 	338727587	Move_OnBridge_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_OnBridge_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_04		76912
-	370192254	Chicken_Hit_Bush_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Chicken_Hit_Bush_02_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_02		352092
 	402022915	Move_Fox_Grass_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Grass_02_9DD024F7.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_02		75404
 	420154487	Toolbox_Collect_KetsuPowerUp	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_KetsuPowerUp_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_KetsuPowerUp		737160
 	431942235	Move_OnBridge_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_OnBridge_03_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_03		76912
-	440588258	Character_Hit_Hedgehog_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Character_Hit_Hedgehog_03_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Hit_Hedgehog\Character_Hit_Hedgehog_03		77588
-	446540801	Chicken_Hit_Bush_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Chicken_Hit_Bush_01_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Chicken\Hit_Bush\Chicken_Hit_Bush_01		273448
-	461580426	Fox_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Hedgehog_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_01		523896
 	463531170	GUI_Split_Release	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Split_Release_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_Release		638664
 	489506376	UI_WinScreen_Store_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_Store_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Store_Button		275860
-	503244186	Fox_Death_Hedgehog_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Hedgehog_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Hedgehog\Fox_Death_Hedgehog_02		523896
 	507783315	GUI_Split_BuildUp	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Split_BuildUp_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_BuildUp		5177132
 	511370657	Fox_Death_Water_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Fox_Death_Water_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_01		624160
-	514221431	Character_Hit_Hedgehog_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Character_Hit_Hedgehog_02_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Hit_Hedgehog\Character_Hit_Hedgehog_02		77588
 	538173892	Map_Env_Sea	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_Sea_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_Sea		8833760
 	544687860	Toolbox_Collect_Coins	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_Coins_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_Coins		548672
 	555482349	Move_Fox_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Grass_03_A772CB07.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_03		56544
 	603409939	UI_WinScreen_Restart_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_Restart_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Restart_Button		44700
-	612027486	Collect_Sheep	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Sheep_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Sheep		191024
 	616983996	Move_Wolf_Ice_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Ice_02_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_02		159972
 	633911034	Move_Fox_Ground_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Ground_04_BA9DC8BC.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_04		53416
 	635168810	GUI_Sheep_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\GUI_Sheep_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Sheep_Button		41000
 	668879718	Move_Fox_Ice_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Ice_02_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ice\Move_Fox_Ice_02		156676
 	690310313	Move_OnBridge_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_OnBridge_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_01		76912
-	704131998	Wolf_Death_Hedgehog_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Hedgehog_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Hedgehog\Wolf_Death_Hedgehog_01		523896
 	704936838	Move_Wolf_Grass_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Grass_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_04		76216
 	717253633	Move_Wolf_Grass_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Grass_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_02		74152
 	737519746	Map_Env_BigWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_BigWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_BigWaterStream		10021744
@@ -124,12 +106,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	780048494	Move_Fox_Ground_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Ground_02_A56D3720.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_02		50868
 	785333790	Move_Wolf_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Grass_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_01		73800
 	787118364	Map_Env_BeesOnFlowers	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_BeesOnFlowers_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Map_Env_BeesOnFlowers		3657212
-	793490377	Move_Hedgehog	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Hedgehog_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Move_Hedgehog\Move_Hedgehog		218100
 	814823044	Move_Wolf_Ground_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Ground_02_AB3070EB.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_02		44884
 	843588775	Move_OnBridge_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_OnBridge_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_02		76912
 	868623114	Move_Wolf_Ground_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Ground_03_20F9A476.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_03		54952
 	891115824	Move_Wolf_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Grass_03_EB3A45A9.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_03		68084
-	893164066	Collect_Chicken	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Collect_Chicken_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Collect\Collect_Chicken		134256
 	899780812	Move_Fox_Ground_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Ground_03_088797E1.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_03		48784
 	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Ketsu_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		61976
 	925777685	Move_Wolf_Ice_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Ice_01_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_01		155028
@@ -141,7 +121,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	946403468	Move_Fox_Ice_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Fox_Ice_01_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ice\Move_Fox_Ice_01		161556
 	947826981	Map_Env_SmallWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Map_Env_SmallWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_SmallWaterStream		9974708
 	962930836	Toolbox_Collect_KetsuMaxPowerUp	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Toolbox_Collect_KetsuMaxPowerUp_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp		753476
-	1038935475	Character_Hit_Hedgehog_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Character_Hit_Hedgehog_01_A939E04F.wem		\Actor-Mixer Hierarchy\Enemy\Hedgehog\Hit_Hedgehog\Character_Hit_Hedgehog_01		77588
 	1040587393	UI_WinScreen_Next_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\UI_WinScreen_Next_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Next_Button		118244
 	1048122472	Move_Wolf_Ice_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Move_Wolf_Ice_03_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_03		163392
 	1069057915	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\iOS\SFX\Wolf_Death_Water_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		624160

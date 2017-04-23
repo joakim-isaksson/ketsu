@@ -18,32 +18,7 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" ShortID="13681788">
-					<ChildrenList>
-						<Event Name="Collect_Chicken" ID="{83785E9D-4CB4-48B9-9663-E15F95424103}">
-							<ChildrenList>
-								<Action Name="Play" ID="{FD89E4D5-621F-43B9-AB6C-AA2D6D98338A}" ShortID="269963536" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{C4CAFA44-7513-4DFA-B7C8-5671F5F8AF6D}" Global="false">
-											<ObjectRef Name="Collect_Chicken" ID="{B741E43D-576F-4EE6-8FC8-4A809E7C945D}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Collect_Sheep" ID="{C755B38C-AACB-4B3B-A0A8-E1F4FA5082A2}">
-							<ChildrenList>
-								<Action Name="Play" ID="{02807FCB-0113-4211-AFB7-F5839E783391}" ShortID="113856580" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{6CD1849E-9751-4DE5-B3F0-FDB6202C21A1}" Global="false">
-											<ObjectRef Name="Collect_Sheep" ID="{1ABCE30F-8858-462B-98B4-3500324261C1}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
+				<Folder Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" ShortID="13681788"/>
 				<Folder Name="Transform" ID="{552283F4-17D6-499D-916B-0D4C116621EE}" ShortID="985789474">
 					<ChildrenList>
 						<Event Name="Transform_ToKetsu" ID="{817FCAD0-0B99-490F-BB41-A93A56B87BD6}">

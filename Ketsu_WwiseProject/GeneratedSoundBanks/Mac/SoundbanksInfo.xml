@@ -143,14 +143,8 @@
 			<ShortName>InGame_SoundBank</ShortName>
 			<Path>InGame_SoundBank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="4257406112" Name="Character_Hit_Hedgehog" ObjectPath="\Events\Enemy\Hit\Character_Hit_Hedgehog"/>
 				<Event Id="287526684" Name="Character_Hit_Water" ObjectPath="\Events\SFX\Level\Character_Hit_Water"/>
-				<Event Id="1746299433" Name="Chicken_Hit_Bush" ObjectPath="\Events\Enemy\Chicken\Chicken_Hit_Bush"/>
-				<Event Id="1004812793" Name="Collect_Chicken" ObjectPath="\Events\SFX\Collect\Collect_Chicken"/>
-				<Event Id="30088657" Name="Collect_Sheep" ObjectPath="\Events\SFX\Collect\Collect_Sheep"/>
-				<Event Id="4193159569" Name="Death_Fox_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Fox_Hedgehog"/>
 				<Event Id="269859599" Name="Death_Fox_Water" ObjectPath="\Events\Characters\Death\Death_Fox_Water"/>
-				<Event Id="3738416424" Name="Death_Wolf_Hedgehog" ObjectPath="\Events\Characters\Death\Death_Wolf_Hedgehog"/>
 				<Event Id="1446448900" Name="Death_Wolf_Water" ObjectPath="\Events\Characters\Death\Death_Wolf_Water"/>
 				<Event Id="1203244949" Name="GUI_Chicken_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Chicken_Button"/>
 				<Event Id="4100043833" Name="GUI_KetsuPower_Increase" ObjectPath="\Events\UI\GUI\Function\GUI_KetsuPower_Increase"/>
@@ -169,7 +163,6 @@
 				<Event Id="1833815307" Name="Map_Env_StrongWind" ObjectPath="\Events\World\Map_Env\Map_Env_StrongWind"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
-				<Event Id="941274754" Name="Move_Hedgehog" ObjectPath="\Events\Enemy\Hedgehog\Move_Hedgehog"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
@@ -221,10 +214,6 @@
 					<ShortName>GUI_Chicken_Button.wav</ShortName>
 					<Path>SFX\GUI_Chicken_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="157640653" Language="SFX">
-					<ShortName>Chicken_Hit_Bush_03.wav</ShortName>
-					<Path>SFX\Chicken_Hit_Bush_03_A939E04F.wem</Path>
-				</File>
 				<File Id="171998509" Language="SFX">
 					<ShortName>Move_OnBridge_02.wav</ShortName>
 					<Path>SFX\Move_OnBridge_02_A939E04F.wem</Path>
@@ -237,17 +226,9 @@
 					<ShortName>Map_Env_StrongWind.wav</ShortName>
 					<Path>SFX\Map_Env_StrongWind_2CC9493D.wem</Path>
 				</File>
-				<File Id="224424084" Language="SFX">
-					<ShortName>Chicken_Hit_Bush_05.wav</ShortName>
-					<Path>SFX\Chicken_Hit_Bush_05_A939E04F.wem</Path>
-				</File>
 				<File Id="225182666" Language="SFX">
 					<ShortName>Map_Env_Birds.wav</ShortName>
 					<Path>SFX\Map_Env_Birds_2CC9493D.wem</Path>
-				</File>
-				<File Id="228292697" Language="SFX">
-					<ShortName>Chicken_Hit_Bush_04.wav</ShortName>
-					<Path>SFX\Chicken_Hit_Bush_04_A939E04F.wem</Path>
 				</File>
 				<File Id="231051959" Language="SFX">
 					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
@@ -277,10 +258,6 @@
 					<ShortName>Move_Fox_Grass_01.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_01_A939E04F.wem</Path>
 				</File>
-				<File Id="370192254" Language="SFX">
-					<ShortName>Chicken_Hit_Bush_02.wav</ShortName>
-					<Path>SFX\Chicken_Hit_Bush_02_A939E04F.wem</Path>
-				</File>
 				<File Id="402022915" Language="SFX">
 					<ShortName>Move_Fox_Grass_02.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_02_9DD024F7.wem</Path>
@@ -288,18 +265,6 @@
 				<File Id="420154487" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuPowerUp_A939E04F.wem</Path>
-				</File>
-				<File Id="440588258" Language="SFX">
-					<ShortName>Character_Hit_Hedgehog_03.wav</ShortName>
-					<Path>SFX\Character_Hit_Hedgehog_03_A939E04F.wem</Path>
-				</File>
-				<File Id="446540801" Language="SFX">
-					<ShortName>Chicken_Hit_Bush_01.wav</ShortName>
-					<Path>SFX\Chicken_Hit_Bush_01_A939E04F.wem</Path>
-				</File>
-				<File Id="461580426" Language="SFX">
-					<ShortName>Fox_Death_Hedgehog_01.wav</ShortName>
-					<Path>SFX\Fox_Death_Hedgehog_01_A939E04F.wem</Path>
 				</File>
 				<File Id="463531170" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
@@ -309,10 +274,6 @@
 					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Store_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="503244186" Language="SFX">
-					<ShortName>Fox_Death_Hedgehog_02.wav</ShortName>
-					<Path>SFX\Fox_Death_Hedgehog_02_A939E04F.wem</Path>
-				</File>
 				<File Id="507783315" Language="SFX">
 					<ShortName>GUI_Split_BuildUp.wav</ShortName>
 					<Path>SFX\GUI_Split_BuildUp_A939E04F.wem</Path>
@@ -320,10 +281,6 @@
 				<File Id="511370657" Language="SFX">
 					<ShortName>Fox_Death_Water_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_01_A939E04F.wem</Path>
-				</File>
-				<File Id="514221431" Language="SFX">
-					<ShortName>Character_Hit_Hedgehog_02.wav</ShortName>
-					<Path>SFX\Character_Hit_Hedgehog_02_A939E04F.wem</Path>
 				</File>
 				<File Id="538173892" Language="SFX">
 					<ShortName>Map_Env_Sea.wav</ShortName>
@@ -345,10 +302,6 @@
 					<ShortName>UI_WinScreen_Restart_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Restart_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="612027486" Language="SFX">
-					<ShortName>Collect_Sheep.wav</ShortName>
-					<Path>SFX\Collect_Sheep_A939E04F.wem</Path>
-				</File>
 				<File Id="616983996" Language="SFX">
 					<ShortName>Move_Wolf_Ice_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ice_02_2CC9493D.wem</Path>
@@ -368,10 +321,6 @@
 				<File Id="668879718" Language="SFX">
 					<ShortName>Move_Fox_Ice_02.wav</ShortName>
 					<Path>SFX\Move_Fox_Ice_02_2CC9493D.wem</Path>
-				</File>
-				<File Id="704131998" Language="SFX">
-					<ShortName>Wolf_Death_Hedgehog_01.wav</ShortName>
-					<Path>SFX\Wolf_Death_Hedgehog_01_A939E04F.wem</Path>
 				</File>
 				<File Id="704936838" Language="SFX">
 					<ShortName>Move_Wolf_Grass_04.wav</ShortName>
@@ -413,10 +362,6 @@
 					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
 					<Path>SFX\Map_Env_BeesOnFlowers_2CC9493D.wem</Path>
 				</File>
-				<File Id="793490377" Language="SFX">
-					<ShortName>Move_Hedgehog.wav</ShortName>
-					<Path>SFX\Move_Hedgehog_A939E04F.wem</Path>
-				</File>
 				<File Id="814823044" Language="SFX">
 					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ground_02_AB3070EB.wem</Path>
@@ -428,10 +373,6 @@
 				<File Id="891115824" Language="SFX">
 					<ShortName>Move_Wolf_Grass_03.wav</ShortName>
 					<Path>SFX\Move_Wolf_Grass_03_EB3A45A9.wem</Path>
-				</File>
-				<File Id="893164066" Language="SFX">
-					<ShortName>Collect_Chicken.wav</ShortName>
-					<Path>SFX\Collect_Chicken_A939E04F.wem</Path>
 				</File>
 				<File Id="899780812" Language="SFX">
 					<ShortName>Move_Fox_Ground_03.wav</ShortName>
@@ -480,10 +421,6 @@
 				<File Id="962930836" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuMaxPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuMaxPowerUp_A939E04F.wem</Path>
-				</File>
-				<File Id="1038935475" Language="SFX">
-					<ShortName>Character_Hit_Hedgehog_01.wav</ShortName>
-					<Path>SFX\Character_Hit_Hedgehog_01_A939E04F.wem</Path>
 				</File>
 				<File Id="1040587393" Language="SFX">
 					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>

@@ -5,34 +5,12 @@
 			<ChildrenList>
 				<Folder Name="Death" ID="{F0264B40-44AA-4AA2-8CE3-1DFEDD90CAFF}" ShortID="636951987">
 					<ChildrenList>
-						<Event Name="Death_Fox_Hedgehog" ID="{56734891-1B27-4F20-859E-92E2CDF773A5}">
-							<ChildrenList>
-								<Action Name="Play" ID="{CD237F3C-F4EF-4F5B-A6BB-86909A508BEA}" ShortID="660992762" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{F1A269A0-44E0-49E3-A852-AC69944F53A8}" Global="false">
-											<ObjectRef Name="Death_Hedgehog" ID="{C220A0EC-2C89-488E-89CC-706608A9CFA3}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Death_Fox_Water" ID="{CCBABF8F-A04D-4B03-95D0-0F2A00069AEC}">
 							<ChildrenList>
 								<Action Name="Play" ID="{2887DAF6-E2AD-4E65-BA3E-BBD6C70241FF}" ShortID="424476389" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{D4BD78B0-41F4-43C4-8F8C-838647426740}" Global="false">
 											<ObjectRef Name="Death_Water" ID="{512EF5F7-CB25-4A7E-A13F-B06A9C98EE79}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Death_Wolf_Hedgehog" ID="{6A2CE7BF-0D9B-4C62-AD96-E0B6B4132EEC}">
-							<ChildrenList>
-								<Action Name="Play" ID="{29555722-E679-4533-9ED6-DB2590880306}" ShortID="644397005" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{39404065-EDD8-46E2-9ECF-8C1583828DB0}" Global="false">
-											<ObjectRef Name="Death_Hedgehog" ID="{A05233C7-3DAA-49DF-ABD8-DDCDBE545454}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>

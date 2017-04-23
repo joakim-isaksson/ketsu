@@ -8,15 +8,12 @@
 						<ObjectRef Name="Level" ID="{4A74E382-EDFC-4024-A900-8E9D4CFAE44E}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="WinScreen" ID="{C5BD384A-2312-4195-8B60-F8089C53189D}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Chicken" ID="{09CF79F5-D978-4416-BE81-08E09FCD2CFC}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Hit" ID="{3B62C43B-0D21-4498-AFD8-A0370119CA6F}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Function" ID="{F1B1DDD5-8C6C-4862-B015-A3281FF08E27}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Split" ID="{8F8E4E4D-343A-4966-88B0-C14B62DA2EA4}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Transform" ID="{552283F4-17D6-499D-916B-0D4C116621EE}" WorkUnitID="{40962F73-D128-46AE-8BCC-672D34CD048C}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Toolbox" ID="{FA29E835-453E-49F5-A77F-75A0B1C6CC6C}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Death" ID="{F0264B40-44AA-4AA2-8CE3-1DFEDD90CAFF}" WorkUnitID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Button" ID="{4B4A0BE4-6717-4B93-82AA-118241A56DA3}" WorkUnitID="{1F0C0A82-2178-40F6-8FD4-CC969A0449B7}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Hedgehog" ID="{4FF0E65F-710D-4D1F-8EAF-1C03AC65F530}" WorkUnitID="{69F4D179-6462-4F45-A223-C9819486DF6A}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Map_Env" ID="{226E6183-C5CF-4D2F-92DB-E0823C1C53C7}" WorkUnitID="{50E26251-E0E8-434A-B457-4B2B4F7A4DAE}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Move" ID="{8FDD28FB-8EE8-4E0C-9D6B-5BCC8268392B}" WorkUnitID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

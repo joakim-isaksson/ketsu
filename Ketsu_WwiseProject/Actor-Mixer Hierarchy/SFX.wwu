@@ -12,46 +12,6 @@
 							<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="Collect_Chicken" ID="{B741E43D-576F-4EE6-8FC8-4A809E7C945D}" ShortID="837674054" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Collect_Chicken" ID="{68EB5516-ED9F-4D58-95BD-61883C957F1E}" ShortID="893164066">
-									<Language>SFX</Language>
-									<AudioFile>Collect_Chicken.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Collect_Chicken" ID="{68EB5516-ED9F-4D58-95BD-61883C957F1E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Collect_Sheep" ID="{1ABCE30F-8858-462B-98B4-3500324261C1}" ShortID="264451824" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Collect_Sheep" ID="{9B9B53D6-43FA-41DE-8C1F-B2EF84077AE2}" ShortID="612027486">
-									<Language>SFX</Language>
-									<AudioFile>Collect_Sheep.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Collect_Sheep" ID="{9B9B53D6-43FA-41DE-8C1F-B2EF84077AE2}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Transform" ID="{719B3D5C-E0C8-4BAE-933B-62F6351EB385}" ShortID="21037224">
 					<ReferenceList>

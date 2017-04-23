@@ -13,14 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID CHARACTER_HIT_HEDGEHOG = 4257406112U;
         static const AkUniqueID CHARACTER_HIT_WATER = 287526684U;
-        static const AkUniqueID CHICKEN_HIT_BUSH = 1746299433U;
-        static const AkUniqueID COLLECT_CHICKEN = 1004812793U;
-        static const AkUniqueID COLLECT_SHEEP = 30088657U;
-        static const AkUniqueID DEATH_FOX_HEDGEHOG = 4193159569U;
         static const AkUniqueID DEATH_FOX_WATER = 269859599U;
-        static const AkUniqueID DEATH_WOLF_HEDGEHOG = 3738416424U;
         static const AkUniqueID DEATH_WOLF_WATER = 1446448900U;
         static const AkUniqueID GUI_CHICKEN_BUTTON = 1203244949U;
         static const AkUniqueID GUI_KETSUPOWER_INCREASE = 4100043833U;
@@ -43,7 +37,6 @@ namespace AK
         static const AkUniqueID MAP_ENV_STRONGWIND = 1833815307U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
         static const AkUniqueID MOVE_FOX_ICE = 4045630760U;
-        static const AkUniqueID MOVE_HEDGEHOG = 941274754U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
         static const AkUniqueID MOVE_WOLF_ICE = 1426970985U;
