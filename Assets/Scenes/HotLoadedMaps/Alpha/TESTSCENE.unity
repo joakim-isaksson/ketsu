@@ -465,7 +465,7 @@ Prefab:
         type: 2}
       propertyPath: MapFile
       value: 
-      objectReference: {fileID: 4900000, guid: b23bc4035c043424e9cb09380e7dffc9, type: 3}
+      objectReference: {fileID: 4900000, guid: 551b09e033206634c80a2fc0dab70204, type: 3}
     - target: {fileID: 114616133248631428, guid: 85506279ba21d4e0590fe217859e3642,
         type: 2}
       propertyPath: initialized
@@ -595,6 +595,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4163703725206078, guid: 654182cfed8b9264f91972043a847244, type: 2}
       propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931653363788014, guid: 654182cfed8b9264f91972043a847244,
+        type: 2}
+      propertyPath: KetsuPower
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
