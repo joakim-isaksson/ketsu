@@ -12,34 +12,6 @@ using System;
 using System.Runtime.InteropServices;
 
 public class AkSoundEngine {
-  public static uint AK_INVALID_AUX_ID {
-    get {
-      uint ret = AkSoundEnginePINVOKE.CSharp_AK_INVALID_AUX_ID_get();
-      return ret;
-    } 
-  }
-
-  public static uint AK_INVALID_CHANNELMASK {
-    get {
-      uint ret = AkSoundEnginePINVOKE.CSharp_AK_INVALID_CHANNELMASK_get();
-      return ret;
-    } 
-  }
-
-  public static uint AK_INVALID_OUTPUT_DEVICE_ID {
-    get {
-      uint ret = AkSoundEnginePINVOKE.CSharp_AK_INVALID_OUTPUT_DEVICE_ID_get();
-      return ret;
-    } 
-  }
-
-  public static uint AK_MIXER_FX_SLOT {
-    get {
-      uint ret = AkSoundEnginePINVOKE.CSharp_AK_MIXER_FX_SLOT_get();
-      return ret;
-    } 
-  }
-
   public static uint AK_SOUNDBANK_VERSION {
     get {
       uint ret = AkSoundEnginePINVOKE.CSharp_AK_SOUNDBANK_VERSION_get();
@@ -2648,6 +2620,10 @@ public class AkSoundEngine {
   public const uint AK_INVALID_FILE_ID = 0xFFFFFFFF;
   public const uint AK_INVALID_DEVICE_ID = 0xFFFFFFFF;
   public const uint AK_INVALID_BANK_ID = AK_INVALID_UNIQUE_ID;
+  public const uint AK_INVALID_AUX_ID = AK_INVALID_UNIQUE_ID;
+  public const uint AK_INVALID_CHANNELMASK = 0;
+  public const uint AK_INVALID_OUTPUT_DEVICE_ID = AK_INVALID_UNIQUE_ID;
+  public const uint AK_MIXER_FX_SLOT = 0xFFFFFFFF;
   public const uint AK_FALLBACK_ARGUMENTVALUE_ID = 0;
   public const uint AK_DEFAULT_PRIORITY = 50;
   public const uint AK_MIN_PRIORITY = 0;
@@ -2697,10 +2673,12 @@ public class AkSoundEngine {
   public const int AKCODECID_PROFILERCAPTURE = (14);
   public const int AKCODECID_ANALYSISFILE = (15);
   public const int AKCODECID_MIDI = (16);
+  public const int AKCODECID_OPUS = (17);
   public const int AK_WAVE_FORMAT_VAG = 0xFFFB;
   public const int AK_WAVE_FORMAT_AT9 = 0xFFFC;
   public const int AK_WAVE_FORMAT_VORBIS = 0xFFFF;
   public const int AK_WAVE_FORMAT_AAC = 0xAAC0;
+  public const int AK_WAVE_FORMAT_OPUS = 0x3039;
   public const int WAVE_FORMAT_XMA2 = 0x166;
   public const int PANNER_NUM_STORAGE_BITS = 2;
   public const int POSSOURCE_NUM_STORAGE_BITS = 2;

@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Text.RegularExpressions;
 
 [InitializeOnLoad]
 public class WwiseSetupWizard
@@ -419,8 +420,9 @@ public class WwiseSetupWizard
             return true;
         }
 
+        Regex r = new Regex("_WwiseIntegrationTemp.*?([/\\\\])");
+        string SoundbankPath = AkUtilities.GetFullPath(r.Replace(Application.streamingAssetsPath, "$1"), Settings.SoundbankPath);
         string WprojPath = AkUtilities.GetFullPath(Application.dataPath, Settings.WwiseProjectPath);
-        string SoundbankPath = AkUtilities.GetFullPath(Application.streamingAssetsPath, Settings.SoundbankPath);
 #if UNITY_EDITOR_OSX
 		SoundbankPath = "Z:" + SoundbankPath;
 #endif

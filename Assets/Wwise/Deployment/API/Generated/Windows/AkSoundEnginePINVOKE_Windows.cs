@@ -21,14 +21,6 @@ class AkSoundEnginePINVOKE {
   public static extern IntPtr CSharp_VirtualAllocHook(IntPtr jarg1, uint jarg2, uint jarg3, uint jarg4);
   [DllImport("AkSoundEngine", EntryPoint="CSharp_VirtualFreeHook")]
   public static extern void CSharp_VirtualFreeHook(IntPtr jarg1, uint jarg2, uint jarg3);
-  [DllImport("AkSoundEngine", EntryPoint="CSharp_AK_INVALID_AUX_ID_get")]
-  public static extern uint CSharp_AK_INVALID_AUX_ID_get();
-  [DllImport("AkSoundEngine", EntryPoint="CSharp_AK_INVALID_CHANNELMASK_get")]
-  public static extern uint CSharp_AK_INVALID_CHANNELMASK_get();
-  [DllImport("AkSoundEngine", EntryPoint="CSharp_AK_INVALID_OUTPUT_DEVICE_ID_get")]
-  public static extern uint CSharp_AK_INVALID_OUTPUT_DEVICE_ID_get();
-  [DllImport("AkSoundEngine", EntryPoint="CSharp_AK_MIXER_FX_SLOT_get")]
-  public static extern uint CSharp_AK_MIXER_FX_SLOT_get();
   [DllImport("AkSoundEngine", EntryPoint="CSharp_AK_SOUNDBANK_VERSION_get")]
   public static extern uint CSharp_AK_SOUNDBANK_VERSION_get();
   [DllImport("AkSoundEngine", EntryPoint="CSharp_AkExternalSourceInfo_iExternalSrcCookie_set")]
