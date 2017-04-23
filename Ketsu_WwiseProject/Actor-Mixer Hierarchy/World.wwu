@@ -41,13 +41,6 @@
 											<AudioFile>Map_Env_BigWaterStream.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_BigWaterStream" ID="{2A4BABF2-EF40-486D-9892-D2FE3E7BDB0D}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -75,13 +68,6 @@
 											<AudioFile>Map_Env_SmallWaterStream.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_SmallWaterStream" ID="{96FC5EE2-1781-47B0-A7E7-A1AE64664006}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -109,13 +95,6 @@
 											<AudioFile>Map_Env_Sea.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_Sea" ID="{657AB122-A879-4CC6-90C0-91BE4FB32567}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -155,13 +134,6 @@
 											<AudioFile>Map_Env_MediumWind.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_MediumWind" ID="{4044DD8C-83BF-43DE-B45A-73264C6A1C86}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -189,13 +161,6 @@
 											<AudioFile>Map_Env_StrongWind.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_StrongWind" ID="{E9B95009-F328-4FFF-9A92-2C1F5184DD1B}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -235,13 +200,6 @@
 											<AudioFile>Map_Env_Birds.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_Birds" ID="{2602C7B9-E209-455D-A3AE-0533D524D609}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -269,13 +227,6 @@
 											<AudioFile>Map_Env_BeesOnFlowers.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Map_Env_BeesOnFlowers" ID="{CBBD35A0-2950-41EF-9C6C-68FE60EA584B}" Platform="Linked"/>
 									</ActiveSourceList>

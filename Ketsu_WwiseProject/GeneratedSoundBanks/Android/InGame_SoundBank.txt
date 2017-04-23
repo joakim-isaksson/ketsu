@@ -47,27 +47,16 @@ Switch	ID	Name	Switch Group			Notes
 	2528658256	Ground	Tile_Material			
 	4248645337	Grass	Tile_Material			
 
-State Group	ID	Name			Wwise Object Path	Notes
-	2782712965	Level			\Default Work Unit\Level	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Level			
-	2678230376	Level7	Level			
-	2678230377	Level6	Level			
-	2678230378	Level5	Level			
-	2678230379	Level4	Level			
-	2678230380	Level3	Level			
-	2678230381	Level2	Level			
-	2678230382	Level1	Level			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20985966	Transform_ToKetsu-001	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_ToKetsu-001_5093850B.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu-001		305400
 	40123842	Move_Fox_Grass_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Grass_04_14807B61.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_04		61640
+	45816554	Move_Mud_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_04		68496
 	54523543	GUI_Settings_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_Settings_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Settings_Button		65352
 	71427473	Move_OnBridge_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_OnBridge_05_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_05		76912
 	99673032	Move_Wolf_Grass_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Grass_05_869E72F2.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_05		72268
 	100508892	Move_Fox_Grass_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Grass_05_715830F5.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_05		51144
 	117800326	GUI_PowerUp_Crystal_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_PowerUp_Crystal_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_PowerUp_Crystal_Button		340456
+	123291723	Move_Mud_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_01		68496
 	139884733	Fox_Death_Water_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Fox_Death_Water_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Death_Water\Fox_Death_Water_02		624160
 	143512029	GUI_Chicken_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_Chicken_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Chicken_Button		41000
 	211612609	Map_Env_StrongWind	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Map_Env_StrongWind_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Map_Env_StrongWind		14015276
@@ -90,12 +79,16 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	538173892	Map_Env_Sea	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Map_Env_Sea_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_Sea		8833760
 	544687860	Toolbox_Collect_Coins	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Toolbox_Collect_Coins_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_Coins		548672
 	555482349	Move_Fox_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Grass_03_A772CB07.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_03		56544
+	563726059	Move_Mud_06	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_06_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_06		68496
 	603409939	UI_WinScreen_Restart_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_WinScreen_Restart_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Restart_Button		44700
 	616983996	Move_Wolf_Ice_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ice_02_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_02		159972
+	622933340	Move_Mud_07	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_07_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_07		68496
 	633911034	Move_Fox_Ground_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Ground_04_BA9DC8BC.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_04		53416
 	635168810	GUI_Sheep_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_Sheep_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Sheep_Button		41000
+	652405995	Move_Mud_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_05_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_05		68496
 	668879718	Move_Fox_Ice_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Ice_02_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ice\Move_Fox_Ice_02		156676
 	690310313	Move_OnBridge_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_OnBridge_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_01		76912
+	702592865	Move_Mud_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_03_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_03		68496
 	704936838	Move_Wolf_Grass_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Grass_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_04		76216
 	717253633	Move_Wolf_Grass_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Grass_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_02		74152
 	737519746	Map_Env_BigWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Map_Env_BigWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_BigWaterStream		10021744
@@ -120,8 +113,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	945667667	Character_Hit_Water_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Character_Hit_Water_03_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Level\Character_Hit_Water\Character_Hit_Water_03		353428
 	946403468	Move_Fox_Ice_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Ice_01_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ice\Move_Fox_Ice_01		161556
 	947826981	Map_Env_SmallWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Map_Env_SmallWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_SmallWaterStream		9974708
+	953015262	Move_Mud_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_02_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_02		68496
 	962930836	Toolbox_Collect_KetsuMaxPowerUp	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Toolbox_Collect_KetsuMaxPowerUp_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Toolbox\Toolbox_Collect_KetsuMaxPowerUp		753476
 	1040587393	UI_WinScreen_Next_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_WinScreen_Next_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Next_Button		118244
 	1048122472	Move_Wolf_Ice_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ice_03_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_03		163392
+	1065497231	Move_Mud_08	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_08_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_08		68496
 	1069057915	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Wolf_Death_Water_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		624160
 

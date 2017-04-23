@@ -72,26 +72,6 @@ namespace AK
         static const AkUniqueID WORLDMENU_UNLOCKEDWORLD_BUTTON = 574974477U;
     } // namespace EVENTS
 
-    namespace STATES
-    {
-        namespace LEVEL
-        {
-            static const AkUniqueID GROUP = 2782712965U;
-
-            namespace STATE
-            {
-                static const AkUniqueID LEVEL1 = 2678230382U;
-                static const AkUniqueID LEVEL2 = 2678230381U;
-                static const AkUniqueID LEVEL3 = 2678230380U;
-                static const AkUniqueID LEVEL4 = 2678230379U;
-                static const AkUniqueID LEVEL5 = 2678230378U;
-                static const AkUniqueID LEVEL6 = 2678230377U;
-                static const AkUniqueID LEVEL7 = 2678230376U;
-            } // namespace STATE
-        } // namespace LEVEL
-
-    } // namespace STATES
-
     namespace SWITCHES
     {
         namespace TILE_MATERIAL

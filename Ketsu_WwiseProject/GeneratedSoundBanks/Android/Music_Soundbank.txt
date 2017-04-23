@@ -4,28 +4,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2570041344	Play_MenuMusic			\Music\MenuMusic\Play_MenuMusic	
 	2908556826	Level_Win			\Music\Stingers\Level_Win	
 
-State Group	ID	Name			Wwise Object Path	Notes
-	2782712965	Level			\Default Work Unit\Level	
-
-State	ID	Name	State Group			Notes
-	748895195	None	Level			
-	2678230376	Level7	Level			
-	2678230377	Level6	Level			
-	2678230378	Level5	Level			
-	2678230379	Level4	Level			
-	2678230380	Level3	Level			
-	2678230381	Level2	Level			
-	2678230382	Level1	Level			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	194524331	Level1	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
-	242825647	Level5	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
-	289193870	Level3	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
-	440603749	Level7	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		
-	739429733	Level2	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
-	747884265	Level4	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Level_Hedgy\LevelMusic_Hedgy_Short		
-	917079621	Level6	Level	\Actor-Mixer Hierarchy\Music\InGameMusic\Tutorial\LevelMusic_Peaceful_Short		
-
 Effect plug-ins	ID	Name	Type				Notes
 	3546444380	Big_Garage1	Wwise Matrix Reverb			
 

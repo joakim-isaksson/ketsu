@@ -45,13 +45,6 @@
 									<AudioFile>Ketsu_MenuMusic_Ambient.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Ketsu_MenuMusic_Ambient" ID="{81B56405-E017-41F1-9192-87AE112471C5}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -92,55 +85,6 @@
 											<AudioFile>LevelMusic_Hedgy_Short.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Level4" ID="{8BE6162B-B7E7-4316-8008-7CFD25C150A0}"/>
-												<State Name="Custom State" ID="{D78CEF5D-3C7C-4004-B3B4-65BDACCC8CB9}" ShortID="747884265">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level5" ID="{1A2A31B1-B6F8-44B5-AF41-92435152E96B}"/>
-												<State Name="Custom State" ID="{2DCFDF25-7571-47A3-861A-6BD65345FE46}" ShortID="242825647">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level2" ID="{97E13E7B-F915-46CD-A930-E16B3953B600}"/>
-												<State Name="Custom State" ID="{6B76C7AF-AC12-4935-87AD-09D19EDF90AD}" ShortID="739429733">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level3" ID="{9752A3B0-FDF0-4B1B-AB33-672CBE3BB14C}"/>
-												<State Name="Custom State" ID="{A2A4DB4E-DDF9-462F-876D-8372A19BC766}" ShortID="289193870">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level1" ID="{5F2E494B-CAE5-4B95-9216-F8D69CA2867E}"/>
-												<State Name="Custom State" ID="{1015A347-E924-48ED-803F-2DCFF7D8D0E7}" ShortID="194524331">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="LevelMusic_Hedgy_Short" ID="{D8A00433-9652-42A0-9853-96C2B4B2CDD6}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -168,31 +112,6 @@
 											<AudioFile>LevelMusic_Peaceful_Short.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Level" ID="{BA703E75-8A67-4B7D-9FCF-0ED73DF67C2C}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="Level6" ID="{93016D19-3B96-4109-A8C2-26B165EEA7D3}"/>
-												<State Name="Custom State" ID="{22CC020B-A3D4-489F-AA87-3BAAAEEBACE9}" ShortID="917079621">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Level7" ID="{20D40BFC-CBF4-4D44-B0A8-7DC83340FE6F}"/>
-												<State Name="Custom State" ID="{9872BD19-4DDE-4DF6-A729-D04775391762}" ShortID="440603749">
-													<PropertyList>
-														<Property Name="Volume" Type="Real64" Value="-96"/>
-													</PropertyList>
-												</State>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="LevelMusic_Peaceful_Short" ID="{BE4A9980-968C-4E1C-86A4-A017F14E26A5}" Platform="Linked"/>
 									</ActiveSourceList>

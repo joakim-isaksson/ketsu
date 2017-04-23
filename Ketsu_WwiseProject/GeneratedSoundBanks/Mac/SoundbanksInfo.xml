@@ -190,6 +190,10 @@
 					<ShortName>Move_Fox_Grass_04.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_04_14807B61.wem</Path>
 				</File>
+				<File Id="45816554" Language="SFX">
+					<ShortName>Move_Mud_04.wav</ShortName>
+					<Path>SFX\Move_Mud_04_A939E04F.wem</Path>
+				</File>
 				<File Id="54523543" Language="SFX">
 					<ShortName>GUI_Settings_Button.wav</ShortName>
 					<Path>SFX\GUI_Settings_Button_A939E04F.wem</Path>
@@ -205,6 +209,10 @@
 				<File Id="117800326" Language="SFX">
 					<ShortName>GUI_PowerUp_Crystal_Button.wav</ShortName>
 					<Path>SFX\GUI_PowerUp_Crystal_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="123291723" Language="SFX">
+					<ShortName>Move_Mud_01.wav</ShortName>
+					<Path>SFX\Move_Mud_01_A939E04F.wem</Path>
 				</File>
 				<File Id="139884733" Language="SFX">
 					<ShortName>Fox_Death_Water_02.wav</ShortName>
@@ -298,6 +306,10 @@
 					<ShortName>Move_Fox_Grass_03.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_03_A772CB07.wem</Path>
 				</File>
+				<File Id="563726059" Language="SFX">
+					<ShortName>Move_Mud_06.wav</ShortName>
+					<Path>SFX\Move_Mud_06_A939E04F.wem</Path>
+				</File>
 				<File Id="603409939" Language="SFX">
 					<ShortName>UI_WinScreen_Restart_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Restart_Button_A939E04F.wem</Path>
@@ -305,6 +317,10 @@
 				<File Id="616983996" Language="SFX">
 					<ShortName>Move_Wolf_Ice_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ice_02_2CC9493D.wem</Path>
+				</File>
+				<File Id="622933340" Language="SFX">
+					<ShortName>Move_Mud_07.wav</ShortName>
+					<Path>SFX\Move_Mud_07_A939E04F.wem</Path>
 				</File>
 				<File Id="633911034" Language="SFX">
 					<ShortName>Move_Fox_Ground_04.wav</ShortName>
@@ -318,9 +334,17 @@
 					<ShortName>Move_OnBridge_03.wav</ShortName>
 					<Path>SFX\Move_OnBridge_03_A939E04F.wem</Path>
 				</File>
+				<File Id="652405995" Language="SFX">
+					<ShortName>Move_Mud_05.wav</ShortName>
+					<Path>SFX\Move_Mud_05_A939E04F.wem</Path>
+				</File>
 				<File Id="668879718" Language="SFX">
 					<ShortName>Move_Fox_Ice_02.wav</ShortName>
 					<Path>SFX\Move_Fox_Ice_02_2CC9493D.wem</Path>
+				</File>
+				<File Id="702592865" Language="SFX">
+					<ShortName>Move_Mud_03.wav</ShortName>
+					<Path>SFX\Move_Mud_03_A939E04F.wem</Path>
 				</File>
 				<File Id="704936838" Language="SFX">
 					<ShortName>Move_Wolf_Grass_04.wav</ShortName>
@@ -418,6 +442,10 @@
 					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
 					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
 				</File>
+				<File Id="953015262" Language="SFX">
+					<ShortName>Move_Mud_02.wav</ShortName>
+					<Path>SFX\Move_Mud_02_A939E04F.wem</Path>
+				</File>
 				<File Id="962930836" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuMaxPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuMaxPowerUp_A939E04F.wem</Path>
@@ -429,6 +457,10 @@
 				<File Id="1048122472" Language="SFX">
 					<ShortName>Move_Wolf_Ice_03.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ice_03_2CC9493D.wem</Path>
+				</File>
+				<File Id="1065497231" Language="SFX">
+					<ShortName>Move_Mud_08.wav</ShortName>
+					<Path>SFX\Move_Mud_08_A939E04F.wem</Path>
 				</File>
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>
