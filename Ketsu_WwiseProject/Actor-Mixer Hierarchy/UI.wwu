@@ -743,12 +743,182 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" ShortID="151277946" Type="SoundFX">
+						<RandomSequenceContainer Name="UI_Spacehip_Move" ID="{8199617E-A49C-4E2B-9B5B-8151BAF3B85F}" ShortID="913569262">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{D431433C-9558-4FA8-8BAE-9CB52CB98842}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="126"/>
+													<Property Name="Min" Type="Real64" Value="-51"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UI_Spaceship_Move_01" ID="{CC5FA5DA-3CB0-409A-9C4B-73FCE91CFD3D}" ShortID="909511608" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Move_01" ID="{C0DD1639-B16C-4F03-A678-8917689B20FB}" ShortID="945388165">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Move_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Move_01" ID="{C0DD1639-B16C-4F03-A678-8917689B20FB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Spaceship_Move_02" ID="{70FB3A52-DCE4-4534-8783-9EC9AD70A932}" ShortID="377418314" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Move_02" ID="{2BF75E6A-4772-4530-8FF1-506CDF5CF79E}" ShortID="888758915">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Move_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Move_02" ID="{2BF75E6A-4772-4530-8FF1-506CDF5CF79E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Spaceship_Move_03" ID="{919E067B-F113-49B8-AA8C-961924FC96A1}" ShortID="434417732" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Move_03" ID="{A17D9DC6-0ED7-4812-9A86-9C418C995DBE}" ShortID="1012625141">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Move_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Move_03" ID="{A17D9DC6-0ED7-4812-9A86-9C418C995DBE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="UI_Spaceship_Landing" ID="{CA1F26E7-929B-4354-B7D7-B03C56CACE74}" ShortID="927586608">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B9BDBE3A-8813-4863-81B1-8F002503DE64}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+													<Property Name="Min" Type="Real64" Value="-25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="UI_Spaceship_Landing_01" ID="{6D07E7C7-1331-4F63-9A7F-054747D7C381}" ShortID="905671505" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Landing_01" ID="{DBB52284-2A83-46ED-81CF-3063A10CF430}" ShortID="678610783">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Landing_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Landing_01" ID="{DBB52284-2A83-46ED-81CF-3063A10CF430}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Spaceship_Landing_02" ID="{F7D49B39-653D-43EC-84D4-A125A5A40DED}" ShortID="817827573" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Landing_02" ID="{9EB59148-D7AA-4D85-A76F-005324A0F723}" ShortID="55153259">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Landing_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Landing_02" ID="{9EB59148-D7AA-4D85-A76F-005324A0F723}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="UI_Spaceship_Landing_03" ID="{B1A2D895-1BDE-4955-95C1-4A8334EBBE72}" ShortID="625241931" Type="SoundFX">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="UI_Spaceship_Landing_03" ID="{57379042-6665-4B1A-BC16-94DE2C8F4AF8}" ShortID="241914965">
+											<Language>SFX</Language>
+											<AudioFile>UI_Spaceship_Landing_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="UI_Spaceship_Landing_03" ID="{57379042-6665-4B1A-BC16-94DE2C8F4AF8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" ShortID="407550426" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-26</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -761,67 +931,13 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="UI_Spacehip_Idle" ID="{6A945C3F-C937-48D0-804B-FA940730F703}" ShortID="937325238">
+								<AudioFileSource Name="UI_Spacehip_Idle_01" ID="{EFD059AF-02E2-469D-82C2-79DF466BF2D7}" ShortID="277190118">
 									<Language>SFX</Language>
-									<AudioFile>UI_Spacehip_Idle.wav</AudioFile>
+									<AudioFile>UI_Spacehip_Idle_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="UI_Spacehip_Idle" ID="{6A945C3F-C937-48D0-804B-FA940730F703}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Spaceship_Landing" ID="{725B4978-FF94-4916-9BBD-3D84E8DAD580}" ShortID="415520733" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="UI_Spaceship_Landing" ID="{8DB5DB34-7323-4A52-A13E-CE9401AC5354}" ShortID="1001168866">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.386798612873213"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.65731902707797"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>UI_Spaceship_Landing.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="UI_Spaceship_Landing" ID="{8DB5DB34-7323-4A52-A13E-CE9401AC5354}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="UI_Spaceship_Move" ID="{DD9C4297-E8A8-446D-BADB-27771CE87E35}" ShortID="708323794" Type="SoundFX">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-2</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="UI_Spaceship_Move" ID="{BCF69D8A-C754-4969-89ED-30C5F0ED7F78}" ShortID="602051237">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.317773387626217"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.86839695025435"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>UI_Spaceship_Move.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="UI_Spaceship_Move" ID="{BCF69D8A-C754-4969-89ED-30C5F0ED7F78}" Platform="Linked"/>
+								<ActiveSource Name="UI_Spacehip_Idle_01" ID="{EFD059AF-02E2-469D-82C2-79DF466BF2D7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

@@ -50,7 +50,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{478668ED-01FD-49FD-A250-9D410CE60816}" Global="true">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -98,7 +98,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{3D010D8D-C4BF-46A0-8026-823C0DC02509}" Global="true">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>

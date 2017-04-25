@@ -34,6 +34,10 @@
 				<Event Id="574974477" Name="WorldMenu_UnlockedWorld_Button" ObjectPath="\Events\UI\Menu\WorldMenu\WorldMenu_UnlockedWorld_Button"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="55153259" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_02.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_02_A939E04F.wem</Path>
+				</File>
 				<File Id="140128883" Language="SFX">
 					<ShortName>UI_StartMenu_Settings_Button.wav</ShortName>
 					<Path>SFX\UI_StartMenu_Settings_Button_A939E04F.wem</Path>
@@ -41,6 +45,14 @@
 				<File Id="192007627" Language="SFX">
 					<ShortName>UI_PopupMenu_Store_Button.wav</ShortName>
 					<Path>SFX\UI_PopupMenu_Store_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="241914965" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_03.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_03_A939E04F.wem</Path>
+				</File>
+				<File Id="277190118" Language="SFX">
+					<ShortName>UI_Spacehip_Idle_01.wav</ShortName>
+					<Path>SFX\UI_Spacehip_Idle_01_2CC9493D.wem</Path>
 				</File>
 				<File Id="327717301" Language="SFX">
 					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
@@ -70,9 +82,9 @@
 					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
 					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="602051237" Language="SFX">
-					<ShortName>UI_Spaceship_Move.wav</ShortName>
-					<Path>SFX\UI_Spaceship_Move_D5241674.wem</Path>
+				<File Id="678610783" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_01.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_01_A939E04F.wem</Path>
 				</File>
 				<File Id="762418288" Language="SFX">
 					<ShortName>UI_StartMenu_Start_Button.wav</ShortName>
@@ -90,13 +102,17 @@
 					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
 					<Path>SFX\UI_PopupMenu_Restart_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="937325238" Language="SFX">
-					<ShortName>UI_Spacehip_Idle.wav</ShortName>
-					<Path>SFX\UI_Spacehip_Idle_2CC9493D.wem</Path>
+				<File Id="888758915" Language="SFX">
+					<ShortName>UI_Spaceship_Move_02.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_02_A939E04F.wem</Path>
 				</File>
-				<File Id="1001168866" Language="SFX">
-					<ShortName>UI_Spaceship_Landing.wav</ShortName>
-					<Path>SFX\UI_Spaceship_Landing_150EC3F1.wem</Path>
+				<File Id="945388165" Language="SFX">
+					<ShortName>UI_Spaceship_Move_01.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_01_A939E04F.wem</Path>
+				</File>
+				<File Id="1012625141" Language="SFX">
+					<ShortName>UI_Spaceship_Move_03.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_03_A939E04F.wem</Path>
 				</File>
 				<File Id="1018322493" Language="SFX">
 					<ShortName>UI_StartMenu_Logo_Button.wav</ShortName>

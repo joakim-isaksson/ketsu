@@ -14,7 +14,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{5CEB3201-A40A-4164-952B-7E9BCA8CF6D4}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -32,7 +32,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{5850379D-C44C-4E6E-877E-D3BFEC17916D}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -54,14 +54,14 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{7FB0D177-9C6C-4C71-8164-43EBCF379A14}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{2A151782-315E-479D-AB7B-E0F56F1B4DC4}" ShortID="878880787" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{09C48F5C-C0F5-409F-964B-9BB9CAB6989F}" Global="false">
-											<ObjectRef Name="UI_Spaceship_Move" ID="{DD9C4297-E8A8-446D-BADB-27771CE87E35}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Move" ID="{8199617E-A49C-4E2B-9B5B-8151BAF3B85F}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -72,7 +72,7 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{8AC04E76-3315-4B36-89BB-76C5E2894DF1}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -94,21 +94,21 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{246A5DD9-6FDE-4607-A4D9-4D8F719AC9E8}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{F73F04D2-113E-44BB-984F-00644AA8B1E0}" ShortID="1044719538" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{A234699D-83ED-4CB6-B933-0B2D43F1F383}" Global="false">
-											<ObjectRef Name="UI_Spaceship_Landing" ID="{725B4978-FF94-4916-9BBD-3D84E8DAD580}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spaceship_Landing" ID="{CA1F26E7-929B-4354-B7D7-B03C56CACE74}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 								<Action Name="Stop" ID="{9DA0AB66-359B-45A7-920B-48EEFE838ED3}" ShortID="3912033" Type="Stop" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{60903511-8701-4E96-B4BB-86CCF06254B8}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>

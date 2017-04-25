@@ -15,14 +15,14 @@
 									</PropertyList>
 									<ElementList>
 										<Element ID="{991CEEC7-6F75-475C-B85F-E3EE8EAB6F2B}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{E2A16FE8-CA18-4280-9F15-6C671CA7C5CA}" ShortID="327272580" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{4602345D-00C3-4671-9603-B5DE6EB67F05}" Global="false">
-											<ObjectRef Name="UI_Spacehip_Idle" ID="{FA95E3B0-E07C-4F17-8422-FBBA1AC370A2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
