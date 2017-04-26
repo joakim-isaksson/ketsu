@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4805337122578582}
   - component: {fileID: 137377165027953562}
   - component: {fileID: 95672128966876658}
-  m_Layer: 0
+  - component: {fileID: 65887188999244590}
+  m_Layer: 4
   m_Name: SeaAnimated
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65887188999244590
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1604616882232452}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 60.189507, y: 3.4669552, z: 60.108425}
+  m_Center: {x: 0.094753265, y: -2.7665224, z: -0.05421257}
 --- !u!95 &95672128966876658
 Animator:
   serializedVersion: 3

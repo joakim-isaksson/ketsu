@@ -31,6 +31,8 @@ namespace Game
 
         int waitingForMoveActions;
 
+	    Stack<List<Action>> undoActions;
+
         MapManager mapManager;
 
         Character fox;
@@ -41,6 +43,7 @@ namespace Game
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
+		    undoActions = new Stack<List<Action>>();
         }
 
 		void Start()
@@ -165,6 +168,33 @@ namespace Game
 		}
 
         /// <summary>
+        ///  Undo previous move action
+        /// </summary>
+	    public void UndoAction()
+	    {
+	        // Check if waiting for other actions to complete
+	        if (waitingForMoveActions > 0) return;
+
+            // Move queue must be empty
+            if (moveQueue.Count != 0) return;
+
+            // Execute the undo action
+	        if (undoActions.Count > 0)
+	        {
+	            foreach (Action action in undoActions.Pop())
+	            {
+	                action.Invoke();
+
+                }
+	        }
+        }
+
+        void OnUndoActionCompleted()
+	    {
+	        waitingForMoveActions--;
+	    }
+
+        /// <summary>
         /// Try to move active character to given direction
         /// </summary>
         /// <param name="direction">Direction to move</param>
@@ -216,8 +246,10 @@ namespace Game
 
         void HandleMoveAction(Vector3 direction, Character active, Character other)
         {
-            TargetInfo activeTarget = new TargetInfo(active, active.transform.position);
-            TargetInfo otherTarget = other == null ? null : new TargetInfo(active, other.transform.position);
+            TargetInfo activePos = new TargetInfo(active, active.transform.position);
+            TargetInfo otherPos = other == null ? null : new TargetInfo(active, other.transform.position);
+            TargetInfo activeTarget = activePos;
+            TargetInfo otherTarget = otherPos;
             TargetInfo activePointer = activeTarget;
             TargetInfo otherPointer = otherTarget;
 
@@ -291,13 +323,54 @@ namespace Game
             }
 
             // Move characters to new positions
-            waitingForMoveActions++;
-            active.MoveTo(activePointer.Position, activePointer.Ground.Type, OnMoveActionCompleted);
-            if (other != null)
+            List<Action> undos = new List<Action>();
+            if (!active.StuckInMud && activePos.Position != activePointer.Position)
             {
                 waitingForMoveActions++;
-                other.MoveTo(otherPointer.Position, otherPointer.Ground.Type, OnMoveActionCompleted);
+                active.MoveTo(activePointer.Position, false, delegate
+                {
+                    active.StuckInMud = activePointer.Ground.Type == MapObjectType.Mud;
+                    OnMoveActionCompleted();
+                });
+                undos.Add(delegate
+                {
+                    waitingForMoveActions++;
+                    active.MoveTo(activePos.Position, true, delegate
+                    {
+                        active.StuckInMud = activePos.Ground.Type == MapObjectType.Mud;
+                        OnUndoActionCompleted();
+                    });
+                });
             }
+            else if (active.StuckInMud)
+            {
+                active.StuckInMud = false;
+            }
+            
+            if (other != null)
+            {
+                if (!other.StuckInMud)
+                {
+                    waitingForMoveActions++;
+                    other.MoveTo(otherPointer.Position, false, delegate
+                    {
+                        other.StuckInMud = otherPointer.Ground.Type == MapObjectType.Mud;
+                        OnMoveActionCompleted();
+                    });
+                }
+                else
+                {
+                    active.StuckInMud = false;
+                }
+            }
+
+            // Add undo actions
+            if (undos.Count > 0)
+            {
+                undoActions.Push(undos);
+            }
+            else NextMoveAction();
+            
         }
 
         void TransformToKetsu(Vector3 mergePos, MapObjectType groundType, Character active, Character other)

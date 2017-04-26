@@ -51,7 +51,8 @@ namespace Game
 			else if (Input.GetButtonDown("Forward")) charHandler.MoveAction(Vector3.forward);
 			else if (Input.GetButtonDown("Back")) charHandler.MoveAction(Vector3.back);
 			else if (Input.GetMouseButtonDown(0)) ClickOrTap(Input.mousePosition);
-		}
+			else if (Input.GetMouseButtonDown(1)) charHandler.UndoAction();
+        }
 
 		void HandleTouchInputs()
 		{
