@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 757878530}
-  m_IndirectSpecularColor: {r: 0.1650283, g: 0.20688847, b: 0.2867543, a: 1}
+  m_IndirectSpecularColor: {r: 0.4430066, g: 0.49219555, b: 0.571924, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ Prefab:
     - target: {fileID: 114931653363788014, guid: 654182cfed8b9264f91972043a847244,
         type: 2}
       propertyPath: MaxKetsuPower
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114931653363788014, guid: 654182cfed8b9264f91972043a847244,
         type: 2}
