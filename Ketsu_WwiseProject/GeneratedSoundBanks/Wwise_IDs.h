@@ -28,13 +28,6 @@ namespace AK
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_SELECT = 2297784124U;
         static const AkUniqueID LEVELMENU_STARTLEVEL_SELECT = 2355422256U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_SELECT = 2207195397U;
-        static const AkUniqueID MAP_ENV_BEES = 240649815U;
-        static const AkUniqueID MAP_ENV_BIGWATER = 611079635U;
-        static const AkUniqueID MAP_ENV_BIRDS = 35994456U;
-        static const AkUniqueID MAP_ENV_MEDIUMWIND = 4112863043U;
-        static const AkUniqueID MAP_ENV_SEA = 1320716757U;
-        static const AkUniqueID MAP_ENV_SMALLWATER = 782833506U;
-        static const AkUniqueID MAP_ENV_STRONGWIND = 1833815307U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
         static const AkUniqueID MOVE_FOX_ICE = 4045630760U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
