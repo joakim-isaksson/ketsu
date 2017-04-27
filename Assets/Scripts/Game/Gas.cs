@@ -7,6 +7,8 @@ namespace Game
         public static int GasToCollect;
         public static int GasCollected;
 
+        public GameObject ExplosionPrefab;
+
         void Awake()
         {
             GasToCollect++;
@@ -20,6 +22,8 @@ namespace Game
 
             GasCollected++;
             GasToCollect--;
+
+            Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 
             Destroy(gameObject);
         }
