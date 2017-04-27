@@ -17,9 +17,12 @@ namespace Game
 
         bool stuckInMud;
 
+	    Animator anim;
+
         void Awake()
         {
             flasher = GetComponent<Flasher>();
+            anim = GetComponentInChildren<Animator>();
         }
 
         void Start()
@@ -55,7 +58,9 @@ namespace Game
 
 		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{
-			Vector3 start = transform.position;
+		    anim.SetBool("Walking", true);
+
+            Vector3 start = transform.position;
 
             float animTime = MoveAnimTime * Vector3.Distance(start, target);
 
@@ -72,7 +77,9 @@ namespace Game
 
 			} while (timePassed < animTime);
 
-			if (callback != null) callback();
+            anim.SetBool("Walking", false);
+
+            if (callback != null) callback();
 		}
 	}
 }
