@@ -60,7 +60,7 @@
 				</File>
 				<File Id="449358139" Language="SFX">
 					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
-					<Path>SFX\UI_StartMenu_Store_Button_A939E04F.wem</Path>
+					<Path>SFX\UI_StartMenu_Store_Button_B2E9F9AD.wem</Path>
 				</File>
 				<File Id="461352254" Language="SFX">
 					<ShortName>UI_StartMenu_Credits_Button.wav</ShortName>
@@ -411,10 +411,6 @@
 					<ShortName>Move_Fox_Ground_03.wav</ShortName>
 					<Path>SFX\Move_Fox_Ground_03_088797E1.wem</Path>
 				</File>
-				<File Id="903695891" Language="SFX">
-					<ShortName>Move_Ketsu.wav</ShortName>
-					<Path>SFX\Move_Ketsu_A939E04F.wem</Path>
-				</File>
 				<File Id="925777685" Language="SFX">
 					<ShortName>Move_Wolf_Ice_01.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ice_01_2CC9493D.wem</Path>
@@ -466,6 +462,10 @@
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Water_01_A939E04F.wem</Path>
+				</File>
+				<File Id="1070593893" Language="SFX">
+					<ShortName>Move_Ketsu.wav</ShortName>
+					<Path>SFX\Move_Ketsu_A5FF18AF.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

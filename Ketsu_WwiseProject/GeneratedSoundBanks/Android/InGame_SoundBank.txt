@@ -106,7 +106,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	868623114	Move_Wolf_Ground_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ground_03_20F9A476.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_03		54952
 	891115824	Move_Wolf_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Grass_03_EB3A45A9.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_03		68084
 	899780812	Move_Fox_Ground_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Fox_Ground_03_088797E1.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_03		48784
-	903695891	Move_Ketsu	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Ketsu_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		61976
 	925777685	Move_Wolf_Ice_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ice_01_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_01		155028
 	935211600	Move_Wolf_Ground_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ground_04_68248150.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_04		56216
 	935737943	Transform_FromKetsu	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Transform_FromKetsu_E0D343F3.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu		180428
@@ -120,4 +119,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1048122472	Move_Wolf_Ice_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Wolf_Ice_03_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_03		163392
 	1065497231	Move_Mud_08	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Mud_08_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_08		68496
 	1069057915	Wolf_Death_Water_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Wolf_Death_Water_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Death_Water\Wolf_Death_Water_01		624160
+	1070593893	Move_Ketsu	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Move_Ketsu_A5FF18AF.wem		\Actor-Mixer Hierarchy\Characters\Ketsu\Move_Ketsu\Move_Ketsu		36628
 

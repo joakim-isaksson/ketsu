@@ -178,6 +178,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="UI_StartMenu_Store_Button" ID="{BC16B89E-C568-4623-9405-EEB7A55CD864}" ShortID="449358139">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="1.60220393663682E-02"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI_StartMenu_Store_Button.wav</AudioFile>
 										</AudioFileSource>
