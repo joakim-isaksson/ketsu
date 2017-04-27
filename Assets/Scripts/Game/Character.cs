@@ -15,7 +15,7 @@ namespace Game
         
         Flasher flasher;
 
-        public bool StuckInMud;
+        bool stuckInMud;
 
         void Awake()
         {
@@ -27,7 +27,7 @@ namespace Game
 
 		}
 
-	    public void MoveTo(Vector3 newPosition, bool backwards, Action callback)
+		public void MoveTo(Vector3 newPosition, MapObjectType targetGroundType, Action callback)
 		{
             if (stuckInMud || transform.position == newPosition)
             {
@@ -39,7 +39,7 @@ namespace Game
                 if (targetGroundType == MapObjectType.Mud) stuckInMud = true;
 
                 AkSoundEngine.PostEvent(SfxMove, gameObject);
-                MoveAnimation(newPosition, backwards, callback);
+                MoveAnimation(newPosition, callback);
             }
 		}
 
@@ -48,19 +48,18 @@ namespace Game
             flasher.Flash(Color.white, 0.05f, 0.05f, 3, null);
         }
 
-		void MoveAnimation(Vector3 target, bool backwards, Action callback)
+		void MoveAnimation(Vector3 target, Action callback)
 		{
-			StartCoroutine(RunMoveAnimation(target, backwards, callback));
+			StartCoroutine(RunMoveAnimation(target, callback));
 		}
 
-		IEnumerator RunMoveAnimation(Vector3 target, bool backwards, Action callback)
+		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{
 			Vector3 start = transform.position;
 
             float animTime = MoveAnimTime * Vector3.Distance(start, target);
 
             transform.LookAt(target);
-            if (backwards) transform.Rotate(Vector3.up, 180.0f);
 
 			float timePassed = 0.0f;
 			do
