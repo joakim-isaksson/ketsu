@@ -191,10 +191,6 @@
 				<Event Id="482381986" Name="WinScreen_Store_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Store_Button"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="20985966" Language="SFX">
-					<ShortName>Transform_ToKetsu-001.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu-001_5093850B.wem</Path>
-				</File>
 				<File Id="40123842" Language="SFX">
 					<ShortName>Move_Fox_Grass_04.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_04_14807B61.wem</Path>
@@ -259,6 +255,10 @@
 					<ShortName>GUI_KetsuPower_Increase.wav</ShortName>
 					<Path>SFX\GUI_KetsuPower_Increase_A939E04F.wem</Path>
 				</File>
+				<File Id="280944617" Language="SFX">
+					<ShortName>Transform_FromKetsu_01.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_01_BEADCC14.wem</Path>
+				</File>
 				<File Id="310533540" Language="SFX">
 					<ShortName>GUI_MaxPowerUp_Crystal_Button.wav</ShortName>
 					<Path>SFX\GUI_MaxPowerUp_Crystal_Button_A939E04F.wem</Path>
@@ -267,6 +267,14 @@
 					<ShortName>Move_Fox_Grass_01.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_01_A939E04F.wem</Path>
 				</File>
+				<File Id="333863694" Language="SFX">
+					<ShortName>Transform_FromKetsu_03.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_03_612D4FD8.wem</Path>
+				</File>
+				<File Id="378707394" Language="SFX">
+					<ShortName>Transform_FromKetsu_02.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_02_A7AFFF93.wem</Path>
+				</File>
 				<File Id="402022915" Language="SFX">
 					<ShortName>Move_Fox_Grass_02.wav</ShortName>
 					<Path>SFX\Move_Fox_Grass_02_9DD024F7.wem</Path>
@@ -274,6 +282,10 @@
 				<File Id="420154487" Language="SFX">
 					<ShortName>Toolbox_Collect_KetsuPowerUp.wav</ShortName>
 					<Path>SFX\Toolbox_Collect_KetsuPowerUp_A939E04F.wem</Path>
+				</File>
+				<File Id="426470596" Language="SFX">
+					<ShortName>Transform_ToKetsu_01.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_01_C57D2ECF.wem</Path>
 				</File>
 				<File Id="463531170" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
@@ -322,6 +334,10 @@
 				<File Id="616983996" Language="SFX">
 					<ShortName>Move_Wolf_Ice_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ice_02_2CC9493D.wem</Path>
+				</File>
+				<File Id="619675664" Language="SFX">
+					<ShortName>Transform_ToKetsu_03.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_03_58EA8BA3.wem</Path>
 				</File>
 				<File Id="622933340" Language="SFX">
 					<ShortName>Move_Mud_07.wav</ShortName>
@@ -419,10 +435,6 @@
 					<ShortName>Move_Wolf_Ground_04.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ground_04_68248150.wem</Path>
 				</File>
-				<File Id="935737943" Language="SFX">
-					<ShortName>Transform_FromKetsu.wav</ShortName>
-					<Path>SFX\Transform_FromKetsu_E0D343F3.wem</Path>
-				</File>
 				<File Id="941997029" Language="SFX">
 					<ShortName>Move_Fox_Ground_01.wav</ShortName>
 					<Path>SFX\Move_Fox_Ground_01_A939E04F.wem</Path>
@@ -450,6 +462,10 @@
 				<File Id="1040587393" Language="SFX">
 					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Next_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="1047423126" Language="SFX">
+					<ShortName>Transform_ToKetsu_02.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_02_2B020975.wem</Path>
 				</File>
 				<File Id="1048122472" Language="SFX">
 					<ShortName>Move_Wolf_Ice_03.wav</ShortName>

@@ -25,7 +25,7 @@
 							<ChildrenList>
 								<Action Name="Play" ID="{D3489379-5EDB-4A5E-ABD1-C3F170743DCE}" ShortID="280515926" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{0213036F-B817-4344-B55F-59958462A9F6}" Global="false">
+										<Element ID="{8BF9126D-9154-4F6D-A785-165731FAC1C1}" Global="false">
 											<ObjectRef Name="Transform_ToKetsu" ID="{EB866A0E-B3D1-4C0E-AA0C-8993E9818615}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
@@ -37,7 +37,7 @@
 								<Action Name="Play" ID="{0F6100B2-E395-4484-BFD1-883D189618BB}" ShortID="271007279" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{B92C1593-44E9-4CAA-B2BB-BFEDE1BCD986}" Global="false">
-											<ObjectRef Name="Transform_FromKetsu" ID="{F157BB9E-668F-4993-9677-3E07AD454259}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+											<ObjectRef Name="Transform_FromKetsu" ID="{B0597F42-416A-413A-91E9-05AC6E442E02}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>
