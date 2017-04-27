@@ -1524,7 +1524,7 @@ MonoBehaviour:
   Type: 11
   Layer: 1
   NotBlockedBy: 01000000080000000e000000
-  MoveAnimTime: 0.05
+  MoveAnimTime: 0.2
   SfxMove: Move_Ketsu
 --- !u!114 &114796153408796744
 MonoBehaviour:

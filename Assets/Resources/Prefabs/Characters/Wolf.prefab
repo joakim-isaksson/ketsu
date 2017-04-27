@@ -1158,7 +1158,7 @@ MonoBehaviour:
   Type: 17
   Layer: 1
   NotBlockedBy: 01000000080000000b0000000e00000012000000
-  MoveAnimTime: 0.1
+  MoveAnimTime: 0.2
   SfxMove: Move_Wolf
 --- !u!137 &137521438589086492
 SkinnedMeshRenderer:
