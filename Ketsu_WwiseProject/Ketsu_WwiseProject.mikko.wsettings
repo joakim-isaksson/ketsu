@@ -3,7 +3,7 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{D6A77B06-CF59-4C1C-8A77-5D40D07F0915}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\SFX"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\mikko\Projects\Sound Design\Ketsu\Render\World"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Android"></Value>

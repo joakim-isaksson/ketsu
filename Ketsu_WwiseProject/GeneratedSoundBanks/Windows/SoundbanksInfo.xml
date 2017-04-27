@@ -60,7 +60,7 @@
 				</File>
 				<File Id="449358139" Language="SFX">
 					<ShortName>UI_StartMenu_Store_Button.wav</ShortName>
-					<Path>SFX\UI_StartMenu_Store_Button_A939E04F.wem</Path>
+					<Path>SFX\UI_StartMenu_Store_Button_B2E9F9AD.wem</Path>
 				</File>
 				<File Id="461352254" Language="SFX">
 					<ShortName>UI_StartMenu_Credits_Button.wav</ShortName>
@@ -170,13 +170,6 @@
 				<Event Id="3275066385" Name="GUI_Sheep_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Sheep_Button"/>
 				<Event Id="841337824" Name="GUI_Split_Active" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Active"/>
 				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
-				<Event Id="240649815" Name="Map_Env_Bees" ObjectPath="\Events\World\Map_Env\Map_Env_Bees"/>
-				<Event Id="611079635" Name="Map_Env_BigWater" ObjectPath="\Events\World\Map_Env\Map_Env_BigWater"/>
-				<Event Id="35994456" Name="Map_Env_Birds" ObjectPath="\Events\World\Map_Env\Map_Env_Birds"/>
-				<Event Id="4112863043" Name="Map_Env_MediumWind" ObjectPath="\Events\World\Map_Env\Map_Env_MediumWind"/>
-				<Event Id="1320716757" Name="Map_Env_Sea" ObjectPath="\Events\World\Map_Env\Map_Env_Sea"/>
-				<Event Id="782833506" Name="Map_Env_SmallWater" ObjectPath="\Events\World\Map_Env\Map_Env_SmallWater"/>
-				<Event Id="1833815307" Name="Map_Env_StrongWind" ObjectPath="\Events\World\Map_Env\Map_Env_StrongWind"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
@@ -242,13 +235,9 @@
 					<ShortName>GUI_Chicken_Button.wav</ShortName>
 					<Path>SFX\GUI_Chicken_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="211612609" Language="SFX">
-					<ShortName>Map_Env_StrongWind.wav</ShortName>
-					<Path>SFX\Map_Env_StrongWind_2CC9493D.wem</Path>
-				</File>
-				<File Id="225182666" Language="SFX">
-					<ShortName>Map_Env_Birds.wav</ShortName>
-					<Path>SFX\Map_Env_Birds_2CC9493D.wem</Path>
+				<File Id="147065661" Language="SFX">
+					<ShortName>Map_Env_BigWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_BigWaterStream_2CC9493D.wem</Path>
 				</File>
 				<File Id="231051959" Language="SFX">
 					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
@@ -265,10 +254,6 @@
 				<File Id="276388275" Language="SFX">
 					<ShortName>GUI_KetsuPower_Increase.wav</ShortName>
 					<Path>SFX\GUI_KetsuPower_Increase_A939E04F.wem</Path>
-				</File>
-				<File Id="307788843" Language="SFX">
-					<ShortName>Map_Env_MediumWind.wav</ShortName>
-					<Path>SFX\Map_Env_MediumWind_2CC9493D.wem</Path>
 				</File>
 				<File Id="310533540" Language="SFX">
 					<ShortName>GUI_MaxPowerUp_Crystal_Button.wav</ShortName>
@@ -298,6 +283,10 @@
 					<ShortName>GUI_Split_Release.wav</ShortName>
 					<Path>SFX\GUI_Split_Release_A939E04F.wem</Path>
 				</File>
+				<File Id="465204404" Language="SFX">
+					<ShortName>Map_Env_Birds.wav</ShortName>
+					<Path>SFX\Map_Env_Birds_2CC9493D.wem</Path>
+				</File>
 				<File Id="489506376" Language="SFX">
 					<ShortName>UI_WinScreen_Store_Button.wav</ShortName>
 					<Path>SFX\UI_WinScreen_Store_Button_A939E04F.wem</Path>
@@ -310,9 +299,9 @@
 					<ShortName>Fox_Death_Water_01.wav</ShortName>
 					<Path>SFX\Fox_Death_Water_01_A939E04F.wem</Path>
 				</File>
-				<File Id="538173892" Language="SFX">
-					<ShortName>Map_Env_Sea.wav</ShortName>
-					<Path>SFX\Map_Env_Sea_2CC9493D.wem</Path>
+				<File Id="519315026" Language="SFX">
+					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
+					<Path>SFX\Map_Env_BeesOnFlowers_2CC9493D.wem</Path>
 				</File>
 				<File Id="544687860" Language="SFX">
 					<ShortName>Toolbox_Collect_Coins.wav</ShortName>
@@ -358,6 +347,10 @@
 					<ShortName>Move_OnBridge_01.wav</ShortName>
 					<Path>SFX\Move_OnBridge_01_A939E04F.wem</Path>
 				</File>
+				<File Id="690987215" Language="SFX">
+					<ShortName>Map_Env_Sea.wav</ShortName>
+					<Path>SFX\Map_Env_Sea_2CC9493D.wem</Path>
+				</File>
 				<File Id="702592865" Language="SFX">
 					<ShortName>Move_Mud_03.wav</ShortName>
 					<Path>SFX\Move_Mud_03_A939E04F.wem</Path>
@@ -370,9 +363,9 @@
 					<ShortName>Move_Wolf_Grass_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Grass_02_A939E04F.wem</Path>
 				</File>
-				<File Id="737519746" Language="SFX">
-					<ShortName>Map_Env_BigWaterStream.wav</ShortName>
-					<Path>SFX\Map_Env_BigWaterStream_2CC9493D.wem</Path>
+				<File Id="744722679" Language="SFX">
+					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
 				</File>
 				<File Id="746631363" Language="SFX">
 					<ShortName>Character_Hit_Water_02.wav</ShortName>
@@ -398,10 +391,6 @@
 					<ShortName>Move_Wolf_Grass_01.wav</ShortName>
 					<Path>SFX\Move_Wolf_Grass_01_A939E04F.wem</Path>
 				</File>
-				<File Id="787118364" Language="SFX">
-					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
-					<Path>SFX\Map_Env_BeesOnFlowers_2CC9493D.wem</Path>
-				</File>
 				<File Id="814823044" Language="SFX">
 					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ground_02_AB3070EB.wem</Path>
@@ -421,10 +410,6 @@
 				<File Id="899780812" Language="SFX">
 					<ShortName>Move_Fox_Ground_03.wav</ShortName>
 					<Path>SFX\Move_Fox_Ground_03_088797E1.wem</Path>
-				</File>
-				<File Id="903695891" Language="SFX">
-					<ShortName>Move_Ketsu.wav</ShortName>
-					<Path>SFX\Move_Ketsu_A939E04F.wem</Path>
 				</File>
 				<File Id="925777685" Language="SFX">
 					<ShortName>Move_Wolf_Ice_01.wav</ShortName>
@@ -454,10 +439,6 @@
 					<ShortName>Move_Fox_Ice_01.wav</ShortName>
 					<Path>SFX\Move_Fox_Ice_01_2CC9493D.wem</Path>
 				</File>
-				<File Id="947826981" Language="SFX">
-					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
-					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
-				</File>
 				<File Id="953015262" Language="SFX">
 					<ShortName>Move_Mud_02.wav</ShortName>
 					<Path>SFX\Move_Mud_02_A939E04F.wem</Path>
@@ -481,6 +462,10 @@
 				<File Id="1069057915" Language="SFX">
 					<ShortName>Wolf_Death_Water_01.wav</ShortName>
 					<Path>SFX\Wolf_Death_Water_01_A939E04F.wem</Path>
+				</File>
+				<File Id="1070593893" Language="SFX">
+					<ShortName>Move_Ketsu.wav</ShortName>
+					<Path>SFX\Move_Ketsu_A5FF18AF.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

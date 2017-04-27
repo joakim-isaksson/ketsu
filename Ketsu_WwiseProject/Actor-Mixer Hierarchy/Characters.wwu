@@ -848,40 +848,24 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="Move_Ketsu" ID="{00B06D1F-7A0F-4A28-A087-F64084F0236B}" ShortID="854226959">
+						<RandomSequenceContainer Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" ShortID="526862876">
+							<PropertyList>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Move_Ketsu" ID="{1E7276B6-1A0C-4EC4-A315-0F2660E23E30}" ShortID="755859107" Type="SoundFX">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Move_Ketsu" ID="{15EB110B-22B8-42E4-A0EC-8A686ECD04D6}" ShortID="903695891">
-											<Language>SFX</Language>
-											<AudioFile>Move_Ketsu.wav</AudioFile>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Move_Ketsu" ID="{15EB110B-22B8-42E4-A0EC-8A686ECD04D6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Move_Ketsu_01" ID="{4F2CB30F-817B-4D6E-A94F-9CBB84477A44}" ShortID="410723145" Type="SoundFX">
+								<Sound Name="Move_Ketsu" ID="{D1D68078-D334-4329-A819-6676C0B984D7}" ShortID="1044676079" Type="SoundFX">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>-100</Value>
+												<Value>-250</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -894,19 +878,247 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Move_Ketsu" ID="{58645B97-410C-492F-B674-41855501215A}" ShortID="998220770">
+										<AudioFileSource Name="Move_Ketsu" ID="{027B1A0B-9BB8-4EE1-9915-EBA2DE18900A}" ShortID="1070593893">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{027B1A0B-9BB8-4EE1-9915-EBA2DE18900A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_01" ID="{C918DC57-7582-4569-AA8E-39E0418D9A84}" ShortID="284893256" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-30</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{839D6618-D22C-4AE8-8793-3D106D8BC58D}" ShortID="843925380">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Move_Ketsu.wav</AudioFile>
 											<ConvertedFileIDList>
-												<File ID="903695891"/>
+												<File ID="1070593893"/>
 											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Move_Ketsu" ID="{58645B97-410C-492F-B674-41855501215A}" Platform="Linked"/>
+										<ActiveSource Name="Move_Ketsu" ID="{839D6618-D22C-4AE8-8793-3D106D8BC58D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_02" ID="{F99E07E1-845C-4D3C-9686-D748A6F43D7A}" ShortID="545120651" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>80</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{2E3F500E-C117-41CB-8AE4-ABAAC70BD9B4}" ShortID="923554590">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1070593893"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{2E3F500E-C117-41CB-8AE4-ABAAC70BD9B4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_03" ID="{9FF709C0-7029-4402-A79C-0589A18DD5D8}" ShortID="509568628" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{38F82C49-EE07-40DB-B1FA-C4BE4AF078E2}" ShortID="257792203">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1070593893"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{38F82C49-EE07-40DB-B1FA-C4BE4AF078E2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_04" ID="{C9C0EE09-F376-483B-A550-33942D43CCA2}" ShortID="746217176" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>220</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{721252DB-D73C-4D05-8AB8-C94E4D43754E}" ShortID="540363731">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1070593893"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{721252DB-D73C-4D05-8AB8-C94E4D43754E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_05" ID="{3BFBB6D4-F781-44AE-AB2A-073B0AE8935F}" ShortID="934168250" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>330</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{A0AA4E40-3B6F-45B4-BCE9-90685B275DE4}" ShortID="333970046">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1070593893"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{A0AA4E40-3B6F-45B4-BCE9-90685B275DE4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Move_Ketsu_06" ID="{3DE6BB25-724D-4B79-8749-F902D62B675F}" ShortID="31098432" Type="SoundFX">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>420</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Move_Ketsu" ID="{F1443717-7BCC-4136-928D-8F94B60BA42F}" ShortID="530109681">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="2.34827560686797E-02"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.190439424215512"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Move_Ketsu.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="1070593893"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Move_Ketsu" ID="{F1443717-7BCC-4136-928D-8F94B60BA42F}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="Move_Ketsu" ID="{D1D68078-D334-4329-A819-6676C0B984D7}"/>
+								<ItemRef Name="Move_Ketsu_01" ID="{C918DC57-7582-4569-AA8E-39E0418D9A84}"/>
+								<ItemRef Name="Move_Ketsu_02" ID="{F99E07E1-845C-4D3C-9686-D748A6F43D7A}"/>
+								<ItemRef Name="Move_Ketsu_03" ID="{9FF709C0-7029-4402-A79C-0589A18DD5D8}"/>
+								<ItemRef Name="Move_Ketsu_04" ID="{C9C0EE09-F376-483B-A550-33942D43CCA2}"/>
+								<ItemRef Name="Move_Ketsu_05" ID="{3BFBB6D4-F781-44AE-AB2A-073B0AE8935F}"/>
+								<ItemRef Name="Move_Ketsu_06" ID="{3DE6BB25-724D-4B79-8749-F902D62B675F}"/>
+							</Playlist>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
