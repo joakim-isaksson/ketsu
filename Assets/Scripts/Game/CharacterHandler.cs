@@ -25,6 +25,11 @@ namespace Game
         public string TrainsformToKetsuSfx;
         public string SplitKetsuSfx;
 
+	    [Header("Effects")]
+	    public GameObject MergeEffectPrefab;
+	    public GameObject SplitEffectPrefab;
+
+
         [HideInInspector]
 		public Character ActiveCharacter;
 
@@ -328,7 +333,9 @@ namespace Game
                 OnMoveActionCompleted();
             });
 
+            // Effects
             shaker.Shake();
+            Instantiate(MergeEffectPrefab, mergePos, ketsu.transform.rotation);
         }
 
         public void SplitKetsu(Vector3 targetPos)
@@ -370,7 +377,9 @@ namespace Game
             active.MoveTo(activeTarget.Position, activeTarget.Ground.Type, OnMoveActionCompleted);
             other.MoveTo(otherTarget.Position, otherTarget.Ground.Type, OnMoveActionCompleted);
 
+            // Effects
             shaker.Shake();
+            Instantiate(SplitEffectPrefab, ketsu.transform.position, ketsu.transform.rotation);
         }
 
 
