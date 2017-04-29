@@ -53,10 +53,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4355291050034354}
+  - component: {fileID: 114388166742272340}
   - component: {fileID: 33921961104417438}
   - component: {fileID: 23816352610812244}
   m_Layer: 0
-  m_Name: Grass01
+  m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,9 +82,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1738035490734722}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 4642730719187790}
   m_RootOrder: 0
@@ -192,6 +193,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9, z: 0.9}
   m_Center: {x: 0, y: -0.5, z: 0}
+--- !u!114 &114388166742272340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738035490734722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66ae45a939abd04abeddbef0dbaceb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionOffsetMin: {x: -0.05, y: 0, z: -0.05}
+  PositionOffsetMax: {x: 0.05, y: 0, z: 0.05}
+  RotationOffsetMin: {x: 0, y: -5, z: 0}
+  RotationOffsetMax: {x: 0, y: 5, z: 0}
+  KeepScaleRatio: 1
+  ScaleMultiplierMin: {x: 0.9, y: 0.9, z: 0.9}
+  ScaleMultiplierMax: {x: 1.1, y: 1.1, z: 1.1}
 --- !u!114 &114794893627595258
 MonoBehaviour:
   m_ObjectHideFlags: 1
