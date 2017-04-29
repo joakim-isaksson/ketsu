@@ -6,59 +6,62 @@ namespace Ketsu.Utils
 {
 	public class Flasher : MonoBehaviour
 	{
-        /// <summary>
-        /// Flash this object in and out of given color
-        /// </summary>
-        /// <param name="color">Color to be flashed</param>
-        /// <param name="fadeTime">Fade in/out time</param>
-        /// <param name="keepTime">Time to keep the color before fading out</param>
-        /// <param name="repeat">How many times to repeat the flash</param>
-        /// <param name="callback">invoked after the task is completed</param>
-        public void Flash(Color color, float fadeTime, float keepTime, int repeat, Action callback)
-        {
-            StartCoroutine(RunFlash(color, fadeTime, keepTime, repeat, callback));
+	    public Color FlashColor;
+	    public float FlashSpeed;
+
+	    Material[] materials;
+	    Color[] startingColors;
+        
+	    bool flashing;
+
+        void Start()
+	    {
+	        materials = GetComponentInChildren<Renderer>().materials;
+	        startingColors = new Color[materials.Length];
+	        for (int i = 0; i < materials.Length; i++)
+	        {
+	            startingColors[i] = materials[i].color;
+	        }
         }
 
-        IEnumerator RunFlash(Color color, float fadeTime, float keepTime, int repeat, Action callback)
+	    public void StartFlashing()
+	    {
+            flashing = true;
+	    }
+
+	    public void StopFlashing()
+	    {
+	        if (!flashing) return;
+
+	        flashing = false;
+
+	        for (int i = 0; i < materials.Length; i++)
+	        {
+	            materials[i].color = startingColors[i];
+	        }
+        }
+
+        void Update()
         {
-            Renderer renderer = GetComponentInChildren<Renderer>();
-            Material[] materials = renderer.materials;
-            Color[] startingColors = new Color[materials.Length];
-            for (int i = 0; i < materials.Length; i++)
+            if (!flashing) return;
+
+            float state = ((Time.realtimeSinceStartup % FlashSpeed) / FlashSpeed) * 2.0f;
+
+            if (state <= 1.0f)
             {
-                startingColors[i] = materials[i].color;
-            }
-
-            for (int i = 0; i < repeat; i++)
-            {
-                float timePassed = 0.0f;
-                while (timePassed < fadeTime)
+                for (int i = 0; i < materials.Length; i++)
                 {
-                    timePassed += Time.deltaTime;
-                    float progress = Mathf.Min(timePassed / fadeTime, 1.0f);
-                    for (int ii = 0; ii < materials.Length; ii++)
-                    {
-                        materials[ii].color = Color.Lerp(startingColors[ii], color, progress);
-                    }
-                    yield return null;
-                }
-
-                yield return new WaitForSeconds(keepTime);
-
-                timePassed = 0.0f;
-                while (timePassed < fadeTime)
-                {
-                    timePassed += Time.deltaTime;
-                    float progress = Mathf.Min(timePassed / fadeTime, 1.0f);
-                    for (int ii = 0; ii < materials.Length; ii++)
-                    {
-                        materials[ii].color = Color.Lerp(color, startingColors[ii], progress);
-                    }
-                    yield return null;
+                    materials[i].color = Color.Lerp(startingColors[i], FlashColor, state);
                 }
             }
-
-            if (callback != null) callback();
+            else
+            {
+                for (int i = 0; i < materials.Length; i++)
+                {
+                    materials[i].color = Color.Lerp(FlashColor, startingColors[i], state - 1.0f);
+                }
+            }
+	        
         }
     }
 }

@@ -76,8 +76,8 @@ MonoBehaviour:
   KetsuPrefab: {fileID: 1498999488766744, guid: fd318d857319847adabe9a776fbdf5aa,
     type: 2}
   KetsuMoveCost: 1
-  KetsuPower: 0
-  MaxKetsuPower: 5
+  KetsuPower: 5
+  MaxKetsuPower: 6
   MoveQueueSize: 2
   TrainsformToKetsuSfx: Transform_ToKetsu
   SplitKetsuSfx: Transform_FromKetsu

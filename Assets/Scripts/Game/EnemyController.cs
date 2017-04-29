@@ -18,7 +18,7 @@ namespace Game
 
         [Header("Consuming")]
         public bool CanBeConsumed;
-        public float GivesKetsuPower;
+        public int GivesKetsuPower;
 
         [Header("Dazing")]
         public bool CanBeDazed;

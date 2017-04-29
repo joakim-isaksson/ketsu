@@ -12,8 +12,6 @@ namespace Game
 
 		[Header("Sounds")]
 		public string SfxMove;
-        
-        Flasher flasher;
 
         bool stuckInMud;
 
@@ -21,7 +19,6 @@ namespace Game
 
         void Awake()
         {
-            flasher = GetComponent<Flasher>();
             anim = GetComponentInChildren<Animator>();
         }
 
@@ -48,7 +45,7 @@ namespace Game
 
         public void TakeDamage(float amount)
 		{
-            flasher.Flash(Color.white, 0.05f, 0.05f, 3, null);
+            // do nothing
         }
 
 		void MoveAnimation(Vector3 target, Action callback)

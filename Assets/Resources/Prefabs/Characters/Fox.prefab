@@ -306,7 +306,6 @@ GameObject:
   - component: {fileID: 4898384198008534}
   - component: {fileID: 65500622734164962}
   - component: {fileID: 54945961273867240}
-  - component: {fileID: 114301144997144320}
   - component: {fileID: 114839383102099414}
   m_Layer: 0
   m_Name: Fox
@@ -1453,17 +1452,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114301144997144320
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1367289068658380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7771076b9a546a4db4163cc9d7bdedf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114839383102099414
 MonoBehaviour:
   m_ObjectHideFlags: 1

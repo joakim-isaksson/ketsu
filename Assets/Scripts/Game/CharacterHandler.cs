@@ -14,9 +14,9 @@ namespace Game
 		public GameObject KetsuPrefab;
 
 		[Header("Ketsu Power")]
-		public float KetsuMoveCost;
-        public float KetsuPower;
-        public float MaxKetsuPower;
+		public int KetsuMoveCost = 1;
+        public int KetsuPower = 5;
+        public int MaxKetsuPower = 6;
 
         [Header("Action Queue")]
         public int MoveQueueSize;
@@ -130,18 +130,34 @@ namespace Game
 	    public void FillKetsuPower()
 	    {
 	        KetsuPower = MaxKetsuPower;
-	    }
 
-        public void AddKetsuPower(float amount)
-        {
-            KetsuPower = Mathf.Min(KetsuPower + amount, MaxKetsuPower);
+	        if (KetsuPower > 0)
+	        {
+	            ketsu.GetComponent<Flasher>().StopFlashing();
+	        }
         }
 
-        public bool ConsumeKetsuPower(float amount)
+        public void AddKetsuPower(int amount)
+        {
+            KetsuPower = Mathf.Min(KetsuPower + amount, MaxKetsuPower);
+
+            if (KetsuPower > 0)
+            {
+                ketsu.GetComponent<Flasher>().StopFlashing();
+            }
+        }
+
+        bool ConsumeKetsuPower(int amount)
         {
             if (amount <= KetsuPower)
             {
                 KetsuPower -= amount;
+
+                if (KetsuPower == 0)
+                {
+                    ketsu.GetComponent<Flasher>().StartFlashing();
+                }
+
                 return true;
             }
             else
@@ -330,6 +346,11 @@ namespace Game
                 beforeKetsu = ActiveCharacter;
                 ActiveCharacter = ketsu;
 
+                if (KetsuPower == 0)
+                {
+                    ketsu.GetComponent<Flasher>().StartFlashing();
+                }
+
                 OnMoveActionCompleted();
             });
 
@@ -376,6 +397,8 @@ namespace Game
             other.transform.position = ketsu.transform.position;
             active.MoveTo(activeTarget.Position, activeTarget.Ground.Type, OnMoveActionCompleted);
             other.MoveTo(otherTarget.Position, otherTarget.Ground.Type, OnMoveActionCompleted);
+
+            ketsu.GetComponent<Flasher>().StopFlashing();
 
             // Effects
             shaker.Shake();
