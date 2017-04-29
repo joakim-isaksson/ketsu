@@ -1,10 +1,11 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-namespace Ketsu.Utils
+namespace Utils
 {
-    [System.Serializable]
+    [Serializable]
     public struct WeightedGameObject
     {
         public GameObject Object;
@@ -17,16 +18,16 @@ namespace Ketsu.Utils
 
         void Awake()
         {
-            List<float> cumulativeWeights = new List<float>();
+            var cumulativeWeights = new List<float>();
             float cumulativeWeight = 0;
-            foreach (WeightedGameObject wObj in Replacements)
+            foreach (var wObj in Replacements)
             {
                 cumulativeWeight += wObj.Weight;
                 cumulativeWeights.Add(cumulativeWeight);
             }
-            float maxWeight = cumulativeWeight;
+            var maxWeight = cumulativeWeight;
 
-            int index = cumulativeWeights.BinarySearch(Random.value * maxWeight);
+            var index = cumulativeWeights.BinarySearch(Random.value * maxWeight);
             if (index < 0) index = ~index;
 
             Instantiate(Replacements[index].Object, transform.position, transform.rotation);

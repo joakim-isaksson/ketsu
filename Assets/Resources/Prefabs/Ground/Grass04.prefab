@@ -11,6 +11,24 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1514690200578376}
   m_IsPrefabParent: 1
+--- !u!1 &1417477811317456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4741609653585948}
+  - component: {fileID: 114653429994088748}
+  - component: {fileID: 33709257580666966}
+  - component: {fileID: 23355122040751020}
+  m_Layer: 0
+  m_Name: Grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!1 &1514690200578376
 GameObject:
   m_ObjectHideFlags: 0
@@ -45,36 +63,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!1 &1852300655806692
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4367764462265628}
-  - component: {fileID: 33760313337461686}
-  - component: {fileID: 23484184461891480}
-  m_Layer: 0
-  m_Name: Grass04
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &4367764462265628
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852300655806692}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4838870785952138}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4578990357807948
 Transform:
   m_ObjectHideFlags: 1
@@ -88,6 +76,19 @@ Transform:
   m_Father: {fileID: 4838870785952138}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4741609653585948
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417477811317456}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4838870785952138}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4838870785952138
 Transform:
   m_ObjectHideFlags: 1
@@ -98,17 +99,17 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4367764462265628}
+  - {fileID: 4741609653585948}
   - {fileID: 4578990357807948}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23484184461891480
+--- !u!23 &23355122040751020
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852300655806692}
+  m_GameObject: {fileID: 1417477811317456}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -173,12 +174,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1786290146632510}
   m_Mesh: {fileID: 4300000, guid: f480add9fafed404ea3ebdaf0da0caa3, type: 3}
---- !u!33 &33760313337461686
+--- !u!33 &33709257580666966
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1852300655806692}
+  m_GameObject: {fileID: 1417477811317456}
   m_Mesh: {fileID: 4300000, guid: ee9593ac90a009f42a4ab6bfc5433e53, type: 3}
 --- !u!65 &65899263601028304
 BoxCollider:
@@ -192,6 +193,24 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9, z: 0.9}
   m_Center: {x: 0, y: -0.5, z: 0}
+--- !u!114 &114653429994088748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1417477811317456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66ae45a939abd04abeddbef0dbaceb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionOffsetMin: {x: -0.05, y: 0, z: -0.05}
+  PositionOffsetMax: {x: 0.05, y: 0, z: 0.05}
+  RotationOffsetMin: {x: 0, y: -5, z: 0}
+  RotationOffsetMax: {x: 0, y: 5, z: 0}
+  KeepScaleRatio: 1
+  ScaleMultiplierMin: {x: 0.9, y: 0.9, z: 0.9}
+  ScaleMultiplierMax: {x: 1.1, y: 1.1, z: 1.1}
 --- !u!114 &114926831700815542
 MonoBehaviour:
   m_ObjectHideFlags: 1
