@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Assets.Scripts;
 using Ketsu.Utils;
 using UnityEngine;
 
@@ -38,14 +39,17 @@ namespace Game
         Character ketsu;
         Character beforeKetsu;
 
+	    Shaker shaker;
+
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
-        }
+		}
 
 		void Start()
 		{
             mapManager = FindObjectOfType<MapManager>();
+		    shaker = FindObjectOfType<Shaker>();
 
             // Find characters
             foreach (Character character in FindObjectsOfType<Character>())
@@ -323,6 +327,8 @@ namespace Game
 
                 OnMoveActionCompleted();
             });
+
+            shaker.Shake();
         }
 
         public void SplitKetsu(Vector3 targetPos)
@@ -363,6 +369,8 @@ namespace Game
             other.transform.position = ketsu.transform.position;
             active.MoveTo(activeTarget.Position, activeTarget.Ground.Type, OnMoveActionCompleted);
             other.MoveTo(otherTarget.Position, otherTarget.Ground.Type, OnMoveActionCompleted);
+
+            shaker.Shake();
         }
 
 
