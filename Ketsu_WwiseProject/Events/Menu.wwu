@@ -21,7 +21,7 @@
 								<Action Name="Play" ID="{9898E3CB-B7C1-4934-9815-93DCF5D57BE0}" ShortID="125067639" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{94D64F62-660F-4A31-A7FC-8BE58EBBBFC1}" Global="false">
-											<ObjectRef Name="UI_LevelMenu_LockedLevel_Select" ID="{60BE9991-E46C-471D-9F63-0737068AA51A}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_LevelMenu_LockedLevel_Button" ID="{6BDEC81A-DB2F-4753-BFC4-6A455CE6722E}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -43,7 +43,7 @@
 								<Action Name="Play" ID="{4F1E46D3-0BD2-471D-9249-4828CD93C6F8}" ShortID="559900267" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{1A39C520-6405-4F89-96D9-A79442397E2E}" Global="false">
-											<ObjectRef Name="UI_LevelMenu_UnlockedLevel_Select" ID="{8C9342B3-F153-46E0-91B1-614CABCDE62E}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_LevelMenu_Level_Select" ID="{1FF68ADF-487F-4A7B-8FFA-1EAA49C572E3}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -83,7 +83,7 @@
 								<Action Name="Play" ID="{3CD55F0F-0E5C-4C3E-BC35-2B663B6EB0EB}" ShortID="476383823" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{D511FB17-B23E-4272-B0F0-D4F0EB42AE86}" Global="false">
-											<ObjectRef Name="UI_LevelMenu_StartLevel_Select" ID="{DCB69956-85A8-47DE-A5D9-B0C33B7113C4}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_LevelMenu_UnlockedLevel_Button" ID="{12B27DC7-C6A1-44BA-B10D-A1E96970FA7D}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -109,91 +109,6 @@
 									<ElementList>
 										<Element ID="{60903511-8701-4E96-B4BB-86CCF06254B8}" Global="false">
 											<ObjectRef Name="UI_Spacehip_Idle_01" ID="{4783B7BE-919E-4355-B43B-400E78469585}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="StartMenu" ID="{70D2711F-2AB1-4523-85E2-D0BE18B6C405}" ShortID="671163154">
-					<ChildrenList>
-						<Event Name="StartMenu_Start_Button" ID="{3D763FF3-EC29-470F-AB85-CFDE6AC33D8E}">
-							<ChildrenList>
-								<Action Name="Play" ID="{920BC9C6-10A9-4F21-A97F-77067D278BA7}" ShortID="200910932" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{4E7F135D-4C7B-4A9B-92DD-D5251D59EC20}" Global="false">
-											<ObjectRef Name="UI_StartMenu_Start_Button" ID="{CA99497B-2912-43A8-8203-AECE7C709444}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartMenu_Credits_Button" ID="{225719B7-646A-4F7F-B0A0-DCF7C472F97D}">
-							<ChildrenList>
-								<Action Name="Play" ID="{B76017D5-5306-4E17-94A4-E554855EA55B}" ShortID="872970985" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{D710BDFA-A75F-4BC2-86A8-858DE7B749A7}" Global="false">
-											<ObjectRef Name="UI_StartMenu_Credits_Button" ID="{78AECBC5-CAD8-46A5-9C4D-645B09F2206C}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartMenu_Logo_Button" ID="{E03090A9-C544-4ECE-A471-8D73081F4842}">
-							<ChildrenList>
-								<Action Name="Play" ID="{6B4836FD-CD37-49E6-A04C-EFA41C5C539E}" ShortID="1014715803" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{ACB7DD55-DCCF-4628-833F-572C26385191}" Global="false">
-											<ObjectRef Name="UI_StartMenu_Logo_Button" ID="{7B69AF3E-6856-4AA4-BBEB-1ED69D0CAD15}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartMenu_Settings_Button" ID="{AA487AD5-5346-4DD4-B498-735BB371D30C}">
-							<ChildrenList>
-								<Action Name="Play" ID="{E3FF84D2-F9D5-4D61-9355-D1645D6131D8}" ShortID="743955072" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{AB2DF9E8-3F45-4A92-A373-29C0D0B3C328}" Global="false">
-											<ObjectRef Name="UI_StartMenu_Settings_Button" ID="{2558E40F-F399-4170-AC30-F411D02032CF}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="StartMenu_Store_Button" ID="{8EB370E0-9D4B-48FD-8461-C92507B6A17C}">
-							<ChildrenList>
-								<Action Name="Play" ID="{90A88825-BED1-430B-A82A-46F0E413EC6E}" ShortID="637442112" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{838DAF27-19B8-423E-B5CD-71BF34E98D28}" Global="false">
-											<ObjectRef Name="UI_StartMenu_Store_Button" ID="{46353F23-9172-4A4B-A443-5F07BB1ABE71}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="WorldMenu" ID="{B7F856EB-466B-4C0F-AB58-5EE74B308E52}" ShortID="781329075">
-					<ChildrenList>
-						<Event Name="WorldMenu_UnlockedWorld_Button" ID="{0AB79BB4-9093-4724-BEEF-9B4400A3C986}">
-							<ChildrenList>
-								<Action Name="Play" ID="{E3053D72-2A2E-4996-9231-81C8C41B95D1}" ShortID="765392594" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{F80BEF79-9FA2-4209-987B-6B1DCBCB9B92}" Global="false">
-											<ObjectRef Name="UI_WorldMenu_UnlockedWorld_Button" ID="{D2BCD267-659D-47BC-8A11-384E4064B8F2}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="WorldMenu_LockedWorld_Button" ID="{54BEB87F-67C3-4888-B6A8-EA6D99102149}">
-							<ChildrenList>
-								<Action Name="Play" ID="{E293EA76-D1A9-4015-856B-3229731E0AC5}" ShortID="499911836" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{E2ACD370-8F5E-4F2F-B7A2-18478C8D6995}" Global="false">
-											<ObjectRef Name="UI_WorldMenu_LockedWorld_Button" ID="{DFB99B27-1677-465C-9A13-BC43B2D6F1AC}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
