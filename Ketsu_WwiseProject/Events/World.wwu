@@ -32,8 +32,8 @@
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{A817F80E-3069-4276-96AA-8994E50AAE20}" Global="true">
-											<ObjectRef Name="HowlingWind" ID="{45E8D88F-9F1D-4056-BA69-C586A9D21619}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										<Element ID="{76679BD4-3AC0-464F-B61D-2AA6DDC67A38}" Global="true">
+											<ObjectRef Name="Wind" ID="{830DE85F-F338-4822-AAC9-043E2E8CB606}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -53,8 +53,8 @@
 								</Action>
 								<Action Name="Play" ID="{550D0CF8-E55E-4ECF-81F6-E637503AD614}" ShortID="675247508" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{7B1F3B38-E2F4-4586-9960-C62F0A7D385C}" Global="false">
-											<ObjectRef Name="HowlingWind" ID="{45E8D88F-9F1D-4056-BA69-C586A9D21619}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										<Element ID="{71D5D514-2B8F-4660-9773-C4DA34106C1C}" Global="false">
+											<ObjectRef Name="Wind" ID="{830DE85F-F338-4822-AAC9-043E2E8CB606}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
 										</Element>
 									</ElementList>
 								</Action>

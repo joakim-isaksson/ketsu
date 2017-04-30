@@ -5,8 +5,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	3215460479	Play_InGameMusic1			\Music\InGameMusic\Play_InGameMusic1	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	501425487	Level_Win	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Level_Win_A939E04F.wem		\Actor-Mixer Hierarchy\Music\Stingers\Level_Win		418976
 	538034921	LevelMusic_Peaceful2	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_Peaceful2_A939E04F.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Peaceful\LevelMusic_Peaceful2		34658536
 	602394122	LevelMusic_Peaceful_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_Peaceful_Short_58849767.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Peaceful\LevelMusic_Peaceful_Short		26767140
 	669844642	LevelMusic_Hedgy_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_Hedgy_Short_A939E04F.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Hedgy\LevelMusic_Hedgy_Short		30955824
+	859584638	SFX_LevelWin	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Split_Release_5A5245E1.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_LevelWin		597264
 
