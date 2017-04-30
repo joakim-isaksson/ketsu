@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 9e4c3ff359f2448f7a79a9594913ca9a
+timeCreated: 1493552730
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Andale Mono
+  fontNames:
+  - Andale Mono
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

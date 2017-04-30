@@ -53,10 +53,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4731294028025730}
+  - component: {fileID: 114202776290843440}
   - component: {fileID: 33609229696929274}
   - component: {fileID: 23892046001796070}
   m_Layer: 0
-  m_Name: FlowerPink01
+  m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,3 +208,21 @@ MonoBehaviour:
   Type: 4
   Layer: 0
   NotBlockedBy: 
+--- !u!114 &114202776290843440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1684622770472600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66ae45a939abd04abeddbef0dbaceb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionOffsetMin: {x: -0.05, y: 0, z: -0.05}
+  PositionOffsetMax: {x: 0.05, y: 0, z: 0.05}
+  RotationOffsetMin: {x: 0, y: -5, z: 0}
+  RotationOffsetMax: {x: 0, y: 5, z: 0}
+  KeepScaleRatio: 1
+  ScaleMultiplierMin: {x: 0.9, y: 0.9, z: 0.9}
+  ScaleMultiplierMax: {x: 1.1, y: 1.1, z: 1.1}
