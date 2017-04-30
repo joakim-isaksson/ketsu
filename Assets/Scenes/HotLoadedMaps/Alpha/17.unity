@@ -36,8 +36,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 576885805}
-  m_IndirectSpecularColor: {r: 0.1650283, g: 0.20688847, b: 0.2867543, a: 1}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -222,11 +222,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
   m_IsPrefabParent: 0
---- !u!108 &576885805 stripped
-Light:
-  m_PrefabParentObject: {fileID: 108476612158481224, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
-    type: 2}
-  m_PrefabInternal: {fileID: 576885804}
 --- !u!1001 &820304503
 Prefab:
   m_ObjectHideFlags: 0
@@ -605,6 +600,11 @@ Prefab:
     - target: {fileID: 114931653363788014, guid: 654182cfed8b9264f91972043a847244,
         type: 2}
       propertyPath: KetsuPower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114931653363788014, guid: 654182cfed8b9264f91972043a847244,
+        type: 2}
+      propertyPath: MaxKetsuPower
       value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
