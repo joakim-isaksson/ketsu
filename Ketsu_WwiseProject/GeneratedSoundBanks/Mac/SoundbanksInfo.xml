@@ -99,7 +99,7 @@
 				</File>
 				<File Id="859584638" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
-					<Path>SFX\GUI_Split_Release_5A5245E1.wem</Path>
+					<Path>SFX\GUI_Split_Release_EA448E86.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -207,7 +207,7 @@
 				</File>
 				<File Id="426470596" Language="SFX">
 					<ShortName>Transform_ToKetsu_01.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu_01_8D630EC1.wem</Path>
+					<Path>SFX\Transform_ToKetsu_01_46BBF36D.wem</Path>
 				</File>
 				<File Id="463531170" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
@@ -251,7 +251,7 @@
 				</File>
 				<File Id="619675664" Language="SFX">
 					<ShortName>Transform_ToKetsu_03.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu_03_DAA82204.wem</Path>
+					<Path>SFX\Transform_ToKetsu_03_2A31EB1D.wem</Path>
 				</File>
 				<File Id="622933340" Language="SFX">
 					<ShortName>Move_Mud_07.wav</ShortName>
@@ -383,7 +383,7 @@
 				</File>
 				<File Id="1047423126" Language="SFX">
 					<ShortName>Transform_ToKetsu_02.wav</ShortName>
-					<Path>SFX\Transform_ToKetsu_02_838223EE.wem</Path>
+					<Path>SFX\Transform_ToKetsu_02_D9BBEB2F.wem</Path>
 				</File>
 				<File Id="1048122472" Language="SFX">
 					<ShortName>Move_Wolf_Ice_03.wav</ShortName>

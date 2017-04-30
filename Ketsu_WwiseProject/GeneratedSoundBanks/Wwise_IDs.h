@@ -49,19 +49,35 @@ namespace AK
 
     namespace SWITCHES
     {
-        namespace TILE_MATERIAL
+        namespace TILE_MATERIAL_FOX
         {
-            static const AkUniqueID GROUP = 253806231U;
+            static const AkUniqueID GROUP = 3831856317U;
 
             namespace SWITCH
             {
                 static const AkUniqueID BRIDGE = 2068062714U;
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID FLOWERS = 187032587U;
                 static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID GROUND = 2528658256U;
                 static const AkUniqueID ICE = 344481046U;
                 static const AkUniqueID MUD = 712897245U;
             } // namespace SWITCH
-        } // namespace TILE_MATERIAL
+        } // namespace TILE_MATERIAL_FOX
+
+        namespace TILE_MATERIAL_WOLF
+        {
+            static const AkUniqueID GROUP = 3519937254U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID BRIDGE = 2068062714U;
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID FLOWERS = 187032587U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID ICE = 344481046U;
+                static const AkUniqueID MUD = 712897245U;
+            } // namespace SWITCH
+        } // namespace TILE_MATERIAL_WOLF
 
     } // namespace SWITCHES
 
