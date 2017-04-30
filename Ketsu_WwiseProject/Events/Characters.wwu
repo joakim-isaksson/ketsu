@@ -3,32 +3,6 @@
 	<Events>
 		<WorkUnit Name="Characters" ID="{63D7B275-55AE-4286-A2FE-B576867EDE0B}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Death" ID="{F0264B40-44AA-4AA2-8CE3-1DFEDD90CAFF}" ShortID="636951987">
-					<ChildrenList>
-						<Event Name="Death_Fox_Water" ID="{CCBABF8F-A04D-4B03-95D0-0F2A00069AEC}">
-							<ChildrenList>
-								<Action Name="Play" ID="{2887DAF6-E2AD-4E65-BA3E-BBD6C70241FF}" ShortID="424476389" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{D4BD78B0-41F4-43C4-8F8C-838647426740}" Global="false">
-											<ObjectRef Name="Death_Water" ID="{512EF5F7-CB25-4A7E-A13F-B06A9C98EE79}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Death_Wolf_Water" ID="{F3874D03-703A-4BA8-AB25-6BE71D36A5EE}">
-							<ChildrenList>
-								<Action Name="Play" ID="{09E1FD06-4215-4381-A35E-B981F55F31C2}" ShortID="1044086152" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{074217C3-4CD2-4088-B05A-685BD30B3A4D}" Global="false">
-											<ObjectRef Name="Death_Water" ID="{27E718BC-6A0B-4EED-916A-5A0BFDCD761C}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Move" ID="{8FDD28FB-8EE8-4E0C-9D6B-5BCC8268392B}" ShortID="104694395">
 					<ChildrenList>
 						<Event Name="Move_Fox" ID="{BC40411F-76E7-46D5-A6EA-200D48FA4EBD}">
