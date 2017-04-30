@@ -11,6 +11,12 @@ namespace Game
 
         void Awake()
         {
+            GasToCollect = 0;
+            GasCollected = 0;
+        }
+
+        void Start()
+        {
             GasToCollect++;
         }
 
