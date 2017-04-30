@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 33388422535946626}
   - component: {fileID: 23960276629000384}
   m_Layer: 0
-  m_Name: Spaceship
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,8 +122,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.51922596, z: 0.9}
-  m_Center: {x: -0.001987934, y: 0.30841005, z: -0.0019874573}
+  m_Size: {x: 0.5, y: 0.9, z: 0.5}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &114549499266401910
 MonoBehaviour:
   m_ObjectHideFlags: 1
