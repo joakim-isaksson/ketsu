@@ -5,12 +5,30 @@
 			<ChildrenList>
 				<Folder Name="Level" ID="{4A74E382-EDFC-4024-A900-8E9D4CFAE44E}" ShortID="322833797">
 					<ChildrenList>
-						<Event Name="Character_Hit_Water" ID="{6F0B49E5-A126-41F8-B4E5-0BB936D05F5B}">
+						<Event Name="Character_Blocked" ID="{C6E1CF55-124D-4196-8750-1D61C79A4668}">
 							<ChildrenList>
-								<Action Name="Play" ID="{0499FBC6-EF08-4DCC-B236-B464CF1DD0D1}" ShortID="347149309" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{13E10D8B-666A-4B57-8D55-A15EC448A923}" ShortID="37799064" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{9A27AA02-7A2D-4077-9484-FB2DA6C97988}" Global="false">
-											<ObjectRef Name="Character_Hit_Water" ID="{41353411-FBDB-4162-9D7D-76B7BC12AF70}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										<Element ID="{440D2DBF-00BD-4C3E-8CED-01DBAEAA14E6}" Global="false">
+											<ObjectRef Name="SFX_Character_Blocked" ID="{08930220-7D57-45AD-8657-77F02CC39AAB}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{F42475DB-4D6E-4997-8D7A-2CB2BF576E50}" ShortID="901593464" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{7DB99F40-B15F-468B-BAF0-BCE6B67ADE9D}" Global="false">
+											<ObjectRef Name="LevelMusic_PianoCluster" ID="{A2CD6A07-F5CB-4F91-B3B8-3D3684C53A86}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Level_Start" ID="{FD3105A9-2679-4479-829E-84B047922D6E}">
+							<ChildrenList>
+								<Action Name="Play" ID="{C324568D-4A26-4C79-8FD4-213F837F2BB4}" ShortID="878333154" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{4DB199B6-13C3-4F01-98F3-A0F3CEAEDC9E}" Global="false">
+											<ObjectRef Name="SFX_LevelStart" ID="{1966C171-9A57-4F37-948E-CBD131CE636F}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -18,14 +36,71 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" ShortID="13681788"/>
+				<Folder Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" ShortID="13681788">
+					<ChildrenList>
+						<Event Name="Collect_Gem" ID="{8816915C-FE30-4470-AC46-7A0C90A17746}">
+							<ChildrenList>
+								<Action Name="Play" ID="{23B7CBB0-6E9D-48C9-A1F2-4AC20252278F}" ShortID="1047933544" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{978F767A-80E3-4200-8C12-5DE39861CAF8}" Global="false">
+											<ObjectRef Name="Gem" ID="{5528C550-5391-455E-B250-CBF72FEE36FD}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Collect_Gas" ID="{B8A107A2-7DC1-4371-A7C4-B547998535B1}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7D3C31B4-53EA-4841-A237-D32FE8B922D0}" ShortID="143251159" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{BD34F77C-7166-462C-A8BD-368991B2A2D5}" Global="false">
+											<ObjectRef Name="Gas" ID="{5FD82C93-6376-4E14-AAEA-081313235275}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Collect_LastGas" ID="{5BD5532E-DA01-4B92-9CA0-8B345D7BF9F0}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F906C0F1-9925-4AC2-A0CB-8E4636CAB41F}" ShortID="693063852" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{E8EFF26C-797B-4C16-9973-4251D08C914F}" Global="false">
+											<ObjectRef Name="Gas" ID="{5FD82C93-6376-4E14-AAEA-081313235275}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{57E29EBA-A1E6-4EC7-A6AD-A1FA1F32056F}" ShortID="676231674" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2F4E9C5A-6120-4AE9-A949-5C628BDDBDF1}" Global="false">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Play" ID="{258619A1-69F9-4D89-A426-5A613C9BB6ED}" ShortID="965354621" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="10"/>
+										<Property Name="FadeTime" Type="Real64" Value="10"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{2ECCC641-3757-49F0-9448-2F6C33B0CB06}" Global="false">
+											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 				<Folder Name="Transform" ID="{552283F4-17D6-499D-916B-0D4C116621EE}" ShortID="985789474">
 					<ChildrenList>
 						<Event Name="Transform_ToKetsu" ID="{817FCAD0-0B99-490F-BB41-A93A56B87BD6}">
 							<ChildrenList>
 								<Action Name="Play" ID="{D3489379-5EDB-4A5E-ABD1-C3F170743DCE}" ShortID="280515926" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{8BF9126D-9154-4F6D-A785-165731FAC1C1}" Global="false">
+										<Element ID="{755976F0-C39D-4923-B48C-B38832B0ABF7}" Global="false">
 											<ObjectRef Name="Transform_ToKetsu" ID="{EB866A0E-B3D1-4C0E-AA0C-8993E9818615}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
@@ -36,7 +111,7 @@
 							<ChildrenList>
 								<Action Name="Play" ID="{0F6100B2-E395-4484-BFD1-883D189618BB}" ShortID="271007279" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{B92C1593-44E9-4CAA-B2BB-BFEDE1BCD986}" Global="false">
+										<Element ID="{F03D51E9-83BE-47C0-AC57-B79E2619A4BE}" Global="false">
 											<ObjectRef Name="Transform_FromKetsu" ID="{B0597F42-416A-413A-91E9-05AC6E442E02}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>

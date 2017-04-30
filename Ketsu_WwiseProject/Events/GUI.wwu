@@ -5,71 +5,34 @@
 			<ChildrenList>
 				<Folder Name="Button" ID="{4B4A0BE4-6717-4B93-82AA-118241A56DA3}" ShortID="698507837">
 					<ChildrenList>
-						<Event Name="GUI_Settings_Button" ID="{65E6882C-DC2A-4499-88E5-7BC86F36C60E}">
-							<ChildrenList>
-								<Action Name="Play" ID="{0A0598AA-7204-4FF8-808A-078ECA5F65D8}" ShortID="452241182" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{F220DFEB-36A9-4895-BB28-19D4FA086A23}" Global="false">
-											<ObjectRef Name="GUI_Settings_Button" ID="{EDADEE30-647C-4F08-98B4-4B5108F296A5}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="GUI_Chicken_Button" ID="{8AD51EE0-7AF3-4990-A41A-096B86806626}">
-							<ChildrenList>
-								<Action Name="Play" ID="{A64DD215-0802-45A9-8FC3-F83301F8A346}" ShortID="736138237" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{0AFA72BD-4049-419E-8D59-300BDB685884}" Global="false">
-											<ObjectRef Name="GUI_Chicken_Button" ID="{A094E994-E075-461F-8BF8-868CF29A4E09}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="GUI_Sheep_Button" ID="{123E6AFB-1C18-412E-8440-18E0DF5C4375}">
-							<ChildrenList>
-								<Action Name="Play" ID="{F4154A26-C21A-40DB-AB62-FAC16F670566}" ShortID="389618118" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{507E59D9-8EE2-4FE0-9DAA-CBA8652424BB}" Global="false">
-											<ObjectRef Name="GUI_Sheep_Button" ID="{6876D7D0-1A97-4AB3-BB5E-3C222DA15259}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="GUI_PowerUp_Crystal_Button" ID="{7E78A096-80AB-4031-BCEA-C27A48428577}">
+						<Event Name="GUI_Undo_Button" ID="{7E78A096-80AB-4031-BCEA-C27A48428577}">
 							<ChildrenList>
 								<Action Name="Play" ID="{28DB20D0-14C7-4610-9054-9D7A21EE558C}" ShortID="503305435" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{A873AB05-9A93-4C5F-867F-4B8CB40A0465}" Global="false">
-											<ObjectRef Name="GUI_PowerUp_Crystal_Button" ID="{F8D77FB7-5771-4AFD-9ABF-D6B89279F850}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="GUI_Undo_Button" ID="{B9564F85-076C-4E75-A635-38CCB0F08207}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="GUI_MaxPowerUp_Crystal_Button" ID="{C79D5FC5-F9DC-48ED-B04E-228EB0E237F9}">
+						<Event Name="GUI_MainMenu_Button" ID="{C79D5FC5-F9DC-48ED-B04E-228EB0E237F9}">
 							<ChildrenList>
 								<Action Name="Play" ID="{611638AA-34C0-41AB-8886-1DD2B4AF8DF5}" ShortID="50580585" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{D21228D9-5A20-448E-BD56-A97FB10FD91C}" Global="false">
-											<ObjectRef Name="GUI_MaxPowerUp_Crystal_Button" ID="{AAE4C06D-D551-46BC-BAC1-CE4B24866973}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="GUI_MainMenu_Button" ID="{51AAD0C9-CC53-44CF-9C74-31CCE60DD88B}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
 							</ChildrenList>
 						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Function" ID="{F1B1DDD5-8C6C-4862-B015-A3281FF08E27}" ShortID="964134061">
-					<ChildrenList>
-						<Event Name="GUI_KetsuPower_Increase" ID="{58F858B5-3551-45E5-A2D3-11C58279CE30}">
+						<Event Name="GUI_Restart_Button" ID="{ABBA25FD-30BE-442B-8626-3250E403C362}">
 							<ChildrenList>
-								<Action Name="Play" ID="{CC099572-1E52-4699-ABFC-838ACA5E48DB}" ShortID="98850898" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{AA41DA4C-571C-4895-A49F-17750406612F}" ShortID="434453556" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{EFB8F560-5C78-4C13-B1DF-3942178A864D}" Global="false">
-											<ObjectRef Name="GUI_KetsuPower_Increase" ID="{163B7996-80B0-4F97-80BA-4827C8BFE2EF}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										<Element ID="{DB04D8CA-FCC7-40FC-8344-A299FE60B115}" Global="false">
+											<ObjectRef Name="GUI_Restart_Button" ID="{0B3E72C5-C3B0-4515-87B2-23533C0D359C}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -120,65 +83,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Toolbox" ID="{FA29E835-453E-49F5-A77F-75A0B1C6CC6C}" ShortID="531505082">
-					<ChildrenList>
-						<Event Name="Toolbox_Collect_Coins" ID="{26FA2599-C036-4EBC-B627-6968EE22E62C}">
-							<ChildrenList>
-								<Action Name="Play" ID="{F268C4AC-D7A8-4A90-BA01-A3BF2FABAABA}" ShortID="507861264" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{55664AAD-AF4A-402D-B429-482DF8E5AFEA}" Global="false">
-											<ObjectRef Name="Toolbox_Collect_Coins" ID="{5390D59A-E6A1-4ABC-9322-1B7A7FADE0FC}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Toolbox_Collect_KetsuPowerUp" ID="{F6FB641E-F9CA-474B-B84E-CAAC1D19835B}">
-							<ChildrenList>
-								<Action Name="Play" ID="{A00BB88B-338E-48D0-A8AF-5BB52EBA0CBD}" ShortID="992522539" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{49F87A9F-CEC3-4DFA-98D2-9D49590D7EC4}" Global="false">
-											<ObjectRef Name="Toolbox_Collect_KetsuPowerUp" ID="{7B26382D-BE1D-44CC-A708-02DDB383752A}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{20B63C05-4ED6-4DD0-A8B7-45650156C1EC}">
-							<ChildrenList>
-								<Action Name="Play" ID="{A3718EF7-787F-440D-85FE-4551620DD61B}" ShortID="815928079" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{D0D79CDA-8BA9-4E52-AFA1-99F68EB8EA72}" Global="false">
-											<ObjectRef Name="Toolbox_Collect_KetsuMaxPowerUp" ID="{39E78319-6DDB-48FB-9F44-6C82558FB820}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Toolbox_Open" ID="{7E454212-0C34-4264-95E2-5DE06682C1B8}">
-							<ChildrenList>
-								<Action Name="Play" ID="{E1851078-FA58-469B-AA3F-1C10069188C3}" ShortID="723071355" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{68826BDC-ACD0-414B-94DC-43F120DF4305}" Global="false">
-											<ObjectRef Name="Toolbox_Open" ID="{EFC9F593-8F43-433A-BFC7-0AA3B0E50437}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Toolbox_Collect_SpaceshipPart" ID="{DE90AA62-761D-4032-844C-8632436A97B2}">
-							<ChildrenList>
-								<Action Name="Play" ID="{73AD9605-4114-40AF-B87D-79C971E50F0C}" ShortID="823912131" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{E6085CFC-161C-4E67-8C7B-2504C2C64224}" Global="false">
-											<ObjectRef Name="Toolbox_Collect_SpaceshipPart" ID="{9B1AC3DF-FC6D-40E7-8DCE-AA696C441D16}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="WinScreen" ID="{C5BD384A-2312-4195-8B60-F8089C53189D}" ShortID="722338214">
 					<ChildrenList>
 						<Event Name="WinScreen_Next_Button" ID="{336B79AB-F429-4846-843B-03130AE3C738}">
@@ -186,7 +90,7 @@
 								<Action Name="Play" ID="{527BCB37-FFC9-4161-941E-C90EE4BDC953}" ShortID="896710988" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{C31C3833-75CA-402E-8B19-DF78453B8A0A}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Next_Button" ID="{A0538153-6B26-48AF-9E0A-EEA0F20E3C98}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_WinScreen_Next_Button" ID="{36F46E1D-5903-4849-AEB7-20E88C03BEF1}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -208,77 +112,7 @@
 								<Action Name="Play" ID="{5122D213-2503-4CF8-A522-1FA5B1173713}" ShortID="292551299" Type="Play" Scope="One" Global="false">
 									<ElementList>
 										<Element ID="{7D263AA3-CB84-4747-AC06-786C8C3C0FAD}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Restart_Button" ID="{3FCB3807-FE82-4113-8B78-C87F5F125207}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="WinScreen_Store_Button" ID="{85D8DEE1-A8B3-4744-AEF3-64DE73A69590}">
-							<ChildrenList>
-								<Action Name="Play" ID="{6D48E43D-2F0B-4DE2-973D-993780A1E652}" ShortID="978894601" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{4D1A2D02-6DAB-4310-999C-FF9EE9B4BB8A}" Global="false">
-											<ObjectRef Name="UI_WinScreen_Store_Button" ID="{15072664-5B30-4582-B993-5665491242F4}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="PopupMenu" ID="{7B427E8D-C581-4E87-9397-BE94D742A194}" ShortID="978886400">
-					<ChildrenList>
-						<Event Name="PopupMenu_Store_Button" ID="{46FB623A-755C-4486-A2D3-39CCE6B80EBF}">
-							<ChildrenList>
-								<Action Name="Play" ID="{52647FCE-3A11-44A9-9BD8-EA283D627E1D}" ShortID="787359074" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{020E385F-973F-4DBF-A045-A882F84337D0}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Store_Button" ID="{94CE0F1B-649E-46C0-A38C-77085DC9543D}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_Back_Button" ID="{EDBE9FFF-709D-4E84-8C29-EEFB0685BF53}">
-							<ChildrenList>
-								<Action Name="Play" ID="{348F8B13-CE6B-4DF4-905F-595AE179AB30}" ShortID="807336240" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{3CDE4F89-B053-4FB1-A9B4-3BF808CBB815}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Back_Button" ID="{F55B806F-11C7-4890-AE66-0F354305726D}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_MainMenu_Button" ID="{D7CBCBB2-F8B8-43B7-A005-B094B2E56830}">
-							<ChildrenList>
-								<Action Name="Play" ID="{48890E73-8CD1-449C-A573-8B21818F78E4}" ShortID="733028109" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{02EBDE56-B66F-4AB8-B99E-95D44565325F}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_MainMenu_Button" ID="{526F0B4A-A242-41A0-9757-3BF729A2BC40}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopupMenu_Restart_Button" ID="{FFAD17D3-859B-4E59-A8F0-9FA99ADB78FE}">
-							<ChildrenList>
-								<Action Name="Play" ID="{351BDDF9-BB61-4CBA-AEAB-72A71C9BC9FD}" ShortID="223260947" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{AC919AE6-7685-4B4E-9F9C-7004A93F8321}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Restart_Button" ID="{1AB91B0D-8DB6-48B4-BF0D-86DC3397ED77}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="PopopMenu_Settings_Button" ID="{E873E013-F1E4-42F3-A601-520C914AE8FF}">
-							<ChildrenList>
-								<Action Name="Play" ID="{F1AAB411-1DB1-4D37-8761-0EDEB1712A8F}" ShortID="699321049" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{53CE7009-0346-4565-909A-1F1B482FEA3F}" Global="false">
-											<ObjectRef Name="UI_PopupMenu_Settings_Button" ID="{BA077BD5-4B70-4D60-BFCA-BD9686B407A4}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+											<ObjectRef Name="UI_PopupMenu_Restart_Button" ID="{7E7CE96F-F4F5-4537-A080-28893E2D3E75}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
 										</Element>
 									</ElementList>
 								</Action>
