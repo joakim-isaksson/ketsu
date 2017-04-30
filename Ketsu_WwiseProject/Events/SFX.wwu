@@ -105,6 +105,16 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Play" ID="{A6A389A2-DCC4-415C-AB3E-0B51BB448D1A}" ShortID="368602017" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{262A2D00-2F77-49D1-9262-7660863156BA}" Global="false">
+											<ObjectRef Name="SFX_Ketsu_BuildUp" ID="{34295A4A-6C83-4BB1-B048-EE32BD894243}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Transform_FromKetsu" ID="{EFBE8801-F644-41D8-AC83-8FFBAE216F44}">
@@ -113,6 +123,26 @@
 									<ElementList>
 										<Element ID="{F03D51E9-83BE-47C0-AC57-B79E2619A4BE}" Global="false">
 											<ObjectRef Name="Transform_FromKetsu" ID="{B0597F42-416A-413A-91E9-05AC6E442E02}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{BF96B840-3F68-409D-95FA-B4E9E09D653E}" ShortID="443937255" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{0182A442-23A0-47CE-9E2F-084646F5B2FC}" Global="true">
+											<ObjectRef Name="Transform_ToKetsu" ID="{EB866A0E-B3D1-4C0E-AA0C-8993E9818615}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{73CC0BC4-57B4-4C12-924A-AAF7388F8D3B}" ShortID="860258575" Type="Stop" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A549CC73-B8D5-4DAB-9F80-9B1798FAB5E2}" Global="false">
+											<ObjectRef Name="SFX_Ketsu_BuildUp" ID="{34295A4A-6C83-4BB1-B048-EE32BD894243}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>

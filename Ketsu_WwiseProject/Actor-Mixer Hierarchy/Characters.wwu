@@ -871,7 +871,7 @@
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>80</Value>
+												<Value>100</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -909,7 +909,7 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>150</Value>
+												<Value>230</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -947,7 +947,7 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>220</Value>
+												<Value>350</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -985,7 +985,7 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>330</Value>
+												<Value>450</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1023,7 +1023,7 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>420</Value>
+												<Value>560</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

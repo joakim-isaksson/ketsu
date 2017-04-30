@@ -153,17 +153,10 @@
 					<ChildrenList>
 						<Event Name="Level_Win" ID="{F00C3B8C-BB68-4E4D-B8D3-B683C7BFB6C5}">
 							<ChildrenList>
-								<Action Name="Play" ID="{93975E0C-F2E5-41E8-A042-FBBB5708B347}" ShortID="260633763" Type="Play" Scope="One" Global="false">
+								<Action Name="Play" ID="{5D968311-2C6D-4E8D-8E6A-663ED2C61BEB}" ShortID="1031530262" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{19A44613-12C9-41F2-8164-7E121D594CFC}" Global="false">
-											<ObjectRef Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{7B576CD9-180C-4F4A-A2A4-B6440BBAE666}" ShortID="230540432" Type="Stop" Scope="One" Global="true">
-									<ElementList>
-										<Element ID="{C7DDCB9B-D3B5-4CA2-817A-64D614743A74}" Global="true">
-											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										<Element ID="{28B2ED8C-E283-4FA9-9D44-982C4C290328}" Global="false">
+											<ObjectRef Name="SFX_LevelWin" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>
