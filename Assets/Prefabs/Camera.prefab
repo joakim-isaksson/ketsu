@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mode: 0
-  intensity: 0.28
+  intensity: 0.1
   chromaticAberration: 0.2
   axialAberration: 0.5
   blur: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  exposureAdjustment: 1.5
+  exposureAdjustment: 2.5
   middleGrey: 0.4
   white: 2
   adaptionSpeed: 1.5

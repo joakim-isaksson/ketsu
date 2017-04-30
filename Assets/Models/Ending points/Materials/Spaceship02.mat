@@ -85,7 +85,7 @@ Material:
       second: 10
     - first:
         name: _GlossMapScale
-      second: 0.5
+      second: 0.2
     - first:
         name: _Glossiness
       second: 0.62
