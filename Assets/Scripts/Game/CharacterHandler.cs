@@ -24,8 +24,9 @@ namespace Game
         [Header("Sounds")]
         public string TrainsformToKetsuSfx;
         public string SplitKetsuSfx;
+	    public string SfxBlocked;
 
-	    [Header("Effects")]
+        [Header("Effects")]
 	    public GameObject MergeEffectPrefab;
 	    public GameObject SplitEffectPrefab;
 
@@ -297,6 +298,8 @@ namespace Game
                     activeMoving = false;
                     if (otherPointer != null && otherPointer.Ground.Type == MapObjectType.Ice) otherPointer = otherTarget;
                     else otherMoving = false;
+
+                    AkSoundEngine.PostEvent(SfxBlocked, gameObject);
                 }
 
                 // Other is blocked
@@ -305,6 +308,8 @@ namespace Game
                     otherMoving = false;
                     if (activePointer.Ground.Type == MapObjectType.Ice) activePointer = activeTarget;
                     else activeMoving = false;
+
+                    AkSoundEngine.PostEvent(SfxBlocked, gameObject);
                 }
 
                 // Both are blocked
