@@ -295,7 +295,7 @@ namespace Game
                 else if (activeTarget.Blocker != null && (other == null || otherTarget.Blocker == null))
                 {
                     activeMoving = false;
-                    if (otherPointer.Ground.Type == MapObjectType.Ice) otherPointer = otherTarget;
+                    if (otherPointer != null && otherPointer.Ground.Type == MapObjectType.Ice) otherPointer = otherTarget;
                     else otherMoving = false;
                 }
 
