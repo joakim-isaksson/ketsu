@@ -11,18 +11,19 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1464325256100794}
   m_IsPrefabParent: 1
---- !u!1 &1332417405301278
+--- !u!1 &1063838826622116
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4887605696196162}
-  - component: {fileID: 33601632311822992}
-  - component: {fileID: 23265143143087800}
+  - component: {fileID: 4762150524475780}
+  - component: {fileID: 114924188480075362}
+  - component: {fileID: 33270361240969614}
+  - component: {fileID: 23491897639161838}
   m_Layer: 0
-  m_Name: FlowerYellow04
+  m_Name: Flowers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +73,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4887605696196162}
+  - {fileID: 4762150524475780}
   - {fileID: 4481821878930196}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -90,12 +91,12 @@ Transform:
   m_Father: {fileID: 4468379717355088}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4887605696196162
+--- !u!4 &4762150524475780
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1332417405301278}
+  m_GameObject: {fileID: 1063838826622116}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -135,12 +136,12 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!23 &23265143143087800
+--- !u!23 &23491897639161838
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1332417405301278}
+  m_GameObject: {fileID: 1063838826622116}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -167,12 +168,12 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33601632311822992
+--- !u!33 &33270361240969614
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1332417405301278}
+  m_GameObject: {fileID: 1063838826622116}
   m_Mesh: {fileID: 4300000, guid: 12a1a1092a1bf9747be5df1f6f8e1275, type: 3}
 --- !u!33 &33779760848463270
 MeshFilter:
@@ -207,3 +208,21 @@ MonoBehaviour:
   Type: 4
   Layer: 0
   NotBlockedBy: 
+--- !u!114 &114924188480075362
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1063838826622116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a66ae45a939abd04abeddbef0dbaceb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PositionOffsetMin: {x: -0.05, y: 0, z: -0.05}
+  PositionOffsetMax: {x: 0.05, y: 0, z: 0.05}
+  RotationOffsetMin: {x: 0, y: -5, z: 0}
+  RotationOffsetMax: {x: 0, y: 5, z: 0}
+  KeepScaleRatio: 1
+  ScaleMultiplierMin: {x: 0.9, y: 0.9, z: 0.9}
+  ScaleMultiplierMax: {x: 1.1, y: 1.1, z: 1.1}
