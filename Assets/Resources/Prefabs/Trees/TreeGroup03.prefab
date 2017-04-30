@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4273338104505328}
+  - component: {fileID: 114703018619688662}
   - component: {fileID: 33770981295650886}
   - component: {fileID: 23525739635203664}
   m_Layer: 0
@@ -38,7 +39,6 @@ GameObject:
   - component: {fileID: 4085659551463512}
   - component: {fileID: 65635458843785050}
   - component: {fileID: 114344674236638738}
-  - component: {fileID: 114898303346666834}
   m_Layer: 0
   m_Name: TreeGroup03
   m_TagString: Untagged
@@ -66,8 +66,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1629529541290458}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4085659551463512}
@@ -122,8 +122,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.91190976, z: 0.9}
-  m_Center: {x: 0, y: 0.4743972, z: 0}
+  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &114344674236638738
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,14 +138,21 @@ MonoBehaviour:
   Type: 15
   Layer: 1
   NotBlockedBy: 
---- !u!114 &114898303346666834
+--- !u!114 &114703018619688662
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1924480143522368}
+  m_GameObject: {fileID: 1629529541290458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9eeac84c3cc64c5bbfc309009ce74e8, type: 3}
+  m_Script: {fileID: 11500000, guid: a66ae45a939abd04abeddbef0dbaceb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PositionOffsetMin: {x: -0.1, y: -0.15, z: -0.1}
+  PositionOffsetMax: {x: 0.1, y: 0, z: 0.1}
+  RotationOffsetMin: {x: -3, y: 0, z: -3}
+  RotationOffsetMax: {x: 3, y: 360, z: 3}
+  KeepScaleRatio: 1
+  ScaleMultiplierMin: {x: 0.9, y: 0.9, z: 0.9}
+  ScaleMultiplierMax: {x: 1.1, y: 1.1, z: 1.1}
