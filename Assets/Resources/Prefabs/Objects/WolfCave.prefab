@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33400770406776472}
   - component: {fileID: 23254017930827400}
   m_Layer: 0
-  m_Name: Rocket
+  m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,8 +120,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.7680036, z: 0.9}
-  m_Center: {x: -0.0065167546, y: 0.41267556, z: -0.00521338}
+  m_Size: {x: 0.9, y: 0.9, z: 0.9}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &114983334246727512
 MonoBehaviour:
   m_ObjectHideFlags: 1
