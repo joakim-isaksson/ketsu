@@ -1570,6 +1570,9 @@ MonoBehaviour:
   NotBlockedBy: 01000000080000000e000000
   MoveAnimTime: 0.2
   SfxMove: Move_Ketsu
+  SfxSlideStart: Move_Ketsu_Ice
+  SfxSlideStop: Stop_Ketsu_Ice
+  SwitchGroupName: 
 --- !u!114 &114796153408796744
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1148,6 +1148,9 @@ MonoBehaviour:
   NotBlockedBy: 01000000080000000b0000000e00000012000000
   MoveAnimTime: 0.2
   SfxMove: Move_Wolf
+  SfxSlideStart: Move_Wolf_Ice
+  SfxSlideStop: Stop_Wolf_Ice
+  SwitchGroupName: Tile_Material_Wolf
 --- !u!137 &137521438589086492
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
