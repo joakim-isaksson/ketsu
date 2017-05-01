@@ -92,7 +92,6 @@
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="3+2lZnlANEyK4UUZR7NlVg=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value="tSKwx2cyeUuFogWgV3S1Tw=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="SettingsUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="3+2lZnlANEyK4UUZR7NlVg=="/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>

@@ -25,6 +25,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Stop" ID="{12DECFA5-E44B-46C5-84D3-4B947FADC7FF}" ShortID="664536204" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{B2B2E30D-9CDD-452B-8543-8C620FAEA2F0}" Global="true">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="GUI_Restart_Button" ID="{ABBA25FD-30BE-442B-8626-3250E403C362}">
@@ -36,25 +43,10 @@
 										</Element>
 									</ElementList>
 								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Split" ID="{8F8E4E4D-343A-4966-88B0-C14B62DA2EA4}" ShortID="436963471">
-					<ChildrenList>
-						<Event Name="GUI_Split_Release" ID="{2F3A630F-8B1A-4238-A03F-BF1AD39F0CF3}">
-							<ChildrenList>
-								<Action Name="Stop" ID="{0E99072E-62B2-4D95-BD2E-C21F4E8D7EAF}" ShortID="173775474" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{C5C26E9A-5ABB-486B-B87D-100ECE7C3FB4}" ShortID="302084328" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{1FC5F629-F4D4-473D-9EBF-4CA5DC9DBAD3}" Global="false">
-											<ObjectRef Name="GUI_Split_BuildUp" ID="{9F6C28F0-CFF0-43EC-BE8F-A9DDC7817FF6}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{D9C7CCA4-6D35-4C73-B2CF-BA41549C5C8C}" ShortID="11800406" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{8E62DD51-7CBE-4C28-A62C-C97C2D8908EE}" Global="false">
-											<ObjectRef Name="GUI_Split_Release" ID="{85D1810A-45A5-4BFE-9FBE-CD5A7BD93960}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										<Element ID="{27A65937-98B9-4313-A856-9C9F02A2B8ED}" Global="true">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -73,10 +65,10 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{38517EFD-A4F9-4889-B888-32673490E913}" ShortID="619700393" Type="Stop" Scope="One" Global="true">
+								<Action Name="Stop" ID="{2311B0EF-6AFC-4C12-9B92-1E8B832F7466}" ShortID="190079249" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{D67282C6-5B31-4144-B99E-AC23F039C2DB}" Global="true">
-											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										<Element ID="{38181183-F3DC-43CE-830B-C010B33A4B58}" Global="true">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -91,10 +83,10 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{0109D95A-0977-41AF-80F1-7CA7D479ED94}" ShortID="637625901" Type="Stop" Scope="One" Global="true">
+								<Action Name="Stop" ID="{C3A57B01-CAC7-4AC9-A502-D5F3D0B466CC}" ShortID="923129127" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{5237E90A-04A3-4A48-AA65-17A07E607987}" Global="true">
-											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										<Element ID="{B556459C-F01F-481F-B9F5-7AE4C456E48F}" Global="true">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -109,10 +101,10 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{14067676-5BB0-4375-9DCC-5CEFB71BAA6E}" ShortID="569583822" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{2244A2CC-C806-4F64-ABDD-0FA06020BF05}" ShortID="204124808" Type="Stop" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{3AAE1A7D-C19F-4FF4-AD1C-0988CC37F885}" Global="false">
-											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										<Element ID="{8C5F4EF5-491C-4056-83A3-7D145A6C6641}" Global="true">
+											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>

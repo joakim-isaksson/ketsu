@@ -25,7 +25,7 @@
 			<IncludedMemoryFiles>
 				<File Id="36414370" Language="SFX">
 					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
-					<Path>SFX\UI_LevelMenu_LockedLevel_Button_A939E04F.wem</Path>
+					<Path>SFX\UI_LevelMenu_LockedLevel_Button_4778543F.wem</Path>
 				</File>
 				<File Id="55153259" Language="SFX">
 					<ShortName>UI_Spaceship_Landing_02.wav</ShortName>
@@ -45,7 +45,7 @@
 				</File>
 				<File Id="443061028" Language="SFX">
 					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
-					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_A939E04F.wem</Path>
+					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_B35161E9.wem</Path>
 				</File>
 				<File Id="678610783" Language="SFX">
 					<ShortName>UI_Spaceship_Landing_01.wav</ShortName>
@@ -65,7 +65,7 @@
 				</File>
 				<File Id="1030180912" Language="SFX">
 					<ShortName>UI_LevelMenu_Level_Select.wav</ShortName>
-					<Path>SFX\UI_LevelMenu_Level_Select_A939E04F.wem</Path>
+					<Path>SFX\UI_LevelMenu_Level_Select_190AD33A.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -85,17 +85,17 @@
 				<Event Id="3215460477" Name="Play_InGameMusic3" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="211329539" Language="SFX">
+					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Peaceful_Short_F149F585.wem</Path>
+				</File>
 				<File Id="538034921" Language="SFX">
 					<ShortName>LevelMusic_Peaceful2.wav</ShortName>
-					<Path>SFX\LevelMusic_Peaceful2_2CC9493D.wem</Path>
-				</File>
-				<File Id="602394122" Language="SFX">
-					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
-					<Path>SFX\LevelMusic_Peaceful_Short_BD6BCAFD.wem</Path>
+					<Path>SFX\LevelMusic_Peaceful2_D316DD3F.wem</Path>
 				</File>
 				<File Id="669844642" Language="SFX">
 					<ShortName>LevelMusic_Hedgy_Short.wav</ShortName>
-					<Path>SFX\LevelMusic_Hedgy_Short_2CC9493D.wem</Path>
+					<Path>SFX\LevelMusic_Hedgy_Short_E1404A0C.wem</Path>
 				</File>
 				<File Id="859584638" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
@@ -114,8 +114,9 @@
 				<Event Id="4224533635" Name="Collect_LastGas" ObjectPath="\Events\SFX\Collect\Collect_LastGas"/>
 				<Event Id="3165488550" Name="GUI_MainMenu_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MainMenu_Button"/>
 				<Event Id="519893169" Name="GUI_Restart_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Restart_Button"/>
-				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
 				<Event Id="1527790590" Name="GUI_Undo_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Undo_Button"/>
+				<Event Id="2981221379" Name="Ketsu_Explosion" ObjectPath="\Events\SFX\Level\Ketsu_Explosion"/>
+				<Event Id="536687313" Name="Ketsu_Extermination" ObjectPath="\Events\SFX\Level\Ketsu_Extermination"/>
 				<Event Id="352576276" Name="Level_Start" ObjectPath="\Events\SFX\Level\Level_Start"/>
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
@@ -123,10 +124,10 @@
 				<Event Id="1889483571" Name="Move_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Move_Ketsu_Ice"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
-				<Event Id="2431936319" Name="Play_Random_Env" ObjectPath="\Events\World\Map_Env\Play_Random_Env"/>
-				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice"/>
-				<Event Id="2045277556" Name="Stop_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Stop_Ketsu_Ice"/>
-				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice"/>
+				<Event Id="1069359780" Name="Play_Map_Env" ObjectPath="\Events\World\Map_Env\Play_Map_Env"/>
+				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="2045277556" Name="Stop_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Stop_Ketsu_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice" MaxAttenuation="0.000000"/>
 				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform\Transform_FromKetsu"/>
 				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform\Transform_ToKetsu"/>
 				<Event Id="1670207177" Name="WinScreen_MainMenu_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_MainMenu_Button"/>
@@ -158,10 +159,6 @@
 					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
 					<Path>SFX\UI_PopupMenu_Restart_Button_A939E04F.wem</Path>
 				</File>
-				<File Id="110355802" Language="SFX">
-					<ShortName>LevelMusic_DirtyDrumloop.wav</ShortName>
-					<Path>SFX\LevelMusic_DirtyDrumloop_2CC9493D.wem</Path>
-				</File>
 				<File Id="123291723" Language="SFX">
 					<ShortName>Move_Mud_01.wav</ShortName>
 					<Path>SFX\Move_Mud_01_A939E04F.wem</Path>
@@ -181,6 +178,10 @@
 				<File Id="280944617" Language="SFX">
 					<ShortName>Transform_FromKetsu_01.wav</ShortName>
 					<Path>SFX\Transform_FromKetsu_01_D57E0126.wem</Path>
+				</File>
+				<File Id="287208163" Language="SFX">
+					<ShortName>Ketsu_Extermination.wav</ShortName>
+					<Path>SFX\Ketsu_Extermination_A939E04F.wem</Path>
 				</File>
 				<File Id="310840679" Language="SFX">
 					<ShortName>Move_Fox_Grass_01.wav</ShortName>
@@ -214,10 +215,6 @@
 					<ShortName>Move_OnBridge_03.wav</ShortName>
 					<Path>SFX\Move_OnBridge_03_A939E04F.wem</Path>
 				</File>
-				<File Id="463531170" Language="SFX">
-					<ShortName>GUI_Split_Release.wav</ShortName>
-					<Path>SFX\GUI_Split_Release_A939E04F.wem</Path>
-				</File>
 				<File Id="465204404" Language="SFX">
 					<ShortName>Map_Env_Birds.wav</ShortName>
 					<Path>SFX\Map_Env_Birds_2CC9493D.wem</Path>
@@ -232,7 +229,7 @@
 				</File>
 				<File Id="532480567" Language="SFX">
 					<ShortName>SFX_Character_Blocked.wav</ShortName>
-					<Path>SFX\SFX_Character_Blocked_A939E04F.wem</Path>
+					<Path>SFX\SFX_Character_Blocked_29CFB656.wem</Path>
 				</File>
 				<File Id="555482349" Language="SFX">
 					<ShortName>Move_Fox_Grass_03.wav</ShortName>
@@ -305,6 +302,10 @@
 				<File Id="744722679" Language="SFX">
 					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
 					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
+				</File>
+				<File Id="745471122" Language="SFX">
+					<ShortName>Ketsu_Explosion.wav</ShortName>
+					<Path>SFX\Ketsu_Explosion_A939E04F.wem</Path>
 				</File>
 				<File Id="778693737" Language="SFX">
 					<ShortName>Move_Fox_Ice_03.wav</ShortName>

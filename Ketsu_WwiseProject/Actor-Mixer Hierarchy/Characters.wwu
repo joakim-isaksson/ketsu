@@ -346,6 +346,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -525,7 +530,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1380,6 +1385,11 @@
 								<RandomSequenceContainer Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}" ShortID="452715858">
 									<PropertyList>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1798,7 +1808,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

@@ -4,18 +4,19 @@ Event	ID	Name			Wwise Object Path	Notes
 	171788004	WinScreen_Restart_Button			\UI\GUI\WinScreen\WinScreen_Restart_Button	
 	352576276	Level_Start			\SFX\Level\Level_Start	
 	519893169	GUI_Restart_Button			\UI\GUI\Button\GUI_Restart_Button	
+	536687313	Ketsu_Extermination			\SFX\Level\Ketsu_Extermination	
 	1052828255	Transform_ToKetsu			\SFX\Transform\Transform_ToKetsu	
+	1069359780	Play_Map_Env			\World\Map_Env\Play_Map_Env	
 	1374719650	Transform_FromKetsu			\SFX\Transform\Transform_FromKetsu	
 	1426970985	Move_Wolf_Ice			\Characters\Move\Move_Wolf_Ice	
 	1527790590	GUI_Undo_Button			\UI\GUI\Button\GUI_Undo_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\GUI\WinScreen\WinScreen_MainMenu_Button	
-	1748211077	GUI_Split_Release			\UI\GUI\Split\GUI_Split_Release	
 	1889483571	Move_Ketsu_Ice			\Characters\Move\Move_Ketsu_Ice	
 	2045277556	Stop_Ketsu_Ice			\Characters\Move\Stop_Ketsu_Ice	
-	2431936319	Play_Random_Env			\World\Map_Env\Play_Random_Env	
 	2492116432	Move_Fox			\Characters\Move\Move_Fox	
 	2494762103	Stop_Fox_Ice			\Characters\Move\Stop_Fox_Ice	
 	2660933722	WinScreen_Next_Button			\UI\GUI\WinScreen\WinScreen_Next_Button	
+	2981221379	Ketsu_Explosion			\SFX\Level\Ketsu_Explosion	
 	3165488550	GUI_MainMenu_Button			\UI\GUI\Button\GUI_MainMenu_Button	
 	3609283987	Move_Ketsu			\Characters\Move\Move_Ketsu	
 	3853446416	Stop_Wolf_Ice			\Characters\Move\Stop_Wolf_Ice	
@@ -61,12 +62,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	99673032	Move_Wolf_Grass_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Wolf_Grass_05_869E72F2.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_05		72268
 	100508892	Move_Fox_Grass_05	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_05_715830F5.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_05		51144
 	108156585	UI_PopupMenu_Restart_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_PopupMenu_Restart_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_PopupMenu_Restart_Button		44700
-	110355802	LevelMusic_DirtyDrumloop	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_DirtyDrumloop_2CC9493D.wem		\Actor-Mixer Hierarchy\Music\Stingers\LevelMusic_DirtyDrumloop		4704136
 	123291723	Move_Mud_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Mud_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_01		68496
 	147065661	Map_Env_BigWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_BigWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_BigWaterStream		10018664
 	177407952	LevelMusic_PianoCluster	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\LevelMusic_PianoCluster_A939E04F.wem		\Actor-Mixer Hierarchy\Music\Stingers\LevelMusic_PianoCluster		1675700
 	231051959	UI_WinScreen_MainMenu_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_MainMenu_Button		107888
 	280944617	Transform_FromKetsu_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_FromKetsu_01_D57E0126.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu\Transform_FromKetsu_01		298644
+	287208163	Ketsu_Extermination	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Ketsu_Extermination_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Level\Ketsu_Extermination		662004
 	310840679	Move_Fox_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_01_124E77A5.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_01		78052
 	333863694	Transform_FromKetsu_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_FromKetsu_03_B0A2F3A7.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu\Transform_FromKetsu_03		282520
 	338727587	Move_OnBridge_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_OnBridge_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_04		76912
@@ -75,11 +76,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	402022915	Move_Fox_Grass_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_02_A937F007.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_02		74288
 	426470596	Transform_ToKetsu_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_ToKetsu_01_46BBF36D.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu_01		298120
 	431942235	Move_OnBridge_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_OnBridge_03_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_03		76912
-	463531170	GUI_Split_Release	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Split_Release_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Split\GUI_Split_Release		638664
 	465204404	Map_Env_Birds	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_Birds_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Map_Env_Birds		9964292
 	478831407	SFX_Ketsu_BuildUp	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Split_BuildUp_2CC9493D.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_Ketsu_BuildUp		5208036
 	519315026	Map_Env_BeesOnFlowers	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_BeesOnFlowers_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Map_Env_BeesOnFlowers		3661288
-	532480567	SFX_Character_Blocked	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\SFX_Character_Blocked_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_Character_Blocked		118244
+	532480567	SFX_Character_Blocked	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\SFX_Character_Blocked_29CFB656.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_Character_Blocked		70700
 	555482349	Move_Fox_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_03_9F489FA3.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_03		53920
 	563726059	Move_Mud_06	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Mud_06_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Mud\Move_Mud_06		68496
 	616983996	Move_Wolf_Ice_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Wolf_Ice_02_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ice\Move_Wolf_Ice_02		159972
@@ -98,6 +98,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	727160745	UI_WinScreen_Next_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\UI_WinScreen_Next_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\WinScreen\UI_WinScreen_Next_Button		44700
 	739142328	SFX_Collect_Gas_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\SFX_Collect_Gas_02_C687B596.wem		\Actor-Mixer Hierarchy\SFX\Collect\Gas\SFX_Collect_Gas_02		520476
 	744722679	Map_Env_SmallWaterStream	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Map_Env_SmallWaterStream_2CC9493D.wem		\Actor-Mixer Hierarchy\World\Map_Env\Water\Map_Env_SmallWaterStream		9966828
+	745471122	Ketsu_Explosion	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Ketsu_Explosion_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Level\Ketsu_Explosion		1088320
 	778693737	Move_Fox_Ice_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Ice_03_2CC9493D.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ice\Move_Fox_Ice_03		163740
 	780048494	Move_Fox_Ground_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Ground_02_A56D3720.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Ground\Move_Fox_Ground_02		50868
 	785333790	Move_Wolf_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Wolf_Grass_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_01		73800
