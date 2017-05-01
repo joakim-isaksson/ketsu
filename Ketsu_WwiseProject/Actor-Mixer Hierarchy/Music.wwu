@@ -26,6 +26,11 @@
 						<Sound Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" ShortID="1063625359" Type="SoundFX">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -214,7 +219,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-30</Value>
+										<Value>-28</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

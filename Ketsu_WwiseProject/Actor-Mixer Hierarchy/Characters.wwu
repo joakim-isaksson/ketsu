@@ -193,10 +193,15 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -342,7 +347,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -675,10 +680,15 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>7</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1114,10 +1124,15 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>4</Value>
+										<Value>10</Value>
 									</ValueList>
 								</Property>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1263,10 +1278,15 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1505,7 +1525,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1596,7 +1616,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>

@@ -9,7 +9,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -28,8 +28,7 @@
 								</Reference>
 							</ReferenceList>
 						</Bus>
-						<Bus Name="UI" ID="{52C4E2D9-4E8B-4D75-B919-F4ED9CCB1CC2}"/>
-						<Bus Name="Characters" ID="{8086BEDF-F6E5-4949-AE51-1F1335C4F909}">
+						<Bus Name="UI" ID="{52C4E2D9-4E8B-4D75-B919-F4ED9CCB1CC2}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
@@ -38,6 +37,7 @@
 								</Property>
 							</PropertyList>
 						</Bus>
+						<Bus Name="Characters" ID="{8086BEDF-F6E5-4949-AE51-1F1335C4F909}"/>
 					</ChildrenList>
 				</Bus>
 				<Bus Name="Master Secondary Bus" ID="{D2E0BC7E-7B3F-4FFE-A670-FAE02761B631}"/>

@@ -228,6 +228,36 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Stop" ID="{C85847B1-F4B8-4762-8A93-E4E2C13D6CE4}" ShortID="1057820010" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{A9C1D509-A44A-4D5D-976F-A8FD079873FB}" Global="true">
+											<ObjectRef Name="Animals" ID="{D81F0DF1-7C48-4BD3-81E8-395221C46462}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{8381DB28-0661-4055-BEC1-FB2CF6A75DCD}" ShortID="191761147" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{E7FF79B8-E211-4A9F-A952-68B80AC0C4DA}" Global="true">
+											<ObjectRef Name="Water" ID="{B82461E9-87DD-462F-BA07-496FC4F3048C}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{F88F55F4-5659-4B00-87AA-C948B3F948BF}" ShortID="52603257" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{6F65381A-7AB5-4012-95CE-1A6BA01A42F6}" Global="true">
+											<ObjectRef Name="Wind" ID="{830DE85F-F338-4822-AAC9-043E2E8CB606}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
