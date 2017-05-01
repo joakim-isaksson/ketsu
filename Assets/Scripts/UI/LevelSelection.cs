@@ -17,6 +17,7 @@ public class LevelSelection : MonoBehaviour
     public bool important;
     Color StartColor = new Color(0.898f, 0.729f, 0.000f, 1.000f);
     Color EndColor = new Color(0.898f, 0.534f, 0.000f, 1.000f);
+    bool animating;
 
 	void Start(){
 		rend = GetComponent<Renderer>();
@@ -25,29 +26,41 @@ public class LevelSelection : MonoBehaviour
 		    StartCoroutine(FlyToBase(currentBase));
 	}
 
-	void OnMouseDown(){
+	void OnMouseDown()
+	{
+	    if (animating) return;
+
 		if(spaceship.transform.rotation == transform.rotation)
 			StartCoroutine(Load());
 		else
         	StartCoroutine(Fly());
   	}  
 
-  	IEnumerator Fly(){
+  	IEnumerator Fly()
+	{
+	    animating = true;
   		AkSoundEngine.PostEvent("LevelMenu_UnlockedLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, transform.rotation, t);
             yield return null;
         }
-  	}
+	    spaceship.transform.rotation = transform.rotation;
+	    animating = false;
+	}
 
-  	IEnumerator FlyToBase(GameObject Base){
-		for(float t = 0f; t < 1; t += Time.deltaTime) {
+  	IEnumerator FlyToBase(GameObject Base)
+    {
+	    animating = true;
+        for (float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.rotation = Quaternion.Lerp(spaceship.transform.rotation, Base.transform.rotation, t);
             yield return null;
         }
-  	}
+        spaceship.transform.rotation = Base.transform.rotation;
+        animating = false;
+    }
 
-  	IEnumerator Load(){
+  	IEnumerator Load()
+    {
   		AkSoundEngine.PostEvent("LevelMenu_StartLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
@@ -62,7 +75,8 @@ public class LevelSelection : MonoBehaviour
   		yield return null;
   	}
 
-  	void Update(){
+  	void Update()
+    {
   		if(important)
         	rend.material.color = Color.Lerp(StartColor, EndColor, Mathf.PingPong(Time.time, 1));
   	}
