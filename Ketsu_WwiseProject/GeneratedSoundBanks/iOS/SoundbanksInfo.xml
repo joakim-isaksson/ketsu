@@ -114,7 +114,6 @@
 				<Event Id="4224533635" Name="Collect_LastGas" ObjectPath="\Events\SFX\Collect\Collect_LastGas"/>
 				<Event Id="3165488550" Name="GUI_MainMenu_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MainMenu_Button"/>
 				<Event Id="519893169" Name="GUI_Restart_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Restart_Button"/>
-				<Event Id="1527790590" Name="GUI_Undo_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Undo_Button"/>
 				<Event Id="2981221379" Name="Ketsu_Explosion" ObjectPath="\Events\SFX\Level\Ketsu_Explosion"/>
 				<Event Id="536687313" Name="Ketsu_Extermination" ObjectPath="\Events\SFX\Level\Ketsu_Extermination"/>
 				<Event Id="352576276" Name="Level_Start" ObjectPath="\Events\SFX\Level\Level_Start"/>
@@ -194,10 +193,6 @@
 				<File Id="338727587" Language="SFX">
 					<ShortName>Move_OnBridge_04.wav</ShortName>
 					<Path>SFX\Move_OnBridge_04_A939E04F.wem</Path>
-				</File>
-				<File Id="347580902" Language="SFX">
-					<ShortName>GUI_Undo_Button.wav</ShortName>
-					<Path>SFX\GUI_Undo_Button_A939E04F.wem</Path>
 				</File>
 				<File Id="378707394" Language="SFX">
 					<ShortName>Transform_FromKetsu_02.wav</ShortName>

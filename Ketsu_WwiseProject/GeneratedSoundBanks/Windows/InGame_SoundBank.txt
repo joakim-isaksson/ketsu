@@ -9,7 +9,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1069359780	Play_Map_Env			\World\Map_Env\Play_Map_Env	
 	1374719650	Transform_FromKetsu			\SFX\Transform\Transform_FromKetsu	
 	1426970985	Move_Wolf_Ice			\Characters\Move\Move_Wolf_Ice	
-	1527790590	GUI_Undo_Button			\UI\GUI\Button\GUI_Undo_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\GUI\WinScreen\WinScreen_MainMenu_Button	
 	1889483571	Move_Ketsu_Ice			\Characters\Move\Move_Ketsu_Ice	
 	2045277556	Stop_Ketsu_Ice			\Characters\Move\Stop_Ketsu_Ice	
@@ -71,7 +70,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	310840679	Move_Fox_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_01_124E77A5.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_01		78052
 	333863694	Transform_FromKetsu_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_FromKetsu_03_B0A2F3A7.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu\Transform_FromKetsu_03		282520
 	338727587	Move_OnBridge_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_OnBridge_04_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Bridge\Move_OnBridge_04		76912
-	347580902	GUI_Undo_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\GUI_Undo_Button_A939E04F.wem		\Actor-Mixer Hierarchy\UI\GUI\Button\GUI_Undo_Button		46008
 	378707394	Transform_FromKetsu_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_FromKetsu_02_BE717600.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_FromKetsu\Transform_FromKetsu_02		264560
 	402022915	Move_Fox_Grass_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Move_Fox_Grass_02_A937F007.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_02		74288
 	426470596	Transform_ToKetsu_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Windows\SFX\Transform_ToKetsu_01_46BBF36D.wem		\Actor-Mixer Hierarchy\SFX\Transform\Transform_ToKetsu\Transform_ToKetsu_01		298120

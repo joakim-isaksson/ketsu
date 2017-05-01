@@ -5,17 +5,6 @@
 			<ChildrenList>
 				<Folder Name="Button" ID="{4B4A0BE4-6717-4B93-82AA-118241A56DA3}" ShortID="698507837">
 					<ChildrenList>
-						<Event Name="GUI_Undo_Button" ID="{7E78A096-80AB-4031-BCEA-C27A48428577}">
-							<ChildrenList>
-								<Action Name="Play" ID="{28DB20D0-14C7-4610-9054-9D7A21EE558C}" ShortID="503305435" Type="Play" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{A873AB05-9A93-4C5F-867F-4B8CB40A0465}" Global="false">
-											<ObjectRef Name="GUI_Undo_Button" ID="{B9564F85-076C-4E75-A635-38CCB0F08207}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
-										</Element>
-									</ElementList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="GUI_MainMenu_Button" ID="{C79D5FC5-F9DC-48ED-B04E-228EB0E237F9}">
 							<ChildrenList>
 								<Action Name="Play" ID="{611638AA-34C0-41AB-8886-1DD2B4AF8DF5}" ShortID="50580585" Type="Play" Scope="One" Global="false">

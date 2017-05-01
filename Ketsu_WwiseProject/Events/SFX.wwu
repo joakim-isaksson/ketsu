@@ -56,6 +56,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Stop" ID="{E05FBBF1-8781-4C29-8105-0C42A2A0DDE6}" ShortID="82628739" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{4E82BC70-EF7E-4082-8E4F-F4C2EC1C545F}" Global="true">
+											<ObjectRef Name="SFX_Ketsu_BuildUp" ID="{34295A4A-6C83-4BB1-B048-EE32BD894243}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Ketsu_Extermination" ID="{CC5E6326-1AAC-43DB-92E4-D64FE2B7DC2B}">
