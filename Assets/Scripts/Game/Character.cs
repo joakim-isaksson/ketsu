@@ -55,6 +55,12 @@ namespace Game
             }
 		}
 
+	    public bool InMud()
+	    {
+	        return stuckInMud;
+
+	    }
+
 		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{
 		    Vector3 start = transform.position;
