@@ -26,6 +26,9 @@
 						<Event Name="Level_Start" ID="{FD3105A9-2679-4479-829E-84B047922D6E}">
 							<ChildrenList>
 								<Action Name="Play" ID="{C324568D-4A26-4C79-8FD4-213F837F2BB4}" ShortID="878333154" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.1"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{4DB199B6-13C3-4F01-98F3-A0F3CEAEDC9E}" Global="false">
 											<ObjectRef Name="SFX_LevelStart" ID="{1966C171-9A57-4F37-948E-CBD131CE636F}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>

@@ -19,7 +19,6 @@ namespace AK
         static const AkUniqueID COLLECT_LASTGAS = 4224533635U;
         static const AkUniqueID GUI_MAINMENU_BUTTON = 3165488550U;
         static const AkUniqueID GUI_RESTART_BUTTON = 519893169U;
-        static const AkUniqueID GUI_SPLIT_ACTIVE = 841337824U;
         static const AkUniqueID GUI_SPLIT_RELEASE = 1748211077U;
         static const AkUniqueID GUI_UNDO_BUTTON = 1527790590U;
         static const AkUniqueID LEVEL_SOLVED = 1530902551U;
@@ -91,6 +90,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID CHARACTERS = 1557941045U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MASTER_SECONDARY_BUS = 805203703U;
         static const AkUniqueID MUSIC = 3991942870U;

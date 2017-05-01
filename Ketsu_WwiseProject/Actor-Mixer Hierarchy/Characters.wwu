@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+							<ObjectRef Name="Characters" ID="{8086BEDF-F6E5-4949-AE51-1F1335C4F909}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -186,6 +186,16 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Grass" ID="{C1EA38FD-9E41-43FF-A577-7C94C21B65AA}" ShortID="938503331">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>7</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 									</PropertyList>
 									<ReferenceList>
@@ -208,6 +218,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Grass_01" ID="{EA6C015A-A407-40C9-9D16-3CAD4877D302}" ShortID="310840679">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="7.37557545220575E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="4.22046817542884E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.68778772610287E-03"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.445812560666659"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_01.wav</AudioFile>
 												</AudioFileSource>
@@ -229,7 +245,9 @@
 												<AudioFileSource Name="Move_Fox_Grass_02" ID="{01F13CDC-4FCE-4742-8154-0480EA9FD56B}" ShortID="402022915">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="4.14467563224224E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.43415980957214E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.017368164554158"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.438151423979894"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_02.wav</AudioFile>
@@ -252,7 +270,9 @@
 												<AudioFileSource Name="Move_Fox_Grass_03" ID="{3174B1A5-35A7-49C9-8A8C-340721F425A4}" ShortID="555482349">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="2.07446341473238E-02"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.34844914875364E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.120553722969353"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.425852112307327"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_03.wav</AudioFile>
@@ -275,7 +295,9 @@
 												<AudioFileSource Name="Move_Fox_Grass_04" ID="{EB917396-AF02-433B-B5F1-40DD0420A0EE}" ShortID="40123842">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="9.29383002460901E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.022676945260046"/>
 														<Property Name="TrimBegin" Type="Real64" Value="6.95178485840755E-02"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.413761312695593"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Grass_04.wav</AudioFile>
@@ -318,6 +340,12 @@
 												<Value>14</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -642,7 +670,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>4</Value>
+												<Value>7</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -796,7 +824,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+							<ObjectRef Name="Characters" ID="{8086BEDF-F6E5-4949-AE51-1F1335C4F909}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1171,7 +1199,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+							<ObjectRef Name="Characters" ID="{8086BEDF-F6E5-4949-AE51-1F1335C4F909}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1223,6 +1251,16 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}" ShortID="20620779">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1457,7 +1495,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>2</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1544,6 +1582,11 @@
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>10</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>

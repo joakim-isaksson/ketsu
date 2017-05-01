@@ -71,6 +71,9 @@
 						<Folder Name="Hedgy" ID="{802A86A0-59E9-41CB-BAED-2FE9F8C473A7}" ShortID="1840600">
 							<ChildrenList>
 								<Sound Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" ShortID="798822424" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -94,6 +97,9 @@
 						<Folder Name="Peaceful" ID="{DC99C76F-0401-4255-8145-B385C391F8C9}" ShortID="464100990">
 							<ChildrenList>
 								<Sound Name="LevelMusic_Peaceful_Short" ID="{7CB0CA40-9AD3-4710-9351-24F483D1C2B5}" ShortID="362141759" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -117,6 +123,9 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="LevelMusic_Peaceful2" ID="{820A4689-6BE1-479F-B64A-D8EDD8BD8C44}" ShortID="880148185" Type="SoundFX">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -149,25 +158,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Level_Win" ID="{D77B0A6F-EBFF-48AF-9007-39DBF1294D68}" ShortID="397143290" Type="SoundFX">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" ShortID="501425487">
-									<Language>SFX</Language>
-									<AudioFile>Level_Win.wav</AudioFile>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Level_Win" ID="{1C6A66D4-5A29-4F05-8594-F6E749C87A4D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="LevelMusic_PianoCluster" ID="{A2CD6A07-F5CB-4F91-B3B8-3D3684C53A86}" ShortID="797257974" Type="SoundFX">
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
@@ -189,7 +179,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-10</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

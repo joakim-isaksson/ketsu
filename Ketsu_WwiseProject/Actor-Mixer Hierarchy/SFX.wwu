@@ -4,6 +4,13 @@
 		<WorkUnit Name="SFX" ID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}" PersistMode="Standalone">
 			<ChildrenList>
 				<ActorMixer Name="Collect" ID="{D039A79A-E1C4-4129-A592-DE4B2F91DC54}" ShortID="694555599">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-4</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
@@ -61,6 +68,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Collect_Gas_01" ID="{49F5748F-A7E3-4740-9C3C-7E918330F3C6}" ShortID="707047542">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="6.04427810200457E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.336752637111683"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.247527579415425"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.94154867630889"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Collect_Gas_01.wav</AudioFile>
 										</AudioFileSource>
@@ -80,6 +93,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Collect_Gas_02" ID="{9A84ED6C-9595-45AD-92D6-510E202BA3FD}" ShortID="739142328">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="4.02951873466971E-02"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.446125288481289"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.233136441077319"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.18331980038907"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Collect_Gas_02.wav</AudioFile>
 										</AudioFileSource>
@@ -95,6 +114,11 @@
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>7</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -118,6 +142,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Collect_Gem_01" ID="{6705F2B5-377A-4342-A0FD-FB9F85CF2C5C}" ShortID="1013979270">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.062138064225098"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.161558966985255"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Collect_Gem_01.wav</AudioFile>
 										</AudioFileSource>
@@ -137,6 +165,10 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Collect_Gem_02" ID="{A448DD49-7C5E-4E5F-AAD7-EB0BCF0707F6}" ShortID="652833200">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="5.45134181558947E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.179366730706492"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Collect_Gem_02.wav</AudioFile>
 										</AudioFileSource>
@@ -417,7 +449,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -439,7 +471,7 @@
 								<ActiveSource Name="SFX_LevelStart" ID="{58A24AFE-C750-4E88-BAF0-B0B5937DC513}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="SFX_LevelWin" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" ShortID="242711899" Type="SoundFX">
+						<Sound Name="SFX_LevelSolved" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" ShortID="242711899" Type="SoundFX">
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -459,7 +491,7 @@
 								<AudioFileSource Name="GUI_Split_Release" ID="{ED3FD378-0570-4AD1-82B3-03D0FA389228}" ShortID="859584638">
 									<PropertyList>
 										<Property Name="FadeInDuration" Type="Real64" Value="0.170399302408945"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.23470092595949"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.32793828010778"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>GUI_Split_Release.wav</AudioFile>
