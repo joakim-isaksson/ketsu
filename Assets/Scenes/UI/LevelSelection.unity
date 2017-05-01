@@ -109,6 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 15
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &17103857 stripped
 GameObject:
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 7
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &28372831
 GameObject:
@@ -632,6 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 11
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &206867599 stripped
 GameObject:
@@ -651,6 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 16
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &219368488
 Prefab:
@@ -740,6 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 12
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &240953798
 GameObject:
@@ -952,6 +957,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 25
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &325810246
 GameObject:
@@ -1106,6 +1112,12 @@ GameObject:
   - component: {fileID: 375135110}
   - component: {fileID: 375135109}
   - component: {fileID: 375135111}
+  - component: {fileID: 375135115}
+  - component: {fileID: 375135114}
+  - component: {fileID: 375135113}
+  - component: {fileID: 375135112}
+  - component: {fileID: 375135108}
+  - component: {fileID: 375135107}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1197,6 +1209,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde98d17fc2d94088a9e7c831a5d6616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &375135107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd70d448b18cfbc46af26466f752332c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualizeFocus: 0
+  focalLength: 16.9
+  focalSize: 0.05
+  aperture: 0.54
+  focalTransform: {fileID: 0}
+  maxBlurSize: 2
+  highResolution: 0
+  blurType: 0
+  blurSampleCount: 2
+  nearBlur: 0
+  foregroundOverlap: 1
+  dofHdrShader: {fileID: 4800000, guid: acd613035ff3e455e8abf23fdc8c8c24, type: 3}
+  dx11BokehShader: {fileID: 4800000, guid: d8e82664aa8686642a424c88ab10164a, type: 3}
+  dx11BokehThreshold: 0.5
+  dx11SpawnHeuristic: 0.0875
+  dx11BokehTexture: {fileID: 2800000, guid: a4cdca73d61814d33ac1587f6c163bca, type: 3}
+  dx11BokehScale: 1.2
+  dx11BokehIntensity: 2.5
+--- !u!114 &375135108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.18
+  chromaticAberration: 0.2
+  axialAberration: 0.5
+  blur: 0
+  blurSpread: 0.75
+  luminanceDependency: 0.25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!114 &375135109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1263,6 +1327,127 @@ MonoBehaviour:
   playingId: 0
   multiPositionTypeLabel: 0
   multiPositionArray: []
+--- !u!114 &375135112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 0
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 2.5
+  quality: 1
+  bloomIntensity: 0.2
+  bloomThreshold: 0.5
+  bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
+  bloomBlurIterations: 2
+  hollywoodFlareBlurIterations: 2
+  flareRotation: 0
+  lensflareMode: 1
+  hollyStretchWidth: 2.5
+  lensflareIntensity: 0
+  lensflareThreshold: 0.3
+  lensFlareSaturation: 0.75
+  flareColorA: {r: 0.4, g: 0.4, b: 0.8, a: 0.75}
+  flareColorB: {r: 0.4, g: 0.8, b: 0.8, a: 0.75}
+  flareColorC: {r: 0.8, g: 0.4, b: 0.8, a: 0.75}
+  flareColorD: {r: 0.8, g: 0.4, b: 0, a: 0.75}
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
+  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
+    type: 3}
+--- !u!114 &375135113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b5bc27a658f447b1d929fd5ffbd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 1
+  showGeneratedNormals: 0
+  offsetScale: 0.2
+  blurRadius: 18
+  edgeThresholdMin: 0.05
+  edgeThreshold: 0.2
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
+--- !u!114 &375135114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50e925fb93c78246bf995d9dc3a2330, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 5
+  adaptiveTextureSize: 128
+  remapCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 2
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  exposureAdjustment: 1.7
+  middleGrey: 0.42
+  white: 1.86
+  adaptionSpeed: 17.12
+  tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
+  validRenderTextureFormat: 0
+--- !u!114 &375135115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0923359e9e352a4b9b11c7b7161ad67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Radius: 0.3
+  m_SampleCount: 1
+  m_OcclusionIntensity: 1
+  m_Blur: 2
+  m_Downsampling: 2
+  m_OcclusionAttenuation: 1
+  m_MinZ: 0.01
+  m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
+  m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
 --- !u!1001 &427571009
 Prefab:
   m_ObjectHideFlags: 0
@@ -1893,6 +2078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 27
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &622149430 stripped
 GameObject:
@@ -1912,6 +2098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 19
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &642118631 stripped
 GameObject:
@@ -1931,6 +2118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 4
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &666899824
 GameObject:
@@ -2171,6 +2359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 21
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &715943580
 GameObject:
@@ -2264,6 +2453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 17
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &734874894 stripped
 GameObject:
@@ -2283,6 +2473,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 13
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &745035791
 Prefab:
@@ -2473,6 +2664,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 10
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1001 &806161259
 Prefab:
@@ -2666,6 +2858,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 26
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &858956759
 Prefab:
@@ -3319,6 +3512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 6
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1 &1089842779
 GameObject:
@@ -3602,6 +3796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 24
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &1126708635
 Prefab:
@@ -3829,6 +4024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 22
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &1220836563 stripped
 GameObject:
@@ -3848,6 +4044,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 18
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &1225648678 stripped
 GameObject:
@@ -3867,6 +4064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 20
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &1226394889
 GameObject:
@@ -4415,6 +4613,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 1
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1001 &1378897871
 Prefab:
@@ -4605,6 +4804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 8
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1001 &1496094742
 Prefab:
@@ -4695,6 +4895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 23
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &1547552608
 Prefab:
@@ -4738,7 +4939,7 @@ Prefab:
     - target: {fileID: 114953190474056272, guid: 6392668a503009d40ad2b387fd3ffe47,
         type: 2}
       propertyPath: basePath
-      value: Audio/GeneratedSoundBanks
+      value: Audio\GeneratedSoundBanks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
@@ -4761,6 +4962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 5
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &1665538377
 Prefab:
@@ -4851,6 +5053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 28
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &1676091024
 Prefab:
@@ -5077,6 +5280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 2
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1001 &1776400565
 Prefab:
@@ -5167,6 +5371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 3
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &1803364509 stripped
 GameObject:
@@ -5186,6 +5391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 14
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 1
 --- !u!1 &1804066557
 GameObject:
@@ -5645,6 +5851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 9
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1001 &1904960283
 Prefab:
@@ -5919,6 +6126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 30
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &2076600754
 GameObject:
@@ -6131,6 +6339,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 29
   spaceship: {fileID: 1451025914}
+  currentBase: {fileID: 0}
   important: 0
 --- !u!1 &2104815908
 GameObject:
