@@ -5,73 +5,73 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/UI/Start.unity
   - enabled: 0
     path: Assets/Scenes/UI/StartDemo.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/UI/LevelSelection.unity
   - enabled: 0
     path: Assets/Scenes/UI/LevelSelectionDemo.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/01.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/02.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/03.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/04.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/05.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/06.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/07.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/08.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/09.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/10.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/11.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/12.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/13.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/14.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/15.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/16.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/17.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/18.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/19.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/20.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/21.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/22.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/23.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/24.unity
   - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/25.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/26.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/27.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/28.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/29.unity
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/30.unity
   - enabled: 0
     path: Assets/Scenes/JoakimTest2.unity

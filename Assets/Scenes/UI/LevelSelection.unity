@@ -108,6 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 15
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -128,6 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 7
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -633,6 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 11
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -653,6 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 16
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -743,6 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 12
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -956,6 +961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 25
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2078,6 +2084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 27
+  LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2098,6 +2105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 19
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2118,6 +2126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 4
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2359,6 +2368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 21
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2453,6 +2463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 17
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2473,6 +2484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 13
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -2664,6 +2676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 10
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -2858,6 +2871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 26
+  LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -3512,6 +3526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 6
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -3796,6 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 24
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -4024,6 +4040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 22
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -4044,6 +4061,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 18
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -4064,6 +4082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 20
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -4613,6 +4632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 1
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -4804,6 +4824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 8
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -4895,6 +4916,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 23
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -4962,6 +4984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 5
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -5053,6 +5076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 28
+  LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -5284,6 +5308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 2
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -5375,6 +5400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 3
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -5395,6 +5421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 14
+  LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 1
@@ -5855,6 +5882,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 9
+  LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -6130,6 +6158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 30
+  LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0
@@ -6343,6 +6372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 29
+  LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
   important: 0

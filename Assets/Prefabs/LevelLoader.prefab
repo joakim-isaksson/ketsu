@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde98d17fc2d94088a9e7c831a5d6616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SfxMapEnv: Play_Map_Env
   MusicEvents:
   - SceneName: 11
     EventName: Play_InGameMusic2

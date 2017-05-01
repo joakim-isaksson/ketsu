@@ -8,6 +8,8 @@ using System.Collections.Generic;
 
 public class LoadLevel : MonoBehaviour
 {
+    public string SfxMapEnv;
+
     [Serializable]
     public struct SceneToMusicEvent
     {
@@ -31,6 +33,7 @@ public class LoadLevel : MonoBehaviour
 	            break;
 	        }
 	    }
+	    AkSoundEngine.PostEvent(SfxMapEnv, gameObject);
 
         int level = SceneManager.GetActiveScene().buildIndex;
 		SceneManager.LoadScene(level + 1);

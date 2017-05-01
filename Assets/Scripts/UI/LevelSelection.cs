@@ -4,9 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class LevelSelection : MonoBehaviour {
-	public int level;
-	public static int currentLevel = 1;
+public class LevelSelection : MonoBehaviour
+{
+    public int level;
+    public string LevelMusicEvent;
+    string sfxMapEnv = "Play_Map_Env";
+
+    public static int currentLevel = 1;
 	public GameObject spaceship;
 	public GameObject currentBase;
     Renderer rend;
@@ -49,6 +53,10 @@ public class LevelSelection : MonoBehaviour {
             spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
             yield return null;
         }
+
+	    AkSoundEngine.PostEvent(LevelMusicEvent, gameObject);
+	    AkSoundEngine.PostEvent(sfxMapEnv, gameObject);
+
         currentLevel = level+1;
   		SceneManager.LoadScene(level+1);
   		yield return null;
