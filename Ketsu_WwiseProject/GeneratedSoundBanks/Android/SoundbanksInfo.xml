@@ -79,7 +79,7 @@
 			<ShortName>Music_Soundbank</ShortName>
 			<Path>Music_Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2908556826" Name="Level_Win" ObjectPath="\Events\Music\Stingers\Level_Win"/>
+				<Event Id="1530902551" Name="Level_Solved" ObjectPath="\Events\Music\Stingers\Level_Solved"/>
 				<Event Id="3215460479" Name="Play_InGameMusic1" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic1"/>
 				<Event Id="3215460476" Name="Play_InGameMusic2" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic2"/>
 				<Event Id="620526404" Name="Play_InGameMusic_Hedgy" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic_Hedgy"/>
@@ -121,10 +121,12 @@
 				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
 				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
 				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
+				<Event Id="1889483571" Name="Move_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Move_Ketsu_Ice"/>
 				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
 				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
 				<Event Id="2431936319" Name="Play_Random_Env" ObjectPath="\Events\World\Map_Env\Play_Random_Env"/>
 				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice"/>
+				<Event Id="2045277556" Name="Stop_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Stop_Ketsu_Ice"/>
 				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice"/>
 				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform\Transform_FromKetsu"/>
 				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform\Transform_ToKetsu"/>

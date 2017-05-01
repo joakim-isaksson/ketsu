@@ -22,14 +22,15 @@ namespace AK
         static const AkUniqueID GUI_SPLIT_ACTIVE = 841337824U;
         static const AkUniqueID GUI_SPLIT_RELEASE = 1748211077U;
         static const AkUniqueID GUI_UNDO_BUTTON = 1527790590U;
+        static const AkUniqueID LEVEL_SOLVED = 1530902551U;
         static const AkUniqueID LEVEL_START = 352576276U;
-        static const AkUniqueID LEVEL_WIN = 2908556826U;
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_SELECT = 2297784124U;
         static const AkUniqueID LEVELMENU_STARTLEVEL_SELECT = 2355422256U;
         static const AkUniqueID LEVELMENU_UNLOCKEDLEVEL_SELECT = 2207195397U;
         static const AkUniqueID MOVE_FOX = 2492116432U;
         static const AkUniqueID MOVE_FOX_ICE = 4045630760U;
         static const AkUniqueID MOVE_KETSU = 3609283987U;
+        static const AkUniqueID MOVE_KETSU_ICE = 1889483571U;
         static const AkUniqueID MOVE_WOLF = 4249145201U;
         static const AkUniqueID MOVE_WOLF_ICE = 1426970985U;
         static const AkUniqueID PLAY_INGAMEMUSIC_HEDGY = 620526404U;
@@ -38,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAY_MENUMUSIC = 2570041344U;
         static const AkUniqueID PLAY_RANDOM_ENV = 2431936319U;
         static const AkUniqueID STOP_FOX_ICE = 2494762103U;
+        static const AkUniqueID STOP_KETSU_ICE = 2045277556U;
         static const AkUniqueID STOP_WOLF_ICE = 3853446416U;
         static const AkUniqueID TRANSFORM_FROMKETSU = 1374719650U;
         static const AkUniqueID TRANSFORM_TOKETSU = 1052828255U;
@@ -59,7 +61,6 @@ namespace AK
                 static const AkUniqueID DIRT = 2195636714U;
                 static const AkUniqueID FLOWERS = 187032587U;
                 static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID ICE = 344481046U;
                 static const AkUniqueID MUD = 712897245U;
             } // namespace SWITCH
         } // namespace TILE_MATERIAL_FOX
@@ -74,7 +75,6 @@ namespace AK
                 static const AkUniqueID DIRT = 2195636714U;
                 static const AkUniqueID FLOWERS = 187032587U;
                 static const AkUniqueID GRASS = 4248645337U;
-                static const AkUniqueID ICE = 344481046U;
                 static const AkUniqueID MUD = 712897245U;
             } // namespace SWITCH
         } // namespace TILE_MATERIAL_WOLF
