@@ -48,23 +48,24 @@ namespace Game
                 if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
                 if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
 
-                bool sliding = targetGroundType != MapObjectType.Ice;
-                StartCoroutine(RunMoveAnimation(newPosition, sliding, callback));
+                StartCoroutine(RunMoveAnimation(newPosition, callback));
             }
 		}
 
-		IEnumerator RunMoveAnimation(Vector3 target, bool sliding, Action callback)
+		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{
+		    Vector3 start = transform.position;
+
+		    bool sliding = Vector3.Distance(start, target) > 1.5f;
+
 		    if (sliding) AkSoundEngine.PostEvent(SfxSlideStart, gameObject);
 
             anim.SetBool("Walking", true);
 
-            Vector3 start = transform.position;
-            float animTime = MoveAnimTime * Vector3.Distance(start, target);
-
             transform.LookAt(target);
 
-			float timePassed = 0.0f;
+		    float animTime = MoveAnimTime * Vector3.Distance(start, target);
+            float timePassed = 0.0f;
 			do
 			{
 				timePassed += Time.deltaTime;
