@@ -1209,6 +1209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bde98d17fc2d94088a9e7c831a5d6616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MusicEvents: []
 --- !u!114 &375135107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5110,6 +5111,10 @@ Prefab:
       propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: ba60bac3012b9574692e6f28e2ab8d2b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 31e2772b68c1ce74ebd61c619f67fa11, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba60bac3012b9574692e6f28e2ab8d2b, type: 3}
   m_IsPrefabParent: 0
