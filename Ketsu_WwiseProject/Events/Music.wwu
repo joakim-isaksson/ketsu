@@ -155,8 +155,8 @@
 							<ChildrenList>
 								<Action Name="Play" ID="{5D968311-2C6D-4E8D-8E6A-663ED2C61BEB}" ShortID="1031530262" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{28B2ED8C-E283-4FA9-9D44-982C4C290328}" Global="false">
-											<ObjectRef Name="SFX_LevelWin" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										<Element ID="{ACB287B7-3DE1-4EC2-96DB-63220527EE56}" Global="false">
+											<ObjectRef Name="SFX_LevelSolved" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>

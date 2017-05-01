@@ -68,7 +68,6 @@
 								<Action Name="Stop" ID="{620AB4D4-A608-4F3C-9D1F-DB1CF48CA9E4}" ShortID="444885173" Type="Stop" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{2BD907A2-82F2-4524-941A-CAE1FD1FCC53}" Global="false">
@@ -94,7 +93,6 @@
 								<Action Name="Stop" ID="{C848B910-1606-4A16-B533-8878554DAB0D}" ShortID="575526078" Type="Stop" Scope="One" Global="false">
 									<PropertyList>
 										<Property Name="FadeCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{1D6EF525-9CB8-419B-8990-05DF87DEC286}" Global="false">

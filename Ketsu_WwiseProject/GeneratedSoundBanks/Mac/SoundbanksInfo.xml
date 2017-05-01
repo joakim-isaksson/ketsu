@@ -87,19 +87,19 @@
 			<IncludedMemoryFiles>
 				<File Id="538034921" Language="SFX">
 					<ShortName>LevelMusic_Peaceful2.wav</ShortName>
-					<Path>SFX\LevelMusic_Peaceful2_A939E04F.wem</Path>
+					<Path>SFX\LevelMusic_Peaceful2_2CC9493D.wem</Path>
 				</File>
 				<File Id="602394122" Language="SFX">
 					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
-					<Path>SFX\LevelMusic_Peaceful_Short_58849767.wem</Path>
+					<Path>SFX\LevelMusic_Peaceful_Short_BD6BCAFD.wem</Path>
 				</File>
 				<File Id="669844642" Language="SFX">
 					<ShortName>LevelMusic_Hedgy_Short.wav</ShortName>
-					<Path>SFX\LevelMusic_Hedgy_Short_A939E04F.wem</Path>
+					<Path>SFX\LevelMusic_Hedgy_Short_2CC9493D.wem</Path>
 				</File>
 				<File Id="859584638" Language="SFX">
 					<ShortName>GUI_Split_Release.wav</ShortName>
-					<Path>SFX\GUI_Split_Release_EA448E86.wem</Path>
+					<Path>SFX\GUI_Split_Release_81F1FE0D.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
@@ -114,7 +114,6 @@
 				<Event Id="4224533635" Name="Collect_LastGas" ObjectPath="\Events\SFX\Collect\Collect_LastGas"/>
 				<Event Id="3165488550" Name="GUI_MainMenu_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MainMenu_Button"/>
 				<Event Id="519893169" Name="GUI_Restart_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Restart_Button"/>
-				<Event Id="841337824" Name="GUI_Split_Active" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Active"/>
 				<Event Id="1748211077" Name="GUI_Split_Release" ObjectPath="\Events\UI\GUI\Split\GUI_Split_Release"/>
 				<Event Id="1527790590" Name="GUI_Undo_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Undo_Button"/>
 				<Event Id="352576276" Name="Level_Start" ObjectPath="\Events\SFX\Level\Level_Start"/>
@@ -137,7 +136,7 @@
 			<IncludedMemoryFiles>
 				<File Id="40123842" Language="SFX">
 					<ShortName>Move_Fox_Grass_04.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_04_14807B61.wem</Path>
+					<Path>SFX\Move_Fox_Grass_04_9DCF9A38.wem</Path>
 				</File>
 				<File Id="45816554" Language="SFX">
 					<ShortName>Move_Mud_04.wav</ShortName>
@@ -189,7 +188,7 @@
 				</File>
 				<File Id="310840679" Language="SFX">
 					<ShortName>Move_Fox_Grass_01.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_01_A939E04F.wem</Path>
+					<Path>SFX\Move_Fox_Grass_01_124E77A5.wem</Path>
 				</File>
 				<File Id="333863694" Language="SFX">
 					<ShortName>Transform_FromKetsu_03.wav</ShortName>
@@ -205,7 +204,7 @@
 				</File>
 				<File Id="402022915" Language="SFX">
 					<ShortName>Move_Fox_Grass_02.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_02_9DD024F7.wem</Path>
+					<Path>SFX\Move_Fox_Grass_02_A937F007.wem</Path>
 				</File>
 				<File Id="426470596" Language="SFX">
 					<ShortName>Transform_ToKetsu_01.wav</ShortName>
@@ -223,10 +222,6 @@
 					<ShortName>GUI_Split_BuildUp.wav</ShortName>
 					<Path>SFX\GUI_Split_BuildUp_2CC9493D.wem</Path>
 				</File>
-				<File Id="507783315" Language="SFX">
-					<ShortName>GUI_Split_BuildUp.wav</ShortName>
-					<Path>SFX\GUI_Split_BuildUp_A939E04F.wem</Path>
-				</File>
 				<File Id="519315026" Language="SFX">
 					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
 					<Path>SFX\Map_Env_BeesOnFlowers_2CC9493D.wem</Path>
@@ -241,7 +236,7 @@
 				</File>
 				<File Id="555482349" Language="SFX">
 					<ShortName>Move_Fox_Grass_03.wav</ShortName>
-					<Path>SFX\Move_Fox_Grass_03_A772CB07.wem</Path>
+					<Path>SFX\Move_Fox_Grass_03_9F489FA3.wem</Path>
 				</File>
 				<File Id="563726059" Language="SFX">
 					<ShortName>Move_Mud_06.wav</ShortName>
@@ -273,7 +268,7 @@
 				</File>
 				<File Id="652833200" Language="SFX">
 					<ShortName>SFX_Collect_Gem_02.wav</ShortName>
-					<Path>SFX\SFX_Collect_Gem_02_A939E04F.wem</Path>
+					<Path>SFX\SFX_Collect_Gem_02_9FDCA366.wem</Path>
 				</File>
 				<File Id="668879718" Language="SFX">
 					<ShortName>Move_Fox_Ice_02.wav</ShortName>
@@ -293,7 +288,7 @@
 				</File>
 				<File Id="707047542" Language="SFX">
 					<ShortName>SFX_Collect_Gas_01.wav</ShortName>
-					<Path>SFX\SFX_Collect_Gas_01_A939E04F.wem</Path>
+					<Path>SFX\SFX_Collect_Gas_01_EAB68E68.wem</Path>
 				</File>
 				<File Id="717253633" Language="SFX">
 					<ShortName>Move_Wolf_Grass_02.wav</ShortName>
@@ -305,15 +300,11 @@
 				</File>
 				<File Id="739142328" Language="SFX">
 					<ShortName>SFX_Collect_Gas_02.wav</ShortName>
-					<Path>SFX\SFX_Collect_Gas_02_A939E04F.wem</Path>
+					<Path>SFX\SFX_Collect_Gas_02_C687B596.wem</Path>
 				</File>
 				<File Id="744722679" Language="SFX">
 					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
 					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
-				</File>
-				<File Id="754253463" Language="SFX">
-					<ShortName>GUI_Split_Active.wav</ShortName>
-					<Path>SFX\GUI_Split_Active_A939E04F.wem</Path>
 				</File>
 				<File Id="778693737" Language="SFX">
 					<ShortName>Move_Fox_Ice_03.wav</ShortName>
@@ -381,7 +372,7 @@
 				</File>
 				<File Id="1013979270" Language="SFX">
 					<ShortName>SFX_Collect_Gem_01.wav</ShortName>
-					<Path>SFX\SFX_Collect_Gem_01_A939E04F.wem</Path>
+					<Path>SFX\SFX_Collect_Gem_01_6FDC278C.wem</Path>
 				</File>
 				<File Id="1047423126" Language="SFX">
 					<ShortName>Transform_ToKetsu_02.wav</ShortName>
