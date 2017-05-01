@@ -35,7 +35,7 @@ namespace Game
 
 		void Update()
 		{
-            if (mapManager.Solved || mapManager.Split) return;
+            if (mapManager.Solved ||  charHandler.Exterminating) return;
 
 #if UNITY_EDITOR || UNITY_STANDALONE_OSX || UNITY_STANDALONE_WIN
 			HandleKeyInputs();

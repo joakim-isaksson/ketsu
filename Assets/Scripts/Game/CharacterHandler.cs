@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Game
 {
-	public class CharacterHandler : MonoBehaviour
+	public class CharacterHandler : ExtendedMonoBehaviour
 	{
 		[Header("Character Prefabs")]
 		public GameObject FoxPrefab;
@@ -25,14 +25,19 @@ namespace Game
         public string TrainsformToKetsuSfx;
         public string SplitKetsuSfx;
 	    public string SfxBlocked;
+	    public string SfxKetsuOnFire;
+	    public string SfxKetsuExplosion;
 
         [Header("Effects")]
 	    public GameObject MergeEffectPrefab;
 	    public GameObject SplitEffectPrefab;
-
+	    public GameObject ExterminationEffectPrefab;
 
         [HideInInspector]
 		public Character ActiveCharacter;
+
+	    [HideInInspector]
+        public bool Exterminating;
 
         Queue<Vector3> moveQueue;
 
@@ -50,6 +55,7 @@ namespace Game
         void Awake()
 		{
             moveQueue = new Queue<Vector3>();
+		    Exterminating = false;
 		}
 
 		void Start()
@@ -236,9 +242,46 @@ namespace Game
             // When movement actions are done -> check if map has been solved
             if (waitingForMoveActions == 0 && mapManager.CheckSolved()) return;
 
-            // If the map is not solved yet -> move to the next action
-            NextMoveAction();
+            if (CheckIfKetsuIsStuck())
+            {
+                // EXTERMINATE
+                Debug.Log("EXTERMINATE");
+                Exterminating = true;
+                AkSoundEngine.PostEvent(SfxKetsuOnFire, gameObject);
+                Instantiate(ExterminationEffectPrefab, ketsu.transform.position, ketsu.transform.rotation);
+                DelayedAction(3.8f, delegate
+                {
+                    AkSoundEngine.PostEvent(SfxKetsuExplosion, gameObject);
+                    ketsu.gameObject.SetActive(false);
+                    shaker.HeavyShake();
+                });
+            }
+            else
+            {
+                // If the map is not solved yet -> move to the next action
+                NextMoveAction();
+            }
         }
+
+	    bool CheckIfKetsuIsStuck()
+	    {
+	        if (ActiveCharacter.Type != MapObjectType.Ketsu) return false;
+	        if (KetsuPower > 0) return false;
+
+	        return (IsKetsuBlockedAt(ketsu.transform.position + Vector3.forward) ||
+	                IsKetsuBlockedAt(ketsu.transform.position + Vector3.back)) &&
+	               (IsKetsuBlockedAt(ketsu.transform.position + Vector3.left) ||
+	                IsKetsuBlockedAt(ketsu.transform.position + Vector3.right));
+	    }
+
+	    bool IsKetsuBlockedAt(Vector3 position)
+	    {
+	        foreach (MapObject obj in MapManager.GetObjects(position))
+	        {
+	            if (fox.IsBlockedBy(obj)) return true;
+	        }
+	        return false;
+	    }
 
         void HandleMoveAction(Vector3 direction, Character active, Character other)
         {
@@ -300,6 +343,7 @@ namespace Game
                     else otherMoving = false;
 
                     AkSoundEngine.PostEvent(SfxBlocked, gameObject);
+                    shaker.LightShake();
                 }
 
                 // Other is blocked
@@ -310,6 +354,7 @@ namespace Game
                     else activeMoving = false;
 
                     AkSoundEngine.PostEvent(SfxBlocked, gameObject);
+                    shaker.LightShake();
                 }
 
                 // Both are blocked
@@ -319,6 +364,7 @@ namespace Game
                     otherMoving = false;
 
                     AkSoundEngine.PostEvent(SfxBlocked, gameObject);
+                    shaker.LightShake();
                 }
             }
 
@@ -362,7 +408,7 @@ namespace Game
             });
 
             // Effects
-            shaker.Shake();
+            shaker.MediumShake();
             Instantiate(MergeEffectPrefab, mergePos, ketsu.transform.rotation);
         }
 
@@ -376,7 +422,9 @@ namespace Game
             if (activeTarget.Blocker != null)
             {
                 // Active is blocked
-                Debug.Log("Can Not Split: " + active.Type + " blocked by " + activeTarget.Blocker.Type);
+                AkSoundEngine.PostEvent(SfxBlocked, gameObject);
+                shaker.LightShake();
+
                 NextMoveAction();
                 return;
             }
@@ -384,7 +432,9 @@ namespace Game
             if (otherTarget.Blocker != null)
             {
                 // Other is blocked
-                Debug.Log("Can Not Split: " + other.Type + " blocked by " + otherTarget.Blocker.Type);
+                AkSoundEngine.PostEvent(SfxBlocked, gameObject);
+                shaker.LightShake();
+
                 NextMoveAction();
                 return;
             }
@@ -408,7 +458,7 @@ namespace Game
             ketsu.GetComponent<Flasher>().StopFlashing();
 
             // Effects
-            shaker.Shake();
+            shaker.MediumShake();
             Instantiate(SplitEffectPrefab, ketsu.transform.position, ketsu.transform.rotation);
         }
 

@@ -82,8 +82,13 @@ MonoBehaviour:
   TrainsformToKetsuSfx: Transform_ToKetsu
   SplitKetsuSfx: Transform_FromKetsu
   SfxBlocked: Character_Blocked
+  SfxKetsuOnFire: Ketsu_Extermination
+  SfxKetsuExplosion: Ketsu_Explosion
   MergeEffectPrefab: {fileID: 1823256909414778, guid: 3bfbe897f09b66545a5b8a0244d94557,
     type: 2}
   SplitEffectPrefab: {fileID: 1734236810602820, guid: 7a5052efaed749b4db98ca8c150820cc,
     type: 2}
+  ExterminationEffectPrefab: {fileID: 1256781693384948, guid: c179810642996a64ea3455ca2326b9ac,
+    type: 2}
   ActiveCharacter: {fileID: 0}
+  Exterminating: 0
