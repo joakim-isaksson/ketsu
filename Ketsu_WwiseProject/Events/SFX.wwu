@@ -37,6 +37,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Ketsu_Explosion" ID="{33B04AEB-E661-4E50-BFB8-32408372F82B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{F8D3CD89-6CCA-41ED-A7E9-E9F0CBB91D92}" ShortID="704099585" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{1292DA25-B31E-4948-90FD-C8DDCB0FF63A}" Global="false">
+											<ObjectRef Name="Ketsu_Explosion" ID="{F4022B6F-19A2-489D-AA45-C234E1D856CB}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{140619AB-9236-465F-ADCE-2FCCE0EBF5FE}" ShortID="998794373" Type="Stop" Scope="One" Global="true">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ElementList>
+										<Element ID="{F4905594-3036-4C0E-AD77-B6371F6CB2FF}" Global="true">
+											<ObjectRef Name="Ketsu_Extermination" ID="{061C80B2-BFAC-47EB-9050-3CA510637A66}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Ketsu_Extermination" ID="{CC5E6326-1AAC-43DB-92E4-D64FE2B7DC2B}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7E8289C5-80FE-472A-B75E-EC610ED09284}" ShortID="693651069" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{9189AEF3-DCB3-4AFE-9199-481A8AE7436E}" Global="false">
+											<ObjectRef Name="Ketsu_Extermination" ID="{061C80B2-BFAC-47EB-9050-3CA510637A66}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Collect" ID="{44468059-5147-42B0-8A5B-14D759AE5A5D}" ShortID="13681788">
@@ -79,17 +111,6 @@
 									<ElementList>
 										<Element ID="{2F4E9C5A-6120-4AE9-A949-5C628BDDBDF1}" Global="false">
 											<ObjectRef Name="Glimmers" ID="{CF983779-9783-4D10-9ED2-9EEF6E96C5C2}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Play" ID="{258619A1-69F9-4D89-A426-5A613C9BB6ED}" ShortID="965354621" Type="Play" Scope="One" Global="false">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="10"/>
-										<Property Name="FadeTime" Type="Real64" Value="10"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{2ECCC641-3757-49F0-9448-2F6C33B0CB06}" Global="false">
-											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -139,19 +160,19 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{73CC0BC4-57B4-4C12-924A-AAF7388F8D3B}" ShortID="860258575" Type="Stop" Scope="One" Global="false">
+								<Action Name="Stop" ID="{73CC0BC4-57B4-4C12-924A-AAF7388F8D3B}" ShortID="860258575" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{A549CC73-B8D5-4DAB-9F80-9B1798FAB5E2}" Global="false">
+										<Element ID="{A549CC73-B8D5-4DAB-9F80-9B1798FAB5E2}" Global="true">
 											<ObjectRef Name="SFX_Ketsu_BuildUp" ID="{34295A4A-6C83-4BB1-B048-EE32BD894243}" WorkUnitID="{4AB0081F-95CC-4563-9E37-C5B4336B598F}"/>
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Reset Playlist" ID="{5457EFD3-5CDA-49E8-B1DA-D18DCAEBB856}" ShortID="169384687" Type="ResetPlaylist" Scope="One" Global="false">
+								<Action Name="Reset Playlist" ID="{5457EFD3-5CDA-49E8-B1DA-D18DCAEBB856}" ShortID="169384687" Type="ResetPlaylist" Scope="One" Global="true">
 									<ElementList>
-										<Element ID="{5B32E1FA-9129-4D94-A80D-AB9F52E6C723}" Global="false">
+										<Element ID="{5B32E1FA-9129-4D94-A80D-AB9F52E6C723}" Global="true">
 											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>

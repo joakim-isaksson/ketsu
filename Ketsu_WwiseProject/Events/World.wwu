@@ -5,11 +5,11 @@
 			<ChildrenList>
 				<Folder Name="Map_Env" ID="{226E6183-C5CF-4D2F-92DB-E0823C1C53C7}" ShortID="722598537">
 					<ChildrenList>
-						<Event Name="Play_Random_Env" ID="{41982255-43BB-40AC-9445-D94A1C2EACDB}">
+						<Event Name="Play_Map_Env" ID="{41982255-43BB-40AC-9445-D94A1C2EACDB}">
 							<ChildrenList>
 								<Action Name="Stop" ID="{3564CB46-8EAB-479B-B9AE-08503F6DD668}" ShortID="18022367" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{7907144C-7104-412A-870E-66B003C47246}" Global="true">
@@ -19,7 +19,7 @@
 								</Action>
 								<Action Name="Stop" ID="{E6006EEF-F867-469F-A69E-DB653871602E}" ShortID="609132542" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{2DAB617D-87FE-451E-AA8E-84CD6B110111}" Global="true">
@@ -29,7 +29,7 @@
 								</Action>
 								<Action Name="Stop" ID="{D4E3F475-B2B5-4982-A045-F0E8AC37188B}" ShortID="774688069" Type="Stop" Scope="One" Global="true">
 									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ElementList>
 										<Element ID="{76679BD4-3AC0-464F-B61D-2AA6DDC67A38}" Global="true">
@@ -38,6 +38,10 @@
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{98BB7AC8-5BBE-4A57-AC0C-C5D9978A0C62}" ShortID="756129003" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{466A75FA-99CD-4211-8A0D-00973FA70F59}" Global="false">
 											<ObjectRef Name="Animals" ID="{D81F0DF1-7C48-4BD3-81E8-395221C46462}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
@@ -45,6 +49,9 @@
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{BD7E160B-071E-4767-BCCC-DC54D849793D}" ShortID="18528970" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{7B1F2D5E-5785-46E7-A67B-84DD041E9BC3}" Global="false">
 											<ObjectRef Name="Water" ID="{B82461E9-87DD-462F-BA07-496FC4F3048C}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
@@ -52,6 +59,10 @@
 									</ElementList>
 								</Action>
 								<Action Name="Play" ID="{550D0CF8-E55E-4ECF-81F6-E637503AD614}" ShortID="675247508" Type="Play" Scope="One" Global="false">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="4"/>
+									</PropertyList>
 									<ElementList>
 										<Element ID="{71D5D514-2B8F-4660-9773-C4DA34106C1C}" Global="false">
 											<ObjectRef Name="Wind" ID="{830DE85F-F338-4822-AAC9-043E2E8CB606}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>

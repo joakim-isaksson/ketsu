@@ -118,7 +118,12 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>11</Value>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -416,9 +421,19 @@
 										<Value>40</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>11</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>230</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -432,6 +447,12 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Character_Blocked" ID="{2B0EB531-A3EE-4139-BFB2-B77F9F19E407}" ShortID="532480567">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.96345500900182E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="6.24735684682399E-02"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.36846864263764E-02"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.414110510989476"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Character_Blocked.wav</AudioFile>
 								</AudioFileSource>
@@ -527,7 +548,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -547,6 +568,58 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="GUI_Split_BuildUp" ID="{A1863788-4AF8-4CF7-93EC-CD2751C9E4E6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ketsu_Explosion" ID="{F4022B6F-19A2-489D-AA45-C234E1D856CB}" ShortID="157560143" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ketsu_Explosion" ID="{61EDB079-BD78-4CEE-9E7D-FED42DDB613E}" ShortID="745471122">
+									<Language>SFX</Language>
+									<AudioFile>Ketsu_Explosion.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ketsu_Explosion" ID="{61EDB079-BD78-4CEE-9E7D-FED42DDB613E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Ketsu_Extermination" ID="{061C80B2-BFAC-47EB-9050-3CA510637A66}" ShortID="665681366" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Ketsu_Extermination" ID="{628E41A1-00C9-4287-B078-45A8F1669D09}" ShortID="287208163">
+									<Language>SFX</Language>
+									<AudioFile>Ketsu_Extermination.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Ketsu_Extermination" ID="{628E41A1-00C9-4287-B078-45A8F1669D09}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

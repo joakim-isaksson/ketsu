@@ -19,7 +19,6 @@ namespace AK
         static const AkUniqueID COLLECT_LASTGAS = 4224533635U;
         static const AkUniqueID GUI_MAINMENU_BUTTON = 3165488550U;
         static const AkUniqueID GUI_RESTART_BUTTON = 519893169U;
-        static const AkUniqueID GUI_SPLIT_RELEASE = 1748211077U;
         static const AkUniqueID GUI_UNDO_BUTTON = 1527790590U;
         static const AkUniqueID LEVEL_SOLVED = 1530902551U;
         static const AkUniqueID LEVEL_START = 352576276U;
@@ -35,8 +34,8 @@ namespace AK
         static const AkUniqueID PLAY_INGAMEMUSIC1 = 3215460479U;
         static const AkUniqueID PLAY_INGAMEMUSIC2 = 3215460476U;
         static const AkUniqueID PLAY_INGAMEMUSIC3 = 3215460477U;
+        static const AkUniqueID PLAY_MAP_ENV = 1069359780U;
         static const AkUniqueID PLAY_MENUMUSIC = 2570041344U;
-        static const AkUniqueID PLAY_RANDOM_ENV = 2431936319U;
         static const AkUniqueID STOP_FOX_ICE = 2494762103U;
         static const AkUniqueID STOP_KETSU_ICE = 2045277556U;
         static const AkUniqueID STOP_WOLF_ICE = 3853446416U;
