@@ -36,8 +36,11 @@ namespace Game
             {
                 stuckInMud = false;
 
-                if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
-                if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
+                if (transform.position != newPosition)
+                {
+                    if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
+                    if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
+                }
 
                 if (callback != null) callback();
             }

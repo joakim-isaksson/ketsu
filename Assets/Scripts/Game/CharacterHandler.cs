@@ -258,7 +258,7 @@ namespace Game
                 if (otherMoving) otherTarget = new TargetInfo(other, otherPointer.Position + VectorUtils.Mirror(direction, Vector3.zero));
 
                 // Spend Ketsu Power on first move (only when ketsu)
-                if (firstMove && active.Type == MapObjectType.Ketsu && !ConsumeKetsuPower(KetsuMoveCost))
+                if (firstMove && active.Type == MapObjectType.Ketsu && activeTarget.Blocker == null && !ConsumeKetsuPower(KetsuMoveCost))
                 {
                     // No ketsu power to spend -> Split
                     SplitKetsu(activeTarget.Position);
@@ -317,6 +317,8 @@ namespace Game
                 {
                     activeMoving = false;
                     otherMoving = false;
+
+                    AkSoundEngine.PostEvent(SfxBlocked, gameObject);
                 }
             }
 
