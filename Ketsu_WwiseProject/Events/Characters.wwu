@@ -43,6 +43,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Reset Playlist" ID="{9A41AB48-ABDF-4677-A98D-16F43E024549}" ShortID="490648599" Type="ResetPlaylist" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{ED170FE7-0AAB-437F-9B12-A55B65E699D5}" Global="false">
+											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Move_Fox_Ice" ID="{7DA62BF0-165C-41B5-BBFA-9551FF6C68EA}">

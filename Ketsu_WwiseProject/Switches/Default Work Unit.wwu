@@ -6,7 +6,6 @@
 				<SwitchGroup Name="Tile_Material_Fox" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}">
 					<ChildrenList>
 						<Switch Name="Mud" ID="{FFF97B7F-9602-45E0-994C-8F3D75FA047A}"/>
-						<Switch Name="Ice" ID="{444CF6B8-6A18-4E35-BB4A-06AFECC67BB7}"/>
 						<Switch Name="Flowers" ID="{55CDB8ED-F397-402B-AED0-67DD69AD005C}"/>
 						<Switch Name="Bridge" ID="{0FFABD2F-9970-4B0E-B527-FA7739112A6E}"/>
 						<Switch Name="Dirt" ID="{A424F848-F106-4139-A88E-ECE6082E9D28}"/>
@@ -16,7 +15,6 @@
 				<SwitchGroup Name="Tile_Material_Wolf" ID="{6A67E4EA-A22F-4FF0-853C-797D1B519132}">
 					<ChildrenList>
 						<Switch Name="Mud" ID="{C2A9C8D1-CF5F-44DB-BFC8-E447E8EA25C0}"/>
-						<Switch Name="Ice" ID="{0D0B1101-7EBD-4FEE-B251-DB6D306F4321}"/>
 						<Switch Name="Flowers" ID="{ED3C5CA2-8094-4668-8C0A-B210326A9E6B}"/>
 						<Switch Name="Bridge" ID="{8B3EF23D-FBE0-424C-9EA9-8E484591039E}"/>
 						<Switch Name="Dirt" ID="{575C27E0-FC00-415A-B115-DB3E32D7576D}"/>

@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4199717103848614, guid: f75f142651661094881d17539c007dcc, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4199717103848614, guid: f75f142651661094881d17539c007dcc, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -341,7 +341,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4754231219305080, guid: 7b528da7f5f0b6a42849a23dbc4072b0, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b528da7f5f0b6a42849a23dbc4072b0, type: 2}
@@ -512,7 +512,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fda331b180ccec3449386238b71557fb, type: 2}
   m_IsPrefabParent: 0
---- !u!117 &1277933326
+--- !u!117 &1278991814
 Texture3D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -573,7 +573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4805337122578582, guid: 3affaee52cfac3d4b86b5b9173e4fcce, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3affaee52cfac3d4b86b5b9173e4fcce, type: 2}
@@ -854,7 +854,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4965895197556156, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1419905763309856, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
       propertyPath: m_IsActive
@@ -897,6 +897,16 @@ Prefab:
         type: 2}
       propertyPath: field of view
       value: 18.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114341610793959952, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
+        type: 2}
+      propertyPath: exposureAdjustment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
+        type: 2}
+      propertyPath: intensity
+      value: 0.18
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 95467654906140764, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}

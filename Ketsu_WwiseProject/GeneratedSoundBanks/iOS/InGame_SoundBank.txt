@@ -11,6 +11,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1527790590	GUI_Undo_Button			\UI\GUI\Button\GUI_Undo_Button	
 	1670207177	WinScreen_MainMenu_Button			\UI\GUI\WinScreen\WinScreen_MainMenu_Button	
 	1748211077	GUI_Split_Release			\UI\GUI\Split\GUI_Split_Release	
+	1889483571	Move_Ketsu_Ice			\Characters\Move\Move_Ketsu_Ice	
+	2045277556	Stop_Ketsu_Ice			\Characters\Move\Stop_Ketsu_Ice	
 	2431936319	Play_Random_Env			\World\Map_Env\Play_Random_Env	
 	2492116432	Move_Fox			\Characters\Move\Move_Fox	
 	2494762103	Stop_Fox_Ice			\Characters\Move\Stop_Fox_Ice	
@@ -28,7 +30,6 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	187032587	Flowers	Tile_Material_Fox			
-	344481046	Ice	Tile_Material_Fox			
 	712897245	Mud	Tile_Material_Fox			
 	2068062714	Bridge	Tile_Material_Fox			
 	2195636714	Dirt	Tile_Material_Fox			
