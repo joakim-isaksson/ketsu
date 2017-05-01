@@ -1939,7 +1939,7 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 							<GroupingInfo>
-								<GroupRef Name="Tile_Material_Fox" ID="{6EBB486F-1177-41CF-8481-63F14ACAE39B}"/>
+								<GroupRef Name="Tile_Material_Wolf" ID="{6A67E4EA-A22F-4FF0-853C-797D1B519132}"/>
 								<DefaultSwitchRef Name="" ID="{00000000-0000-0000-0000-000000000000}"/>
 								<GroupingBehaviorList>
 									<GroupingBehavior>
@@ -1960,33 +1960,33 @@
 								</GroupingBehaviorList>
 								<GroupingList>
 									<Grouping>
-										<SwitchRef Name="Bridge" ID="{0FFABD2F-9970-4B0E-B527-FA7739112A6E}"/>
+										<SwitchRef Name="Grass" ID="{663D641A-44FC-4606-8433-996F3185C933}"/>
+										<ItemList>
+											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Bridge" ID="{8B3EF23D-FBE0-424C-9EA9-8E484591039E}"/>
 										<ItemList>
 											<ItemRef Name="Bridge" ID="{134406B6-D292-4B38-A9EE-DF1D0AA6180E}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Dirt" ID="{A424F848-F106-4139-A88E-ECE6082E9D28}"/>
-										<ItemList>
-											<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Grass" ID="{7D69C770-D885-4283-A757-6CE1B8C8F4AB}"/>
+										<SwitchRef Name="Flowers" ID="{ED3C5CA2-8094-4668-8C0A-B210326A9E6B}"/>
 										<ItemList>
 											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Mud" ID="{FFF97B7F-9602-45E0-994C-8F3D75FA047A}"/>
+										<SwitchRef Name="Mud" ID="{C2A9C8D1-CF5F-44DB-BFC8-E447E8EA25C0}"/>
 										<ItemList>
 											<ItemRef Name="Mud" ID="{166D4A60-712B-4D4D-BC57-8DA38CEBF9F1}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>
-										<SwitchRef Name="Flowers" ID="{55CDB8ED-F397-402B-AED0-67DD69AD005C}"/>
+										<SwitchRef Name="Dirt" ID="{575C27E0-FC00-415A-B115-DB3E32D7576D}"/>
 										<ItemList>
-											<ItemRef Name="Grass" ID="{E97EB4CE-AB52-44DA-8310-86160BCEA6B6}"/>
+											<ItemRef Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}"/>
 										</ItemList>
 									</Grouping>
 								</GroupingList>

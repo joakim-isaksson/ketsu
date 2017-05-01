@@ -25,9 +25,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	4249145201	Move_Wolf			\Characters\Move\Move_Wolf	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
+	3519937254	Tile_Material_Wolf			\Default Work Unit\Tile_Material_Wolf	
 	3831856317	Tile_Material_Fox			\Default Work Unit\Tile_Material_Fox	
 
 Switch	ID	Name	Switch Group			Notes
+	187032587	Flowers	Tile_Material_Wolf			
+	712897245	Mud	Tile_Material_Wolf			
+	2068062714	Bridge	Tile_Material_Wolf			
+	2195636714	Dirt	Tile_Material_Wolf			
+	4248645337	Grass	Tile_Material_Wolf			
 	187032587	Flowers	Tile_Material_Fox			
 	712897245	Mud	Tile_Material_Fox			
 	2068062714	Bridge	Tile_Material_Fox			
