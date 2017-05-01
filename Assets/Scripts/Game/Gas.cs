@@ -4,6 +4,9 @@ namespace Game
 {
     public class Gas : MonoBehaviour
     {
+        public string SfxCollectDefault;
+        public string SfxCollectLast;
+
         public static int GasToCollect;
         public static int GasCollected;
 
@@ -28,6 +31,9 @@ namespace Game
 
             GasCollected++;
             GasToCollect--;
+
+            if (GasCollected == GasToCollect) AkSoundEngine.PostEvent(SfxCollectLast, gameObject);
+            else AkSoundEngine.PostEvent(SfxCollectDefault, gameObject);
 
             Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 

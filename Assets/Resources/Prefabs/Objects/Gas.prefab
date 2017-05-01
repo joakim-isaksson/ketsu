@@ -154,5 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a915450b63bff4ea680ad7e140dcf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SfxCollectDefault: Collect_Gas
+  SfxCollectLast: Collect_LastGas
   ExplosionPrefab: {fileID: 1907596495495212, guid: 7b8dd56877157b649bf3d1153d037112,
     type: 2}

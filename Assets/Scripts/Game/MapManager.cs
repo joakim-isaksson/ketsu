@@ -7,6 +7,8 @@ namespace Game
 {
 	public class MapManager : MonoBehaviour
 	{
+	    public string SfxMapSolved;
+
 		[HideInInspector]
 		public bool Solved;
 		public bool Split;
@@ -71,7 +73,9 @@ namespace Game
 		}
 
         public bool CheckSolved()
-		{
+        {
+            if (Solved) return true;
+
 			foreach (Home home in homes)
 			{
                 if (home.Occupants == 0)
@@ -82,6 +86,8 @@ namespace Game
 			}
 
 		    if (Gas.GasToCollect > 0) return false;
+            
+            AkSoundEngine.PostEvent(SfxMapSolved, gameObject);
 
             Solved = true;
             return true;

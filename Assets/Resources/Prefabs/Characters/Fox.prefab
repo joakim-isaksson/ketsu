@@ -1468,6 +1468,9 @@ MonoBehaviour:
   NotBlockedBy: 0100000006000000080000000b0000000e000000
   MoveAnimTime: 0.2
   SfxMove: Move_Fox
+  SfxSlideStart: Move_Fox_Ice
+  SfxSlideStop: Stop_Fox_Ice
+  SwitchGroupName: Tile_Material_Fox
 --- !u!137 &137366897264825958
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

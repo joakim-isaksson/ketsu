@@ -211,3 +211,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExplosionPrefab: {fileID: 1907596495495212, guid: 1f9a05b39b7e2a446b1e467fa149e039,
     type: 2}
+  SfxCollect: Collect_Gem

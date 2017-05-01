@@ -51,4 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae44ea842d655747b5957d3b1a295ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SfxMapSolved: Level_Solved
   Solved: 0
+  Split: 0

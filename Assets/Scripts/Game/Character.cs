@@ -12,6 +12,9 @@ namespace Game
 
 		[Header("Sounds")]
 		public string SfxMove;
+	    public string SfxSlideStart;
+	    public string SfxSlideStop;
+        public string SwitchGroupName;
 
         bool stuckInMud;
 
@@ -24,46 +27,45 @@ namespace Game
 
         void Start()
 		{
-
-		}
+		    
+        }
 
 		public void MoveTo(Vector3 newPosition, MapObjectType targetGroundType, Action callback)
 		{
             if (stuckInMud || transform.position == newPosition)
             {
                 stuckInMud = false;
+
+                if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
+                if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
+
                 if (callback != null) callback();
             }
             else
             {
                 if (targetGroundType == MapObjectType.Mud) stuckInMud = true;
 
-                AkSoundEngine.PostEvent(SfxMove, gameObject);
-                MoveAnimation(newPosition, callback);
+                if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
+                if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
+
+                StartCoroutine(RunMoveAnimation(newPosition, callback));
             }
-		}
-
-        public void TakeDamage(float amount)
-		{
-            // do nothing
-        }
-
-		void MoveAnimation(Vector3 target, Action callback)
-		{
-			StartCoroutine(RunMoveAnimation(target, callback));
 		}
 
 		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{
-		    anim.SetBool("Walking", true);
+		    Vector3 start = transform.position;
 
-            Vector3 start = transform.position;
+		    bool sliding = Vector3.Distance(start, target) > 1.5f;
 
-            float animTime = MoveAnimTime * Vector3.Distance(start, target);
+		    if (sliding) AkSoundEngine.PostEvent(SfxSlideStart, gameObject);
+
+            anim.SetBool("Walking", true);
 
             transform.LookAt(target);
 
-			float timePassed = 0.0f;
+		    float animTime = MoveAnimTime * Vector3.Distance(start, target);
+            float timePassed = 0.0f;
 			do
 			{
 				timePassed += Time.deltaTime;
@@ -75,6 +77,8 @@ namespace Game
 			} while (timePassed < animTime);
 
             anim.SetBool("Walking", false);
+
+		    if (sliding) AkSoundEngine.PostEvent(SfxSlideStop, gameObject);
 
             if (callback != null) callback();
 		}

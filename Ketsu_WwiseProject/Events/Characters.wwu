@@ -43,14 +43,21 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Reset Playlist" ID="{9A41AB48-ABDF-4677-A98D-16F43E024549}" ShortID="490648599" Type="ResetPlaylist" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{ED170FE7-0AAB-437F-9B12-A55B65E699D5}" Global="false">
+											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Move_Fox_Ice" ID="{7DA62BF0-165C-41B5-BBFA-9551FF6C68EA}">
 							<ChildrenList>
 								<Action Name="Play" ID="{F01EDC4D-5439-40E8-A266-48F07EB7B836}" ShortID="37426964" Type="Play" Scope="One" Global="false">
 									<ElementList>
-										<Element ID="{6A98658A-C5D5-4C35-977B-2EE8FC027C32}" Global="false">
-											<ObjectRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										<Element ID="{3BD23A80-EE46-4AFE-957F-AA6C197763B4}" Global="false">
+											<ObjectRef Name="Ice" ID="{53904233-8B1C-4BF4-900D-25C891BB1041}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -64,8 +71,8 @@
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{8B87C3BD-CC13-440D-9024-A35077B57EB8}" Global="false">
-											<ObjectRef Name="Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										<Element ID="{2BD907A2-82F2-4524-941A-CAE1FD1FCC53}" Global="false">
+											<ObjectRef Name="Ice" ID="{53904233-8B1C-4BF4-900D-25C891BB1041}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>
@@ -92,6 +99,28 @@
 									<ElementList>
 										<Element ID="{1D6EF525-9CB8-419B-8990-05DF87DEC286}" Global="false">
 											<ObjectRef Name="Ice" ID="{C5D3A72F-3F70-494B-8757-43BC5444CE25}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Move_Ketsu_Ice" ID="{C297551C-E206-40F8-8CCE-0CCC6362E8C2}">
+							<ChildrenList>
+								<Action Name="Play" ID="{7D850DCC-19B4-4146-81B0-81CF51CB0E00}" ShortID="247672645" Type="Play" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5284DFBB-B9D4-442E-85A7-0CE7096184E3}" Global="false">
+											<ObjectRef Name="Move_Ketsu_Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Ketsu_Ice" ID="{42A6FB6B-0723-4BF8-86E8-06AEE4D8D1FE}">
+							<ChildrenList>
+								<Action Name="Stop" ID="{5116AFB6-E730-4A9F-AB0D-9A92CAF908F7}" ShortID="524648320" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{BA2A443D-CB21-48E9-BD1F-50A11416AC88}" Global="false">
+											<ObjectRef Name="Move_Ketsu_Ice" ID="{7FD71854-3F76-40BF-B802-0146130D9445}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>

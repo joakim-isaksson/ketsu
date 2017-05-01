@@ -197,10 +197,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="Transform_ToKetsu_01" ID="{FF693E9E-AACF-4729-95B4-4AF135909425}" ShortID="426470596">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="6.29533637019047E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.2115233020384"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.506145044163314"/>
-												<Property Name="TrimBegin" Type="Real64" Value="2.51813454807619E-02"/>
-												<Property Name="TrimEnd" Type="Real64" Value="2.57605164268194"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.45578235320179"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.14545063496091"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>Transform_ToKetsu_01.wav</AudioFile>
@@ -222,9 +222,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="Transform_ToKetsu_02" ID="{7D7FC067-B0B5-49BC-8343-E01A49163910}" ShortID="1047423126">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.86506929592441E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.121765445076787"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.231593101420557"/>
-												<Property Name="TrimBegin" Type="Real64" Value="1.19377887330184E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.484674222560546"/>
 												<Property Name="TrimEnd" Type="Real64" Value="2.4066582085765"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -247,8 +247,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="Transform_ToKetsu_03" ID="{F475D896-2AC6-4130-8C53-5E275780D63A}" ShortID="619675664">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="2.14880197194331E-02"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.131315676063202"/>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.219655312687538"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.417822605655643"/>
 												<Property Name="TrimEnd" Type="Real64" Value="2.48544761421442"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -414,6 +415,11 @@
 										<Value>9</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -431,6 +437,84 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="SFX_LevelStart" ID="{58A24AFE-C750-4E88-BAF0-B0B5937DC513}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_LevelWin" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" ShortID="242711899" Type="SoundFX">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUI_Split_Release" ID="{ED3FD378-0570-4AD1-82B3-03D0FA389228}" ShortID="859584638">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.170399302408945"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.23470092595949"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>GUI_Split_Release.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUI_Split_Release" ID="{ED3FD378-0570-4AD1-82B3-03D0FA389228}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Ketsu_BuildUp" ID="{34295A4A-6C83-4BB1-B048-EE32BD894243}" ShortID="710223340" Type="SoundFX">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>52</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>50</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{26DC511B-C8B2-45BA-BCD5-870589451362}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="51"/>
+													<Property Name="Min" Type="Real64" Value="-101"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D3D57C4F-EE53-48BC-8B1B-7CDC1E5692FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{68D58777-3A89-43FF-A94C-B9BE7BE915B7}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="GUI_Split_BuildUp" ID="{A1863788-4AF8-4CF7-93EC-CD2751C9E4E6}" ShortID="478831407">
+									<Language>SFX</Language>
+									<AudioFile>GUI_Split_BuildUp.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="GUI_Split_BuildUp" ID="{A1863788-4AF8-4CF7-93EC-CD2751C9E4E6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

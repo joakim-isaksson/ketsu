@@ -81,6 +81,7 @@ MonoBehaviour:
   MoveQueueSize: 2
   TrainsformToKetsuSfx: Transform_ToKetsu
   SplitKetsuSfx: Transform_FromKetsu
+  SfxBlocked: Character_Blocked
   MergeEffectPrefab: {fileID: 1823256909414778, guid: 3bfbe897f09b66545a5b8a0244d94557,
     type: 2}
   SplitEffectPrefab: {fileID: 1734236810602820, guid: 7a5052efaed749b4db98ca8c150820cc,

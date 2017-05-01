@@ -94,6 +94,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Stop" ID="{38517EFD-A4F9-4889-B888-32673490E913}" ShortID="619700393" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{D67282C6-5B31-4144-B99E-AC23F039C2DB}" Global="true">
+											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="WinScreen_MainMenu_Button" ID="{1FF2260A-17ED-4DF6-B496-0DBCAE0BC023}">
@@ -105,6 +112,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Stop" ID="{0109D95A-0977-41AF-80F1-7CA7D479ED94}" ShortID="637625901" Type="Stop" Scope="One" Global="true">
+									<ElementList>
+										<Element ID="{5237E90A-04A3-4A48-AA65-17A07E607987}" Global="true">
+											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="WinScreen_Restart_Button" ID="{18CA9614-5252-464D-BB06-3EBD080DB998}">
@@ -113,6 +127,13 @@
 									<ElementList>
 										<Element ID="{7D263AA3-CB84-4747-AC06-786C8C3C0FAD}" Global="false">
 											<ObjectRef Name="UI_PopupMenu_Restart_Button" ID="{7E7CE96F-F4F5-4537-A080-28893E2D3E75}" WorkUnitID="{31E82EE3-46D8-44FD-B484-8AC77E38A15B}"/>
+										</Element>
+									</ElementList>
+								</Action>
+								<Action Name="Stop" ID="{14067676-5BB0-4375-9DCC-5CEFB71BAA6E}" ShortID="569583822" Type="Stop" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{3AAE1A7D-C19F-4FF4-AD1C-0988CC37F885}" Global="false">
+											<ObjectRef Name="LevelMusic_DirtyDrumloop" ID="{E9E8DEA0-2BE3-401C-8ED1-EA91D7066065}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>

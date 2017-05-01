@@ -5,6 +5,7 @@ namespace Game
     public class Gem : MonoBehaviour
     {
         public GameObject ExplosionPrefab;
+        public string SfxCollect;
 
         CharacterHandler characterHandler;
 
@@ -18,6 +19,8 @@ namespace Game
             var otherType = other.GetComponent<MapObject>().Type;
             if (otherType != MapObjectType.Fox && otherType != MapObjectType.Wolf &&
                 otherType != MapObjectType.Ketsu) return;
+
+            AkSoundEngine.PostEvent(SfxCollect, gameObject);
 
             Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 
