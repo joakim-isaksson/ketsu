@@ -1,19 +1,38 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using System.Collections;
+using System.Linq;
+using System.Collections.Generic;
 
 public class LoadLevel : MonoBehaviour
 {
+    [Serializable]
+    public struct SceneToMusicEvent
+    {
+        public string SceneName;
+        public string EventName;
+    }
+    public List<SceneToMusicEvent> MusicEvents;
 
-	public void LoadOn(int level)
+    public void LoadOn(int level)
 	{
 		SceneManager.LoadScene(level);
 	}
 
 	public void NextLevel()
 	{
-		int level = SceneManager.GetActiveScene().buildIndex;
+	    foreach (SceneToMusicEvent musicEvent in MusicEvents)
+	    {
+	        if (musicEvent.SceneName.Equals(SceneManager.GetActiveScene().name))
+	        {
+	            AkSoundEngine.PostEvent(musicEvent.EventName, gameObject);
+	            break;
+	        }
+	    }
+
+        int level = SceneManager.GetActiveScene().buildIndex;
 		SceneManager.LoadScene(level + 1);
 	}
 

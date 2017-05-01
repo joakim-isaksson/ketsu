@@ -82,7 +82,7 @@
 				<Event Id="1530902551" Name="Level_Solved" ObjectPath="\Events\Music\Stingers\Level_Solved"/>
 				<Event Id="3215460479" Name="Play_InGameMusic1" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic1"/>
 				<Event Id="3215460476" Name="Play_InGameMusic2" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic2"/>
-				<Event Id="620526404" Name="Play_InGameMusic_Hedgy" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic_Hedgy"/>
+				<Event Id="3215460477" Name="Play_InGameMusic3" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic3"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="538034921" Language="SFX">

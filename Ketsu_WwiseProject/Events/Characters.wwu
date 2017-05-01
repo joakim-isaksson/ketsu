@@ -14,13 +14,6 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Reset Playlist" ID="{CF131086-2455-4322-B97C-97E4E895F58C}" ShortID="501540739" Type="ResetPlaylist" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{9844F05D-B27F-45E5-BF03-CA3525F23A2A}" Global="false">
-											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Move_Ketsu" ID="{9E93573B-3EC7-416E-8066-005541AE716B}">
@@ -40,13 +33,6 @@
 									<ElementList>
 										<Element ID="{450452B9-A585-4167-BD44-D7E2EFB6982F}" Global="false">
 											<ObjectRef Name="Move_Wolf" ID="{17E1D0B9-BCB9-4B0B-A83F-0BC66D1E90AF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Reset Playlist" ID="{9A41AB48-ABDF-4677-A98D-16F43E024549}" ShortID="490648599" Type="ResetPlaylist" Scope="One" Global="false">
-									<ElementList>
-										<Element ID="{ED170FE7-0AAB-437F-9B12-A55B65E699D5}" Global="false">
-											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
 										</Element>
 									</ElementList>
 								</Action>
