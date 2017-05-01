@@ -2023,7 +2023,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 723538dfd36f34d0f9cf40e9390fbbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonSound: PopupMenu_Back_Button
+  ButtonSound: Gui_MainMenu_Button
 --- !u!114 &114274451103408848
 MonoBehaviour:
   m_ObjectHideFlags: 1
