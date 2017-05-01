@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="InGameMusic" ID="{215A90DB-5486-4107-93AF-752E0ECBD77A}" ShortID="303318474">
 					<ChildrenList>
-						<Event Name="Play_InGameMusic_Hedgy" ID="{35E60518-6849-4E77-ABE9-0533248BB64B}">
+						<Event Name="Play_InGameMusic3" ID="{35E60518-6849-4E77-ABE9-0533248BB64B}">
 							<ChildrenList>
 								<Action Name="Play" ID="{EAE115DA-118A-4CAC-8311-638727B84407}" ShortID="945443224" Type="Play" Scope="One" Global="false">
 									<PropertyList>

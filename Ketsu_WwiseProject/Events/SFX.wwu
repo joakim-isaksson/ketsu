@@ -149,6 +149,13 @@
 										</Element>
 									</ElementList>
 								</Action>
+								<Action Name="Reset Playlist" ID="{5457EFD3-5CDA-49E8-B1DA-D18DCAEBB856}" ShortID="169384687" Type="ResetPlaylist" Scope="One" Global="false">
+									<ElementList>
+										<Element ID="{5B32E1FA-9129-4D94-A80D-AB9F52E6C723}" Global="false">
+											<ObjectRef Name="Move_Ketsu" ID="{8479FDE7-9260-41EE-800F-02B5E206A5BF}" WorkUnitID="{9860AE83-BA8D-45F2-8269-B8ABC4AA01C0}"/>
+										</Element>
+									</ElementList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
