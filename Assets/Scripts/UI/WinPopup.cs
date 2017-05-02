@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Game;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Ketsu.UI
 {
@@ -11,7 +12,10 @@ namespace Ketsu.UI
         public GameObject WinPanel;
         public GameObject ControlPanel;
         public GameObject Settings;
+        public Text LevelNumber;
         MapManager mapManger;
+        float StartTime;
+        bool blink=false;
 
         void Awake()
         {
@@ -31,6 +35,13 @@ namespace Ketsu.UI
 				WinPanel.SetActive(true);
 				ControlPanel.SetActive(false);
 				Settings.SetActive(false);
+                StartCoroutine(TypeText());
+                Debug.Log(StartTime + " " + Time.time);
+                if(Time.time < StartTime+4)
+                    LevelNumber.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 0.8f));
+                else
+                    LevelNumber.color = Color.white;
+
 			} 
 			else {
 				if(Input.GetKeyDown(KeyCode.Tab)){
@@ -42,6 +53,16 @@ namespace Ketsu.UI
 					Settings.SetActive(false);
 				}
 			}
+        }
+
+        IEnumerator TypeText () {
+            if(!blink){
+                StartTime = Time.time;
+                blink = true;
+            }
+            yield return new WaitForSeconds (0.5f);
+            LevelNumber.text = "0"+(SceneManager.GetActiveScene().buildIndex-1)+"/30";
+
         }
     }
 }

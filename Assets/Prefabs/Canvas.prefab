@@ -1552,6 +1552,7 @@ MonoBehaviour:
   WinPanel: {fileID: 1925972576816928}
   ControlPanel: {fileID: 1855937929901084}
   Settings: {fileID: 1807346638553532}
+  LevelNumber: {fileID: 114689389667065936}
 --- !u!114 &114047925066138956
 MonoBehaviour:
   m_ObjectHideFlags: 1
