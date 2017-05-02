@@ -1,0 +1,30 @@
+1 Curious Creature
+2 Seeing Double
+3 Pristine Lake
+4 Meadow of Discovery
+5 Glimmering Gem
+6 Narrow Path
+7 Seaside Crossroad
+8 Entangled Routes
+9 Long Bridge
+10 Island Crossing
+11 Roundtrip Bridge
+12 Sticky Situation
+13 Twin Swamps
+14 Muddy Islands
+15 Swampy Plains
+16 The Hard Way
+17 Switching Sides
+18 Frosty Tips
+19 Complementary Paths
+20 Sliding Loops
+21 Frozen Islands
+22 Icy Pathway
+23 Freezing Lagoon
+24 Sliding Extravaganza
+25 Icy Plateau
+26 Frozen Merge
+27 Cosmic Chasm
+28 Complicated Maneuver
+29 Mastermind's Route
+30 Double Trouble

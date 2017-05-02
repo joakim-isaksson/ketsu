@@ -1135,6 +1135,7 @@ GameObject:
   - component: {fileID: 224491992708258548}
   - component: {fileID: 222073212844668834}
   - component: {fileID: 114502101329488616}
+  - component: {fileID: 114963741764711688}
   m_Layer: 5
   m_Name: LevelText
   m_TagString: Untagged
@@ -4054,6 +4055,19 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114963741764711688
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873645785743086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da7f59d42659ee64cb4cd02783248be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelName: {fileID: 114423399133044402}
+  LevelNumber: {fileID: 114689389667065936}
 --- !u!114 &114980251080344224
 MonoBehaviour:
   m_ObjectHideFlags: 1
