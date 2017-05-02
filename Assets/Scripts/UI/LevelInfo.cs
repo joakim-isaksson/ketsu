@@ -28,7 +28,10 @@ namespace Ketsu.UI
 				if(n == level){
 					string name = line.Substring(line.IndexOf(' ') + 1);
 					LevelName.text = name;
-					LevelNumber.text = "0"+(level-1)+"/30";
+					if(n <= 11)
+					LevelNumber.text = "0"+(level-1)+"/28";
+					else
+					LevelNumber.text = (level-1)+"/28";
 					break;
 				}
 

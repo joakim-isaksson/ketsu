@@ -37,7 +37,7 @@ namespace Ketsu.UI
 				Settings.SetActive(false);
                 StartCoroutine(TypeText());
                 Debug.Log(StartTime + " " + Time.time);
-                if(Time.time < StartTime+4)
+                if(Time.time < StartTime+1)
                     LevelNumber.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 0.8f));
                 else
                     LevelNumber.color = Color.white;
@@ -61,8 +61,11 @@ namespace Ketsu.UI
                 blink = true;
             }
             yield return new WaitForSeconds (0.5f);
-            LevelNumber.text = "0"+(SceneManager.GetActiveScene().buildIndex-1)+"/30";
-
+            int level = SceneManager.GetActiveScene().buildIndex-1;
+            if(level < 10)
+            LevelNumber.text = "0"+level+"/28";
+            else
+            LevelNumber.text = level+"/28";
         }
     }
 }
