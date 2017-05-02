@@ -12,7 +12,7 @@ namespace Ketsu.Utils
 	    Material[] materials;
 	    Color[] startingColors;
         
-	    bool flashing;
+	    public bool flashing;
 
         void Start()
 	    {

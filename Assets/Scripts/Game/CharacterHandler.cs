@@ -101,7 +101,9 @@ namespace Game
 			{
 				// Starting with Fox and Wolf
 				ActiveCharacter = fox;
-				ketsu = Instantiate(KetsuPrefab).GetComponent<Character>();
+				GameObject ketsuObject = Instantiate(KetsuPrefab);
+                ketsuObject.transform.parent = GameObject.Find("Objects").transform;
+                ketsu = ketsuObject.GetComponent<Character>();
 				ketsu.gameObject.SetActive(false);
 			}
 			else if (fox != null && wolf == null && ketsu == null)

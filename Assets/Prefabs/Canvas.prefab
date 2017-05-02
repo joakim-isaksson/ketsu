@@ -3251,8 +3251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9faeed66f72804aab886c22eeb4269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ketsuPowerText: {fileID: 114763433172314060}
-  BG: {fileID: 224756168056541450}
+  Locked: {fileID: 21300000, guid: 39c187800463a4074ba31b1b9c40e399, type: 3}
+  Power: {fileID: 21300000, guid: e9f0effc77b4345bcba940840200f173, type: 3}
+  Off: {fileID: 21300000, guid: 829f19208cecc4087a42812858bba6b0, type: 3}
+  Blink: {fileID: 21300000, guid: 41340ed14de5743bdaa71aa2686ccd25, type: 3}
+  Ketsu: {fileID: 0}
 --- !u!114 &114616306161384186
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3959,8 +3962,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e9faeed66f72804aab886c22eeb4269, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ketsuPowerText: {fileID: 0}
-  BG: {fileID: 0}
+  Locked: {fileID: 0}
+  Power: {fileID: 0}
+  Off: {fileID: 0}
+  Blink: {fileID: 0}
+  Ketsu: {fileID: 0}
 --- !u!114 &114930711930687324
 MonoBehaviour:
   m_ObjectHideFlags: 1
