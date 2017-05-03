@@ -9,15 +9,24 @@ namespace Game
         [HideInInspector]
 		public int Occupants;
 
+	    bool ready;
+	    Animator anim;
+
 		void Awake()
 		{
-
+		    anim = GetComponentInChildren<Animator>();
 		}
 
-		void Start()
-		{
+	    void Update()
+	    {
+	        if (ready) return;
 
-		}
+	        if (Gas.GasToCollect == 0)
+	        {
+	            anim.SetTrigger("Ready");
+	            ready = true;
+	        }
+	    }
 
 		void OnTriggerEnter(Collider other)
 		{

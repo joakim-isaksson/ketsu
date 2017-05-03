@@ -32,8 +32,8 @@ namespace Game
             GasCollected++;
             GasToCollect--;
 
-            if (GasToCollect == 0) AkSoundEngine.PostEvent(SfxCollectLast, gameObject);
-            else AkSoundEngine.PostEvent(SfxCollectDefault, gameObject);
+            if (GasToCollect > 0) AkSoundEngine.PostEvent(SfxCollectDefault, gameObject);
+            else AkSoundEngine.PostEvent(SfxCollectLast, gameObject);
 
             Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 
