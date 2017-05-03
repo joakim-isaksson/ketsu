@@ -51,7 +51,7 @@
 							<ConversionPlugin Name="" ID="{4F31D69F-DA77-4F0C-BDBC-A3D889F73E8C}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{CB24A618-2573-4371-89BB-646591A2A9B7}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{FAFC30BF-F2CD-46EF-8E39-1043D7CAF3B8}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{3692A027-0308-4039-986B-7105C1C52BF9}" PluginName="PCM" CompanyID="0" PluginID="1"/>
