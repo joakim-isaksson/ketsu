@@ -32,6 +32,11 @@ namespace Game
 
 		}
 
+	    void Update()
+	    {
+	        if (Input.GetKey("escape")) SceneManager.LoadScene("LevelSelection");
+        }
+
         /// <summary>
         /// Get all active MapObjects from given point
         /// </summary>
