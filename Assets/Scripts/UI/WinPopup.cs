@@ -36,7 +36,6 @@ namespace Ketsu.UI
 				ControlPanel.SetActive(false);
 				Settings.SetActive(false);
                 StartCoroutine(TypeText());
-                Debug.Log(StartTime + " " + Time.time);
                 if(Time.time < StartTime+1)
                     LevelNumber.color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 0.8f));
                 else
