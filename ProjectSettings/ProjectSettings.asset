@@ -179,7 +179,7 @@ PlayerSettings:
   iOSLaunchScreenFillPct: 100
   iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
-  iOSLaunchScreeniPadType: 1
+  iOSLaunchScreeniPadType: 0
   iOSLaunchScreeniPadImage: {fileID: 2800000, guid: b11034e78803352458ff890607e772ea,
     type: 3}
   iOSLaunchScreeniPadBackgroundColor:
