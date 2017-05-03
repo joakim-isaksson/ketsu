@@ -255,10 +255,6 @@ Prefab:
       propertyPath: m_Name
       value: Island04 (1)
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 37adde97c96af9e4b9c75d0a90234298, type: 2}
-=======
     - target: {fileID: 114001726147069114, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
         type: 2}
       propertyPath: quality
@@ -276,7 +272,6 @@ Prefab:
     - {fileID: 114419183417176752, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
     - {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
->>>>>>> ios optimizations
   m_IsPrefabParent: 0
 --- !u!1001 &739271723
 Prefab:
@@ -343,8 +338,11 @@ Prefab:
       propertyPath: basePath
       value: Audio/GeneratedSoundBanks
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> ios optimizations
 =======
+=======
+>>>>>>> ios optimizations
 >>>>>>> ios optimizations
       objectReference: {fileID: 0}
     m_RemovedComponents: []
