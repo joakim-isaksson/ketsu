@@ -1158,9 +1158,6 @@ GameObject:
   - component: {fileID: 375135110}
   - component: {fileID: 375135109}
   - component: {fileID: 375135111}
-  - component: {fileID: 375135114}
-  - component: {fileID: 375135112}
-  - component: {fileID: 375135108}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1320,8 +1317,6 @@ MonoBehaviour:
   playingId: 0
   multiPositionTypeLabel: 0
   multiPositionArray: []
-<<<<<<< HEAD
-=======
 --- !u!114 &375135112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,7 +1392,6 @@ MonoBehaviour:
   adaptionSpeed: 17.12
   tonemapper: {fileID: 4800000, guid: 003377fc2620a44939dadde6fe3f8190, type: 3}
   validRenderTextureFormat: 0
->>>>>>> modified scenes to improve ios compatibility
 --- !u!1001 &427571009
 Prefab:
   m_ObjectHideFlags: 0
