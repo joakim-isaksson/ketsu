@@ -50,6 +50,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	503900360	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Silence\Wwise Silence	
 	669661827	WindGenerator	WindGenerator		\Actor-Mixer Hierarchy\World\Map_Env\Wind\StrongWind\WindGenerator	
 	991753287	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Silence\Wwise Silence	
+	998804969	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Silence_01\Wwise Silence	
 	1070595288	WindGenerator	WindGenerator		\Actor-Mixer Hierarchy\World\Map_Env\Wind\HowlingWind\WindGenerator	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size

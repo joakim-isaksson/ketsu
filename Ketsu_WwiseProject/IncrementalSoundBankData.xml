@@ -3,7 +3,7 @@
 	<Platform GUID="{67D37C3E-AE4B-41B9-B64B-EB316D3A78A2}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="1931940995" Timestamp="131382695252276252"/>
+				<File Name="InGame_SoundBank" Hash="1149157444" Timestamp="131382888623614039"/>
 				<File Name="Init" Hash="3885196734" Timestamp="131381355807477851"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498569131971"/>
 				<File Name="Menu_Soundbank" Hash="1543535548" Timestamp="131382691809150008"/>
@@ -12,22 +12,22 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2043878717" Timestamp="131382695252521843"/>
+				<File Name="" Hash="2043878717" Timestamp="131382888623879738"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{A5BF2142-7D21-4249-B284-EABB4ECC1DCA}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="2477997505" Timestamp="131382695268861577"/>
-				<File Name="Init" Hash="1515890768" Timestamp="131381355811112515"/>
+				<File Name="InGame_SoundBank" Hash="3746796666" Timestamp="131382888629452305"/>
+				<File Name="Init" Hash="1515890768" Timestamp="131382888629587563"/>
 				<File Name="Menu_Soundbank" Hash="1543535548" Timestamp="131382691813270975"/>
 				<File Name="Music_Soundbank" Hash="98634930" Timestamp="131382695264062806"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="539882022" Timestamp="131382695269049121"/>
+				<File Name="" Hash="1718221434" Timestamp="131382888629707835"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -50,7 +50,7 @@
 	<Platform GUID="{CAACA1F2-B3F4-4C29-BDE6-B88FF998934C}">
 		<Banks>
 			<Language ID="0">
-				<File Name="InGame_SoundBank" Hash="1931940995" Timestamp="131382695260318432"/>
+				<File Name="InGame_SoundBank" Hash="1938991683" Timestamp="131382888627322514"/>
 				<File Name="Init" Hash="1603989404" Timestamp="131381355809583455"/>
 				<File Name="Main_SoundBank" Hash="2511941523" Timestamp="131346498570557565"/>
 				<File Name="Menu_Soundbank" Hash="1543535548" Timestamp="131382691811135293"/>
@@ -59,7 +59,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2854759459" Timestamp="131382695260538335"/>
+				<File Name="" Hash="3843346963" Timestamp="131382888627617649"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

@@ -322,6 +322,10 @@
 					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
 					<Path>SFX\Move_Wolf_Ground_02_AB3070EB.wem</Path>
 				</File>
+				<File Id="833528271" Language="SFX">
+					<ShortName>Map_Env_MediumWind.wav</ShortName>
+					<Path>SFX\Map_Env_MediumWind_A939E04F.wem</Path>
+				</File>
 				<File Id="843588775" Language="SFX">
 					<ShortName>Move_OnBridge_02.wav</ShortName>
 					<Path>SFX\Move_OnBridge_02_A939E04F.wem</Path>

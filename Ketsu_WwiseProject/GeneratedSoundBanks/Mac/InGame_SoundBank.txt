@@ -48,9 +48,8 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	464893665	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Water\Silence\Wwise Silence	
 	487758281	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Silence_01\Wwise Silence	
 	503900360	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Animals\Silence\Wwise Silence	
-	669661827	WindGenerator	WindGenerator		\Actor-Mixer Hierarchy\World\Map_Env\Wind\StrongWind\WindGenerator	
 	991753287	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Silence\Wwise Silence	
-	1070595288	WindGenerator	WindGenerator		\Actor-Mixer Hierarchy\World\Map_Env\Wind\HowlingWind\WindGenerator	
+	998804969	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Silence_01\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	40123842	Move_Fox_Grass_04	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Move_Fox_Grass_04_922F4C2A.wem		\Actor-Mixer Hierarchy\Characters\Fox\Move_Fox\Grass\Move_Fox_Grass_04		60788
@@ -100,6 +99,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	785333790	Move_Wolf_Grass_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Move_Wolf_Grass_01_A939E04F.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_01		73800
 	797032317	SFX_LevelStart	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\SFX_LevelStart_A939E04F.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_LevelStart		737160
 	814823044	Move_Wolf_Ground_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Move_Wolf_Ground_02_AB3070EB.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_02		44884
+	833528271	Map_Env_MediumWind	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Map_Env_MediumWind_A939E04F.wem		\Actor-Mixer Hierarchy\World\Map_Env\Wind\Map_Env_MediumWind		14047016
 	868623114	Move_Wolf_Ground_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Move_Wolf_Ground_03_20F9A476.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Ground\Move_Wolf_Ground_03		54952
 	873194732	LevelMusic_OneShot_Glimmer1	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\LevelMusic_OneShot_Glimmer1_A939E04F.wem		\Actor-Mixer Hierarchy\Music\Stingers\Glimmers\LevelMusic_OneShot_Glimmer1		3351336
 	891115824	Move_Wolf_Grass_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Mac\SFX\Move_Wolf_Grass_03_EB3A45A9.wem		\Actor-Mixer Hierarchy\Characters\Wolf\Move_Wolf\Grass\Move_Wolf_Grass_03		68084
