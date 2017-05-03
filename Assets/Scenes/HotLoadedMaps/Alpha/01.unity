@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 890720908}
-  m_IndirectSpecularColor: {r: 0.36678696, g: 0.6417314, b: 0.87609535, a: 1}
+  m_IndirectSpecularColor: {r: 0.36715344, g: 0.64074165, b: 0.87593, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -573,7 +573,7 @@ Prefab:
     - target: {fileID: 114953190474056272, guid: 6392668a503009d40ad2b387fd3ffe47,
         type: 2}
       propertyPath: basePath
-      value: Audio\GeneratedSoundBanks
+      value: Audio/GeneratedSoundBanks
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6392668a503009d40ad2b387fd3ffe47, type: 2}
@@ -1155,9 +1155,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0697e23118b1cde4487749869394b227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Magnitude: 2
-  Roughness: 5
-  FadeOutTime: 0.75
+  LMagnitude: 1
+  LRoughness: 3
+  LFadeOutTime: 0.5
+  MMagnitude: 2
+  MRoughness: 5
+  MFadeOutTime: 0.75
+  HMagnitude: 5
+  HRoughness: 10
+  HFadeOutTime: 3
 --- !u!114 &1598795568
 MonoBehaviour:
   m_ObjectHideFlags: 0
