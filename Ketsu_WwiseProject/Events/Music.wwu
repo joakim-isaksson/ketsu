@@ -198,63 +198,13 @@
 										</Element>
 									</ElementList>
 								</Action>
-								<Action Name="Stop" ID="{10A22921-E47A-4974-8DEE-08B2E71E50DE}" ShortID="388713137" Type="Stop" Scope="One" Global="true">
+								<Action Name="Stop All Except" ID="{0DC37A65-E9E7-4117-9666-06C894E752AE}" ShortID="948689442" Type="Stop" Scope="AllExcept" Global="true">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ElementList>
-										<Element ID="{DCAFD43B-C2DD-4306-B2F6-718D64B0BE91}" Global="true">
-											<ObjectRef Name="LevelMusic_Hedgy_Short" ID="{EA2045A2-B626-45B0-9792-E1DD013A772A}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{AA981EBB-2352-4E52-A6A0-1D81B0DB0435}" ShortID="4317560" Type="Stop" Scope="One" Global="true">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{C1BF048D-A35F-4630-9F36-3DB512E52EA1}" Global="true">
-											<ObjectRef Name="LevelMusic_Peaceful_Short" ID="{3346DB21-6EEC-43D2-8B57-7E5AA8613F20}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{AF65FB15-71E8-4223-917C-53DF40E1AED3}" ShortID="187608991" Type="Stop" Scope="One" Global="true">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{082D98EC-81E9-4D36-BDE8-D0780EE5686A}" Global="true">
-											<ObjectRef Name="LevelMusic_Peaceful2" ID="{820A4689-6BE1-479F-B64A-D8EDD8BD8C44}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{C85847B1-F4B8-4762-8A93-E4E2C13D6CE4}" ShortID="1057820010" Type="Stop" Scope="One" Global="true">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{A9C1D509-A44A-4D5D-976F-A8FD079873FB}" Global="true">
-											<ObjectRef Name="Animals" ID="{D81F0DF1-7C48-4BD3-81E8-395221C46462}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{8381DB28-0661-4055-BEC1-FB2CF6A75DCD}" ShortID="191761147" Type="Stop" Scope="One" Global="true">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{E7FF79B8-E211-4A9F-A952-68B80AC0C4DA}" Global="true">
-											<ObjectRef Name="Water" ID="{B82461E9-87DD-462F-BA07-496FC4F3048C}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
-										</Element>
-									</ElementList>
-								</Action>
-								<Action Name="Stop" ID="{F88F55F4-5659-4B00-87AA-C948B3F948BF}" ShortID="52603257" Type="Stop" Scope="One" Global="true">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ElementList>
-										<Element ID="{6F65381A-7AB5-4012-95CE-1A6BA01A42F6}" Global="true">
-											<ObjectRef Name="Wind" ID="{830DE85F-F338-4822-AAC9-043E2E8CB606}" WorkUnitID="{85E6A21A-B7B7-42F0-AB24-2AF4F625DF9A}"/>
+										<Element ID="{51604A82-466A-4A95-A9D6-3F76392E6F80}" Global="true">
+											<ObjectRef Name="Ketsu_MenuMusic_Ambient" ID="{BF4C753E-4F83-496F-8CEC-BE14FB735C69}" WorkUnitID="{10797219-A9C7-4EA5-B09A-EF88C7225BB7}"/>
 										</Element>
 									</ElementList>
 								</Action>

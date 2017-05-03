@@ -33,8 +33,7 @@
 											<Modifier Name="" ID="{D24229A6-5F63-4049-870F-2E14D4935DE1}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="25"/>
-													<Property Name="Min" Type="Real64" Value="-25"/>
+													<Property Name="Max" Type="Real64" Value="8"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -120,6 +119,18 @@
 									<ValueList>
 										<Value>12</Value>
 									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{02FAD5FA-1F61-4041-AA0F-467F2E3FCCD5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="20"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -423,13 +434,23 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>11</Value>
+										<Value>15</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>230</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{8BC514C6-2695-4197-A973-5E8F89C87EC2}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="18"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -494,6 +515,18 @@
 						</Sound>
 						<Sound Name="SFX_LevelSolved" ID="{A0DA2C90-4827-44C9-83DF-9A694E5108B7}" ShortID="242711899" Type="SoundFX">
 							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{817A790C-EB45-4E60-9343-E00B6AB38FC0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="25"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-4</Value>

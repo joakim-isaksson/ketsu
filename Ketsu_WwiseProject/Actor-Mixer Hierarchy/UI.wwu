@@ -123,6 +123,18 @@
 				</ActorMixer>
 				<ActorMixer Name="GUI" ID="{CCF8FC32-87D9-49B6-A455-9D53B890319B}" ShortID="472268266">
 					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{F137383B-F653-4D3F-BE45-F512CB4FD17F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="8"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-2</Value>
