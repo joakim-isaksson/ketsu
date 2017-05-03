@@ -140,6 +140,11 @@ Prefab:
       propertyPath: quality
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114001726147069114, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
+        type: 2}
+      propertyPath: quality
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114151429553395520, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
     - {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
@@ -248,9 +253,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     - target: {fileID: 4413247110207266, guid: 578a3cddcad68624a89adda55d1cf163, type: 2}
       propertyPath: m_LocalScale.x
       value: 3.0105603
@@ -266,16 +268,6 @@ Prefab:
     - target: {fileID: 4413247110207266, guid: 578a3cddcad68624a89adda55d1cf163, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 19.953001
-=======
->>>>>>> ios optimizations
-    - target: {fileID: 114953190474056272, guid: 6392668a503009d40ad2b387fd3ffe47,
-        type: 2}
-      propertyPath: basePath
-      value: Audio/GeneratedSoundBanks
-<<<<<<< HEAD
-=======
->>>>>>> ios optimizations
->>>>>>> ios optimizations
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 578a3cddcad68624a89adda55d1cf163, type: 2}
