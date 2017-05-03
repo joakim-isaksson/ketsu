@@ -54,7 +54,7 @@
 									<ConversionPlugin Name="" ID="{C66369D0-530D-44F2-976E-9972B9B4F82A}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{2AF1CA1F-E63E-49C0-BCA9-8AAD20DEBCDC}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{5E5A9EA0-2CB2-46EF-94C7-C153236E3F3F}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{FCEA3813-BFA4-4BAE-84CA-B55D7AFF1A55}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
@@ -113,7 +113,7 @@
 									<ConversionPlugin Name="" ID="{2F4BECAB-1CF8-4CAA-8F63-09E861803F43}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{3DAA0666-A692-4481-96CA-196138B4E04B}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{B067C5F6-F2D9-4725-9E83-879B518C5B7A}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{A8CC5277-6BEC-4C1B-A18A-3FDE2AA24A5B}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
@@ -172,7 +172,7 @@
 									<ConversionPlugin Name="" ID="{632C61DC-019B-41D4-9FA3-8FF5AE1D4408}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{4C3EE04F-CCD9-45C7-8FAD-1824F6941D42}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{34DA299F-E72E-48BA-8521-0A28792938FC}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{C8A2A689-1D3D-4E39-9040-ED5525A22D5B}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
@@ -230,7 +230,7 @@
 									<ConversionPlugin Name="" ID="{B7807687-1FCA-4CC4-A559-4C2E11DFD1F4}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{DC0961AB-771B-4E80-9495-8EE21CE98555}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
+									<ConversionPlugin Name="" ID="{6D8B9BCC-0885-4627-B298-C1EFF2627A65}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{22B20376-BC71-4D77-9E18-58F812CD1F58}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
@@ -292,7 +292,7 @@
 									</ConversionPlugin>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{8BF2A35A-B48C-4868-8649-6F6224013F95}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+									<ConversionPlugin Name="" ID="{E88120D7-67FB-4E89-A3BB-8F7BC12EBEA6}" PluginName="Vorbis" CompanyID="0" PluginID="4">
 										<PropertyList>
 											<Property Name="QualityFactor" Type="Real32" Value="0"/>
 										</PropertyList>
@@ -366,7 +366,7 @@
 									</ConversionPlugin>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{7BB2D2F7-20F1-4749-B72F-E0C1EB62F8CC}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+									<ConversionPlugin Name="" ID="{6F05D3C9-F5D1-4EFE-B180-C4B817A5CA78}" PluginName="Vorbis" CompanyID="0" PluginID="4">
 										<PropertyList>
 											<Property Name="QualityFactor" Type="Real32" Value="2"/>
 										</PropertyList>
@@ -440,7 +440,7 @@
 									<ConversionPlugin Name="" ID="{330FD20F-AA8D-4EF1-81E3-B1DFBD966BE2}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{FB9AB5A7-89AD-4007-82CE-595CE1929B9D}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+									<ConversionPlugin Name="" ID="{A09FA0BE-BC9A-49C7-863D-5CAFD54F3A4F}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{B1E86617-1E24-4962-B5B0-BF3A6D7646DB}" PluginName="PCM" CompanyID="0" PluginID="1"/>
@@ -499,7 +499,7 @@
 									<ConversionPlugin Name="" ID="{81ECDF50-2559-406A-8004-6D12C19122FE}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{A6125762-E2FD-4A53-A7DF-F85076BFE3D3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+									<ConversionPlugin Name="" ID="{DCEB81B0-545C-4280-8738-C88D10E688F2}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{239D0469-387B-498F-BD2D-F254D9E6080B}" PluginName="PCM" CompanyID="0" PluginID="1"/>
@@ -558,7 +558,7 @@
 									<ConversionPlugin Name="" ID="{BD8B0674-AC4C-469B-B7FF-763E8515DCC6}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{07266996-1D3A-42C8-9B1D-0421AB114555}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+									<ConversionPlugin Name="" ID="{0ED81B3A-45ED-42DB-A3A6-8FF861994D38}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{BF823B30-2B58-41C0-9F48-81E386EDDCAC}" PluginName="PCM" CompanyID="0" PluginID="1"/>
@@ -617,7 +617,7 @@
 									<ConversionPlugin Name="" ID="{0A2E8E91-E552-48A7-97EC-E8F134B7205E}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{04CAB326-165C-42BA-AFAF-C787359810C1}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+									<ConversionPlugin Name="" ID="{0F3C7404-522D-42D0-96D1-58C711B63F0E}" PluginName="PCM" CompanyID="0" PluginID="1"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{E2807228-2952-471C-B077-EB5DAE0E23F5}" PluginName="PCM" CompanyID="0" PluginID="1"/>
@@ -679,7 +679,7 @@
 									<ConversionPlugin Name="" ID="{6B070DC3-5FE2-4F93-8017-E80DCE550C72}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{4A776B2D-B74D-4CB9-8479-F186D946000D}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+									<ConversionPlugin Name="" ID="{F43DC00D-9834-4ECA-9030-7B25D6DB2AF6}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{01E48C7D-58BE-4215-B337-10C559FFB83A}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
@@ -738,7 +738,7 @@
 									<ConversionPlugin Name="" ID="{7D669D39-ADC3-4843-B725-598C47A3F1B8}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{219A461C-D449-4DA7-B141-4609B12937C3}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+									<ConversionPlugin Name="" ID="{F725A075-585D-4D6B-B6E9-116BCBE054D4}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{621F379D-6CCC-462D-A08E-7FF4CD1867F5}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
@@ -797,7 +797,7 @@
 									<ConversionPlugin Name="" ID="{7146FD63-C770-470F-A570-9EFBA5DDABEA}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{2B6623E9-3582-4735-9D66-96CF7F844885}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+									<ConversionPlugin Name="" ID="{0F75B677-3032-4751-BE0E-848DC5EB6614}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{CAF439B2-7C53-4259-A3A0-FF47B72FC3E7}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
@@ -856,7 +856,7 @@
 									<ConversionPlugin Name="" ID="{5AFDEA40-3650-49C6-8144-DF2CCC6E4AFF}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Mac">
-									<ConversionPlugin Name="" ID="{0BBFBD8A-20F5-4AE2-AC23-B7EB34276841}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
+									<ConversionPlugin Name="" ID="{C3E742B6-A69C-470A-B8E6-C43B048481A8}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 								</ConversionPluginInfo>
 								<ConversionPluginInfo Platform="Windows">
 									<ConversionPlugin Name="" ID="{A97A7972-D0CB-4435-9B34-ABCC8D33F0FD}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
