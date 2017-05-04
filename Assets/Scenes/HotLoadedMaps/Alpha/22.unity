@@ -143,7 +143,10 @@ Prefab:
 =======
       propertyPath: basePath
       value: Audio/GeneratedSoundBanks
+<<<<<<< HEAD
 >>>>>>> ios level optimization
+=======
+>>>>>>> 5fd8140e43ae1fa391034592e411eef880abe100
       objectReference: {fileID: 0}
     - target: {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
         type: 2}

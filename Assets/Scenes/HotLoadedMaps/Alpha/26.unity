@@ -680,19 +680,26 @@ Prefab:
       value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
     - target: {fileID: 20360294909484022, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
         type: 2}
       propertyPath: field of view
       value: 18.5
 =======
+=======
+>>>>>>> 5fd8140e43ae1fa391034592e411eef880abe100
     - target: {fileID: 114001726147069114, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
         type: 2}
       propertyPath: quality
       value: 0
+<<<<<<< HEAD
 >>>>>>> ios level optimization
+=======
+>>>>>>> 5fd8140e43ae1fa391034592e411eef880abe100
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114151429553395520, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
+<<<<<<< HEAD
 <<<<<<< HEAD
     - {fileID: 95467654906140764, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
 =======
@@ -700,6 +707,11 @@ Prefab:
     - {fileID: 114419183417176752, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
     - {fileID: 114497042218342008, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
 >>>>>>> ios level optimization
+=======
+    - {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
+    - {fileID: 114419183417176752, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
+    - {fileID: 114497042218342008, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
+>>>>>>> 5fd8140e43ae1fa391034592e411eef880abe100
   m_ParentPrefab: {fileID: 100100000, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1954624945
