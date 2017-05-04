@@ -25,11 +25,11 @@ namespace Ketsu.UI
         	else if(Gas.GasToCollect!=0){
         		Quaternion rot = Quaternion.Euler(0,0,(1.0f/StartGas*180)*(Gas.GasToCollect-StartGas)+90);
         		if(Hand.transform.rotation != rot){
-        	    	Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, rot, Time.time * 0.01f);
+        	    	Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, rot, 0.05f);
         		}
         	}
             else {
-                Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, Quaternion.Euler(0,0,-90), Time.time * 0.01f);
+                Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, Quaternion.Euler(0,0,-90), 0.05f);
             }
         }
     }
