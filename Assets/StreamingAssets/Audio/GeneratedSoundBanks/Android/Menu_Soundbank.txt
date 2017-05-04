@@ -1,0 +1,23 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2207195397	LevelMenu_UnlockedLevel_Select			\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Select	
+	2297784124	LevelMenu_LockedLevel_Select			\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Select	
+	2355422256	LevelMenu_StartLevel_Select			\UI\Menu\LevelMenu\LevelMenu_StartLevel_Select	
+	2570041344	Play_MenuMusic			\Music\MenuMusic\Play_MenuMusic	
+	4062746263	UI_Spaceship_Idle			\UI\Spaceship\UI_Spaceship_Idle	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	36414370	UI_LevelMenu_LockedLevel_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_LevelMenu_LockedLevel_Button_53ACE5E0.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_LockedLevel_Button		31892
+	55153259	UI_Spaceship_Landing_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Landing_02_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Landing\UI_Spaceship_Landing_02		719092
+	132533196	Ketsu_MenuMusic_Ambient	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\Ketsu_MenuMusic_Ambient_A05E8D7A.wem		\Actor-Mixer Hierarchy\Music\MenuMusic\Ketsu_MenuMusic_Ambient		31631336
+	241914965	UI_Spaceship_Landing_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Landing_03_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Landing\UI_Spaceship_Landing_03		719092
+	277190118	UI_Spacehip_Idle_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spacehip_Idle_01_2CC9493D.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Idle_01		3911948
+	443061028	UI_LevelMenu_UnlockedLevel_Button	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_LevelMenu_UnlockedLevel_Button_D1AAE16A.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_UnlockedLevel_Button		281544
+	678610783	UI_Spaceship_Landing_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Landing_01_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spaceship_Landing\UI_Spaceship_Landing_01		719092
+	888758915	UI_Spaceship_Move_02	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Move_02_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Move\UI_Spaceship_Move_02		594188
+	945388165	UI_Spaceship_Move_01	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Move_01_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Move\UI_Spaceship_Move_01		594188
+	1012625141	UI_Spaceship_Move_03	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_Spaceship_Move_03_A939E04F.wem		\Actor-Mixer Hierarchy\UI\Spaceship\UI_Spacehip_Move\UI_Spaceship_Move_03		594188
+	1030180912	UI_LevelMenu_Level_Select	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\UI_LevelMenu_Level_Select_96A7BB68.wem		\Actor-Mixer Hierarchy\UI\Menu\LevelMenu\UI_LevelMenu_Level_Select		130208
+

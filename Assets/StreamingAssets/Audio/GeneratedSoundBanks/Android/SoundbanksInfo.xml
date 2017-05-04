@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="120">
+	<RootPaths>
+		<ProjectRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\GeneratedSoundBanks\Android\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1146882678" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Menu_Soundbank</ObjectPath>
+			<ShortName>Menu_Soundbank</ShortName>
+			<Path>Menu_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2297784124" Name="LevelMenu_LockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_LockedLevel_Select"/>
+				<Event Id="2355422256" Name="LevelMenu_StartLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_StartLevel_Select"/>
+				<Event Id="2207195397" Name="LevelMenu_UnlockedLevel_Select" ObjectPath="\Events\UI\Menu\LevelMenu\LevelMenu_UnlockedLevel_Select"/>
+				<Event Id="2570041344" Name="Play_MenuMusic" ObjectPath="\Events\Music\MenuMusic\Play_MenuMusic"/>
+				<Event Id="4062746263" Name="UI_Spaceship_Idle" ObjectPath="\Events\UI\Spaceship\UI_Spaceship_Idle"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="36414370" Language="SFX">
+					<ShortName>UI_LevelMenu_LockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_LockedLevel_Button_53ACE5E0.wem</Path>
+				</File>
+				<File Id="55153259" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_02.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_02_A939E04F.wem</Path>
+				</File>
+				<File Id="132533196" Language="SFX">
+					<ShortName>Ketsu_MenuMusic_Ambient.wav</ShortName>
+					<Path>SFX\Ketsu_MenuMusic_Ambient_A05E8D7A.wem</Path>
+				</File>
+				<File Id="241914965" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_03.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_03_A939E04F.wem</Path>
+				</File>
+				<File Id="277190118" Language="SFX">
+					<ShortName>UI_Spacehip_Idle_01.wav</ShortName>
+					<Path>SFX\UI_Spacehip_Idle_01_2CC9493D.wem</Path>
+				</File>
+				<File Id="443061028" Language="SFX">
+					<ShortName>UI_LevelMenu_UnlockedLevel_Button.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_UnlockedLevel_Button_D1AAE16A.wem</Path>
+				</File>
+				<File Id="678610783" Language="SFX">
+					<ShortName>UI_Spaceship_Landing_01.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Landing_01_A939E04F.wem</Path>
+				</File>
+				<File Id="888758915" Language="SFX">
+					<ShortName>UI_Spaceship_Move_02.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_02_A939E04F.wem</Path>
+				</File>
+				<File Id="945388165" Language="SFX">
+					<ShortName>UI_Spaceship_Move_01.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_01_A939E04F.wem</Path>
+				</File>
+				<File Id="1012625141" Language="SFX">
+					<ShortName>UI_Spaceship_Move_03.wav</ShortName>
+					<Path>SFX\UI_Spaceship_Move_03_A939E04F.wem</Path>
+				</File>
+				<File Id="1030180912" Language="SFX">
+					<ShortName>UI_LevelMenu_Level_Select.wav</ShortName>
+					<Path>SFX\UI_LevelMenu_Level_Select_96A7BB68.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3589812408" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music_Soundbank</ObjectPath>
+			<ShortName>Music_Soundbank</ShortName>
+			<Path>Music_Soundbank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1530902551" Name="Level_Solved" ObjectPath="\Events\Music\Stingers\Level_Solved"/>
+				<Event Id="3215460479" Name="Play_InGameMusic1" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic1"/>
+				<Event Id="3215460476" Name="Play_InGameMusic2" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic2"/>
+				<Event Id="3215460477" Name="Play_InGameMusic3" ObjectPath="\Events\Music\InGameMusic\Play_InGameMusic3"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="211329539" Language="SFX">
+					<ShortName>LevelMusic_Peaceful_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Peaceful_Short_44912E36.wem</Path>
+				</File>
+				<File Id="538034921" Language="SFX">
+					<ShortName>LevelMusic_Peaceful2.wav</ShortName>
+					<Path>SFX\LevelMusic_Peaceful2_98EA82F1.wem</Path>
+				</File>
+				<File Id="669844642" Language="SFX">
+					<ShortName>LevelMusic_Hedgy_Short.wav</ShortName>
+					<Path>SFX\LevelMusic_Hedgy_Short_9DB7ACEB.wem</Path>
+				</File>
+				<File Id="859584638" Language="SFX">
+					<ShortName>GUI_Split_Release.wav</ShortName>
+					<Path>SFX\GUI_Split_Release_1DEAADD8.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="4063213932" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\InGame_SoundBank</ObjectPath>
+			<ShortName>InGame_SoundBank</ShortName>
+			<Path>InGame_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4129504263" Name="Character_Blocked" ObjectPath="\Events\SFX\Level\Character_Blocked"/>
+				<Event Id="67227187" Name="Collect_Gas" ObjectPath="\Events\SFX\Collect\Collect_Gas"/>
+				<Event Id="134337761" Name="Collect_Gem" ObjectPath="\Events\SFX\Collect\Collect_Gem"/>
+				<Event Id="4224533635" Name="Collect_LastGas" ObjectPath="\Events\SFX\Collect\Collect_LastGas"/>
+				<Event Id="3165488550" Name="GUI_MainMenu_Button" ObjectPath="\Events\UI\GUI\Button\GUI_MainMenu_Button"/>
+				<Event Id="519893169" Name="GUI_Restart_Button" ObjectPath="\Events\UI\GUI\Button\GUI_Restart_Button"/>
+				<Event Id="2981221379" Name="Ketsu_Explosion" ObjectPath="\Events\SFX\Level\Ketsu_Explosion"/>
+				<Event Id="536687313" Name="Ketsu_Extermination" ObjectPath="\Events\SFX\Level\Ketsu_Extermination"/>
+				<Event Id="352576276" Name="Level_Start" ObjectPath="\Events\SFX\Level\Level_Start"/>
+				<Event Id="2492116432" Name="Move_Fox" ObjectPath="\Events\Characters\Move\Move_Fox"/>
+				<Event Id="4045630760" Name="Move_Fox_Ice" ObjectPath="\Events\Characters\Move\Move_Fox_Ice"/>
+				<Event Id="3609283987" Name="Move_Ketsu" ObjectPath="\Events\Characters\Move\Move_Ketsu"/>
+				<Event Id="1889483571" Name="Move_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Move_Ketsu_Ice"/>
+				<Event Id="4249145201" Name="Move_Wolf" ObjectPath="\Events\Characters\Move\Move_Wolf"/>
+				<Event Id="1426970985" Name="Move_Wolf_Ice" ObjectPath="\Events\Characters\Move\Move_Wolf_Ice"/>
+				<Event Id="1069359780" Name="Play_Map_Env" ObjectPath="\Events\World\Map_Env\Play_Map_Env"/>
+				<Event Id="2494762103" Name="Stop_Fox_Ice" ObjectPath="\Events\Characters\Move\Stop_Fox_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="2045277556" Name="Stop_Ketsu_Ice" ObjectPath="\Events\Characters\Move\Stop_Ketsu_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="3853446416" Name="Stop_Wolf_Ice" ObjectPath="\Events\Characters\Move\Stop_Wolf_Ice" MaxAttenuation="0.000000"/>
+				<Event Id="1374719650" Name="Transform_FromKetsu" ObjectPath="\Events\SFX\Transform\Transform_FromKetsu"/>
+				<Event Id="1052828255" Name="Transform_ToKetsu" ObjectPath="\Events\SFX\Transform\Transform_ToKetsu"/>
+				<Event Id="1670207177" Name="WinScreen_MainMenu_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_MainMenu_Button"/>
+				<Event Id="2660933722" Name="WinScreen_Next_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Next_Button"/>
+				<Event Id="171788004" Name="WinScreen_Restart_Button" ObjectPath="\Events\UI\GUI\WinScreen\WinScreen_Restart_Button"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="40123842" Language="SFX">
+					<ShortName>Move_Fox_Grass_04.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_04_922F4C2A.wem</Path>
+				</File>
+				<File Id="45816554" Language="SFX">
+					<ShortName>Move_Mud_04.wav</ShortName>
+					<Path>SFX\Move_Mud_04_A939E04F.wem</Path>
+				</File>
+				<File Id="71427473" Language="SFX">
+					<ShortName>Move_OnBridge_05.wav</ShortName>
+					<Path>SFX\Move_OnBridge_05_A939E04F.wem</Path>
+				</File>
+				<File Id="99673032" Language="SFX">
+					<ShortName>Move_Wolf_Grass_05.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_05_869E72F2.wem</Path>
+				</File>
+				<File Id="100508892" Language="SFX">
+					<ShortName>Move_Fox_Grass_05.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_05_715830F5.wem</Path>
+				</File>
+				<File Id="108156585" Language="SFX">
+					<ShortName>UI_PopupMenu_Restart_Button.wav</ShortName>
+					<Path>SFX\UI_PopupMenu_Restart_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="123291723" Language="SFX">
+					<ShortName>Move_Mud_01.wav</ShortName>
+					<Path>SFX\Move_Mud_01_A939E04F.wem</Path>
+				</File>
+				<File Id="147065661" Language="SFX">
+					<ShortName>Map_Env_BigWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_BigWaterStream_2CC9493D.wem</Path>
+				</File>
+				<File Id="177407952" Language="SFX">
+					<ShortName>LevelMusic_PianoCluster.wav</ShortName>
+					<Path>SFX\LevelMusic_PianoCluster_A939E04F.wem</Path>
+				</File>
+				<File Id="231051959" Language="SFX">
+					<ShortName>UI_WinScreen_MainMenu_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_MainMenu_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="280944617" Language="SFX">
+					<ShortName>Transform_FromKetsu_01.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_01_D57E0126.wem</Path>
+				</File>
+				<File Id="287208163" Language="SFX">
+					<ShortName>Ketsu_Extermination.wav</ShortName>
+					<Path>SFX\Ketsu_Extermination_A939E04F.wem</Path>
+				</File>
+				<File Id="310840679" Language="SFX">
+					<ShortName>Move_Fox_Grass_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_01_44FAEFCD.wem</Path>
+				</File>
+				<File Id="333863694" Language="SFX">
+					<ShortName>Transform_FromKetsu_03.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_03_B0A2F3A7.wem</Path>
+				</File>
+				<File Id="338727587" Language="SFX">
+					<ShortName>Move_OnBridge_04.wav</ShortName>
+					<Path>SFX\Move_OnBridge_04_A939E04F.wem</Path>
+				</File>
+				<File Id="378707394" Language="SFX">
+					<ShortName>Transform_FromKetsu_02.wav</ShortName>
+					<Path>SFX\Transform_FromKetsu_02_BE717600.wem</Path>
+				</File>
+				<File Id="402022915" Language="SFX">
+					<ShortName>Move_Fox_Grass_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_02_D6C4A958.wem</Path>
+				</File>
+				<File Id="426470596" Language="SFX">
+					<ShortName>Transform_ToKetsu_01.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_01_46BBF36D.wem</Path>
+				</File>
+				<File Id="431942235" Language="SFX">
+					<ShortName>Move_OnBridge_03.wav</ShortName>
+					<Path>SFX\Move_OnBridge_03_A939E04F.wem</Path>
+				</File>
+				<File Id="465204404" Language="SFX">
+					<ShortName>Map_Env_Birds.wav</ShortName>
+					<Path>SFX\Map_Env_Birds_2CC9493D.wem</Path>
+				</File>
+				<File Id="478831407" Language="SFX">
+					<ShortName>GUI_Split_BuildUp.wav</ShortName>
+					<Path>SFX\GUI_Split_BuildUp_2CC9493D.wem</Path>
+				</File>
+				<File Id="519315026" Language="SFX">
+					<ShortName>Map_Env_BeesOnFlowers.wav</ShortName>
+					<Path>SFX\Map_Env_BeesOnFlowers_2CC9493D.wem</Path>
+				</File>
+				<File Id="532480567" Language="SFX">
+					<ShortName>SFX_Character_Blocked.wav</ShortName>
+					<Path>SFX\SFX_Character_Blocked_8170B692.wem</Path>
+				</File>
+				<File Id="555482349" Language="SFX">
+					<ShortName>Move_Fox_Grass_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Grass_03_4F387C09.wem</Path>
+				</File>
+				<File Id="563726059" Language="SFX">
+					<ShortName>Move_Mud_06.wav</ShortName>
+					<Path>SFX\Move_Mud_06_A939E04F.wem</Path>
+				</File>
+				<File Id="616983996" Language="SFX">
+					<ShortName>Move_Wolf_Ice_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_02_2CC9493D.wem</Path>
+				</File>
+				<File Id="619675664" Language="SFX">
+					<ShortName>Transform_ToKetsu_03.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_03_2A31EB1D.wem</Path>
+				</File>
+				<File Id="622933340" Language="SFX">
+					<ShortName>Move_Mud_07.wav</ShortName>
+					<Path>SFX\Move_Mud_07_A939E04F.wem</Path>
+				</File>
+				<File Id="633911034" Language="SFX">
+					<ShortName>Move_Fox_Ground_04.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_04_BA9DC8BC.wem</Path>
+				</File>
+				<File Id="652405995" Language="SFX">
+					<ShortName>Move_Mud_05.wav</ShortName>
+					<Path>SFX\Move_Mud_05_A939E04F.wem</Path>
+				</File>
+				<File Id="652833200" Language="SFX">
+					<ShortName>SFX_Collect_Gem_02.wav</ShortName>
+					<Path>SFX\SFX_Collect_Gem_02_432227E6.wem</Path>
+				</File>
+				<File Id="668879718" Language="SFX">
+					<ShortName>Move_Fox_Ice_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_02_2CC9493D.wem</Path>
+				</File>
+				<File Id="690310313" Language="SFX">
+					<ShortName>Move_OnBridge_01.wav</ShortName>
+					<Path>SFX\Move_OnBridge_01_A939E04F.wem</Path>
+				</File>
+				<File Id="690987215" Language="SFX">
+					<ShortName>Map_Env_Sea.wav</ShortName>
+					<Path>SFX\Map_Env_Sea_2CC9493D.wem</Path>
+				</File>
+				<File Id="702592865" Language="SFX">
+					<ShortName>Move_Mud_03.wav</ShortName>
+					<Path>SFX\Move_Mud_03_A939E04F.wem</Path>
+				</File>
+				<File Id="704936838" Language="SFX">
+					<ShortName>Move_Wolf_Grass_04.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_04_A939E04F.wem</Path>
+				</File>
+				<File Id="707047542" Language="SFX">
+					<ShortName>SFX_Collect_Gas_01.wav</ShortName>
+					<Path>SFX\SFX_Collect_Gas_01_B64D4B35.wem</Path>
+				</File>
+				<File Id="717253633" Language="SFX">
+					<ShortName>Move_Wolf_Grass_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_02_A939E04F.wem</Path>
+				</File>
+				<File Id="727160745" Language="SFX">
+					<ShortName>UI_WinScreen_Next_Button.wav</ShortName>
+					<Path>SFX\UI_WinScreen_Next_Button_A939E04F.wem</Path>
+				</File>
+				<File Id="739142328" Language="SFX">
+					<ShortName>SFX_Collect_Gas_02.wav</ShortName>
+					<Path>SFX\SFX_Collect_Gas_02_93A28328.wem</Path>
+				</File>
+				<File Id="744722679" Language="SFX">
+					<ShortName>Map_Env_SmallWaterStream.wav</ShortName>
+					<Path>SFX\Map_Env_SmallWaterStream_2CC9493D.wem</Path>
+				</File>
+				<File Id="745471122" Language="SFX">
+					<ShortName>Ketsu_Explosion.wav</ShortName>
+					<Path>SFX\Ketsu_Explosion_A939E04F.wem</Path>
+				</File>
+				<File Id="778693737" Language="SFX">
+					<ShortName>Move_Fox_Ice_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_03_2CC9493D.wem</Path>
+				</File>
+				<File Id="780048494" Language="SFX">
+					<ShortName>Move_Fox_Ground_02.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_02_A56D3720.wem</Path>
+				</File>
+				<File Id="785333790" Language="SFX">
+					<ShortName>Move_Wolf_Grass_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_01_A939E04F.wem</Path>
+				</File>
+				<File Id="797032317" Language="SFX">
+					<ShortName>SFX_LevelStart.wav</ShortName>
+					<Path>SFX\SFX_LevelStart_A939E04F.wem</Path>
+				</File>
+				<File Id="814823044" Language="SFX">
+					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_02_AB3070EB.wem</Path>
+				</File>
+				<File Id="843588775" Language="SFX">
+					<ShortName>Move_OnBridge_02.wav</ShortName>
+					<Path>SFX\Move_OnBridge_02_A939E04F.wem</Path>
+				</File>
+				<File Id="868623114" Language="SFX">
+					<ShortName>Move_Wolf_Ground_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_03_20F9A476.wem</Path>
+				</File>
+				<File Id="873194732" Language="SFX">
+					<ShortName>LevelMusic_OneShot_Glimmer1.wav</ShortName>
+					<Path>SFX\LevelMusic_OneShot_Glimmer1_A939E04F.wem</Path>
+				</File>
+				<File Id="891115824" Language="SFX">
+					<ShortName>Move_Wolf_Grass_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Grass_03_EB3A45A9.wem</Path>
+				</File>
+				<File Id="899780812" Language="SFX">
+					<ShortName>Move_Fox_Ground_03.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_03_088797E1.wem</Path>
+				</File>
+				<File Id="925777685" Language="SFX">
+					<ShortName>Move_Wolf_Ice_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_01_2CC9493D.wem</Path>
+				</File>
+				<File Id="935211600" Language="SFX">
+					<ShortName>Move_Wolf_Ground_04.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_04_68248150.wem</Path>
+				</File>
+				<File Id="941997029" Language="SFX">
+					<ShortName>Move_Fox_Ground_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Ground_01_A939E04F.wem</Path>
+				</File>
+				<File Id="943145784" Language="SFX">
+					<ShortName>Move_Wolf_Ground_01.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ground_01_85189F95.wem</Path>
+				</File>
+				<File Id="946403468" Language="SFX">
+					<ShortName>Move_Fox_Ice_01.wav</ShortName>
+					<Path>SFX\Move_Fox_Ice_01_2CC9493D.wem</Path>
+				</File>
+				<File Id="953015262" Language="SFX">
+					<ShortName>Move_Mud_02.wav</ShortName>
+					<Path>SFX\Move_Mud_02_A939E04F.wem</Path>
+				</File>
+				<File Id="1013979270" Language="SFX">
+					<ShortName>SFX_Collect_Gem_01.wav</ShortName>
+					<Path>SFX\SFX_Collect_Gem_01_936FE4CD.wem</Path>
+				</File>
+				<File Id="1047423126" Language="SFX">
+					<ShortName>Transform_ToKetsu_02.wav</ShortName>
+					<Path>SFX\Transform_ToKetsu_02_D9BBEB2F.wem</Path>
+				</File>
+				<File Id="1048122472" Language="SFX">
+					<ShortName>Move_Wolf_Ice_03.wav</ShortName>
+					<Path>SFX\Move_Wolf_Ice_03_2CC9493D.wem</Path>
+				</File>
+				<File Id="1065497231" Language="SFX">
+					<ShortName>Move_Mud_08.wav</ShortName>
+					<Path>SFX\Move_Mud_08_A939E04F.wem</Path>
+				</File>
+				<File Id="1070593893" Language="SFX">
+					<ShortName>Move_Ketsu.wav</ShortName>
+					<Path>SFX\Move_Ketsu_B70C6B82.wem</Path>
+				</File>
+				<File Id="1073144733" Language="SFX">
+					<ShortName>LevelMusic_OneShot_Glimmer2.wav</ShortName>
+					<Path>SFX\LevelMusic_OneShot_Glimmer2_A939E04F.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

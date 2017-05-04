@@ -1,0 +1,12 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1530902551	Level_Solved			\Music\Stingers\Level_Solved	
+	3215460476	Play_InGameMusic2			\Music\InGameMusic\Play_InGameMusic2	
+	3215460477	Play_InGameMusic3			\Music\InGameMusic\Play_InGameMusic3	
+	3215460479	Play_InGameMusic1			\Music\InGameMusic\Play_InGameMusic1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	211329539	LevelMusic_Peaceful_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\LevelMusic_Peaceful_Short_44912E36.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Peaceful\LevelMusic_Peaceful_Short		25592164
+	538034921	LevelMusic_Peaceful2	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\LevelMusic_Peaceful2_98EA82F1.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Peaceful\LevelMusic_Peaceful2		34658536
+	669844642	LevelMusic_Hedgy_Short	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\LevelMusic_Hedgy_Short_9DB7ACEB.wem		\Actor-Mixer Hierarchy\Music\InGameMusic\Hedgy\LevelMusic_Hedgy_Short		30955824
+	859584638	SFX_LevelSolved	C:\Users\mikko\Documents\Git\ketsu\Ketsu_WwiseProject\.cache\Android\SFX\GUI_Split_Release_1DEAADD8.wem		\Actor-Mixer Hierarchy\SFX\Level\SFX_LevelSolved		580816
+
