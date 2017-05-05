@@ -16,7 +16,7 @@ public class LevelSelection : MonoBehaviour
     Renderer rend;
     public bool important;
     Color StartColor = new Color(0.898f, 0.729f, 0.000f, 1.000f);
-    Color EndColor = new Color(0.898f, 0.534f, 0.000f, 1.000f);
+    Color EndColor = new Color(0.898f, 0.451f, 0.000f, 1.000f);
     bool animating;
 
 	void Start(){
