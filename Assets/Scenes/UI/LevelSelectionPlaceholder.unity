@@ -111,6 +111,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &17103857 stripped
 GameObject:
@@ -132,6 +133,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &28372831
 GameObject:
@@ -314,7 +316,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -678,6 +680,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &206867599 stripped
 GameObject:
@@ -699,6 +702,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &219368488
 Prefab:
@@ -790,6 +794,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &240953798
 GameObject:
@@ -913,6 +918,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 240953798}
+--- !u!1 &251455164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 251455165}
+  - component: {fileID: 251455167}
+  - component: {fileID: 251455166}
+  m_Layer: 0
+  m_Name: Cone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251455165
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251455164}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 12, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 1451025915}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!23 &251455166
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251455164}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 23de3a95df11e4b4b8f463b4ad8d48f7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &251455167
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251455164}
+  m_Mesh: {fileID: 4300000, guid: 8dc97a0992723484fa53cd810749b7b3, type: 2}
 --- !u!1001 &301985885
 Prefab:
   m_ObjectHideFlags: 0
@@ -950,7 +1023,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 25
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -1004,6 +1077,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &325810246
 GameObject:
@@ -1533,7 +1607,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2037,69 +2111,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 558345095}
---- !u!1 &571842911
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 571842913}
-  - component: {fileID: 571842912}
-  m_Layer: 0
-  m_Name: Directional Light (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &571842912
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571842911}
-  m_Enabled: 1
-  serializedVersion: 7
-  m_Type: 1
-  m_Color: {r: 0.9044118, g: 0.9802231, b: 1, a: 1}
-  m_Intensity: 1.1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &571842913
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 571842911}
-  m_LocalRotation: {x: -0.40390006, y: -0.88666856, z: -0.21817048, w: -0.05554571}
-  m_LocalPosition: {x: -89.5, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 200, y: -17, z: 232}
 --- !u!1001 &576141312
 Prefab:
   m_ObjectHideFlags: 0
@@ -2137,7 +2148,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 27
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2191,6 +2202,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &622149430 stripped
 GameObject:
@@ -2212,6 +2224,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &642118631 stripped
 GameObject:
@@ -2233,6 +2246,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &666899824
 GameObject:
@@ -2334,23 +2348,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.5913063
+      value: -0.59130627
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.04434857
+      value: -0.044348568
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.3577379
+      value: 0.35773787
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.72139716
+      value: 0.7213971
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2421,7 +2435,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 21
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2475,6 +2489,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &715943580
 GameObject:
@@ -2570,6 +2585,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &734874894 stripped
 GameObject:
@@ -2591,6 +2607,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &745035791
 Prefab:
@@ -2629,7 +2646,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2700,7 +2717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2783,6 +2800,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1001 &806161259
 Prefab:
@@ -2821,7 +2839,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2942,7 +2960,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 26
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -2996,6 +3014,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &858956759
 Prefab:
@@ -3034,7 +3053,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3105,7 +3124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3160,23 +3179,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.7860323
+      value: -0.7860322
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.071823634
+      value: 0.07182363
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.30483347
+      value: 0.30483344
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.53298336
+      value: 0.5329833
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3464,7 +3483,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3535,7 +3554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3651,6 +3670,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1 &1089842779
 GameObject:
@@ -3882,7 +3902,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 24
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -3936,6 +3956,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &1126708635
 Prefab:
@@ -3974,7 +3995,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4111,7 +4132,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4165,6 +4186,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &1220836563 stripped
 GameObject:
@@ -4186,6 +4208,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &1225648678 stripped
 GameObject:
@@ -4207,6 +4230,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &1226394889
 GameObject:
@@ -4234,11 +4258,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1226394889}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 11, z: 0}
+  m_LocalPosition: {x: 0, y: 11.2, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1451025915}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1226394891
 MeshRenderer:
@@ -4441,7 +4465,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4512,7 +4536,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4546,6 +4570,69 @@ Prefab:
     - {fileID: 114152687086681096, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1315424079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1315424080}
+  - component: {fileID: 1315424081}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1315424080
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315424079}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 11.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1451025915}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!108 &1315424081
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1315424079}
+  m_Enabled: 1
+  serializedVersion: 7
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2
+  m_Range: 10
+  m_SpotAngle: 50
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 2
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1334675906
 GameObject:
   m_ObjectHideFlags: 0
@@ -4710,7 +4797,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4769,6 +4856,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1001 &1378897871
 Prefab:
@@ -4807,7 +4895,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4878,7 +4966,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -4937,7 +5025,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
+  - {fileID: 1315424080}
   - {fileID: 1226394890}
+  - {fileID: 251455165}
   m_Father: {fileID: 1954419738}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -148.761, y: 151.407, z: -184.804}
@@ -4961,6 +5051,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1001 &1496094742
 Prefab:
@@ -4983,23 +5074,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0.027648853
+      value: 0.027648855
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.8511872
+      value: 0.8511873
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.52201843
+      value: 0.5220185
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.w
-      value: -0.047038388
+      value: -0.04703839
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 23
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -5053,6 +5144,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &1547552608
 Prefab:
@@ -5121,6 +5213,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &1665538377
 Prefab:
@@ -5159,7 +5252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -5213,6 +5306,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &1676091024
 Prefab:
@@ -5391,7 +5485,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -5445,6 +5539,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1001 &1776400565
 Prefab:
@@ -5483,7 +5578,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -5537,6 +5632,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &1803364509 stripped
 GameObject:
@@ -5558,6 +5654,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic2
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 1
 --- !u!1 &1804066557
 GameObject:
@@ -6019,6 +6116,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic1
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1001 &1904960283
 Prefab:
@@ -6041,23 +6139,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.515941
+      value: -0.5159411
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.21317047
+      value: -0.21317048
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.18749934
+      value: 0.18749936
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.8082123
+      value: 0.80821234
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -6241,7 +6339,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -6299,6 +6397,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &2076600754
 GameObject:
@@ -6459,7 +6558,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4486715873460434, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579, type: 2}
       propertyPath: m_Name
@@ -6517,6 +6616,7 @@ MonoBehaviour:
   LevelMusicEvent: Play_InGameMusic3
   spaceship: {fileID: 1451025914}
   currentBase: {fileID: 0}
+  Light: {fileID: 251455164}
   important: 0
 --- !u!1 &2104815908
 GameObject:

@@ -13,7 +13,9 @@ public class LevelSelection : MonoBehaviour
     public static int currentLevel = 1;
 	public GameObject spaceship;
 	public GameObject currentBase;
+	public GameObject Light;
     Renderer rend;
+    Renderer lightrend;
     public bool important;
     Color StartColor = new Color(0.898f, 0.729f, 0.000f, 1.000f);
     Color EndColor = new Color(0.898f, 0.451f, 0.000f, 1.000f);
@@ -24,6 +26,8 @@ public class LevelSelection : MonoBehaviour
 		currentBase = GameObject.Find("Level"+currentLevel);
 		if(spaceship.transform.rotation != currentBase.transform.rotation)
 		    StartCoroutine(FlyToBase(currentBase));
+		lightrend = Light.GetComponent<Renderer>();
+		lightrend.enabled=false;
 	}
 
 	void OnMouseDown()
@@ -61,6 +65,7 @@ public class LevelSelection : MonoBehaviour
 
   	IEnumerator Load()
     {
+		lightrend.enabled=true;
   		AkSoundEngine.PostEvent("LevelMenu_StartLevel_Select", spaceship);
 		for(float t = 0f; t < 1; t += Time.deltaTime) {
             spaceship.transform.position = Vector3.Lerp(spaceship.transform.position, new Vector3(spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z+0.03f), t);
