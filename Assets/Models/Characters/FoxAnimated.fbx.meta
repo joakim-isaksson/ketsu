@@ -102,6 +102,7 @@ ModelImporter:
     4300000: Cylinder
     7400000: Armature|FoxIdling
     7400002: Armature|FoxWalking
+    7400004: Armature|FoxStruggling
     9500000: //RootNode
     13700000: Cylinder
   materials:
@@ -252,6 +253,128 @@ ModelImporter:
       takeName: Armature|FoxWalking
       firstFrame: 5
       lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Bone.001_L.003
+        weight: 1
+      - path: Armature/Bone.001_L.003/Bone.001_L.003_end
+        weight: 1
+      - path: Armature/Bone.001_R.003
+        weight: 1
+      - path: Armature/Bone.001_R.003/Bone.001_R.003_end
+        weight: 1
+      - path: Armature/Bone.006
+        weight: 1
+      - path: Armature/Bone.006/Bone
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_L
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_L/Bone.001_L.001
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_L/Bone.001_L.001/Bone.001_L.002/Bone.001_L.002_end
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_R
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_R/Bone.001_R.001
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.001_R/Bone.001_R.001/Bone.001_R.002/Bone.001_R.002_end
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L/Bone.003_L.001
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L/Bone.003_L.001/Bone.003_L.002
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L/Bone.003_L.001/Bone.003_L.002/Bone.003_L.002_end
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L.003
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_L.003/Bone.003_L.003_end
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R/Bone.003_R.001
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R/Bone.003_R.001/Bone.003_R.002
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R/Bone.003_R.001/Bone.003_R.002/Bone.003_R.002_end
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R.003
+        weight: 1
+      - path: Armature/Bone.006/Bone/Bone.001/Bone.002/Bone.003/Bone.003_R.003/Bone.003_R.003_end
+        weight: 1
+      - path: Armature/Bone.006/Bone.004
+        weight: 1
+      - path: Armature/Bone.006/Bone.004/Bone.005
+        weight: 1
+      - path: Armature/Bone.006/Bone.004/Bone.005/Bone.005_end
+        weight: 1
+      - path: Armature/Bone.006/Bone_L
+        weight: 1
+      - path: Armature/Bone.006/Bone_L/Bone_L.001
+        weight: 1
+      - path: Armature/Bone.006/Bone_L/Bone_L.001/Bone_L.002
+        weight: 1
+      - path: Armature/Bone.006/Bone_L/Bone_L.001/Bone_L.002/Bone_L.002_end
+        weight: 1
+      - path: Armature/Bone.006/Bone_R
+        weight: 1
+      - path: Armature/Bone.006/Bone_R/Bone_R.001
+        weight: 1
+      - path: Armature/Bone.006/Bone_R/Bone_R.001/Bone_R.002
+        weight: 1
+      - path: Armature/Bone.006/Bone_R/Bone_R.001/Bone_R.002/Bone_R.002_end
+        weight: 1
+      - path: Armature/Bone_L.003
+        weight: 1
+      - path: Armature/Bone_L.003/Bone_L.003_end
+        weight: 1
+      - path: Armature/Bone_R.003
+        weight: 1
+      - path: Armature/Bone_R.003/Bone_R.003_end
+        weight: 1
+      - path: Cylinder
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|FoxStruggling
+      takeName: Armature|FoxStruggling
+      firstFrame: 20
+      lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
