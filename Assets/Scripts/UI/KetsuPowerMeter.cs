@@ -36,7 +36,7 @@ namespace Ketsu.UI
             }
 
             GameObject parent = GameObject.Find("Objects");
-            if(parent.transform.Find("Ketsu(Clone)").gameObject != null)
+            if(parent.transform.Find("Ketsu(Clone)") != null)
                 Ketsu = parent.transform.Find("Ketsu(Clone)").gameObject;
             running = false;
             Orig = gameObject.GetComponent<Image>().sprite;
