@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1868685267434250}
+  m_IsPrefabParent: 1
+--- !u!1 &1868685267434250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4329309884743772}
+  - component: {fileID: 33756754422852142}
+  - component: {fileID: 23578892297700076}
+  - component: {fileID: 114132542957004392}
+  m_Layer: 0
+  m_Name: IceAnimated02
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4329309884743772
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868685267434250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23578892297700076
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868685267434250}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 686b2cadc457b4d42b76a2a9cb86831a, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &33756754422852142
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868685267434250}
+  m_Mesh: {fileID: 4300000, guid: bf7116c5aaa6472478c01b9c750d62be, type: 3}
+--- !u!114 &114132542957004392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868685267434250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f69df3bf08ee94a94ff659897bd9ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture1: {fileID: 2800000, guid: 58bc58d904642fa45be00ce7d98ba6dc, type: 3}
+  texture2: {fileID: 2800000, guid: f5d26437e096f2840afb64522a7789e5, type: 3}
+  texture3: {fileID: 2800000, guid: c8640b817cc32874380ebce05cd71465, type: 3}
+  texture4: {fileID: 2800000, guid: ee1c839647456ae4e857c3d7515883cf, type: 3}
+  texture5: {fileID: 2800000, guid: 2e3c55af64261514da7b1d42df43e60a, type: 3}
+  texture6: {fileID: 2800000, guid: a68fda3f61ca7564d8cf21d2e33a2a42, type: 3}
+  texture7: {fileID: 2800000, guid: 6e29ee8ba715f414fbb9c975e7c5a66d, type: 3}
+  texture8: {fileID: 2800000, guid: 65c37c4361e3f5044b139236fb6d642b, type: 3}
+  texture9: {fileID: 2800000, guid: a1e202cbf4020c445b9f8402c6adbdd1, type: 3}
+  texture10: {fileID: 2800000, guid: f4ba500b3b6b05c498a07311e207932b, type: 3}
+  change: 1
