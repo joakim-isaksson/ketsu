@@ -721,22 +721,10 @@ Prefab:
       propertyPath: field of view
       value: 18.5
       objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 114341610793959952, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
-        type: 2}
-      propertyPath: exposureAdjustment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114077691046859276, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
-        type: 2}
-      propertyPath: intensity
-      value: 0.18
-=======
     - target: {fileID: 114001726147069114, guid: b2f82086dfff7c141b4ee6ac4baa7d33,
         type: 2}
       propertyPath: quality
       value: 0
->>>>>>> ios level optimization
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114151429553395520, guid: b2f82086dfff7c141b4ee6ac4baa7d33, type: 2}
