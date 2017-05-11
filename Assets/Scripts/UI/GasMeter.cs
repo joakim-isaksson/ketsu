@@ -29,7 +29,7 @@ namespace Ketsu.UI
         		}
         	}
             else {
-                Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, Quaternion.Euler(0,0,-90), 0.05f);
+                Hand.transform.rotation = Quaternion.Lerp(Hand.transform.rotation, Quaternion.Euler(0,0,-89), 0.05f);
             }
         }
     }

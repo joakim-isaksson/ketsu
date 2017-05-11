@@ -37,7 +37,7 @@ namespace Game
             Instantiate(ExplosionPrefab, transform.position, transform.rotation);
 
             if(SceneManager.GetActiveScene().buildIndex - 1 < 4)
-                StartCoroutine(lerpPos(transform.position, new Vector3(10.5f,23f,8f), 1f));
+                StartCoroutine(lerpPos(transform.position, new Vector3(9f,23f,8f), 1f));
             else{
                 GasCollected++;
                 GasToCollect--;
