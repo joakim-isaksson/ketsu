@@ -13,6 +13,31 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music" ID="{C90DDA1E-7E68-4047-8AC7-DA7E721A4DE6}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="On" ID="{CEFC7771-5E3D-4A57-9812-223D22C45322}"/>
+										<State Name="Custom State" ID="{F1E81D07-1807-45A5-9D1F-4E31626F771C}" ShortID="364947747">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-2"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Off" ID="{8DC71557-9ACD-4ACF-A05E-971691EF35FC}"/>
+										<State Name="Custom State" ID="{2BCB6007-D1F5-495B-9068-DFEABC260734}" ShortID="503181917">
+											<PropertyList>
+												<Property Name="BusVolume" Type="Real64" Value="-96"/>
+											</PropertyList>
+										</State>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</Bus>
 						<Bus Name="SFX" ID="{2C6516A2-F8D6-4883-9541-A379503EAF68}">
 							<PropertyList>
