@@ -19,8 +19,7 @@ namespace AK
         static const AkUniqueID COLLECT_LASTGAS = 4224533635U;
         static const AkUniqueID GUI_MAINMENU_BUTTON = 3165488550U;
         static const AkUniqueID GUI_RESTART_BUTTON = 519893169U;
-        static const AkUniqueID KETSU_EXPLOSION = 2981221379U;
-        static const AkUniqueID KETSU_EXTERMINATION = 536687313U;
+        static const AkUniqueID GUI_UNDO_BUTTON = 1527790590U;
         static const AkUniqueID LEVEL_SOLVED = 1530902551U;
         static const AkUniqueID LEVEL_START = 352576276U;
         static const AkUniqueID LEVELMENU_LOCKEDLEVEL_SELECT = 2297784124U;
@@ -47,21 +46,6 @@ namespace AK
         static const AkUniqueID WINSCREEN_NEXT_BUTTON = 2660933722U;
         static const AkUniqueID WINSCREEN_RESTART_BUTTON = 171788004U;
     } // namespace EVENTS
-
-    namespace STATES
-    {
-        namespace MUSIC
-        {
-            static const AkUniqueID GROUP = 3991942870U;
-
-            namespace STATE
-            {
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace MUSIC
-
-    } // namespace STATES
 
     namespace SWITCHES
     {
