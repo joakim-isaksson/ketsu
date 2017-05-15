@@ -105,6 +105,8 @@ public class ParseMapOnLoad : MonoBehaviour
 		createObjects(map.tiles, map.width, map.height);
 
 		initialized = true;
+
+		Resources.UnloadUnusedAssets();
 	}
 
 	long[,] parseTiles(string tileString, int x, int y)
