@@ -5,16 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/UI/Start.unity
-  - enabled: 0
-    path: Assets/Scenes/UI/StartDemo.unity
   - enabled: 1
     path: Assets/Scenes/UI/LevelSelection.unity
-  - enabled: 0
-    path: Assets/Scenes/UI/LevelSelectionDemo.unity
-  - enabled: 1
-    path: Assets/Scenes/UI/LevelSelectionPlaceholder.unity
   - enabled: 1
     path: Assets/Scenes/HotLoadedMaps/Alpha/01.unity
   - enabled: 1
