@@ -9,21 +9,21 @@
 9 Long Bridge
 10 Island Crossing
 11 Roundtrip Bridge
-12 Sticky Situation
-13 Twin Swamps
-14 Muddy Islands
-15 Swampy Plains
-16 The Hard Way
-17 Switching Sides
-18 Frosty Tips
-19 Complementary Paths
-20 Sliding Loops
-21 Frozen Islands
-22 Icy Pathway
-23 Freezing Lagoon
-24 Sliding Extravaganza
-25 Icy Plateau
-26 Frozen Merge
+12 Frosty Tips
+13 Complementary Paths
+14 Sliding Loops
+15 Frozen Islands
+16 Icy Pathway
+17 Freezing Lagoon
+18 Sliding Extravaganza
+19 Icy Plateau
+20 Frozen Merge
+21 Sticky Situation
+22 Twin Swamps
+23 Muddy Islands
+24 Swampy Plains
+25 The Hard Way
+26 Switching Sides
 27 Cosmic Chasm
 28 Complicated Maneuver
 29 Mastermind's Route
