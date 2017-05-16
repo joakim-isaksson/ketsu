@@ -308,7 +308,7 @@
 				</File>
 				<File Id="780048494" Language="SFX">
 					<ShortName>Move_Fox_Ground_02.wav</ShortName>
-					<Path>SFX\Move_Fox_Ground_02_A56D3720.wem</Path>
+					<Path>SFX\Move_Fox_Ground_02_BE855E61.wem</Path>
 				</File>
 				<File Id="785333790" Language="SFX">
 					<ShortName>Move_Wolf_Grass_01.wav</ShortName>
@@ -320,7 +320,7 @@
 				</File>
 				<File Id="814823044" Language="SFX">
 					<ShortName>Move_Wolf_Ground_02.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_02_AB3070EB.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_02_BF422BAC.wem</Path>
 				</File>
 				<File Id="833528271" Language="SFX">
 					<ShortName>Map_Env_MediumWind.wav</ShortName>
@@ -332,7 +332,7 @@
 				</File>
 				<File Id="868623114" Language="SFX">
 					<ShortName>Move_Wolf_Ground_03.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_03_20F9A476.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_03_2E285E97.wem</Path>
 				</File>
 				<File Id="873194732" Language="SFX">
 					<ShortName>LevelMusic_OneShot_Glimmer1.wav</ShortName>
@@ -352,15 +352,15 @@
 				</File>
 				<File Id="935211600" Language="SFX">
 					<ShortName>Move_Wolf_Ground_04.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_04_68248150.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_04_E39E9DEE.wem</Path>
 				</File>
 				<File Id="941997029" Language="SFX">
 					<ShortName>Move_Fox_Ground_01.wav</ShortName>
-					<Path>SFX\Move_Fox_Ground_01_A939E04F.wem</Path>
+					<Path>SFX\Move_Fox_Ground_01_1475101E.wem</Path>
 				</File>
 				<File Id="943145784" Language="SFX">
 					<ShortName>Move_Wolf_Ground_01.wav</ShortName>
-					<Path>SFX\Move_Wolf_Ground_01_85189F95.wem</Path>
+					<Path>SFX\Move_Wolf_Ground_01_C06FB3EC.wem</Path>
 				</File>
 				<File Id="946403468" Language="SFX">
 					<ShortName>Move_Fox_Ice_01.wav</ShortName>

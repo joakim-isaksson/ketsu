@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3991942870	Music			\Default Work Unit\Music	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music			
+	930712164	Off	Music			
+	1651971902	On	Music			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	364947747	On	Music	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	503181917	Off	Music	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
 	805203703	Master Secondary Bus			\Default Work Unit\Master Secondary Bus	

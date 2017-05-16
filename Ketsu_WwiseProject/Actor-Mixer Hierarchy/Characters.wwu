@@ -68,7 +68,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>9</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -105,6 +105,9 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Move_Fox_Ground_01" ID="{A474FBB5-A4A1-4DB8-ABEA-ED28AB914637}" ShortID="941997029">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.041064430508734"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_01.wav</AudioFile>
 												</AudioFileSource>
@@ -126,7 +129,7 @@
 												<AudioFileSource Name="Move_Fox_Ground_02" ID="{ECE9FB41-ECB7-4D68-B9A0-8B234434E21B}" ShortID="780048494">
 													<PropertyList>
 														<Property Name="FadeInDuration" Type="Real64" Value="1.45574606396733E-02"/>
-														<Property Name="TrimBegin" Type="Real64" Value="3.33965273498387E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.11130041122429E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Fox_Ground_02.wav</AudioFile>
@@ -193,7 +196,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>7</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
@@ -529,7 +532,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>12</Value>
+												<Value>16</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
@@ -680,7 +683,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>12</Value>
+												<Value>13</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
@@ -1278,7 +1281,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>7</Value>
+												<Value>8</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
@@ -1404,6 +1407,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Ground" ID="{D581EB81-B551-4582-B0D0-1365F9609566}" ShortID="452715858">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -1435,7 +1443,7 @@
 														<Property Name="FadeInDuration" Type="Real64" Value="8.15400168356271E-03"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="4.59885694952937E-02"/>
 														<Property Name="TrimBegin" Type="Real64" Value="3.00067261955108E-02"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.333009428756701"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.327464707611878"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_01.wav</AudioFile>
@@ -1457,7 +1465,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_02" ID="{92314B1C-9BAB-480D-93A5-FA19891388F6}" ShortID="814823044">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="8.80632181824773E-03"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.077626096027517"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.17417624243303E-02"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.254078692459814"/>
 													</PropertyList>
 													<Language>SFX</Language>
@@ -1480,8 +1490,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_03" ID="{6E03DC72-344F-406C-B6EC-F71A0784B5C7}" ShortID="868623114">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="5.87088121216517E-03"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.311156704244753"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="7.50168154887769E-03"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="2.02219241752356E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="9.13248188559023E-03"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.302024222359163"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_03.wav</AudioFile>
@@ -1503,8 +1515,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="Move_Wolf_Ground_04" ID="{C87E4C4B-3383-4029-97EA-0719B91EC2F5}" ShortID="935211600">
 													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="5.87088121216515E-03"/>
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.039791528215786"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.318332225726288"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.272669816298337"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Move_Wolf_Ground_04.wav</AudioFile>
@@ -1525,7 +1538,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>10</Value>
+												<Value>14</Value>
 											</ValueList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
