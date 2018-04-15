@@ -6666,6 +6666,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1451025915}
+  - component: {fileID: 1451025916}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -6689,6 +6690,23 @@ Transform:
   m_Father: {fileID: 1954419738}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -148.761, y: 151.407, z: -184.804}
+--- !u!95 &1451025916
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451025914}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9a33610654cbfce48ba67d4e382b5638, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1455490068
 GameObject:
   m_ObjectHideFlags: 0

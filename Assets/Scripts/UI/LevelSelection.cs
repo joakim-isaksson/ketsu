@@ -31,12 +31,13 @@ public class LevelSelection : MonoBehaviour
 		lightrend.enabled = false;
 
 		if (firstVisit) {
-			StartCoroutine (Load ());
+			StartCoroutine (FirstVisit ());
 			return;
 		}
 
-		if (spaceship.transform.rotation != currentBase.transform.rotation)
+		if (spaceship.transform.rotation != currentBase.transform.rotation) {
 			StartCoroutine (FlyToBase (currentBase));
+		}
 	}
 
 	void OnMouseDown ()
@@ -52,6 +53,7 @@ public class LevelSelection : MonoBehaviour
 
 	IEnumerator FirstVisit ()
 	{
+		spaceship.GetComponentInChildren<Animator> ().SetTrigger ("Arrive");
 		animating = true;
 		firstVisit = false;
 		yield return new WaitForSeconds (2);
