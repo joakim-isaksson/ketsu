@@ -97,7 +97,7 @@ public class LevelSelection : MonoBehaviour
 		lightrend.enabled = true;
 		AkSoundEngine.PostEvent ("LevelMenu_StartLevel_Select", spaceship);
 		for (float t = 0f; t < 1; t += Time.deltaTime) {
-			spaceship.transform.position = Vector3.Lerp (spaceship.transform.position, new Vector3 (spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z + 0.03f), t);
+			spaceship.transform.position = Vector3.Lerp (spaceship.transform.position, new Vector3 (spaceship.transform.position.x, spaceship.transform.position.y, spaceship.transform.position.z + 0.02f), t);
 			yield return null;
 		}
 
