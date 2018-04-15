@@ -49,18 +49,21 @@ public class LevelSelection : MonoBehaviour
 			return;
 
 		if (spaceship.transform.rotation == transform.rotation)
-			StartCoroutine (Load ());
+			StartCoroutine (Load (level));
 		else
 			StartCoroutine (Fly ());
 	}
 
 	IEnumerator FirstVisit ()
 	{
-		shipAnim.SetTrigger ("Arrive");
-		animating = true;
-		firstVisit = false;
-		yield return new WaitForSeconds (3.6f);
-		StartCoroutine (Load ());
+		if (firstVisit) {
+			firstVisit = false;
+			shipAnim.SetTrigger ("Arrive");
+			animating = true;
+			yield return new WaitForSeconds (3.6f);
+			currentLevel = 1;
+			StartCoroutine (Load (1));
+		}
 	}
 
 	IEnumerator Fly ()
@@ -88,7 +91,7 @@ public class LevelSelection : MonoBehaviour
 		animating = false;
 	}
 
-	IEnumerator Load ()
+	IEnumerator Load (int levelToLoad)
 	{
 		shipAnim.enabled = false;
 		lightrend.enabled = true;
@@ -100,9 +103,8 @@ public class LevelSelection : MonoBehaviour
 
 		AkSoundEngine.PostEvent (LevelMusicEvent, gameObject);
 		AkSoundEngine.PostEvent (sfxMapEnv, gameObject);
-
-		currentLevel = level + 1;
-		SceneManager.LoadScene (level + 1);
+		currentLevel = levelToLoad + 1;
+		SceneManager.LoadScene (levelToLoad + 1);
 		yield return null;
 	}
 
