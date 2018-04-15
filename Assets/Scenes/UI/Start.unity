@@ -339,7 +339,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 55.3
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -427,7 +427,7 @@ Animator:
   m_GameObject: {fileID: 546858004}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da351f6bd9d7e2e4da739fa7e999b3ec, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4dc7cbb1e78c1544d9f006b0611dc54a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -510,7 +510,7 @@ Light:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556525619}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 7
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}

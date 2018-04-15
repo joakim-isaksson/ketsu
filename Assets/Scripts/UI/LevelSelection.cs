@@ -21,16 +21,19 @@ public class LevelSelection : MonoBehaviour
 	Color EndColor = new Color (0.898f, 0.451f, 0.000f, 1.000f);
 	bool animating;
 
-	private static bool firstVisit = true;
+	static bool firstVisit = true;
+	Animator shipAnim;
 
 	void Start ()
 	{
+		shipAnim = spaceship.GetComponentInChildren<Animator> ();
 		rend = GetComponent<Renderer> ();
 		currentBase = GameObject.Find ("Level" + currentLevel);
 		lightrend = Light.GetComponent<Renderer> ();
 		lightrend.enabled = false;
 
 		if (firstVisit) {
+			shipAnim.enabled = true;
 			StartCoroutine (FirstVisit ());
 			return;
 		}
@@ -53,15 +56,16 @@ public class LevelSelection : MonoBehaviour
 
 	IEnumerator FirstVisit ()
 	{
-		spaceship.GetComponentInChildren<Animator> ().SetTrigger ("Arrive");
+		shipAnim.SetTrigger ("Arrive");
 		animating = true;
 		firstVisit = false;
-		yield return new WaitForSeconds (2);
+		yield return new WaitForSeconds (3.6f);
 		StartCoroutine (Load ());
 	}
 
 	IEnumerator Fly ()
 	{
+		shipAnim.enabled = false;
 		animating = true;
 		AkSoundEngine.PostEvent ("LevelMenu_UnlockedLevel_Select", spaceship);
 		for (float t = 0f; t < 1; t += Time.deltaTime) {
@@ -74,6 +78,7 @@ public class LevelSelection : MonoBehaviour
 
 	IEnumerator FlyToBase (GameObject Base)
 	{
+		shipAnim.enabled = false;
 		animating = true;
 		for (float t = 0f; t < 1; t += Time.deltaTime) {
 			spaceship.transform.rotation = Quaternion.Lerp (spaceship.transform.rotation, Base.transform.rotation, t);
@@ -85,6 +90,7 @@ public class LevelSelection : MonoBehaviour
 
 	IEnumerator Load ()
 	{
+		shipAnim.enabled = false;
 		lightrend.enabled = true;
 		AkSoundEngine.PostEvent ("LevelMenu_StartLevel_Select", spaceship);
 		for (float t = 0f; t < 1; t += Time.deltaTime) {
