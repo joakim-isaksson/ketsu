@@ -229,7 +229,7 @@ namespace Game
 					ketsu.gameObject.SetActive (false);
 					shaker.HeavyShake ();
 					DelayedAction (4f, delegate {
-						FindObjectOfType<LoadLevel> ().ReloadLevel ();
+						GameObject.FindObjectOfType<LoadLevel> ().ReloadLevel ();
 					});
 				});
 			} else {
