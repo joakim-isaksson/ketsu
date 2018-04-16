@@ -53,7 +53,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SfxMapEnv: Play_Map_Env
   MusicEvents:
+  - SceneName: 1
+    EventName: Play_InGameMusic1
+  - SceneName: 2
+    EventName: Play_InGameMusic1
+  - SceneName: 3
+    EventName: Play_InGameMusic1
+  - SceneName: 4
+    EventName: Play_InGameMusic1
+  - SceneName: 5
+    EventName: Play_InGameMusic1
+  - SceneName: 6
+    EventName: Play_InGameMusic1
+  - SceneName: 7
+    EventName: Play_InGameMusic1
+  - SceneName: 8
+    EventName: Play_InGameMusic1
+  - SceneName: 9
+    EventName: Play_InGameMusic1
   - SceneName: 10
     EventName: Play_InGameMusic2
+  - SceneName: 11
+    EventName: Play_InGameMusic2
+  - SceneName: 12
+    EventName: Play_InGameMusic2
+  - SceneName: 13
+    EventName: Play_InGameMusic2
+  - SceneName: 14
+    EventName: Play_InGameMusic2
+  - SceneName: 15
+    EventName: Play_InGameMusic2
   - SceneName: 16
+    EventName: Play_InGameMusic3
+  - SceneName: 17
+    EventName: Play_InGameMusic3
+  - SceneName: 18
+    EventName: Play_InGameMusic3
+  - SceneName: 19
+    EventName: Play_InGameMusic3
+  - SceneName: 20
     EventName: Play_InGameMusic3
