@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SfxMapEnv: Play_Map_Env
   MusicEvents:
-  - SceneName: 11
+  - SceneName: 10
     EventName: Play_InGameMusic2
-  - SceneName: 25
+  - SceneName: 16
     EventName: Play_InGameMusic3
