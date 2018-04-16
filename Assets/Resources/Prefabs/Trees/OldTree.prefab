@@ -140,8 +140,8 @@ MonoBehaviour:
   RotationOffsetMin: {x: -2, y: 0, z: -2}
   RotationOffsetMax: {x: 2, y: 360, z: 2}
   KeepScaleRatio: 1
-  ScaleMultiplierMin: {x: 0.7, y: 0.7, z: 0.7}
-  ScaleMultiplierMax: {x: 1, y: 1, z: 1}
+  ScaleMultiplierMin: {x: 0.4, y: 0.4, z: 0.4}
+  ScaleMultiplierMax: {x: 0.5, y: 0.5, z: 0.5}
 --- !u!114 &114844395974870548
 MonoBehaviour:
   m_ObjectHideFlags: 1
