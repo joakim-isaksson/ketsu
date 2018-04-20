@@ -1,10 +1,8 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using System.Collections;
-using System.Linq;
 using System.Collections.Generic;
+using Ketsu.Utils;
 
 public class LoadLevel : MonoBehaviour
 {
@@ -18,9 +16,14 @@ public class LoadLevel : MonoBehaviour
     }
     public List<SceneToMusicEvent> MusicEvents;
 
-    public void LoadOn(int level)
+	private void Awake()
 	{
-		SceneManager.LoadScene(level);
+		ScreenFaider.Instance.FadeOut(1.0f, null);
+	}
+
+	public void LoadOn(int level)
+	{
+		ScreenFaider.Instance.FadeIn(1.0f, () => SceneManager.LoadScene(level));
 	}
 
 	public void NextLevel()
@@ -36,12 +39,12 @@ public class LoadLevel : MonoBehaviour
 	    AkSoundEngine.PostEvent(SfxMapEnv, gameObject);
 
         int level = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(level + 1);
+		ScreenFaider.Instance.FadeIn(1.0f, () => SceneManager.LoadScene(level + 1));
 	}
 
 	public void ReloadLevel()
 	{
 		int level = SceneManager.GetActiveScene().buildIndex;
-		SceneManager.LoadScene(level);
+		ScreenFaider.Instance.FadeIn(1.0f, () => SceneManager.LoadScene(level));
 	}
 }
