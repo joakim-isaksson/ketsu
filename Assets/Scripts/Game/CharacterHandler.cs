@@ -345,13 +345,32 @@ namespace Game
 				}
 			}
 
-			// Move characters to new positions
-			waitingForMoveActions++;
-			active.MoveTo (activePointer.Position, activePointer.Ground.Type, OnMoveActionCompleted);
-			if (other != null) {
+			var activeMoved = active.transform.position != activePointer.Position;
+			var otherMoved = other != null && other.transform.position != otherPointer.Position;
+			if (!activeMoved && !otherMoved ||
+			    active.InMud() && !otherMoved ||
+			    other != null && other.InMud() && !activeMoved)
+			{
 				waitingForMoveActions++;
-				other.MoveTo (otherPointer.Position, otherPointer.Ground.Type, OnMoveActionCompleted);
+				OnMoveActionCompleted();
+				if (other != null) {
+					waitingForMoveActions++;
+					OnMoveActionCompleted();
+				}
 			}
+			
+			// Move characters to new positions
+			else
+			{
+				waitingForMoveActions++;
+				active.MoveTo (activePointer.Position, activePointer.Ground.Type, OnMoveActionCompleted);
+				if (other != null) {
+					waitingForMoveActions++;
+					other.MoveTo (otherPointer.Position, otherPointer.Ground.Type, OnMoveActionCompleted);
+				}
+			}
+
+			
 		}
 
 		void TransformToKetsu (Vector3 mergePos, MapObjectType groundType, Character active, Character other)
