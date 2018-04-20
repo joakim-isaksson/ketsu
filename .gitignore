@@ -34,3 +34,6 @@ sysinfo.txt
 
 #Wwise
 Assets/Wwise/Editor/ProjectData/*
+
+#IDE
+.idea
