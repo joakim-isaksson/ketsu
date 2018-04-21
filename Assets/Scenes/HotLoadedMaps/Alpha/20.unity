@@ -570,7 +570,7 @@ Prefab:
         type: 2}
       propertyPath: MapFile
       value: 
-      objectReference: {fileID: 4900000, guid: fca2bf2d643b2444f9ef909006f09926, type: 3}
+      objectReference: {fileID: 4900000, guid: ce167bdb3c4e7244a98ad3c5ac07b0f4, type: 3}
     - target: {fileID: 114616133248631428, guid: 85506279ba21d4e0590fe217859e3642,
         type: 2}
       propertyPath: initialized
