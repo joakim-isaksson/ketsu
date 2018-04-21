@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using Ketsu.Utils;
 using UnityEngine;
 
@@ -16,6 +17,11 @@ namespace Game
 	    public string SfxSlideStop;
         public string SwitchGroupName;
 
+		[Header("Tracks")]
+		public int MaxTracks;
+		public GameObject TrackPrefab;
+		private Queue<Track> _tracks;
+
         bool stuckInMud;
 
 	    Animator anim;
@@ -23,12 +29,14 @@ namespace Game
         void Awake()
         {
             anim = GetComponentInChildren<Animator>();
+	        _tracks = new Queue<Track>();
         }
 
-        void Start()
+		private void OnDisable()
 		{
-		    
-        }
+			foreach (var track in _tracks) track.Remove();
+			_tracks.Clear();
+		}
 
 		public void MoveTo(Vector3 newPosition, MapObjectType targetGroundType, Action callback)
 		{
@@ -51,6 +59,7 @@ namespace Game
                 if (Type != MapObjectType.Ketsu) AkSoundEngine.SetSwitch(SwitchGroupName, targetGroundType.ToString(), gameObject);
                 if (targetGroundType != MapObjectType.Ice) AkSoundEngine.PostEvent(SfxMove, gameObject);
 
+	            UpdateTracks(newPosition);
                 StartCoroutine(RunMoveAnimation(newPosition, callback));
             }
 		}
@@ -60,6 +69,14 @@ namespace Game
 	        return stuckInMud;
 
 	    }
+
+		private void UpdateTracks(Vector3 newPos)
+		{
+			if (_tracks.Count >= MaxTracks) _tracks.Dequeue().Remove();
+			var newTrack = Instantiate(TrackPrefab, transform.position, Quaternion.identity);
+			newTrack.transform.LookAt(newPos);
+			_tracks.Enqueue(newTrack.GetComponent<Track>());
+		}
 
 		IEnumerator RunMoveAnimation(Vector3 target, Action callback)
 		{

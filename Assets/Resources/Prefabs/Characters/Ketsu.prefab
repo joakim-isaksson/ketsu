@@ -1573,6 +1573,9 @@ MonoBehaviour:
   SfxSlideStart: Move_Ketsu_Ice
   SfxSlideStop: Stop_Ketsu_Ice
   SwitchGroupName: 
+  MaxTracks: 3
+  TrackPrefab: {fileID: 1541599308179488, guid: c9f67b76e48268c4392d67b3c3e47fa0,
+    type: 2}
 --- !u!114 &114796153408796744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1586,6 +1589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FlashColor: {r: 0.88235295, g: 0.16868512, b: 0.83313453, a: 0.491}
   FlashSpeed: 0.8
+  flashing: 0
 --- !u!137 &137719638624722358
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
