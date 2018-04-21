@@ -1151,6 +1151,9 @@ MonoBehaviour:
   SfxSlideStart: Move_Wolf_Ice
   SfxSlideStop: Stop_Wolf_Ice
   SwitchGroupName: Tile_Material_Wolf
+  MaxTracks: 3
+  TrackPrefab: {fileID: 1541599308179488, guid: c9f67b76e48268c4392d67b3c3e47fa0,
+    type: 2}
 --- !u!137 &137521438589086492
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
