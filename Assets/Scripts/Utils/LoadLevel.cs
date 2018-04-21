@@ -16,7 +16,7 @@ public class LoadLevel : MonoBehaviour
     }
     public List<SceneToMusicEvent> MusicEvents;
 
-	private void Awake()
+	private void Start()
 	{
 		ScreenFaider.Instance.FadeOut(1.0f, null);
 	}
