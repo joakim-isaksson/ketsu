@@ -94,12 +94,16 @@ namespace Game
 				ketsuObject.transform.parent = GameObject.Find ("Objects").transform;
 				ketsu = ketsuObject.GetComponent<Character> ();
 				ketsu.gameObject.SetActive (false);
+				fox.Orbit.AddOrRemove(KetsuPower / 2 + KetsuPower % 2);
+				wolf.Orbit.AddOrRemove(KetsuPower / 2);
 			} else if (fox != null && wolf == null && ketsu == null) {
 				// Starting with Fox
 				ActiveCharacter = fox;
+				fox.Orbit.AddOrRemove(KetsuPower);
 			} else if (fox == null && wolf != null && ketsu == null) {
 				// Starting with Wolf
 				ActiveCharacter = wolf;
+				wolf.Orbit.AddOrRemove(KetsuPower);
 			} else if (fox == null && wolf == null && ketsu != null) {
 				// Starting with Ketsu
 				ActiveCharacter = ketsu;
@@ -107,39 +111,27 @@ namespace Game
 				wolf = Instantiate (WolfPrefab).GetComponent<Character> ();
 				fox.gameObject.SetActive (false);
 				wolf.gameObject.SetActive (false);
+				ketsu.Orbit.AddOrRemove(KetsuPower);
 			} else {
 				throw new InvalidOperationException ("Unexpected error - Contact the code monkeys!");
 			}
 		}
 
-		void Update ()
-		{
-
-		}
-
-		public void FillKetsuPower ()
+		public void FillKetsuPower (Character source)
 		{
 			KetsuPower = MaxKetsuPower;
-
+			source.Orbit.AddOrRemove(KetsuPower);
+			
 			if (KetsuPower > 0) {
 				ketsu.GetComponent<Flasher> ().StopFlashing ();
 			}
 		}
 
-		public void AddKetsuPower (int amount)
-		{
-			KetsuPower = Mathf.Min (KetsuPower + amount, MaxKetsuPower);
-
-			if (KetsuPower > 0) {
-				ketsu.GetComponent<Flasher> ().StopFlashing ();
-			}
-		}
-
-		bool ConsumeKetsuPower (int amount)
+		bool ConsumeKetsuPower (int amount, Character consumer)
 		{
 			if (amount <= KetsuPower) {
 				KetsuPower -= amount;
-
+				consumer.Orbit.Consume(amount);
 				if (KetsuPower == 0) {
 					ketsu.GetComponent<Flasher> ().StartFlashing ();
 				}
@@ -279,7 +271,7 @@ namespace Game
 					otherTarget = new TargetInfo (other, otherPointer.Position + VectorUtils.Mirror (direction, Vector3.zero));
 
 				// Spend Ketsu Power on first move (only when ketsu)
-				if (firstMove && active.Type == MapObjectType.Ketsu && activeTarget.Blocker == null && !ConsumeKetsuPower (KetsuMoveCost)) {
+				if (firstMove && active.Type == MapObjectType.Ketsu && activeTarget.Blocker == null && !ConsumeKetsuPower (KetsuMoveCost, ketsu)) {
 					// No ketsu power to spend -> Split
 					SplitKetsu (activeTarget.Position);
 					return;
@@ -397,6 +389,11 @@ namespace Game
 				if (KetsuPower == 0) {
 					ketsu.GetComponent<Flasher> ().StartFlashing ();
 				}
+				
+				// Move all orbiters to ketsu
+				fox.Orbit.Clear();
+				wolf.Orbit.Clear();
+				ketsu.Orbit.AddOrRemove(KetsuPower);
 
 				OnMoveActionCompleted ();
 			});
@@ -439,7 +436,7 @@ namespace Game
 			active.gameObject.SetActive (true);
 			other.gameObject.SetActive (true);
 			ActiveCharacter = active;
-
+			
 			// Animate
 			waitingForMoveActions += 2;
 			active.transform.position = ketsu.transform.position;

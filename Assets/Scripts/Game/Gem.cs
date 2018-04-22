@@ -24,15 +24,14 @@ namespace Game
 				return;
 			Collected = true;
 
-			var otherType = other.GetComponent<MapObject> ().Type;
-			if (otherType != MapObjectType.Fox && otherType != MapObjectType.Wolf &&
-			             otherType != MapObjectType.Ketsu)
-				return;
-
+			var character = other.GetComponent<Character> ();
+			if (character == null) return;
+			characterHandler.FillKetsuPower(character);
+			
 			AkSoundEngine.PostEvent (SfxCollect, gameObject);
 
 			Instantiate (ExplosionPrefab, transform.position, transform.rotation);
-
+			
 			StartCoroutine (lerpPos (transform.position, new Vector3 (8f, 23f, 8f), 0.6f));
 		}
 
@@ -47,7 +46,6 @@ namespace Game
 				transform.position = new Vector3 (x, y, z);
 				yield return new WaitForFixedUpdate ();
 			}
-			characterHandler.FillKetsuPower ();
 			Instantiate (ExplosionPrefab, transform.position, transform.rotation);
 			Destroy (gameObject);
 		}

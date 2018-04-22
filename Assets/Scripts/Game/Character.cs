@@ -20,14 +20,17 @@ namespace Game
 		[Header("Tracks")]
 		public int MaxTracks;
 		public GameObject TrackPrefab;
+		[HideInInspector] public Orbit Orbit;
+		
 		private Queue<Track> _tracks;
 
         bool stuckInMud;
 
 	    Animator anim;
 
-        void Awake()
+        private void Awake()
         {
+	        Orbit = GetComponentInChildren<Orbit>();
             anim = GetComponentInChildren<Animator>();
 	        _tracks = new Queue<Track>();
         }
