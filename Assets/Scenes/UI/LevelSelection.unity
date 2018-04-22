@@ -304,7 +304,7 @@ Prefab:
     - target: {fileID: 224222124490642186, guid: fda331b180ccec3449386238b71557fb,
         type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 224222124490642186, guid: fda331b180ccec3449386238b71557fb,
         type: 2}
@@ -441,46 +441,6 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!1 &193617452
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 193617454}
-  - component: {fileID: 193617453}
-  m_Layer: 0
-  m_Name: ExitOnEsc
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &193617453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 193617452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5aa9938c707d944eaa66861bd214802, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &193617454
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 193617452}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &194645641 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1977302142852930, guid: e081bb5192d54e6478ea9ef77da9d579,
@@ -1047,6 +1007,7 @@ GameObject:
   - component: {fileID: 375135112}
   - component: {fileID: 375135108}
   - component: {fileID: 375135107}
+  - component: {fileID: 375135116}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1379,6 +1340,18 @@ MonoBehaviour:
   m_MinZ: 0.01
   m_SSAOShader: {fileID: 4800000, guid: 43ca18288c424f645aaa1e9e07f04c50, type: 3}
   m_RandomTexture: {fileID: 2800000, guid: a181ca8e3c62f3e4b8f183f6c586b032, type: 3}
+--- !u!114 &375135116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 375135100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a756f41780043e7a5f64c13a242c037, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Start
 --- !u!1 &481931681
 GameObject:
   m_ObjectHideFlags: 0
