@@ -28,6 +28,7 @@ namespace Game
 
 		public void Remove()
 		{
+			if (_anim == null) return;
 			_anim.SetTrigger(RemoveAnimTrigger);
 			DelayedAction(RemoveDelay, () => Destroy(gameObject));
 		}
