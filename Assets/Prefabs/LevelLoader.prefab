@@ -82,14 +82,14 @@ MonoBehaviour:
   - SceneName: 14
     EventName: Play_InGameMusic2
   - SceneName: 15
-    EventName: Play_InGameMusic2
+    EventName: Play_InGameMusic1
   - SceneName: 16
-    EventName: Play_InGameMusic3
+    EventName: Play_InGameMusic1
   - SceneName: 17
-    EventName: Play_InGameMusic3
+    EventName: Play_InGameMusic1
   - SceneName: 18
-    EventName: Play_InGameMusic3
+    EventName: Play_InGameMusic2
   - SceneName: 19
-    EventName: Play_InGameMusic3
+    EventName: Play_InGameMusic2
   - SceneName: 20
     EventName: Play_InGameMusic3
